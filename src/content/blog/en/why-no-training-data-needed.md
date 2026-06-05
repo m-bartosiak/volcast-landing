@@ -6,7 +6,7 @@ tags: ["cold-start", "new-installation", "physics-model", "onboarding", "forecas
 series: "deep-dives"
 seriesOrder: 7
 lang: en
-draft: true
+draft: false
 seo:
   ogTitle: "No Training Data Needed — Why Physics-Based Solar Forecasts Work From Day One"
   keywords: ["solar forecast new installation", "no training data PV forecast", "cold start solar prediction", "physics model no history needed"]

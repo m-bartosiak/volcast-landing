@@ -6,7 +6,7 @@ tags: ["zimny-start", "nowa-instalacja", "model-fizyczny", "onboarding", "progno
 series: "deep-dives"
 seriesOrder: 7
 lang: pl
-draft: true
+draft: false
 seo:
   ogTitle: "Bez danych treningowych — dlaczego prognoza fizyczna działa od pierwszego dnia"
   keywords: ["prognoza solarna nowa instalacja", "bez danych treningowych PV", "zimny start prognoza", "model fizyczny bez historii"]
