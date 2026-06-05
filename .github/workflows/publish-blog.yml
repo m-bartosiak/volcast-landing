@@ -26,8 +26,9 @@ jobs:
             exit 0
           fi
 
-          # Find files scheduled for today
-          FILES=$(jq -r --arg today "$TODAY" '.[] | select(.date == $today) | .files[]' "$SCHEDULE")
+          # Find files due today OR earlier — catch-up so a skipped scheduled run
+          # (GitHub silently drops some) doesn't strand a batch forever.
+          FILES=$(jq -r --arg today "$TODAY" '.[] | select(.date <= $today) | .files[]' "$SCHEDULE")
 
           if [ -z "$FILES" ]; then
             echo "No posts scheduled for $TODAY"
@@ -52,9 +53,9 @@ jobs:
             fi
           done
 
-          # Remove the processed entry from schedule
+          # Remove processed entries (today and earlier); keep only future ones
           if [ "$CHANGED" = true ]; then
-            jq --arg today "$TODAY" '[.[] | select(.date != $today)]' "$SCHEDULE" > tmp.json
+            jq --arg today "$TODAY" '[.[] | select(.date > $today)]' "$SCHEDULE" > tmp.json
             mv tmp.json "$SCHEDULE"
           fi
 
