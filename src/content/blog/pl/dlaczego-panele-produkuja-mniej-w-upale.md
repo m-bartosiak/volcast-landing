@@ -7,7 +7,7 @@ tags: ["pv-physics", "temperature", "summer", "forecast-accuracy"]
 series: "practical"
 seriesOrder: 1
 lang: pl
-draft: true
+draft: false
 seo:
   keywords: ["temperatura paneli fotowoltaicznych", "współczynnik temperaturowy", "dlaczego panele produkują mniej w upale", "sprawność paneli w upał"]
 ---

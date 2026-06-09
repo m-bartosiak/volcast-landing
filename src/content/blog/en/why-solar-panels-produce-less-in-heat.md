@@ -7,7 +7,7 @@ tags: ["pv-physics", "temperature", "summer", "forecast-accuracy"]
 series: "practical"
 seriesOrder: 1
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["solar panel temperature", "temperature coefficient", "why solar panels produce less in heat", "panel efficiency hot weather"]
 ---
