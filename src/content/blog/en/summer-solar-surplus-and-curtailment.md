@@ -7,7 +7,7 @@ tags: ["curtailment", "dynamic-tariff", "self-consumption", "summer"]
 series: "practical"
 seriesOrder: 2
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["solar curtailment", "inverter clipping", "negative electricity prices", "dynamic tariff solar", "summer solar surplus"]
 ---
