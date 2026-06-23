@@ -7,7 +7,7 @@ tags: ["self-consumption", "home-assistant", "peak-window", "automation"]
 series: "practical"
 seriesOrder: 3
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["solar self-consumption", "peak production window", "schedule appliances solar", "home assistant solar automation", "maximize self-consumption"]
 ---

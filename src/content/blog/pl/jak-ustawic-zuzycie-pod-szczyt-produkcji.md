@@ -7,7 +7,7 @@ tags: ["self-consumption", "home-assistant", "peak-window", "automation"]
 series: "practical"
 seriesOrder: 3
 lang: pl
-draft: true
+draft: false
 seo:
   keywords: ["autokonsumpcja fotowoltaika", "okno szczytu produkcji", "planowanie odbiorów PV", "home assistant fotowoltaika", "maksymalizacja autokonsumpcji"]
 ---
