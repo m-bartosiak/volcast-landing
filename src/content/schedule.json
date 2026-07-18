@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "date": "2026-07-21",
+    "files": [
+      "en/same-system-different-cities-europe.md",
+      "pl/ta-sama-instalacja-rozne-miasta-europy.md"
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "files": [
+      "en/why-regional-weather-models-matter.md",
+      "pl/dlaczego-regionalne-modele-pogodowe-maja-znaczenie.md"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "files": [
+      "en/coastal-vs-inland-solar-microclimate.md",
+      "pl/wybrzeze-vs-glab-ladu-mikroklimat.md"
+    ]
+  },
+  {
+    "date": "2026-08-11",
+    "files": [
+      "en/saharan-dust-southern-europe-solar.md",
+      "pl/pyl-saharyjski-poludniowa-europa.md"
+    ]
+  }
+]
