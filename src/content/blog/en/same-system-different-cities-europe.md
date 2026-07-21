@@ -7,7 +7,7 @@ tags: ["geography", "specific-yield", "irradiance", "europe"]
 series: "geographic"
 seriesOrder: 1
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["solar yield by location", "kWh per kWp europe", "solar production madrid vs warsaw", "specific yield solar", "how much solar produces by city"]
 ---

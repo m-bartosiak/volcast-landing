@@ -7,7 +7,7 @@ tags: ["geography", "specific-yield", "irradiance", "europe"]
 series: "geographic"
 seriesOrder: 1
 lang: pl
-draft: true
+draft: false
 seo:
   keywords: ["uzysk fotowoltaiki", "kWh na kWp", "produkcja PV madryt warszawa", "uzysk jednostkowy", "ile produkuje fotowoltaika"]
 ---
