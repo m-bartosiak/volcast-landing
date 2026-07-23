@@ -4,6 +4,7 @@ import Header from '../../../../components/Header.astro';
 import Footer from '../../../../components/Footer.astro';
 import BlogCard from '../../../../components/BlogCard.astro';
 import { getCollection } from 'astro:content';
+import { LANGS, t, type BlogLang } from '../../../../data/i18n';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -22,33 +23,31 @@ export async function getStaticPaths() {
   });
 }
 
-const { lang, tag } = Astro.params as { lang: 'en' | 'pl'; tag: string };
-const otherLang = lang === 'en' ? 'pl' : 'en';
+const { lang, tag } = Astro.params as { lang: BlogLang; tag: string };
 
-const posts = await getCollection('blog', ({ data }) =>
-  !data.draft && data.lang === lang && data.tags.includes(tag)
-);
-posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allNonDraft = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allNonDraft
+  .filter(p => p.data.lang === lang && p.data.tags.includes(tag))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const otherLangHasTag = (await getCollection('blog', ({ data }) =>
-  !data.draft && data.lang === otherLang && data.tags.includes(tag)
-)).length > 0;
-const translationUrl = otherLangHasTag ? `/blog/${otherLang}/tag/${tag}/` : undefined;
+const alternates = LANGS
+  .filter(l => l !== lang && allNonDraft.some(p => p.data.lang === l && p.data.tags.includes(tag)))
+  .map(l => ({ lang: l, url: `/blog/${l}/tag/${tag}/` }));
 ---
 
 <BaseLayout
-  title={`${lang === 'pl' ? 'Posty z tagiem' : 'Posts tagged'}: ${tag}`}
-  description={`${lang === 'pl' ? 'Artykuły z tagiem' : 'Articles tagged'} "${tag}"`}
+  title={`${t(lang).postsTagged}: ${tag}`}
+  description={`${t(lang).articlesTagged} "${tag}"`}
   lang={lang}
-  translationUrl={translationUrl}
+  alternates={alternates}
   noindex={true}
 >
-  <Header lang={lang} translationUrl={translationUrl} />
+  <Header lang={lang} alternates={alternates} />
 
   <main class="tag-page">
-    <h1>{lang === 'pl' ? 'Posty z tagiem:' : 'Posts tagged:'} <span class="tag-name">{tag}</span></h1>
+    <h1>{t(lang).postsTagged}: <span class="tag-name">{tag}</span></h1>
     <a href={`/blog/${lang}/`} class="back-link">
-      {lang === 'pl' ? '← Wróć do bloga' : '← Back to blog'}
+      {t(lang).backToBlog}
     </a>
 
     <div class="post-grid">

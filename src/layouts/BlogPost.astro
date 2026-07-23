@@ -7,7 +7,8 @@ import TableOfContents from '../components/TableOfContents.astro';
 import SeriesNav from '../components/SeriesNav.astro';
 import CallToAction from '../components/CallToAction.astro';
 import { getCollection } from 'astro:content';
-import { getTranslatedSlug } from '../data/translations';
+import { getClusterSlugs } from '../data/translations';
+import { LANGS, t, type BlogLang } from '../data/i18n';
 
 interface Props {
   post: any;
@@ -16,23 +17,24 @@ interface Props {
 
 const { post, headings } = Astro.props;
 const { data } = post;
-const lang = data.lang as 'en' | 'pl';
+const lang = data.lang as BlogLang;
 
 // Parowanie tłumaczeń: slugi są przetłumaczone per język, więc parujemy po
 // mapie topiców (src/data/translations.ts), awaryjnie po identycznym slugu.
-const otherLang = lang === 'en' ? 'pl' : 'en';
+// Buduje alternaty hreflang dla WSZYSTKICH innych języków w klastrze.
 const slug = post.id.split('/').pop()!;
 const allPosts = await getCollection('blog', ({ data: d }) => !d.draft);
 
-const mappedSlug = getTranslatedSlug(lang, slug, otherLang);
-const candidateSlug = mappedSlug
-  ?? (allPosts.some(p => p.data.lang === otherLang && p.id.split('/').pop() === slug) ? slug : undefined);
+let candidates = getClusterSlugs(lang, slug);
+if (candidates.length === 0) {
+  candidates = LANGS
+    .filter(l => l !== lang && allPosts.some(p => p.data.lang === l && p.id.split('/').pop() === slug))
+    .map(l => ({ lang: l, slug }));
+}
 // Emituj alternat tylko gdy docelowy wpis realnie istnieje i nie jest draftem.
-const translationExists = candidateSlug
-  ? allPosts.some(p => p.data.lang === otherLang && p.id.split('/').pop() === candidateSlug)
-  : false;
-const translationUrl = translationExists ? `/blog/${otherLang}/${candidateSlug}/` : undefined;
-const alternates = translationUrl ? [{ lang: otherLang, url: translationUrl }] : [];
+const alternates = candidates
+  .filter(c => allPosts.some(p => p.data.lang === c.lang && p.id.split('/').pop() === c.slug))
+  .map(c => ({ lang: c.lang, url: `/blog/${c.lang}/${c.slug}/` }));
 
 // Build related posts data
 let relatedPostsData: { title: string; slug: string; lang: string }[] = [];
@@ -74,7 +76,7 @@ const jsonLd = {
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <Header lang={lang} translationUrl={translationUrl} />
+  <Header lang={lang} alternates={alternates} />
 
   <div class="post-layout">
     <article class="post-article" data-pagefind-body data-pagefind-meta={`lang:${lang}`}>
@@ -100,7 +102,7 @@ const jsonLd = {
 
       {relatedPostsData.length > 0 && (
         <aside class="related-posts">
-          <h3>{lang === 'pl' ? 'Powiązane artykuły' : 'Related posts'}</h3>
+          <h3>{t(lang).relatedPosts}</h3>
           <ul>
             {relatedPostsData.map(rp => (
               <li><a href={`/blog/${rp.lang}/${rp.slug}/`}>{rp.title}</a></li>

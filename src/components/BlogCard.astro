@@ -1,19 +1,20 @@
 ---
 import ReadingTime from './ReadingTime.astro';
 import TagList from './TagList.astro';
+import { dateLocale, type BlogLang } from '../data/i18n';
 
 interface Props {
   title: string;
   description: string;
   date: Date;
   tags: string[];
-  lang: 'en' | 'pl';
+  lang: BlogLang;
   slug: string;
   content: string;
 }
 
 const { title, description, date, tags, lang, slug, content } = Astro.props;
-const dateStr = date.toLocaleDateString(lang === 'pl' ? 'pl-PL' : 'en-US', {
+const dateStr = date.toLocaleDateString(dateLocale(lang), {
   year: 'numeric', month: 'short', day: 'numeric'
 });
 ---

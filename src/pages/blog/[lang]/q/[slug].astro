@@ -1,0 +1,29 @@
+---
+import { getCollection, render } from 'astro:content';
+import QAPost from '../../../../layouts/QAPost.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('qa', ({ data }) => !data.draft);
+
+  // Walidacja: lang we frontmatterze musi zgadzać się z katalogiem (id: "en/slug").
+  for (const entry of entries) {
+    const dirLang = entry.id.split('/')[0];
+    if (entry.data.lang !== dirLang) {
+      throw new Error(`QA ${entry.id}: lang "${entry.data.lang}" doesn't match directory "${dirLang}"`);
+    }
+  }
+
+  return entries.map((entry) => {
+    const slashIdx = entry.id.indexOf('/');
+    const slug = slashIdx >= 0 ? entry.id.slice(slashIdx + 1) : entry.id;
+    return { params: { lang: entry.data.lang, slug }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<QAPost entry={entry}>
+  <Content />
+</QAPost>

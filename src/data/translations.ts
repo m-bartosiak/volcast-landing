@@ -10,6 +10,8 @@
 // klastra. Przy imporcie paczki blogowej `topic_id` z frontmattera mapuje się
 // 1:1 na te klastry.
 
+import { LANGS, type BlogLang } from './i18n';
+
 export interface TranslationCluster {
   en?: string;
   pl?: string;
@@ -38,18 +40,12 @@ export const TRANSLATION_CLUSTERS: TranslationCluster[] = [
   { en: 'saharan-dust-southern-europe-solar', pl: 'pyl-saharyjski-poludniowa-europa' },
 ];
 
-export type BlogLang = keyof TranslationCluster;
-
 /** Znajdź klaster tłumaczeń, do którego należy dany (język, slug). */
 export function findCluster(lang: string, slug: string): TranslationCluster | undefined {
   return TRANSLATION_CLUSTERS.find((c) => c[lang as BlogLang] === slug);
 }
 
-/**
- * Zwróć slug odpowiednika w innym języku (lub undefined).
- * Najpierw po mapie topiców, awaryjnie po identycznym slugu (gdy treść ma ten
- * sam slug w obu językach i nie ma jej w mapie).
- */
+/** Zwróć slug odpowiednika w konkretnym innym języku (lub undefined). */
 export function getTranslatedSlug(
   lang: string,
   slug: string,
@@ -57,4 +53,22 @@ export function getTranslatedSlug(
 ): string | undefined {
   const cluster = findCluster(lang, slug);
   return cluster?.[otherLang as BlogLang];
+}
+
+/**
+ * Zwróć slugi odpowiedników we WSZYSTKICH pozostałych językach obecnych w
+ * klastrze (do budowy alternatów hreflang dla ≥3 języków). Weryfikację
+ * istnienia wpisu robi warstwa strony (kolekcja).
+ */
+export function getClusterSlugs(
+  lang: string,
+  slug: string,
+): { lang: BlogLang; slug: string }[] {
+  const cluster = findCluster(lang, slug);
+  if (!cluster) return [];
+  const out: { lang: BlogLang; slug: string }[] = [];
+  for (const l of LANGS) {
+    if (l !== lang && cluster[l]) out.push({ lang: l, slug: cluster[l]! });
+  }
+  return out;
 }

@@ -5,6 +5,7 @@ import Footer from '../../../../components/Footer.astro';
 import BlogCard from '../../../../components/BlogCard.astro';
 import { getCollection } from 'astro:content';
 import { SERIES } from '../../../../data/series';
+import { LANGS, t, type BlogLang } from '../../../../data/i18n';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft && data.series);
@@ -20,34 +21,32 @@ export async function getStaticPaths() {
   });
 }
 
-const { lang, series } = Astro.params as { lang: 'en' | 'pl'; series: string };
-const otherLang = lang === 'en' ? 'pl' : 'en';
+const { lang, series } = Astro.params as { lang: BlogLang; series: string };
 const seriesMeta = SERIES[series]?.[lang];
 
-const posts = await getCollection('blog', ({ data }) =>
-  !data.draft && data.lang === lang && data.series === series
-);
-posts.sort((a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0));
+const allNonDraft = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allNonDraft
+  .filter(p => p.data.lang === lang && p.data.series === series)
+  .sort((a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0));
 
-const otherLangHasSeries = (await getCollection('blog', ({ data }) =>
-  !data.draft && data.lang === otherLang && data.series === series
-)).length > 0;
-const translationUrl = otherLangHasSeries ? `/blog/${otherLang}/series/${series}/` : undefined;
+const alternates = LANGS
+  .filter(l => l !== lang && allNonDraft.some(p => p.data.lang === l && p.data.series === series))
+  .map(l => ({ lang: l, url: `/blog/${l}/series/${series}/` }));
 ---
 
 <BaseLayout
   title={seriesMeta?.title || series}
   description={seriesMeta?.description || `${series} series`}
   lang={lang}
-  translationUrl={translationUrl}
+  alternates={alternates}
 >
-  <Header lang={lang} translationUrl={translationUrl} />
+  <Header lang={lang} alternates={alternates} />
 
   <main class="series-page">
     <h1>{seriesMeta?.title || series}</h1>
     {seriesMeta?.description && <p class="series-description">{seriesMeta.description}</p>}
     <a href={`/blog/${lang}/`} class="back-link">
-      {lang === 'pl' ? '← Wróć do bloga' : '← Back to blog'}
+      {t(lang).backToBlog}
     </a>
 
     <ol class="series-list">

@@ -5,14 +5,17 @@ import Footer from '../../../components/Footer.astro';
 import BlogCard from '../../../components/BlogCard.astro';
 import SearchWidget from '../../../components/SearchWidget.astro';
 import { getCollection } from 'astro:content';
+import { LANGS, t, dateLocale, type BlogLang } from '../../../data/i18n';
 
 export function getStaticPaths() {
-  return [{ params: { lang: 'en' } }, { params: { lang: 'pl' } }];
+  return LANGS.map((lang) => ({ params: { lang } }));
 }
 
-const { lang } = Astro.params as { lang: 'en' | 'pl' };
-const otherLang = lang === 'en' ? 'pl' : 'en';
-const translationUrl = `/blog/${otherLang}/`;
+const { lang } = Astro.params as { lang: BlogLang };
+const alternates = LANGS.filter((l) => l !== lang).map((l) => ({
+  lang: l,
+  url: `/blog/${l}/`,
+}));
 
 const posts = await getCollection('blog', ({ data }) =>
   !data.draft && data.lang === lang
@@ -31,35 +34,27 @@ const gridPosts = hasHero ? posts.slice(1) : posts;
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: lang === 'pl' ? 'Blog Volcast' : 'Volcast Blog',
-  description: lang === 'pl'
-    ? 'Blog techniczny o energii słonecznej i prognozowaniu PV'
-    : 'Technical blog about solar energy and PV forecasting',
+  name: t(lang).blogName,
+  description: t(lang).blogDescription,
   inLanguage: lang,
   url: new URL(`/blog/${lang}/`, Astro.site).href,
 };
 ---
 
 <BaseLayout
-  title={lang === 'pl' ? 'Blog' : 'Blog'}
-  description={lang === 'pl'
-    ? 'Blog techniczny o energii słonecznej i prognozowaniu PV'
-    : 'Technical blog about solar energy and PV forecasting'}
+  title={t(lang).blogTitle}
+  description={t(lang).blogDescription}
   lang={lang}
-  translationUrl={translationUrl}
+  alternates={alternates}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <Header lang={lang} translationUrl={translationUrl} />
+  <Header lang={lang} alternates={alternates} />
 
   <main class="listing-main">
     <div class="listing-header reveal">
-      <h1>{lang === 'pl' ? 'Blog' : 'Blog'}</h1>
-      <p class="listing-subtitle">
-        {lang === 'pl'
-          ? 'Artykuły o energii słonecznej, prognozowaniu PV i fizyce solarnej'
-          : 'Articles about solar energy, PV forecasting, and solar physics'}
-      </p>
+      <h1>{t(lang).blogTitle}</h1>
+      <p class="listing-subtitle">{t(lang).blogSubtitle}</p>
     </div>
 
     <SearchWidget lang={lang} />
@@ -75,11 +70,11 @@ const jsonLd = {
     {heroPost && (
       <a href={`/blog/${lang}/${heroPost.id.split('/').pop()}/`} class="hero-card reveal">
         <div class="hero-content">
-          <span class="hero-badge">{lang === 'pl' ? 'Najnowszy' : 'Latest'}</span>
+          <span class="hero-badge">{t(lang).latest}</span>
           <h2>{heroPost.data.title}</h2>
           <p>{heroPost.data.description}</p>
           <span class="hero-date">
-            {heroPost.data.date.toLocaleDateString(lang === 'pl' ? 'pl-PL' : 'en-US', {
+            {heroPost.data.date.toLocaleDateString(dateLocale(lang), {
               year: 'numeric', month: 'long', day: 'numeric'
             })}
           </span>

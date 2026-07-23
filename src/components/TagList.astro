@@ -1,7 +1,9 @@
 ---
+import type { BlogLang } from '../data/i18n';
+
 interface Props {
   tags: string[];
-  lang: 'en' | 'pl';
+  lang: BlogLang;
   linked?: boolean;
 }
 

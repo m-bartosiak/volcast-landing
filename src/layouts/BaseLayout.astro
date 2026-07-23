@@ -1,10 +1,11 @@
 ---
 import '../styles/global.css';
+import { OG_LOCALE, type BlogLang } from '../data/i18n';
 
 interface Props {
   title: string;
   description: string;
-  lang: 'en' | 'pl';
+  lang: BlogLang;
   canonicalUrl?: string;
   ogImage?: string;
   ogTitle?: string;
@@ -75,7 +76,7 @@ const xDefaultUrl =
   <meta property="og:type" content={ogType} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
-  <meta property="og:locale" content={lang === 'pl' ? 'pl_PL' : 'en_US'} />
+  <meta property="og:locale" content={OG_LOCALE[lang] ?? 'en_US'} />
 
   <!-- RSS autodiscovery -->
   <link

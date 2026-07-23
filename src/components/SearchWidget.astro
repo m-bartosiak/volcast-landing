@@ -1,12 +1,14 @@
 ---
+import { t, type BlogLang } from '../data/i18n';
+
 interface Props {
-  lang: 'en' | 'pl';
+  lang: BlogLang;
 }
 
 const { lang } = Astro.props;
 ---
 
-<div class="search-wrapper" id="search" data-lang={lang}></div>
+<div class="search-wrapper" id="search" data-lang={lang} data-placeholder={t(lang).searchPlaceholder}></div>
 
 <script is:inline>
   async function initSearch() {
@@ -20,7 +22,7 @@ const { lang } = Astro.props;
 
     var input = document.createElement('input');
     input.type = 'search';
-    input.placeholder = lang === 'pl' ? 'Szukaj artykułów...' : 'Search articles...';
+    input.placeholder = wrapper.dataset.placeholder || 'Search articles...';
     input.className = 'search-input';
 
     var results = document.createElement('div');

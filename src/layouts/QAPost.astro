@@ -1,0 +1,166 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CallToAction from '../components/CallToAction.astro';
+import { getCollection } from 'astro:content';
+import { t, type BlogLang } from '../data/i18n';
+
+interface Props {
+  entry: any;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const lang = data.lang as BlogLang;
+const slug = entry.id.split('/').pop()!;
+
+const allQA = await getCollection('qa', ({ data: d }) => !d.draft);
+
+// hreflang po translationKey (topic_id) — slugi Q&A też są przetłumaczone per język.
+const alternates = data.translationKey
+  ? allQA
+      .filter((q) => q.data.translationKey === data.translationKey && q.data.lang !== lang)
+      .map((q) => ({ lang: q.data.lang, url: `/blog/${q.data.lang}/q/${q.id.split('/').pop()}/` }))
+  : [];
+
+// Powiązane pytania: ta sama kategoria i język, bez siebie (max 4).
+const related = allQA
+  .filter((q) => q.data.lang === lang && data.category && q.data.category === data.category && q.id !== entry.id)
+  .slice(0, 4)
+  .map((q) => ({ title: q.data.title, slug: q.id.split('/').pop()! }));
+
+const guideUrl = data.guide ? `/blog/${lang}/${data.guide}/` : undefined;
+const canonicalUrl = new URL(`/blog/${lang}/q/${slug}/`, Astro.site).href;
+
+// JSON-LD: FAQPage (pytanie + krótka odpowiedź) + BreadcrumbList (pod PAA / AI Overviews).
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  inLanguage: lang,
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: data.title,
+      acceptedAnswer: { '@type': 'Answer', text: data.description },
+    },
+  ],
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: t(lang).blogName, item: new URL(`/blog/${lang}/`, Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: t(lang).qaIndexTitle, item: new URL(`/blog/${lang}/q/`, Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: data.title, item: canonicalUrl },
+  ],
+};
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  lang={lang}
+  canonicalUrl={canonicalUrl}
+  ogTitle={data.seo?.ogTitle}
+  ogDescription={data.seo?.ogDescription}
+  keywords={data.seo?.keywords}
+  alternates={alternates}
+  ogType="article"
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+
+  <Header lang={lang} alternates={alternates} />
+
+  <main class="qa-layout">
+    <article class="qa-article" data-pagefind-body data-pagefind-meta={`lang:${lang}`}>
+      <nav class="qa-breadcrumb" aria-label="Breadcrumb">
+        <a href={`/blog/${lang}/`}>{t(lang).blogName}</a>
+        <span>/</span>
+        <a href={`/blog/${lang}/q/`}>{t(lang).qaIndexTitle}</a>
+      </nav>
+
+      <h1>{data.title}</h1>
+
+      <div class="prose">
+        <slot />
+      </div>
+
+      {guideUrl && (
+        <p class="qa-guide">
+          {t(lang).qaFullGuide}: <a href={guideUrl}>{data.guide}</a>
+        </p>
+      )}
+
+      {related.length > 0 && (
+        <aside class="qa-related">
+          <h2>{t(lang).qaRelated}</h2>
+          <ul>
+            {related.map((r) => (
+              <li><a href={`/blog/${lang}/q/${r.slug}/`}>{r.title}</a></li>
+            ))}
+          </ul>
+        </aside>
+      )}
+
+      <CallToAction lang={lang} />
+    </article>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
+
+<style>
+  .qa-layout {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  .qa-article {
+    background: var(--article-bg);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+  }
+  .qa-breadcrumb {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .qa-breadcrumb a { color: var(--text-muted); }
+  .qa-breadcrumb a:hover { color: var(--primary); }
+  .qa-article h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+  }
+  .qa-guide {
+    margin-top: 2rem;
+    padding: 0.85rem 1rem;
+    background: var(--primary-glow);
+    border: 1px solid var(--surface-border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .qa-related {
+    border-top: 1px solid var(--divider);
+    padding-top: 2rem;
+    margin-top: 2.5rem;
+  }
+  .qa-related h2 { font-size: 18px; margin-bottom: 0.75rem; }
+  .qa-related ul { list-style: none; padding: 0; }
+  .qa-related li { margin-bottom: 0.5rem; }
+  .qa-related a { color: var(--link-prose); font-size: 15px; }
+  .qa-related a:hover { color: var(--link-hover); }
+
+  @media (max-width: 640px) {
+    .qa-article { padding: 1.5rem; }
+    .qa-article h1 { font-size: 24px; }
+  }
+</style>

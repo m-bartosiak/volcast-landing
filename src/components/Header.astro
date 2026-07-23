@@ -1,13 +1,14 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import type { BlogLang } from '../data/i18n';
 
 interface Props {
-  lang: 'en' | 'pl';
-  translationUrl?: string;
+  lang: BlogLang;
+  alternates?: { lang: string; url: string }[];
   activePage?: 'home' | 'blog';
 }
 
-const { lang, translationUrl, activePage = 'blog' } = Astro.props;
+const { lang, alternates = [], activePage = 'blog' } = Astro.props;
 ---
 
 <header class="site-header" id="siteHeader">
@@ -32,7 +33,7 @@ const { lang, translationUrl, activePage = 'blog' } = Astro.props;
       <a href={`/blog/${lang}/`} class={activePage === 'blog' ? 'active' : ''}>Blog</a>
     </nav>
 
-    <LanguageSwitcher lang={lang} translationUrl={translationUrl} />
+    <LanguageSwitcher lang={lang} alternates={alternates} />
   </div>
 </header>
 

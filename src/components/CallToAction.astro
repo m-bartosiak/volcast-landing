@@ -1,11 +1,13 @@
 ---
+import type { BlogLang } from '../data/i18n';
+
 interface Props {
-  lang: 'en' | 'pl';
+  lang: BlogLang;
 }
 
 const { lang } = Astro.props;
 
-const text = {
+const text: Record<BlogLang, { heading: string; body: string; cta: string }> = {
   en: {
     heading: 'Try Volcast',
     body: 'Get accurate solar production forecasts powered by physics. No inverter login required.',
@@ -16,9 +18,14 @@ const text = {
     body: 'Dok\u0142adne prognozy produkcji solarnej oparte na fizyce. Bez logowania do falownika.',
     cta: 'Pobierz za darmo',
   },
+  de: {
+    heading: 'Volcast testen',
+    body: 'Pr\u00E4zise, physikbasierte PV-Prognosen. Kein Wechselrichter-Login n\u00F6tig.',
+    cta: 'Kostenlos laden',
+  },
 };
 
-const t = text[lang];
+const t = text[lang] ?? text.en;
 ---
 
 <aside class="cta-section">

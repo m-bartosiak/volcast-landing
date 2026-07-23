@@ -1,11 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 import { SERIES } from '../data/series';
+import { t, type BlogLang } from '../data/i18n';
 
 interface Props {
   series: string;
   seriesOrder: number;
-  lang: 'en' | 'pl';
+  lang: BlogLang;
 }
 
 const { series, seriesOrder, lang } = Astro.props;
@@ -27,13 +28,13 @@ const seriesMeta = SERIES[series]?.[lang];
     <div class="nav-links">
       {prev ? (
         <a href={`/blog/${lang}/${prev.id.split('/').pop()}/`} class="nav-prev">
-          <span class="nav-dir">{lang === 'pl' ? '\u2190 Poprzedni' : '\u2190 Previous'}</span>
+          <span class="nav-dir">{t(lang).prev}</span>
           <span class="nav-title">{prev.data.title}</span>
         </a>
       ) : <div />}
       {next ? (
         <a href={`/blog/${lang}/${next.id.split('/').pop()}/`} class="nav-next">
-          <span class="nav-dir">{lang === 'pl' ? 'Nast\u0119pny \u2192' : 'Next \u2192'}</span>
+          <span class="nav-dir">{t(lang).next}</span>
           <span class="nav-title">{next.data.title}</span>
         </a>
       ) : <div />}

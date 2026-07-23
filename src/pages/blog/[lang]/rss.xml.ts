@@ -1,13 +1,14 @@
 import type { APIContext } from 'astro';
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { LANGS, t, type BlogLang } from '../../../data/i18n';
 
 export function getStaticPaths() {
-  return [{ params: { lang: 'en' } }, { params: { lang: 'pl' } }];
+  return LANGS.map((lang) => ({ params: { lang } }));
 }
 
 export async function GET(context: APIContext) {
-  const lang = context.params.lang as 'en' | 'pl';
+  const lang = context.params.lang as BlogLang;
   const posts = await getCollection('blog', ({ data }) =>
     !data.draft && data.lang === lang
   );
@@ -15,9 +16,7 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: `Volcast Blog (${lang.toUpperCase()})`,
-    description: lang === 'pl'
-      ? 'Blog techniczny o energii słonecznej i prognozowaniu PV'
-      : 'Technical blog about solar energy and PV forecasting',
+    description: t(lang).blogDescription,
     site: context.site!,
     customData: `<language>${lang}</language>`,
     items: posts.map(post => {

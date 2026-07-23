@@ -2,18 +2,19 @@
 import ReadingTime from './ReadingTime.astro';
 import TagList from './TagList.astro';
 import { SERIES } from '../data/series';
+import { t, dateLocale, type BlogLang } from '../data/i18n';
 
 interface Props {
   date: Date;
   updated?: Date;
   tags: string[];
-  lang: 'en' | 'pl';
+  lang: BlogLang;
   content: string;
   series?: string;
 }
 
 const { date, updated, tags, lang, content, series } = Astro.props;
-const dateStr = date.toLocaleDateString(lang === 'pl' ? 'pl-PL' : 'en-US', {
+const dateStr = date.toLocaleDateString(dateLocale(lang), {
   year: 'numeric', month: 'long', day: 'numeric'
 });
 const seriesMeta = series ? SERIES[series]?.[lang] : undefined;
@@ -24,7 +25,7 @@ const seriesMeta = series ? SERIES[series]?.[lang] : undefined;
     <time datetime={date.toISOString()}>{dateStr}</time>
     {updated && (
       <span class="updated">
-        ({lang === 'pl' ? 'zaktualizowano' : 'updated'} {updated.toLocaleDateString(lang === 'pl' ? 'pl-PL' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })})
+        ({t(lang).updated} {updated.toLocaleDateString(dateLocale(lang), { year: 'numeric', month: 'short', day: 'numeric' })})
       </span>
     )}
     <span class="separator">·</span>

@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Header from '../../../../components/Header.astro';
+import Footer from '../../../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import { LANGS, t, type BlogLang } from '../../../../data/i18n';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: BlogLang };
+const alternates = LANGS.filter((l) => l !== lang).map((l) => ({
+  lang: l,
+  url: `/blog/${l}/q/`,
+}));
+
+const entries = (await getCollection('qa', ({ data }) => !data.draft && data.lang === lang))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Grupowanie po kategorii (k1–k6). Kategorie bez nazwy wyświetlamy pod kodem.
+const byCategory = new Map<string, typeof entries>();
+for (const entry of entries) {
+  const cat = entry.data.category ?? 'other';
+  if (!byCategory.has(cat)) byCategory.set(cat, []);
+  byCategory.get(cat)!.push(entry);
+}
+const categories = [...byCategory.keys()].sort();
+---
+
+<BaseLayout
+  title={t(lang).qaIndexTitle}
+  description={t(lang).qaIndexSubtitle}
+  lang={lang}
+  alternates={alternates}
+>
+  <Header lang={lang} alternates={alternates} />
+
+  <main class="qa-index">
+    <h1>{t(lang).qaIndexTitle}</h1>
+    <p class="qa-index-subtitle">{t(lang).qaIndexSubtitle}</p>
+    <a href={`/blog/${lang}/`} class="back-link">{t(lang).backToBlog}</a>
+
+    {categories.map((cat) => (
+      <section class="qa-cat">
+        <h2>{cat}</h2>
+        <ul class="qa-list">
+          {byCategory.get(cat)!.map((q) => (
+            <li><a href={`/blog/${lang}/q/${q.id.split('/').pop()}/`}>{q.data.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
+
+<style>
+  .qa-index {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  .qa-index h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  .qa-index-subtitle { color: var(--text-muted); font-size: 17px; margin-bottom: 1rem; }
+  .back-link {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  .back-link:hover { color: var(--text-secondary); }
+  .qa-cat { margin-bottom: 2rem; }
+  .qa-cat h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+  }
+  .qa-list { list-style: none; padding: 0; }
+  .qa-list li { margin-bottom: 0.5rem; }
+  .qa-list a { color: var(--text-secondary); font-size: 16px; }
+  .qa-list a:hover { color: var(--primary); }
+</style>

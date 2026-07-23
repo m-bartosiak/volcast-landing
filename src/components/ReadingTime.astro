@@ -1,14 +1,16 @@
 ---
+import { READING_WPM, t, type BlogLang } from '../data/i18n';
+
 interface Props {
   content: string;
-  lang: 'en' | 'pl';
+  lang: BlogLang;
 }
 
 const { content, lang } = Astro.props;
 const words = content.trim().split(/\s+/).length;
-const wpm = lang === 'pl' ? 180 : 200;
+const wpm = READING_WPM[lang] ?? 200;
 const minutes = Math.max(1, Math.round(words / wpm));
-const label = lang === 'pl' ? `${minutes} min czytania` : `${minutes} min read`;
+const label = `${minutes} ${t(lang).readingSuffix}`;
 ---
 
 <span class="reading-time">{label}</span>
