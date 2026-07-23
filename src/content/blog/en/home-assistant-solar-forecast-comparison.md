@@ -51,7 +51,7 @@ In Home Assistant you get out of the box: `sensor.volcast_energy_today`, `sensor
 4. Generate an API key in the Volcast app (Premium) — `vk_...`.
 5. *Settings → Devices & Services → Add integration* → "Volcast" → paste the key. Sensors appear automatically.
 
-> [SCREENSHOT PLACEHOLDER: Energy Dashboard with Volcast sensors + an example heater automation]
+![Volcast forecast shown right inside the Home Assistant Energy Dashboard, overlaid on real GoodWe production](/img/blog/ha-energy-dashboard-en.webp)
 
 ## Which one for whom
 

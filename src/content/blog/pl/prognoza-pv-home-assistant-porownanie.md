@@ -51,7 +51,7 @@ W Home Assistant dostajesz z pudełka: `sensor.volcast_energy_today`, `sensor.vo
 4. Wygeneruj klucz API w aplikacji Volcast (Premium) — `vk_...`.
 5. *Ustawienia → Urządzenia i usługi → Dodaj integrację* → „Volcast" → wklej klucz. Sensory pojawiają się automatycznie.
 
-> [MIEJSCE NA SCREENSHOT: Energy Dashboard z sensorami Volcast + przykładowa automatyzacja grzałki]
+![Prognoza Volcast wprost w Energy Dashboard Home Assistant, nałożona na realną produkcję GoodWe](/img/blog/ha-energy-dashboard-pl.webp)
 
 ## Które rozwiązanie dla kogo
 
