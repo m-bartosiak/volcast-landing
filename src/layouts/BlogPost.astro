@@ -7,6 +7,7 @@ import TableOfContents from '../components/TableOfContents.astro';
 import SeriesNav from '../components/SeriesNav.astro';
 import CallToAction from '../components/CallToAction.astro';
 import { getCollection } from 'astro:content';
+import { getTranslatedSlug } from '../data/translations';
 
 interface Props {
   post: any;
@@ -17,14 +18,21 @@ const { post, headings } = Astro.props;
 const { data } = post;
 const lang = data.lang as 'en' | 'pl';
 
-// Build translation URL: check if same slug exists in other language
+// Parowanie tłumaczeń: slugi są przetłumaczone per język, więc parujemy po
+// mapie topiców (src/data/translations.ts), awaryjnie po identycznym slugu.
 const otherLang = lang === 'en' ? 'pl' : 'en';
 const slug = post.id.split('/').pop()!;
 const allPosts = await getCollection('blog', ({ data: d }) => !d.draft);
-const translation = allPosts.find(p =>
-  p.data.lang === otherLang && p.id.split('/').pop() === slug
-);
-const translationUrl = translation ? `/blog/${otherLang}/${slug}/` : undefined;
+
+const mappedSlug = getTranslatedSlug(lang, slug, otherLang);
+const candidateSlug = mappedSlug
+  ?? (allPosts.some(p => p.data.lang === otherLang && p.id.split('/').pop() === slug) ? slug : undefined);
+// Emituj alternat tylko gdy docelowy wpis realnie istnieje i nie jest draftem.
+const translationExists = candidateSlug
+  ? allPosts.some(p => p.data.lang === otherLang && p.id.split('/').pop() === candidateSlug)
+  : false;
+const translationUrl = translationExists ? `/blog/${otherLang}/${candidateSlug}/` : undefined;
+const alternates = translationUrl ? [{ lang: otherLang, url: translationUrl }] : [];
 
 // Build related posts data
 let relatedPostsData: { title: string; slug: string; lang: string }[] = [];
@@ -61,7 +69,8 @@ const jsonLd = {
   ogTitle={data.seo?.ogTitle}
   ogDescription={data.seo?.ogDescription}
   keywords={data.seo?.keywords}
-  translationUrl={translationUrl}
+  alternates={alternates}
+  ogType="article"
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 

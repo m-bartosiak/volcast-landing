@@ -7,6 +7,8 @@ export default defineConfig({
   site: 'https://volcast.app',
   integrations: [
     sitemap({
+      // Strony tagów są noindex — nie umieszczaj ich w sitemapie (sprzeczny sygnał dla Google).
+      filter: (page) => !page.includes('/tag/'),
       customSitemaps: [
         'https://volcast.app/sitemap-landing.xml',
       ],

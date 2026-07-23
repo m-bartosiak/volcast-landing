@@ -11,6 +11,8 @@ interface Props {
   ogDescription?: string;
   keywords?: string[];
   translationUrl?: string;
+  alternates?: { lang: string; url: string }[];
+  ogType?: string;
   noindex?: boolean;
 }
 
@@ -24,6 +26,8 @@ const {
   ogDescription,
   keywords,
   translationUrl,
+  alternates,
+  ogType = 'website',
   noindex,
 } = Astro.props;
 
@@ -31,6 +35,18 @@ const otherLang = lang === 'en' ? 'pl' : 'en';
 const siteTitle = `${title} — Volcast Blog`;
 const displayOgTitle = ogTitle || title;
 const displayOgDescription = ogDescription || description;
+
+// Alternaty hreflang. Preferuj jawną listę `alternates`, awaryjnie pojedynczy
+// `translationUrl` (dla listingów/tagów/serii). hreflang wymaga absolutnych URL-i
+// — normalizujemy każdy przez Astro.site. Zawsze emitujemy self + x-default.
+const rawAlternates =
+  alternates ?? (translationUrl ? [{ lang: otherLang, url: translationUrl }] : []);
+const hreflangLinks = [{ lang, url: canonicalUrl }, ...rawAlternates].map((a) => ({
+  lang: a.lang,
+  url: new URL(a.url, Astro.site).href,
+}));
+const xDefaultUrl =
+  (hreflangLinks.find((a) => a.lang === 'en') ?? hreflangLinks[0]).url;
 ---
 
 <!DOCTYPE html>
@@ -48,18 +64,15 @@ const displayOgDescription = ogDescription || description;
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href={canonicalUrl} />
-  <link rel="alternate" hreflang={lang} href={canonicalUrl} />
-  {translationUrl && (
-    <link rel="alternate" hreflang={otherLang} href={translationUrl} />
-  )}
-  {!translationUrl && (
-    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
-  )}
+  {hreflangLinks.map((a) => (
+    <link rel="alternate" hreflang={a.lang} href={a.url} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
 
   <!-- Open Graph -->
   <meta property="og:title" content={displayOgTitle} />
   <meta property="og:description" content={displayOgDescription} />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={ogType} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
   <meta property="og:locale" content={lang === 'pl' ? 'pl_PL' : 'en_US'} />
