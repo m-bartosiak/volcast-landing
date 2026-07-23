@@ -41,7 +41,7 @@ Each evening, a glance at tomorrow's forecast. Three scenarios:
 
 The point is that the decision takes 30 seconds in the evening — not standing at the window in the morning reading clouds. I use [Volcast](https://volcast.app/en/) for this: the app shows an hourly forecast for my specific setup (azimuth, tilt, shading), and the evening "tomorrow's forecast" notification saves me when the weather flips.
 
-> [SCREENSHOT PLACEHOLDER: hourly forecast with the surplus window highlighted]
+![Hourly solar production curve on a clear day with the midday surplus window highlighted](/img/blog/hourly-surplus-en.webp)
 
 ## Level up: automate instead of remembering
 

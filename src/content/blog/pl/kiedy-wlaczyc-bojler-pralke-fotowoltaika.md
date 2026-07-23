@@ -41,7 +41,7 @@ Wieczorem zerkam w prognozę na jutro. Trzy scenariusze:
 
 Kluczowe jest to, że decyzję podejmuję wieczorem w 30 sekund, a nie stojąc rano przy oknie i wróżąc z chmur. Używam do tego [Volcast](https://volcast.app/pl/) — aplikacja pokazuje prognozę godzinową dla mojej konkretnej instalacji (azymut, kąt, zacienienie), a wieczorne powiadomienie z prognozą na jutro ratuje przed pomyłką, gdy pogoda się przestawi.
 
-> [MIEJSCE NA SCREENSHOT: prognoza godzinowa z zaznaczonym oknem nadwyżki]
+![Krzywa godzinowej produkcji PV w pogodny dzień z zaznaczonym oknem nadwyżki](/img/blog/hourly-surplus-pl.webp)
 
 ## Poziom wyżej: automatyzacja zamiast pamiętania
 

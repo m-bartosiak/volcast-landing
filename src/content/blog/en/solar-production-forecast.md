@@ -43,7 +43,7 @@ The most effective approach is comparing forecasts against actual production and
 
 In practice: you log your actual daily yield, and after a couple of weeks the model "knows" things about your system that no datasheet contains — the real impact of autumn shading, actual inverter losses, panel degradation. On my own 5.2 kWp system, the calibrated next-day forecast is off by less than 10% on sunny days.
 
-> [CHART PLACEHOLDER: forecast vs. actual production, 14 days — real data from the founder's installation]
+![14-day forecast vs actual production on a 5.2 kWp system — Kalman calibration cuts the error to under 10%](/img/blog/forecast-vs-actual-14d-en.webp)
 
 ## What a production forecast actually does for you
 

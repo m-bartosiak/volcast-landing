@@ -43,7 +43,7 @@ Najskuteczniejsze podejście to porównywanie prognozy z rzeczywistą produkcją
 
 W praktyce: wpisujesz faktyczny dzienny uzysk, a model po kilkunastu dniach „wie" o Twojej instalacji rzeczy, których nie było w żadnej specyfikacji — realny wpływ zacienienia jesienią, rzeczywiste straty falownika, degradację paneli. Na mojej własnej instalacji 5,2 kWp po kalibracji prognoza dnia następnego myli się w słoneczne dni o mniej niż 10%.
 
-> [MIEJSCE NA WYKRES: prognoza vs rzeczywista produkcja z instalacji założyciela, 14 dni — unikalna grafika, warta osobnego udostępnienia na grupach]
+![Prognoza vs rzeczywista produkcja przez 14 dni na instalacji 5,2 kWp — kalibracja Kalmana schodzi poniżej 10% błędu](/img/blog/forecast-vs-actual-14d-pl.webp)
 
 ## Co realnie daje Ci prognoza produkcji
 

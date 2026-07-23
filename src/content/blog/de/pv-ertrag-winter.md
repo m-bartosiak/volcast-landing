@@ -14,7 +14,9 @@ Kurz gesagt: Im Winter liefert eine PV-Anlage in Mitteleuropa typischerweise **3
 
 ## Reale Zahlen einer 5,2-kWp-Anlage
 
-> [PLATZ FÜR TABELLE/GRAFIK: reale Monatserträge Nov–Feb der Gründer-Anlage + bester und schlechtester Tag jedes Monats]
+Die Realität, Monat für Monat: **~79 kWh im November, ~32 kWh im Dezember** (kaum 1 kWh/Tag — der Jahrestiefpunkt) und **~100 kWh im Februar**, sobald um den 13. der Schnee weg war. Bester Tag des Zeitraums: 12 kWh Ende Februar; die schlechtesten nahe null unter Schnee.
+
+![Reale winterliche Tagesproduktion einer 5,2-kWp-Anlage — November, Dezember, Februar](/img/blog/winter-production-de.webp)
 
 Die Größenordnung: November 100–150 kWh, Dezember 60–100 kWh, Januar 80–130 kWh, Februar 150–250 kWh. Aber Mittelwerte täuschen — die Winterproduktion ist extrem „klumpig": 60–70 % des Monatsertrags fallen oft auf 5–7 sonnige Tage, der Rest des Monats dümpelt.
 

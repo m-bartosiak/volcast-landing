@@ -41,7 +41,7 @@ Abends ein Blick auf die Prognose für morgen. Drei Szenarien:
 
 Der Punkt ist: Die Entscheidung dauert abends 30 Sekunden — statt morgens aus dem Fenster zu schauen und Wolken zu deuten. Ich nutze dafür [Volcast](https://volcast.app/de/): Die App zeigt die Stundenprognose für meine konkrete Anlage (Azimut, Neigung, Verschattung), und die abendliche Benachrichtigung mit der Prognose für morgen bewahrt mich vor Fehlplanung, wenn das Wetter umschlägt.
 
-> [PLATZ FÜR SCREENSHOT: Stundenprognose mit markiertem Überschussfenster]
+![Stündliche PV-Produktionskurve an einem klaren Tag mit markiertem Überschussfenster](/img/blog/hourly-surplus-de.webp)
 
 ## Nächste Stufe: automatisieren statt dran denken
 

@@ -14,7 +14,9 @@ The short version: in winter, a PV system in central/northern Europe typically p
 
 ## Real numbers from a 5.2 kWp system
 
-> [PLACEHOLDER: real monthly yields Nov–Feb from the founder's system + best and worst day of each month]
+The reality, month by month: **~79 kWh in November, ~32 kWh in December** (barely 1 kWh/day — the yearly floor), and **~100 kWh in February** once the snow cleared around the 13th. Best day of the stretch: 12 kWh in late February; the worst were near zero under snow.
+
+![Real daily winter production of a 5.2 kWp system — November, December and February](/img/blog/winter-production-en.webp)
 
 The order of magnitude: November 100–150 kWh, December 60–100 kWh, January 80–130 kWh, February 150–250 kWh. But averages mislead — winter production is extremely "lumpy": 60–70% of a month's yield often lands on 5–7 sunny days, while the rest of the month trickles.
 

@@ -14,7 +14,9 @@ Krótko: zimą instalacja w Polsce produkuje typowo **3–5% rocznego uzysku na 
 
 ## Realne liczby z instalacji 5,2 kWp
 
-> [MIEJSCE NA TABELĘ/WYKRES: rzeczywista produkcja miesięczna XI–II z instalacji założyciela + najlepszy i najgorszy dzień każdego miesiąca]
+Realia miesiąc po miesiącu: **~79 kWh w listopadzie, ~32 kWh w grudniu** (ledwie 1 kWh/dzień — dno roku) i **~100 kWh w lutym**, gdy śnieg zszedł około 13-go. Najlepszy dzień okresu: 12 kWh pod koniec lutego; najgorsze — bliskie zera pod śniegiem.
+
+![Realna dzienna produkcja zimowa instalacji 5,2 kWp — listopad, grudzień, luty](/img/blog/winter-production-pl.webp)
 
 Rząd wielkości wygląda tak: listopad 100–150 kWh, grudzień 60–100 kWh, styczeń 80–130 kWh, luty 150–250 kWh. Ale średnie mylą — zimowa produkcja jest skrajnie „grudkowata": 60–70% miesięcznego uzysku potrafi przypaść na 5–7 słonecznych dni, a reszta miesiąca to produkcja śladowa.
 

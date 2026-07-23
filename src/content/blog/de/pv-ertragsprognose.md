@@ -43,7 +43,7 @@ Der wirksamste Ansatz: Prognose und tatsächliche Produktion vergleichen und das
 
 In der Praxis: Du trägst den tatsächlichen Tagesertrag ein, und nach zwei bis drei Wochen „weiß" das Modell Dinge über deine Anlage, die in keinem Datenblatt stehen — den realen Verschattungseffekt im Herbst, die tatsächlichen Wechselrichterverluste, die Degradation. Auf meiner eigenen 5,2-kWp-Anlage liegt die Prognose für den Folgetag nach der Kalibrierung an sonnigen Tagen unter 10 % Abweichung.
 
-> [PLATZ FÜR GRAFIK: Prognose vs. tatsächliche Produktion, 14 Tage — echte Daten der Gründer-Anlage]
+![Prognose vs. reale Produktion über 14 Tage auf einer 5,2-kWp-Anlage — Kalman-Kalibrierung unter 10% Fehler](/img/blog/forecast-vs-actual-14d-de.webp)
 
 ## Was dir eine Ertragsprognose konkret bringt
 
