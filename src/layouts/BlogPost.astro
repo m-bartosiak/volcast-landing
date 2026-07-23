@@ -8,6 +8,7 @@ import SeriesNav from '../components/SeriesNav.astro';
 import CallToAction from '../components/CallToAction.astro';
 import { getCollection } from 'astro:content';
 import { getClusterSlugs } from '../data/translations';
+import { CLUSTER_LINKS } from '../data/clusters';
 import { LANGS, t, type BlogLang } from '../data/i18n';
 
 interface Props {
@@ -42,13 +43,27 @@ const alternates = candidates
   .filter(c => allPosts.some(p => p.data.lang === c.lang && p.id.split('/').pop() === c.slug))
   .map(c => ({ lang: c.lang, url: `/blog/${c.lang}/${c.slug}/` }));
 
-// Build related posts data
-let relatedPostsData: { title: string; slug: string; lang: string }[] = [];
-if (data.relatedPosts) {
-  relatedPostsData = allPosts
-    .filter(p => p.data.lang === lang && data.relatedPosts!.includes(p.id.split('/').pop()!))
-    .map(p => ({ title: p.data.title, slug: p.id.split('/').pop()!, lang: p.data.lang }));
+// Powiązane posty: frontmatter relatedPosts + relacje klastra (po translationKey,
+// rozwiązane do slugów w tym samym języku — patrz src/data/clusters.ts).
+const relatedSlugs = new Set<string>(data.relatedPosts ?? []);
+if (data.translationKey && CLUSTER_LINKS[data.translationKey]) {
+  const relatedKeys = new Set(CLUSTER_LINKS[data.translationKey]);
+  for (const p of allPosts) {
+    if (p.data.lang === lang && p.data.translationKey && relatedKeys.has(p.data.translationKey)) {
+      relatedSlugs.add(p.id.split('/').pop()!);
+    }
+  }
 }
+relatedSlugs.delete(slug);
+const relatedPostsData = allPosts
+  .filter(p => p.data.lang === lang && relatedSlugs.has(p.id.split('/').pop()!))
+  .map(p => ({ title: p.data.title, slug: p.id.split('/').pop()!, lang: p.data.lang }));
+
+// Częste pytania: Q&A wskazujące na ten post przez pole `guide` (hub → Q&A).
+const allQA = await getCollection('qa', ({ data: d }) => !d.draft);
+const relatedQuestions = allQA
+  .filter(q => q.data.lang === lang && q.data.guide === slug)
+  .map(q => ({ title: q.data.title, slug: q.id.split('/').pop()! }));
 
 // JSON-LD BlogPosting
 const jsonLd = {
@@ -104,6 +119,17 @@ const jsonLd = {
 
       {data.series && data.seriesOrder !== undefined && (
         <SeriesNav series={data.series} seriesOrder={data.seriesOrder} lang={lang} />
+      )}
+
+      {relatedQuestions.length > 0 && (
+        <aside class="common-questions">
+          <h3>{t(lang).commonQuestions}</h3>
+          <ul>
+            {relatedQuestions.map(q => (
+              <li><a href={`/blog/${lang}/q/${q.slug}/`}>{q.title}</a></li>
+            ))}
+          </ul>
+        </aside>
       )}
 
       {relatedPostsData.length > 0 && (
@@ -216,6 +242,17 @@ const jsonLd = {
   .related-posts a:hover {
     color: var(--link-hover);
   }
+
+  .common-questions {
+    border-top: 1px solid var(--divider);
+    padding-top: 2rem;
+    margin-top: 3rem;
+  }
+  .common-questions h3 { font-size: 18px; margin-bottom: 0.75rem; }
+  .common-questions ul { list-style: none; padding: 0; }
+  .common-questions li { margin-bottom: 0.5rem; }
+  .common-questions a { color: var(--link-prose); font-size: 15px; }
+  .common-questions a:hover { color: var(--link-hover); }
 
   @media (max-width: 1024px) {
     .post-layout {

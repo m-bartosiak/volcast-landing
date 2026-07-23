@@ -54,6 +54,7 @@ interface UIStrings {
   qaRelated: string;
   qaIndexTitle: string;
   qaIndexSubtitle: string;
+  commonQuestions: string;
 }
 
 export const UI: Record<BlogLang, UIStrings> = {
@@ -78,6 +79,7 @@ export const UI: Record<BlogLang, UIStrings> = {
     qaRelated: 'Related questions',
     qaIndexTitle: 'Questions & Answers',
     qaIndexSubtitle: 'Short, practical answers to common solar and PV questions',
+    commonQuestions: 'Common questions',
   },
   pl: {
     blogTitle: 'Blog',
@@ -100,6 +102,7 @@ export const UI: Record<BlogLang, UIStrings> = {
     qaRelated: 'Powiązane pytania',
     qaIndexTitle: 'Pytania i odpowiedzi',
     qaIndexSubtitle: 'Krótkie, praktyczne odpowiedzi na częste pytania o fotowoltaikę',
+    commonQuestions: 'Częste pytania',
   },
   de: {
     blogTitle: 'Blog',
@@ -122,6 +125,7 @@ export const UI: Record<BlogLang, UIStrings> = {
     qaRelated: 'Ähnliche Fragen',
     qaIndexTitle: 'Fragen & Antworten',
     qaIndexSubtitle: 'Kurze, praktische Antworten auf häufige Fragen rund um PV',
+    commonQuestions: 'Häufige Fragen',
   },
 };
 
