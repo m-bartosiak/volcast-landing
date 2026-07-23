@@ -17,7 +17,7 @@ Harmonogram działa w słoneczne lato, ale w dni mieszane grzeje z sieci w szczy
 
 ## Co zrobić
 
-1. **Start bez inwestycji:** smart-gniazdko/stycznik + reguła z prognozy („jutro nadwyżka od 11:00" → grzej 11:00–14:00; „jutro pochmurno" → grzej w taniej strefie). W Volcast sensory „energia jutro" i godzina szczytu są dostępne przez integrację HACS.
+1. **Start bez inwestycji:** smart-gniazdko/stycznik + reguła z prognozy („jutro nadwyżka od 11:00" → grzej 11:00–14:00; „jutro pochmurno" → grzej w taniej strefie). W Volcast sensory „energia jutro" i wskaźnik szczytu produkcji są dostępne przez integrację HACS (wymaga Premium).
 2. **W Home Assistant** jedna automatyzacja warunkowa łączy: prognozę jutra, bieżącą moc (jeśli masz pomiar) i strefę taryfy — to poziom „ustaw i zapomnij".
 3. **Router solarny dołóż,** jeśli chcesz wycisnąć watty co do jednego (duża grzałka, zmienna pogoda) — najlepiej działa właśnie w parze z regułą prognozową, która decyduje *czy dziś w ogóle* czekać na słońce.
 4. **Bezpieczeństwo:** zostaw cotygodniowy cykl 60°C+ (legionella) i termostat sprzętowy jako nadrzędny.

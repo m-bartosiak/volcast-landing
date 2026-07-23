@@ -41,7 +41,7 @@ On satellite data quality, Solcast is in a league of its own — it serves utili
 
 Our approach combines a full physical model (irradiance transposition, spectral and temperature corrections, shading profile) with auto-calibration: a Kalman filter compares forecasts with actual production and adjusts the model's parameters. After two to three weeks the forecast knows your roof — chimney shadow at 3 pm included. On my own 5.2 kWp system, next-day error on sunny days drops below 10%.
 
-In Home Assistant you get out of the box: `sensor.volcast_today`, `sensor.volcast_tomorrow`, live power, production peak time and Energy Dashboard integration. Plus 288 five-minute points per day via the REST API — useful for wallbox surplus charging. To be fair: the API requires Premium ($4.49/mo); the free tier is a 2-day forecast in the mobile app.
+In Home Assistant you get out of the box: `sensor.volcast_energy_today`, `sensor.volcast_energy_tomorrow`, live power, a peak-production indicator and Energy Dashboard integration. Plus 288 five-minute points per day via the REST API — useful for wallbox surplus charging. To be fair: the API requires Premium ($4.49/mo); the free tier is a 2-day forecast in the mobile app.
 
 ## Setting up Volcast in HA — 5 steps
 
@@ -63,7 +63,7 @@ In Home Assistant you get out of the box: `sensor.volcast_today`, `sensor.volcas
 Yes — a popular way to start: run both against actual production in the Energy Dashboard for two weeks and keep whichever misses less on *your* system.
 
 **Does Volcast connect to my inverter?**
-No — the forecast is built from satellite data and your system parameters. Actual production for calibration can be logged manually or pulled automatically from an HA energy sensor.
+No — the forecast is built from weather-model (NWP ensemble) irradiance data and your system parameters. Actual production for calibration can be logged manually or pulled automatically from an HA energy sensor.
 
 **Does the integration send data about my home?**
-Nothing beyond your system parameters. No telemetry, no tracking.
+Beyond your system parameters, the integration sends only your real production readings — and only if you opt in to calibration. Nothing else, no tracking.

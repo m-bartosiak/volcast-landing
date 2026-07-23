@@ -30,7 +30,7 @@ Dla właściciela to nie uciążliwość, tylko korzyść: dobrze działający E
 
 ## Jak to się układa w większą całość
 
-Wymóg EMS w programach dotacyjnych to element szerszego trendu: rynek energii przechodzi z modelu „płaska taryfa, sztywne zużycie" na „ceny dynamiczne, elastyczny dom". Magazyn z EMS, taryfa dynamiczna i prognoza produkcji to trzy elementy tej samej układanki — każdy działa osobno, ale dopiero razem tworzą dom, który sam optymalizuje swoje koszty energii. W VolterLabs budujemy dokładnie tę warstwę: Volcast (prognoza) już działa, a sprzętowy EMS zgodny z wymogami programu — Volter Box — przygotowujemy na ten rok.
+Wymóg EMS w programach dotacyjnych to element szerszego trendu: rynek energii przechodzi z modelu „płaska taryfa, sztywne zużycie" na „ceny dynamiczne, elastyczny dom". Magazyn z EMS, taryfa dynamiczna i prognoza produkcji to trzy elementy tej samej układanki — każdy działa osobno, ale dopiero razem tworzą dom, który sam optymalizuje swoje koszty energii. Budujemy dokładnie tę warstwę: Volcast (prognoza) już działa, a sprzętowy EMS zgodny z wymogami programu — Volcast EMS — przygotowujemy na ten rok.
 
 ## FAQ
 

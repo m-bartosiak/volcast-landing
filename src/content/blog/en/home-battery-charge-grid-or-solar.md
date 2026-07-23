@@ -47,4 +47,4 @@ Technically most hybrid systems can; whether it's enabled depends on inverter se
 After losses: from roughly 25–30% between the charge and discharge hour. A typical dynamic-tariff day offers considerably more.
 
 **Do I have to do all this manually?**
-Today, largely yes (or semi-automatically in Home Assistant). Automating this exact loop is the core of the next product we're building at VolterLabs.
+Today, largely yes (or semi-automatically in Home Assistant). Automating this exact loop is the core of the next product we're building, Volcast EMS.

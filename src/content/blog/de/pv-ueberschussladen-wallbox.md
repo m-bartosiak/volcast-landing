@@ -22,7 +22,7 @@ Einphasig lädt ein E-Auto minimal mit ca. 1,4 kW (6 A), üblich sind 3,7 kW, dr
 
 **Mischstrategie.** Unter der Woche lädt das Auto nachts im günstigen Tariffenster nur „bis zur Pendelreichweite" — das Vollmachen wartet auf den nächsten starken PV-Tag. Der abendliche Blick auf die Morgen-Prognose entscheidet, wie viel Platz du im Akku für die Sonne lässt.
 
-**Automatisches Überschussladen.** Die Königsklasse: Eine Wallbox im PV-Modus (nativ oder über Home Assistant / EVCC gesteuert) moduliert den Ladestrom laufend mit dem Überschuss. Hier zahlt sich hohe Prognoseauflösung aus: Volcast liefert über die API 288 5-Minuten-Werte pro Tag — die Automatik weiß, ob die Wolke in 20 Minuten ein kurzer Schatten oder das Ende des Fensters ist, und bricht die Session nicht unnötig ab.
+**Automatisches Überschussladen.** Die Königsklasse: Eine Wallbox im PV-Modus (nativ oder über Home Assistant / EVCC gesteuert) moduliert den Ladestrom laufend mit dem Überschuss. Hier zahlt sich hohe Prognoseauflösung aus: Volcast liefert über die API (benötigt Premium) 288 5-Minuten-Werte pro Tag — die Automatik weiß, ob die Wolke in 20 Minuten ein kurzer Schatten oder das Ende des Fensters ist, und bricht die Session nicht unnötig ab.
 
 ## Die Rechnung
 

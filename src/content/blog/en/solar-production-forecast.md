@@ -1,6 +1,6 @@
 ---
 title: "Solar production forecasting — how to predict tomorrow's PV output accurately"
-description: "How much power will your solar system produce tomorrow? Physics models, satellite data and calibration — how accurate PV forecasting actually works."
+description: "How much power will your solar system produce tomorrow? Physics models, weather-model data and calibration — how accurate PV forecasting actually works."
 date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
@@ -10,7 +10,7 @@ translationKey: "forecast-hub"
 seo:
   ogTitle: "Solar Production Forecast — Predict Tomorrow's PV Output"
 ---
-How much power will your system produce tomorrow? Most solar owners answer "depends on the weather" — and leave it there. Yet PV output can be forecast with 85–95% accuracy on sunny days, hour by hour. All it takes is combining satellite irradiance data with a physical model of your specific system: its azimuth, tilt, capacity and shading.
+How much power will your system produce tomorrow? Most solar owners answer "depends on the weather" — and leave it there. Yet PV output can be forecast to around 85% accuracy after calibration on sunny days, hour by hour. All it takes is combining weather-model (NWP ensemble) irradiance data with a physical model of your specific system: its azimuth, tilt, capacity and shading.
 
 This article explains how professional production forecasting works, why a regular weather app isn't enough, and how to use a forecast in practice — so you consume your own power when you have it, instead of exporting it to the grid for a fraction of its value.
 
@@ -24,13 +24,13 @@ This article explains how professional production forecasting works, why a regul
 
 **Temperature works against you.** Panels lose efficiency as cell temperature rises (typically ~0.3–0.4% per degree above 25 °C). That's why record production days are often a sunny, cool spring day rather than a scorching midsummer one.
 
-A good production forecast therefore has to run the full chain: **satellite irradiance data → solar position model → your system's geometry and parameters → temperature and spectral corrections → kWh for every hour**.
+A good production forecast therefore has to run the full chain: **weather-model (NWP ensemble) irradiance data → solar position model → your system's geometry and parameters → temperature and spectral corrections → kWh for every hour**.
 
 ## How physics-based forecasting works
 
 Modern PV forecasting systems — from utility-scale tools to prosumer apps — follow the same scheme:
 
-1. **Inputs:** satellite-based irradiance measurements and forecasts (GHI, DNI, DHI), plus numerical weather models supplying temperature and wind.
+1. **Inputs:** weather-model (NWP ensemble) irradiance forecasts (GHI, DNI, DHI), plus numerical weather models supplying temperature and wind.
 2. **Transposition model:** converting irradiance from the horizontal plane onto the plane of your panels, for the sun's position at every hour.
 3. **System model:** peak power, inverter efficiency, system losses, shading as a function of time of day and season.
 4. **Output:** the production curve — today, tomorrow, the days ahead.
@@ -62,10 +62,10 @@ In practice: you log your actual daily yield, and after a couple of weeks the mo
 ## FAQ
 
 **How accurate can a solar production forecast be?**
-After calibration, typically 85–95% on sunny days. The hardest are days with fast-moving cumulus — even the best models scatter more there, though the daily total usually stays reliable.
+After calibration, typically around 85% on sunny days. The hardest are days with fast-moving cumulus — even the best models scatter more there, though the daily total usually stays reliable.
 
 **Do I need access to my inverter to forecast production?**
-No. The forecast is built from satellite data and your system's parameters. Inverter access only helps to log actual production automatically for calibration — entering it manually once a day works just as well.
+No. The forecast is built from weather-model (NWP ensemble) data and your system's parameters. Inverter access only helps to log actual production automatically for calibration — entering it manually once a day works just as well.
 
 **What's the difference between an irradiance forecast and a production forecast?**
 An irradiance forecast tells you how much solar energy will arrive. A production forecast runs it through your specific system's geometry and parameters to give kilowatt-hours off your roof.

@@ -22,7 +22,7 @@ Die typischen Gründe aus der Home-Assistant-Community: die Prognose passt nicht
 
 **Solcast** — die Industrie-Option: hochwertige Satelliten-Einstrahlungsdaten, Hobby-Plan mit Tageslimit, Tuning an eigene Daten möglich. Kern ist das API — eine Endnutzer-App gibt es nicht.
 
-**Volcast** — Physik-Engine auf Satellitendaten plus automatische Kalman-Kalibrierung an deine reale Produktion, verpackt in eine Handy-App (iOS/Android, 13 Sprachen) mit Push-Benachrichtigungen, dazu offizielle HACS-Integration und API im Premium-Plan (4,49 $/Monat).
+**Volcast** — Physik-Engine auf Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) plus automatische Kalman-Kalibrierung an deine reale Produktion, verpackt in eine Handy-App (iOS/Android, 13 Sprachen) mit Push-Benachrichtigungen, dazu offizielle HACS-Integration und API im Premium-Plan (4,49 $/Monat).
 
 ## Vergleichstabelle
 
@@ -53,7 +53,7 @@ Glaub keiner Tabelle — auch unserer nicht. Alle drei sind kostenlos startbar: 
 ## FAQ
 
 **Nutzt Volcast Daten von Forecast.Solar oder Solcast?**
-Nein — eigene Physik-Engine auf Satelliten-Einstrahlungsdaten und Wettermodellen, mit eigener Kalibrierungsschicht.
+Nein — eigene Physik-Engine auf Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble), mit eigener Kalibrierungsschicht.
 
 **Läuft Volcast parallel zu Forecast.Solar in Home Assistant?**
 Ja, die Integrationen stören sich nicht — ein übliches Setup für den eigenen Benchmark.

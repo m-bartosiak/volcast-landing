@@ -26,7 +26,7 @@ Grzałka w zasobniku CWU to najtańszy „magazyn energii": nadwyżkę z połudn
 
 ## 4. Zautomatyzuj — niech dom sam pilnuje nadwyżki
 
-Home Assistant + sensor prognozy + inteligentne gniazdka: grzałka włącza się, gdy przewidywana produkcja przekracza próg, i przełącza na tanią taryfę w pochmurne dni. Raz skonfigurowane, działa bez Twojego udziału. Volcast ma oficjalną integrację HACS z sensorami „energia dziś/jutro" i mocą na żywo.
+Home Assistant + sensor prognozy + inteligentne gniazdka: grzałka włącza się, gdy przewidywana produkcja przekracza próg, i przełącza na tanią taryfę w pochmurne dni. Raz skonfigurowane, działa bez Twojego udziału. Volcast ma oficjalną integrację HACS (wymaga Premium) z sensorami „energia dziś/jutro" i mocą na żywo.
 
 ## 5. Ładuj auto nadwyżką
 

@@ -18,7 +18,7 @@ Ohne Messung arbeiten Automationen blind; ohne Prognose nur reaktiv (sie schalte
 ## Was du tun kannst
 
 1. **Messung:** Wechselrichter integrieren (native Integration / Modbus TCP / SunSpec) und das Energy Dashboard konfigurieren — allein das zeigt die Eigenverbrauchsquote Tag für Tag.
-2. **Prognose:** einen Ertragsprognose-Sensor hinzufügen (die Volcast-Integration aus HACS liefert Energie heute/morgen, prognostizierte Momentanleistung und die Peak-Stunde — API im Premium-Plan).
+2. **Prognose:** einen Ertragsprognose-Sensor hinzufügen (die Volcast-Integration aus HACS liefert Energie heute/morgen, prognostizierte Momentanleistung und einen Peak-Produktions-Indikator — API im Premium-Plan).
 3. **Automation 1 — Warmwasser:** „wenn Prognose_morgen > X kWh → heizen 11–14 Uhr; sonst im günstigen Tariffenster".
 4. **Automation 2 — große Geräte** (falls steuerbar): Startverzögerung ins prognostizierte Peak-Fenster.
 5. **Automation 3 — Hysterese auf der Momentanleistung:** einschalten bei Überschuss > Schwelle für 10 min, ausschalten unter Schwelle für 10 min — kein Flattern.

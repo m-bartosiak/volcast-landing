@@ -39,7 +39,7 @@ Each evening, a glance at tomorrow's forecast. Three scenarios:
 
 **Overcast day, under 6 kWh.** No pretending: hot water simply runs in the cheapest tariff hour.
 
-The point is that the decision takes 30 seconds in the evening — not standing at the window in the morning reading clouds. I use [Volcast](https://volcast.app/en/) for this: the app shows an hourly forecast for my specific setup (azimuth, tilt, shading), and the "tomorrow's forecast changed significantly" notification saves me when the weather flips.
+The point is that the decision takes 30 seconds in the evening — not standing at the window in the morning reading clouds. I use [Volcast](https://volcast.app/en/) for this: the app shows an hourly forecast for my specific setup (azimuth, tilt, shading), and the evening "tomorrow's forecast" notification saves me when the weather flips.
 
 > [SCREENSHOT PLACEHOLDER: hourly forecast with the surplus window highlighted]
 
@@ -47,7 +47,7 @@ The point is that the decision takes 30 seconds in the evening — not standing 
 
 With Home Assistant, the whole thing runs itself: the forecast feeds in as a sensor, and an automation switches the heater on via a smart plug or contactor whenever the next hour's predicted production clears a threshold. Result: your water heats on sunshine without you touching anything — and falls back to the cheap tariff window on overcast days.
 
-Volcast has an official Home Assistant integration (installed via HACS in three clicks) — "energy today", "energy tomorrow", "power now" and "production peak" sensors appear straight in the Energy Dashboard.
+Volcast has an official Home Assistant integration (requires Premium; installed via HACS in three clicks) — "energy today", "energy tomorrow", "power now" and a peak-production indicator appear straight in the Energy Dashboard.
 
 No Home Assistant? App notifications plus a basic timer plug set in the evening get you most of the way.
 

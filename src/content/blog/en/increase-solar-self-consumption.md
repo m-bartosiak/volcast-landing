@@ -26,7 +26,7 @@ An immersion element in the hot-water tank is the cheapest "battery" there is: m
 
 ## 4. Automate — let the house watch the surplus
 
-Home Assistant + a forecast sensor + smart plugs: the heater switches on when predicted production clears a threshold and falls back to the cheap tariff window on overcast days. Configured once, it runs itself. Volcast's official HACS integration exposes "energy today/tomorrow" and live power for exactly this.
+Home Assistant + a forecast sensor + smart plugs: the heater switches on when predicted production clears a threshold and falls back to the cheap tariff window on overcast days. Configured once, it runs itself. Volcast's official HACS integration (requires Premium) exposes "energy today/tomorrow" and live power for exactly this.
 
 ## 5. Charge the EV on surplus
 

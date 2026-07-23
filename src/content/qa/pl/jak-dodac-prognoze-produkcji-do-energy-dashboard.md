@@ -17,7 +17,7 @@ Nakładka prognozy zamienia Energy Dashboard z kroniki w narzędzie: na jeden rz
 
 ## Co zrobić
 
-1. **Zainstaluj integrację prognozy:** HACS → Integrations → wyszukaj „Volcast" (albo dodaj repo z GitHuba volter-labs) → restart HA → dodaj integrację, podając konfigurację instalacji z aplikacji.
+1. **Zainstaluj integrację prognozy:** HACS → Integrations → wyszukaj „Volcast" (albo dodaj repo z GitHuba volter-labs) → restart HA → dodaj integrację, podając konfigurację instalacji z aplikacji (integracja Volcast wymaga Premium — potrzebujesz klucza API).
 2. **Ustawienia → Panele → Energia:** przy pozycji „Produkcja słoneczna" kliknij edycję i w polu prognozy wybierz encję forecast z integracji.
-3. **Sprawdź po dobie:** na wykresie produkcji pojawi się kreskowana linia prognozy; encje liczbowe (energia dziś/jutro, godzina szczytu) możesz dodatkowo wrzucić na własny dashboard lub użyć w automatyzacjach.
+3. **Sprawdź po dobie:** na wykresie produkcji pojawi się kreskowana linia prognozy; encje liczbowe (energia dziś/jutro, wskaźnik szczytu produkcji) możesz dodatkowo wrzucić na własny dashboard lub użyć w automatyzacjach.
 4. **Dwie prognozy naraz?** Integracje nie kolidują — częsty setup to Volcast + Forecast.Solar równolegle przez 2 tygodnie i własny werdykt na rzeczywistych danych.

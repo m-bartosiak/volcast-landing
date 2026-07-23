@@ -47,4 +47,4 @@ Co do zasady tak, ale konfiguracja falownika i sposób rozliczeń mają znaczeni
 Po uwzględnieniu strat: realnie od ok. 25–30% różnicy między godziną ładowania a rozładowania. Typowa doba na taryfie dynamicznej daje znacznie więcej.
 
 **Czy to wszystko trzeba robić ręcznie?**
-Dziś w dużej mierze tak (lub półautomatycznie w Home Assistant). Automatyzacja tej pętli — ceny + prognoza + sterowanie — to rola systemów EMS, nad którą pracujemy w ramach kolejnego produktu VolterLabs.
+Dziś w dużej mierze tak (lub półautomatycznie w Home Assistant). Automatyzacja tej pętli — ceny + prognoza + sterowanie — to rola systemów EMS, nad którą pracujemy w ramach kolejnego produktu Volcast EMS.

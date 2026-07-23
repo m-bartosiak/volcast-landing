@@ -22,7 +22,7 @@ Strom zu speichern ist teuer — Wärme fast gratis. Ein 200–300-l-Warmwassers
 
 **Stufe 2 — SG-Ready.** Die meisten Pumpen ab ~2013 haben den SG-Ready-Kontakt: geschlossen = Anhebebetrieb. Über ein Relais aus der Hausautomation angesteuert, reagiert die Pumpe auf das Signal „Überschuss vorhanden".
 
-**Stufe 3 — Prognosesteuerung.** Der Vorteil gegenüber reiner Zähler-Logik: Die Prognose weiß *im Voraus*, ob heute überhaupt ein Überschussfenster kommt und wann. An trüben Tagen wartet die Pumpe nicht sinnlos auf Sonne, sondern heizt in der günstigsten Stunde des dynamischen Tarifs. In Home Assistant genügt ein Prognose-Sensor (Volcast liefert „Energie heute/morgen" und die Peak-Stunde über die HACS-Integration) plus eine bedingte Automation.
+**Stufe 3 — Prognosesteuerung.** Der Vorteil gegenüber reiner Zähler-Logik: Die Prognose weiß *im Voraus*, ob heute überhaupt ein Überschussfenster kommt und wann. An trüben Tagen wartet die Pumpe nicht sinnlos auf Sonne, sondern heizt in der günstigsten Stunde des dynamischen Tarifs. In Home Assistant genügt ein Prognose-Sensor (Volcast liefert „Energie heute/morgen" und einen Peak-Produktions-Indikator über die HACS-Integration; diese benötigt Premium für den API-Key) plus eine bedingte Automation.
 
 ## Heizbetrieb — vorsichtiger als Warmwasser
 

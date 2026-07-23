@@ -24,7 +24,7 @@ Wniosek: **ładowanie z nadwyżki wymaga wiedzy, kiedy nadwyżka będzie duża i
 
 **Strategia mieszana.** W tygodniu auto ładuje się nocą w taniej strefie do poziomu „na dojazdy", a dobicie do pełna czeka na dzień z dużą prognozą. Wieczorny rzut oka na prognozę jutra decyduje, czy ustawiasz nocne ładowanie, czy zostawiasz miejsce w baterii na słońce.
 
-**Strategia automatyczna (PV surplus charging).** Wallbox z trybem nadążnym (sterowany z HA lub własną logiką) moduluje prąd ładowania do bieżącej nadwyżki. Tu przydaje się prognoza o wysokiej rozdzielczości: Volcast przez API wystawia 288 punktów 5-minutowych na dobę, więc automatyka wie, czy chmura za 20 minut to chwilowy cień, czy koniec okna — i nie przerywa sesji bez potrzeby.
+**Strategia automatyczna (PV surplus charging).** Wallbox z trybem nadążnym (sterowany z HA lub własną logiką) moduluje prąd ładowania do bieżącej nadwyżki. Tu przydaje się prognoza o wysokiej rozdzielczości: Volcast przez API (wymaga Premium) wystawia 288 punktów 5-minutowych na dobę, więc automatyka wie, czy chmura za 20 minut to chwilowy cień, czy koniec okna — i nie przerywa sesji bez potrzeby.
 
 ## Prosty rachunek
 

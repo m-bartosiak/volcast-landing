@@ -22,7 +22,7 @@ Storing electricity is expensive — storing heat is almost free. A 200–300 li
 
 **Level 2 — smart-grid input.** Most pumps made in the last decade have an SG-Ready-style contact: closing it forces a boost mode. Wire it to a relay driven by your home automation, and the pump responds to a "surplus available" signal.
 
-**Level 3 — forecast-driven control.** The edge over meter-only logic: a forecast knows *in advance* whether today has a surplus window at all, and when. On an overcast day the pump doesn't wait pointlessly for sun — it heats in the cheapest tariff hour instead. In Home Assistant this is one forecast sensor (Volcast exposes "energy today/tomorrow" and peak hour via HACS) plus one conditional automation.
+**Level 3 — forecast-driven control.** The edge over meter-only logic: a forecast knows *in advance* whether today has a surplus window at all, and when. On an overcast day the pump doesn't wait pointlessly for sun — it heats in the cheapest tariff hour instead. In Home Assistant this is one forecast sensor (Volcast exposes "energy today/tomorrow" and a peak-production indicator via HACS; requires Premium) plus one conditional automation.
 
 ## Space heating — tread more carefully than hot water
 

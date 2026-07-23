@@ -15,7 +15,7 @@ The Energy Dashboard supports forecasts natively: install a forecast integration
 
 Without a forecast, the Energy Dashboard tells you what already happened. With one, two new uses appear. First, **planning**: the morning glance shows whether today is a laundry-and-EV day or a grey one — and every automation can read the same sensors the dashboard uses (see the self-consumption answer). Second, **health monitoring**: actual hugging the forecast means the system is fine; actual persistently sagging under it is the earliest visible sign of shading, soiling or a fault (see the system-check answer in K2).
 
-Forecast quality decides how much you can trust both uses. Simple models estimate from location and panel geometry alone; physics-based services layer satellite irradiance data and calibrate against your system's real history, which narrows the error enough that a 15% shortfall is a signal, not noise. The comparison guide walks through the options available as HA integrations.
+Forecast quality decides how much you can trust both uses. Simple models estimate from location and panel geometry alone; physics-based services layer weather-model (NWP ensemble) irradiance data and calibrate against your system's real history, which narrows the error enough that a 15% shortfall is a signal, not noise. The comparison guide walks through the options available as HA integrations.
 
 ## What to do
 

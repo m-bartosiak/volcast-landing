@@ -24,7 +24,7 @@ W praktyce: zadana CWU 46–48°C przez większość doby, a w oknie produkcji (
 
 **Poziom 2 — SG-Ready.** Większość nowszych pomp ma wejście SG-Ready: zwarcie styków wymusza tryb podwyższonej temperatury. Podłącz je do przekaźnika sterowanego z automatyki domowej — pompa reaguje na sygnał „jest nadwyżka".
 
-**Poziom 3 — sterowanie prognozą.** Tu wchodzi przewaga nad prostą automatyką „od licznika": prognoza wie *z wyprzedzeniem*, czy dziś w ogóle będzie okno nadwyżki i kiedy. W pochmurny dzień pompa nie czeka bez sensu na słońce, tylko grzeje w najtańszej strefie taryfy. W Home Assistant wystarczy sensor prognozy (Volcast wystawia „energia dziś/jutro" i godzinę szczytu przez integrację HACS) plus jedna automatyzacja warunkowa.
+**Poziom 3 — sterowanie prognozą.** Tu wchodzi przewaga nad prostą automatyką „od licznika": prognoza wie *z wyprzedzeniem*, czy dziś w ogóle będzie okno nadwyżki i kiedy. W pochmurny dzień pompa nie czeka bez sensu na słońce, tylko grzeje w najtańszej strefie taryfy. W Home Assistant wystarczy sensor prognozy (Volcast wystawia „energia dziś/jutro" i wskaźnik szczytu produkcji przez integrację HACS, która wymaga Premium) plus jedna automatyzacja warunkowa.
 
 ## Ogrzewanie budynku — ostrożniej niż CWU
 

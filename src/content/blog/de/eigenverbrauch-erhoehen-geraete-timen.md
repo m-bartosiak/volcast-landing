@@ -39,7 +39,7 @@ Abends ein Blick auf die Prognose für morgen. Drei Szenarien:
 
 **Trüber Tag, unter 6 kWh.** Kein Selbstbetrug: Warmwasser läuft dann schlicht in der günstigsten Stunde des Tarifs.
 
-Der Punkt ist: Die Entscheidung dauert abends 30 Sekunden — statt morgens aus dem Fenster zu schauen und Wolken zu deuten. Ich nutze dafür [Volcast](https://volcast.app/de/): Die App zeigt die Stundenprognose für meine konkrete Anlage (Azimut, Neigung, Verschattung), und die Benachrichtigung „Prognose für morgen hat sich deutlich geändert" bewahrt mich vor Fehlplanung, wenn das Wetter umschlägt.
+Der Punkt ist: Die Entscheidung dauert abends 30 Sekunden — statt morgens aus dem Fenster zu schauen und Wolken zu deuten. Ich nutze dafür [Volcast](https://volcast.app/de/): Die App zeigt die Stundenprognose für meine konkrete Anlage (Azimut, Neigung, Verschattung), und die abendliche Benachrichtigung mit der Prognose für morgen bewahrt mich vor Fehlplanung, wenn das Wetter umschlägt.
 
 > [PLATZ FÜR SCREENSHOT: Stundenprognose mit markiertem Überschussfenster]
 
@@ -47,7 +47,7 @@ Der Punkt ist: Die Entscheidung dauert abends 30 Sekunden — statt morgens aus 
 
 Mit Home Assistant lässt sich das komplett automatisieren: Die Prognose kommt als Sensor ins System, und eine Automation schaltet den Heizstab über eine smarte Steckdose oder ein Schütz ein, sobald die erwartete Produktion der nächsten Stunde über der Schwelle liegt. Ergebnis: Das Warmwasser läuft mit Sonne, ohne dass du etwas tust — und an trüben Tagen automatisch im günstigen Tariffenster.
 
-Volcast hat eine offizielle Home-Assistant-Integration (Installation über HACS, drei Klicks) — die Sensoren „Energie heute", „Energie morgen", „Leistung jetzt" und „Produktionsspitze" erscheinen direkt im Energy Dashboard.
+Volcast hat eine offizielle Home-Assistant-Integration (Installation über HACS, drei Klicks; benötigt Premium für den API-Key) — die Sensoren „Energie heute", „Energie morgen", „Leistung jetzt" und der Peak-Produktions-Indikator erscheinen direkt im Energy Dashboard.
 
 Kein Home Assistant? Dann reichen die App-Benachrichtigungen plus eine einfache Zeitschaltuhr, die du abends stellst.
 

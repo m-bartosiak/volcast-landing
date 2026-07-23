@@ -22,7 +22,7 @@ Single-phase charging starts around 1.4 kW (6 A), typical settings are 3.7 kW, t
 
 **The mixed strategy.** On weekdays the car charges overnight in the cheap tariff window only "to commuting range" — topping up waits for the next strong solar day. An evening glance at tomorrow's forecast decides how much battery headroom to leave for the sun.
 
-**Automatic surplus charging.** The endgame: a charger in PV mode (native, or driven by Home Assistant / EVCC) continuously modulates charge current to the live surplus. This is where forecast resolution pays off: Volcast's API delivers 288 five-minute points per day, so the automation knows whether the cloud in 20 minutes is a passing shadow or the end of the window — and doesn't abort the session unnecessarily.
+**Automatic surplus charging.** The endgame: a charger in PV mode (native, or driven by Home Assistant / EVCC) continuously modulates charge current to the live surplus. This is where forecast resolution pays off: Volcast's API (Premium) delivers 288 five-minute points per day, so the automation knows whether the cloud in 20 minutes is a passing shadow or the end of the window — and doesn't abort the session unnecessarily.
 
 ## The maths
 

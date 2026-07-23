@@ -22,9 +22,9 @@ Bewölkungsprozente sagen wenig über Ertrag: Module reagieren auf Einstrahlung 
 
 ## Kategorie 3: Prognose-Apps — der Blick nach vorn
 
-Spezialisierte Ertragsprognose rechnet den vollen Weg: Satellitendaten → Sonnenstand → Geometrie deiner Anlage → Temperaturkorrekturen → kWh pro Stunde. Der Unterschied zwischen den Anbietern liegt in zwei Punkten: **Kalibrierung** (lernt das Modell deine konkrete Anlage — Verschattung, Verluste, Degradation?) und **Zugänglichkeit** (App mit Benachrichtigungen oder nur API für Bastler?).
+Spezialisierte Ertragsprognose rechnet den vollen Weg: Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) → Sonnenstand → Geometrie deiner Anlage → Temperaturkorrekturen → kWh pro Stunde. Der Unterschied zwischen den Anbietern liegt in zwei Punkten: **Kalibrierung** (lernt das Modell deine konkrete Anlage — Verschattung, Verluste, Degradation?) und **Zugänglichkeit** (App mit Benachrichtigungen oder nur API für Bastler?).
 
-Volcast kombiniert beides: physikalisches Modell plus automatische Kalibrierung per Kalman-Filter, verpackt in eine Handy-App mit Widgets und Push-Benachrichtigungen („Prognose für morgen deutlich geändert", „morgen Überschuss ab 11 Uhr"). Funktioniert mit jeder Anlage — kein Wechselrichter-Login, keine API-Keys, keine Cloud-Verbindung zur Hardware. Kostenlos mit 2-Tage-Prognose; Premium (4,49 $/Monat) erweitert auf 7 Tage, Auto-Kalibrierung und die Home-Assistant-API.
+Volcast kombiniert beides: physikalisches Modell plus automatische Kalibrierung per Kalman-Filter, verpackt in eine Handy-App mit Widgets und Push-Benachrichtigungen (Abendprognose für morgen, „morgen Überschuss ab 11 Uhr"). Funktioniert mit jeder Anlage — kein Wechselrichter-Login, keine API-Keys, keine Cloud-Verbindung zur Hardware. Kostenlos mit 2-Tage-Prognose; Premium (4,49 $/Monat) erweitert auf 7 Tage, Auto-Kalibrierung und die Home-Assistant-API.
 
 ## Worauf du bei der Auswahl achten solltest
 

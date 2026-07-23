@@ -1,6 +1,6 @@
 ---
 title: "Prognoza produkcji fotowoltaiki — jak dokładnie przewidzieć jutrzejszy uzysk z PV"
-description: "Jak dokładnie przewidzieć, ile prądu wyprodukuje Twoja instalacja jutro? Model fizyczny, dane satelitarne i kalibracja — wyjaśniamy krok po kroku."
+description: "Jak dokładnie przewidzieć, ile prądu wyprodukuje Twoja instalacja jutro? Model fizyczny, dane z modeli pogodowych (ensemble NWP) i kalibracja — wyjaśniamy krok po kroku."
 date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
@@ -10,7 +10,7 @@ translationKey: "forecast-hub"
 seo:
   ogTitle: "Prognoza produkcji fotowoltaiki — jak przewidzieć uzysk PV"
 ---
-Ile prądu wyprodukuje jutro Twoja instalacja? Większość właścicieli fotowoltaiki odpowiada „zależy od pogody" — i na tym kończy. Tymczasem produkcję PV da się prognozować z dokładnością 85–95% w słoneczne dni, godzina po godzinie. Wystarczy połączyć dane satelitarne o nasłonecznieniu z fizycznym modelem konkretnej instalacji: jej azymutem, kątem nachylenia, mocą i zacienieniem.
+Ile prądu wyprodukuje jutro Twoja instalacja? Większość właścicieli fotowoltaiki odpowiada „zależy od pogody" — i na tym kończy. Tymczasem produkcję PV da się prognozować z dokładnością rzędu 85% po kalibracji w słoneczne dni, godzina po godzinie. Wystarczy połączyć dane z modeli pogodowych (ensemble NWP) o nasłonecznieniu z fizycznym modelem konkretnej instalacji: jej azymutem, kątem nachylenia, mocą i zacienieniem.
 
 W tym artykule wyjaśniam, jak działa profesjonalna prognoza produkcji, dlaczego zwykła prognoza pogody do tego nie wystarcza i jak wykorzystać prognozę w praktyce — żeby zużywać własny prąd wtedy, kiedy go masz, zamiast oddawać go do sieci za ułamek wartości.
 
@@ -24,13 +24,13 @@ W tym artykule wyjaśniam, jak działa profesjonalna prognoza produkcji, dlaczeg
 
 **Temperatura działa na niekorzyść.** Panele tracą sprawność wraz ze wzrostem temperatury ogniwa (typowo ok. 0,3–0,4% na każdy stopień powyżej 25°C). Dlatego rekordowe dni produkcji to często słoneczny, chłodny kwiecień, a nie upalny lipiec.
 
-Dobra prognoza produkcji musi więc przejść drogę: **dane satelitarne o irradiancji → model pozycji słońca → geometria i parametry instalacji → korekty temperaturowe i spektralne → kWh na każdą godzinę**.
+Dobra prognoza produkcji musi więc przejść drogę: **dane z modeli pogodowych (ensemble NWP) o irradiancji → model pozycji słońca → geometria i parametry instalacji → korekty temperaturowe i spektralne → kWh na każdą godzinę**.
 
 ## Jak działa prognozowanie oparte na fizyce
 
 Nowoczesne systemy prognozowania PV — od narzędzi dla farm słonecznych po aplikacje dla prosumentów — działają według tego samego schematu:
 
-1. **Dane wejściowe:** satelitarne pomiary i prognozy irradiancji (GHI, DNI, DHI) oraz numeryczne modele pogody dostarczające temperaturę i wiatr.
+1. **Dane wejściowe:** prognozy irradiancji (GHI, DNI, DHI) z numerycznych modeli pogody (ensemble NWP), które dostarczają też temperaturę i wiatr.
 2. **Model transpozycji:** przeliczenie irradiancji z płaszczyzny poziomej na płaszczyznę Twoich paneli, z uwzględnieniem pozycji słońca w każdej godzinie dnia.
 3. **Model instalacji:** moc szczytowa, sprawność falownika, straty systemowe, zacienienie w funkcji pory dnia i roku.
 4. **Wynik:** krzywa produkcji — dziś, jutro, na kolejne dni.
@@ -64,10 +64,10 @@ Prognoza jest narzędziem, nie ciekawostką. Trzy najczęstsze zastosowania:
 ## FAQ
 
 **Jak dokładna może być prognoza produkcji fotowoltaiki?**
-Po kalibracji typowa dokładność to 85–95% w dni słoneczne. Najtrudniejsze są dni z szybko przemieszczającym się, kłębiastym zachmurzeniem — tam nawet najlepsze modele mają większy rozrzut, choć suma dzienna pozostaje zwykle trafna.
+Po kalibracji typowa dokładność jest rzędu 85% w dni słoneczne. Najtrudniejsze są dni z szybko przemieszczającym się, kłębiastym zachmurzeniem — tam nawet najlepsze modele mają większy rozrzut, choć suma dzienna pozostaje zwykle trafna.
 
 **Czy potrzebuję dostępu do falownika, żeby prognozować produkcję?**
-Nie. Prognoza opiera się na danych satelitarnych i parametrach instalacji. Dostęp do falownika bywa przydatny tylko do automatycznego zapisywania rzeczywistej produkcji na potrzeby kalibracji — ale można ją też wpisywać ręcznie raz dziennie.
+Nie. Prognoza opiera się na danych z modeli pogodowych (ensemble NWP) i parametrach instalacji. Dostęp do falownika bywa przydatny tylko do automatycznego zapisywania rzeczywistej produkcji na potrzeby kalibracji — ale można ją też wpisywać ręcznie raz dziennie.
 
 **Czym różni się prognoza produkcji od prognozy nasłonecznienia?**
 Prognoza nasłonecznienia (irradiancji) mówi, ile energii słonecznej dotrze do powierzchni. Prognoza produkcji przelicza ją przez geometrię i parametry konkretnej instalacji na kilowatogodziny z Twojego dachu.

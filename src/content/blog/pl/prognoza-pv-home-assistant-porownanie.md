@@ -41,7 +41,7 @@ Solcast to klasa sama w sobie pod względem danych satelitarnych — firma obsł
 
 Nasze podejście łączy pełny model fizyczny (transpozycja irradiancji, korekty spektralne i temperaturowe, profil zacienienia) z autokalibracją: filtr Kalmana porównuje prognozę z rzeczywistą produkcją i koryguje parametry modelu. Po 2–3 tygodniach prognoza zna Twój dach — z jego cieniem od komina o 15:00 włącznie. Na mojej instalacji 5,2 kWp błąd dnia następnego w słoneczne dni spada poniżej 10%.
 
-W Home Assistant dostajesz z pudełka: `sensor.volcast_today`, `sensor.volcast_tomorrow`, moc na żywo, godzinę szczytu produkcji i wpięcie w Energy Dashboard. Do tego 288 punktów 5-minutowych na dobę przez REST API — przydatne przy sterowaniu wallboxem. Uczciwie: API wymaga planu Premium ($4.49/mies.), a prognoza darmowa obejmuje 2 dni w aplikacji mobilnej.
+W Home Assistant dostajesz z pudełka: `sensor.volcast_energy_today`, `sensor.volcast_energy_tomorrow`, moc na żywo, wskaźnik szczytu produkcji i wpięcie w Energy Dashboard. Do tego 288 punktów 5-minutowych na dobę przez REST API — przydatne przy sterowaniu wallboxem. Uczciwie: API wymaga planu Premium ($4.49/mies.), a prognoza darmowa obejmuje 2 dni w aplikacji mobilnej.
 
 ## Instalacja Volcast w HA — 5 kroków
 
@@ -55,7 +55,7 @@ W Home Assistant dostajesz z pudełka: `sensor.volcast_today`, `sensor.volcast_t
 
 ## Które rozwiązanie dla kogo
 
-**Forecast.Solar** — chcesz mieć „jakąś" prognozę w 5 minut i nie planujesz na niej automatyzacji krytycznych dla rachunku. **Solcast** — potrzebujesz surowych danych satelitarnych najwyższej klasy i mieścisz się w darmowych limitach. **Volcast** — automatyzujesz realne pieniądze (bojler, pompa ciepła, ładowanie EV) i chcesz prognozy skalibrowanej do własnego dachu, plus powiadomień w telefonie, gdy jutro się zmienia.
+**Forecast.Solar** — chcesz mieć „jakąś" prognozę w 5 minut i nie planujesz na niej automatyzacji krytycznych dla rachunku. **Solcast** — potrzebujesz surowych danych satelitarnych najwyższej klasy i mieścisz się w darmowych limitach. **Volcast** — automatyzujesz realne pieniądze (bojler, pompa ciepła, ładowanie EV) i chcesz prognozy skalibrowanej do własnego dachu, plus wieczornego powiadomienia z prognozą na jutro w telefonie.
 
 ## FAQ
 
@@ -63,7 +63,7 @@ W Home Assistant dostajesz z pudełka: `sensor.volcast_today`, `sensor.volcast_t
 Tak — częsta praktyka na start: porównaj przez 2 tygodnie prognozy z rzeczywistą produkcją w Energy Dashboard i zostaw to źródło, które mniej się myli na *Twojej* instalacji.
 
 **Czy Volcast łączy się z moim falownikiem?**
-Nie — prognoza powstaje z danych satelitarnych i parametrów instalacji. Rzeczywistą produkcję do kalibracji możesz zapisywać ręcznie albo automatycznie z sensora energii w HA.
+Nie — prognoza powstaje z danych z modeli pogodowych (ensemble NWP) i parametrów instalacji. Rzeczywistą produkcję do kalibracji możesz zapisywać ręcznie albo automatycznie z sensora energii w HA.
 
 **Czy integracja działa bez chmury?**
-Prognoza jest liczona w chmurze (dane satelitarne), ale integracja nie wysyła żadnych danych o Twoim domu poza parametrami instalacji — zero telemetrii i śledzenia.
+Prognoza jest liczona w chmurze (dane z modeli pogodowych), a integracja poza parametrami instalacji wysyła tylko Twoją realną produkcję — i to wyłącznie, gdy sam włączysz kalibrację (opcja opt-in). Nic więcej, żadnego trackingu.

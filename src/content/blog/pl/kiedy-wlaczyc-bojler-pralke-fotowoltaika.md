@@ -39,7 +39,7 @@ Wieczorem zerkam w prognozę na jutro. Trzy scenariusze:
 
 **Dzień pochmurny, prognoza poniżej 6 kWh.** Nie udaję, że gram z produkcją — grzeję wodę w najtańszej strefie / najtańszej godzinie taryfy dynamicznej.
 
-Kluczowe jest to, że decyzję podejmuję wieczorem w 30 sekund, a nie stojąc rano przy oknie i wróżąc z chmur. Używam do tego [Volcast](https://volcast.app/pl/) — aplikacja pokazuje prognozę godzinową dla mojej konkretnej instalacji (azymut, kąt, zacienienie), a powiadomienie „jutro znacząca zmiana prognozy" ratuje przed pomyłką, gdy pogoda się przestawi.
+Kluczowe jest to, że decyzję podejmuję wieczorem w 30 sekund, a nie stojąc rano przy oknie i wróżąc z chmur. Używam do tego [Volcast](https://volcast.app/pl/) — aplikacja pokazuje prognozę godzinową dla mojej konkretnej instalacji (azymut, kąt, zacienienie), a wieczorne powiadomienie z prognozą na jutro ratuje przed pomyłką, gdy pogoda się przestawi.
 
 > [MIEJSCE NA SCREENSHOT: prognoza godzinowa z zaznaczonym oknem nadwyżki]
 
@@ -47,7 +47,7 @@ Kluczowe jest to, że decyzję podejmuję wieczorem w 30 sekund, a nie stojąc r
 
 Jeśli masz Home Assistant, całość można zautomatyzować: prognoza trafia do systemu jako sensor, a automatyzacja włącza grzałkę przez inteligentne gniazdko lub stycznik, gdy przewidywana produkcja w najbliższej godzinie przekracza próg. Efekt: bojler grzeje się słońcem bez Twojego udziału, a w pochmurne dni automatycznie przełącza się na tanią strefę.
 
-Volcast ma oficjalną integrację z Home Assistant (instalacja przez HACS, 3 kliknięcia) — sensory „energia dziś", „energia jutro", „moc teraz" i „szczyt produkcji" pojawiają się od razu w Energy Dashboard.
+Volcast ma oficjalną integrację z Home Assistant (instalacja przez HACS, 3 kliknięcia, wymaga Premium) — sensory „energia dziś", „energia jutro", „moc teraz" i wskaźnik szczytu produkcji pojawiają się od razu w Energy Dashboard.
 
 Nie masz Home Assistanta? Wystarczą powiadomienia z aplikacji i zwykły programator czasowy ustawiany wieczorem.
 

@@ -18,7 +18,7 @@ Bez pomiaru automatyzacje działają na ślepo; bez prognozy działają tylko re
 ## Co zrobić
 
 1. **Pomiar:** zintegruj falowniki (natywna integracja / Modbus TCP / SunSpec) i skonfiguruj Energy Dashboard — samo to pokazuje autokonsumpcję dzień po dniu.
-2. **Prognoza:** dodaj sensor prognozy produkcji (integracja Volcast z HACS wystawia energię dziś/jutro, moc bieżącą prognozowaną i godzinę szczytu — API w planie Premium).
+2. **Prognoza:** dodaj sensor prognozy produkcji (integracja Volcast z HACS wystawia energię dziś/jutro, moc bieżącą prognozowaną i wskaźnik szczytu produkcji — wymaga Premium).
 3. **Automatyzacja 1 — CWU:** „jeśli prognoza_jutro > X kWh → grzej 11:00–14:00; w przeciwnym razie grzej w taniej strefie".
 4. **Automatyzacja 2 — duże AGD** (jeśli sterowalne): opóźniony start w prognozowane okno szczytu.
 5. **Automatyzacja 3 — histereza dla mocy bieżącej:** włącz odbiornik przy nadwyżce > próg przez 10 min, wyłącz poniżej progu przez 10 min — bez migotania.

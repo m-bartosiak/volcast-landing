@@ -17,7 +17,7 @@ Das Zeitprogramm funktioniert im sonnigen Sommer — an wechselhaften Tagen heiz
 
 ## Was du tun kannst
 
-1. **Start ohne Investition:** Smart-Steckdose/Schütz + Prognose-Regel („morgen Überschuss ab 11 Uhr" → heizen 11–14 Uhr; „morgen trüb" → heizen im günstigen Fenster). Die Volcast-Sensoren „Energie morgen" und Peak-Stunde gibt es über die HACS-Integration.
+1. **Start ohne Investition:** Smart-Steckdose/Schütz + Prognose-Regel („morgen Überschuss ab 11 Uhr" → heizen 11–14 Uhr; „morgen trüb" → heizen im günstigen Fenster). Die Volcast-Sensoren „Energie morgen" und den Peak-Produktions-Indikator gibt es über die HACS-Integration (benötigt Premium für den API-Key).
 2. **In Home Assistant** verbindet eine bedingte Automation Prognose, aktuelle Leistung (falls gemessen) und Tariffenster — die „einrichten und vergessen"-Stufe.
 3. **Überschussregler ergänzen,** wenn jedes Watt zählt (großer Heizstab, wechselhaftes Wetter) — am stärksten im Duo mit der Prognose-Regel, die entscheidet, *ob heute überhaupt* auf Sonne gewartet wird.
 4. **Sicherheit:** den wöchentlichen 60-°C+-Zyklus (Legionellen) und den Gerätethermostat als oberste Instanz beibehalten.

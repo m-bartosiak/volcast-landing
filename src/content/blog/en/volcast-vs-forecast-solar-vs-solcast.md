@@ -18,7 +18,7 @@ Full disclosure first: we build one of the three tools compared here. So expect 
 
 **Solcast** — the industrial option: high-quality satellite irradiance data used across the energy industry, a hobbyist plan with a daily request cap, and tuning against your uploaded data. The product's heart is the API — there is no consumer mobile app.
 
-**Volcast** — a physics engine on satellite data plus automatic Kalman-filter calibration against your real production, wrapped in a mobile app (iOS/Android, 13 languages) with push notifications — plus an official HACS integration and API on Premium ($4.49/mo).
+**Volcast** — a physics engine on weather-model (NWP ensemble) data plus automatic Kalman-filter calibration against your real production, wrapped in a mobile app (iOS/Android, 13 languages) with push notifications — plus an official HACS integration and API on Premium ($4.49/mo).
 
 ## Comparison table
 
@@ -49,7 +49,7 @@ Don't trust any table — including ours. All three have free entry points: run 
 ## FAQ
 
 **Does Volcast use Forecast.Solar or Solcast data?**
-No — our own physics engine fed by satellite irradiance data and weather models, with our own calibration layer.
+No — our own physics engine fed by weather-model (NWP ensemble) irradiance data, with our own calibration layer.
 
 **Which is the most accurate?**
 On clear days all three are decent. Differences grow on mixed days and with shading — that's where calibration against real yields gives Volcast an edge you can verify with a parallel test at home.

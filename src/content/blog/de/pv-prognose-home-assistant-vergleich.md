@@ -41,7 +41,7 @@ Bei Satellitendaten spielt Solcast in einer eigenen Liga — die Firma bedient S
 
 Unser Ansatz kombiniert ein vollständiges physikalisches Modell (Transposition, Spektral- und Temperaturkorrekturen, Verschattungsprofil) mit Auto-Kalibrierung: Ein Kalman-Filter vergleicht Prognose und reale Produktion und justiert die Modellparameter nach. Nach zwei bis drei Wochen kennt die Prognose dein Dach — inklusive Schornsteinschatten um 15 Uhr. Auf meiner 5,2-kWp-Anlage liegt der Folgetagsfehler an sonnigen Tagen unter 10 %.
 
-In Home Assistant bekommst du direkt: `sensor.volcast_today`, `sensor.volcast_tomorrow`, Live-Leistung, Produktionsspitze und die Anbindung ans Energy Dashboard. Dazu 288 5-Minuten-Punkte pro Tag über die REST-API — nützlich fürs Überschussladen an der Wallbox. Fairerweise: Die API braucht Premium (4,49 $/Monat), kostenlos gibt es die 2-Tage-Prognose in der App.
+In Home Assistant bekommst du direkt: `sensor.volcast_energy_today`, `sensor.volcast_energy_tomorrow`, Live-Leistung, einen Peak-Produktions-Indikator und die Anbindung ans Energy Dashboard. Dazu 288 5-Minuten-Punkte pro Tag über die REST-API — nützlich fürs Überschussladen an der Wallbox. Fairerweise: Die API braucht Premium (4,49 $/Monat), kostenlos gibt es die 2-Tage-Prognose in der App.
 
 ## Volcast in HA einrichten — 5 Schritte
 
@@ -63,7 +63,7 @@ In Home Assistant bekommst du direkt: `sensor.volcast_today`, `sensor.volcast_to
 Ja — ein beliebter Start: zwei Wochen lang beide Prognosen gegen die reale Produktion im Energy Dashboard laufen lassen und die Quelle behalten, die auf *deiner* Anlage weniger danebenliegt.
 
 **Verbindet sich Volcast mit meinem Wechselrichter?**
-Nein — die Prognose entsteht aus Satellitendaten und Anlagenparametern. Die reale Produktion für die Kalibrierung kannst du manuell eintragen oder automatisch aus einem HA-Energiesensor übernehmen.
+Nein — die Prognose entsteht aus Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) und Anlagenparametern. Die reale Produktion für die Kalibrierung kannst du manuell eintragen oder automatisch aus einem HA-Energiesensor übernehmen.
 
 **Sendet die Integration Daten über mein Zuhause?**
-Nein — außer den Anlagenparametern nichts. Keine Telemetrie, kein Tracking.
+Außer den Anlagenparametern sendet die Integration nur deine reale Produktion an den Server — und das ausschließlich, wenn du die Kalibrierung aktivierst (Opt-in). Sonst nichts: kein Tracking, keine weiteren Daten.

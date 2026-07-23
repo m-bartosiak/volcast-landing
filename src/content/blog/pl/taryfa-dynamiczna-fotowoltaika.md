@@ -26,7 +26,7 @@ Sprzedawcy z ofertą dynamiczną rozliczają energię po cenach godzinowych rynk
 
 Mój typowy słoneczny dzień: noc — ładowanie tego, co musi być rano (tania energia); przedpołudnie–popołudnie — dom żyje z własnej produkcji, nadwyżka do sieci, AGD i grzanie CWU w oknie szczytu produkcji; wieczorny szczyt cenowy — zużycie zbite do minimum, bo wszystko istotne zrobiło się wcześniej. W pochmurny dzień plan buduję odwrotnie: duże odbiory lądują w najtańszych godzinach z cennika.
 
-Kluczowe są dwie informacje naraz: **ceny na jutro** (znane) i **produkcja na jutro** (prognozowana). Dopiero ich złożenie mówi, czy bojler grzać słońcem o 13:00, czy tanim prądem o 3:00. To dokładnie ten problem, który automatyzuje klasa narzędzi EMS — na razie robię to półautomatycznie w Home Assistant z sensorami prognozy Volcast.
+Kluczowe są dwie informacje naraz: **ceny na jutro** (znane) i **produkcja na jutro** (prognozowana). Dopiero ich złożenie mówi, czy bojler grzać słońcem o 13:00, czy tanim prądem o 3:00. To dokładnie ten problem, który automatyzuje klasa narzędzi EMS — na razie robię to półautomatycznie w Home Assistant z sensorami prognozy Volcast (integracja wymaga Premium).
 
 ## Ryzyka, o których trzeba wiedzieć
 

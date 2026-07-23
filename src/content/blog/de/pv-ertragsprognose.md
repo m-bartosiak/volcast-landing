@@ -1,6 +1,6 @@
 ---
 title: "PV-Ertragsprognose — so genau lässt sich der Solarertrag von morgen vorhersagen"
-description: "Wie viel Strom liefert deine PV-Anlage morgen? Physikalisches Modell, Satellitendaten und Kalibrierung — so funktioniert eine präzise Ertragsprognose."
+description: "Wie viel Strom liefert deine PV-Anlage morgen? Physikalisches Modell, Wettermodelldaten und Kalibrierung — so funktioniert eine präzise Ertragsprognose."
 date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
@@ -10,7 +10,7 @@ translationKey: "forecast-hub"
 seo:
   ogTitle: "PV-Ertragsprognose — Solarertrag von morgen vorhersagen"
 ---
-Wie viel Strom produziert deine Anlage morgen? Die meisten PV-Besitzer antworten „kommt aufs Wetter an" — und belassen es dabei. Dabei lässt sich der PV-Ertrag an sonnigen Tagen mit 85–95 % Genauigkeit vorhersagen, Stunde für Stunde. Man muss nur Satellitendaten zur Einstrahlung mit einem physikalischen Modell der konkreten Anlage verbinden: Azimut, Neigungswinkel, Leistung und Verschattung.
+Wie viel Strom produziert deine Anlage morgen? Die meisten PV-Besitzer antworten „kommt aufs Wetter an" — und belassen es dabei. Dabei lässt sich der PV-Ertrag an sonnigen Tagen nach der Kalibrierung mit einer Genauigkeit rund um 85 % vorhersagen, Stunde für Stunde. Man muss nur Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) mit einem physikalischen Modell der konkreten Anlage verbinden: Azimut, Neigungswinkel, Leistung und Verschattung.
 
 In diesem Artikel erkläre ich, wie eine professionelle Ertragsprognose funktioniert, warum die normale Wetter-App dafür nicht ausreicht — und wie du die Prognose praktisch nutzt, um deinen Solarstrom dann zu verbrauchen, wenn er da ist, statt ihn für ein paar Cent einzuspeisen.
 
@@ -24,13 +24,13 @@ In diesem Artikel erkläre ich, wie eine professionelle Ertragsprognose funktion
 
 **Temperatur kostet Leistung.** Module verlieren Wirkungsgrad mit steigender Zelltemperatur (typisch ca. 0,3–0,4 % pro Grad über 25 °C). Deshalb sind Rekordtage oft ein sonniger, kühler April — nicht der heiße Juli.
 
-Eine gute Ertragsprognose muss also den ganzen Weg gehen: **Satellitendaten zur Einstrahlung → Sonnenstandsmodell → Geometrie und Parameter der Anlage → Temperatur- und Spektralkorrekturen → kWh für jede Stunde**.
+Eine gute Ertragsprognose muss also den ganzen Weg gehen: **Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) → Sonnenstandsmodell → Geometrie und Parameter der Anlage → Temperatur- und Spektralkorrekturen → kWh für jede Stunde**.
 
 ## So funktioniert eine physikbasierte Prognose
 
 Moderne PV-Prognosesysteme — vom Solarpark-Tool bis zur Prosumer-App — folgen demselben Schema:
 
-1. **Eingangsdaten:** satellitengestützte Messungen und Prognosen der Einstrahlung (GHI, DNI, DHI) plus numerische Wettermodelle für Temperatur und Wind.
+1. **Eingangsdaten:** Prognosen der Einstrahlung (GHI, DNI, DHI) aus einem NWP-Ensemble mehrerer Wettermodelle plus numerische Wettermodelle für Temperatur und Wind.
 2. **Transpositionsmodell:** Umrechnung der Einstrahlung von der Horizontalen auf die Ebene deiner Module, für jeden Sonnenstand des Tages.
 3. **Anlagenmodell:** Spitzenleistung, Wechselrichter-Wirkungsgrad, Systemverluste, Verschattung je nach Tages- und Jahreszeit.
 4. **Ergebnis:** die Produktionskurve — heute, morgen, die nächsten Tage.
@@ -62,10 +62,10 @@ In der Praxis: Du trägst den tatsächlichen Tagesertrag ein, und nach zwei bis 
 ## FAQ
 
 **Wie genau kann eine PV-Ertragsprognose sein?**
-Nach der Kalibrierung typischerweise 85–95 % an sonnigen Tagen. Am schwierigsten sind Tage mit schnell ziehender Quellbewölkung — dort streuen auch die besten Modelle stärker, die Tagessumme bleibt aber meist verlässlich.
+Nach der Kalibrierung typischerweise rund um 85 % an sonnigen Tagen. Am schwierigsten sind Tage mit schnell ziehender Quellbewölkung — dort streuen auch die besten Modelle stärker, die Tagessumme bleibt aber meist verlässlich.
 
 **Brauche ich Zugriff auf den Wechselrichter?**
-Nein. Die Prognose basiert auf Satellitendaten und den Anlagenparametern. Wechselrichter-Zugriff ist nur praktisch, um die reale Produktion automatisch für die Kalibrierung zu erfassen — einmal täglich manuell eintragen funktioniert genauso.
+Nein. Die Prognose basiert auf Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) und den Anlagenparametern. Wechselrichter-Zugriff ist nur praktisch, um die reale Produktion automatisch für die Kalibrierung zu erfassen — einmal täglich manuell eintragen funktioniert genauso.
 
 **Was ist der Unterschied zwischen Einstrahlungs- und Ertragsprognose?**
 Die Einstrahlungsprognose sagt, wie viel Sonnenenergie ankommt. Die Ertragsprognose rechnet sie durch Geometrie und Parameter deiner konkreten Anlage in Kilowattstunden vom Dach um.

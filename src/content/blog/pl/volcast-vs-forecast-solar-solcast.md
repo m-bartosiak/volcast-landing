@@ -18,7 +18,7 @@ Piszemy to porównanie jako twórcy jednego z trzech porównywanych narzędzi �
 
 **Solcast** — klasa komercyjna: satelitarne dane irradiancji o wysokiej jakości, wykorzystywane przez przemysł energetyczny. Dla hobbystów dostępny plan domowy z limitem zapytań na dobę. Kalibracja do instalacji istnieje (tuning na podstawie przesyłanych danych), ale sercem produktu jest API — aplikacji mobilnej dla prosumenta brak.
 
-**Volcast** — silnik fizyczny na danych satelitarnych plus automatyczna kalibracja filtrem Kalmana do rzeczywistej produkcji Twojej instalacji, opakowane w aplikację mobilną (iOS/Android, 13 języków) z powiadomieniami — oraz integrację HACS i API w planie Premium. Filozofia: prognoza ma być narzędziem codziennych decyzji, nie surowym feedem danych.
+**Volcast** — silnik fizyczny na danych z modeli pogodowych (ensemble NWP) plus automatyczna kalibracja filtrem Kalmana do rzeczywistej produkcji Twojej instalacji, opakowane w aplikację mobilną (iOS/Android, 13 języków) z powiadomieniami — oraz integrację HACS i API w planie Premium. Filozofia: prognoza ma być narzędziem codziennych decyzji, nie surowym feedem danych.
 
 ## Tabela porównawcza
 
@@ -50,7 +50,7 @@ Nie wierz żadnej tabeli — także naszej. Wszystkie trzy narzędzia mają darm
 ## FAQ
 
 **Czy Volcast korzysta z danych Forecast.Solar albo Solcast?**
-Nie — mamy własny silnik fizyczny zasilany satelitarnymi danymi irradiancji i modelami pogodowymi, z własną warstwą kalibracji.
+Nie — mamy własny silnik fizyczny zasilany danymi irradiancji z modeli pogodowych (ensemble NWP), z własną warstwą kalibracji.
 
 **Które narzędzie jest najdokładniejsze?**
 W dni słoneczne wszystkie trzy są przyzwoite. Różnice rosną w dni mieszane i przy zacienieniu — tam kalibracja do rzeczywistych uzysków daje Volcastowi przewagę, którą najłatwiej sprawdzić testem równoległym u siebie.

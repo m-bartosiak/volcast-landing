@@ -47,4 +47,4 @@ Technisch können es die meisten Hybridsysteme; ob es aktiviert ist, hängt von 
 Nach Verlusten: ab etwa 25–30 % zwischen Lade- und Entladestunde. Ein typischer Tag auf dem dynamischen Tarif bietet deutlich mehr.
 
 **Muss ich das dauerhaft manuell machen?**
-Heute weitgehend ja (oder halbautomatisch in Home Assistant). Die Automatisierung genau dieser Schleife ist der Kern unseres nächsten Produkts bei VolterLabs.
+Heute weitgehend ja (oder halbautomatisch in Home Assistant). Die Automatisierung genau dieser Schleife ist der Kern unseres nächsten Produkts, Volcast EMS.

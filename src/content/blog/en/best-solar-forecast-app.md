@@ -22,9 +22,9 @@ Cloud-cover percentages say little about yield: panels respond to irradiance (W/
 
 ## Category 3: forecast apps — the view ahead
 
-Dedicated production forecasting runs the full chain: satellite data → solar position → your system's geometry → temperature corrections → kWh per hour. What separates providers comes down to two things: **calibration** (does the model learn your specific system — shading, losses, degradation?) and **accessibility** (a phone app with notifications, or an API for tinkerers only?).
+Dedicated production forecasting runs the full chain: weather-model (NWP ensemble) irradiance data → solar position → your system's geometry → temperature corrections → kWh per hour. What separates providers comes down to two things: **calibration** (does the model learn your specific system — shading, losses, degradation?) and **accessibility** (a phone app with notifications, or an API for tinkerers only?).
 
-Volcast combines both: a physics model plus automatic Kalman-filter calibration, wrapped in a mobile app with widgets and push notifications ("tomorrow's forecast changed significantly", "surplus expected from 11 am"). It works with any system — no inverter login, no API keys, no cloud link to your hardware. Free with a 2-day forecast; Premium ($4.49/mo) extends to 7 days, auto-calibration and the Home Assistant API.
+Volcast combines both: a physics model plus automatic Kalman-filter calibration, wrapped in a mobile app with widgets and push notifications ("tomorrow's forecast", "surplus expected from 11 am"). It works with any system — no inverter login, no API keys, no cloud link to your hardware. Free with a 2-day forecast; Premium ($4.49/mo) extends to 7 days, auto-calibration and the Home Assistant API.
 
 ## What to check before choosing
 
