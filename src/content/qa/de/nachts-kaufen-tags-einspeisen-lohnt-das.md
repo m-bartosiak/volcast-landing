@@ -9,7 +9,7 @@ translationKey: "qa-arbitrage"
 seo:
   ogTitle: "Nachts kaufen, tags einspeisen — lohnt sich das?"
 ---
-In der Variante „nachts billig kaufen, tagsüber teuer **einspeisen**" — **praktisch nie.** Die Einspeisevergütung liegt in der Nähe (oder unter) dem Nachttal-Preis, und die Speicherwandlung frisst 10–15 %. Rentabel ist eine andere Arbitrage: „nachts billig kaufen, in der teuren Spitze **selbst verbrauchen**" — also die teuersten Bezugsstunden durch eigenen günstigen Vorrat ersetzen, nicht mit dem Netz handeln.
+In der Variante „nachts billig kaufen, tagsüber teuer **einspeisen**" — **praktisch nie.** Die Einspeisevergütung liegt nahe am Nachttal-Preis (oder darunter), und die Speicherwandlung frisst 10–15 %. Rentabel ist eine andere Arbitrage: „nachts billig kaufen, in der teuren Spitze **selbst verbrauchen**" — also die teuersten Bezugsstunden durch eigenen günstigen Vorrat ersetzen, nicht mit dem Netz handeln.
 
 ## Warum das Einspeisen nicht aufgeht
 

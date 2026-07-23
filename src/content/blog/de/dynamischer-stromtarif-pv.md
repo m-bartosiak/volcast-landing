@@ -10,7 +10,7 @@ translationKey: "dynamic-tariff"
 seo:
   ogTitle: "Dynamischer Stromtarif mit PV-Anlage — lohnt sich das?"
 ---
-Bei einem dynamischen Stromtarif zahlst du den stündlichen Börsenpreis plus Netzentgelte, Abgaben und die Marge des Anbieters (Tibber, Rabot, Ostrom und andere). Die Preise schwanken übers Mehrfache innerhalb eines Tages — sonnige Mittage sind oft spottbillig oder negativ, Winterabende teuer. Für den Durchschnittshaushalt ein Glücksspiel; für PV-Besitzer mit flexiblem Verbrauch oder Speicher ein Werkzeug. Ich schreibe das als jemand, der seit Jahren auf einem dynamischen Tarif lebt.
+Bei einem dynamischen Stromtarif zahlst du den stündlichen Börsenpreis plus Netzentgelte, Abgaben und die Marge des Anbieters (Tibber, Rabot, Ostrom und andere). Die Preise schwanken innerhalb eines Tages um ein Mehrfaches — sonnige Mittage sind oft spottbillig oder negativ, Winterabende teuer. Für den Durchschnittshaushalt ein Glücksspiel; für PV-Besitzer mit flexiblem Verbrauch oder Speicher ein Werkzeug. Ich schreibe das als jemand, der seit Jahren auf einem dynamischen Tarif lebt.
 
 ## Wie es praktisch funktioniert
 
@@ -20,7 +20,7 @@ Abgerechnet wird nach den Day-Ahead-Börsenpreisen — und die stehen **schon am
 
 **Es lohnt sich, wenn mindestens eins zutrifft:** Du hast PV (die eigene Produktion deckt die Mittagsstunden ohnehin), du kannst große Lasten verschieben (Warmwasser, Wäsche, Wallbox), du hast einen Speicher (Arbitrage: billig laden, teuer entladen), du heizt mit Wärmepumpe und Puffer.
 
-**Es lohnt sich nicht, wenn:** dein Verbrauch fest in den Preisspitzen liegt, du eine planbare Rechnung über alles stellst, oder dich schon eine Minute Tagesplanung nervt.
+**Es lohnt sich nicht, wenn:** dein Verbrauch fest in den Preisspitzen liegt, dir eine planbare Rechnung über alles geht, oder dich schon eine Minute Tagesplanung nervt.
 
 ## Ein realer Tag auf dem dynamischen Tarif
 

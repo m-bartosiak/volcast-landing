@@ -18,9 +18,9 @@ Die typischen Gründe aus der Home-Assistant-Community: die Prognose passt nicht
 
 ## Die drei Kandidaten in Kürze
 
-**Forecast.Solar** — der Community-Standard: kostenloses API, simple Parameter, Core-Integration in Home Assistant. Keine Kalibrierung an die konkrete Anlage, Stundenauflösung, Limits im Gratis-Plan. Für einfache, unverschattete Anlagen oft völlig ausreichend.
+**Forecast.Solar** — der Community-Standard: kostenlose API, simple Parameter, Core-Integration in Home Assistant. Keine Kalibrierung an die konkrete Anlage, Stundenauflösung, Limits im Gratis-Plan. Für einfache, unverschattete Anlagen oft völlig ausreichend.
 
-**Solcast** — die Industrie-Option: hochwertige Satelliten-Einstrahlungsdaten, Hobby-Plan mit Tageslimit, Tuning an eigene Daten möglich. Kern ist das API — eine Endnutzer-App gibt es nicht.
+**Solcast** — die Industrie-Option: hochwertige Satelliten-Einstrahlungsdaten, Hobby-Plan mit Tageslimit, Tuning an eigene Daten möglich. Kern ist die API — eine Endnutzer-App gibt es nicht.
 
 **Volcast** — Physik-Engine auf Einstrahlungsdaten aus Wettermodellen (NWP-Ensemble) plus automatische Kalman-Kalibrierung an deine reale Produktion, verpackt in eine Handy-App (iOS/Android, 13 Sprachen) mit Push-Benachrichtigungen, dazu offizielle HACS-Integration und API im Premium-Plan (4,49 $/Monat).
 
@@ -42,7 +42,7 @@ Die typischen Gründe aus der Home-Assistant-Community: die Prognose passt nicht
 
 **Bleib bei Forecast.Solar, wenn** deine Anlage einfach und unverschattet ist, dir Tagesgenauigkeit reicht und du nur einen Sensor im Energy Dashboard willst. Es kostet nichts und tut, was es soll.
 
-**Nimm Solcast, wenn** du auf dem API eigene Lösungen baust und Industriedaten willst — App und Komfort sind dir egal.
+**Nimm Solcast, wenn** du auf der API eigene Lösungen baust und Industriedaten willst — App und Komfort sind dir egal.
 
 **Nimm Volcast, wenn** deine Anlage Eigenheiten hat (Verschattung, Ost-West, Degradation), du die Prognose auch am Handy mit Benachrichtigungen willst — oder ein Werkzeug für beides: App *und* Home Assistant. Den Unterschied macht die Kalibrierung: Nach 2–3 Wochen bildet die Prognose *deine* Anlage ab, nicht die Modellanlage.
 

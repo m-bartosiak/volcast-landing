@@ -16,7 +16,7 @@ Die kurze Antwort: **immer dann, wenn deine Anlage mehr produziert, als das Haus
 
 Die Rechnung ist in Deutschland brutal einfach: Eingespeister Strom bringt rund 8 Cent pro kWh, bezogener Strom kostet 30–40 Cent. Jede Kilowattstunde, die du direkt vom Dach verbrauchst, ist also etwa das **Drei- bis Vierfache** einer eingespeisten wert. Mit dynamischem Tarif und negativen Börsenpreisen an sonnigen Mittagen wird die Differenz noch größer.
 
-Heizstab, Waschmaschine, Spülmaschine, Trockner und Wallbox sind die größten „verschiebbaren" Verbraucher im Haus. Allein ein 2–3-kW-Heizstab, der 1,5–2 Stunden Warmwasser macht, sind 3–6 kWh am Tag — vom Abend in den Mittag verschoben, macht das über den Monat schnell einen zweistelligen Euro-Betrag aus.
+Heizstab, Waschmaschine, Spülmaschine, Trockner und Wallbox sind die größten „verschiebbaren" Verbraucher im Haus. Allein ein 2–3-kW-Heizstab, der 1,5–2 Stunden Warmwasser macht, verbraucht 3–6 kWh am Tag — vom Abend in den Mittag verschoben, macht das über den Monat schnell einen zweistelligen Euro-Betrag aus.
 
 ## Regel Nr. 1: nicht die Uhrzeit zählt, sondern der Überschuss
 

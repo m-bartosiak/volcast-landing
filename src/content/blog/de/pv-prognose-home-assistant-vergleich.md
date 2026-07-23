@@ -51,7 +51,7 @@ In Home Assistant bekommst du direkt: `sensor.volcast_energy_today`, `sensor.vol
 4. API-Key in der Volcast-App erzeugen (Premium) — `vk_...`.
 5. *Einstellungen → Geräte & Dienste → Integration hinzufügen* → „Volcast" → Key einfügen. Die Sensoren erscheinen automatisch.
 
-![Volcast-Prognose direkt im Home Assistant Energy Dashboard, über der realen GoodWe-Produktion](/img/blog/ha-energy-dashboard-de.webp)
+![Volcast-Prognose direkt im Home-Assistant-Energy-Dashboard, über der realen GoodWe-Produktion](/img/blog/ha-energy-dashboard-de.webp)
 
 ## Was für wen
 

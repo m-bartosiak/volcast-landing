@@ -22,4 +22,4 @@ Die Ausnahme bestätigt die Regel: An kalten Tagen mit klarer Sonne und Reflexio
 1. **Referenz ändern:** statt „6 kWp müssen 6 kW zeigen" gilt: reales Maximum ~80–90 % unter Idealbedingungen.
 2. **Momentanleistung an einem kühlen, klaren Mittag prüfen** — der einzig aussagekräftige „Spitzentest".
 3. **Weicht das Maximum deutlich ab** (z. B. 60 % unter Idealbedingungen) — nach dem Muster suchen: feste Uhrzeit = Verschattung; glatte Kappung = Limit (Antwort zur gekappten Produktion); zufällig = Strings prüfen lassen.
-4. **Abweichungen an der Prognose für deine Konfiguration messen,** nicht am Datenblatt — ein kalibriertes Modell weiß, was dein Dach um 13 Uhr im April liefern sollte, und erst davon aus zählt „zu wenig".
+4. **Abweichungen an der Prognose für deine Konfiguration messen,** nicht am Datenblatt — ein kalibriertes Modell weiß, was dein Dach um 13 Uhr im April liefern sollte, und erst von da an zählt „zu wenig".

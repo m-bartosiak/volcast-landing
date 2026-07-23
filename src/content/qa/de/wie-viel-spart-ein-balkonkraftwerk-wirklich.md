@@ -9,7 +9,7 @@ translationKey: "qa-de-bkw-savings"
 seo:
   ogTitle: "Was spart ein 800-W-Balkonkraftwerk wirklich?"
 ---
-Realistisch liefert ein 800-W-Balkonkraftwerk (mit ~800–1000 Wp Modulen) in Deutschland **500–800 kWh im Jahr** — aber sparen tust du nur den Teil, den du **im Moment der Erzeugung selbst verbrauchst**; der Rest fließt unvergütet ins Netz. Bei typischen 60–80 % Direktverbrauch ergeben sich je nach Strompreis grob **100–200 € Ersparnis pro Jahr** — solide, aber weniger, als mancher Prospekt mit „bis zu"-Zahlen suggeriert.
+Realistisch liefert ein 800-W-Balkonkraftwerk (mit ~800–1000 Wp Modulen) in Deutschland **500–800 kWh im Jahr** — aber sparst du nur den Teil, den du **im Moment der Erzeugung selbst verbrauchst**; der Rest fließt unvergütet ins Netz. Bei typischen 60–80 % Direktverbrauch ergeben sich je nach Strompreis grob **100–200 € Ersparnis pro Jahr** — solide, aber weniger, als mancher Prospekt mit „bis zu"-Zahlen suggeriert.
 
 ## Warum die Prospektzahl selten stimmt
 
