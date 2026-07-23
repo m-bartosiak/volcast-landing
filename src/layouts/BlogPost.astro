@@ -25,7 +25,13 @@ const lang = data.lang as BlogLang;
 const slug = post.id.split('/').pop()!;
 const allPosts = await getCollection('blog', ({ data: d }) => !d.draft);
 
-let candidates = getClusterSlugs(lang, slug);
+// 1) po translationKey (wpisy z paczki), 2) po mapie topiców (istniejące wpisy), 3) po identycznym slugu.
+let candidates = data.translationKey
+  ? allPosts
+      .filter(p => p.data.lang !== lang && p.data.translationKey === data.translationKey)
+      .map(p => ({ lang: p.data.lang as typeof lang, slug: p.id.split('/').pop()! }))
+  : [];
+if (candidates.length === 0) candidates = getClusterSlugs(lang, slug);
 if (candidates.length === 0) {
   candidates = LANGS
     .filter(l => l !== lang && allPosts.some(p => p.data.lang === l && p.id.split('/').pop() === slug))

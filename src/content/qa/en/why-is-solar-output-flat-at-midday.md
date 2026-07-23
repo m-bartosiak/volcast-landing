@@ -2,9 +2,10 @@
 title: "Why does my solar output flatten at midday?"
 description: "A flat plateau in your midday production curve is inverter clipping or an export limit — usually by design, not a defect. How to tell which one."
 lang: en
-category: k1
-guide: solar-production-forecast
-translationKey: qa-clipping
+draft: true
+category: "k1"
+guide: "solar-production-forecast"
+translationKey: "qa-clipping"
 seo:
   ogTitle: "Flat-topped solar output at midday — clipping explained"
 ---
