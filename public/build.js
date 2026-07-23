@@ -23,6 +23,9 @@ const NATIVE_NAMES = {
   'pt-br': 'Português (BR)', 'ro': 'Română', 'cs': 'Čeština', 'sk': 'Slovenčina'
 };
 
+// Blog istnieje tylko w en/pl/de — pozostałe locale kierujemy na blog EN.
+const BLOG_LANG = { 'en': 'en', 'pl': 'pl', 'de': 'de' };
+
 const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
 const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'translations.json'), 'utf8'));
 
@@ -65,6 +68,7 @@ for (const locale of LOCALES) {
   html = html.replace(/\{\{LANG\}\}/g, HREFLANG[locale]);
   html = html.replace(/\{\{BASE_URL\}\}/g, BASE_URL);
   html = html.replace(/\{\{NATIVE_NAME\}\}/g, NATIVE_NAMES[locale]);
+  html = html.replace(/\{\{BLOG_LANG\}\}/g, BLOG_LANG[locale] || 'en');
 
   // Inject language switcher options
   html = html.replace('{{LANG_SWITCHER_OPTIONS}}', langSwitcherOptions(locale));

@@ -5,7 +5,7 @@ import type { BlogLang } from '../data/i18n';
 interface Props {
   lang: BlogLang;
   alternates?: { lang: string; url: string }[];
-  activePage?: 'home' | 'blog';
+  activePage?: 'home' | 'blog' | 'qa';
 }
 
 const { lang, alternates = [], activePage = 'blog' } = Astro.props;
@@ -31,6 +31,7 @@ const { lang, alternates = [], activePage = 'blog' } = Astro.props;
     <nav class="nav-links">
       <a href={`/${lang}/`} class={activePage === 'home' ? 'active' : ''}>Home</a>
       <a href={`/blog/${lang}/`} class={activePage === 'blog' ? 'active' : ''}>Blog</a>
+      <a href={`/blog/${lang}/q/`} class={activePage === 'qa' ? 'active' : ''}>Q&amp;A</a>
     </nav>
 
     <LanguageSwitcher lang={lang} alternates={alternates} />
