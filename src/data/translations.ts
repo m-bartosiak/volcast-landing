@@ -34,10 +34,10 @@ export const TRANSLATION_CLUSTERS: TranslationCluster[] = [
   { en: 'why-solar-panels-produce-less-in-heat', pl: 'dlaczego-panele-produkuja-mniej-w-upale' },
   { en: 'summer-solar-surplus-and-curtailment', pl: 'letnia-nadprodukcja-i-curtailment' },
   { en: 'timing-appliances-to-your-solar-peak', pl: 'jak-ustawic-zuzycie-pod-szczyt-produkcji' },
-  { en: 'same-system-different-cities-europe', pl: 'ta-sama-instalacja-rozne-miasta-europy' },
-  { en: 'why-regional-weather-models-matter', pl: 'dlaczego-regionalne-modele-pogodowe-maja-znaczenie' },
-  { en: 'coastal-vs-inland-solar-microclimate', pl: 'wybrzeze-vs-glab-ladu-mikroklimat' },
-  { en: 'saharan-dust-southern-europe-solar', pl: 'pyl-saharyjski-poludniowa-europa' },
+  { en: 'same-system-different-cities-europe', pl: 'ta-sama-instalacja-rozne-miasta-europy', de: 'gleiche-anlage-verschiedene-staedte' },
+  { en: 'why-regional-weather-models-matter', pl: 'dlaczego-regionalne-modele-pogodowe-maja-znaczenie', de: 'warum-regionale-wettermodelle-zaehlen' },
+  { en: 'coastal-vs-inland-solar-microclimate', pl: 'wybrzeze-vs-glab-ladu-mikroklimat', de: 'kueste-oder-binnenland-mikroklima' },
+  { en: 'saharan-dust-southern-europe-solar', pl: 'pyl-saharyjski-poludniowa-europa', de: 'saharastaub-suedeuropa-pv' },
 ];
 
 /** Znajdź klaster tłumaczeń, do którego należy dany (język, slug). */
