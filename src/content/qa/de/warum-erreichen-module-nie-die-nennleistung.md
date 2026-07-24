@@ -2,7 +2,7 @@
 title: "Warum erreichen die Module nie die Nennleistung?"
 description: "6 kWp zeigen maximal 4,5–5 kW? Normal — die Nennleistung gilt für Laborbedingungen. Was real „voll\" bedeutet und wann du dir Sorgen machen solltest."
 lang: de
-draft: true
+draft: false
 category: "k2"
 guide: "pv-ertragsprognose"
 translationKey: "qa-below-rated"

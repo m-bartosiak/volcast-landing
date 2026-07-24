@@ -2,7 +2,7 @@
 title: "Dlaczego produkcja ścina się na płasko w południe?"
 description: "Płaski „stolik\" na wykresie produkcji zamiast szczytu to clipping albo limit eksportu. Jak odróżnić jedno od drugiego i ile kWh naprawdę tracisz."
 lang: pl
-draft: true
+draft: false
 category: "k1"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-clipping"

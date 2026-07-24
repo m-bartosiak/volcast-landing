@@ -2,7 +2,7 @@
 title: "How do I check my solar system is working properly?"
 description: "Compare actual output with a forecast for your exact setup, check string balance and the shape of the daily curve. A fault-finding routine without a ladder."
 lang: en
-draft: true
+draft: false
 category: "k2"
 guide: "solar-production-forecast"
 translationKey: "qa-system-check"

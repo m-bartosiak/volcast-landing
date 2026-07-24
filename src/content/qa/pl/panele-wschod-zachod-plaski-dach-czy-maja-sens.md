@@ -2,7 +2,7 @@
 title: "Czy panele na wschód–zachód albo na płaskim dachu mają sens?"
 description: "Wschód–zachód daje ~80–90% uzysku południa, ale lepszy rozkład na autokonsumpcję. Płaski montaż, północ, garaż — liczby zamiast mitów."
 lang: pl
-draft: true
+draft: false
 category: "k2"
 guide: "prognoza-pogody-a-produkcja-pv"
 translationKey: "qa-orientation"

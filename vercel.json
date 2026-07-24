@@ -1,4 +1,16 @@
 {
   "framework": "astro",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/blog/en/timing-appliances-to-your-solar-peak",
+      "destination": "/blog/en/when-to-run-appliances-solar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pl/jak-ustawic-zuzycie-pod-szczyt-produkcji",
+      "destination": "/blog/pl/kiedy-wlaczyc-bojler-pralke-fotowoltaika",
+      "permanent": true
+    }
+  ]
 }

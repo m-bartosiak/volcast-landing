@@ -2,7 +2,7 @@
 title: "Co to jest krzywa P(U) / Volt-Watt i czy ją włączyć?"
 description: "Krzywa P(U) każe falownikowi łagodnie redukować moc przy rosnącym napięciu zamiast twardo się wyłączać. Kiedy ją włączyć i czego dopilnować u instalatora."
 lang: pl
-draft: true
+draft: false
 category: "k1"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-volt-watt"

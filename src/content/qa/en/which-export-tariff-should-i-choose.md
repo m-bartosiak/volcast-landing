@@ -2,7 +2,7 @@
 title: "Which export tariff should I choose?"
 description: "Export rates differ several-fold between suppliers. How to choose between flat, time-of-use and spot-linked export — with UK, Irish and Australian examples."
 lang: en
-draft: true
+draft: false
 category: "k6"
 guide: "dynamic-tariff-with-solar"
 translationKey: "qa-en-export-tariff"

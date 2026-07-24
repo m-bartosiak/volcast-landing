@@ -2,7 +2,7 @@
 title: "What battery size do I need for my solar and usage?"
 description: "Start from your evening-and-night consumption, not from panel size. Why 1–1.5 kWh per 1000 kWh of annual use is a sane anchor, and when to go bigger."
 lang: en
-draft: true
+draft: false
 category: "k3"
 guide: "home-battery-charge-grid-or-solar"
 translationKey: "qa-battery-size"

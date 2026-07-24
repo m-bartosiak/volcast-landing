@@ -2,7 +2,7 @@
 title: "Jak dodać prognozę produkcji do Energy Dashboard w Home Assistant?"
 description: "Energy Dashboard pokazuje prognozę produkcji obok rzeczywistej — wystarczy integracja z platformą forecast. Konfiguracja krok po kroku i porównanie źródeł."
 lang: pl
-draft: true
+draft: false
 category: "k5"
 guide: "porownanie-prognoz-home-assistant"
 translationKey: "qa-ha-energy-dashboard"

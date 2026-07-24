@@ -2,7 +2,7 @@
 title: "What is volt-watt response and should I enable it?"
 description: "Volt-watt gently reduces inverter output as grid voltage rises, instead of hard tripping. When it saves you energy and what to watch out for."
 lang: en
-draft: true
+draft: false
 category: "k1"
 guide: "solar-production-forecast"
 translationKey: "qa-volt-watt"

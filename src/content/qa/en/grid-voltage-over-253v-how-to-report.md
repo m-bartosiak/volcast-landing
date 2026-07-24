@@ -2,7 +2,7 @@
 title: "Grid voltage above 253 V — how do I report it effectively?"
 description: "Report overvoltage to the network operator, not your energy supplier — with logs, timestamps and measured values. A step-by-step that gets results."
 lang: en
-draft: true
+draft: false
 category: "k1"
 guide: "solar-production-forecast"
 translationKey: "qa-overvoltage-report"

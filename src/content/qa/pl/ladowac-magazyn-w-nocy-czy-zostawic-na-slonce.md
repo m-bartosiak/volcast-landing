@@ -2,7 +2,7 @@
 title: "Ładować magazyn w nocy z taniej taryfy czy zostawić miejsce na słońce?"
 description: "Zasada jest jedna: decyzję podejmuje jutrzejsza prognoza. Słoneczne jutro — nie ładuj z sieci. Pochmurne — doładuj w dolinie. Prosty algorytm na każdy wieczór."
 lang: pl
-draft: true
+draft: false
 category: "k3"
 guide: "magazyn-energii-kiedy-ladowac"
 translationKey: "qa-night-vs-solar"

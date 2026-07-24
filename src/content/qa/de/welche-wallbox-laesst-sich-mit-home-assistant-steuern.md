@@ -2,7 +2,7 @@
 title: "Welche Wallbox lässt sich mit Home Assistant steuern?"
 description: "Nicht die Marke entscheidet, sondern die Offenheit: OCPP, lokale API oder EVCC-Support. Was eine Wallbox fürs Überschussladen mit HA können muss."
 lang: de
-draft: true
+draft: false
 category: "k5"
 guide: "pv-ueberschussladen-wallbox"
 translationKey: "qa-ev-charger-ha"

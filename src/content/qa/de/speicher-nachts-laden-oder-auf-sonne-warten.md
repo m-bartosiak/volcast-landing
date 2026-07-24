@@ -2,7 +2,7 @@
 title: "Speicher nachts mit Billigstrom laden oder Platz für die Sonne lassen?"
 description: "Die Regel ist simpel: Die Morgen-Prognose entscheidet. Sonniger Tag angekündigt — nicht aus dem Netz laden. Trüber Tag — im Tal nachladen. Der Abend-Algorithmus."
 lang: de
-draft: true
+draft: false
 category: "k3"
 guide: "speicher-laden-netz-oder-sonne"
 translationKey: "qa-night-vs-solar"

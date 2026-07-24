@@ -2,7 +2,7 @@
 title: "Der Wechselrichter ist kleiner als die Modulleistung — ist das ein Fehler?"
 description: "10 kWp Module am 8-kW-Wechselrichter? Überbelegung bis DC/AC ~1,25 ist Planungsstandard, keine Sparmaßnahme. Wo die sinnvolle Grenze liegt."
 lang: de
-draft: true
+draft: false
 category: "k1"
 guide: "pv-ertragsprognose"
 translationKey: "qa-inverter-undersized"

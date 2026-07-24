@@ -2,7 +2,7 @@
 title: "Jaki magazyn energii dobrać do instalacji i zużycia?"
 description: "Pojemność magazynu dobiera się do wieczorno-nocnego zużycia, nie do mocy paneli. Prosty wzór, dwa przykłady i błąd, który popełnia większość kupujących."
 lang: pl
-draft: true
+draft: false
 category: "k3"
 guide: "magazyn-energii-kiedy-ladowac"
 translationKey: "qa-battery-size"

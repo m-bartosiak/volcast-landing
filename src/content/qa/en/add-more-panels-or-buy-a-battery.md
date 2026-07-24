@@ -2,7 +2,7 @@
 title: "Should I add more panels or buy a battery?"
 description: "Panels add cheap kWh, a battery adds value per kWh. Which one wins depends on your export rate, tariff spread and how much surplus you already waste."
 lang: en
-draft: true
+draft: false
 category: "k3"
 guide: "increase-solar-self-consumption"
 translationKey: "qa-panels-or-battery"

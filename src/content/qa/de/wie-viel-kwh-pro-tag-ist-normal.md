@@ -2,7 +2,7 @@
 title: "Wie viel kWh pro Tag sollte eine PV-Anlage produzieren?"
 description: "Faustregel: 4–6 kWh je kWp an einem sonnigen Sommertag, 0,3–1,5 kWh im Winter. Richtwerte je Anlagengröße und wie du deinen Tag fair bewertest."
 lang: de
-draft: true
+draft: false
 category: "k2"
 guide: "pv-ertragsprognose"
 translationKey: "qa-daily-yield"

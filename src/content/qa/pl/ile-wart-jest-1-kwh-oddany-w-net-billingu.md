@@ -2,7 +2,7 @@
 title: "Ile jest wart 1 kWh oddany do sieci w net-billingu?"
 description: "Oddana kWh jest warta cenę rynkową (RCE) — zwykle 2–3 razy mniej niż kWh kupowana. Skąd bierze się ta różnica i jak podnieść wartość swojej produkcji."
 lang: pl
-draft: true
+draft: false
 category: "k6"
 guide: "taryfa-dynamiczna-fotowoltaika"
 translationKey: "qa-pl-net-billing-value"

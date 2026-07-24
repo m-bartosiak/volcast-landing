@@ -2,7 +2,7 @@
 title: "Jak automatycznie grzać wodę nadwyżką z fotowoltaiki?"
 description: "Stycznik z harmonogramem, router solarny czy Home Assistant z prognozą? Trzy poziomy automatyzacji grzania CWU nadwyżką — koszty, wady, zalety."
 lang: pl
-draft: true
+draft: false
 category: "k5"
 guide: "kiedy-wlaczyc-bojler-pralke-fotowoltaika"
 translationKey: "qa-boiler-surplus"

@@ -2,7 +2,7 @@
 title: "Lohnt es sich, nachts Strom zu kaufen und tagsüber einzuspeisen?"
 description: "Die klassische Arbitrage-Idee rechnet sich fast nie — die Einspeisevergütung ist zu niedrig, Verluste fressen den Rest. Was stattdessen wirklich funktioniert."
 lang: de
-draft: true
+draft: false
 category: "k4"
 guide: "speicher-laden-netz-oder-sonne"
 translationKey: "qa-arbitrage"

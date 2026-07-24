@@ -2,7 +2,7 @@
 title: "Czy fotowoltaika bez zgłoszenia jest legalna i co grozi?"
 description: "Instalacja on-grid zawsze wymaga zgłoszenia do operatora. Co realnie grozi za jej brak, jak zalegalizować istniejącą instalację i kiedy wystarczy mikroinstalacyjne zgłoszenie."
 lang: pl
-draft: true
+draft: false
 category: "k6"
 guide: "przydomowe-magazyny-energii-ems"
 translationKey: "qa-pl-notify"

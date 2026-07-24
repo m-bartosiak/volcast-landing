@@ -2,7 +2,7 @@
 title: "Lohnt sich ein dynamischer Tarif ohne Speicher?"
 description: "Es geht — wenn du 30–40 % des Verbrauchs in günstige Stunden verschiebst. Wem das leichtfällt, wer draufzahlt, und der Test vor dem Wechsel."
 lang: de
-draft: true
+draft: false
 category: "k4"
 guide: "dynamischer-stromtarif-pv"
 translationKey: "qa-dynamic-no-battery"

@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: en
-draft: true
+draft: false
 translationKey: "ev-charging"
 seo:
   ogTitle: "EV Charging From Solar — When to Plug In Your Car"

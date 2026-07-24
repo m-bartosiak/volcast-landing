@@ -2,7 +2,7 @@
 title: "Jaka ładowarka EV integruje się z Home Assistant?"
 description: "Nie marka decyduje, tylko otwartość sterowania: OCPP, lokalne API lub wsparcie EVCC. Czego wymagać od wallboxa pod automatyzację nadwyżką w HA."
 lang: pl
-draft: true
+draft: false
 category: "k5"
 guide: "ladowanie-ev-z-fotowoltaiki"
 translationKey: "qa-ev-charger-ha"

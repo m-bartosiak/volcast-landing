@@ -2,7 +2,7 @@
 title: "Czy taryfa dynamiczna opłaca się bez magazynu energii?"
 description: "Da się — pod warunkiem, że przesuniesz 30–40% zużycia w tanie godziny. Komu wychodzi to naturalnie, a kto dopłaci do zmiany. Test przed decyzją."
 lang: pl
-draft: true
+draft: false
 category: "k4"
 guide: "taryfa-dynamiczna-fotowoltaika"
 translationKey: "qa-dynamic-no-battery"

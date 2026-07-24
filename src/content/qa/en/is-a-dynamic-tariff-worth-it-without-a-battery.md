@@ -2,7 +2,7 @@
 title: "Is a dynamic tariff worth it without a battery?"
 description: "Without storage you can only shift behaviour, not energy. Who still profits from half-hourly prices, who should not — and what the spiky weeks feel like."
 lang: en
-draft: true
+draft: false
 category: "k4"
 guide: "dynamic-tariff-with-solar"
 translationKey: "qa-dynamic-no-battery"

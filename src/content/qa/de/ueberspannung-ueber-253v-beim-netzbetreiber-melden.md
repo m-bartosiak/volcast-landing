@@ -2,7 +2,7 @@
 title: "Spannung über 253 V — wie melde ich das wirksam beim Netzbetreiber?"
 description: "Zu hohe Netzspannung ist Sache des Netzbetreibers. Wie du Überschreitungen von 253 V mit Beweisen meldest, statt am Telefon abgewimmelt zu werden."
 lang: de
-draft: true
+draft: false
 category: "k1"
 guide: "pv-ertragsprognose"
 translationKey: "qa-overvoltage-report"

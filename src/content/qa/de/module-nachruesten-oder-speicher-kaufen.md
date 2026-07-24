@@ -2,7 +2,7 @@
 title: "Module nachrüsten oder Speicher kaufen?"
 description: "Eine Zahl entscheidet: Wann kaufst du Netzstrom — tagsüber oder abends? Der Test aus der Abrechnung und zwei Fälle, in denen sich die Antwort umdreht."
 lang: de
-draft: true
+draft: false
 category: "k3"
 guide: "eigenverbrauch-erhoehen-geraete-timen"
 translationKey: "qa-panels-or-battery"

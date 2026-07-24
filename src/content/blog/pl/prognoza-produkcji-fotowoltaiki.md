@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: pl
-draft: true
+draft: false
 translationKey: "forecast-hub"
 seo:
   ogTitle: "Prognoza produkcji fotowoltaiki — jak przewidzieć uzysk PV"

@@ -2,7 +2,7 @@
 title: "Wie heize ich Warmwasser automatisch mit PV-Überschuss?"
 description: "Zeitschaltung, Heizstab-Regler oder Home Assistant mit Prognose? Drei Automatisierungsstufen für Warmwasser aus Überschuss — Kosten, Stärken, Schwächen."
 lang: de
-draft: true
+draft: false
 category: "k5"
 guide: "eigenverbrauch-erhoehen-geraete-timen"
 translationKey: "qa-boiler-surplus"

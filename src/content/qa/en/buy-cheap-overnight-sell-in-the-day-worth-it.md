@@ -2,7 +2,7 @@
 title: "Is it worth buying cheap power overnight and selling in the day?"
 description: "Import-export arbitrage only pays when the spread beats round-trip losses plus battery wear. The honest arithmetic, and why it is a bonus, not a business."
 lang: en
-draft: true
+draft: false
 category: "k4"
 guide: "home-battery-charge-grid-or-solar"
 translationKey: "qa-arbitrage"

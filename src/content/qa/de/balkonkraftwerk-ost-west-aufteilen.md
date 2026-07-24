@@ -2,7 +2,7 @@
 title: "Balkonkraftwerk auf Ost und West aufteilen — sinnvoll?"
 description: "Ein Modul nach Ost, eins nach West: weniger Spitzenertrag, aber mehr nutzbare Stunden — oft die höhere Ersparnis. Für wen sich die Aufteilung rechnet."
 lang: de
-draft: true
+draft: false
 category: "k6"
 guide: "balkonkraftwerk-ertrag-berechnen"
 translationKey: "qa-de-bkw-eastwest"

@@ -2,7 +2,7 @@
 title: "Czy depozyt prosumencki przepada?"
 description: "Środki w depozycie prosumenckim rozliczają się na bieżąco, a niewykorzystana nadpłata jest częściowo zwracana po 12 miesiącach. Jak działa mechanizm."
 lang: pl
-draft: true
+draft: false
 category: "k6"
 guide: "taryfa-dynamiczna-fotowoltaika"
 translationKey: "qa-pl-deposit"

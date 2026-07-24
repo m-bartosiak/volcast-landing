@@ -2,7 +2,7 @@
 title: "Czy opłaca się kupować prąd w nocy i sprzedawać w dzień?"
 description: "Klasyczny pomysł na arbitraż prawie nigdy się nie spina — wartość sprzedaży jest za niska, a straty zjadają resztę. Co zamiast tego naprawdę działa."
 lang: pl
-draft: true
+draft: false
 category: "k4"
 guide: "magazyn-energii-kiedy-ladowac"
 translationKey: "qa-arbitrage"

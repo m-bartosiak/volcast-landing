@@ -2,7 +2,7 @@
 title: "Ile kWh dziennie powinna produkować instalacja fotowoltaiczna?"
 description: "Szybka reguła: latem 4–6 kWh z każdego kWp w słoneczny dzień, zimą 0,3–1,5 kWh. Tabela per moc instalacji i sposób, żeby ocenić własny wynik uczciwie."
 lang: pl
-draft: true
+draft: false
 category: "k2"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-daily-yield"

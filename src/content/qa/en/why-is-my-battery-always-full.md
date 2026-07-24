@@ -2,7 +2,7 @@
 title: "Why is my battery always full and not doing anything?"
 description: "A battery that is constantly full is not earning. Usually a sign of summer surplus plus conservative settings — sometimes of an export limit quietly wasting energy."
 lang: en
-draft: true
+draft: false
 category: "k3"
 guide: "home-battery-charge-grid-or-solar"
 translationKey: "qa-battery-full"

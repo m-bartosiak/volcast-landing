@@ -2,7 +2,7 @@
 title: "Napięcie powyżej 253 V — jak skutecznie zgłosić do operatora?"
 description: "Za wysokie napięcie w sieci to odpowiedzialność operatora dystrybucji. Jak zgłosić przekroczenia 253 V, żeby nie zostać zbytym — krok po kroku, z dowodami."
 lang: pl
-draft: true
+draft: false
 category: "k1"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-overvoltage-report"

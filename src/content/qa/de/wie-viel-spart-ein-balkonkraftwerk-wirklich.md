@@ -2,7 +2,7 @@
 title: "Wie viel spart ein Balkonkraftwerk mit 800 W wirklich?"
 description: "Realistische Rechnung statt Prospekt: 500–800 kWh Jahresertrag, davon zählt nur der selbst verbrauchte Teil. Die ehrliche Ersparnis und ihre 3 Stellschrauben."
 lang: de
-draft: true
+draft: false
 category: "k6"
 guide: "balkonkraftwerk-ertrag-berechnen"
 translationKey: "qa-de-bkw-savings"

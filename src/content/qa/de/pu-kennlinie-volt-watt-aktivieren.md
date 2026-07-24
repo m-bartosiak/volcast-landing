@@ -2,7 +2,7 @@
 title: "Was ist die P(U)-Kennlinie (Volt-Watt) und sollte ich sie aktivieren?"
 description: "Die P(U)-Kennlinie drosselt die Leistung sanft bei steigender Netzspannung, statt hart abzuschalten. Wann sie sich lohnt und worauf du achten musst."
 lang: de
-draft: true
+draft: false
 category: "k1"
 guide: "pv-ertragsprognose"
 translationKey: "qa-volt-watt"

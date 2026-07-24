@@ -2,7 +2,7 @@
 title: "Jak sprawdzić, czy instalacja fotowoltaiczna działa poprawnie?"
 description: "Sąsiad i ulotka to złe benchmarki. Uczciwy test instalacji w 4 krokach: kształt krzywej, chłodny słoneczny dzień, porównanie z kalibrowaną prognozą."
 lang: pl
-draft: true
+draft: false
 category: "k2"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-system-check"

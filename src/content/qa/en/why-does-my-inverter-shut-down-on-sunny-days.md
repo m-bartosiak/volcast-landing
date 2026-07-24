@@ -2,7 +2,7 @@
 title: "Why does my inverter shut down on sunny days?"
 description: "Midday shutdowns are usually grid overvoltage (above 253 V), not a fault. How to spot the pattern in your logs and what actually fixes it."
 lang: en
-draft: true
+draft: false
 category: "k1"
 guide: "solar-production-forecast"
 translationKey: "qa-inverter-trips"

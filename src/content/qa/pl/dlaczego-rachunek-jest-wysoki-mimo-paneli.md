@@ -2,7 +2,7 @@
 title: "Dlaczego rachunek za prąd jest wysoki mimo paneli?"
 description: "Panele działają, a rachunek jak przed instalacją? Sprawdź kolejno: autokonsumpcję, godziny zużycia, rozliczenie net-billingu, opłaty stałe i licznik."
 lang: pl
-draft: true
+draft: false
 category: "k4"
 guide: "jak-zwiekszyc-autokonsumpcje-fotowoltaika"
 translationKey: "qa-high-bill"

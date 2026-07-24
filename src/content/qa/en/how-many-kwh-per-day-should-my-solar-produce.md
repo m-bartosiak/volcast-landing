@@ -2,7 +2,7 @@
 title: "How many kWh per day should my solar system produce?"
 description: "A rough rule per kWp — and why the honest answer swings 5–10x between June and December. How to benchmark your system against its real potential."
 lang: en
-draft: true
+draft: false
 category: "k2"
 guide: "solar-production-forecast"
 translationKey: "qa-daily-yield"

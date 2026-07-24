@@ -2,7 +2,7 @@
 title: "Warum ist der Speicher ständig voll und speist nichts ein?"
 description: "Ein voller Speicher an Sonnentagen ist meist korrekt arbeitende Priorität, Einspeiselimit oder Backup-Modus — kein Defekt. In 5 Minuten erkannt."
 lang: de
-draft: true
+draft: false
 category: "k3"
 guide: "speicher-laden-netz-oder-sonne"
 translationKey: "qa-battery-full"

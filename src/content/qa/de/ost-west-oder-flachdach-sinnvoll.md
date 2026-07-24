@@ -2,7 +2,7 @@
 title: "Lohnen sich Module nach Ost-West oder auf dem Flachdach?"
 description: "Ost-West bringt ~80–90 % des Südertrags, aber ein besseres Profil für den Eigenverbrauch. Flachmontage, Nord, Garage — Zahlen statt Mythen."
 lang: de
-draft: true
+draft: false
 category: "k2"
 guide: "verschattung-pv-ertrag"
 translationKey: "qa-orientation"

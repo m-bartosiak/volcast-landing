@@ -2,7 +2,7 @@
 title: "Should I charge the battery overnight on cheap rates or leave room for solar?"
 description: "The right answer changes daily with tomorrow's solar forecast and prices. The decision rule that avoids paying for grid power the sun would have delivered free."
 lang: en
-draft: true
+draft: false
 category: "k3"
 guide: "home-battery-charge-grid-or-solar"
 translationKey: "qa-night-vs-solar"

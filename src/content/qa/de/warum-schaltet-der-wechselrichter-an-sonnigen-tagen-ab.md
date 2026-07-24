@@ -2,7 +2,7 @@
 title: "Warum schaltet der Wechselrichter an sonnigen Tagen ab?"
 description: "Abschaltungen im Produktionspeak sind meist Überspannung im Netz (>253 V), kein Defekt. Woran du es erkennst und was wirklich hilft."
 lang: de
-draft: true
+draft: false
 category: "k1"
 guide: "pv-ertragsprognose"
 translationKey: "qa-inverter-trips"

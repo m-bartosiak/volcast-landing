@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: pl
-draft: true
+draft: false
 translationKey: "ev-charging"
 seo:
   ogTitle: "Ładowanie EV z fotowoltaiki — kiedy podpiąć samochód"

@@ -2,7 +2,7 @@
 title: "How do I heat water automatically with solar surplus?"
 description: "A hot water cylinder is the cheapest energy storage you already own. Timer, surplus diverter, or forecast-driven automation — compared honestly."
 lang: en
-draft: true
+draft: false
 category: "k5"
 guide: "when-to-run-appliances-solar"
 translationKey: "qa-boiler-surplus"

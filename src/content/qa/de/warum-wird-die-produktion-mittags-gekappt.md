@@ -2,7 +2,7 @@
 title: "Warum wird die Produktion mittags flach gekappt?"
 description: "Ein flaches Plateau statt Mittagsspitze bedeutet Clipping, Einspeisebegrenzung oder Wirkleistungslimit. So unterscheidest du die Ursachen und bezifferst den Verlust."
 lang: de
-draft: true
+draft: false
 category: "k1"
 guide: "pv-ertragsprognose"
 translationKey: "qa-clipping"

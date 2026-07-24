@@ -2,7 +2,7 @@
 title: "Are east-west panels or a flat roof worth it?"
 description: "An east-west array yields ~10–15% less per year than due south — but spreads production across the day, which is worth more for self-consumption."
 lang: en
-draft: true
+draft: false
 category: "k2"
 guide: "weather-forecast-vs-solar-output"
 translationKey: "qa-orientation"

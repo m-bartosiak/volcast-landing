@@ -2,7 +2,7 @@
 title: "My inverter is rated lower than my panels — is that a mistake?"
 description: "Panels rated above the inverter (DC/AC ratio 1.1–1.3) is standard engineering, not an installer error. When oversizing pays off and when it goes too far."
 lang: en
-draft: true
+draft: false
 category: "k1"
 guide: "solar-production-forecast"
 translationKey: "qa-inverter-undersized"

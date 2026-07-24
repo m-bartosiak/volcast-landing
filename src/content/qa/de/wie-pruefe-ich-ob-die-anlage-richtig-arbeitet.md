@@ -2,7 +2,7 @@
 title: "Wie prüfe ich, ob meine PV-Anlage richtig arbeitet?"
 description: "Nachbar und Prospekt sind schlechte Benchmarks. Der ehrliche Anlagentest in 4 Schritten: Kurvenform, kühler Sonnentag, Vergleich mit kalibrierter Prognose."
 lang: de
-draft: true
+draft: false
 category: "k2"
 guide: "pv-ertragsprognose"
 translationKey: "qa-system-check"

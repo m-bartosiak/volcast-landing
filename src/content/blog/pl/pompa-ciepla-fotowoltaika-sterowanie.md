@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: pl
-draft: true
+draft: false
 translationKey: "heat-pump"
 seo:
   ogTitle: "Pompa ciepła i fotowoltaika — jak sterować, by oszczędzać"

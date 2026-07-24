@@ -2,7 +2,7 @@
 title: "Welche Speichergröße passt zu Anlage und Verbrauch?"
 description: "Die Speichergröße richtet sich nach dem Abend- und Nachtverbrauch, nicht nach der Modulleistung. Einfache Formel, zwei Beispiele und der häufigste Kauffehler."
 lang: de
-draft: true
+draft: false
 category: "k3"
 guide: "speicher-laden-netz-oder-sonne"
 translationKey: "qa-battery-size"

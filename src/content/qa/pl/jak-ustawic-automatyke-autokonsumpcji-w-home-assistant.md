@@ -2,7 +2,7 @@
 title: "Jak ustawić automatykę autokonsumpcji w Home Assistant?"
 description: "Sensory produkcji, prognoza i 3 automatyzacje warunkowe — minimalny, działający schemat autokonsumpcji w HA, który nie kłóci falowników."
 lang: pl
-draft: true
+draft: false
 category: "k5"
 guide: "porownanie-prognoz-home-assistant"
 translationKey: "qa-ha-self-consumption"

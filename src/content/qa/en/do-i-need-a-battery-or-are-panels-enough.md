@@ -2,7 +2,7 @@
 title: "Do I need a battery or are panels enough?"
 description: "Panels alone suit daytime-heavy homes and decent export rates. A battery pays when the import-export spread is wide. The three numbers that decide it."
 lang: en
-draft: true
+draft: false
 category: "k6"
 guide: "increase-solar-self-consumption"
 translationKey: "qa-en-battery-or-panels"

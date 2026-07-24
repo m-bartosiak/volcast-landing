@@ -2,7 +2,7 @@
 title: "Wie bekomme ich die Ertragsprognose ins Energy Dashboard von Home Assistant?"
 description: "Das Energy Dashboard zeigt die Prognose neben der realen Produktion — eine Forecast-Integration genügt. Einrichtung Schritt für Schritt und Quellenvergleich."
 lang: de
-draft: true
+draft: false
 category: "k5"
 guide: "pv-prognose-home-assistant-vergleich"
 translationKey: "qa-ha-energy-dashboard"

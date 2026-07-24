@@ -2,7 +2,7 @@
 title: "Why is my electricity bill still high despite solar panels?"
 description: "Panels produce at noon, homes consume in the evening. Why low self-consumption keeps bills high, and the levers that actually move the number."
 lang: en
-draft: true
+draft: false
 category: "k4"
 guide: "increase-solar-self-consumption"
 translationKey: "qa-high-bill"

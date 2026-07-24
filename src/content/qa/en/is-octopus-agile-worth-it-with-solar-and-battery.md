@@ -2,7 +2,7 @@
 title: "Is Octopus Agile worth it with solar and a battery?"
 description: "Agile rewards automated flexibility and punishes set-and-forget. When half-hourly pricing beats Flux/Go for a solar-battery home — and when it does not."
 lang: en
-draft: true
+draft: false
 category: "k6"
 guide: "dynamic-tariff-with-solar"
 translationKey: "qa-en-agile-worth-it"

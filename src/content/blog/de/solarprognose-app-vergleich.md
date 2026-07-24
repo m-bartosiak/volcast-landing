@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: de
-draft: true
+draft: false
 translationKey: "best-app"
 seo:
   ogTitle: "Solarprognose-App im Vergleich — welche lohnt sich?"

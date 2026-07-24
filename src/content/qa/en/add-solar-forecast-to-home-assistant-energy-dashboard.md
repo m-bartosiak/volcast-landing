@@ -2,7 +2,7 @@
 title: "How do I add a solar production forecast to the Home Assistant Energy Dashboard?"
 description: "The Energy Dashboard can overlay a production forecast on your solar graph. How to wire it via a HACS integration and what the dashed line really tells you."
 lang: en
-draft: true
+draft: false
 category: "k5"
 guide: "home-assistant-solar-forecast-comparison"
 translationKey: "qa-ha-energy-dashboard"

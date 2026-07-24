@@ -2,7 +2,7 @@
 title: "Dokupić panele czy magazyn energii?"
 description: "Jedna liczba rozstrzyga: ile energii kupujesz z sieci w godzinach produkcji, a ile wieczorem. Test z rachunku i dwie sytuacje, w których odpowiedź się odwraca."
 lang: pl
-draft: true
+draft: false
 category: "k3"
 guide: "jak-zwiekszyc-autokonsumpcje-fotowoltaika"
 translationKey: "qa-panels-or-battery"

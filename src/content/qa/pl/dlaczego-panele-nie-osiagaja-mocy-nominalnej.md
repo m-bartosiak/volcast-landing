@@ -2,7 +2,7 @@
 title: "Dlaczego panele nie osiągają mocy nominalnej?"
 description: "Instalacja 6 kWp pokazuje maksymalnie 4,5–5 kW? To normalne — moc nominalna to warunki laboratoryjne. Ile realnie „powinno być\" i kiedy się martwić."
 lang: pl
-draft: true
+draft: false
 category: "k2"
 guide: "prognoza-pogody-a-produkcja-pv"
 translationKey: "qa-below-rated"

@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: en
-draft: true
+draft: false
 translationKey: "weather-vs-output"
 seo:
   ogTitle: "Weather Forecast vs Solar Output — Why They Differ"

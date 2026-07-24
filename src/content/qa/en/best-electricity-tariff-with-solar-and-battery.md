@@ -2,7 +2,7 @@
 title: "What electricity tariff should I choose with solar and a battery?"
 description: "With storage, the winning tariff has a wide price spread you can arbitrage — not the lowest flat rate. What to compare in the UK, Ireland and Australia."
 lang: en
-draft: true
+draft: false
 category: "k4"
 guide: "dynamic-tariff-with-solar"
 translationKey: "qa-best-tariff"

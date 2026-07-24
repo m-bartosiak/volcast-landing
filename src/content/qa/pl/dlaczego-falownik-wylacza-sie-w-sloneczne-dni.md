@@ -2,7 +2,7 @@
 title: "Dlaczego falownik wyłącza się w słoneczne dni?"
 description: "Falownik wyłącza się w szczycie produkcji? W 9 na 10 przypadków to zbyt wysokie napięcie w sieci (>253 V), nie usterka. Co sprawdzić i co zrobić."
 lang: pl
-draft: true
+draft: false
 category: "k1"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-inverter-trips"

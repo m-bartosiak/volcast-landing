@@ -2,7 +2,7 @@
 title: "Warum ist die Stromrechnung trotz PV-Anlage hoch?"
 description: "Die Anlage läuft, die Rechnung bleibt hoch? Prüfe der Reihe nach: Eigenverbrauchsquote, Verbrauchszeiten, Vergütung, Grundgebühren und den Zähler."
 lang: de
-draft: true
+draft: false
 category: "k4"
 guide: "eigenverbrauch-erhoehen-geraete-timen"
 translationKey: "qa-high-bill"

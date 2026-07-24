@@ -5,7 +5,7 @@ date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []
 lang: pl
-draft: true
+draft: false
 translationKey: "pme-ems"
 seo:
   ogTitle: "Przydomowe Magazyny Energii — warunki i wymóg EMS"

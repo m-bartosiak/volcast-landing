@@ -2,7 +2,7 @@
 title: "Welcher Stromtarif passt zu PV und Speicher?"
 description: "Festpreis, zeitvariabel oder dynamisch? Es entscheiden Flexibilität und Speicher. Das einfache Auswahlschema und die Fallen jeder Option."
 lang: de
-draft: true
+draft: false
 category: "k4"
 guide: "dynamischer-stromtarif-pv"
 translationKey: "qa-best-tariff"

@@ -2,7 +2,7 @@
 title: "Wie baue ich eine Eigenverbrauchs-Automatik in Home Assistant?"
 description: "Sensoren, Prognose und 3 bedingte Automationen — das minimale, funktionierende Eigenverbrauchs-Schema in HA, das sich nicht mit den Wechselrichtern streitet."
 lang: de
-draft: true
+draft: false
 category: "k5"
 guide: "pv-prognose-home-assistant-vergleich"
 translationKey: "qa-ha-self-consumption"

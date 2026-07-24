@@ -2,7 +2,7 @@
 title: "Which EV charger integrates with Home Assistant?"
 description: "Look for local API or OCPP, adjustable current, and no cloud lock-in. The checklist that matters more than any brand list, plus the solar-charging pattern."
 lang: en
-draft: true
+draft: false
 category: "k5"
 guide: "ev-charging-from-solar"
 translationKey: "qa-ev-charger-ha"

@@ -2,7 +2,7 @@
 title: "Wie viel kWh pro Woche sind bei 1000 Wp am Balkon normal?"
 description: "10–35 kWh je Sommerwoche, 2–8 im Winter — je nach Ausrichtung und Verschattung. Benchmark-Tabelle und der faire Test, ob dein Gerät richtig arbeitet."
 lang: de
-draft: true
+draft: false
 category: "k6"
 guide: "balkonkraftwerk-ertrag-berechnen"
 translationKey: "qa-de-bkw-normal-yield"

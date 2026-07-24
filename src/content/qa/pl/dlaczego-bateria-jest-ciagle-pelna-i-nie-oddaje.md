@@ -2,7 +2,7 @@
 title: "Dlaczego bateria jest ciągle pełna i nie oddaje energii do sieci?"
 description: "Pełna bateria w słoneczne dni to zwykle poprawnie działający priorytet pracy, limit eksportu albo tryb backup — nie usterka. Jak to rozpoznać w 5 minut."
 lang: pl
-draft: true
+draft: false
 category: "k3"
 guide: "magazyn-energii-kiedy-ladowac"
 translationKey: "qa-battery-full"

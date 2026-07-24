@@ -2,7 +2,7 @@
 title: "Falownik ma mniejszą moc niż panele — czy to błąd?"
 description: "10 kWp paneli na falowniku 8 kW? Przewymiarowanie DC/AC do ~1,25 to norma projektowa, nie oszczędność instalatora. Kiedy to zaleta, a kiedy przesada."
 lang: pl
-draft: true
+draft: false
 category: "k1"
 guide: "prognoza-produkcji-fotowoltaiki"
 translationKey: "qa-inverter-undersized"

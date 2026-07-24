@@ -2,7 +2,7 @@
 title: "Jaką taryfę wybrać z fotowoltaiką i magazynem?"
 description: "G11, G12/G12w czy taryfa dynamiczna? Decyduje elastyczność zużycia i posiadanie magazynu. Prosty schemat wyboru i pułapki każdej z opcji."
 lang: pl
-draft: true
+draft: false
 category: "k4"
 guide: "taryfa-dynamiczna-fotowoltaika"
 translationKey: "qa-best-tariff"

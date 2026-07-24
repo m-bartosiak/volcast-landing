@@ -2,7 +2,7 @@
 title: "How do I set up solar self-consumption automations in Home Assistant?"
 description: "The reliable recipe: production forecast + live power readings + priority list of loads. How to structure automations that do not fight each other."
 lang: en
-draft: true
+draft: false
 category: "k5"
 guide: "home-assistant-solar-forecast-comparison"
 translationKey: "qa-ha-self-consumption"

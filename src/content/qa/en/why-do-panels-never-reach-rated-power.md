@@ -2,7 +2,7 @@
 title: "Why do my panels never reach their rated power?"
 description: "Nameplate power assumes lab conditions your roof almost never sees. What real-world output should look like — and the gap that does mean a fault."
 lang: en
-draft: true
+draft: false
 category: "k2"
 guide: "weather-forecast-vs-solar-output"
 translationKey: "qa-below-rated"
