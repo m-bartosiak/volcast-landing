@@ -1,0 +1,56 @@
+name: IndexNow ping
+
+# Pingt IndexNow (Bing/Yandex/Seznam) mit den geänderten, live geschalteten
+# Blog-/Q&A-URLs bei jedem Push auf main — inklusive der Draft->Live-Flips
+# durch den wöchentlichen publish-blog-Cron.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/blog/**'
+      - 'src/content/qa/**'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Submit changed live URLs to IndexNow
+        run: |
+          KEY="bb77d52c734d4c7082e5f63ec699f9cc"
+          HOST="volcast.app"
+          BASE="https://${HOST}"
+
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            RANGE="HEAD^ HEAD"
+          else
+            RANGE="HEAD"
+          fi
+          FILES=$(git diff --name-only --diff-filter=AM $RANGE -- src/content/blog src/content/qa | grep -E '\.md$' || true)
+
+          URLS=()
+          for f in $FILES; do
+            [ -f "$f" ] || continue
+            grep -q '^draft: true' "$f" && continue   # nur live (draft:false)
+            rel="${f#src/content/}"                    # blog/en/foo.md | qa/en/foo.md
+            coll="${rel%%/*}"; rest="${rel#*/}"
+            lang="${rest%%/*}"; slug="$(basename "${rest#*/}" .md)"
+            if [ "$coll" = "blog" ]; then URLS+=("${BASE}/blog/${lang}/${slug}/");
+            elif [ "$coll" = "qa" ]; then URLS+=("${BASE}/blog/${lang}/q/${slug}/"); fi
+          done
+
+          if [ ${#URLS[@]} -eq 0 ]; then
+            echo "No live changed URLs to submit."; exit 0
+          fi
+
+          LIST=$(printf '"%s",' "${URLS[@]}"); LIST="[${LIST%,}]"
+          BODY="{\"host\":\"${HOST}\",\"key\":\"${KEY}\",\"keyLocation\":\"${BASE}/${KEY}.txt\",\"urlList\":${LIST}}"
+
+          echo "Submitting ${#URLS[@]} URL(s):"; printf '  %s\n' "${URLS[@]}"
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$BODY" -w "\nHTTP %{http_code}\n"
