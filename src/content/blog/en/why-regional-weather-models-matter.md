@@ -7,7 +7,7 @@ tags: ["forecasting", "nwp", "weather-models", "accuracy"]
 series: "geographic"
 seriesOrder: 2
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["numerical weather prediction", "regional weather model", "ICON-D2", "solar forecast accuracy", "ECMWF vs regional model"]
 ---
