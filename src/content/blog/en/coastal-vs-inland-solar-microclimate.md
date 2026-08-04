@@ -7,7 +7,7 @@ tags: ["geography", "microclimate", "coastal", "self-consumption"]
 series: "geographic"
 seriesOrder: 3
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["coastal solar production", "microclimate solar", "sea breeze solar panels", "fog solar output", "humidity solar irradiance"]
 ---

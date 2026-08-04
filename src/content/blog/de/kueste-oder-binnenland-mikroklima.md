@@ -7,7 +7,7 @@ tags: ["geography","microclimate","coastal","self-consumption"]
 series: "geographic"
 seriesOrder: 3
 lang: de
-draft: true
+draft: false
 seo:
   keywords: ["PV-Ertrag Küste", "Mikroklima Photovoltaik", "Seewind Solarmodule", "Nebel PV-Ertrag", "Luftfeuchte Einstrahlung"]
 ---

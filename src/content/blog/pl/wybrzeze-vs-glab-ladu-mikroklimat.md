@@ -7,7 +7,7 @@ tags: ["geography", "microclimate", "coastal", "self-consumption"]
 series: "geographic"
 seriesOrder: 3
 lang: pl
-draft: true
+draft: false
 seo:
   keywords: ["produkcja PV nad morzem", "mikroklimat fotowoltaika", "bryza morska panele", "mgła a produkcja PV", "wilgotność nasłonecznienie"]
 ---
