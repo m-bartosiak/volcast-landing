@@ -7,7 +7,7 @@ tags: ["geography", "aerosols", "soiling", "southern-europe"]
 series: "geographic"
 seriesOrder: 4
 lang: en
-draft: true
+draft: false
 seo:
   keywords: ["saharan dust solar panels", "calima solar production", "aerosol optical depth solar", "dust soiling panels", "blood rain solar"]
 ---

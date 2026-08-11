@@ -7,7 +7,7 @@ tags: ["geography","aerosols","soiling","southern-europe"]
 series: "geographic"
 seriesOrder: 4
 lang: de
-draft: true
+draft: false
 seo:
   keywords: ["saharastaub photovoltaik", "calima pv ertrag", "aerosol optische dicke solar", "staub verschmutzung module", "blutregen solar"]
 ---

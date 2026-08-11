@@ -7,7 +7,7 @@ tags: ["geography", "aerosols", "soiling", "southern-europe"]
 series: "geographic"
 seriesOrder: 4
 lang: pl
-draft: true
+draft: false
 seo:
   keywords: ["pył saharyjski panele", "calima produkcja PV", "grubość optyczna aerozolu", "zabrudzenie paneli pyłem", "krwawy deszcz fotowoltaika"]
 ---
