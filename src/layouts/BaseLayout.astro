@@ -77,6 +77,9 @@ const xDefaultUrl =
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
   <meta property="og:locale" content={OG_LOCALE[lang] ?? 'en_US'} />
+  <!-- Ten sam identyfikator aplikacji Meta co na stronach lądowania — wycisza
+       ostrzeżenie Sharing Debuggera i przypina udostępnienia do Domain Insights. -->
+  <meta property="fb:app_id" content="856840077472517" />
 
   <!-- RSS autodiscovery -->
   <link
