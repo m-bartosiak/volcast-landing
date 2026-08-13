@@ -1,10 +1,20 @@
 #!/usr/bin/env node
 /**
  * build.js — generuje statyczne strony HTML z szablonu + tłumaczeń.
- * Zero zależności. Uruchom: node build.js
+ * Zero zależności. Uruchom: node scripts/landing/build.js
+ *
+ * Wejścia (template.html, translations.json) leżą OBOK tego pliku, poza public/.
+ * Trzymanie ich w public/ oznaczało, że Vercel serwował je pod
+ * volcast.app/template.html i /translations.json — szablon z niepodstawionymi
+ * {{...}} był indeksowalny, a Bing zgłaszał marnowanie budżetu crawlowania.
+ * Wyjście nadal ląduje w public/{locale}/index.html.
  */
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const PUBLIC_DIR = path.join(__dirname, '..', '..', 'public');
 
 const LOCALES = ['en','cs','de','es','fr','nl','pl','pt','pt-br','ro','sk','uk'];
 const BASE_URL = 'https://volcast.app';
@@ -91,8 +101,8 @@ for (const locale of LOCALES) {
     return val;
   });
 
-  // Write to /{locale}/index.html
-  const dir = path.join(__dirname, locale);
+  // Write to public/{locale}/index.html
+  const dir = path.join(PUBLIC_DIR, locale);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
   console.log(`  ✓ ${locale}/index.html`);

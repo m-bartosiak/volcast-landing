@@ -145,7 +145,7 @@
   "pl": {
     "meta": {
       "title": "Volcast — Prognozowanie produkcji z fotowoltaiki",
-      "description": "Przewiduj uzyski ze słońca dzięki zaawansowanemu silnikowi fizycznemu.",
+      "description": "Przewiduj uzyski z fotowoltaiki dzięki zaawansowanemu silnikowi fizycznemu. Bez logowania do falownika. Dane satelitarne + fizyka = precyzja.",
       "ogTitle": "Volcast — Prognozowanie produkcji z fotowoltaiki",
       "ogDescription": "Przewiduj produkcję ze słońca w oparciu o fizykę. Bez logowania do falownika, bez kluczy API."
     },
@@ -288,7 +288,7 @@
   "de": {
     "meta": {
       "title": "Volcast — Solar-Prognose App",
-      "description": "Prognostizieren Sie Ihre Solarproduktion mit einer fortschrittlichen physikalischen Engine.",
+      "description": "Prognostizieren Sie Ihre Solarproduktion mit einer fortschrittlichen Physik-Engine. Kein Wechselrichter-Login. Satellitendaten + Physik = Präzision.",
       "ogTitle": "Volcast — Solar-Prognose App",
       "ogDescription": "Prognostizieren Sie Ihre Solarproduktion mit Physik. Kein Wechselrichter-Login, keine API-Keys."
     },
@@ -430,9 +430,9 @@
   },
   "nl": {
     "meta": {
-      "title": "Volcast — Solar Forecasting App",
-      "description": "Voorspel uw zonne-energieproductie met een geavanceerde fysische engine.",
-      "ogTitle": "Volcast — Solar Forecasting App",
+      "title": "Volcast — App voor zonne-energieprognose",
+      "description": "Voorspel uw zonne-energieproductie met een geavanceerde fysische engine. Geen omvormer-login nodig. Satellietdata + fysica = precisie.",
+      "ogTitle": "Volcast — App voor zonne-energieprognose",
       "ogDescription": "Voorspel zonne-opbrengst met fysica. Geen omvormer-login, geen API-keys."
     },
     "nav": {
@@ -574,7 +574,7 @@
   "es": {
     "meta": {
       "title": "Volcast — App de predicción solar",
-      "description": "Predice tu producción solar con un motor físico avanzado.",
+      "description": "Predice tu producción solar con un motor físico avanzado. Sin necesidad de acceder al inversor. Datos satelitales + física = precisión.",
       "ogTitle": "Volcast — App de predicción solar",
       "ogDescription": "Predice tu producción solar con física. Sin login de inversor, sin llaves API."
     },
@@ -717,7 +717,7 @@
   "fr": {
     "meta": {
       "title": "Volcast — App de prévision solaire",
-      "description": "Prédisez votre production solaire avec un moteur physique avancé.",
+      "description": "Prédisez votre production solaire avec un moteur physique avancé. Aucune connexion à l'onduleur. Données satellite + physique = précision.",
       "ogTitle": "Volcast — App de prévision solaire",
       "ogDescription": "Prédisez votre production solaire par la physique. Pas de login onduleur, pas de clés API."
     },
@@ -860,7 +860,7 @@
   "uk": {
     "meta": {
       "title": "Volcast — додаток для прогнозування сонячної генерації",
-      "description": "Прогнозуйте генерацію сонячної енергії за допомогою вдосконаленого фізичного рушія.",
+      "description": "Прогнозуйте генерацію сонячної енергії за допомогою вдосконаленого фізичного рушія. Без входу в інвертор. Супутникові дані + фізика = точність.",
       "ogTitle": "Volcast — додаток для прогнозування сонячної генерації",
       "ogDescription": "Прогнозуйте генерацію за допомогою фізики. Без входу в інвертор, без API-ключів."
     },
@@ -1002,9 +1002,9 @@
   },
   "pt": {
     "meta": {
-      "title": "Volcast — App de Previsão Solar",
-      "description": "Preveja a sua produção solar com um motor físico avançado.",
-      "ogTitle": "Volcast — App de Previsão Solar",
+      "title": "Volcast — App de Previsão de Produção Solar",
+      "description": "Preveja a sua produção solar com um motor físico avançado. Sem necessidade de aceder ao inversor. Dados de satélite + física = precisão.",
+      "ogTitle": "Volcast — App de Previsão de Produção Solar",
       "ogDescription": "Preveja a sua produção solar com física. Sem login no inversor, sem chaves API."
     },
     "nav": {
@@ -1145,9 +1145,9 @@
   },
   "pt-br": {
     "meta": {
-      "title": "Volcast — App de Previsão Solar",
-      "description": "Preveja sua produção solar com um motor físico avançado.",
-      "ogTitle": "Volcast — App de Previsão Solar",
+      "title": "Volcast — App de Previsão de Geração Solar",
+      "description": "Preveja sua geração solar com um motor físico avançado. Sem precisar acessar o inversor. Dados de satélite + física = precisão.",
+      "ogTitle": "Volcast — App de Previsão de Geração Solar",
       "ogDescription": "Preveja sua produção solar com física. Sem login no inversor, sem chaves API."
     },
     "nav": {
@@ -1289,7 +1289,7 @@
   "ro": {
     "meta": {
       "title": "Volcast — Aplicație de prognoză solară",
-      "description": "Preziceți producția solară cu un motor fizic avansat.",
+      "description": "Preziceți producția solară cu un motor fizic avansat. Fără autentificare în invertor. Date satelitare + fizică = precizie.",
       "ogTitle": "Volcast — Aplicație de prognoză solară",
       "ogDescription": "Preziceți producția solară prin fizică. Fără login invertor, fără chei API."
     },
@@ -1432,7 +1432,7 @@
   "cs": {
     "meta": {
       "title": "Volcast — Předpověď výroby fotovoltaiky",
-      "description": "Předpovídejte svou solární produkci pomocí pokročilého fyzikálního modelu.",
+      "description": "Předpovídejte svou solární produkci pomocí pokročilého fyzikálního modelu. Bez přihlašování k měniči. Satelitní data + fyzika = přesnost.",
       "ogTitle": "Volcast — Předpověď výroby fotovoltaiky",
       "ogDescription": "Předpovídejte výrobu elektřiny pomocí fyziky. Bez přihlášení ke střídači, bez API klíčů."
     },
@@ -1575,7 +1575,7 @@
   "sk": {
     "meta": {
       "title": "Volcast — Predpoveď výroby fotovoltiky",
-      "description": "Predpovedajte svoju solárnu produkciu pomocou pokročilého fyzikálneho modelu.",
+      "description": "Predpovedajte svoju solárnu produkciu pomocou pokročilého fyzikálneho modelu. Bez prihlásenia do meniča. Satelitné dáta + fyzika = presnosť.",
       "ogTitle": "Volcast — Predpoveď výroby fotovoltiky",
       "ogDescription": "Predpovedajte výrobu elektriny pomocou fyziky. Bez prihlásenia k meniču, bez API kľúčov."
     },

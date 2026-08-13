@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Solar Forecasting App</title>
-  <meta name="description" content="Accurate solar production forecasts powered by an advanced physical engine. No inverter login required.">
+  <meta name="description" content="Predict your solar production with an advanced physical engine. No inverter login required. Satellite data + physics = precision.">
   <meta name="theme-color" content="#05070A">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 18 L40 62 L62 18' stroke='%2300FF9D' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='40' cy='12' r='4' fill='%2300FF9D'/%3E%3C/svg%3E">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
@@ -20,7 +20,10 @@
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
   <link rel="alternate" hreflang="sk" href="https://volcast.app/sk/">
   <link rel="alternate" hreflang="x-default" href="https://volcast.app/en/">
-  <link rel="canonical" href="https://volcast.app/">
+  <!-- Ta strona to shim przekierowujący po języku; jej treść jest identyczna z /en/.
+       Kanonikalizujemy do /en/, bo tam wskazuje już x-default i sitemapa — inaczej
+       / i /en/ konkurują ze sobą jako dwie osobne strony z tym samym tytułem. -->
+  <link rel="canonical" href="https://volcast.app/en/">
   <script>
     (function() {
       var LOCALE_MAP = {
