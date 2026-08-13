@@ -2,9 +2,9 @@
   "en": {
     "meta": {
       "title": "Volcast — Solar Forecasting App",
-      "description": "Predict your solar production with an advanced physical engine. No inverter login required. Satellite data + physics = precision.",
+      "description": "Predict your solar production with an advanced physical engine. Seven days ahead, hour by hour, from satellite data — for any installation, any brand.",
       "ogTitle": "Volcast — Solar Forecasting App",
-      "ogDescription": "Predict your solar production with physics. No inverter login, no API keys. Just your panel parameters and satellite weather data."
+      "ogDescription": "Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data."
     },
     "nav": {
       "features": "Features",
@@ -145,9 +145,9 @@
   "pl": {
     "meta": {
       "title": "Volcast — Prognozowanie produkcji z fotowoltaiki",
-      "description": "Przewiduj uzyski z fotowoltaiki dzięki zaawansowanemu silnikowi fizycznemu. Bez logowania do falownika. Dane satelitarne + fizyka = precyzja.",
+      "description": "Przewiduj uzyski z fotowoltaiki dzięki zaawansowanemu silnikowi fizycznemu. Prognoza na siedem dni, godzina po godzinie — dla każdej instalacji.",
       "ogTitle": "Volcast — Prognozowanie produkcji z fotowoltaiki",
-      "ogDescription": "Przewiduj produkcję ze słońca w oparciu o fizykę. Bez logowania do falownika, bez kluczy API."
+      "ogDescription": "Przewiduj produkcję ze słońca w oparciu o fizykę. Siedem dni naprzód, godzina po godzinie — dla każdej instalacji."
     },
     "nav": {
       "features": "Funkcje",
@@ -288,9 +288,9 @@
   "de": {
     "meta": {
       "title": "Volcast — Solar-Prognose App",
-      "description": "Prognostizieren Sie Ihre Solarproduktion mit einer fortschrittlichen Physik-Engine. Kein Wechselrichter-Login. Satellitendaten + Physik = Präzision.",
+      "description": "Prognostizieren Sie Ihre Solarproduktion mit einer fortschrittlichen Physik-Engine. Sieben Tage im Voraus, Stunde für Stunde — für jede Anlage.",
       "ogTitle": "Volcast — Solar-Prognose App",
-      "ogDescription": "Prognostizieren Sie Ihre Solarproduktion mit Physik. Kein Wechselrichter-Login, keine API-Keys."
+      "ogDescription": "Prognostizieren Sie Ihre Solarproduktion mit Physik. Sieben Tage im Voraus, Stunde für Stunde — für jede Anlage."
     },
     "nav": {
       "features": "Funktionen",
@@ -431,9 +431,9 @@
   "nl": {
     "meta": {
       "title": "Volcast — App voor zonne-energieprognose",
-      "description": "Voorspel uw zonne-energieproductie met een geavanceerde fysische engine. Geen omvormer-login nodig. Satellietdata + fysica = precisie.",
+      "description": "Voorspel uw zonne-energieproductie met een geavanceerde fysische engine. Zeven dagen vooruit, uur voor uur — voor elke installatie, elk merk.",
       "ogTitle": "Volcast — App voor zonne-energieprognose",
-      "ogDescription": "Voorspel zonne-opbrengst met fysica. Geen omvormer-login, geen API-keys."
+      "ogDescription": "Voorspel zonne-opbrengst met fysica. Zeven dagen vooruit, uur voor uur — voor elke installatie."
     },
     "nav": {
       "features": "Functies",
@@ -574,9 +574,9 @@
   "es": {
     "meta": {
       "title": "Volcast — App de predicción solar",
-      "description": "Predice tu producción solar con un motor físico avanzado. Sin necesidad de acceder al inversor. Datos satelitales + física = precisión.",
+      "description": "Predice tu producción solar con un motor físico avanzado. Siete días por adelantado, hora a hora, con datos satelitales — para cualquier instalación.",
       "ogTitle": "Volcast — App de predicción solar",
-      "ogDescription": "Predice tu producción solar con física. Sin login de inversor, sin llaves API."
+      "ogDescription": "Predice tu producción solar con física. Siete días por adelantado, hora a hora — para cualquier instalación."
     },
     "nav": {
       "features": "Funciones",
@@ -717,9 +717,9 @@
   "fr": {
     "meta": {
       "title": "Volcast — App de prévision solaire",
-      "description": "Prédisez votre production solaire avec un moteur physique avancé. Aucune connexion à l'onduleur. Données satellite + physique = précision.",
+      "description": "Prédisez votre production solaire avec un moteur physique avancé. Sept jours à l'avance, heure par heure, à partir de données satellite.",
       "ogTitle": "Volcast — App de prévision solaire",
-      "ogDescription": "Prédisez votre production solaire par la physique. Pas de login onduleur, pas de clés API."
+      "ogDescription": "Prédisez votre production solaire par la physique. Sept jours à l'avance, heure par heure — pour toute installation."
     },
     "nav": {
       "features": "Fonctionnalités",
@@ -860,9 +860,9 @@
   "uk": {
     "meta": {
       "title": "Volcast — додаток для прогнозування сонячної генерації",
-      "description": "Прогнозуйте генерацію сонячної енергії за допомогою вдосконаленого фізичного рушія. Без входу в інвертор. Супутникові дані + фізика = точність.",
+      "description": "Прогнозуйте генерацію сонячної енергії за допомогою вдосконаленого фізичного рушія. Сім днів наперед, година за годиною — для будь-якої станції.",
       "ogTitle": "Volcast — додаток для прогнозування сонячної генерації",
-      "ogDescription": "Прогнозуйте генерацію за допомогою фізики. Без входу в інвертор, без API-ключів."
+      "ogDescription": "Прогнозуйте генерацію за допомогою фізики. Сім днів наперед, година за годиною — для будь-якої станції."
     },
     "nav": {
       "features": "Функції",
@@ -1003,9 +1003,9 @@
   "pt": {
     "meta": {
       "title": "Volcast — App de Previsão de Produção Solar",
-      "description": "Preveja a sua produção solar com um motor físico avançado. Sem necessidade de aceder ao inversor. Dados de satélite + física = precisão.",
+      "description": "Preveja a sua produção solar com um motor físico avançado. Sete dias de antecedência, hora a hora, com dados de satélite — para qualquer instalação.",
       "ogTitle": "Volcast — App de Previsão de Produção Solar",
-      "ogDescription": "Preveja a sua produção solar com física. Sem login no inversor, sem chaves API."
+      "ogDescription": "Preveja a sua produção solar com física. Sete dias de antecedência, hora a hora — para qualquer instalação."
     },
     "nav": {
       "features": "Funcionalidades",
@@ -1146,9 +1146,9 @@
   "pt-br": {
     "meta": {
       "title": "Volcast — App de Previsão de Geração Solar",
-      "description": "Preveja sua geração solar com um motor físico avançado. Sem precisar acessar o inversor. Dados de satélite + física = precisão.",
+      "description": "Preveja sua geração solar com um motor físico avançado. Sete dias de antecedência, hora a hora, com dados de satélite — para qualquer instalação.",
       "ogTitle": "Volcast — App de Previsão de Geração Solar",
-      "ogDescription": "Preveja sua produção solar com física. Sem login no inversor, sem chaves API."
+      "ogDescription": "Preveja sua geração solar com física. Sete dias de antecedência, hora a hora — para qualquer instalação."
     },
     "nav": {
       "features": "Funcionalidades",
@@ -1289,9 +1289,9 @@
   "ro": {
     "meta": {
       "title": "Volcast — Aplicație de prognoză solară",
-      "description": "Preziceți producția solară cu un motor fizic avansat. Fără autentificare în invertor. Date satelitare + fizică = precizie.",
+      "description": "Preziceți producția solară cu un motor fizic avansat. Șapte zile în avans, oră cu oră, din date satelitare — pentru orice instalație.",
       "ogTitle": "Volcast — Aplicație de prognoză solară",
-      "ogDescription": "Preziceți producția solară prin fizică. Fără login invertor, fără chei API."
+      "ogDescription": "Preziceți producția solară prin fizică. Șapte zile în avans, oră cu oră — pentru orice instalație."
     },
     "nav": {
       "features": "Funcții",
@@ -1432,9 +1432,9 @@
   "cs": {
     "meta": {
       "title": "Volcast — Předpověď výroby fotovoltaiky",
-      "description": "Předpovídejte svou solární produkci pomocí pokročilého fyzikálního modelu. Bez přihlašování k měniči. Satelitní data + fyzika = přesnost.",
+      "description": "Předpovídejte svou solární produkci pomocí pokročilého fyzikálního modelu. Sedm dní dopředu, hodinu po hodině — pro jakoukoli instalaci.",
       "ogTitle": "Volcast — Předpověď výroby fotovoltaiky",
-      "ogDescription": "Předpovídejte výrobu elektřiny pomocí fyziky. Bez přihlášení ke střídači, bez API klíčů."
+      "ogDescription": "Předpovídejte výrobu elektřiny pomocí fyziky. Sedm dní dopředu, hodinu po hodině — pro jakoukoli instalaci."
     },
     "nav": {
       "features": "Funkce",
@@ -1575,9 +1575,9 @@
   "sk": {
     "meta": {
       "title": "Volcast — Predpoveď výroby fotovoltiky",
-      "description": "Predpovedajte svoju solárnu produkciu pomocou pokročilého fyzikálneho modelu. Bez prihlásenia do meniča. Satelitné dáta + fyzika = presnosť.",
+      "description": "Predpovedajte svoju solárnu produkciu pomocou pokročilého fyzikálneho modelu. Sedem dní dopredu, hodinu po hodine — pre akúkoľvek inštaláciu.",
       "ogTitle": "Volcast — Predpoveď výroby fotovoltiky",
-      "ogDescription": "Predpovedajte výrobu elektriny pomocou fyziky. Bez prihlásenia k meniču, bez API kľúčov."
+      "ogDescription": "Predpovedajte výrobu elektriny pomocou fyziky. Sedem dní dopredu, hodinu po hodine — pre akúkoľvek inštaláciu."
     },
     "nav": {
       "features": "Funkcie",
