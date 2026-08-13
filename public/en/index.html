@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Solar Forecasting App</title>
-  <meta name="description" content="Predict your solar production with an advanced physical engine. No inverter login required. Satellite data + physics = precision.">
+  <meta name="description" content="Predict your solar production with an advanced physical engine. Seven days ahead, hour by hour, from satellite data — for any installation, any brand.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — Solar Forecasting App">
-  <meta property="og:description" content="Predict your solar production with physics. No inverter login, no API keys. Just your panel parameters and satellite weather data.">
+  <meta property="og:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://volcast.app/en/">
+  <meta property="og:site_name" content="Volcast">
+  <!-- Share card. Bez tego Facebook renderował gołą kartę bez obrazka — a to jest
+       ostatni metr ścieżki z odpowiedzi w grupach FB na stronę. Wymiary podane
+       jawnie, żeby FB narysował kartę od razu, bez dociągania obrazka. -->
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — Solar Forecasting App">
+  <meta name="twitter:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="canonical" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
@@ -1232,7 +1244,7 @@
       <div class="hero-content">
         <p class="hero-label">Solar forecasting app</p>
         <h1><em>Rocket science</em><br>on your roof.</h1>
-        <p class="hero-desc">Advanced Physical Engine. No inverter cloud login. No API keys. Enter your panel parameters — azimuth, tilt, peak power — and get precision forecasts powered by satellite data and physics.</p>
+        <p class="hero-desc">Advanced Physical Engine. Enter your panel parameters — azimuth, tilt, peak power — and get precision forecasts powered by satellite data and physics. Works with any installation, any brand.</p>
         <div class="hero-actions">
         <a href="#download" class="btn-primary">
           Download Now
@@ -1275,7 +1287,7 @@
       <div class="section-header reveal">
         <p class="section-label">Features</p>
         <h2 class="section-title">Advanced Physical Engine</h2>
-        <p class="section-desc">No inverter cloud login or API keys required. Just enter your system parameters and let physics do the work.</p>
+        <p class="section-desc">Works with any installation, any brand. Just enter your system parameters and let physics do the work.</p>
       </div>
       <div class="features-grid">
         <div class="glass-card feature-card reveal">
@@ -1328,7 +1340,7 @@
       <div class="section-header reveal">
         <p class="section-label">How it works</p>
         <h2 class="section-title">Up and running in minutes</h2>
-        <p class="section-desc">No inverter login. No cloud API. Just describe your panels and start forecasting.</p>
+        <p class="section-desc">Just describe your panels — azimuth, tilt, peak power — and start forecasting.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
@@ -1550,7 +1562,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Do I need a smart inverter or specific hardware?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">No. Volcast works with any solar installation — no inverter cloud login, no API keys, no hardware connection. You just enter your panel parameters: azimuth, tilt, peak power, and optionally multi-string setup, bifacial factor, and horizon shading profile.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">No. Volcast works with any solar installation without connecting to your inverter — you just enter your panel parameters: azimuth, tilt, peak power, and optionally multi-string setup, bifacial factor, and horizon shading profile.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

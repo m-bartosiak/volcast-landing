@@ -4,8 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Solar Forecasting App</title>
-  <meta name="description" content="Accurate solar production forecasts powered by an advanced physical engine. No inverter login required.">
+  <meta name="description" content="Predict your solar production with an advanced physical engine. Seven days ahead, hour by hour, from satellite data — for any installation, any brand.">
   <meta name="theme-color" content="#05070A">
+  <!-- Ta strona nie miała ŻADNYCH tagów Open Graph, a to właśnie ten adres trafia
+       do odpowiedzi w grupach FB. Scraper Facebooka nie wykonuje JavaScriptu, więc
+       nie przechodzi przez przekierowanie językowe niżej — czyta ten HTML i nic
+       więcej. Bez tego blok karta podglądu była pusta. -->
+  <meta property="og:title" content="Volcast — Solar Forecasting App">
+  <meta property="og:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://volcast.app/">
+  <meta property="og:site_name" content="Volcast">
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — solar production forecast, app screenshot">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — Solar Forecasting App">
+  <meta name="twitter:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 18 L40 62 L62 18' stroke='%2300FF9D' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='40' cy='12' r='4' fill='%2300FF9D'/%3E%3C/svg%3E">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="pl" href="https://volcast.app/pl/">
@@ -20,7 +37,10 @@
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
   <link rel="alternate" hreflang="sk" href="https://volcast.app/sk/">
   <link rel="alternate" hreflang="x-default" href="https://volcast.app/en/">
-  <link rel="canonical" href="https://volcast.app/">
+  <!-- Ta strona to shim przekierowujący po języku; jej treść jest identyczna z /en/.
+       Kanonikalizujemy do /en/, bo tam wskazuje już x-default i sitemapa — inaczej
+       / i /en/ konkurują ze sobą jako dwie osobne strony z tym samym tytułem. -->
+  <link rel="canonical" href="https://volcast.app/en/">
   <script>
     (function() {
       var LOCALE_MAP = {

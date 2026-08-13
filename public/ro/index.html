@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Aplicație de prognoză solară</title>
-  <meta name="description" content="Preziceți producția solară cu un motor fizic avansat.">
+  <meta name="description" content="Preziceți producția solară cu un motor fizic avansat. Șapte zile în avans, oră cu oră, din date satelitare — pentru orice instalație.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — Aplicație de prognoză solară">
-  <meta property="og:description" content="Preziceți producția solară prin fizică. Fără login invertor, fără chei API.">
+  <meta property="og:description" content="Preziceți producția solară prin fizică. Șapte zile în avans, oră cu oră — pentru orice instalație.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://volcast.app/ro/">
+  <meta property="og:site_name" content="Volcast">
+  <!-- Share card. Bez tego Facebook renderował gołą kartę bez obrazka — a to jest
+       ostatni metr ścieżki z odpowiedzi w grupach FB na stronę. Wymiary podane
+       jawnie, żeby FB narysował kartę od razu, bez dociągania obrazka. -->
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — Aplicație de prognoză solară">
+  <meta name="twitter:description" content="Preziceți producția solară prin fizică. Șapte zile în avans, oră cu oră — pentru orice instalație.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="canonical" href="https://volcast.app/ro/">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
@@ -1275,7 +1287,7 @@
       <div class="section-header reveal">
         <p class="section-label">Funcții</p>
         <h2 class="section-title">Motor Fizic Avansat</h2>
-        <p class="section-desc">Nu necesită login în cloud-ul invertorului sau chei API.</p>
+        <p class="section-desc">Funcționează cu orice instalație, indiferent de marca invertorului.</p>
       </div>
       <div class="features-grid">
         <div class="glass-card feature-card reveal">
@@ -1328,7 +1340,7 @@
       <div class="section-header reveal">
         <p class="section-label">Cum funcționează</p>
         <h2 class="section-title">Gata în câteva minute</h2>
-        <p class="section-desc">Fără login invertor. Fără API cloud.</p>
+        <p class="section-desc">Descrieți doar panourile: azimut, înclinație, putere de vârf.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
@@ -1550,7 +1562,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Am nevoie de un invertor inteligent?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Nu. Volcast funcționează cu orice instalație — fără login, fără API și fără conexiune fizică.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Nu. Volcast funcționează cu orice instalație fără a conecta invertorul — introduceți doar parametrii panourilor.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

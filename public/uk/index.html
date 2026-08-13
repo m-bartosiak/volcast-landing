@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — додаток для прогнозування сонячної генерації</title>
-  <meta name="description" content="Прогнозуйте генерацію сонячної енергії за допомогою вдосконаленого фізичного рушія.">
+  <meta name="description" content="Прогнозуйте генерацію сонячної енергії за допомогою вдосконаленого фізичного рушія. Сім днів наперед, година за годиною — для будь-якої станції.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — додаток для прогнозування сонячної генерації">
-  <meta property="og:description" content="Прогнозуйте генерацію за допомогою фізики. Без входу в інвертор, без API-ключів.">
+  <meta property="og:description" content="Прогнозуйте генерацію за допомогою фізики. Сім днів наперед, година за годиною — для будь-якої станції.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://volcast.app/uk/">
+  <meta property="og:site_name" content="Volcast">
+  <!-- Share card. Bez tego Facebook renderował gołą kartę bez obrazka — a to jest
+       ostatni metr ścieżki z odpowiedzi w grupach FB na stronę. Wymiary podane
+       jawnie, żeby FB narysował kartę od razu, bez dociągania obrazka. -->
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — додаток для прогнозування сонячної генерації">
+  <meta name="twitter:description" content="Прогнозуйте генерацію за допомогою фізики. Сім днів наперед, година за годиною — для будь-якої станції.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="canonical" href="https://volcast.app/uk/">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
@@ -1275,7 +1287,7 @@
       <div class="section-header reveal">
         <p class="section-label">Функції</p>
         <h2 class="section-title">Вдосконалений фізичний рушій</h2>
-        <p class="section-desc">Не потрібно входити в хмару інвертора або використовувати API-ключі.</p>
+        <p class="section-desc">Працює з будь-якою системою, незалежно від марки інвертора.</p>
       </div>
       <div class="features-grid">
         <div class="glass-card feature-card reveal">
@@ -1328,7 +1340,7 @@
       <div class="section-header reveal">
         <p class="section-label">Як це працює</p>
         <h2 class="section-title">Готовність до роботи за лічені хвилини</h2>
-        <p class="section-desc">Без входу в інвертор. Без хмарних API.</p>
+        <p class="section-desc">Просто опишіть панелі: азимут, нахил, пікова потужність.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
@@ -1550,7 +1562,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Чи потрібен мені розумний інвертор?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Ні. Volcast працює з будь-якою системою — без входу, без API та без фізичного підключення.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Ні. Volcast працює з будь-якою системою без підключення інвертора — ви лише вводите параметри панелей.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

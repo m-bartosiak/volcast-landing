@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volcast — App de Previsão Solar</title>
-  <meta name="description" content="Preveja a sua produção solar com um motor físico avançado.">
+  <title>Volcast — App de Previsão de Produção Solar</title>
+  <meta name="description" content="Preveja a sua produção solar com um motor físico avançado. Sete dias de antecedência, hora a hora, com dados de satélite — para qualquer instalação.">
   <meta name="theme-color" content="#05070A">
-  <meta property="og:title" content="Volcast — App de Previsão Solar">
-  <meta property="og:description" content="Preveja a sua produção solar com física. Sem login no inversor, sem chaves API.">
+  <meta property="og:title" content="Volcast — App de Previsão de Produção Solar">
+  <meta property="og:description" content="Preveja a sua produção solar com física. Sete dias de antecedência, hora a hora — para qualquer instalação.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://volcast.app/pt/">
+  <meta property="og:site_name" content="Volcast">
+  <!-- Share card. Bez tego Facebook renderował gołą kartę bez obrazka — a to jest
+       ostatni metr ścieżki z odpowiedzi w grupach FB na stronę. Wymiary podane
+       jawnie, żeby FB narysował kartę od razu, bez dociągania obrazka. -->
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — App de Previsão de Produção Solar">
+  <meta name="twitter:description" content="Preveja a sua produção solar com física. Sete dias de antecedência, hora a hora — para qualquer instalação.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="canonical" href="https://volcast.app/pt/">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
@@ -1275,7 +1287,7 @@
       <div class="section-header reveal">
         <p class="section-label">Funcionalidades</p>
         <h2 class="section-title">Motor Físico Avançado</h2>
-        <p class="section-desc">Não requer login na nuvem do inversor nem chaves API.</p>
+        <p class="section-desc">Funciona com qualquer instalação, seja qual for a marca do inversor.</p>
       </div>
       <div class="features-grid">
         <div class="glass-card feature-card reveal">
@@ -1328,7 +1340,7 @@
       <div class="section-header reveal">
         <p class="section-label">Como funciona</p>
         <h2 class="section-title">Pronto em minutos</h2>
-        <p class="section-desc">Sem login no inversor. Sem API na nuvem.</p>
+        <p class="section-desc">Basta descrever os seus painéis: azimute, inclinação e potência de pico.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
@@ -1550,7 +1562,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Preciso de um inversor inteligente?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Não. Volcast funciona com qualquer instalação — sem login, sem API e sem ligação física ao hardware.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Não. Volcast funciona com qualquer instalação sem ligar o inversor — basta introduzir os parâmetros dos seus painéis.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

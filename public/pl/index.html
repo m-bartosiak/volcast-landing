@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Prognozowanie produkcji z fotowoltaiki</title>
-  <meta name="description" content="Przewiduj uzyski ze słońca dzięki zaawansowanemu silnikowi fizycznemu.">
+  <meta name="description" content="Przewiduj uzyski z fotowoltaiki dzięki zaawansowanemu silnikowi fizycznemu. Prognoza na siedem dni, godzina po godzinie — dla każdej instalacji.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — Prognozowanie produkcji z fotowoltaiki">
-  <meta property="og:description" content="Przewiduj produkcję ze słońca w oparciu o fizykę. Bez logowania do falownika, bez kluczy API.">
+  <meta property="og:description" content="Przewiduj produkcję ze słońca w oparciu o fizykę. Siedem dni naprzód, godzina po godzinie — dla każdej instalacji.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://volcast.app/pl/">
+  <meta property="og:site_name" content="Volcast">
+  <!-- Share card. Bez tego Facebook renderował gołą kartę bez obrazka — a to jest
+       ostatni metr ścieżki z odpowiedzi w grupach FB na stronę. Wymiary podane
+       jawnie, żeby FB narysował kartę od razu, bez dociągania obrazka. -->
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — Prognozowanie produkcji z fotowoltaiki">
+  <meta name="twitter:description" content="Przewiduj produkcję ze słońca w oparciu o fizykę. Siedem dni naprzód, godzina po godzinie — dla każdej instalacji.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="canonical" href="https://volcast.app/pl/">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
@@ -1275,7 +1287,7 @@
       <div class="section-header reveal">
         <p class="section-label">Możliwości</p>
         <h2 class="section-title">Zaawansowany Silnik Fizyczny</h2>
-        <p class="section-desc">Bez logowania do chmury falownika i bez kluczy API.</p>
+        <p class="section-desc">Działa z każdą instalacją, niezależnie od marki falownika.</p>
       </div>
       <div class="features-grid">
         <div class="glass-card feature-card reveal">
@@ -1328,7 +1340,7 @@
       <div class="section-header reveal">
         <p class="section-label">Jak to działa</p>
         <h2 class="section-title">Gotowość do pracy w kilka minut</h2>
-        <p class="section-desc">Bez logowania do falownika. Bez chmury API.</p>
+        <p class="section-desc">Wystarczy opisać panele: azymut, nachylenie, moc szczytowa.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
@@ -1550,7 +1562,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Czy potrzebuję inteligentnego falownika?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Nie. Volcast działa z każdą instalacją — bez logowania, bez API i bez połączenia ze sprzętem.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Nie. Volcast działa z każdą instalacją bez podłączania falownika — wystarczy podać parametry paneli.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

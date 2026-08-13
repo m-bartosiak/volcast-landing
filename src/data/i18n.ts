@@ -35,6 +35,10 @@ export const LANG_LABEL: Record<BlogLang, string> = {
 
 interface UIStrings {
   blogTitle: string;
+  /** Tytuł wyłącznie do <title>. blogTitle ('Blog') zostaje jako widoczny <h1>, ale
+   *  jako tytuł strony dawał we wszystkich językach to samo 'Blog — Volcast Blog' —
+   *  Bing zgłaszał to i jako duplikat, i jako tytuł za krótki (19 znaków). */
+  blogMetaTitle: string;
   blogName: string;
   blogDescription: string;
   blogSubtitle: string;
@@ -60,8 +64,9 @@ interface UIStrings {
 export const UI: Record<BlogLang, UIStrings> = {
   en: {
     blogTitle: 'Blog',
+    blogMetaTitle: 'Solar Forecasting and PV Production Guides',
     blogName: 'Volcast Blog',
-    blogDescription: 'Technical blog about solar energy and PV forecasting',
+    blogDescription: 'Technical articles on solar energy, PV production forecasting, and the physics behind accurate yield predictions for home installations.',
     blogSubtitle: 'Articles about solar energy, PV forecasting, and solar physics',
     latest: 'Latest',
     relatedPosts: 'Related posts',
@@ -83,8 +88,9 @@ export const UI: Record<BlogLang, UIStrings> = {
   },
   pl: {
     blogTitle: 'Blog',
+    blogMetaTitle: 'Prognozowanie PV i produkcja z fotowoltaiki',
     blogName: 'Blog Volcast',
-    blogDescription: 'Blog techniczny o energii słonecznej i prognozowaniu PV',
+    blogDescription: 'Artykuły techniczne o energii słonecznej, prognozowaniu produkcji PV i fizyce stojącej za dokładnymi prognozami uzysków z instalacji domowych.',
     blogSubtitle: 'Artykuły o energii słonecznej, prognozowaniu PV i fizyce solarnej',
     latest: 'Najnowszy',
     relatedPosts: 'Powiązane artykuły',
@@ -106,8 +112,9 @@ export const UI: Record<BlogLang, UIStrings> = {
   },
   de: {
     blogTitle: 'Blog',
+    blogMetaTitle: 'PV-Ertragsprognosen und Solarenergie',
     blogName: 'Volcast Blog',
-    blogDescription: 'Technischer Blog über Solarenergie und PV-Prognosen',
+    blogDescription: 'Fachartikel über Solarenergie, PV-Ertragsprognosen und die Physik hinter präzisen Vorhersagen für private Solaranlagen und Speicher.',
     blogSubtitle: 'Artikel über Solarenergie, PV-Prognosen und Solarphysik',
     latest: 'Neu',
     relatedPosts: 'Ähnliche Artikel',
