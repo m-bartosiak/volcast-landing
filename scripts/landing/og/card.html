@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Volcast OG card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  /* ------------------------------------------------------------------
+     Open Graph share card — 1200x630, rendered to PNG by render.mjs.
+
+     Sizing rule that drives every decision here: Facebook renders this at
+     roughly 500px wide in-feed, so everything is designed at ~40% scale.
+     The headline is 64px because 64 * 0.4 = 26px, which is still legible
+     on a phone. Nothing carrying meaning is below 22px.
+     ------------------------------------------------------------------ */
+  :root {
+    --bg: #05070A;
+    --emerald: #00FF9D;
+    --violet: #818CF8;
+    --text: #ECF3F7;
+    --text-dim: #78899A;
+
+    /* Phone crop out of img/<lang>/forecast.png (1284x2778). The source has
+       its own marketing header baked into the top third, which would fight
+       the headline — so we window in on the device only. */
+    --shot: url('../../../public/img/en/forecast.png');
+    --shot-scale: 0.4695;     /* 852px-wide phone -> 400px on the card */
+    --shot-x: -102px;
+    --shot-y: -457px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { width: 1200px; height: 630px; }
+
+  body {
+    background: var(--bg);
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Emerald bloom behind the device — ties the card to the screenshot's own
+     glow so the crop does not read as a pasted rectangle. */
+  .bloom {
+    position: absolute;
+    right: -80px; top: 50%;
+    width: 760px; height: 760px;
+    transform: translateY(-50%);
+    background: radial-gradient(circle, rgba(0,255,157,0.16) 0%, rgba(0,255,157,0.05) 38%, transparent 68%);
+  }
+
+  /* Instrument grid. Very low contrast — it should register as texture, not pattern. */
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(122,255,205,0.5) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(122,255,205,0.5) 1px, transparent 1px);
+    background-size: 52px 52px;
+    opacity: 0.055;
+    mask-image: radial-gradient(ellipse 80% 90% at 20% 50%, #000 30%, transparent 100%);
+  }
+
+  /* Grain is deliberately off: per-pixel noise is incompressible and tripled the
+     PNG (547KB -> the file people wait on in a feed). The flat areas are dark
+     enough that 24-bit PNG shows no banding without it. Raise to ~0.04 only if
+     a future variant introduces a wide, light gradient. */
+  .grain {
+    position: absolute; inset: 0;
+    opacity: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Brand signature bar. Cheap, but at feed scale it is the first thing that
+     separates this from every other dark app screenshot. */
+  .rule {
+    position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--emerald) 0%, var(--emerald) 42%, var(--violet) 100%);
+  }
+
+  .stage { position: relative; height: 100%; display: flex; align-items: center; }
+
+  /* ---------- left: the message ---------- */
+  /* Width is load-bearing: the device column starts at x=740, so the copy has
+     to terminate before it or Syne's wide glyphs run under the phone. */
+  .copy {
+    width: 668px;
+    padding: 0 0 0 68px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600; font-size: 17px;
+    letter-spacing: 0.19em; text-transform: uppercase;
+    color: var(--emerald);
+    margin-bottom: 26px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--emerald);
+    box-shadow: 0 0 12px var(--emerald);
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    color: var(--text);
+    margin-bottom: 26px;
+  }
+  /* inline-block so the measurement underline below spans the word and not the
+     whole remaining line box. */
+  h1 .accent {
+    color: var(--emerald);
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  /* Underscore under the accent word — reads as a measurement marker. */
+  h1 .accent::after {
+    content: '';
+    position: absolute; left: 0; right: 0; bottom: -6px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--emerald), rgba(0,255,157,0.15));
+  }
+
+  .sub {
+    font-size: 23px;
+    line-height: 1.52;
+    color: var(--text-dim);
+    max-width: 545px;
+    margin-bottom: 40px;
+  }
+  .sub strong { color: #B9C7D2; font-weight: 500; }
+
+  .footline {
+    display: flex; align-items: center; gap: 18px;
+  }
+  .wordmark {
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800; font-size: 27px;
+    letter-spacing: 0.1em;
+    color: var(--text);
+  }
+  .wordmark svg { width: 30px; height: 30px; }
+  .divider { width: 1px; height: 26px; background: #1E2836; }
+  .avail {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+  }
+
+  /* ---------- right: the product ---------- */
+  .device {
+    position: absolute;
+    right: 60px; top: 90px;
+    width: 400px; height: 600px;          /* taller than the gap: bleeds off the bottom */
+    border-radius: 34px 34px 0 0;
+    background-image: var(--shot);
+    background-repeat: no-repeat;
+    background-size: calc(1284px * var(--shot-scale)) auto;
+    background-position: var(--shot-x) var(--shot-y);
+    box-shadow:
+      0 0 0 1px rgba(0,255,157,0.14),
+      0 40px 90px rgba(0,0,0,0.65);
+    z-index: 2;
+  }
+  /* Fade the very bottom so the crop dissolves into the card instead of
+     ending on a hard horizontal seam. */
+  .device::after {
+    content: '';
+    position: absolute; left: 0; right: 0; bottom: 0; height: 90px;
+    background: linear-gradient(transparent, var(--bg));
+  }
+</style>
+</head>
+<body>
+  <div class="rule"></div>
+  <div class="bloom"></div>
+  <div class="grid"></div>
+
+  <div class="stage">
+    <div class="copy">
+      <div class="eyebrow">Solar forecast app</div>
+      <h1>Predict solar production<br>with <span class="accent">physics</span></h1>
+      <p class="sub">
+        <strong>No inverter login. No API keys.</strong><br>
+        Enter your panel parameters and get precision forecasts from satellite
+        data — for any installation, any brand.
+      </p>
+      <div class="footline">
+        <div class="wordmark">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 18 L40 62 L62 18" stroke="#00FF9D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="40" cy="12" r="5" fill="#00FF9D"/>
+          </svg>
+          VOLCAST
+        </div>
+        <div class="divider"></div>
+        <div class="avail">Free · iOS &amp; Android</div>
+      </div>
+    </div>
+
+    <div class="device"></div>
+  </div>
+
+  <div class="grain"></div>
+</body>
+</html>

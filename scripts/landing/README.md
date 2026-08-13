@@ -45,6 +45,40 @@ proposition, then "no inverter login", then the data/physics differentiator:
 > Predict your solar production with an advanced physical engine. No inverter login
 > required. Satellite data + physics = precision.
 
+## Share card (og:image)
+
+`og/card.html` is the 1200×630 Open Graph card, rendered to
+`public/img/og-landing.png` by `og/render.mjs`. Every landing page references it,
+including the `/` shim.
+
+```bash
+# needs Playwright, which this repo does not depend on — run from a checkout
+# that has it, e.g. the FBScraper repo:
+cd ../FBScraper && node ../volcast-landing/scripts/landing/og/render.mjs
+```
+
+The PNG is committed, so the renderer only runs when the card changes. Failing
+that, open `og/card.html` in a browser sized to exactly 1200×630 and screenshot it.
+
+Notes if you edit the card:
+
+- It is designed to be read at ~40% scale, because that is how wide Facebook
+  renders it in-feed. Nothing carrying meaning sits below 22px.
+- The device panel windows in on `public/img/en/forecast.png` via the `--shot-*`
+  custom properties; that source has its own marketing header baked into the top
+  third, which is why the card crops to the phone rather than using the whole file.
+- Keep the grain layer at `opacity: 0` unless a variant needs it. Per-pixel noise
+  is incompressible — it took the PNG from 202KB to 547KB for no visible gain.
+- Do not reuse `og-default.png` here. That is the blog's card and its strapline
+  reads "Solar Forecast for Home Assistant", which tells the average PV owner in a
+  Facebook group that the app is not for them.
+
+The card is English-only and shared by all locales. The generator is parameterised
+enough that per-locale cards are feasible — there are localised screenshots under
+`public/img/<lang>/` and localised hero copy in `translations.json` — but the URL
+that actually gets shared is the `/` shim, which serves one image regardless of the
+viewer's language.
+
 ## Adding a locale
 
 1. Add the code to `LOCALES` in `build.js`.
