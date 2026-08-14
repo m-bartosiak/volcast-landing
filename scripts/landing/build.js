@@ -64,9 +64,29 @@ function langSwitcherOptions(currentLocale) {
 
 const hreflang = hreflangTags();
 
+// Walidacja map przed generowaniem. Bez niej każda z tych trzech dziur przechodzi
+// bez śladu: brak bloku w translations.json daje stronę z angielską treścią pod
+// obcym <html lang> i własnym canonicalem (podręcznikowy duplikat treści), a brak
+// wpisu w HREFLANG albo NATIVE_NAMES wypisuje literalne "undefined" — to drugie
+// na WSZYSTKICH stronach naraz, bo przełącznik języka jest wspólny.
+const missingMaps = [];
 for (const locale of LOCALES) {
-  // Fallback to EN if locale translations missing
-  const t = translations[locale] || translations['en'];
+  if (!translations[locale]) missingMaps.push(`translations.json — brak bloku '${locale}'`);
+  if (!HREFLANG[locale]) missingMaps.push(`build.js — brak HREFLANG['${locale}']`);
+  if (!NATIVE_NAMES[locale]) missingMaps.push(`build.js — brak NATIVE_NAMES['${locale}']`);
+}
+if (missingMaps.length) {
+  console.error('BŁĄD — niespójne mapy locale:\n  ' + missingMaps.join('\n  '));
+  process.exit(1);
+}
+
+// Zbierane przez całą pętlę, zgłaszane raz na końcu. Ostrzeżenie na stdout nie
+// zatrzymywało niczego, a jedynym skutkiem brakującego klucza jest angielskie
+// zdanie na stronie w innym języku — dokładnie to, czego nikt nie zauważy.
+const missingKeys = [];
+
+for (const locale of LOCALES) {
+  const t = translations[locale];
 
   let html = template;
 
@@ -93,7 +113,7 @@ for (const locale of LOCALES) {
   html = html.replace(/\{\{t\.([a-zA-Z0-9_.]+)\}\}/g, (_match, key) => {
     const val = resolve(t, key);
     if (val === null) {
-      console.warn(`  ⚠ Missing key: t.${key} for locale: ${locale}`);
+      missingKeys.push(`${locale}: t.${key}`);
       // Fallback to EN
       const fallback = resolve(translations['en'], key);
       return fallback !== null ? fallback : `[${key}]`;
@@ -106,6 +126,11 @@ for (const locale of LOCALES) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
   console.log(`  ✓ ${locale}/index.html`);
+}
+
+if (missingKeys.length) {
+  console.error(`\nBŁĄD — ${missingKeys.length} brakujących kluczy tłumaczeń:\n  ` + missingKeys.join('\n  '));
+  process.exit(1);
 }
 
 console.log(`\nDone — ${LOCALES.length} locale pages generated.`);
