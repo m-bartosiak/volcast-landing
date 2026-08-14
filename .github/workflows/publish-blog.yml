@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write   # opening the PR and enabling auto-merge
 
     steps:
       - name: Checkout
@@ -62,11 +63,33 @@ jobs:
           echo "changed=$CHANGED" >> $GITHUB_OUTPUT
         id: publish
 
-      - name: Commit and push
+      # main requires a pull request, so this can no longer push to it. It opens
+      # one instead and turns on auto-merge: GitHub lands it as soon as Vercel's
+      # build goes green, which keeps publishing unattended while still routing
+      # it through the same gate as everything else.
+      - name: Open a pull request and let it merge itself
         if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="content/publish-$DATE"
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
           git add -A
-          git commit -m "📝 Publish scheduled blog posts for $(date -u +%Y-%m-%d)"
-          git push
+          git commit -m "📝 Publish scheduled blog posts for $DATE"
+          # A retry on the same day rebuilds the same content, so replacing the
+          # branch is safe and keeps one PR per publication date.
+          git push --force-with-lease -u origin "$BRANCH"
+
+          if ! gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            gh pr create --base main --head "$BRANCH" \
+              --title "📝 Publish scheduled blog posts for $DATE" \
+              --body "Scheduled publication: \`draft: true\` → \`draft: false\` for the posts due on or before $DATE in \`src/content/schedule.json\`, which is updated in the same commit.
+
+          Opened by the \`publish-blog\` workflow. Auto-merge is on, so this lands by itself once Vercel reports a green build. No content is written here — every post in it was written and scheduled earlier."
+          fi
+
+          gh pr merge --auto --merge "$BRANCH"
