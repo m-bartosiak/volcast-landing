@@ -1,0 +1,54 @@
+name: seo-open-pr
+
+# The generator on the NAS pushes a branch and stops there. No credential able
+# to open or merge a pull request exists on that machine — it has an SSH key,
+# which can move commits and nothing else. This workflow does the rest with
+# GitHub's own token, which lives for the length of one run and never leaves
+# GitHub's infrastructure.
+#
+# Matching only dated branches, so the hand-made ones (seo/guard,
+# seo/brand-consolidation) do not get a pull request opened under them.
+on:
+  push:
+    branches: ['seo/[0-9]*']
+
+jobs:
+  open-pr:
+    name: open-pr
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      # Full history: `gh pr create --fill` takes the title and body from the
+      # commit, and a shallow clone may not have it.
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Open the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            echo "A pull request is already open for $BRANCH."
+            exit 0
+          fi
+
+          # --fill: the generator writes the whole explanation into the commit
+          # message, so the reasoning lives in the repo's history instead of a
+          # bot comment that a squash would throw away.
+          gh pr create --base main --head "$BRANCH" --fill
+
+          # Auto-merge is deliberately NOT enabled yet. The agreed ramp is two
+          # weeks of dry runs, then two weeks of pull requests merged by hand and
+          # read in full, and only then automation. To turn it on, add:
+          #
+          #   gh pr merge --auto --merge "$BRANCH"
+          #
+          # It will still wait for the required checks — Vercel and seo-guard —
+          # because branch protection applies to auto-merge like everything else.
+          echo "Opened. Merge it by hand: the ramp says weeks 3-4 are read in full."
