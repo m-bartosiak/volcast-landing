@@ -34,11 +34,15 @@ const alternates = LANGS
   .map(l => ({ lang: l, url: `/blog/${l}/series/${series}/` }));
 ---
 
+<!-- noindex: strona archiwum. Dwanaście stron serii zebrało razem 1 impresję
+     i 0 kliknięć w 28 dniach. Nawigacyjną rolę pełni SeriesNav wewnątrz wpisów,
+     która działa niezależnie od tego, czy ta strona jest w indeksie. -->
 <BaseLayout
   title={seriesMeta?.title || series}
   description={seriesMeta?.description || `${series} series`}
   lang={lang}
   alternates={alternates}
+  noindex={true}
 >
   <Header lang={lang} alternates={alternates} />
 

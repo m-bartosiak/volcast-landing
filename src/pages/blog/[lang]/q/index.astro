@@ -29,11 +29,15 @@ for (const entry of entries) {
 const categories = [...byCategory.keys()].sort();
 ---
 
+<!-- noindex: spis treści, nie odpowiedź. Trzy indeksy Q&A zebrały łącznie
+     1 impresję i 0 kliknięć w 28 dniach — wartość mają pojedyncze wpisy Q&A,
+     które zostają w indeksie i w sitemapie. -->
 <BaseLayout
   title={t(lang).qaIndexTitle}
   description={t(lang).qaIndexSubtitle}
   lang={lang}
   alternates={alternates}
+  noindex={true}
 >
   <Header lang={lang} alternates={alternates} activePage="qa" />
 

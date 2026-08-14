@@ -41,11 +41,19 @@ const jsonLd = {
 };
 ---
 
+<!-- noindex: to jest strona nawigacyjna, nie docelowa. W 28 dniach do 2026-08-11
+     zebrała 138 impresji i ZERO kliknięć, z czego 132 impresje na samym „volcast" —
+     czyli przechwytywała zapytanie o markę i przepuszczała je bez kliknięcia,
+     podczas gdy /en/ konwertuje tę samą frazę na 34%. `follow` zostaje, bo linki
+     stąd do wpisów mają płynąć dalej. Alternaty przekazujemy nadal — Header
+     używa ich do przełącznika języka — ale BaseLayout nie wyemituje z nich
+     hreflanga, bo hreflang na noindeksie to sygnał sprzeczny. -->
 <BaseLayout
   title={t(lang).blogMetaTitle}
   description={t(lang).blogDescription}
   lang={lang}
   alternates={alternates}
+  noindex={true}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
