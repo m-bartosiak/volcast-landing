@@ -1,0 +1,392 @@
+{
+  "glossary": [
+    {
+      "en": "solar forecast / PV production forecast",
+      "it": "previsione di produzione fotovoltaica",
+      "note": "Serwisy branzowe (Datameteo, Meteosmit, RSE) pisza 'previsione di produzione fotovoltaica' albo 'previsione di producibilita'. Bledna kalka: 'previsione solare' (brzmi jak prognoza pogody dla slonca) i 'previsione del fotovoltaico'. 'Previsioni' w liczbie mnogiej samo w sobie = prognoza pogody, wiec zawsze z dopelnieniem."
+    },
+    {
+      "en": "forecast horizon",
+      "it": "orizzonte di previsione",
+      "note": "Nie 'orizzonte previsionale' (zargon finansowy). Uwaga na kolizje z 'orizzonte' = horyzont geograficzny/przeszkody terenowe — w tekscie o zacienieniu trzeba doprecyzowac 'profilo dell'orizzonte'."
+    },
+    {
+      "en": "nowcasting",
+      "it": "nowcasting (previsione a brevissimo termine)",
+      "note": "Zostawiamy angielski termin — tak pisze RSE, Datameteo i prace Polimi. Przy pierwszym uzyciu glosa w nawiasie. Bledna kalka: 'previsione immediata', 'previsione dell'adesso'."
+    },
+    {
+      "en": "day-ahead",
+      "it": "previsione per il giorno successivo / (rynek) mercato del giorno prima (MGP)",
+      "note": "W kontekscie prognozy dla uzytkownika: 'per domani' albo 'per il giorno successivo'. W kontekscie rynku energii OBOWIAZKOWO 'mercato del giorno prima (MGP)' — to termin ustawowy GME. Bledna kalka: 'giorno avanti', 'day-ahead' nieprzetlumaczone w tekscie konsumenckim."
+    },
+    {
+      "en": "intraday",
+      "it": "infragiornaliero (mercato infragiornaliero, MI)",
+      "note": "'Intraday' zostaje tylko w kontekscie gieldowym jako MI. W prognozie: 'aggiornamento infragiornaliero' albo prosciej 'aggiornamenti durante la giornata'. Bledna kalka: 'intragiornaliero' (nie istnieje)."
+    },
+    {
+      "en": "irradiance",
+      "it": "irradianza (W/m²)",
+      "note": "NAJWAZNIEJSZA pulapka calego glosariusza. Scisle: irradianza = moc na jednostke powierzchni (W/m²). Wloskie serwisy konsumenckie masowo pisza 'irraggiamento' na jedno i drugie. Zasada: gdy tekst rozroznia W/m² od kWh/m², uzywaj 'irradianza'; w prozie konsumenckiej 'irraggiamento' jest akceptowalne i lepiej wyszukiwalne."
+    },
+    {
+      "en": "irradiation (energy over time)",
+      "it": "irradiazione / irraggiamento (kWh/m²)",
+      "note": "To energia skumulowana, nie moc. Jesli w akapicie wystepuje obok 'irradianza', trzymaj sie pary irradianza/irradiazione i nie mieszaj z 'irraggiamento'. Bledna kalka: 'irradiamento' (forma nieistniejaca)."
+    },
+    {
+      "en": "GHI — global horizontal irradiance",
+      "it": "irradianza globale orizzontale (GHI)",
+      "note": "Akronim ZAWSZE zostaje po angielsku — tak robi meteoblue IT i cala branza. Przy pierwszym uzyciu rozwiniecie po wlosku. Nie tlumaczyc akronimu na 'IGO'."
+    },
+    {
+      "en": "DNI — direct normal irradiance",
+      "it": "irradianza diretta normale (DNI)",
+      "note": "Krazą dwa szyki: 'diretta normale' i 'normale diretta' — oba poprawne, wybierz jeden i trzymaj sie go w calym blogu. 'Normale' znaczy tu 'prostopadla do promieni', nie 'zwykla' — warto to raz wyjasnic czytelnikowi, bo wloskie 'normale' jest silnie mylace."
+    },
+    {
+      "en": "DHI — diffuse horizontal irradiance",
+      "it": "irradianza diffusa orizzontale (DHI)",
+      "note": "Nie 'irradianza sparsa' ani 'dispersa'. 'Diffusa' to termin techniczny i zarazem naturalne wloskie slowo — dziala w obu rejestrach."
+    },
+    {
+      "en": "direct light / beam radiation",
+      "it": "radiazione diretta",
+      "note": "W tekscie konsumenckim 'luce diretta' tez dziala. Nie 'radiazione a fascio' (kalka z 'beam')."
+    },
+    {
+      "en": "diffuse light",
+      "it": "radiazione diffusa / luce diffusa",
+      "note": "Bledna kalka: 'luce indiretta' — to co innego (odbita). Odbite od podloza to 'radiazione riflessa' (albedo). Trzy skladowe: diretta, diffusa, riflessa."
+    },
+    {
+      "en": "clear sky / clear-sky model",
+      "it": "cielo sereno / modello a cielo sereno",
+      "note": "'Sereno' to wloski standard meteo. Bledna kalka: 'cielo chiaro', 'cielo limpido' (to raczej przejrzystosc powietrza). Clear sky index → 'indice di cielo sereno'."
+    },
+    {
+      "en": "cloud cover",
+      "it": "copertura nuvolosa / nuvolosita",
+      "note": "Obie formy naturalne. 'Nuvolosita' lepiej w prozie, 'copertura nuvolosa' gdy podajesz procent. Bledna kalka: 'copertura delle nuvole'."
+    },
+    {
+      "en": "tilt (panel)",
+      "it": "inclinazione",
+      "note": "Bledna kalka: 'pendenza' (to nachylenie DACHU, nie modulu) oraz zostawianie 'tilt' po angielsku. 'Angolo di inclinazione' gdy potrzebna precyzja. Wloskie serwisy podaja optimum 30-35° dla Wloch."
+    },
+    {
+      "en": "azimuth (panel orientation)",
+      "it": "orientamento (azimut)",
+      "note": "Uzytkownik szuka 'orientamento'; 'azimut' to slowo techniczne (pisane bez -h, nie 'azimuth'). PULAPKA KONWENCJI: wloskie zrodla uzywaja i 0°=Sud (konwencja instalatorska) i 180°=Sud (konwencja PVGIS) — trzeba jawnie napisac, ktora stosujesz, inaczej czytelnik zle wpisze dane w aplikacji."
+    },
+    {
+      "en": "string (of modules)",
+      "it": "stringa (pl. stringhe)",
+      "note": "Ustalony termin branzowy — tak pisza wszystkie wloskie manuale inwerterow. Bledne kalki: 'filo', 'catena', 'corda', 'serie di pannelli'. 'Dimensionamento delle stringhe' = projektowanie stringow."
+    },
+    {
+      "en": "inverter",
+      "it": "inverter",
+      "note": "Nieodmienny, rodzaj meski: 'l'inverter', 'gli inverter' (bez -s). Bledna kalka: 'invertitore' (archaizm, w PV nie uzywany), 'convertitore' (za szerokie)."
+    },
+    {
+      "en": "MPPT / maximum power point tracker",
+      "it": "MPPT (inseguitore del punto di massima potenza)",
+      "note": "Akronim zostaje. Wloski czasownik to 'inseguire' — 'inseguitore', NIE 'tracciatore' ani 'tracker'. Inwerter z kilkoma MPPT = 'inverter multi-MPPT'."
+    },
+    {
+      "en": "clipping",
+      "it": "clipping (limitazione della potenza in uscita)",
+      "note": "Branza wloska (Enphase IT, Tigo IT, Aforenergy) zostawia 'clipping'. Bledne kalki: 'ritaglio', 'taglio della potenza', 'tosatura'. Przy pierwszym uzyciu glosa opisowa."
+    },
+    {
+      "en": "curtailment",
+      "it": "limitazione della produzione / limitazione dell'immissione in rete",
+      "note": "Nie mylic z clippingiem! Clipping = ograniczenie sprzetowe DC→AC, curtailment = celowe ograniczenie z zewnatrz (siec, ustawienie zero-export). W kontekscie domowym najczysciej: 'azzeramento dell'immissione' albo 'limitazione impostata sull'inverter'. Bledna kalka: 'curtailment' bez glosy — wloski czytelnik domowy tego nie zna."
+    },
+    {
+      "en": "DC/AC ratio (oversizing)",
+      "it": "rapporto DC/AC (sovradimensionamento del generatore FV)",
+      "note": "Wloskie zrodla pisza rapporto DC/AC jako liczbe z przecinkiem: '1,2'. 'Sovradimensionamento' to sam zabieg. Bledna kalka: 'sovradimensione', 'rapporto CC/CA' (technicznie poprawne, ale w praktyce nikt tak nie pisze)."
+    },
+    {
+      "en": "DC / AC current",
+      "it": "corrente continua (CC) / corrente alternata (CA)",
+      "note": "W dokumentacji technicznej 'c.c.' i 'c.a.'; w blogu bezpieczniej rozwinac lub uzyc DC/AC, ktore Wlosi rozumieja. Bledna kalka: 'corrente diretta' za 'direct current'."
+    },
+    {
+      "en": "self-consumption",
+      "it": "autoconsumo",
+      "note": "Jedno slowo, bez lacznika. Bledne kalki: 'auto-consumo', 'consumo proprio', 'autoconsumazione'. Wskaznik: 'quota di autoconsumo' albo 'percentuale di autoconsumo'."
+    },
+    {
+      "en": "self-sufficiency / energy independence",
+      "it": "autosufficienza (energetica) / indipendenza energetica",
+      "note": "NIE synonim autoconsumo — to dwa rozne wskazniki (ile produkcji zjadam vs ile zuzycia pokrywam). Wloskie blogi je myla; w tekscie technicznym rozdziel je jawnie."
+    },
+    {
+      "en": "export / feed-in to grid",
+      "it": "immissione in rete / energia immessa",
+      "note": "Bledna kalka: 'esportazione', 'esportare in rete'. Czasownik: 'immettere in rete'. Antonim ponizej."
+    },
+    {
+      "en": "import / grid draw",
+      "it": "prelievo dalla rete / energia prelevata",
+      "note": "Czasownik 'prelevare'. Bledna kalka: 'importazione', 'assorbimento dalla rete' (dopuszczalne, ale 'prelievo' to termin z rachunku za prad, wiec czytelnik go zna)."
+    },
+    {
+      "en": "net metering",
+      "it": "scambio sul posto (SSP)",
+      "note": "UWAGA MERYTORYCZNA, nie tylko jezykowa: od 2026 nowe instalacje NIE moga juz aktywowac SSP. Jesli tekst zrodlowy mowi 'net metering' jako o dostepnej opcji, trzeba to zlokalizowac — dla nowych instalacji wlasciwe jest 'ritiro dedicato (RID)'. Bledna kalka: 'conteggio netto', 'misurazione netta'."
+    },
+    {
+      "en": "feed-in tariff / paid export",
+      "it": "ritiro dedicato (RID) / tariffa incentivante",
+      "note": "'Ritiro dedicato' to konkretny mechanizm GSE (cena strefowa albo prezzo minimo garantito). 'Tariffa incentivante' odnosi sie do dawnego Conto Energia — nie uzywac dla biezacych rozliczen. Bledna kalka: 'tariffa di immissione'."
+    },
+    {
+      "en": "surplus / excess energy",
+      "it": "surplus (energia in eccesso, eccedenza)",
+      "note": "'Surplus' jest w powszechnym uzyciu w branzy PV (np. 'ricarica da surplus'). Bledne kalki: 'avanzo', 'sovrappiu', 'energia extra'."
+    },
+    {
+      "en": "battery storage / storage system",
+      "it": "sistema di accumulo / batteria di accumulo",
+      "note": "Bledne kalki: 'immagazzinamento', 'stoccaggio' (stoccaggio dotyczy gazu/paliw, nie domowej baterii), 'batteria di stoccaggio'. Skrot potoczny: 'accumulo' samo w sobie."
+    },
+    {
+      "en": "state of charge (SoC)",
+      "it": "stato di carica (SoC)",
+      "note": "Skrot pisany 'SoC' albo 'SOC'. Bledna kalka: 'stato della carica', 'livello di carica' (to potoczne, dopuszczalne w prozie, ale nie jako termin)."
+    },
+    {
+      "en": "depth of discharge (DoD)",
+      "it": "profondita di scarica (DoD)",
+      "note": "Odwrotnosc SoC. Bledna kalka: 'profondita di scaricamento'. Wloskie zrodla konsekwentnie tlumacza ten termin, w odroznieniu od SoC."
+    },
+    {
+      "en": "usable capacity",
+      "it": "capacita utile",
+      "note": "Nie mylic z 'capacita nominale' (znamionowa). Bledna kalka: 'capacita usabile'. 'Capacita utilizzabile' jest poprawna, ale dluzsza i rzadsza."
+    },
+    {
+      "en": "round-trip efficiency",
+      "it": "efficienza di ciclo (carica/scarica)",
+      "note": "Bledna kalka: 'efficienza di andata e ritorno' — doslowne i smieszne. Mozna tez 'rendimento del ciclo'."
+    },
+    {
+      "en": "yield (energy produced)",
+      "it": "produzione (kWh)",
+      "note": "KLUCZOWY TRIPLET. 'Produzione' = ile kWh faktycznie wyprodukowano. NIE uzywac tu 'rendimento'. Zdanie 'the system yielded 12 kWh' → 'l'impianto ha prodotto 12 kWh'."
+    },
+    {
+      "en": "yield (per installed kW) / specific yield",
+      "it": "resa / producibilita specifica (kWh/kWp)",
+      "note": "'Resa' = wydajnosc odniesiona do mocy lub powierzchni ('resa dell'impianto in inverno'). 'Producibilita specifica' gdy podajesz kWh/kWp rocznie (Wlochy: ~1.100-1.500). Bledna kalka: uzycie 'resa' zamiast 'produzione' dla bezwzglednych kWh."
+    },
+    {
+      "en": "efficiency",
+      "it": "rendimento / efficienza (%)",
+      "note": "Trzeci element tripletu: 'rendimento' to sprawnosc w procentach (modulu, inwertera, ukladu). Najczestszy blad tlumaczy: 'rendimento' uzyte dla kWh. Regula: rendimento ZAWSZE konczy sie znakiem %."
+    },
+    {
+      "en": "performance ratio (PR)",
+      "it": "performance ratio (PR) / rapporto di prestazione",
+      "note": "Branza zostawia angielski akronim PR. Bledna kalka: 'rapporto di performance', 'indice di rendimento'."
+    },
+    {
+      "en": "capacity factor",
+      "it": "fattore di capacita / ore equivalenti",
+      "note": "Dla czytelnika domowego czytelniejsze sa 'ore equivalenti' (np. 1.300 ore/rok = 1.300 kWh z 1 kWp) i tak licza wloskie kalkulatory. Bledna kalka: 'fattore di carico' (to load factor po stronie odbioru)."
+    },
+    {
+      "en": "derating",
+      "it": "derating / declassamento (riduzione di potenza)",
+      "note": "W kontekscie termicznym: 'riduzione di potenza per temperatura'. Bledna kalka: 'degradazione' (to trwaly degrado, nie chwilowe obnizenie)."
+    },
+    {
+      "en": "temperature coefficient",
+      "it": "coefficiente di temperatura (%/°C)",
+      "note": "Wartosc jest UJEMNA (np. -0,29 %/°C) — pilnowac minusa i przecinka. 'Coefficiente termico' krazy, ale jest dwuznaczne; producenci (Maysun IT) pisza 'coefficiente di temperatura'."
+    },
+    {
+      "en": "STC / standard test conditions",
+      "it": "condizioni STC (condizioni standard di prova)",
+      "note": "Akronim zostaje. 1000 W/m², 25 °C, AM 1,5. Kluczowe dla artykulu 'dlaczego panele nie osiagaja mocy nominalnej'. Bledna kalka: 'condizioni di test standard' (szyk angielski)."
+    },
+    {
+      "en": "NOCT",
+      "it": "NOCT (temperatura nominale di funzionamento della cella)",
+      "note": "Akronim zostaje, rozwiniecie przy pierwszym uzyciu. Nie tlumaczyc na 'TNFC'."
+    },
+    {
+      "en": "soiling",
+      "it": "sporcamento (perdite per sporcamento)",
+      "note": "W tekscie technicznym 'perdite per sporcamento'; w konsumenckim naturalniej 'sporco sui moduli' / 'perdite per sporcizia'. Bledna kalka: zostawienie 'soiling' bez glosy — poza projektantami nikt tego nie uzywa."
+    },
+    {
+      "en": "shading",
+      "it": "ombreggiamento",
+      "note": "'Ombreggiamento' = zjawisko i strata; 'ombra' = konkretny cien. Bledna kalka: 'ombreggiatura' (to raczej cieniowanie w grafice/architekturze). Zacienienie od terenu: 'ombreggiamento da orizzonte'."
+    },
+    {
+      "en": "horizon profile / skyline",
+      "it": "profilo dell'orizzonte",
+      "note": "Bledna kalka: 'linea dell'orizzonte' (to horyzont morski, estetyczny). W aplikacji: 'ostacoli all'orizzonte' dla przeszkod."
+    },
+    {
+      "en": "transposition model (POA)",
+      "it": "modello di trasposizione (sul piano inclinato)",
+      "note": "Bledna kalka: 'modello di traslazione', 'modello di trasposizione del piano'. Wielkosc wynikowa: 'irradianza sul piano dei moduli' / 'sul piano inclinato' (POA)."
+    },
+    {
+      "en": "albedo / ground reflectance",
+      "it": "albedo (riflettanza del suolo)",
+      "note": "'Albedo' jest rodzaju meskiego: 'l'albedo elevato'. Bledna kalka: 'riflessione del terreno' (to zjawisko, nie wspolczynnik)."
+    },
+    {
+      "en": "bifacial",
+      "it": "bifacciale",
+      "note": "Bledna kalka: 'bifaciale' (jedno c), 'a doppia faccia'. Zysk z tylu: 'guadagno bifacciale' / 'bifacial gain'."
+    },
+    {
+      "en": "Kalman filter calibration",
+      "it": "calibrazione con filtro di Kalman",
+      "note": "'Filtro di Kalman' — z przyimkiem 'di', nie 'filtro Kalman'. Bledna kalka: 'calibrazione Kalman'. Czasownik: 'calibrare', rzeczownik czynnosci 'taratura' tez poprawny (bardziej metrologiczny)."
+    },
+    {
+      "en": "bias (systematic error)",
+      "it": "scostamento sistematico / bias",
+      "note": "BLAD KRYTYCZNY do unikniecia: 'pregiudizio' (to uprzedzenie spoleczne). W tekscie technicznym 'bias' jest zrozumialy, ale przy pierwszym uzyciu daj 'scostamento sistematico'. 'Errore sistematico' tez dziala."
+    },
+    {
+      "en": "forecast accuracy / MAPE",
+      "it": "accuratezza della previsione / errore percentuale medio assoluto (MAPE)",
+      "note": "'Accuratezza' (blisko prawdy) to nie 'precisione' (powtarzalnosc) — w tekscie o jakosci prognozy roznica jest istotna. MAPE zostaje jako akronim."
+    },
+    {
+      "en": "peak power (kWp)",
+      "it": "potenza di picco (kWp)",
+      "note": "Zapis 'kWp' — male k, wielkie W, male p. Wloskie serwisy uzywaja 'potenza di picco' i 'potenza nominale' wymiennie dla generatora PV. Bledna kalka: 'KWp', 'kWpicco', 'potenza massima'."
+    },
+    {
+      "en": "rated / nominal power",
+      "it": "potenza nominale",
+      "note": "Dla inwertera 'potenza nominale AC'; dla generatora 'potenza nominale (kWp)'. W artykule o mocy nominalnej trzeba jawnie rozdzielic te dwie, bo mylenie ich jest zrodlem calego nieporozumienia czytelnika."
+    },
+    {
+      "en": "module / panel",
+      "it": "modulo fotovoltaico / pannello",
+      "note": "'Modulo' techniczne, 'pannello' potoczne i lepiej wyszukiwalne. UWAGA: samo 'pannello solare' bywa rozumiane jako kolektor termiczny — gdy kontekst niejasny, pisz 'pannello fotovoltaico'."
+    },
+    {
+      "en": "degradation (annual)",
+      "it": "degrado (annuo)",
+      "note": "Bledna kalka: 'degradazione' (rejestr chemiczny/biologiczny). PID zostaje jako akronim."
+    },
+    {
+      "en": "snow cover on modules",
+      "it": "neve sui moduli / manto nevoso",
+      "note": "Bledna kalka: 'copertura di neve'. Czasownik: 'i moduli sono coperti di neve'."
+    },
+    {
+      "en": "heat pump",
+      "it": "pompa di calore",
+      "note": "Bledna kalka: 'pompa termica', 'pompa di riscaldamento'. Skrot 'PdC' spotykany w branzy."
+    },
+    {
+      "en": "EV charger / wallbox",
+      "it": "wallbox",
+      "note": "'Wallbox' to standard dla ladowarki sciennej w domu. 'Colonnina di ricarica' = wolnostojaca/publiczna — nie uzywac dla garazu. Bledne kalki: 'caricatore', 'caricabatterie per auto'."
+    },
+    {
+      "en": "electric vehicle (EV)",
+      "it": "auto elettrica / veicolo elettrico",
+      "note": "W tekscie konsumenckim 'auto elettrica'. Skrot 'EV' rozumiany, ale mniej naturalny niz w PL. Ladowanie z nadwyzki: 'ricarica da surplus fotovoltaico'."
+    },
+    {
+      "en": "smart meter",
+      "it": "contatore intelligente / contatore 2G",
+      "note": "We Wloszech istnieje konkretna nazwa 'contatore di seconda generazione (2G)' e-distribuzione — dla wloskiego czytelnika to najbardziej rozpoznawalny termin. Bledna kalka: 'contatore smart', 'misuratore intelligente'."
+    },
+    {
+      "en": "load shifting",
+      "it": "spostamento dei consumi / spostamento dei carichi",
+      "note": "'Spostamento dei consumi' brzmi naturalniej dla odbiorcy domowego; 'carichi' gdy mowa o urzadzeniach/automatyce. Bledna kalka: 'traslazione dei carichi', 'load shifting' bez glosy."
+    },
+    {
+      "en": "dynamic / indexed tariff",
+      "it": "tariffa a prezzo indicizzato (al PUN)",
+      "note": "'Tariffa dinamica' dopiero wchodzi do jezyka; Wlosi mowia i szukaja 'prezzo indicizzato' albo 'tariffa indicizzata al PUN'. Godzinowe pasma to 'fasce orarie F1/F2/F3'. Bledna kalka: 'tariffa variabile' (myli sie z ogolna zmiennoscia cen)."
+    },
+    {
+      "en": "grid operator / DSO",
+      "it": "distributore (e-distribuzione) / gestore di rete",
+      "note": "Nie mylic z 'fornitore' (sprzedawca energii, ten z rachunku). Bledna kalka: 'operatore di rete' jest zrozumiale, ale 'distributore' to termin regulacyjny."
+    },
+    {
+      "en": "payback period",
+      "it": "tempo di ritorno dell'investimento",
+      "note": "Bledna kalka: 'periodo di rimborso' (to o kredycie). Potocznie 'rientro dell'investimento', 'in quanti anni si ripaga'."
+    },
+    {
+      "en": "time-of-use bands",
+      "it": "fasce orarie (F1, F2, F3)",
+      "note": "Instytucja czysto wloska (ARERA): F1 pn-pt 8-19, F2 pn-pt 7-8 i 19-23 + sob 7-23, F3 noce i swieta. Kazdy tekst o przesuwaniu zuzycia MUSI sie do nich odniesc — bez tego brzmi obco."
+    }
+  ],
+  "styleNotes": "FORMA OSOBOWA — \"tu\", zdecydowanie. Wloskie blogi techniczno-konsumenckie o PV (Senec, Sorgenia, Otovo, Reonic, Aforenergy, Enpal) konsekwentnie zwracaja sie na \"tu\": \"tutto cio che devi sapere\", \"il tuo impianto\", \"puoi aumentare l'autoconsumo\", \"perdi produzione\". Forma \"lei\" pojawia sie tylko na stronach korporacyjnych B2B i ofertowych — w blogu brzmialaby dystansujaco i staroswiecko. Zasada: \"tu\" w calym tekscie, bez przeskokow; unikac bezosobowego \"si consiglia di...\" jako dominujacej formy (usypia), ale mozna go uzywac punktowo dla regul ogolnych. Nigdy nie mieszac \"tu\" i \"voi\" w jednym artykule.\n\nREJESTR — technicznie kompetentny, ale bez akademizmu. Czytelnik ma inwerter i Home Assistanta, wiec zna \"stringa\", \"MPPT\", \"autoconsumo\" i nie trzeba mu ich tlumaczyc jak laikowi; nie zna natomiast \"transposition model\", \"nowcasting\", \"bias\" — te glosujemy przy pierwszym wystapieniu. Zdania krotsze niz w typowej wloskiej prozie technicznej; unikac nominalizacji (\"l'effettuazione della verifica\" → \"verifica\"). Anglicyzmy przyjete przez branze (inverter, wallbox, clipping, performance ratio, MPPT, nowcasting) zostawiamy — ich tlumaczenie brzmi obco i szkodzi wyszukiwalnosci. Anglicyzmy nieprzyjete (yield, curtailment, derating, soiling, load shifting) tlumaczymy albo glosujemy.\n\nLICZBY — separator dziesietny to PRZECINEK, tysieczny to KROPKA. 1.250,75 kWh. 0,29 (nie 0.29). To najczestszy blad mechanicznego tlumaczenia z angielskiego i najbardziej rzucajacy sie w oczy — wymaga osobnego przebiegu korekty po tlumaczeniu, bo psuje sie takze w tabelach, wykresach i podpisach. Wartosci ponizej 1 pisze sie z zerem wiodacym: 0,85 (nie ,85). Zakresy liczbowe: \"10-15 kWh\", \"1.100-1.500 kWh/kWp\" (polpauza bez spacji). Procenty: \"il 20%\" — bez spacji przed znakiem, z rodzajnikiem w prozie (\"una riduzione del 20%\", nie \"riduzione di 20%\").\n\nJEDNOSTKI — spacja (najlepiej niełamliwa) miedzy liczba a jednostka: 6 kWp, 12,4 kWh, 850 W, 25 °C. Pisownia symboli bez zmian i bez kropek: kWh, kWp, kW, W, W/m², kWh/m², kWh/kWp, °C, %/°C. Nigdy KWh, Kwh, kwh, KWp. Liczba mnoga jednostek jest niezmienna: \"12 kWh\", nigdy \"12 kWhs\". \"kWp\" tylko dla mocy generatora PV, \"kW\" dla mocy chwilowej i mocy AC inwertera — mieszanie tych dwoch jest merytorycznym bledem, nie stylistycznym. Waluta po liczbie: 3.500 €, 0,12 €/kWh (Wlosi pisza euro po kwocie, inaczej niz Anglosasi).\n\nDATY — format dzien/miesiac/rok: 14/08/2026 albo rozwiniete \"14 agosto 2026\". Nazwy miesiecy i dni tygodnia MALA litera (agosto, lunedi) — to rozni sie od angielskiego i jest czestym bledem. Nie uzywac formatu ISO ani amerykanskiego. Lata: \"nel 2026\", dekady \"negli anni Duemila\".\n\nGODZINY — zegar 24-godzinny, dwukropek jako separator: 13:30 (nie 1:30 PM, nie 13.30 w tekscie ciaglym — choc kropka jest tradycyjna wloska, dwukropek dominuje online). Zakresy godzin najlepiej slownie w prozie: \"tra le 10 e le 16\", \"dalle 10:00 alle 16:00\", \"nelle ore centrali della giornata\". Uwaga na rodzajnik: \"le 10\", \"l'una\", \"le 13\". Zapis \"10-16\" bez kontekstu jest nieczytelny — zawsze z przyimkiem albo z \"ore\". Godziny szczytu: \"ore di punta\" / \"ore centrali\".\n\nMYSLNIK — wloska typografia UNIKA em dashu (—) w roli, jaka pelni w angielskim. Nie przenosic go mechanicznie. Zamiast tego: przecinki, nawiasy okragle albo dwukropek. Jesli juz potrzebny jest myslnik wtracajacy, wloski standard to polpauza (–) ze spacjami po obu stronach, uzywana oszczednie. Polpauza bez spacji sluzy zakresom (10-16, 2020-2026). Dywiz tylko w wyrazach zlozonych.\n\nCUDZYSLOWY I INNE — wloski online uzywa najczesciej \"...\" (proste angielskie) lub «...» (caporali) w tekstach bardziej formalnych; wybierz jedno i trzymaj sie tego. Apostrof: uwaga na elizje (l'impianto, dell'inverter, un'installazione — z apostrofem tylko przy rodzaju zenskim: un'app, ale un inverter). Wielkie litery w tytulach: tylko pierwsze slowo i nazwy wlasne (sentence case), NIE Title Case jak po angielsku — to natychmiast zdradza tlumaczenie maszynowe. Akronimy bez kropek: GSE, PUN, RID, GHI, SoC.\n\nLOKALIZACJA MERYTORYCZNA — nie tlumaczyc realiow 1:1. Odniesienia do net meteringu, taryf i incentywow trzeba przeliczyc na wloski kontekst 2026: scambio sul posto zamkniety dla nowych instalacji, ritiro dedicato jako standard, ceny strefowe, prezzo minimo garantito, fasce F1/F2/F3, contatore 2G, e-distribuzione jako dystrybutor. Przyklady liczbowe (produkcja zimowa, kWh/kWp, optymalny tilt 30-35°) dostosowac do szerokosci geograficznej Wloch — dane z UK czy Polski w tekscie po wlosku podwazaja wiarygodnosc. Poludnie jako kierunek referencyjny piszemy \"Sud\" wielka litera gdy oznacza kierunek geograficzny w konfiguracji instalacji.",
+  "keywordFindings": [
+    {
+      "topic": "Prognoza produkcji PV (temat glowny bloga)",
+      "italianQuery": "previsione produzione fotovoltaica",
+      "rationale": "To fraza uzywana przez wszystkie wloskie serwisy komercyjne w tej niszy (Datameteo 'Previsioni di Producibilita Fotovoltaica', Meteosmit, RSE, Loxone IT). Wariant dlugiego ogona o wysokiej intencji: 'quanto produrra il mio impianto domani' oraz 'previsione produzione impianto fotovoltaico'. Termin instytucjonalny 'producibilita' jest silny w B2B i warto go umiescic w tekscie, ale jako haslo glowne dla odbiorcy domowego lepsza jest 'produzione'. Unikac 'previsione solare' — praktycznie brak wolumenu, brzmi jak zla kalka."
+    },
+    {
+      "topic": "Aplikacja do prognozy solarnej",
+      "italianQuery": "app previsione produzione fotovoltaico",
+      "rationale": "W App Store IT konkurencja pozycjonuje sie dokladnie tak — pozycja 'Solar FV – Previsioni, avvisi' potwierdza, ze rynkowy jezyk to 'previsioni' + 'fotovoltaico', nie 'solare'. Warianty warte pokrycia: 'app per monitorare il fotovoltaico', 'app fotovoltaico previsioni meteo', 'miglior app fotovoltaico'. Uwaga: duza czesc ruchu idzie przez zapytania markowe o aplikacje producentow inwerterow (SEMS, FusionSolar, SolarGo) — tresc powinna wyjasniac roznice miedzy aplikacja monitorujaca a prognostyczna, bo to jest realny punkt wejscia."
+    },
+    {
+      "topic": "Home Assistant + PV",
+      "italianQuery": "home assistant previsione produzione fotovoltaica",
+      "rationale": "Wloska spolecznosc HA jest aktywna i pisze po wlosku o integracjach (inDomus.it, MissingTech, fabiogalli.net, italiafotovoltaico.com), ale samo zapytanie miesza jezyki — 'integrazione' po wlosku, nazwy techniczne po angielsku. Bardzo silne frazy pochodne: 'forecast.solar home assistant' (nazwa integracji, szukana dokladnie tak), 'solcast home assistant', 'integrare inverter Goodwe/ZCS/Solis in home assistant', 'dashboard energia home assistant fotovoltaico'. Rekomendacja: tytul po wlosku, ale zachowac angielskie nazwy wlasne integracji w naglowkach H2 — to one lapia ruch."
+    },
+    {
+      "topic": "Autokonsumpcja",
+      "italianQuery": "come aumentare l'autoconsumo fotovoltaico",
+      "rationale": "'Autoconsumo' to termin regulacyjny i zarazem potoczny, ma bardzo wysoki wolumen. Intencja poradnikowa najlepiej lapie sie przez 'come aumentare'. Warianty: 'percentuale di autoconsumo fotovoltaico', 'autoconsumo senza batteria', 'quanto autoconsumo si puo raggiungere'. Kontekst 2026 istotnie podnosi wolumen tego tematu: po zamknieciu scambio sul posto dla nowych instalacji roznica miedzy wartoscia kWh autokonsumowanego (~0,25-0,30 €) a immesso w ritiro dedicato (~0,10-0,13 €) stala sie glownym argumentem — tekst powinien te liczby podac wprost."
+    },
+    {
+      "topic": "Kiedy wlaczyc pralke",
+      "italianQuery": "quando conviene accendere la lavatrice con il fotovoltaico",
+      "rationale": "Fraza potwierdzona wielokrotnie w wynikach (Svea Solar, Bosch-Siemens IT, Pulsee, ecobonus110toscana) — 'quando conviene' to standardowy wloski otwarcie zapytania o oplacalnosc i warto go miec doslownie w H1. Rownolegle silne: 'orari migliori elettrodomestici fotovoltaico', 'quando fare la lavastoviglie per risparmiare', 'fasce orarie lavatrice'. WAZNE: bardzo duza czesc tego ruchu pochodzi od osob BEZ fotowoltaiki, szukajacych fasce F2/F3 — tekst musi rozdzielic dwa scenariusze (z PV: godziny centralne 10-16; z akumulatorem: wieczor/noc; bez PV: F3), inaczej nie odpowiada na intencje i traci pozycje."
+    },
+    {
+      "topic": "Produkcja zimowa",
+      "italianQuery": "quanto produce il fotovoltaico in inverno",
+      "rationale": "Temat mocno obsadzony przez duzych graczy (Sorgenia, ENGIE, A2A, Otovo, NWG) co potwierdza wolumen. Sasiednie frazy o silnej intencji: 'resa fotovoltaico inverno', 'rendimento fotovoltaico invernale', 'qual e il mese peggiore per il fotovoltaico', 'fotovoltaico in inverno funziona davvero'. Zauwaz, ze wloskie zrodla uzywaja tu 'resa' i 'rendimento' zamiennie i niepoprawnie — nasz tekst moze wygrac na precyzji, ale w tytule i H2 warto uzyc 'resa'/'quanto produce', bo tego szukaja. Podawac liczby wloskie (np. 6 kW na Polnocy ~150 kWh/mies. w grudniu), nie brytyjskie."
+    },
+    {
+      "topic": "Nachylenie i azymut",
+      "italianQuery": "orientamento e inclinazione pannelli fotovoltaici",
+      "rationale": "Kolejnosc ma znaczenie: 'orientamento' ma wyrazny wieksze zainteresowanie niz 'azimut' i praktycznie zawsze wystepuje jako pierwsze w tytulach (Sorgenia, Sonnen, BibLus, Svea, Solare Industriale). 'Azimut' wlaczac jako termin poboczny w tresci. Warianty: 'inclinazione ottimale pannelli fotovoltaici', 'orientamento pannelli est ovest', 'pannelli a nord conviene', 'quanto perdo se non sono a sud'. Wysoka wartosc dla nas: wyjasnienie dwoch konkurencyjnych konwencji azymutu (0°=Sud vs PVGIS 180°=Sud) — to realny problem uzytkownika konfigurujacego aplikacje i nikt tego dobrze nie pokrywa."
+    },
+    {
+      "topic": "Magazyn energii",
+      "italianQuery": "batteria di accumulo fotovoltaico conviene",
+      "rationale": "'Batteria di accumulo' bije 'sistema di accumulo' w wyszukiwaniach konsumenckich (choc drugie jest poprawniejsze technicznie i warto je miec w tresci). Dominuja dwie intencje: kosztowa i doborowa. Frazy: 'quanto costa una batteria di accumulo' (Enpal, MrKilowatt, Quotalo — silna konkurencja), 'come dimensionare la batteria di accumulo', 'quanti kWh di batteria servono', 'batteria accumulo conviene 2026'. Kat rozniacy dla bloga o prognozie: dobor pojemnosci i sterowanie ladowaniem na podstawie prognozy jutra — fraza 'caricare la batteria in base alle previsioni' jest praktycznie niezajeta."
+    },
+    {
+      "topic": "Taryfa dynamiczna",
+      "italianQuery": "tariffa luce a prezzo indicizzato PUN",
+      "rationale": "NAJWAZNIEJSZE ODKRYCIE tej sekcji: nie tlumaczyc 'dynamic tariff' na 'tariffa dinamica' — to fraza o marginalnym wolumenie we Wloszech. Wlosi szukaja 'prezzo indicizzato', 'tariffa indicizzata al PUN', 'PUN oggi', 'prezzo energia elettrica oggi'. Samo 'PUN' ma ogromny, codzienny wolumen informacyjny (Selectra, Papernest, Osservatorio Energia aktualizuja dziennie). Frazy pochodne: 'conviene il prezzo indicizzato o fisso', 'fasce orarie F1 F2 F3 orari'. Nasz kat: powiazanie prognozy produkcji z godzinowa cena — 'spostare i consumi quando il PUN e basso'."
+    },
+    {
+      "topic": "Dlaczego panele nie osiagaja mocy nominalnej",
+      "italianQuery": "perche il mio impianto fotovoltaico non produce la potenza nominale",
+      "rationale": "Ruch tu jest bardzo konkretny i pytajacy, czesto z liczbami — realne tytuly w wynikach to 'Perche il mio impianto fotovoltaico da 3 kW non ne produce mai piu di 2,5?' i 'Perche il mio impianto da 6,00 kWp non raggiunge mai 5,00 kW?'. To wskazuje, ze warto pokryc warianty z konkretnymi mocami (3 kW, 4,5 kW, 6 kW) jako H2/FAQ. Frazy towarzyszace: 'kWp e kWh differenza', 'cosa sono le condizioni STC', 'potenza di picco significato', 'impianto produce poco cause'. Termin 'kWp' sam w sobie jest silnym haslem informacyjnym (Switcho, BibLus, LDR Power, fotovoltaicoin). Uwaga redakcyjna: to zapytanie ma podtekst niepokoju o awarie — tekst powinien wczesnie rozdzielic 'to normalne (STC, temperatura, kat)' od 'to usterka (stringa odlaczona, ombreggiamento, derating inwertera)'."
+    }
+  ]
+}

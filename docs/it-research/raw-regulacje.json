@@ -1,0 +1,662 @@
+{
+  "claims": [
+    {
+      "id": "ssp-01",
+      "claim": "Scambio sul Posto jest zamkniety dla nowych instalacji: ostateczny termin zlozenia wniosku o przystapienie do GSE uplynal 26 wrzesnia 2025, a wniosek mogly zlozyc wylacznie instalacje, ktore weszly do eksploatacji (entrata in esercizio) do 29 maja 2025.",
+      "asOfDate": "2026-08-14 (komunikat GSE, stan aktualny)",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ssp-02",
+      "claim": "Podstawa prawna wygaszenia Scambio sul Posto to delibera ARERA 78/2025/R/efr w wykonaniu art. 9 ust. 2 D.Lgs. 199/2021.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.infobuildenergia.it/arera-uscita-regime-scambio-sul-posto-fotovoltaico/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ssp-03",
+      "claim": "Istniejace konwencje Scambio sul Posto pozostaja wazne do naturalnego wygasniecia, ale nie moga byc odnawiane po osiagnieciu 15 lat od daty pierwszego podpisania (DL 181/2023 oraz delibera ARERA 457/2024/R/efr).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ssp-04",
+      "claim": "W 2026 roku nie jest juz mozliwe aktywowanie zadnej nowej umowy Scambio sul Posto, niezaleznie od mocy i typu instalacji.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ssp-05",
+      "claim": "Od 1 stycznia 2026 instalacje fotowoltaiczne, ktore osiagnely 15-letni limit trwania konwencji, traca mozliwosc jej przedluzenia i musza przejsc na inny mechanizm waloryzacji energii oddanej do sieci.",
+      "asOfDate": "2026-01-01",
+      "sources": [
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/",
+        "https://www.enpal.com/it/fotovoltaico/scambio-sul-posto"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ssp-06",
+      "claim": "Przejscie ze Scambio sul Posto na Ritiro Dedicato nie odbywa sie automatycznie — wlasciciel instalacji musi zlozyc osobny wniosek do GSE, w przeciwnym razie energia oddana do sieci pozostaje bez wynagrodzenia.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rid-01",
+      "claim": "Ritiro Dedicato (RID) jest mechanizmem wskazanym przez GSE jako nastepca Scambio sul Posto dla wynagradzania energii wprowadzonej do sieci po ustaniu SSP.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rid-02",
+      "claim": "Prezzi minimi garantiti (PMG) na rok 2026 zostaly zaktualizowane komunikatem ARERA dla operatorow z 29 stycznia 2026, na podstawie delibery 280/07 (zmienionej delibera 618/2013/R/efr), ze wskaznikiem waloryzacji ISTAT +1,4% wzgledem 2025.",
+      "asOfDate": "2026-01-29",
+      "sources": [
+        "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "rid-03",
+      "claim": "Prezzi minimi garantiti stosuje sie do instalacji fotowoltaicznych o mocy nominalnej do 100 kW, w ramach szerszego rezimu PMG dla zrodel odnawialnych do 1 MW.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.arera.it/elettricita/ritiro-dedicato-e-prezzi-minimi-garantiti",
+        "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rid-04",
+      "claim": "PMG dla fotowoltaiki w 2026 wynosi okolo 4,7-4,75 eurocenta/kWh (ok. 47,0-47,5 EUR/MWh) dla pierwszego progu do 1.500.000 kWh rocznie — wartosc wymaga potwierdzenia w zalaczniku Excel ARERA, bo zrodla wtorne podaja rozbiezne liczby.",
+      "asOfDate": "2026-01-29",
+      "sources": [
+        "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07",
+        "https://www.enpal.com/it/fotovoltaico/ritiro-dedicato",
+        "https://www.arera.it/elettricita/ritiro-dedicato-e-prezzi-minimi-garantiti"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rid-05",
+      "claim": "W ramach RID GSE gwarantuje korzystniejsza z dwoch wartosci — PMG albo godzinowa cene strefowa (prezzo zonale orario) — rozliczajac ewentualne wyrownanie (conguaglio) w roku nastepnym po roku wprowadzenia energii.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato/regolazione-economica-del-servizio",
+        "https://www.arera.it/elettricita/ritiro-dedicato-e-prezzi-minimi-garantiti"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "rid-06",
+      "claim": "Godzinowa cena strefowa placona w RID jest w 2026 wyrazenie wyzsza od PMG — zrodla wtorne podaja ok. 12,8 eurocenta/kWh w I kwartale 2026 wobec sredniej ok. 11,5 eurocenta/kWh w 2025, co oznacza, ze dla wiekszosci prosumentow wiazaca jest cena rynkowa, a nie PMG.",
+      "asOfDate": "2026 Q1",
+      "sources": [
+        "https://www.enpal.com/it/fotovoltaico/ritiro-dedicato",
+        "https://www.mrkilowatt.it/impianti-fotovoltaici/incentivi/ritiro-dedicato-gse-cose-come-funziona-prezzi/"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "rid-07",
+      "claim": "RID jest ekonomicznie mniej korzystny od dawnego Scambio sul Posto, poniewaz wynagradza wylacznie wartosc energii (commodity), bez zwrotu skladnikow sieciowych i oneri di sistema, ktore SSP czesciowo kompensowal.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.myenergy.it/blog/incentivi-e-agevolazioni/ritiro-dedicato-e-scambio-sul-posto-differenze-cosa-cambia/",
+        "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato/regolazione-economica-del-servizio"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tide-01",
+      "claim": "TIDE to Testo Integrato del Dispacciamento Elettrico — reforma regulacji dyspozycji i bilansowania sieci, a NIE reforma struktury taryf detalicznych dla gospodarstw domowych; mylenie tych dwoch rzeczy jest czestym bledem w tresciach branzowych.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lightbox.terna.it/it/insight/tide-dispacciamento",
+        "https://lightbox.terna.it/en/insight/tide-electricity-dispatching"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "tide-02",
+      "claim": "TIDE wszedl w faze przejsciowa 1 stycznia 2025, faza przejsciowa trwala do 31 stycznia 2026, od 1 lutego 2026 trwa okres konsolidacji, a pelne wdrozenie nastepuje od 1 stycznia 2027.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lightbox.terna.it/it/insight/tide-dispacciamento",
+        "https://www.faroclub.com/trasformazione-del-mercato-elettrico-2026-regole-tide-faro-club/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tide-03",
+      "claim": "TIDE przechodzi z godzinowego na 15-minutowy okres bilansowania (periodo di bilanciamento) miedzy energia wprowadzona a pobrana z sieci.",
+      "asOfDate": "2026-02-01",
+      "sources": [
+        "https://www.faroclub.com/trasformazione-del-mercato-elettrico-2026-regole-tide-faro-club/",
+        "https://www.terranovasoftware.eu/news/tide-quali-novita-introduce-dal-1-gennaio-2025"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tide-04",
+      "claim": "TIDE otwiera rynek uslug dyspozycyjnych na male jednostki wytworcze i prosumentow poprzez agregacje w jednostki wirtualne, ale nie naklada dzis zadnego bezposredniego obowiazku ani nie zmienia automatycznie rachunku typowego prosumenta domowego.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lightbox.terna.it/it/insight/tide-dispacciamento"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "tide-05",
+      "claim": "Odrebnie od TIDE, ARERA delibera 542/2024/R/com zmienila format rachunku za energie od 1 lipca 2025, prezentujac oneri di sistema (ASOS i ARIM) w grupie 'sieci i oplaty' w formule ilosc x cena.",
+      "asOfDate": "2025-07-01",
+      "sources": [
+        "https://www.ecocalcolo.it/blog/riforma-oneri-sistema-2026-impatto-bollette.html",
+        "https://mercato-libero.it/guide/bolletta-luce"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "cer-01",
+      "claim": "Tariffa premio dla CER zostala ustanowiona dekretem MASE nr 414 z 7 grudnia 2023 (tzw. decreto CACER), w wykonaniu D.Lgs. 199/2021.",
+      "asOfDate": "2023-12-07",
+      "sources": [
+        "https://www.assolombarda.it/servizi/energia/informazioni/decreto-cer-pubblicati-i-criteri-di-incentivazione-per-lenergia-condivisa",
+        "https://www.mase.gov.it/portale/documents/d/guest/cer-presentazione-decreto-pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "cer-02",
+      "claim": "Dla instalacji o mocy do 200 kW tariffa incentivante wynosi 80 + max(0; 180 - Pz) EUR/MWh, gdzie Pz to godzinowa cena strefowa, a laczna wartosc nie moze przekroczyc 120 EUR/MWh.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.assolombarda.it/servizi/energia/informazioni/decreto-cer-pubblicati-i-criteri-di-incentivazione-per-lenergia-condivisa",
+        "https://energia.regione.emilia-romagna.it/comunita-energetiche/contributi-economici-alle-cer/tariffa-premio"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "cer-03",
+      "claim": "Tariffa premio na energie dzielona (energia condivisa) przyslugue przez 20 lat od daty wejscia instalacji do eksploatacji komercyjnej.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.assolombarda.it/servizi/energia/informazioni/decreto-cer-pubblicati-i-criteri-di-incentivazione-per-lenergia-condivisa",
+        "https://biblus.acca.it/comunita-energetiche-cer-decreto-incentivi/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "cer-04",
+      "claim": "Do tariffa premio doliczana jest maggiorazione terytorialna: +4 EUR/MWh dla instalacji w srodkowych Wloszech i +10 EUR/MWh dla polnocnych Wloch.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.assolombarda.it/servizi/energia/informazioni/decreto-cer-pubblicati-i-criteri-di-incentivazione-per-lenergia-condivisa",
+        "https://energia.regione.emilia-romagna.it/comunita-energetiche/contributi-economici-alle-cer/tariffa-premio"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "cer-05",
+      "claim": "ARERA wyplaca dodatkowo corrispettivo za unikniete straty sieciowe rzedu 8-10 EUR/MWh energii dzielonej, doliczany do tariffa premio GSE.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.solareindustriale.it/incentivi/incentivi-cer-energia-condivisa",
+        "https://biblus.acca.it/comunita-energetiche-cer-decreto-incentivi/"
+      ],
+      "confidence": "low"
+    },
+    {
+      "id": "cer-06",
+      "claim": "Contributo PNRR w formie dotacji kapitalowej wynosi do 40% kosztow kwalifikowalnych i jest kumulowalny z tariffa premio GSE.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://renewo.it/news/cer-pnrr-2026",
+        "https://biblus.acca.it/comunita-energetiche-cer-decreto-incentivi/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "cer-07",
+      "claim": "Prog ludnosciowy gminy dla dostepu do contributo PNRR zostal rozszerzony z 5.000 do 50.000 mieszkancow decyzja dyrektorska (decreto direttoriale) z 16 lipca 2025 wraz z nowymi Regolami Operacyjnymi CACER.",
+      "asOfDate": "2025-07-16",
+      "sources": [
+        "https://www.solareindustriale.it/incentivi/incentivi-cer-energia-condivisa",
+        "https://renewo.it/news/cer-pnrr-2026"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "cer-08",
+      "claim": "Dekret DL PNRR 2026 przeprojektowal terminy CER: nowym terminem granicznym jest podpisanie umowy koncesyjnej z GSE do 30 czerwca 2026, a zakonczenie prac i uruchomienie instalacji do 31 grudnia 2027 (24 miesiace od podpisania umowy).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://renewo.it/news/cer-pnrr-2026"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "cer-09",
+      "claim": "GSE stal sie jedynym podmiotem wdrazajacym (soggetto attuatore unico) dla CER — zarzadza wnioskami, wydaje dekrety koncesyjne, podpisuje umowy i prowadzi kontrole.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://renewo.it/news/cer-pnrr-2026"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "cer-10",
+      "claim": "Pula srodkow PNRR na instalacje OZE w CER i grupach autoconsumo collettivo reaktywowana na 2026 wynosi 795,5 mln EUR.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://renewo.it/news/cer-pnrr-2026",
+        "https://giorgiogivone.it/contributi-pnrr-comunita-energetiche-2026/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "det-01",
+      "claim": "Dla wydatkow poniesionych w latach 2025 i 2026 detrazione za ristrutturazione edilizia (obejmujaca fotowoltaike) wynosi 50% dla jednostki uzywanej jako abitazione principale oraz 36% w pozostalych przypadkach.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.agenziaentrate.gov.it/portale/la-misura-della-detrazione-limiti-detraibilita"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "det-02",
+      "claim": "Dla wydatkow poniesionych w 2027 roku stawki spadaja do 36% dla abitazione principale i 30% w pozostalych przypadkach.",
+      "asOfDate": "2027-01-01",
+      "sources": [
+        "https://www.agenziaentrate.gov.it/portale/la-misura-della-detrazione-limiti-detraibilita"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "det-03",
+      "claim": "Maksymalny limit wydatkow kwalifikowanych wynosi 96.000 EUR na jednostke nieruchomosci, a odliczenie rozklada sie na 10 rownych rat rocznych — niezaleznie od zastosowanej stawki procentowej.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.agenziaentrate.gov.it/portale/la-misura-della-detrazione-limiti-detraibilita"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "det-04",
+      "claim": "Podwyzszona stawka 50% wymaga, aby podatnik w momencie rozpoczecia prac byl wlascicielem lub posiadaczem prawa rzeczowego do lokalu, a lokal byl przeznaczony na abitazione principale do zakonczenia prac.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.agenziaentrate.gov.it/portale/la-misura-della-detrazione-limiti-detraibilita"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "det-05",
+      "claim": "Wydatki na system magazynowania energii (batteria di accumulo) sa odliczalne na tych samych zasadach co panele i mieszcza sie w tym samym limicie 96.000 EUR.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.qualenergia.it/articoli/fotovoltaico-anche-batterie-rientrano-detrazioni-50-percento-36/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "det-06",
+      "claim": "W 2026 roku nie sa juz dostepne cessione del credito ani sconto in fattura — jedyna droga skorzystania z ulgi jest dziesiecioletnia detrazione w zeznaniu podatkowym.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.idealista.it/news/finanza/fisco/2026/06/10/387052-bonus-fotovoltaico-2026-guida-a-detrazioni-e-sconti-in-fattura",
+        "https://www.studiomadera.it/news/70-detrazioni"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "det-07",
+      "claim": "Na instalacje fotowoltaiczna z magazynem w ramach ristrutturazione stosuje sie obnizona stawke IVA 10% zamiast 22%.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://efficasa.it/content/6-ecobonus-detrazioni-fiscali-iva-agevolata",
+        "https://www.viverefermo.it/2026/03/24/bonus-fotovoltaico-2026-detrazioni-fiscali-sistemi-di-accumulo-e-risparmi-concreti-per-le-famiglie-italiane/49690"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bal-01",
+      "claim": "Uproszczone zasady przylaczenia dla instalacji ponizej 800 W wprowadzila delibera ARERA 315/2020/R/eel z 4 sierpnia 2020, modyfikujaca TICA — a nie, jak podaja liczne blogi branzowe, zmiana z 2024 roku.",
+      "asOfDate": "2020-08-04",
+      "sources": [
+        "https://www.arera.it/comunicati-stampa/dettaglio/it/com-stampa/20/200807",
+        "https://biblus.acca.it/comunicazione-unica-fotovoltaico/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "bal-02",
+      "claim": "Dla instalacji o mocy ponizej 800 W wystarczy przeslac Comunicazione Unica do lokalnego dystrybutora, bez oplat i bez zawierania kontraktu dyspozycyjnego (contratto di dispacciamento).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.arera.it/comunicati-stampa/dettaglio/it/com-stampa/20/200807",
+        "https://www.devalspa.it/impianti-di-produzione-potenza-inferiore-a-800-w"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "bal-03",
+      "claim": "W scislym rozumieniu regulacji ARERA 'plug and play' oznacza instalacje o mocy czynnej nominalnej do 350 W, ktore uzytkownik moze podlaczyc bezposrednio do gniazda bez instalacji; przedzial 351-800 W korzysta z uproszczonej procedury, ale nie jest formalnie 'plug and play'.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.arera.it/comunicati-stampa/dettaglio/it/com-stampa/20/200807",
+        "https://biblus.acca.it/comunicazione-unica-fotovoltaico/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bal-04",
+      "claim": "Limit 800 W dla uproszczonej procedury pozostaje aktualny w 2026 roku i nie zostal podniesiony.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.arera.it/comunicati-stampa/dettaglio/it/com-stampa/20/200807",
+        "https://www.devalspa.it/impianti-di-produzione-potenza-inferiore-a-800-w"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bal-05",
+      "claim": "Instalacja fotowoltaiki balkonowej do 800 W jest traktowana jako edilizia libera i nie wymaga CILA, SCIA ani pozwolenia na budowe, przy zachowaniu ograniczen dla budynkow objetych ochrona konserwatorska.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.studiomadera.it/news/548-fotovoltaico-balcone-permessi",
+        "https://www.pmi.it/economia/green-economy/394129/pannelli-fotovoltaici-plug-and-play.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "bal-06",
+      "claim": "Zestaw balkonowy musi spelniac normy CEI i wykorzystywac mikroinwerter z funkcja anti-islanding, ktory automatycznie odlacza instalacje w razie zaniku napiecia w sieci.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://it.balkonkraftwerkaudit.com/fotovoltaico-da-balcone-800w",
+        "https://www.studiomadera.it/news/548-fotovoltaico-balcone-permessi"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ren-01",
+      "claim": "Reddito Energetico Nazionale jest zarzadzany przez GSE i dziala w trybie 'a sportello', czyli wnioski rozpatrywane sa w kolejnosci chronologicznej zlozenia az do wyczerpania srodkow.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/reddito-energetico-nazionale-al-via-le-domande",
+        "https://www.gse.it/servizi-per-te/fotovoltaico/reddito-energetico"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ren-02",
+      "claim": "Pierwszy nabor Reddito Energetico Nazionale otworzyl sie 5 lipca 2024 o godzinie 12:00 na portalu GSE.",
+      "asOfDate": "2024-07-05",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/reddito-energetico-nazionale-al-via-le-domande"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "ren-03",
+      "claim": "Kryteria dostepu obejmuja ISEE do 15.000 EUR (lub do 30.000 EUR przy co najmniej czworgu dzieci na utrzymaniu), instalacje o mocy 2-6 kW na pierwszym domu, z pokryciem nawet do 100% kosztow.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.myenergy.it/blog/incentivi-e-agevolazioni/reddito-energetico-nazionale-2026-requisiti-importi-e-stato-del-bando/",
+        "https://www.gse.it/servizi-per-te/fotovoltaico/reddito-energetico"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ren-04",
+      "claim": "W naborze 2025, ktory ruszyl 13 maja 2025, pula przeznaczona dla regionow Poludnia i wysp (82.290.554 EUR) wyczerpala sie tego samego dnia, w ktorym otwarto sportello.",
+      "asOfDate": "2025-05-13",
+      "sources": [
+        "https://www.qualenergia.it/articoli/reddito-energetico-subito-esaurite-risorse-2025/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "ren-05",
+      "claim": "Wedlug stanu na polowe lipca 2026 nabor na rok 2026 nie zostal opublikowany ani nie ogloszono daty otwarcia sportello — status wymaga ponownej weryfikacji przed publikacja tresci.",
+      "asOfDate": "2026-07-15",
+      "sources": [
+        "https://www.myenergy.it/blog/incentivi-e-agevolazioni/reddito-energetico-nazionale-2026-requisiti-importi-e-stato-del-bando/"
+      ],
+      "confidence": "low"
+    }
+  ],
+  "k6": [
+    {
+      "questionIt": "Ho lo scambio sul posto: cosa succede al mio impianto adesso che è finito?",
+      "questionPl": "Mam scambio sul posto — co sie teraz dzieje z moja instalacja?",
+      "whyItMatters": "To najwiekszy pojedynczy lek wloskiego prosumenta w 2026. Setki tysiecy instalacji ma aktywna konwencje SSP i wlasciciele nie wiedza, czy stracili pieniadze z dnia na dzien. Odpowiedz jest uspokajajaca (konwencja trwa do naturalnego wygasniecia), ale z twardym haczykiem: po 15 latach nie ma odnowienia, a przejscie na RID NIE jest automatyczne. To pytanie o wysokiej intencji i realnym ryzyku finansowym dla czytelnika.",
+      "searchIntent": "Nawigacyjno-transakcyjna: uzytkownik chce ustalic swoj wlasny status i dowiedziec sie, czy musi cos zrobic i do kiedy. Szuka konkretnej instrukcji krok po kroku, nie wyjasnienia regulacji."
+    },
+    {
+      "questionIt": "Quanto mi paga il GSE l'energia che immetto in rete nel 2026?",
+      "questionPl": "Ile GSE placi mi w 2026 za energie oddana do sieci?",
+      "whyItMatters": "Bezposrednio nastepuje po pytaniu o SSP i jest czysto liczbowe — a wlasnie liczb brakuje w wiekszosci wynikow wyszukiwania, ktore mowia ogolnikami. Mozna tu wygrac konkretem: mechanizm 'lepsza z dwoch wartosci' (PMG vs prezzo zonale), fakt ze w 2026 wiazaca jest zwykle cena strefowa okolo 12-13 eurocentow, a nie PMG okolo 4,7, oraz kluczowa asymetria — sprzedajesz po ~0,12 EUR, a kupujesz po ~0,25-0,30 EUR.",
+      "searchIntent": "Informacyjna z silnym komponentem komercyjnym: uzytkownik liczy oplacalnosc i podswiadomie zmierza do pytania o magazyn energii. Idealny punkt wejscia dla tresci o autokonsumpcji."
+    },
+    {
+      "questionIt": "Conviene ancora il fotovoltaico senza lo scambio sul posto?",
+      "questionPl": "Czy fotowoltaika nadal sie oplaca bez scambio sul posto?",
+      "whyItMatters": "Pytanie egzystencjalne calego rynku i najczestszy zarzut sprzedawcow-sceptykow. Odpowiedz przesuwa cala logike ekonomiczna z 'sprzedawaj nadwyzki' na 'zuzywaj wlasna energie', bo roznica miedzy cena sprzedazy a cena zakupu jest teraz dwu-trzykrotna. To naturalny mostek do tresci o prognozowaniu produkcji i planowaniu zuzycia — czyli dokladnie do wartosci, ktora daje aplikacja.",
+      "searchIntent": "Ewaluacyjna, przed decyzja zakupowa. Uzytkownik szuka uczciwego bilansu, nie broszury; tresc, ktora przyzna slabe strony, zbuduje zaufanie i wygra z materialami sprzedawcow."
+    },
+    {
+      "questionIt": "Detrazione fotovoltaico 2026: è il 50% o il 36%?",
+      "questionPl": "Detrazione na fotowoltaike 2026 — 50% czy 36%?",
+      "whyItMatters": "Realne zamieszanie z realnymi konsekwencjami finansowymi: stawki zmienialy sie co roku, a roznica 50% vs 36% na wydatku 15.000 EUR to ponad 2.000 EUR. Kluczowy, czesto pomijany warunek to nie 'prima casa' w sensie potocznym, lecz abitazione principale ORAZ posiadanie prawa wlasnosci w momencie rozpoczecia prac. Dochodzi twardy deadline: od 2027 stawki spadaja do 36%/30%, co tworzy naturalna pilnosc.",
+      "searchIntent": "Transakcyjna, wrazliwa czasowo: uzytkownik jest w trakcie decyzji o inwestycji i chce wiedziec, czy oplaca sie zdazyc przed koncem 2026. Wymaga precyzji na poziomie Agenzia delle Entrate."
+    },
+    {
+      "questionIt": "Pannelli solari da balcone: servono permessi e vanno comunicati?",
+      "questionPl": "Panele balkonowe — czy potrzebne sa pozwolenia i zgloszenie?",
+      "whyItMatters": "Najszybciej rosnaca kategoria wejscia w fotowoltaike dla mieszkancow blokow i najemcow, czyli grupy calkowicie odcietej od klasycznej instalacji dachowej. Tresci w sieci sa tu wyjatkowo niedokladne — powszechnie i blednie datuja limit 800 W na 2024, podczas gdy pochodzi on z delibery ARERA 315/2020, oraz myla prog 350 W (prawdziwe plug and play do gniazdka) z progiem 800 W (uproszczona Comunicazione Unica do dystrybutora). Poprawienie tego daje realna przewage jakosciowa.",
+      "searchIntent": "Proceduralna, tuz przed lub tuz po zakupie zestawu: uzytkownik chce wiedziec, czy jest legalny i jaki formularz zlozyc. Wysoka intencja dzialania, niski poziom wiedzy technicznej."
+    }
+  ],
+  "notes": "DWIE KOREKTY ZALOZEN Z BRIEFU — wazne przed pisaniem tresci:\n\n1) TIDE to NIE jest \"nowa struktura taryf ARERA\". TIDE = Testo Integrato del Dispacciamento Elettrico, czyli reforma dyspozycji i bilansowania sieci (Terna/ARERA), dotyczaca rynku hurtowego i uslug dyspozycyjnych. Nie zmienia bezposrednio rachunku typowego prosumenta domowego i nie naklada na niego zadnych obowiazkow. Osobnym, niepowiazanym watkiem jest zmiana formatu rachunku (delibera 542/2024/R/com od 1 lipca 2025, ASOS/ARIM). Jesli artykul polaczy te dwie rzeczy, powtorzy blad obecny w wielu wloskich tekstach branzowych. Znaczenie TIDE dla prosumenta jest dzis potencjalne (udzial w elastycznosci przez agregatorow), nie faktyczne.\n\n2) Limit 800 W dla fotowoltaiki balkonowej pochodzi z delibery ARERA 315/2020/R/eel (sierpien 2020), a nie z 2024 roku, jak twierdzi wiekszosc wynikow wyszukiwania. Dodatkowo blogi konsekwentnie myla dwa progi: 350 W to formalne \"plug and play\" (podlaczenie wprost do gniazdka), a 351-800 W to uproszczona procedura wymagajaca Comunicazione Unica do dystrybutora. Zrodla rozchodza sie tez co do tego, czy zgloszenie idzie do dystrybutora czy przez portal GSE — potwierdzone regulacyjnie jest zgloszenie do lokalnego dystrybutora (TICA); wersja \"portal GSE\" pojawia sie wylacznie w zrodlach komercyjnych i nie zostala potwierdzona.\n\nJAKOSC ZRODEL — gdzie jest solidnie, a gdzie nie:\n- Mocne (zrodla pierwotne, potwierdzone bezposrednio): daty wygaszenia SSP (GSE), stawki detrazione 50/36 i 36/30 oraz limit 96.000 EUR i 10 rat (Agenzia delle Entrate — potwierdzone dosłownie), fakt aktualizacji PMG 2026 i wskaznik +1,4% ISTAT (komunikat ARERA z 29.01.2026), podstawa prawna uproszczen <800 W (komunikat ARERA 2020), tryb \"a sportello\" Reddito Energetico (GSE).\n- Slabe (wylacznie zrodla wtorne/komercyjne, oznaczone jako low): konkretna wartosc PMG dla FV w 2026. Zrodla podaja 4,75 eurocenta/kWh, ale rachunek z podanej bazy 2025 (46,4 EUR/MWh x 1,014) daje 47,05 EUR/MWh, nie 47,5. Rozbieznosc jest realna — ARERA publikuje wartosci wylacznie w zalaczniku Excel, ktorego nie udalo sie odczytac przez WebFetch. PRZED PUBLIKACJA nalezy pobrac plik \"Valori dei prezzi minimi garantiti dal 2005\" ze strony ARERA i odczytac liczbe wprost. To samo dotyczy poziomow cen strefowych (12,8 / 11,5 eurocenta) — wylacznie zrodla komercyjne.\n\nDO WERYFIKACJI PRZED PUBLIKACJA (rzeczy z data waznosci):\n- Status naboru Reddito Energetico 2026: najswiezsza informacja mowi, ze na 15 lipca 2026 nabor nie byl opublikowany. Dzis jest 14 sierpnia 2026, wiec stan mogl sie zmienic. Sprawdzic bezposrednio gse.it/servizi-per-te/fotovoltaico/reddito-energetico. Biorac pod uwage, ze w 2025 pula dla Poludnia zniknela w jeden dzien, to tresc o krotkim oknie przydatnosci.\n- Terminy CER (podpisanie umowy z GSE do 30.06.2026): ten termin JUZ MINAL wzgledem dzisiejszej daty. Jesli artykul ma zyc dluzej, nalezy sprawdzic, czy zostal przesuniety, czy faza skladania wnioskow sie zamknela — inaczej tresc bedzie wprowadzac w blad. Zrodlo dla tych terminow jest komercyjne (renewo.it), niepotwierdzone w dekrecie.\n- Maggiorazione terytorialna CER (+4 Centro, +10 Nord): kierunek wydaje sie kontrintuicyjny (wyzszy dodatek dla bogatszej Polnocy), ale wynika z logiki cen strefowych. Potwierdzone w dwoch niezaleznych zrodlach, w tym regionalnym publicznym (Emilia-Romagna), jednak warto zweryfikowac w samym DM 414/2023 przed podaniem liczb.\n\nUWAGA REDAKCYJNA: caly ekosystem wloskich tresci o fotowoltaice jest zdominowany przez instalatorow i posrednikow (enpal, solareindustriale, fotovoltaicoaffidabile itd.), ktorzy maja interes w przedstawianiu zachet korzystniej niz sa. Widac to zwlaszcza przy CER i przy \"bonus\" na fotowoltaike. Przewaga jakosciowa jest tu latwa do zdobycia przez trzymanie sie GSE/ARERA/Agenzia delle Entrate i jawne podawanie dat obowiazywania — dokladnie tak, jak zbudowana jest ta lista twierdzen.",
+  "weryfikacja": [
+    {
+      "claimId": "ssp-01",
+      "refuted": false,
+      "correctedClaim": "Scambio sul Posto (SSP) jest zamknięty dla nowych instalacji. Podstawa prawna to art. 9 ust. 2 D.Lgs. 199/2021 wykonany przez DM MASE z 30.12.2024 (wejście w życie 28.02.2025) oraz uchwałę ARERA 78/2025/R/efr z 4.03.2025, potwierdzoną uchwałą ARERA 213/2025/R/efr z 27.05.2025. Po upływie 90 dni od wejścia w życie dekretu mechanizm został zniesiony: dostęp zachowały wyłącznie instalacje, które weszły do eksploatacji (entrata in esercizio) najpóźniej 29 maja 2025 — instalacje uruchomione po tej dacie nie mogą już przystąpić — i dla których wniosek (istanza) do GSE złożono nie później niż 26 września 2025. Stan na 2026-08-14 jest niezmieniony: GSE nie przyjmuje nowych wniosków SSP, nie znaleziono żadnej prorogi ani ponownego otwarcia terminu. Twierdzenie dotyczy wyłącznie NOWYCH przystąpień — istniejące konwencje SSP pozostają ważne do naturalnego wygaśnięcia, ale nie mogą być odnawiane po 15 latach od pierwszego podpisania (DL 181/2023, uchwała ARERA 457/2024/R/efr); dla instalacji, które na 31.12.2024 były w SSP dłużej niż 15 lat, GSE rozwiązał konwencje i rozliczył nadwyżki do 30.06.2025. Alternatywą dla nowych instalacji jest Ritiro Dedicato (od 1.01.2026 GSE aktywuje umowę RID automatycznie, jeśli producent nie wskaże innego użytkownika dyspozycji), cessione sul mercato lub udział w CER.",
+      "reasoning": "Próbowałem obalić twierdzenie, szukając (a) zmian po deklarowanej dacie, (b) błędów w datach, (c) pomieszania stanu dla instalacji nowych i istniejących, (d) opisu stanu historycznego jako obecnego. Żaden z tych tropów nie zadziałał.\n\n1) Daty się zgadzają i pochodzą ze źródeł pierwotnych. Komunikat GSE \"Scambio sul Posto, stop al meccanismo\" podaje dokładnie: entrata in esercizio entro 29 maggio 2025 oraz termin istanzy 26 settembre 2025, powołując uchwałę ARERA 78/2025/R/efr, art. 9 ust. 2 D.Lgs. 199/2021, DL 181/2023 i uchwałę 457/2024/R/efr. Daty są wewnętrznie spójne z mechanizmem: DM MASE 30.12.2024 wszedł w życie 28.02.2025, +90 dni = 29.05.2025; termin wniosku +120 dni = 26.09.2025.\n\n2) Termin 26.09.2025 nie był \"roboczy\" ani wstępny — ARERA osobną uchwałą 213/2025/R/efr z 27.05.2025 (\"Conferma delle disposizioni regolatorie in materia di conclusione del regime di scambio sul posto\") wprost go potwierdziła. To wyklucza tezę, że twierdzenie opiera się na nieaktualnym projekcie.\n\n3) Szukałem celowo prorogi/ponownego otwarcia: milleproroghe, ricorso TAR, deroga dla instalacji opóźnionych przez dystrybutora, wznowienie terminów w XII 2025 / I 2026. Nic nie znalazłem; przeciwnie, strona usługowa GSE dla SSP nadal wyświetla wyłącznie zamknięty termin i nie oferuje ścieżki nowego wniosku, a e-distribuzione prowadzi stałą stronę \"Stop al meccanismo di Scambio sul Posto\". Stan na 2026-08-14 jest więc nadal aktualny.\n\n4) Twierdzenie nie miesza instalacji nowych i istniejących — mówi wyłącznie o \"nowych instalacjach\" i o terminie przystąpienia, co jest poprawne. Brakuje mu jednak kontekstu (istniejące konwencje trwają do naturalnego wygaśnięcia, bez odnowienia po 15 latach; automatyczne przejście na RID od 1.01.2026) oraz pełnej podstawy prawnej — źródłem normy nie jest komunikat GSE, lecz D.Lgs. 199/2021 + DM MASE 30.12.2024 + uchwały ARERA 78/2025 i 213/2025. To jedyne nieścisłości, i są to braki precyzji, nie błędy.\n\nWniosek: twierdzenie jest merytorycznie poprawne co do wszystkich liczb i dat; podaję correctedClaim wyłącznie dla uzupełnienia podstawy prawnej i rozgraniczenia instalacji nowych od istniejących. Jedno zastrzeżenie metodologiczne: pełnego tekstu PDF uchwały ARERA 78/2025 nie udało się odczytać (plik binarny nie sparsował się), więc dyspozytyw weryfikowałem pośrednio — przez komunikat GSE, kartę uchwały 213/2025 na arera.it oraz zgodne relacje branżowe (qualenergia, rinnovabili.it, nextville, e-distribuzione). Wszystkie podają identyczne daty, więc ryzyko błędu jest niskie, ale nie jest to lektura dyspozytywu in extenso.",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.gse.it/servizi-per-te/fotovoltaico/scambio-sul-posto",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.e-distribuzione.it/a-chi-ci-rivolgiamo/produttori/stop-al-meccanismo-di-scambio-sul-posto---e-distribuzione.html",
+        "https://www.qualenergia.it/articoli/26-settembre-chiude-accesso-scambio-posto/",
+        "https://www.rinnovabili.it/energia/fotovoltaico/scambio-sul-posto-nuove-richieste/",
+        "https://www.nextville.it/news/60195/scambio-sul-posto-stop-al-meccanismo-ultimi-termini-per-pres/",
+        "https://www.reteambiente.it/normativa/60188/"
+      ]
+    },
+    {
+      "claimId": "ssp-02",
+      "refuted": false,
+      "correctedClaim": "Podstawą prawną zniesienia Scambio sul Posto jest sam art. 9 ust. 2 D.Lgs. 199/2021, który stanowi, że po upływie 90 dni od wejścia w życie dekretów z art. 9 ust. 1 mechanizm SSP zostaje zniesiony (\"è soppresso\"). Aktem uruchamiającym ten bieg terminu jest DM MASE z 30 grudnia 2024 (tzw. FER X Transitorio), który wszedł w życie 28 lutego 2025 — stąd data zniesienia 29 maja 2025. Delibera ARERA 78/2025/R/efr z 4 marca 2025 (\"Disposizioni in relazione alla conclusione del regime di scambio sul posto, ai sensi dell'articolo 9, comma 2, del decreto legislativo 199/21\") nie jest podstawą zniesienia, lecz aktem wykonawczo-regulacyjnym: określa warunki operacyjne wygaszenia, w tym termin 26 września 2025 na złożenie do GSE wniosku o dostęp do SSP wyłącznie dla instalacji, które weszły do eksploatacji do 29 maja 2025. Termin ten został następnie potwierdzony deliberą ARERA 213/2025/R/efr z 27 maja 2025. Powyższe dotyczy WYŁĄCZNIE nowych przystąpień. Los instalacji już objętych konwencją SSP reguluje inna podstawa: DL 181/2023 wraz z deliberą ARERA 457/2024/R/efr — konwencja nie może być odnowiona po osiągnięciu 15 lat od pierwszego podpisania, po czym instalacja przechodzi automatycznie na Ritiro Dedicato (konwencje przekraczające 15 lat wygasły 31 grudnia 2024, z rozliczeniem do 30 czerwca 2025). Stopniową konwersję instalacji istniejących na mechanizm z art. 7 przewiduje art. 9 ust. 3, a nie ust. 2. Stan na 2026-08-14: SSP zamknięty dla nowych przystąpień, brak sygnałów o uchyleniu, zawieszeniu lub zaskarżeniu delibery 78/2025.",
+      "reasoning": "Twierdzenie jest w rdzeniu poprawne i weryfikowalne w źródłach pierwotnych, ale nieprecyzyjne w kwalifikacji prawnej i niepełne.\n\nCO SIĘ POTWIERDZIŁO:\n1. Delibera ARERA 78/2025/R/efr istnieje, została przyjęta 4 marca 2025 (publikacja 5 marca 2025), a jej pełny tytuł na arera.it brzmi dokładnie: \"Disposizioni in relazione alla conclusione del regime di scambio sul posto, ai sensi dell'articolo 9, comma 2, del decreto legislativo 199/21\". Powiązanie z art. 9 ust. 2 D.Lgs. 199/2021 jest zatem dosłownie zgodne z tytułem aktu.\n2. Strona GSE wskazana jako źródło rzeczywiście przywołuje deliberę 78/2025/R/efr oraz art. 9 ust. 2 D.Lgs. 199/21. Numer delibery i odesłanie do przepisu są prawidłowe — nie ma tu ani zmyślenia, ani pomylenia numeru.\n3. Tekst art. 9 ust. 2 D.Lgs. 199/2021 (Normattiva) potwierdza: \"Decorsi novanta giorni dalla data di entrata in vigore dei decreti di cui al comma 1, il meccanismo dello scambio sul posto è soppresso.\"\n\nDLACZEGO MIMO TO NIEPRECYZYJNE (cztery uchybienia):\n1. Odwrócona hierarchia źródeł. Twierdzenie nazywa \"podstawą prawną wygaszenia\" deliberę regulatora. Zniesienie SSP następuje z mocy ustawy (art. 9 ust. 2), a nie z mocy delibery. ARERA nie zniosła SSP — wykonała ustawowy nakaz, ustalając terminy operacyjne. To różnica nietrywialna: gdyby delibera była podstawą, jej ewentualne uchylenie przywróciłoby SSP, co nie jest prawdą.\n2. Pominięcie ogniwa uruchamiającego. Art. 9 ust. 2 jest normą warunkową — liczy 90 dni od wejścia w życie dekretów z ust. 1. Tym dekretem jest DM MASE z 30 grudnia 2024 (FER X Transitorio), w życie 28 lutego 2025, co daje datę zniesienia 29 maja 2025. Bez tego dekretu twierdzenie nie wyjaśnia, skąd bierze się jakakolwiek data graniczna. Uwaga porządkowa: część źródeł wtórnych nazywa ten dekret \"DM n. 457/2024\", co jest myleniem go z deliberą ARERA 457/2024/R/efr — to dwa różne akty o zbieżnym numerze.\n3. Pominięcie delibery potwierdzającej. ARERA 213/2025/R/efr z 27 maja 2025 (\"Conferma delle disposizioni regolatorie...\") potwierdziła termin 26 września 2025 z delibery 78/2025. Opis stanu prawnego wyłącznie przez 78/2025 jest niekompletny.\n4. Ryzyko zmieszania instalacji nowych i istniejących — punkt wprost badany w zleceniu. Delibera 78/2025 i art. 9 ust. 2 regulują wyłącznie zamknięcie dostępu dla NOWYCH przystąpień. Dla instalacji już posiadających konwencję SSP podstawą są DL 181/2023 oraz delibera ARERA 457/2024/R/efr (brak odnowienia po 15 latach, automatyczne przejście na Ritiro Dedicato; konwencje ponad 15-letnie zamknięte 31.12.2024 z rozliczeniem do 30.06.2025). Dodatkowo stopniowa konwersja instalacji w eksploatacji na mechanizm z art. 7 wynika z art. 9 ust. 3, nie ust. 2. Twierdzenie sformułowane ogólnie (\"wygaszenie SSP\") sugeruje, że 78/2025 obejmuje oba przypadki — nie obejmuje.\n\nKONTROLA AKTUALNOŚCI (2026-08-14):\nSprawdziłem, czy stan nie zmienił się po deklarowanej dacie. Na stronie ARERA brak adnotacji o zawieszeniu, zmianie lub uchyleniu delibery 78/2025. Nie znalazłem śladu skutecznego zaskarżenia do TAR ani przedłużenia terminu 26 września 2025. Źródła z 2026 r. zgodnie opisują SSP jako zamknięty dla nowych przystąpień, z ochroną konwencji czynnych do naturalnego wygaśnięcia. Liczby w twierdzeniu są nieliczne (tylko numer delibery i numer przepisu) i obie się zgadzają; daty graniczne 29.05.2025 i 26.09.2025 oraz próg 15 lat, których twierdzenie nie podaje, potwierdziłem niezależnie i ująłem w wersji poprawionej.\n\nNie ustawiam refuted=true, ponieważ nie stwierdziłem błędu rzeczowego: numer aktu, jego data, przedmiot i odesłanie do art. 9 ust. 2 są zgodne z tytułem aktu ARERA i z komunikatem GSE. Wątpliwość dotyczy kwalifikacji (\"podstawa prawna\" zamiast \"akt wykonawczy\") oraz niekompletności, co zgodnie ze zleceniem kwalifikuje się jako \"w zasadzie słuszne, ale nieprecyzyjne\".",
+      "sources": [
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/78-25",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;199~art9",
+        "https://www.mase.gov.it/portale/-/20-maggio-2025-decreto-direttoriale-del-ministero-dell-ambiente-e-della-sicurezza-energetica-recante-approvazione-delle-regole-operative-del-dm-30-dicembre-2024-c.d.-fer-x-transitorio",
+        "https://www.nextville.it/news/60195/scambio-sul-posto-stop-al-meccanismo-ultimi-termini-per-pres/",
+        "https://www.infobuildenergia.it/arera-uscita-regime-scambio-sul-posto-fotovoltaico/"
+      ]
+    },
+    {
+      "claimId": "ssp-03",
+      "refuted": false,
+      "correctedClaim": "Stan na 2026-08-14: Scambio sul Posto (SSP) jest zamknięte dla nowych przystąpień — ostatni dostęp przysługiwał instalacjom uruchomionym do 29.05.2025, z wnioskiem do GSE złożonym do 26.09.2025 (delibera ARERA 78/2025/R/efr, wdrażająca art. 9 ust. 2 D.Lgs. 199/2021; potwierdzona deliberą 213/2025/R/efr). Istniejące konwencje SSP pozostają ważne do naturalnego wygaśnięcia, ale nie mogą być odnawiane po osiągnięciu 15 lat od daty pierwszego podpisania konwencji — podstawa: art. 4-ter DL 181/2023 (przepis wprowadzony ustawą konwertującą L. 11/2024) oraz delibera ARERA 457/2024/R/efr z 05.11.2024. Konwencje, które na 31.12.2024 przekroczyły już 15 lat, zostały automatycznie zamknięte przez GSE, z rozliczeniem nadwyżek do 30.06.2025 i automatycznym przejściem na Ritiro Dedicato (RID); analogiczny schemat stosuje się do kolejnych roczników osiągających próg 15 lat. Zastrzeżenie: art. 4-ter przewiduje ponadto stopniowe wyprowadzanie instalacji z SSP od 31.12.2024 wg kryteriów mocy i daty uruchomienia, a GSE zapowiada, że dopełnienie tej dyscypliny (oraz uproszczenie RID) określi kolejny provvedimento ARERA — „ważność do naturalnego wygaśnięcia\" obowiązuje więc z zastrzeżeniem tej przyszłej regulacji.",
+      "reasoning": "Próbowałem obalić twierdzenie, ale znajduje ono pełne potwierdzenie w źródłach pierwotnych i jest nadal aktualne na 2026-08-14. (1) Podana strona GSE („Scambio sul Posto, stop al meccanismo\") mówi dosłownie: konwencje SSP już aktywne pozostają ważne do naturalnego wygaśnięcia, ale nie mogą być odnawiane po 15 latach od pierwszej sottoscrizione — wskazując DL 181/2023 i deliberę ARERA 457/2024/R/efr. (2) Podstawa ustawowa jest dokładniejsza niż w twierdzeniu: to art. 4-ter DL 181/2023 dodany ustawą konwertującą L. 11/2024 („le convenzioni... non possono essere rinnovate per un periodo superiore a quindici anni dalla data di prima sottoscrizione\"), a delibera ARERA 457/2024/R/efr z 05.11.2024 nosi tytuł „Disposizioni di prima attuazione in materia di graduale uscita dal regime di scambio sul posto\" i powołuje się właśnie na art. 4-ter. Liczba 15 lat i punkt odniesienia (data pierwszego podpisania konwencji, nie data uruchomienia instalacji) są poprawne. (3) Sprawdziłem, czy stan prawny nie zmienił się po dacie deklarowanej: w 2025 doszły delibery 78/2025/R/efr (04.03.2025) i 213/2025/R/efr, które zamknęły dostęp dla NOWYCH podmiotów (instalacja w eksploatacji do 29.05.2025, wniosek do 26.09.2025). Nie znalazłem żadnego aktu z 2026 r. zmieniającego reżim konwencji istniejących — jedyny akt ARERA z 2026 dotyczący SSP w wynikach (23/2026/E/EEL, 10.02.2026) dotyczy stosowania klauzul zawieszenia konwencji SSP/RID wg delibery 421/2014/R/eel, a nie 15-letniego limitu. (4) Twierdzenie nie myli stanu dla instalacji nowych i istniejących — mówi wyłącznie o konwencjach istniejących i robi to poprawnie; jego słabością jest jedynie NIEPEŁNOŚĆ (pominięcie faktu, że od 26.09.2025 nie da się już w ogóle wejść do SSP) oraz pominięcie mechaniki wykonawczej (automatyczne zamknięcie przez GSE konwencji >15 lat na 31.12.2024, rozliczenie nadwyżek do 30.06.2025, automatyczne uruchomienie RID). (5) Jedno realne zastrzeżenie merytoryczne: „do naturalnego wygaśnięcia\" nie jest gwarancją bezterminową — art. 4-ter przewiduje także stopniowe wyprowadzanie instalacji z SSP od 31.12.2024 wg mocy i daty uruchomienia, a GSE sam zapowiada „successivo provvedimento ARERA\" dopełniające dyscyplinę. To uzasadnia doprecyzowanie, ale nie obalenie twierdzenia. Wobec braku jakiegokolwiek błędu faktograficznego (procenty/progi/daty: brak błędnych liczb; jedyna liczba — 15 lat — jest zgodna z ustawą) ustawiam refuted=false z correctedClaim.",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/24/457-24",
+        "https://www.arera.it/fileadmin/allegati/docs/24/457-2024-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/78-25",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.arera.it/fileadmin/allegati/docs/26/23-2026-E-eel.pdf",
+        "https://temi.camera.it/leg19/provvedimento/d-l-181-2023-sicurezza-energetica-fonti-rinnovabili-e-ricostruzione-territori-alluvionati.html",
+        "https://www.dottrinalavoro.it/wp-content/uploads/2024/02/11-2024-L.pdf",
+        "https://www.e-distribuzione.it/a-chi-ci-rivolgiamo/produttori/stop-al-meccanismo-di-scambio-sul-posto---e-distribuzione.html",
+        "https://www.qualenergia.it/articoli/26-settembre-chiude-accesso-scambio-posto/"
+      ]
+    },
+    {
+      "claimId": "ssp-04",
+      "refuted": false,
+      "correctedClaim": "Scambio sul Posto zostało zamknięte dla nowych podmiotów już w 2025 r., nie w 2026 r. Na mocy art. 9 ust. 2 D.Lgs. 199/2021, DM 30 grudnia 2024 nr 457 oraz delibery ARERA 78/2025/R/efr obowiązywały dwa terminy graniczne: instalacja musiała wejść do eksploatacji (entrata in esercizio) najpóźniej 29 maja 2025 r., a wniosek do GSE trzeba było złożyć najpóźniej 26 września 2025 r. Po 26 września 2025 r. nie przyjmuje się już żadnych nowych wniosków o SSP — zatem w 2026 r. istotnie nie da się zawrzeć nowej konwencji SSP dla żadnej instalacji, niezależnie od mocy i technologii. Zastrzeżenia: (1) już aktywne konwencje SSP pozostają w mocy do naturalnego wygaśnięcia, jednak nie dłużej niż 15 lat od pierwszego podpisania (D.L. 181/2023, delibera ARERA 457/2024/R/efr), po czym GSE automatycznie uruchamia Ritiro Dedicato; (2) istniejąca instalacja z konwencją SSP aktywowaną do 29 maja 2025 r. może być nadal rozbudowywana/potenziata także w 2026 r. z zachowaniem SSP — nie jest to jednak nowa konwencja; (3) dla nowych instalacji dostępne są Ritiro Dedicato oraz konfiguracje autoconsumo diffuso/CER.",
+      "reasoning": "Próbowałem obalić twierdzenie, ale nie udało się — jest ono zgodne ze stanem prawnym na 2026-08-14. Weryfikacja krzyżowa: (a) strona GSE \"Scambio sul posto, stop al meccanismo\" oraz serwisowa strona SSP zawierają dosłowne zdanie: \"È possibile presentare una nuova richiesta di accesso al meccanismo di Scambio sul Posto (SSP) fino al prossimo 26 settembre solo per gli impianti entrati in esercizio entro il 29 maggio 2025\"; (b) delibera ARERA 78/2025/R/efr z 4 marca 2025 (wykonanie art. 9 ust. 2 D.Lgs. 199/2021 i DM 457/2024) ustala te same daty; (c) e-Distribuzione (DSO) potwierdza: \"A partire dal 30 maggio 2025 non sarà più possibile attivare nuovi impianti in Scambio sul Posto\". Sprawdziłem, czy stan nie zmienił się po deklarowanej dacie — brak jakiegokolwiek ponownego otwarcia lub prorogi; ustawa budżetowa 2026 przedłuża jedynie bonusy budowlane, nie dotyka SSP. Szukałem też wyjątków, które obaliłyby klauzulę \"niezależnie od mocy i typu instalacji\" (np. wariant \"scambio sul posto altrove\" dla gmin do 20.000 mieszkańców, kogeneracja CAR do 200 kW, spółdzielnie historyczne) — nie znalazłem żadnej ścieżki pozostawionej otwartej po 26.09.2025. Twierdzenie NIE miesza stanu dla instalacji nowych i istniejących w sposób błędny (mówi wyłącznie o \"nowej umowie\"), ale jest sformułowane nieprecyzyjnie w dwóch punktach, stąd correctedClaim: (1) sugeruje, że cezurą jest rok 2026, podczas gdy faktyczne zamknięcie nastąpiło w 2025 r. (29.05 i 26.09.2025) — 2026 to już tylko stan zastany; (2) pomija, że dla instalacji już objętej SSP nadal możliwe jest potenziamento z zachowaniem konwencji, co czytelnik może błędnie odczytać jako całkowity zakaz zwiększania mocy w ramach SSP. Ocenę \"refuted\" ustawiam na false, bo sedno twierdzenia — brak możliwości aktywacji nowej umowy SSP w 2026 r. dla dowolnej mocy i typu instalacji — jest prawdziwe. Uwaga do deklarowanych źródeł: pierwsze (GSE) jest pierwotne i potwierdza tezę; drugie (assosolare.it) nie jest źródłem pierwotnym i zawiera niezweryfikowane liczby (np. \"RID daje o 20-40% mniej niż SSP\") — nie należy się na nim opierać.",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.gse.it/servizi-per-te/fotovoltaico/scambio-sul-posto",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.e-distribuzione.it/a-chi-ci-rivolgiamo/produttori/stop-al-meccanismo-di-scambio-sul-posto---e-distribuzione.html",
+        "https://www.qualenergia.it/articoli/scambio-posto-scadenza-26-settembre-cosa-succede-dopo/",
+        "https://biblus.acca.it/scambio-sul-posto/"
+      ]
+    },
+    {
+      "claimId": "ssp-05",
+      "refuted": true,
+      "correctedClaim": "Zakaz przedluzania konwencji \"scambio sul posto\" (SSP) po osiagnieciu 15 lat obowiazuje NIE od 1 stycznia 2026, lecz od 2024 r. Podstawa: art. 4-ter ust. 4 decreto-legge 181/2023, przeksztalconego ustawa 11/2024 (\"le convenzioni di scambio sul posto in essere alla data di entrata in vigore della legge di conversione del presente decreto non possono, in ogni caso, essere rinnovate per un periodo superiore a quindici anni decorrenti dalla data di prima sottoscrizione\"), wykonany delibera ARERA 457/2024/R/efr z 5 listopada 2024. Pierwsza tura ~67 000 konwencji (podpisanych 1.01.2009-1.01.2010) wygasla 31 grudnia 2024, kolejne ~76 000 w ciagu 2025; od 1 stycznia 2025 GSE aktywuje tym producentom umowe Ritiro Dedicato (RID) automatycznie, z urzedu, chyba ze producent do 10 grudnia wybral innego sprzedawce/dispatcher. Jest to zasada kroczaca, przywiazana do 15. rocznicy pierwszego podpisu kazdej pojedynczej konwencji, a nie systemowa data graniczna — konwencja podpisana np. w 2019 r. dziala do 2034 r. Rok 2026 nie wprowadza w tym zakresie zadnej nowej regulacji. Odrebna, nie mylic: zamkniecie SSP dla NOWYCH instalacji — ostatni dostep dla instalacji uruchomionych do 29 maja 2025, z wnioskiem do GSE do 26 wrzesnia 2025 (delibera ARERA 78/2025/R/efr, potwierdzona delibera 213/2025).",
+      "reasoning": "Twierdzenie przedstawia stan prawny obowiazujacy od 2024 r. jako nowosc wchodzaca w zycie 1 stycznia 2026 — dokladnie ten blad, ktorego kazano szukac (\"opisuje stan z lat wczesniejszych jako obecny\").\n\n1) BLEDNA DATA WEJSCIA W ZYCIE. Zrodlo pierwotne — tekst w Gazzetta Ufficiale (kod 24G00022, publikacja 2024-02-07) — zawiera art. 4-ter ust. 4 DL 181/2023 w brzmieniu ustalonym ustawa konwersyjna 11/2024: konwencje SSP nie moga byc odnawiane ponad 15 lat od pierwszego podpisu. Norma dziala od wejscia w zycie ustawy konwersyjnej (luty 2024), a nie od 2026. ARERA wykonala ja delibera 457/2024/R/efr z 5 listopada 2024 (\"Disposizioni di prima attuazione in materia di graduale uscita dal regime di scambio sul posto ... ai sensi dell'articolo 4-ter del decreto-legge 181/23\").\n\n2) FAKTYCZNE DATY SKUTKU TO 31.12.2024 / 1.01.2025, NIE 1.01.2026. Komunikat GSE \"Scambio sul Posto — prima attuazione della graduale uscita dal meccanismo\" stwierdza wprost: konwencje, ktore osiagnely 15 lat, wygasly 31 grudnia 2024 i nie sa odnawiane, a od 1 stycznia 2025 GSE aktywuje z urzedu umowe Ritiro Dedicato. Pierwsza tura objela umowy podpisane miedzy 1.01.2009 a 1.01.2010 (~67 000 konwencji); kolejne ~76 000 wygasa w trakcie 2025. Zaden akt nie wiaze tego skutku z 1 stycznia 2026.\n\n3) ZLA STRUKTURA REGULY. Twierdzenie sugeruje jednorazowa, systemowa date graniczna. W rzeczywistosci jest to mechanizm kroczacy: kazda konwencja konczy sie w swoja wlasna 15. rocznice. Konwencje podpisane po 2011 r. nadal dzialaja w 2026 r. i beda dzialac przez kolejne lata — GSE i ARERA potwierdzaja, ze umowy \"proseguono fino alla scadenza\".\n\n4) POMINIETY AUTOMATYZM. Twierdzenie mowi, ze instalacje \"musza przejsc\" na inny mechanizm, co sugeruje dzialanie po stronie producenta. GSE aktywuje RID d'ufficio (automatycznie); producent moze jedynie opt-outowac na rzecz innego sprzedawcy (termin 10 grudnia). RID to sprzedaz energii po cenie strefowej godzinowej / cenie minimalnej gwarantowanej, a nie kompensata jak w SSP.\n\n5) DEKLAROWANE ZRODLA NIE POTWIERDZAJA TWIERDZENIA. Sprawdzilem oba. assosolare.it w ogole nie zawiera ani daty 1 stycznia 2026, ani limitu 15 lat — mowi tylko ogolnikowo, ze SSP \"chiude definitivamente nel 2026\" (co samo w sobie jest nieprawda wobec konwencji z lat 2012+). enpal.com stwierdza limit 15 lat, ale poprawnie przypisuje go do DL 181/23 i delibery 457/2024/R/efr i NIE podaje daty 1 stycznia 2026 — pisze wrecz, ze aktywne umowy trwaja do wlasnej naturalnej daty wygasniecia, bez systemowej daty granicznej.\n\n6) MOZLIWE ZMIESZANIE DWOCH ROZNYCH SPRAW. Realne daty regulacyjne w tym obszarze to: 31.12.2024 (pierwsze wygasniecia 15-letnie), 1.01.2025 (automatyczny RID), 29.05.2025 (ostatnia data uruchomienia instalacji z dostepem do SSP) i 26.09.2025 (ostatni wniosek do GSE, delibera 78/2025/R/efr potwierdzona delibera 213/2025). Zadna z nich nie przypada na 1 stycznia 2026. Twierdzenie prawdopodobnie miesza rezim dla instalacji nowych (zamkniecie naboru 2025) ze stanem instalacji istniejacych (limit 15 lat od 2024).\n\nWniosek: rdzen merytoryczny (istnieje 15-letni limit, po nim przejscie na RID) jest prawdziwy, ale kluczowy element twierdzenia — data \"od 1 stycznia 2026\" jako moment utraty mozliwosci przedluzenia — jest falszywy o dwa lata i falszywie sugeruje jednorazowa ceze systemowa. To wystarcza do refuted=true.",
+      "sources": [
+        "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=0&art.flagTipoArticolo=1&art.codiceRedazionale=24G00022&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-02-07&art.progressivo=0",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/24/457-24",
+        "https://www.arera.it/fileadmin/allegati/docs/24/457-2024-R-efr.pdf",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-prima-attuazione-della-graduale-uscita-dal-meccanismo",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://assistenza.clienti.gse.it/csm/it/durata-del-contratto-di-scambio-sul-posto?id=faq&sys_id=8153622adb4dc41052669532ca961920",
+        "https://www.ingenio-web.it/articoli/scambio-sul-posto-e-autoconsumo-nessuna-proroga-dopo-15-anni/",
+        "https://www.enpal.com/it/fotovoltaico/scambio-sul-posto",
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/"
+      ]
+    },
+    {
+      "claimId": "ssp-06",
+      "refuted": true,
+      "correctedClaim": "Przejscie ze Scambio sul Posto na Ritiro Dedicato jest co do zasady AUTOMATYCZNE, a nie wnioskowe. Zgodnie z delibera ARERA 457/2024/R/efr (5.11.2024) i komunikatem GSE o \"prima attuazione della graduale uscita dal meccanismo\", konwencje SSP, ktore osiagnely 15 lat od daty decorrenza, wygasaja i nie moga byc odnowione — a GSE aktywuje wowczas kontrakt RID \"d'ufficio\" (z urzedu). GSE formuluje to wprost: \"per garantire la continuita del servizio e della valorizzazione economica dell'energia immessa in rete, a partire dal 1° gennaio 2025 il GSE attivera, d'ufficio, un contratto RID al produttore degli impianti rientranti nel perimetro\". Mechanizm jest wiec opt-OUT, nie opt-in: dzialanie wlasciciela jest potrzebne tylko wtedy, gdy NIE chce on RID od GSE i wybiera innego utente del dispacciamento lub sprzedaz rynkowa — taka decyzje trzeba zglosic w terminie (dla pierwszej transzy: do 10 grudnia roku poprzedzajacego).\n\nDodatkowo bledne jest zalozenie, ze \"SSP konczy sie w 2026\". Nie istnieje jedna data zamkniecia dla wszystkich. Zamkniete zostalo tylko przyjmowanie NOWYCH wnioskow: dostep przysluguje wylacznie instalacjom uruchomionym do 29 maja 2025, a wniosek do GSE trzeba bylo zlozyc do 26 wrzesnia 2025 (delibera ARERA 78/2025/R/efr, potwierdzona przez 213/2025/R/efr, w wykonaniu art. 9 ust. 2 D.Lgs. 199/2021). Istniejace konwencje trwaja do naturalnej scadenza, tj. maksymalnie 15 lat od pierwszej sottoscrizione — konwencja zawarta np. w 2024 r. biegnie do ok. 2039 r. Wygaszanie odbywa sie transzami rocznikowymi (pierwsza: decorrenza 1.01.2009–1.01.2010, wygasla 31.12.2024).\n\nWniosek do GSE jest natomiast rzeczywiscie konieczny w sytuacji innej niz opisana w twierdzeniu: dla instalacji, ktore nigdy nie mialy SSP (uruchomione po 29 maja 2025 albo takie, ktore nie zlozyly wniosku do 26 wrzesnia 2025) — tam nie ma z czego \"przechodzic\" i trzeba samodzielnie zlozyc richiesta di accesso al Ritiro Dedicato albo sprzedawac energie na rynku. RID wycenia energie po prezzo zonale orario, z opcja prezzi minimi garantiti dla instalacji do 1 MW.",
+      "reasoning": "Twierdzenie zostalo obalone w swoim rdzeniu przez zrodlo pierwotne — sam GSE.\n\n1) BEZPOSREDNIA SPRZECZNOSC ZE ZRODLEM PIERWOTNYM. Strona GSE \"Scambio sul Posto, prima attuazione della graduale uscita dal meccanismo\" stwierdza dokladnie odwrotnie niz twierdzenie: \"a partire dal 1° gennaio 2025 il GSE attivera, d'ufficio, un contratto RID al produttore degli impianti rientranti nel perimetro\", a celem jest jawnie \"garantire la continuita del servizio e della valorizzazione economica dell'energia immessa in rete\". To jest doslowne zaprzeczenie tezy, ze brak wniosku skutkuje utrata wynagrodzenia — regulator zaprojektowal mechanizm wlasnie po to, by ta luka nie powstala. GSE dodaje, ze \"l'attivazione d'ufficio del contratto di Ritiro Dedicato avviene per agevolare gli operatori che vogliano rimanere clienti del GSE\".\n\n2) ODWROCONA LOGIKA PROCEDURY. Twierdzenie opisuje model opt-in (musisz zlozyc wniosek, inaczej tracisz). Rzeczywisty model to opt-out: aktywne dzialanie jest wymagane tylko od tego, kto NIE chce RID od GSE i wybiera innego utente del dispacciamento — dla pierwszej transzy termin zgloszenia to 10 grudnia. Twierdzenie odwraca kierunek domyslnej sciezki, co jest bledem nie kosmetycznym, lecz merytorycznym o odwrotnym znaku dla uzytkownika.\n\n3) POTWIERDZENIE W AKTACH ARERA. Delibera 457/2024/R/efr z 5.11.2024 (\"prime disposizioni attuative in materia di graduale uscita dal regime di scambio sul posto\") ustanawia wygasanie konwencji po 15 latach od pierwszej sottoscrizione i przejscie do RID; delibera 78/2025/R/efr (w wykonaniu art. 9 ust. 2 D.Lgs. 199/2021) domyka nabor nowych wnioskow, a 213/2025/R/efr potwierdza date 26 wrzesnia 2025. Zadna z nich nie warunkuje ciaglosci wynagrodzenia zlozeniem wniosku przez posiadacza wygasajacej konwencji SSP.\n\n4) MYLENIE INSTALACJI NOWYCH I ISTNIEJACYCH — dokladnie ten blad, o ktory kazano sprawdzic. Twierdzenie zlepia dwie rozne sciezki: (a) instalacje istniejace w SSP, ktore osiagaja 15 lat — przejscie automatyczne d'ufficio; (b) instalacje nowe, ktore nigdy do SSP nie weszly (po 29.05.2025 / po terminie 26.09.2025) — te faktycznie musza samodzielnie wnioskowac o RID. Autor twierdzenia wzial obowiazek wnioskowy wlasciwy dla grupy (b) i przypisal go grupie (a), nazywajac to \"przejsciem ze Scambio sul Posto\".\n\n5) BLEDNA PRZESLANKA O \"ZAMKNIECIU W 2026\". Twierdzenie osadzone jest w narracji, ze SSP konczy sie calkowicie w 2026 r. i wtedy trzeba zdazyc z wnioskiem. To nieprawda: nie ma jednej daty granicznej, konwencje wygasaja indywidualnie po 15 latach od wlasnej decorrenza (transze rocznikowe, pierwsza wygasla 31.12.2024). Konwencja zawarta w 2024 r. biegnie do ok. 2039 r. Zrodla branzowe potwierdzaja: \"Non esiste una data unica di chiusura per tutti gli utenti\", a \"la normativa tutela chi ha una convenzione gia attiva e non ancora ultra-quindicennale, permettendo di mantenere il regime SSP fino alla sua scadenza naturale\".\n\n6) SLABOSC DEKLAROWANYCH ZRODEL. Pierwsze zrodlo (assosolare.it) jest jedynym znalezionym nosnikiem tezy — pisze wprost \"la migrazione non e automatica e deve essere richiesta esplicitamente dal proprietario dell'impianto\" oraz \"chi non sceglie un'alternativa entro il 2026 non ricevera piu alcuna compensazione\". To strona komercyjno-marketingowa (jezyk pilnosci: \"nessuna proroga ammessa\"), stojaca w sprzecznosci z komunikatem regulatora, a nie zrodlo pierwotne. Drugie zrodlo (GSE \"stop al meccanismo\") w ogole nie potwierdza twierdzenia — dotyczy wylacznie terminow skladania NOWYCH wnioskow o SSP i wymienia RID jako alternatywe dla nowej energii; zostalo nadinterpretowane. Co istotne, inna strona tego samego GSE (news o \"prima attuazione\") twierdzenie wprost obala, wiec deklarowane zrodlo nr 2 zostalo uzyte selektywnie.\n\n7) STAN NA DATE DEKLAROWANA. Nie znalazlem zadnego aktu po 213/2025/R/efr, ktory odwracalby zasade aktywacji d'ufficio. ARERA zapowiada jedynie kolejny akt domykajacy \"graduale superamento dello SSP e semplificazione del RID\" — kierunek to uproszczenie RID, a nie nakladanie obowiazku wnioskowego. Na 2026 r. RID wycenia energie po prezzo zonale orario (ok. 0,10–0,13 EUR/kWh) lub prezzo minimo garantito 0,0475 EUR/kWh dla instalacji do 1 MW.\n\nZastrzezenie badawcze: pelnego tekstu artykulowego delibery 457/2024 i 78/2025 nie udalo sie wyekstrahowac (PDF-y ARERA nie poddaly sie konwersji do tekstu), wiec numery artykulow opieram na streszczeniach. Nie oslabia to jednak konkluzji — sformulowanie \"d'ufficio\" pochodzi z wlasnego komunikatu GSE, czyli podmiotu wykonujacego te procedure, i jest niezaleznie powtorzone przez Enel oraz analizy branzowe. Dokumentacja jest najmocniejsza dla pierwszej transzy (decorrenza 2009–2010); mechanizm opisany jest jednak jako ogolny model wygaszania, a nie jednorazowy wyjatek. Nawet przy ostroznej lekturze twierdzenie pozostaje falszywe: nie da sie go obronic w wersji \"przejscie NIE jest automatyczne\", skoro regulator i operator opisuja je jako automatyczne z opcja rezygnacji.",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-prima-attuazione-della-graduale-uscita-dal-meccanismo",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.arera.it/fileadmin/allegati/docs/24/457-2024-R-efr.pdf",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.enel.it/it-it/blog/guide/scambio-sul-posto",
+        "https://equaenergia.it/il-passaggio-graduale-dal-meccanismo-di-scambio-sul-posto-ssp-al-ritiro-dedicato-rid-le-nuove-disposizioni-gse-e-arera/",
+        "https://www.consorzioesperienzaenergia.it/comunicazioni/news-eventi/gse-scambio-sul-posto-graduale-uscita-dal-meccanismo/",
+        "https://www.assolombarda.it/servizi/energia/informazioni/inizia-labbandono-dello-scambio-sul-posto",
+        "https://www.nextville.it/news/60195/scambio-sul-posto-stop-al-meccanismo-ultimi-termini-per-pres/",
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/"
+      ]
+    },
+    {
+      "claimId": "rid-01",
+      "refuted": false,
+      "correctedClaim": "Po wygaszeniu Scambio sul Posto (SSP) GSE wskazuje Ritiro Dedicato (RID) jako podstawowa sciezke wynagradzania energii wprowadzonej do sieci — ale jako \"alternatywe\" dla SSP, a nie jako nowy mechanizm stworzony na jego nastepce. Precyzyjnie: (1) RID nie jest nowy — dziala od 1 stycznia 2008 na podstawie art. 13 ust. 3-4 D.Lgs 387/2003 i delibery AEEG 280/07, a art. 9 ust. 2 D.Lgs 199/2021 wprost wymienia go obok mechanizmow z art. 5-8 jako opcje dla instalacji uruchamianych po zniesieniu SSP. (2) RID nie jest jedyna opcja: producent moze zamiast tego sprzedawac energie na rynku przez wlasnego/innego utente del dispacciamento (trader) albo wejsc w konfiguracje autoconsumo diffuso / CACER — przy czym art. 9 ust. 3 D.Lgs 199/2021 przewiduje dla istniejacych instalacji SSP stopniowa konwersje wlasnie do mechanizmu z art. 7 (autokonsumpcja), a RID jest rozwiazaniem operacyjnym wdrozonym przez GSE/ARERA. (3) Daty: DM MASE z 30.12.2024 → SSP zniesiony dla nowych instalacji od 29 maja 2025; ostatnie wnioski o SSP do GSE do 26 wrzesnia 2025 i tylko dla instalacji uruchomionych do 29 maja 2025 (delibera ARERA 78/2025/R/efr z 4.03.2025, potwierdzona delibera 213/2025/R/efr z 27.05.2025). (4) Rozroznienie nowe/istniejace: istniejace umowy SSP trwaja do naturalnego wygasniecia, ale nie moga byc odnawiane po 15 latach od pierwszego podpisania; dla umow wygasajacych GSE od 1 stycznia 2025 aktywuje umowe RID \"d'ufficio\" (z urzedu), o ile producent nie wskaze innego utente del dispacciamento. Stan na 14.08.2026 bez zmian — RID pozostaje czynny (ARERA zaktualizowala prezzi minimi garantiti na 2026 komunikatem z 29.01.2026).",
+      "reasoning": "Probowalem obalic twierdzenie, ale zrodla pierwotne je potwierdzaja. News GSE podany jako zrodlo istnieje (6.03.2025) i zawiera doslownie: \"In alternativa allo SSP, per la remunerazione dell'energia immessa e possibile presentare una richiesta di accesso al Ritiro Dedicato (RID)\". Drugi news GSE (25.11.2024) o \"graduale uscita dal meccanismo\" potwierdza, ze od 1.01.2025 GSE aktywuje umowe RID z urzedu dla instalacji wychodzacych ze SSP. Podstawa ustawowa (art. 9 ust. 2 D.Lgs 199/2021) wprost wymienia \"ritiro dedicato dell'energia di cui all'articolo 13, commi 3 e 4, del decreto legislativo 387/2003\" jako sciezke dostepna po zniesieniu SSP. Sprawdzilem takze, czy stan prawny nie zmienil sie po deklarowanej dacie: delibera ARERA 213/2025 (27.05.2025) potwierdzila termin 26.09.2025, a w 2026 RID nadal funkcjonuje (aktualizacja prezzi minimi garantiti z 29.01.2026 na podstawie delibery 280/07). Zadne zrodlo z 2026 nie wskazuje mechanizmu zastepujacego RID. Twierdzenie jest wiec zasadniczo sluszne, ale nieprecyzyjne w trzech miejscach, stad correctedClaim: (a) slowo \"nastepca\" sugeruje nowy mechanizm — RID istnieje od 2008 i GSE nazywa go \"alternativa\", nie \"successore\"; (b) twierdzenie pomija, ze RID nie jest jedyna opcja (sprzedaz przez tradera, CACER/autoconsumo diffuso — przy czym to art. 7 D.Lgs 199/2021, a nie RID, jest ustawowo przewidziana sciezka \"graduale conversione\" dla istniejacych instalacji SSP); (c) twierdzenie nie rozroznia instalacji nowych (brak dostepu do SSP od 29.05.2025, wnioski do 26.09.2025) od istniejacych (umowy trwaja do naturalnego wygasniecia, max 15 lat, potem RID d'ufficio). Nie zawiera liczb ani progow, wiec nie ma bledow numerycznych do obalenia. Uwaga metodologiczna: podsumowanie strony GSE o RID wygenerowane przez narzedzie zawieralo bledny wniosek (\"non cumulabile con SSP, quindi non e una diretta alternativa\") — niekumulowalnosc rownoczesna nie przeczy sukcesji po wygasnieciu SSP; oparlem sie na tresci newsow GSE i tekscie delibery, nie na tej parafrazie.",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-prima-attuazione-della-graduale-uscita-dal-meccanismo",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/78-25",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.gse.it/normativa_site/GSE%20Documenti%20normativa/ITALIA_DLGS_n199__08_11_2021.pdf",
+        "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07",
+        "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato"
+      ]
+    },
+    {
+      "claimId": "rid-02",
+      "refuted": false,
+      "correctedClaim": "Prezzi minimi garantiti (PMG) na rok 2026 zostały zaktualizowane komunikatem ARERA dla operatorów opublikowanym 29 stycznia 2026 r., na podstawie deliberazione 280/07 (zmienionej deliberazione 618/2013/R/efr z 19.12.2013, obowiązującą od 1.01.2014). Waloryzacja wynosi +1,4% wobec wartości z 2025 r. i odpowiada średniorocznej zmianie indeksu ISTAT cen konsumpcyjnych dla rodzin robotników i pracowników (FOI) za 2025 r. względem 2024 r.\n\nDoprecyzowania istotne dla fotowoltaiki (twierdzenie ich nie zawiera, a bez nich łatwo o błędne wnioski):\n- Ogólny pułap 1 MW dotyczy zakresu ritiro dedicato / PMG jako mechanizmu, NIE fotowoltaiki. Od 2014 r. (delibera 618/2013) PMG dla instalacji PV korzystających z zachęt taryfowych stosuje się wyłącznie do mocy nominalnej do 100 kW; powyżej 100 kW obowiązuje wyłącznie prezzo zonale orario (PZO). Dla hydroelektryki próg to 500 kW (instalacje incentywowane) lub 1 MW mocy średniorocznej (nieincentywowane), a dla pozostałych źródeł nieincentywowanych — 1 MW.\n- PMG obejmuje pierwsze 1,5 mln kWh wycofanych rocznie na instalację (2 mln kWh wyłącznie dla biogazu i biomas); powyżej tego progu obowiązuje PZO.\n- PMG to podłoga cenowa z rozliczeniem rocznym: zgodnie z art. 7.4 delibery, jeśli PMG okaże się niższe od cen rynkowych, GSE dokonuje conguaglio do PZO. Przy stosowaniu PMG po 1 stycznia wartości mnoży się przez stosunek dni pozostałych do wszystkich dni roku kalendarzowego.\n- PMG są zróżnicowane wg źródła — nie istnieje jedna wspólna stawka; krążąca w mediach wtórnych liczba „47,5 €/MWh dla całego FV do 1 MW na pierwszych 2 mln kWh\" jest nieścisła i sprzeczna z opisem zakresu na stronie ARERA. Wartości wiążące zawiera tabela załączona do komunikatu ARERA oraz zestawienie GSE „Prezzi minimi garantiti per l'anno 2026\".",
+      "reasoning": "Podchodziłem do twierdzenia sceptycznie i próbowałem je obalić na czterech osiach; żadna nie zadziałała w odniesieniu do faktów faktycznie stwierdzonych.\n\n1) Data i istnienie aktu. Strona pierwotna ARERA (comunicati-operatore, dokładnie ten URL, który podano jako źródło) potwierdza komunikat dla operatorów datowany 29 stycznia 2026 r., zatytułowany „Aggiornamento dei prezzi minimi garantiti per l'anno 2026 ai sensi della deliberazione ... n. 280/07\". Data deklarowana zgadza się z pierwotnym źródłem.\n\n2) Podstawa prawna. Komunikat wprost powołuje delibera 280/07 jako akt bazowy oraz delibera 618/2013/R/efr jako zmieniającą strukturę i wartości PMG ze skutkiem od 1 stycznia 2014 r. Twierdzenie oddaje to poprawnie — nie jest to ani mylenie stanu sprzed 2014 r. z obecnym, ani powołanie aktu uchylonego.\n\n3) Wskaźnik. Komunikat ARERA podaje mechanizm aktualizacji jako „tasso di variazione annuale dei prezzi al consumo per le famiglie di operai e impiegati\" (ISTAT FOI) i wartość +1,4% (średnia roczna 2025 vs 2024), stosowaną do wartości z 2025 r. Twierdzenie „+1,4% względem 2025\" jest zatem zgodne. Zgodne relacje niezależne (qualenergia.it, rinnovabili.it, Assoidroelettrica, Confindustria AQ) potwierdzają zarówno datę, jak i procent.\n\n4) Aktualność na 2026-08-14. Szukałem zmiany stanu prawnego po dacie deklarowanej: reformy ritiro dedicato, uchylenia/zawieszenia PMG, nowej delibery w 2026 r. Nie znalazłem żadnej. Jedyny akt z tego okresu, który mógłby zostać pomylony — delibera 7/2026/R/efr z 27 stycznia 2026 — dotyczy innej materii (wartość średnia ceny zbycia energii w 2025 r. dla wyceny incentywów zastępujących certyfikaty zielone, GRIN, Re = 115,32 €/MWh), nie PMG. GSE nadal publikuje zestawienie „Prezzi minimi garantiti per l'anno 2026\", a strona ARERA o ritiro dedicato wskazuje aktualizację z 29.01.2026 jako najnowszą. Stan na dziś jest więc niezmieniony.\n\nGdzie twierdzenie jest nieprecyzyjne (stąd correctedClaim, ale nie refuted): jest podane w kontekście „włoskich regulacji fotowoltaicznych\", a samo w sobie nie różnicuje zakresu podmiotowego. Strona pierwotna ARERA jasno mówi, że od 2014 r. PMG dla fotowoltaiki obejmuje wyłącznie instalacje do 100 kW mocy nominalnej korzystające z zachęt taryfowych, a powyżej 100 kW stosuje się wyłącznie PZO. Pułap „do 1 MW\", powtarzany w nagłówku komunikatu i w mediach, opisuje ramy ritiro dedicato / pozostałych źródeł nieincentywowanych, nie fotowoltaikę. To dokładnie ten rodzaj mieszania kategorii, o który pytano w zadaniu — twierdzenie samo go nie popełnia (nie podaje progu), ale zostawia lukę, którą czytelnik wypełni błędnie. Podobnie odnotowałem rozbieżność w źródłach wtórnych: część blogów podaje „fotowoltaika do 1 MW, pierwsze 2 mln kWh\" i jedną stawkę 47,5 €/MWh, co jest sprzeczne z pierwotnym opisem ARERA (1,5 mln kWh na instalację; 2 mln kWh tylko dla biogazu i biomas; wartości zróżnicowane wg źródła). Nie podnoszę tego jako obalenia twierdzenia, bo twierdzenie żadnych kwot ani progów nie zawiera — ale uwzględniam w wersji poprawionej jako ostrzeżenie.\n\nNie udało mi się odczytać samej tabeli wartości z PDF-a GSE (plik binarny, ekstrakcja tekstu nieudana), więc konkretnych stawek per źródło nie potwierdzam z pierwszej ręki i celowo ich nie stwierdzam w correctedClaim — odsyłam do załącznika ARERA/GSE. Nie wpływa to na ocenę, ponieważ wszystkie trzy elementy faktyczne twierdzenia (data, podstawa prawna, wskaźnik) są potwierdzone źródłem pierwotnym.",
+      "sources": [
+        "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07",
+        "https://www.arera.it/elettricita/ritiro-dedicato-e-prezzi-minimi-garantiti",
+        "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/RITIRO%20DEDICATO/Altri%20contenuti/Prezzi%20minimi%20garantiti%202026.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/31/486-31",
+        "https://www.arera.it/it/docs/14/179-14.htm",
+        "https://www.arera.it/fileadmin/allegati/docs/26/7-2026-R-efr.pdf",
+        "https://www.qualenergia.it/pro/articoli-pro/prezzi-minimi-garantiti-2026-arera-aggiorna-valori/",
+        "https://www.rinnovabili.it/mercato/politiche-e-normativa/prezzi-minimi-garantiti-2026-laggiornamento-arera/",
+        "https://www.assoidroelettrica.it/?p=8108"
+      ]
+    }
+  ],
+  "obalone": [
+    {
+      "claimId": "ssp-05",
+      "refuted": true,
+      "correctedClaim": "Zakaz przedluzania konwencji \"scambio sul posto\" (SSP) po osiagnieciu 15 lat obowiazuje NIE od 1 stycznia 2026, lecz od 2024 r. Podstawa: art. 4-ter ust. 4 decreto-legge 181/2023, przeksztalconego ustawa 11/2024 (\"le convenzioni di scambio sul posto in essere alla data di entrata in vigore della legge di conversione del presente decreto non possono, in ogni caso, essere rinnovate per un periodo superiore a quindici anni decorrenti dalla data di prima sottoscrizione\"), wykonany delibera ARERA 457/2024/R/efr z 5 listopada 2024. Pierwsza tura ~67 000 konwencji (podpisanych 1.01.2009-1.01.2010) wygasla 31 grudnia 2024, kolejne ~76 000 w ciagu 2025; od 1 stycznia 2025 GSE aktywuje tym producentom umowe Ritiro Dedicato (RID) automatycznie, z urzedu, chyba ze producent do 10 grudnia wybral innego sprzedawce/dispatcher. Jest to zasada kroczaca, przywiazana do 15. rocznicy pierwszego podpisu kazdej pojedynczej konwencji, a nie systemowa data graniczna — konwencja podpisana np. w 2019 r. dziala do 2034 r. Rok 2026 nie wprowadza w tym zakresie zadnej nowej regulacji. Odrebna, nie mylic: zamkniecie SSP dla NOWYCH instalacji — ostatni dostep dla instalacji uruchomionych do 29 maja 2025, z wnioskiem do GSE do 26 wrzesnia 2025 (delibera ARERA 78/2025/R/efr, potwierdzona delibera 213/2025).",
+      "reasoning": "Twierdzenie przedstawia stan prawny obowiazujacy od 2024 r. jako nowosc wchodzaca w zycie 1 stycznia 2026 — dokladnie ten blad, ktorego kazano szukac (\"opisuje stan z lat wczesniejszych jako obecny\").\n\n1) BLEDNA DATA WEJSCIA W ZYCIE. Zrodlo pierwotne — tekst w Gazzetta Ufficiale (kod 24G00022, publikacja 2024-02-07) — zawiera art. 4-ter ust. 4 DL 181/2023 w brzmieniu ustalonym ustawa konwersyjna 11/2024: konwencje SSP nie moga byc odnawiane ponad 15 lat od pierwszego podpisu. Norma dziala od wejscia w zycie ustawy konwersyjnej (luty 2024), a nie od 2026. ARERA wykonala ja delibera 457/2024/R/efr z 5 listopada 2024 (\"Disposizioni di prima attuazione in materia di graduale uscita dal regime di scambio sul posto ... ai sensi dell'articolo 4-ter del decreto-legge 181/23\").\n\n2) FAKTYCZNE DATY SKUTKU TO 31.12.2024 / 1.01.2025, NIE 1.01.2026. Komunikat GSE \"Scambio sul Posto — prima attuazione della graduale uscita dal meccanismo\" stwierdza wprost: konwencje, ktore osiagnely 15 lat, wygasly 31 grudnia 2024 i nie sa odnawiane, a od 1 stycznia 2025 GSE aktywuje z urzedu umowe Ritiro Dedicato. Pierwsza tura objela umowy podpisane miedzy 1.01.2009 a 1.01.2010 (~67 000 konwencji); kolejne ~76 000 wygasa w trakcie 2025. Zaden akt nie wiaze tego skutku z 1 stycznia 2026.\n\n3) ZLA STRUKTURA REGULY. Twierdzenie sugeruje jednorazowa, systemowa date graniczna. W rzeczywistosci jest to mechanizm kroczacy: kazda konwencja konczy sie w swoja wlasna 15. rocznice. Konwencje podpisane po 2011 r. nadal dzialaja w 2026 r. i beda dzialac przez kolejne lata — GSE i ARERA potwierdzaja, ze umowy \"proseguono fino alla scadenza\".\n\n4) POMINIETY AUTOMATYZM. Twierdzenie mowi, ze instalacje \"musza przejsc\" na inny mechanizm, co sugeruje dzialanie po stronie producenta. GSE aktywuje RID d'ufficio (automatycznie); producent moze jedynie opt-outowac na rzecz innego sprzedawcy (termin 10 grudnia). RID to sprzedaz energii po cenie strefowej godzinowej / cenie minimalnej gwarantowanej, a nie kompensata jak w SSP.\n\n5) DEKLAROWANE ZRODLA NIE POTWIERDZAJA TWIERDZENIA. Sprawdzilem oba. assosolare.it w ogole nie zawiera ani daty 1 stycznia 2026, ani limitu 15 lat — mowi tylko ogolnikowo, ze SSP \"chiude definitivamente nel 2026\" (co samo w sobie jest nieprawda wobec konwencji z lat 2012+). enpal.com stwierdza limit 15 lat, ale poprawnie przypisuje go do DL 181/23 i delibery 457/2024/R/efr i NIE podaje daty 1 stycznia 2026 — pisze wrecz, ze aktywne umowy trwaja do wlasnej naturalnej daty wygasniecia, bez systemowej daty granicznej.\n\n6) MOZLIWE ZMIESZANIE DWOCH ROZNYCH SPRAW. Realne daty regulacyjne w tym obszarze to: 31.12.2024 (pierwsze wygasniecia 15-letnie), 1.01.2025 (automatyczny RID), 29.05.2025 (ostatnia data uruchomienia instalacji z dostepem do SSP) i 26.09.2025 (ostatni wniosek do GSE, delibera 78/2025/R/efr potwierdzona delibera 213/2025). Zadna z nich nie przypada na 1 stycznia 2026. Twierdzenie prawdopodobnie miesza rezim dla instalacji nowych (zamkniecie naboru 2025) ze stanem instalacji istniejacych (limit 15 lat od 2024).\n\nWniosek: rdzen merytoryczny (istnieje 15-letni limit, po nim przejscie na RID) jest prawdziwy, ale kluczowy element twierdzenia — data \"od 1 stycznia 2026\" jako moment utraty mozliwosci przedluzenia — jest falszywy o dwa lata i falszywie sugeruje jednorazowa ceze systemowa. To wystarcza do refuted=true.",
+      "sources": [
+        "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=0&art.flagTipoArticolo=1&art.codiceRedazionale=24G00022&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-02-07&art.progressivo=0",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/24/457-24",
+        "https://www.arera.it/fileadmin/allegati/docs/24/457-2024-R-efr.pdf",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-prima-attuazione-della-graduale-uscita-dal-meccanismo",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://assistenza.clienti.gse.it/csm/it/durata-del-contratto-di-scambio-sul-posto?id=faq&sys_id=8153622adb4dc41052669532ca961920",
+        "https://www.ingenio-web.it/articoli/scambio-sul-posto-e-autoconsumo-nessuna-proroga-dopo-15-anni/",
+        "https://www.enpal.com/it/fotovoltaico/scambio-sul-posto",
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/"
+      ]
+    },
+    {
+      "claimId": "ssp-06",
+      "refuted": true,
+      "correctedClaim": "Przejscie ze Scambio sul Posto na Ritiro Dedicato jest co do zasady AUTOMATYCZNE, a nie wnioskowe. Zgodnie z delibera ARERA 457/2024/R/efr (5.11.2024) i komunikatem GSE o \"prima attuazione della graduale uscita dal meccanismo\", konwencje SSP, ktore osiagnely 15 lat od daty decorrenza, wygasaja i nie moga byc odnowione — a GSE aktywuje wowczas kontrakt RID \"d'ufficio\" (z urzedu). GSE formuluje to wprost: \"per garantire la continuita del servizio e della valorizzazione economica dell'energia immessa in rete, a partire dal 1° gennaio 2025 il GSE attivera, d'ufficio, un contratto RID al produttore degli impianti rientranti nel perimetro\". Mechanizm jest wiec opt-OUT, nie opt-in: dzialanie wlasciciela jest potrzebne tylko wtedy, gdy NIE chce on RID od GSE i wybiera innego utente del dispacciamento lub sprzedaz rynkowa — taka decyzje trzeba zglosic w terminie (dla pierwszej transzy: do 10 grudnia roku poprzedzajacego).\n\nDodatkowo bledne jest zalozenie, ze \"SSP konczy sie w 2026\". Nie istnieje jedna data zamkniecia dla wszystkich. Zamkniete zostalo tylko przyjmowanie NOWYCH wnioskow: dostep przysluguje wylacznie instalacjom uruchomionym do 29 maja 2025, a wniosek do GSE trzeba bylo zlozyc do 26 wrzesnia 2025 (delibera ARERA 78/2025/R/efr, potwierdzona przez 213/2025/R/efr, w wykonaniu art. 9 ust. 2 D.Lgs. 199/2021). Istniejace konwencje trwaja do naturalnej scadenza, tj. maksymalnie 15 lat od pierwszej sottoscrizione — konwencja zawarta np. w 2024 r. biegnie do ok. 2039 r. Wygaszanie odbywa sie transzami rocznikowymi (pierwsza: decorrenza 1.01.2009–1.01.2010, wygasla 31.12.2024).\n\nWniosek do GSE jest natomiast rzeczywiscie konieczny w sytuacji innej niz opisana w twierdzeniu: dla instalacji, ktore nigdy nie mialy SSP (uruchomione po 29 maja 2025 albo takie, ktore nie zlozyly wniosku do 26 wrzesnia 2025) — tam nie ma z czego \"przechodzic\" i trzeba samodzielnie zlozyc richiesta di accesso al Ritiro Dedicato albo sprzedawac energie na rynku. RID wycenia energie po prezzo zonale orario, z opcja prezzi minimi garantiti dla instalacji do 1 MW.",
+      "reasoning": "Twierdzenie zostalo obalone w swoim rdzeniu przez zrodlo pierwotne — sam GSE.\n\n1) BEZPOSREDNIA SPRZECZNOSC ZE ZRODLEM PIERWOTNYM. Strona GSE \"Scambio sul Posto, prima attuazione della graduale uscita dal meccanismo\" stwierdza dokladnie odwrotnie niz twierdzenie: \"a partire dal 1° gennaio 2025 il GSE attivera, d'ufficio, un contratto RID al produttore degli impianti rientranti nel perimetro\", a celem jest jawnie \"garantire la continuita del servizio e della valorizzazione economica dell'energia immessa in rete\". To jest doslowne zaprzeczenie tezy, ze brak wniosku skutkuje utrata wynagrodzenia — regulator zaprojektowal mechanizm wlasnie po to, by ta luka nie powstala. GSE dodaje, ze \"l'attivazione d'ufficio del contratto di Ritiro Dedicato avviene per agevolare gli operatori che vogliano rimanere clienti del GSE\".\n\n2) ODWROCONA LOGIKA PROCEDURY. Twierdzenie opisuje model opt-in (musisz zlozyc wniosek, inaczej tracisz). Rzeczywisty model to opt-out: aktywne dzialanie jest wymagane tylko od tego, kto NIE chce RID od GSE i wybiera innego utente del dispacciamento — dla pierwszej transzy termin zgloszenia to 10 grudnia. Twierdzenie odwraca kierunek domyslnej sciezki, co jest bledem nie kosmetycznym, lecz merytorycznym o odwrotnym znaku dla uzytkownika.\n\n3) POTWIERDZENIE W AKTACH ARERA. Delibera 457/2024/R/efr z 5.11.2024 (\"prime disposizioni attuative in materia di graduale uscita dal regime di scambio sul posto\") ustanawia wygasanie konwencji po 15 latach od pierwszej sottoscrizione i przejscie do RID; delibera 78/2025/R/efr (w wykonaniu art. 9 ust. 2 D.Lgs. 199/2021) domyka nabor nowych wnioskow, a 213/2025/R/efr potwierdza date 26 wrzesnia 2025. Zadna z nich nie warunkuje ciaglosci wynagrodzenia zlozeniem wniosku przez posiadacza wygasajacej konwencji SSP.\n\n4) MYLENIE INSTALACJI NOWYCH I ISTNIEJACYCH — dokladnie ten blad, o ktory kazano sprawdzic. Twierdzenie zlepia dwie rozne sciezki: (a) instalacje istniejace w SSP, ktore osiagaja 15 lat — przejscie automatyczne d'ufficio; (b) instalacje nowe, ktore nigdy do SSP nie weszly (po 29.05.2025 / po terminie 26.09.2025) — te faktycznie musza samodzielnie wnioskowac o RID. Autor twierdzenia wzial obowiazek wnioskowy wlasciwy dla grupy (b) i przypisal go grupie (a), nazywajac to \"przejsciem ze Scambio sul Posto\".\n\n5) BLEDNA PRZESLANKA O \"ZAMKNIECIU W 2026\". Twierdzenie osadzone jest w narracji, ze SSP konczy sie calkowicie w 2026 r. i wtedy trzeba zdazyc z wnioskiem. To nieprawda: nie ma jednej daty granicznej, konwencje wygasaja indywidualnie po 15 latach od wlasnej decorrenza (transze rocznikowe, pierwsza wygasla 31.12.2024). Konwencja zawarta w 2024 r. biegnie do ok. 2039 r. Zrodla branzowe potwierdzaja: \"Non esiste una data unica di chiusura per tutti gli utenti\", a \"la normativa tutela chi ha una convenzione gia attiva e non ancora ultra-quindicennale, permettendo di mantenere il regime SSP fino alla sua scadenza naturale\".\n\n6) SLABOSC DEKLAROWANYCH ZRODEL. Pierwsze zrodlo (assosolare.it) jest jedynym znalezionym nosnikiem tezy — pisze wprost \"la migrazione non e automatica e deve essere richiesta esplicitamente dal proprietario dell'impianto\" oraz \"chi non sceglie un'alternativa entro il 2026 non ricevera piu alcuna compensazione\". To strona komercyjno-marketingowa (jezyk pilnosci: \"nessuna proroga ammessa\"), stojaca w sprzecznosci z komunikatem regulatora, a nie zrodlo pierwotne. Drugie zrodlo (GSE \"stop al meccanismo\") w ogole nie potwierdza twierdzenia — dotyczy wylacznie terminow skladania NOWYCH wnioskow o SSP i wymienia RID jako alternatywe dla nowej energii; zostalo nadinterpretowane. Co istotne, inna strona tego samego GSE (news o \"prima attuazione\") twierdzenie wprost obala, wiec deklarowane zrodlo nr 2 zostalo uzyte selektywnie.\n\n7) STAN NA DATE DEKLAROWANA. Nie znalazlem zadnego aktu po 213/2025/R/efr, ktory odwracalby zasade aktywacji d'ufficio. ARERA zapowiada jedynie kolejny akt domykajacy \"graduale superamento dello SSP e semplificazione del RID\" — kierunek to uproszczenie RID, a nie nakladanie obowiazku wnioskowego. Na 2026 r. RID wycenia energie po prezzo zonale orario (ok. 0,10–0,13 EUR/kWh) lub prezzo minimo garantito 0,0475 EUR/kWh dla instalacji do 1 MW.\n\nZastrzezenie badawcze: pelnego tekstu artykulowego delibery 457/2024 i 78/2025 nie udalo sie wyekstrahowac (PDF-y ARERA nie poddaly sie konwersji do tekstu), wiec numery artykulow opieram na streszczeniach. Nie oslabia to jednak konkluzji — sformulowanie \"d'ufficio\" pochodzi z wlasnego komunikatu GSE, czyli podmiotu wykonujacego te procedure, i jest niezaleznie powtorzone przez Enel oraz analizy branzowe. Dokumentacja jest najmocniejsza dla pierwszej transzy (decorrenza 2009–2010); mechanizm opisany jest jednak jako ogolny model wygaszania, a nie jednorazowy wyjatek. Nawet przy ostroznej lekturze twierdzenie pozostaje falszywe: nie da sie go obronic w wersji \"przejscie NIE jest automatyczne\", skoro regulator i operator opisuja je jako automatyczne z opcja rezygnacji.",
+      "sources": [
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-prima-attuazione-della-graduale-uscita-dal-meccanismo",
+        "https://www.gse.it/servizi-per-te/news/scambio-sul-posto-stop-al-meccanismo",
+        "https://www.arera.it/fileadmin/allegati/docs/24/457-2024-R-efr.pdf",
+        "https://www.arera.it/fileadmin/allegati/docs/25/78-2025-R-efr.pdf",
+        "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/213-25",
+        "https://www.enel.it/it-it/blog/guide/scambio-sul-posto",
+        "https://equaenergia.it/il-passaggio-graduale-dal-meccanismo-di-scambio-sul-posto-ssp-al-ritiro-dedicato-rid-le-nuove-disposizioni-gse-e-arera/",
+        "https://www.consorzioesperienzaenergia.it/comunicazioni/news-eventi/gse-scambio-sul-posto-graduale-uscita-dal-meccanismo/",
+        "https://www.assolombarda.it/servizi/energia/informazioni/inizia-labbandono-dello-scambio-sul-posto",
+        "https://www.nextville.it/news/60195/scambio-sul-posto-stop-al-meccanismo-ultimi-termini-per-pres/",
+        "https://assosolare.it/chiusura-scambio-sul-posto-2026-alternative-gse/"
+      ]
+    }
+  ]
+}
