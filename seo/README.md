@@ -44,6 +44,27 @@ ssh nas "docker exec -i volcast-dashboard-db psql -qtA -U metabase -d volcast_da
   < query.sql > seo/pages-with-clicks.json
 ```
 
+## `noindex-exceptions.json`
+
+Pages the guard would block, taken out of the index on purpose.
+
+```json
+{ "exceptions": [
+  { "path": "/blog/de/", "decided_on": "2026-08-14", "pull_request": 11,
+    "reason": "…why the traffic is worth giving up…" }
+] }
+```
+
+This file exists because the obvious alternative does not work. The natural way
+to unblock a legitimate `noindex` is to delete the row from
+`pages-with-clicks.json` — but that file is regenerated from Search Console
+every week, so the row returns on Monday and blocks the next pull request. A
+decision has to outlive the numbers that provoked it.
+
+Hand-written only. The weekly job may add rows to `pages-with-clicks.json` and
+must never touch this one: every entry here costs the traffic it names, and the
+test rejects an entry with an empty `reason`.
+
 ### Reading it honestly
 
 The corpus is small — 19 pages carry all 107 clicks. A page missing from this
