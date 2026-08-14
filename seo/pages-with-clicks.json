@@ -1,4 +1,15 @@
 {
+    "window": {
+        "source": "google-search-console",
+        "anchor": "2026-08-11",
+        "days": 28,
+        "start": "2026-07-15",
+        "end": "2026-08-11"
+    },
+    "totals": {
+        "pages": 19,
+        "clicks": 107
+    },
     "pages": [
         {
             "path": "/en/",
@@ -95,16 +106,5 @@
             "clicks": 1,
             "impressions": 4
         }
-    ],
-    "totals": {
-        "pages": 19,
-        "clicks": 107
-    },
-    "window": {
-        "end": "2026-08-11",
-        "days": 28,
-        "start": "2026-07-15",
-        "anchor": "2026-08-11",
-        "source": "google-search-console"
-    }
+    ]
 }
