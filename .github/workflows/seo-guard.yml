@@ -1,0 +1,42 @@
+name: seo-guard
+
+# Push, not pull_request, and that is deliberate.
+#
+# A pull request opened with GITHUB_TOKEN — which is how the publish job and the
+# weekly SEO generator open theirs — does not trigger `pull_request` workflows.
+# GitHub blocks that so automation cannot drive itself in circles. A required
+# check wired to `pull_request` would therefore never report on exactly the pull
+# requests it exists to gate, and auto-merge would sit waiting on a check that
+# was never going to arrive.
+#
+# On push it runs regardless of who opened what, and the result attaches to the
+# head commit, which is where branch protection looks for it.
+on:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+
+jobs:
+  seo-guard:
+    name: seo-guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # The guard compares against origin/main to find what this branch
+          # changed. The default shallow clone has no main to compare to.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # The full production build, not a shortcut. The checks read the rendered
+      # HTML, so anything less than what Vercel builds would be checking
+      # something other than what ships.
+      - run: npm run build
+
+      - run: npm test

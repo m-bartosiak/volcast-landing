@@ -1,0 +1,11 @@
+{
+  "_comment": "Pages the guard would block, taken out of the index on purpose. Hand-written: a machine may never add a row here. Each entry costs the traffic it names, so it says who decided and why.",
+  "exceptions": [
+    {
+      "path": "/blog/de/",
+      "decided_on": "2026-08-14",
+      "pull_request": 11,
+      "reason": "German blog index. One click in the 28 days to 2026-08-11, and 6 of its 7 impressions were the query 'volcast'. /de/ ranks 1.0 on that same query with 55.6% CTR, so the click has a better page to land on. Part of the brand consolidation that noindexed all 18 listing pages."
+    }
+  ]
+}

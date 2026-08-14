@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "test": "node --test",
     "build": "astro check && astro build && npx pagefind --site .vercel/output/static --glob \"blog/**/*.html\"",
     "preview": "astro preview"
   },
