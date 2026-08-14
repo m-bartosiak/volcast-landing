@@ -40,6 +40,15 @@ const displayOgDescription = ogDescription || description;
 // Alternaty hreflang. Preferuj jawną listę `alternates`, awaryjnie pojedynczy
 // `translationUrl` (dla listingów/tagów/serii). hreflang wymaga absolutnych URL-i
 // — normalizujemy każdy przez Astro.site. Zawsze emitujemy self + x-default.
+//
+// Ale TYLKO na stronach indeksowalnych. Kanoniczny wskazuje na siebie i zostaje
+// nawet przy `noindex` — to domknięcie adresu, nie przekierowanie sygnału.
+// Hreflang to co innego: prośba „pokaż tę wersję zamiast tamtej", wysłana ze
+// strony, która obok prosi, żeby nie pokazywać jej wcale. Google taką parę
+// odrzuca, więc jedyne, co daje jej emitowanie, to sprzeczny sygnał w źródle.
+//
+// `alternates` przekazujemy niezależnie od `noindex`, bo Header buduje z nich
+// przełącznik języka — to nawigacja dla czytelnika, nie sygnał dla wyszukiwarki.
 const rawAlternates =
   alternates ?? (translationUrl ? [{ lang: otherLang, url: translationUrl }] : []);
 const hreflangLinks = [{ lang, url: canonicalUrl }, ...rawAlternates].map((a) => ({
@@ -65,10 +74,14 @@ const xDefaultUrl =
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href={canonicalUrl} />
-  {hreflangLinks.map((a) => (
-    <link rel="alternate" hreflang={a.lang} href={a.url} />
-  ))}
-  <link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
+  {!noindex && (
+    <Fragment>
+      {hreflangLinks.map((a) => (
+        <link rel="alternate" hreflang={a.lang} href={a.url} />
+      ))}
+      <link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
+    </Fragment>
+  )}
 
   <!-- Open Graph -->
   <meta property="og:title" content={displayOgTitle} />

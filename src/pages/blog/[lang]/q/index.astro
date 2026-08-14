@@ -27,11 +27,12 @@ for (const entry of entries) {
   byCategory.get(cat)!.push(entry);
 }
 const categories = [...byCategory.keys()].sort();
+
+// `noindex`: spis treści, nie odpowiedź. Trzy indeksy Q&A zebrały razem
+// 1 impresję i 0 kliknięć w 28 dniach do 2026-08-11. Wartość mają pojedyncze
+// wpisy Q&A — te zostają w indeksie i w sitemapie.
 ---
 
-<!-- noindex: spis treści, nie odpowiedź. Trzy indeksy Q&A zebrały łącznie
-     1 impresję i 0 kliknięć w 28 dniach — wartość mają pojedyncze wpisy Q&A,
-     które zostają w indeksie i w sitemapie. -->
 <BaseLayout
   title={t(lang).qaIndexTitle}
   description={t(lang).qaIndexSubtitle}
