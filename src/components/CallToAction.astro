@@ -7,21 +7,29 @@ interface Props {
 
 const { lang } = Astro.props;
 
-const text: Record<BlogLang, { heading: string; body: string; cta: string }> = {
+// `home` linkuje do strony produktu. Do 2026-08-14 nie robi\u0142 tego \u017BADEN wpis w
+// serwisie \u2014 95 artyku\u0142\u00F3w ko\u0144czy\u0142o si\u0119 dwoma odno\u015Bnikami do sklep\u00F3w, a jedyne
+// linki do /{lang}/ sz\u0142y z logo i nawigacji, czyli z blok\u00F3w powtarzalnych, kt\u00F3re
+// Google dyskontuje. Na zapytanie \u201Evolcast" indeks bloga sta\u0142 wy\u017Cej ni\u017C produkt.
+// To jest jedna zmiana w szablonie, kt\u00F3ra daje link ze wszystkich 165 stron.
+const text: Record<BlogLang, { heading: string; body: string; cta: string; home: string }> = {
   en: {
     heading: 'Try Volcast',
     body: 'Get accurate solar production forecasts powered by physics. No inverter login required.',
     cta: 'Download Free',
+    home: 'How Volcast forecasts your production',
   },
   pl: {
     heading: 'Wypr\u00F3buj Volcast',
     body: 'Dok\u0142adne prognozy produkcji solarnej oparte na fizyce. Bez logowania do falownika.',
     cta: 'Pobierz za darmo',
+    home: 'Jak Volcast liczy prognoz\u0119 produkcji',
   },
   de: {
     heading: 'Volcast testen',
     body: 'Pr\u00E4zise, physikbasierte PV-Prognosen. Kein Wechselrichter-Login n\u00F6tig.',
     cta: 'Kostenlos laden',
+    home: 'Wie Volcast deine Erzeugung prognostiziert',
   },
 };
 
@@ -40,6 +48,9 @@ const t = text[lang] ?? text.en;
         App Store
       </a>
     </div>
+    <a href={`/${lang}/`} class="cta-home" data-umami-event="home_link_click" data-umami-event-location="blog_cta">
+      {t.home} →
+    </a>
   </div>
 </aside>
 
@@ -82,4 +93,16 @@ const t = text[lang] ?? text.en;
     color: var(--primary);
   }
   .cta-button.secondary:hover { background: var(--primary-glow); }
+  .cta-home {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+  }
+  .cta-home:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary-dim);
+    opacity: 1;
+  }
 </style>
