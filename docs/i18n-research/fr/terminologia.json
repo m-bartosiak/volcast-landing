@@ -1,0 +1,432 @@
+{
+  "glossary": [
+    {
+      "en": "solar forecast / PV production forecast",
+      "target": "prévision de production (photovoltaïque)",
+      "note": "KALKA: „prévision solaire\" pasuje tylko do nasłonecznienia; dla produkcji instalacji zawsze „prévision de production\". Unikać „prédiction\" (brzmi wróżbiarsko/ML-akademicko) i nieprzetłumaczonego „forecast\"."
+    },
+    {
+      "en": "forecast horizon",
+      "target": "horizon de prévision",
+      "note": "OK dosłownie. „portée de prévision\" nie jest używane."
+    },
+    {
+      "en": "forecast accuracy",
+      "target": "précision de la prévision",
+      "note": "KALKA: „exactitude\" jest technicznie poprawne, ale branża pisze „précision\". Błąd: „fiabilité\" = niezawodność, nie dokładność."
+    },
+    {
+      "en": "irradiance",
+      "target": "irradiance (W/m²) — potocznie: ensoleillement",
+      "note": "KALKA/PUŁAPKA: irradiance (moc, W/m²) vs irradiation (energia, kWh/m²) — francuskie serwisy mieszają to nagminnie, my nie. Do bloga konsumenckiego „ensoleillement\", w części technicznej „irradiance\"."
+    },
+    {
+      "en": "irradiation (energy)",
+      "target": "irradiation (kWh/m²)",
+      "note": "Rzeczownik energii. Nie „radiation\" (kojarzy się z promieniowaniem jądrowym) — używać „rayonnement\" lub „irradiation\"."
+    },
+    {
+      "en": "solar radiation",
+      "target": "rayonnement solaire",
+      "note": "KALKA: „radiation solaire\" — do unikania, po francusku „radiation\" ciągnie skojarzenie radioaktywne."
+    },
+    {
+      "en": "GHI (global horizontal irradiance)",
+      "target": "irradiance globale horizontale (GHI)",
+      "note": "Akronim zostaje po angielsku — tak piszą PVsyst FR, Seven Sensor FR i literatura. Wariant „rayonnement global horizontal\" też występuje. Nie tłumaczyć akronimu na „IGH\"."
+    },
+    {
+      "en": "DNI (direct normal irradiance)",
+      "target": "irradiance normale directe (DNI)",
+      "note": "KALKA: kolejność! Po francusku „normale directe\", nie „directe normale\". Akronim DNI zostaje."
+    },
+    {
+      "en": "DHI (diffuse horizontal irradiance)",
+      "target": "irradiance diffuse horizontale (DHI)",
+      "note": "Akronim zostaje. Nie mylić z DIF/„diffus\" jako przymiotnikiem."
+    },
+    {
+      "en": "POA / plane-of-array irradiance",
+      "target": "irradiance dans le plan des modules (POA) / irradiance dans le plan des capteurs",
+      "note": "KALKA KATASTROFALNA: „plan du tableau\", „plan de la matrice\". Poprawnie „plan des modules\" albo „plan incliné\" / „plan du champ PV\"."
+    },
+    {
+      "en": "direct / beam radiation",
+      "target": "rayonnement direct",
+      "note": "„beam\" nie ma osobnego słowa — nie tworzyć „rayonnement de faisceau\"."
+    },
+    {
+      "en": "diffuse radiation",
+      "target": "rayonnement diffus",
+      "note": "KALKA: „rayonnement diffusé\" (imiesłów) — źle, przymiotnik brzmi „diffus\"."
+    },
+    {
+      "en": "reflected radiation / albedo",
+      "target": "rayonnement réfléchi / albédo",
+      "note": "„albédo\" z akcentem, rodzaj męski: l'albédo. Nie „réfléchissement\"."
+    },
+    {
+      "en": "clear sky (model)",
+      "target": "ciel clair / ciel dégagé ; modèle de ciel clair",
+      "note": "„clear-sky index\" → „indice de ciel clair\". Nie „ciel propre\"."
+    },
+    {
+      "en": "cloud cover / cloudiness",
+      "target": "couverture nuageuse / nébulosité",
+      "note": "Meteo France używa „nébulosité\" (w oktas). „nuageux\" to przymiotnik, nie miara."
+    },
+    {
+      "en": "overcast / broken clouds",
+      "target": "ciel couvert / passages nuageux (nuages fragmentés)",
+      "note": "KALKA: „nuages cassés\" — absurdalna. „passages nuageux\" to naturalne francuskie sformułowanie pogodowe."
+    },
+    {
+      "en": "tilt / tilt angle",
+      "target": "inclinaison (angle d'inclinaison, en °)",
+      "note": "KALKA: zostawienie „tilt\" albo „pente\". „pente\" dotyczy połaci dachu („pente de toit\"), moduł ma „inclinaison\". Typowo 30–35° we Francji."
+    },
+    {
+      "en": "azimuth / orientation",
+      "target": "orientation (azimut)",
+      "note": "PUŁAPKA MERYTORYCZNA: francuskie serwisy PV liczą azymut od POŁUDNIA (plein sud = 0°, zachód = +90°), a nie od północy jak większość API. Przy tłumaczeniu liczb trzeba to jawnie doprecyzować. W tekście dla właściciela domu mówimy „orientation : sud, sud-ouest…\", nie „azimut 180°\"."
+    },
+    {
+      "en": "string (of modules)",
+      "target": "string / chaîne (de modules)",
+      "note": "Branża pisze „string\" (photovoltaique.info używa go w cudzysłowie), instalatorzy „chaîne\". KALKA: „ficelle\", „corde\", „série\" (samo „série\" myli z „en série\")."
+    },
+    {
+      "en": "string inverter",
+      "target": "onduleur de chaîne / onduleur string",
+      "note": "Oba realnie używane; „onduleur de chaîne\" bardziej konsumencko, „onduleur string\" bardziej instalatorsko."
+    },
+    {
+      "en": "inverter",
+      "target": "onduleur",
+      "note": "KALKA KRYTYCZNA: „inverseur\" = przełącznik/odwracacz (np. inverseur de source), NIGDY falownik. Mikrofalownik = „micro-onduleur\" (z łącznikiem)."
+    },
+    {
+      "en": "hybrid inverter",
+      "target": "onduleur hybride",
+      "note": "OK. Inwerter wyspowy = „onduleur off-grid / hors réseau\"."
+    },
+    {
+      "en": "MPPT / maximum power point tracking",
+      "target": "MPPT (suivi du point de puissance maximale)",
+      "note": "Akronim dominuje; rozwinięcie tylko przy pierwszym użyciu. Nie „traqueur\" (to tracker mechaniczny = „suiveur solaire\")."
+    },
+    {
+      "en": "clipping (inverter)",
+      "target": "écrêtage (de l'onduleur)",
+      "note": "PUŁAPKA: „écrêtage\" = obcięcie mocy przez falownik (DC > AC). NIE mylić z „écrêtement\" (ograniczenie wtłaczania do sieci). Anglicyzm „clipping\" jest w tekstach technicznych czytelny, ale w blogu preferować „écrêtage\"."
+    },
+    {
+      "en": "curtailment (grid-imposed)",
+      "target": "bridage / écrêtement de l'injection",
+      "note": "PUŁAPKA: to inne zjawisko niż écrêtage falownika. Enedis stosuje „bridage\" (w tym „bridage dynamique\"). Nie zostawiać „curtailment\", nie pisać „réduction\" (za ogólne)."
+    },
+    {
+      "en": "DC/AC ratio (oversizing)",
+      "target": "ratio DC/AC (surdimensionnement DC)",
+      "note": "Enedis narzuca ≤ 1,20 przy S21 — liczba pisana z przecinkiem. Nie „rapport CC/CA\" (poprawne, ale nikt tak nie pisze)."
+    },
+    {
+      "en": "DC / AC (current)",
+      "target": "courant continu (CC/DC) / courant alternatif (CA/AC)",
+      "note": "W praktyce branża pisze DC/AC po angielsku; CC/CA to rejestr normatywny (NF C 15-100)."
+    },
+    {
+      "en": "self-consumption",
+      "target": "autoconsommation",
+      "note": "KALKA ORTOGRAFICZNA: pisane ŁĄCZNIE, bez łącznika — „auto-consommation\" spotykane, ale niepoprawne w tekstach branżowych. Nigdy „consommation propre\" (kalka z DE/NL)."
+    },
+    {
+      "en": "self-consumption rate",
+      "target": "taux d'autoconsommation",
+      "note": "PUŁAPKA MERYTORYCZNA: = produkcja zużyta na miejscu / produkcja całkowita. NIE mylić z „taux d'autoproduction\"."
+    },
+    {
+      "en": "self-sufficiency / self-supply rate",
+      "target": "taux d'autoproduction (autonomie)",
+      "note": "= zużycie pokryte z PV / całkowite zużycie. Angielskie „self-sufficiency\" tłumaczone jako „autoconsommation\" to błąd merytoryczny zmieniający sens liczby."
+    },
+    {
+      "en": "export / feed-in to grid",
+      "target": "injection (sur le réseau)",
+      "note": "KALKA: „exportation\" — po francusku dotyczy handlu zagranicznego. Poprawnie „injection\", czasownik „injecter\"."
+    },
+    {
+      "en": "import / draw from grid",
+      "target": "soutirage (consommation depuis le réseau)",
+      "note": "„soutirage\" to termin Enedis/Linky (soutirage vs injection). W tekście konsumenckim można „électricité achetée au réseau\"."
+    },
+    {
+      "en": "feed-in tariff",
+      "target": "tarif d'achat (obligation d'achat, OA) — potocznie tarif de rachat",
+      "note": "Formalnie „tarif d'achat\" (arrêté tarifaire S21), potocznie „tarif de rachat du surplus\". Nie „tarif d'alimentation\"."
+    },
+    {
+      "en": "net metering",
+      "target": "comptage net (« net metering »)",
+      "note": "PUŁAPKA MERYTORYCZNA: we Francji NIE ISTNIEJE (zakazane przez pakiet zimowy UE — osobne liczniki injection/soutirage). Tłumacząc treść anglosaską trzeba dopisać, że francuskim odpowiednikiem jest „autoconsommation avec vente du surplus\", inaczej tekst wprowadza w błąd."
+    },
+    {
+      "en": "surplus / excess production",
+      "target": "surplus (solaire) / excédent",
+      "note": "„surplus\" jest domyślne we Francji („revente du surplus\", „routeur de surplus\")."
+    },
+    {
+      "en": "solar router / power diverter",
+      "target": "routeur solaire",
+      "note": "Bardzo mocno zakorzenione we francuskiej społeczności DIY/HA. Nie „déviateur\", nie „diverter\"."
+    },
+    {
+      "en": "battery storage",
+      "target": "batterie de stockage / stockage (par batterie)",
+      "note": "KALKA: „stockage de batterie\" — odwrócony sens. Instalacja domowa: „batterie domestique\", „système de stockage\"."
+    },
+    {
+      "en": "state of charge (SoC)",
+      "target": "état de charge (SoC)",
+      "note": "Akronim SoC/SOC używany bez tłumaczenia w HA i dokumentacji falowników. Nie „statut de charge\"."
+    },
+    {
+      "en": "depth of discharge (DoD)",
+      "target": "profondeur de décharge (DoD)",
+      "note": "OK dosłownie; akronim angielski zostaje."
+    },
+    {
+      "en": "charge / discharge cycle",
+      "target": "cycle de charge / décharge",
+      "note": "Nie „chargement\" (to ładowanie pliku/towaru)."
+    },
+    {
+      "en": "yield / energy yield",
+      "target": "productible (kWh/kWc/an) ; production (kWh)",
+      "note": "KALKA KRYTYCZNA: „yield\" ≠ „rendement\". „productible\" = ile instalacja wytworzy; „rendement\" = sprawność w %. Pomylenie tych dwóch to najczęstszy błąd w tłumaczeniach PV na francuski."
+    },
+    {
+      "en": "specific yield",
+      "target": "productible spécifique (kWh/kWc)",
+      "note": "Typowo 900–1 400 kWh/kWc/an we Francji. Nie „rendement spécifique\"."
+    },
+    {
+      "en": "efficiency",
+      "target": "rendement (%)",
+      "note": "PUŁAPKA: francuscy czytelnicy sami mylą „rendement\" (sprawność modułu ~20–23 %) z produkcją. Przy tłumaczeniu warto dopisać jednostkę, żeby rozróżnić. „efficacité\" = skuteczność, nie sprawność techniczna."
+    },
+    {
+      "en": "performance ratio (PR)",
+      "target": "performance ratio (PR) / ratio de performance",
+      "note": "Akronim PR używany bez tłumaczenia, typowo ~0,80–0,85. Nie „taux de performance\"."
+    },
+    {
+      "en": "capacity factor",
+      "target": "facteur de charge",
+      "note": "KALKA: „facteur de capacité\" (kalka anglosaska/quebecka) — we Francji RTE/ADEME piszą „facteur de charge\" (~11–14 % dla PV)."
+    },
+    {
+      "en": "derating",
+      "target": "déclassement / réduction de puissance (derating)",
+      "note": "Brak jednego ustalonego terminu; kontekstowo: cieplne → „pertes thermiques\", falownik → „limitation de puissance\". Nie tworzyć „dératage\"."
+    },
+    {
+      "en": "degradation (annual)",
+      "target": "dégradation (linéaire) / perte de puissance annuelle",
+      "note": "0,2–0,6 %/an. Nie „dégradation\" w sensie wandalizmu — kontekst rozstrzyga, ale warto dodać „dégradation des modules\"."
+    },
+    {
+      "en": "temperature coefficient",
+      "target": "coefficient de température (%/°C)",
+      "note": "Typowo −0,25 do −0,45 %/°C. Nie „coefficient thermique\" (to przewodność/rozszerzalność)."
+    },
+    {
+      "en": "STC (standard test conditions)",
+      "target": "conditions STC (conditions de test standard : 1 000 W/m², 25 °C, AM1.5)",
+      "note": "Akronim STC zostaje. Kluczowy przy tłumaczeniu tematu „panele nie osiągają mocy nominalnej\"."
+    },
+    {
+      "en": "NOCT",
+      "target": "NOCT (température nominale de fonctionnement des cellules)",
+      "note": "Akronim zostaje; rozwinięcie tylko raz."
+    },
+    {
+      "en": "soiling",
+      "target": "salissure / encrassement (des modules)",
+      "note": "KALKA: „souillure\" (za mocne, sugeruje zabrudzenie moralne/biologiczne). Branża pisze „pertes par salissure\" lub „encrassement\"."
+    },
+    {
+      "en": "shading",
+      "target": "ombrage ; masques (proches / lointains)",
+      "note": "PUŁAPKA: „masque\" to francuski termin branżowy na przeszkodę zacieniającą — „masque lointain\" (horyzont, budynki), „masque proche\" (komin, antena). Samo „ombre\" = zwykły cień, za słabe technicznie."
+    },
+    {
+      "en": "horizon (profile)",
+      "target": "horizon / profil d'horizon (masque lointain)",
+      "note": "W kontekście modelu: „ligne d'horizon\". Nie mylić z „horizon de prévision\" (horyzont czasowy) — w jednym tekście warto rozróżnić jawnie."
+    },
+    {
+      "en": "nowcasting",
+      "target": "prévision immédiate (nowcasting)",
+      "note": "Meteo France używa „prévision immédiate\". Anglicyzm „nowcasting\" zrozumiały w środowisku technicznym — podać raz w nawiasie. Nie „prévision maintenant\"."
+    },
+    {
+      "en": "day-ahead (forecast for tomorrow)",
+      "target": "prévision pour le lendemain (J+1)",
+      "note": "PUŁAPKA: w kontekście RYNKU energii „day-ahead\" to po francusku „J-1\" / „la veille pour le lendemain\" (marché spot J-1). W kontekście prognozy produkcji piszemy „J+1\" lub po prostu „pour demain\". Nie mieszać obu w jednym tekście."
+    },
+    {
+      "en": "intraday",
+      "target": "infrajournalier (intraday)",
+      "note": "RTE/EPEX używają „infrajournalier\"; „intraday\" też funkcjonuje. Dla bloga: „au fil de la journée\"."
+    },
+    {
+      "en": "transposition model",
+      "target": "modèle de transposition (Hay, Perez)",
+      "note": "Termin realnie używany w dokumentacji PVsyst FR. Nazwiska modeli bez tłumaczenia. Nie „modèle de transposition d'irradiance\" jako kalka pełnej frazy — wystarczy „transposition sur le plan des modules\"."
+    },
+    {
+      "en": "Kalman filter",
+      "target": "filtre de Kalman",
+      "note": "Rodzaj męski: „le filtre de Kalman\", „un filtrage de Kalman\". Nie odmieniać nazwiska. Sprawdzone: termin obecny we francuskiej literaturze prognoz PV."
+    },
+    {
+      "en": "bias / bias correction",
+      "target": "biais / correction de biais (recalage)",
+      "note": "„biais\" rodzaj męski, bez akcentu. „recalage\" dobrze oddaje ciągłe dostrajanie modelu do pomiarów."
+    },
+    {
+      "en": "kWp / peak power",
+      "target": "kWc (kilowatt-crête) ; puissance crête",
+      "note": "KALKA KRYTYCZNA: nigdy „kWp\" we francuskim tekście — zawsze kWc, Wc, MWc. Spacja nierozdzielająca przed jednostką: „6 kWc\"."
+    },
+    {
+      "en": "rated / nominal power",
+      "target": "puissance nominale",
+      "note": "PUŁAPKA: rozróżniać „puissance crête\" (moduły, kWc), „puissance nominale\" (falownik, kW/kVA), „puissance de raccordement\" (umowa Enedis) i „puissance souscrite\" (abonament, kVA). Angielskie „capacity\" wpada w każdą z tych czterech zależnie od kontekstu."
+    },
+    {
+      "en": "bifacial",
+      "target": "bifacial (modules bifaciaux)",
+      "note": "OK dosłownie; liczba mnoga „bifaciaux\". Uzysk tylny = „gain bifacial\"."
+    },
+    {
+      "en": "grid connection",
+      "target": "raccordement (au réseau)",
+      "note": "Nie „connexion au réseau\" (używane o sieci IT). Operator = Enedis; umowa = „convention de raccordement\"."
+    },
+    {
+      "en": "smart meter",
+      "target": "compteur communicant (Linky)",
+      "note": "KALKA: „compteur intelligent\" — używane, ale oficjalny i naturalny termin to „compteur communicant\", a we Francji praktycznie zawsze po prostu „Linky\". Interfejs danych = TIC (télé-information client)."
+    },
+    {
+      "en": "heat pump",
+      "target": "pompe à chaleur (PAC)",
+      "note": "Akronim PAC bardzo częsty. Typy: „PAC air/eau\", „PAC air/air\". Bojler z pompą = „ballon thermodynamique\"."
+    },
+    {
+      "en": "EV charger / wallbox",
+      "target": "borne de recharge (IRVE)",
+      "note": "KALKA: „chargeur\" = ładowarka do telefonu/narzędzi, nie wallbox. „borne de recharge\" jest jedynym naturalnym terminem; IRVE to skrót instalacyjny."
+    },
+    {
+      "en": "electric vehicle (EV)",
+      "target": "véhicule électrique (VE)",
+      "note": "Akronim VE stosowany powszechnie."
+    },
+    {
+      "en": "load shifting",
+      "target": "décalage / déplacement des consommations (des usages)",
+      "note": "KALKA: „déplacement de charge\" brzmi jak mechanika. Blogi piszą „décaler ses consommations\", „piloter ses usages\"."
+    },
+    {
+      "en": "load shedding",
+      "target": "délestage",
+      "note": "PUŁAPKA: „délestage\" to ODCIĘCIE odbioru (żeby nie przekroczyć mocy umownej), a nie przesunięcie w czasie. Nie używać zamiennie z „décalage\"."
+    },
+    {
+      "en": "smart home / home automation",
+      "target": "domotique",
+      "note": "Jedno słowo, bardzo mocno zakorzenione. „maison intelligente\" brzmi marketingowo/tłumaczeniowo."
+    },
+    {
+      "en": "off-peak hours",
+      "target": "heures creuses (HC) — vs heures pleines (HP)",
+      "note": "Skróty HC/HP standardowe. Kontekst 2026: Enedis przesuwa część HC na 11 h–17 h pod produkcję PV — realny temat blogowy."
+    },
+    {
+      "en": "monitoring",
+      "target": "suivi de production / supervision",
+      "note": "„monitoring\" jest używane, ale „suivi de production\" brzmi naturalniej w treści dla właściciela instalacji."
+    },
+    {
+      "en": "dashboard",
+      "target": "tableau de bord",
+      "note": "W kontekście Home Assistant: „tableau de bord Énergie\" (oficjalna nazwa FR w HA). Nie „panneau de contrôle\"."
+    },
+    {
+      "en": "domestic hot water tank",
+      "target": "ballon d'eau chaude (ECS) / ballon thermodynamique",
+      "note": "ECS = eau chaude sanitaire. Najczęstszy odbiornik surplusu we francuskich setupach HA."
+    },
+    {
+      "en": "sunrise / sunset",
+      "target": "lever / coucher du soleil",
+      "note": "Nie „lever de soleil\" bez rodzajnika w tabelach — pisać „lever du soleil\"."
+    }
+  ],
+  "styleNotes": "FORMA ZWRACANIA SIĘ — „vous\\\", bez wyjątków. Sprawdzone na photovoltaique.info (styl bezosobowy/3. os.), blogach instalatorów (Hellowatt, Dualsun, Oscaro-Power, conseils-thermiques) i forum HACF: wszystkie stosują „vous\\\". „tu\\\" pojawia się wyłącznie w komentarzach forum i w wewnętrznych wtrętach autorskich blogów DIY — nie w treści redakcyjnej. Rekomendacja: konsekwentne „vous\\\" + tryb rozkazujący 2. os. l.mn. („Programmez votre lave-linge entre 11 h et 16 h\\\"), imiesłowy typu „vos panneaux\\\", „votre installation\\\". Ton: rzeczowy, bez wykrzykników, bez amerykańskiego hype („incroyable\\\", „révolutionnaire\\\" wypadają tanio). Angielski nagłówek pytający („How to…\\\") oddajemy jako „Comment…\\\" albo rzeczownikowo („Optimiser son autoconsommation\\\") — bezokolicznik jest bardzo francuski w tytułach.\n\nSEPARATOR DZIESIĘTNY — przecinek, zawsze: 3,5 kWh; 0,82 ; 1,20 ; −0,35 %/°C. Kropka dziesiętna to natychmiastowy sygnał tłumaczenia maszynowego. Separator tysięcy — spacja nierozdzielająca wąska, nie przecinek i nie kropka: 1 500 kWh, 1 000 W/m², 12 000 kWh/an. Uwaga na zrzuty ekranu / dane z API: jeśli w tekście cytujemy wartość z aplikacji pokazującej „3.5\\\", w prozie i tak piszemy „3,5\\\".\n\nJEDNOSTKI — spacja nierozdzielająca między liczbą a jednostką: 6 kWc, 4,2 kWh, 800 W, 9 kVA, 25 °C (spacja także przed °C!), 1 000 W/m². WYJĄTEK: stopnie kątowe i procent zachowują się różnie — kąt bez spacji (30°, azimut 180°), ale temperatura ze spacją (25 °C), a procent ZE spacją (15 %). Symbole: kWc (nigdy kWp), Wc, MWc, kWh, kVA, kWh/kWc/an. Zapis „kWh\\\" bez kropek i bez liczby mnogiej („des kWh\\\", nie „des kWhs\\\"). Waluta po liczbie: 12,50 €, 1,1 c€/kWh.\n\nSPACJE PRZED ZNAKAMI INTERPUNKCYJNYMI — reguła francuska: spacja nierozdzielająca (U+00A0, typograficznie wąska U+202F) PRZED znakami dwuznakowymi: dwukropek „ : \\\", średnik „ ; \\\", pytajnik „ ? \\\", wykrzyknik „ ! \\\", oraz wewnątrz cudzysłowu francuskiego „ « tekst » \\\". BEZ spacji przed: przecinek, kropka, wielokropek. To najczęściej łamana reguła w tłumaczeniach z angielskiego — angielski render „Autoconsommation: comment faire?\\\" jest natychmiast rozpoznawalny jako obcy; poprawnie „Autoconsommation : comment faire ?\\\". W HTML używać &nbsp; lub &#8239; — nie zwykłej spacji, bo złamie się na końcu wiersza.\n\nCUDZYSŁOWY — francuskie „chevrons\\\": « … » ze spacją nierozdzielającą wewnątrz. Cytat w cytacie: „ \" … \" \\\" (angielskie podwójne) lub pojedyncze ‹ ›. Angielskie \\\"…\\\" i „…\\\" (niemieckie/polskie) są błędem. Terminy techniczne wprowadzane po raz pierwszy można ująć w « » („ce qu'on appelle l'« écrêtage » \\\") albo kursywą — kursywa dla anglicyzmów nieprzyswojonych (nowcasting, clipping, day-ahead), bez kursywy dla przyswojonych (string, monitoring, dashboard w mowie potocznej).\n\nDATY — dzień miesiąc rok, bez przecinka, miesiąc małą literą: 14 août 2026. Nie „Août\\\", nie „14/08/2026\\\" w prozie (format numeryczny tylko w tabelach: 14/08/2026, kolejność DD/MM — nigdy MM/DD). Pierwszy dzień miesiąca: 1er août. Dni tygodnia małą literą: lundi, mardi. Zakres: „du 1er au 15 septembre\\\". Miesiące bez rodzajnika w wyliczeniach: „en décembre-janvier\\\".\n\nGODZINY — format 24-godzinny, separator „h\\\": 14 h 30 (typograficznie ze spacjami nierozdzielającymi) lub w tekstach mniej formalnych i na blogach 14h30. Pełna godzina: 14 h albo 14h (nie „14:00\\\" w prozie; dwukropek dopuszczalny w danych/logach i w interfejsie aplikacji). Przedziały: „entre 11 h et 16 h\\\", „de 23 h à 7 h\\\". Nie ma AM/PM. Uwaga: francuskie blogi PV bardzo często piszą skrótowo „11h-17h\\\" — to akceptowalny rejestr blogowy, ale w jednym tekście trzymać jeden wariant.\n\nDROBIAZGI, KTÓRE ZDRADZAJĄ TŁUMACZENIE: (1) angielskie wielkie litery w nagłówkach — po francusku tylko pierwsze słowo i nazwy własne; (2) „Home Assistant\\\" zostaje bez tłumaczenia i bez rodzajnika w nazwie, ale „le tableau de bord Énergie de Home Assistant\\\"; (3) nazwy marek falowników bez odmiany; (4) akronimy bez kropek (PV, PAC, ECS, HC/HP, VE, SoC); (5) „photovoltaïque\\\" z tremą na i — częsty błąd OCR/klawiatury; (6) skrót „PV\\\" jest w pełni naturalny we francuskich tekstach branżowych i forach, można go używać swobodnie po pierwszym rozwinięciu; (7) liczba mnoga akronimów bez „s\\\" (des PAC, des VE); (8) unikać „efficacité\\\" tam, gdzie chodzi o sprawność — to „rendement\\\".",
+  "keywordFindings": [
+    {
+      "topic": "Prognoza produkcji PV (rdzeń tematu)",
+      "query": "prévision de production photovoltaïque",
+      "rationale": "Zweryfikowane: to fraza, wokół której układa się cały francuski korpus (photovoltaique.info „Estimer la production photovoltaïque\", forum-photovoltaique.fr ma dedykowane wątki „prévoir la production des panneaux photovoltaïques demain\"). Warianty do rozsiania w treści: „prévoir sa production solaire\", „prévision de production solaire J+1\", „estimer la production photovoltaïque\". UWAGA: „prévision solaire\" samo w sobie ciągnie wyniki o nasłonecznieniu/meteo, nie o produkcji instalacji — nie używać jako głównego targetu."
+    },
+    {
+      "topic": "Aplikacja do śledzenia i prognozy produkcji",
+      "query": "application suivi production solaire",
+      "rationale": "Realny korpus istnieje („Les meilleures applis pour suivre sa production solaire\" – primerenov.net). Francuzi szukają przez „appli\" i „suivi\", nie przez „monitoring\". Warianty: „meilleure appli production solaire\", „application prévision production photovoltaïque\", „suivre sa production solaire en temps réel\". Intencja mieszana: aplikacje producentów falowników (Enphase, SolarEdge, Huawei) dominują wyniki — treść musi się różnicować przez kąt prognozy, nie samego monitoringu."
+    },
+    {
+      "topic": "Home Assistant + prognoza solarna",
+      "query": "prévision production solaire Home Assistant",
+      "rationale": "Zweryfikowane: francuska społeczność jest skupiona na hacf.fr (Home Assistant Communauté Francophone) i forum-photovoltaique.fr, a wyniki dla tej frazy pokazują głównie angielskie repozytoria (ha-solcast-solar, Forecast.Solar docs) — czyli LUKA TREŚCIOWA po francusku. Warianty: „intégration Home Assistant prévision solaire\", „Solcast Home Assistant français\", „tableau de bord Énergie Home Assistant solaire\". To najsilniejsza okazja: zapotrzebowanie realne, konkurencja francuskojęzyczna prawie zerowa."
+    },
+    {
+      "topic": "Optymalizacja autoconsommation",
+      "query": "optimiser son autoconsommation photovoltaïque",
+      "rationale": "Zweryfikowane jako duży, mocno obsadzony korpus (monabee.fr, conseils-thermiques.org, mypower.engie.fr). Kluczowe: kontekst 2026 zmienił intencję — po arrêté S21 z 4 czerwca 2026 tarif rachunku surplusu spadł do ~1,1 c€/kWh, więc autoconsommation przestała być opcją, a stała się jedynym źródłem rentowności. Warianty: „augmenter son taux d'autoconsommation\", „taux d'autoconsommation moyen\", „autoconsommation ou revente 2026\". Bezwzględnie rozróżniać „taux d'autoconsommation\" od „taux d'autoproduction\" — obie frazy mają własny ruch."
+    },
+    {
+      "topic": "Kiedy włączyć pralkę / przesuwanie zużycia",
+      "query": "quand faire tourner sa machine à laver panneaux solaires",
+      "rationale": "Zweryfikowane: solidny korpus z konkretnymi widełkami (11 h–16 h, szczyt 12 h–16 h, deklarowany zysk ~+10 pkt autoconsommation). Francuzi piszą „machine à laver\" i „lave-linge\" wymiennie — pokryć oba. Warianty: „à quelle heure lancer son lave-linge panneaux solaires\", „décaler ses consommations autoconsommation\", „lave-vaisselle heures de production solaire\". To najbardziej „codzienny\" temat całego zestawu i naturalne wejście do tematu prognozy (bo odpowiedź brzmi: zależy od jutrzejszej pogody)."
+    },
+    {
+      "topic": "Produkcja zimowa",
+      "query": "production panneaux solaires en hiver",
+      "rationale": "Zweryfikowane: bardzo rozbudowany korpus z twardymi liczbami do zacytowania — 0,5–1,8 kWh/dzień w grudniu-styczniu vs 2,5–4 kWh latem; lipiec 183,9 kWh/m² vs grudzień 29,4 kWh/m²; listopad–luty ≈ 10 % rocznej produkcji. Warianty: „production solaire décembre janvier\", „panneaux solaires hiver rendement\", „combien produit un panneau solaire en hiver\". Kąt różnicujący: zimą prognoza jest procentowo najmniej dokładna i najbardziej użyteczna decyzyjnie — tego nikt we francuskim korpusie nie pokrywa."
+    },
+    {
+      "topic": "Inclinaison i orientation",
+      "query": "inclinaison et orientation panneaux solaires optimales",
+      "rationale": "Zweryfikowane: kanoniczne francuskie liczby to 30–35° inclinaison, plein sud, strata 15–22 % przy orientacji wschód/zachód. Warianty: „orientation panneaux solaires est ouest\", „quelle inclinaison panneau solaire France\", „azimut panneau solaire\". PUŁAPKA DO OBSŁUŻENIA W TREŚCI: francuskie serwisy podają azymut względem POŁUDNIA (sud = 0°), a aplikacje/API zwykle względem północy — artykuł zyska, jeśli jawnie przeliczy oba układy."
+    },
+    {
+      "topic": "Bateria — dobór i opłacalność",
+      "query": "batterie solaire rentabilité dimensionnement",
+      "rationale": "Zweryfikowane: dwa różne intenty w jednym temacie — „rentabilité\" (czy warto, po S21 przesunięcie ku „tak\") i „dimensionnement\" (ile kWh). Warianty: „quelle capacité batterie autoconsommation\", „batterie solaire vaut le coup 2026\", „piloter sa batterie avec Home Assistant\". Kąt prognozowy silny i słabo obsadzony: rozładować baterię przed pochmurnym dniem, naładować przed słonecznym — realnie opisywane na francuskich forach, nieopisywane w treści redakcyjnej."
+    },
+    {
+      "topic": "Taryfa heures creuses",
+      "query": "nouveaux horaires heures creuses 2026",
+      "rationale": "Zweryfikowane i CZASOWO GORĄCE: Enedis przesuwa okna HC na popołudnie (11 h–17 h) pod produkcję PV; faza 1 (XI 2025 – VI 2026) objęła 1,7 mln gospodarstw, od grudnia 2026 kolejne 9,3 mln. Wysoki, rosnący wolumen wyszukiwań i realna dezorientacja użytkowników. Warianty: „heures creuses après-midi solaire\", „connaître ses horaires heures creuses Linky\", „heures creuses et panneaux solaires\". Uwaga redakcyjna: okna HC są przypisane per punkt poboru — dwóch sąsiadów może mieć różne; nie podawać jednego rozkładu jako uniwersalnego."
+    },
+    {
+      "topic": "Dlaczego panele nie osiągają mocy nominalnej",
+      "query": "pourquoi mes panneaux solaires produisent moins que prévu",
+      "rationale": "Zweryfikowane: silna intencja diagnostyczna, korpus francuski istnieje, ale rozproszony i płytki (FAQ producentów typu Sunology, strony instalatorów). Kanoniczna odpowiedź do zacytowania: realnie 75–80 % puissance crête, bo STC = 1 000 W/m² + 25 °C prawie nigdy nie występują łącznie. Warianty: „panneau solaire ne produit pas sa puissance nominale\", „différence puissance crête et production réelle\", „écrêtage onduleur perte production\". To naturalny artykuł-most do tematu dokładności prognozy: użytkownik porównuje prognozę z odczytem falownika i nie wie, że porównuje dwie różne wielkości."
+    }
+  ]
+}

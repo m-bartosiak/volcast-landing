@@ -1,0 +1,393 @@
+{
+  "k6Name": "Revente et primes",
+  "slugConvention": "KONWENCJA SLUGOW FR + MECHANIKA WPIECIA (repo: C:/Users/yakon/Documents/volcast-landing-it, branch feat/italian-locale)\n\n1) RDZEN LEKSYKALNY. Trzy rdzenie, uzywane rozlacznie:\n   - \"photovoltaique\" — gdy mowa o instalacji/produkcji/prognozie jako systemie (prevision-production-photovoltaique, production-photovoltaique-en-hiver). To termin handlowy i administracyjny (obligation d'achat, installation photovoltaique).\n   - \"panneaux\" / \"panneau-solaire\" — w postach o fizyce modulu (comment-fonctionne-un-panneau-solaire, panneaux-produisent-moins-avec-la-chaleur). \"Panneau solaire\" ma we Francji zdecydowanie najwyzszy wolumen wyszukiwania sposrod wszystkich trzech.\n   - \"solaire\" — jako przymiotnik w kolokacjach naturalnych (prevision-solaire, production-solaire, surplus-solaire), nigdy jako samodzielny rzeczownik-rdzen.\n   - \"autoconsommation\" traktujemy jak rdzen wlasny — to centralne pojecie rynku francuskiego (autoconsommation avec/sans revente to formalna kategoria w umowie z Enedis/EDF OA) i najsilniejszy head-term w calym klastrze. Nie zastepowac go slowem \"self-consumption\" ani \"autoproduction\".\n\n2) DLUGOSC. Blog: 3-6 slow, docelowo <= 45 znakow. Q&A: te same 3-6 slow (nie rozciagamy do 7-8 jak IT — francuskie slowa sa dluzsze niz wloskie i slug szybko przekracza 50 znakow). Rodzajniki i przyimki tniemy agresywniej niz w IT: \"prevision-sans-historique-de-production\", nie \"la-prevision-sans-historique-de-la-production\".\n\n3) BEZ DIAKRYTYKOW, BEZ APOSTROFOW — twarda zasada, francuski jest tu trudniejszy niz wloski.\n   - Fold do ASCII: e/e/e -> e (prevision, electricite, nebulosite, ecretement, elevee), a -> a, c -> c (ecretement), o -> o, u -> u. \"meme\" -> \"meme\", \"tres\" -> \"tres\".\n   - Elizje (l', d', qu', n', s') NIE zapisujemy jako \"l-\", \"d-\", \"jusqu-au\" ani sklejone \"lautoconsommation\". Zawsze przeformulowujemy:\n     * \"d'ou viennent les previsions meteo\" -> \"origine-des-previsions-meteo\"\n     * \"le voyage de la lumiere jusqu'au panneau\" -> \"irradiance-du-soleil-au-panneau\"\n     * \"la prime a l'autoconsommation\" -> \"prime-autoconsommation-qui-y-a-droit\"\n     * \"panneaux qui n'atteignent pas la puissance\" -> \"puissance-nominale-jamais-atteinte\"\n   - Wyjatek techniczny: \"est-ouest\" i \"lave-linge\" zostaja z myslnikiem wewnetrznym — to standardowa pisownia, nie elizja.\n\n4) MARKA. Zadnego \"volcast\" w slugach. Jedyny wyjatek: volcast-vs-forecast-solar-vs-solcast, gdzie nazwy wlasne SA zapytaniem. Zachowujemy zgodnosc z EN/PL/DE/IT.\n\n5) Q&A. Slowo pytajne na poczatku tylko gdy tak brzmi realne zapytanie (\"pourquoi-\", \"combien-\", \"quelle-\"). Gdy zapytanie jest rzeczownikowe, slug tez: \"onduleur-plus-petit-que-les-panneaux\", \"reglage-volt-watt-faut-il-activer\", \"tension-au-dessus-de-253-v-que-faire\". Nie powtarzamy \"mon/ma\" w slugu, choc zostaje w tytule.\n\n6) TYTULY — TWARDY LIMIT 60 ZNAKOW, ZWERYFIKOWANY NA KODZIE, NIE OSZACOWANY.\n   Sprawdzone w repo: BaseLayout.astro linia ~48 ustawia `const siteTitle = title;` — dopisek \" — Volcast Blog\" zostal usuniety w commicie d4dc9b5. BlogPost.astro:87 i QAPost.astro:61 przekazuja `data.title` bez modyfikacji. Wniosek: wyrenderowany <title> == title z frontmattera, caly budzet 60 znakow nalezy do autora (a NIE ~45, jak nadal twierdzi komunikat bledu w tests/seo-guard.test.js linia ~180 — ten tekst jest nieaktualny po d4dc9b5 i warto go poprawic przy okazji).\n   Wszystkie 55 tytulow ponizej policzone skryptem: maksimum 58 znakow, mediana 53, zadnego przekroczenia. Zapas 2 znakow jest celowy — francuska typografia lubi spacje przed \":\" i \"?\", a gdyby ktos wstawil tam U+00A0 lub U+202F, liczba znakow sie nie zmieni, ale gdyby dopisal jedno slowo, tak.\n   Jesli redaktor zmienia tytul: przeliczyc [...t].length, nie szacowac. Opisy (description) osobno: przedzial 140-155 znakow, egzekwowany tym samym testem.\n\n7) ZMIANY W KODZIE POZA TRESCIA — mniej niz przy IT, bo i18n.ts jest juz gotowy:\n   - src/data/i18n.ts — NIC DO ZROBIENIA. LANGS juz zawiera 'fr' (linia 5), DATE_LOCALE 'fr-FR', OG_LOCALE 'fr_FR', READING_WPM 180, LANG_LABEL 'FR', a blok UI_STRINGS.fr istnieje (linia ~173). Przejrzec tylko copy pod katem jakosci, nie dodawac.\n   - src/data/translations.ts — DO ZROBIENIA. Interfejs TranslationCluster ma tylko en/pl/de; dodac `it?` i `fr?` (a docelowo `ro?`). Nastepnie dopisac 'fr:' do 18 z 19 istniejacych wierszy TRANSLATION_CLUSTERS. Wiersz `timing-appliances-to-your-solar-peak` (linia 36) zostaje BEZ 'fr'.\n   - src/data/qa-categories.ts — DO ZROBIENIA. Record<BlogLang, string> nie ma kolumn it/fr/ro, wiec dzis to blad typu czekajacy na pierwszy locale. Dodac kolumne fr dla k1-k6:\n     k1 'Reseau et onduleur', k2 'Production et rendement', k3 'Batterie domestique', k4 'Tarifs et factures', k5 'Automatisation du surplus', k6 'Revente et primes'.\n   - src/data/clusters.ts — bez zmian. CLUSTER_LINKS operuje na translationKey i sam pomija tematy nieobecne w jezyku.\n\n8) MAPOWANIE 31 POSTOW NA KLUCZE:\n   - 13 postow ma translationKey we frontmatterze (forecast-hub, ha-comparison, brand-comparison, best-app, weather-vs-output, self-consumption, appliances, ev-charging, heat-pump, winter, dynamic-tariff, negative-prices, battery) — nie wymagaja wpisu w translations.ts.\n   - 18 postow nie ma klucza we frontmatterze i laczy sie przez wiersz TRANSLATION_CLUSTERS; w polu translationKey ponizej podano dla nich slug EN, bo to faktyczny klucz laczacy.\n   - Razem 13 + 18 = 31. Zgadza sie z 32 plikami EN minus timing-appliances.\n\n9) DROP: timing-appliances-to-your-solar-peak. vercel.json ma dla niego 301 na when-to-run-appliances-solar (i lustrzany 301 dla PL). Nie tworzyc wersji FR, nie dodawac 'fr' do jego wiersza w translations.ts, dodac analogiczny 301 dla /blog/fr/ tylko jesli powstanie jakikolwiek link zewnetrzny (domyslnie: nie tworzyc).\n\n10) POLE `guide` W Q&A musi wskazywac slug FR bloga, nie EN. Mapowanie po adaptacji:\n   solar-production-forecast -> prevision-production-photovoltaique\n   home-assistant-solar-forecast-comparison -> prevision-solaire-home-assistant-comparatif\n   dynamic-tariff-with-solar -> tarif-dynamique-et-photovoltaique\n   home-battery-charge-grid-or-solar -> batterie-charger-sur-le-reseau-ou-au-soleil\n   increase-solar-self-consumption -> augmenter-son-autoconsommation-solaire\n   when-to-run-appliances-solar -> quand-lancer-lave-linge-et-ballon\n   ev-charging-from-solar -> recharger-voiture-electrique-avec-le-solaire\n   weather-forecast-vs-solar-output -> meteo-et-production-photovoltaique\n   Dla trzech nowych Q&A k6 `guide` ustawic na augmenter-son-autoconsommation-solaire (surplus-ou-autoconsommer, prime-autoconsommation) i tarif-dynamique-et-photovoltaique (combien-vaut-un-kwh-injecte).\n\n11) NOWE KLUCZE Q&A dla trzech zastapien (prefiks 'qa-fr-' analogicznie do 'qa-de-'/'qa-pl-'/'qa-it-'):\n   qa-fr-surplus-ou-autoconsommation, qa-fr-valeur-kwh-injecte, qa-fr-prime-autoconsommation.\n   Te trzy pytania NIE maja odpowiednika EN — nie dodawac ich do zadnego klastra tlumaczen i nie generowac dla nich hreflang alternates.\n\n12) K6 JAKO KATEGORIA RYNKOWA. EN = eksport/taryfy UK/IE/AU, PL = net-billing, DE = Balkonkraftwerk, IT = incentivi/ritiro. FR = \"Revente et primes\" — obligation d'achat (EDF OA i inni acheteurs agrees), tarif de rachat du surplus, prime a l'autoconsommation, wybor autoconsommation avec ou sans revente. Alternatywa dluzsza, gdyby nawigacja to udzwignela: \"Revente du surplus et primes\". Wybrano wersje krotsza, bo etykieta idzie do breadcrumbow i listingu.\n\n13) OSTRZEZENIE REDAKCYJNE — LICZBY REGULACYJNE. Francuski tarif de rachat du surplus i prime a l'autoconsommation sa rewidowane KWARTALNIE przez CRE (arrete tarifaire), a w latach 2024-2025 spadly kilkukrotnie. Nie kopiowac zadnej stawki z pamieci ani z wersji EN/IT — kazda liczba w postach dynamic-tariff, negative-prices, self-consumption, appliances i we wszystkich trzech Q&A k6 wymaga weryfikacji na aktualnym arrete w dniu pisania, z data w tekscie (\"au T3 2026\"). To samo dotyczy progow prime a l'autoconsommation wg mocy (<=3 / <=9 / <=36 / <=100 kWc).\n\n14) REKOMENDACJE FR-ONLY (poza tabela, brak odpowiednika EN):\n   - Port postu DE 'verschattung-pv-ertrag' (translationKey 'shading') jako 'ombrage-et-production-photovoltaique'. Generyczny, gotowy po niemiecku, a we Francji trafia idealnie (zabudowa miejska, ABF/strefy chronione, dachy w dolinach alpejskich i pirenejskich).\n   - Rozwazyc post o REFORMIE HEURES CREUSES (przesuniecie czesci plag na godziny popoludniowe 11-17 w polroczu letnim). To najwiekszy pojedynczy temat rynkowy dla wlasciciela PV we Francji, ktory NIE ma odpowiednika w zadnym innym locale: nowe HC pokrywaja sie ze szczytem produkcji, co odwraca cala logike \"laduj tanio w nocy\". Zweryfikowac harmonogram wdrozenia u Enedis/CRE przed napisaniem.\n   - Rozwazyc 'autoconsommation collective' (odpowiednik wloskiej CER) jako czwarty temat k6, jesli kategoria urosnie.\n   - NIE powtarzac za DE wyciecia 'self-consumption' i 'weather-vs-output'. \"Autoconsommation\" to najsilniejszy termin rynku francuskiego, a \"meteo\" to head-term o gigantycznym wolumenie.\n   - Kolejnosc publikacji przy etapowym starcie: forecast-hub, self-consumption, appliances (reforma HC), heat-pump (Francja to najwiekszy rynek PAC w Europie + dominacja ogrzewania elektrycznego), same-system-different-cities, why-solar-panels-produce-less-in-heat.",
+  "posts": [
+    {
+      "translationKey": "forecast-hub",
+      "enSlug": "solar-production-forecast",
+      "slug": "prevision-production-photovoltaique",
+      "title": "Prévision de production photovoltaïque : les kWh de demain",
+      "marketNotes": "ZADNA ADAPTACJA RYNKOWA — hub klastra, czysta metodyka prognozy. Tlumaczyc 1:1. To najwazniejszy post w calym zestawie: piec Q&A wskazuje na niego przez pole guide, wiec jego slug musi byc ustalony PRZED pisaniem Q&A."
+    },
+    {
+      "translationKey": "ha-comparison",
+      "enSlug": "home-assistant-solar-forecast-comparison",
+      "slug": "prevision-solaire-home-assistant-comparatif",
+      "title": "Prévision solaire dans Home Assistant : le comparatif",
+      "marketNotes": "ZADNA. Tytul celowo nie wymienia trzech marek (nie zmiescilyby sie w 60 znakach) — nazwy Volcast/Forecast.Solar/Solcast ida do description i H2, gdzie nie ma limitu."
+    },
+    {
+      "translationKey": "brand-comparison",
+      "enSlug": "volcast-vs-forecast-solar-vs-solcast",
+      "slug": "volcast-vs-forecast-solar-vs-solcast",
+      "title": "Volcast vs Forecast.Solar vs Solcast : comparatif honnête",
+      "marketNotes": "ZADNA. Slug zostaje w formie markowej, tak jak w EN/PL/IT — nazwy wlasne SA zapytaniem. DE zrobil wyjatek (forecast-solar-alternative) pod niemiecka intencje; dla FR brak lokalnego odpowiednika takiego zapytania, wiec zostawiamy marki."
+    },
+    {
+      "translationKey": "best-app",
+      "enSlug": "best-solar-forecast-app",
+      "slug": "meilleure-application-prevision-solaire",
+      "title": "La meilleure appli de prévision de production solaire",
+      "marketNotes": "LEKKA ADAPTACJA — linia 17 wymienia SMA, Fronius, GoodWe, Sungrow, Enphase. Dla FR uzupelnic o marki realnie obecne na rynku francuskim: SolarEdge, Huawei, Enphase (bardzo silne we Francji przez mikroonduleurs), APsystems, oraz producentow krajowych DualSun i Systovi. Wspomniec o MyLight Systems jako typowym francuskim ekosystemie monitoringu."
+    },
+    {
+      "translationKey": "weather-vs-output",
+      "enSlug": "weather-forecast-vs-solar-output",
+      "slug": "meteo-et-production-photovoltaique",
+      "title": "Pourquoi la météo ne dit pas ce que produira le solaire",
+      "marketNotes": "ZADNA — post w pelni generyczny. UWAGA: DE go WYCIAL. Dla FR rekomendacja odwrotna: ZACHOWAC. 'Meteo' to jeden z najsilniejszych head-termow francuskiego wyszukiwania, a Meteo-France jest instytucja rozpoznawalna powszechnie — mozna ja przywolac jako punkt zaczepienia."
+    },
+    {
+      "translationKey": "self-consumption",
+      "enSlug": "increase-solar-self-consumption",
+      "slug": "augmenter-son-autoconsommation-solaire",
+      "title": "Augmenter son autoconsommation : 7 leviers concrets",
+      "marketNotes": "ADAPTACJA + UWAGA STRUKTURALNA. DE ten post wycial i wtopil w 'appliances' — dla FR ZACHOWAC jako osobny post, bo 'autoconsommation' to najwyzszy potencjal SEO w calym klastrze i formalna kategoria administracyjna (autoconsommation avec ou sans revente). Cala ekonomike przeliczyc: wartosc unikanego importu vs tarif de rachat du surplus w ramach obligation d'achat — spread jest we Francji bardzo szeroki, co czyni argument mocniejszym niz w EN. Kazda stawka wymaga weryfikacji na aktualnym arrete CRE."
+    },
+    {
+      "translationKey": "appliances",
+      "enSlug": "when-to-run-appliances-solar",
+      "slug": "quand-lancer-lave-linge-et-ballon",
+      "title": "Ballon, lave-linge, lave-vaisselle : à quelle heure ?",
+      "marketNotes": "ADAPTACJA — dwa razy pada 'feed-in' (linie 17 i 67) w argumencie 'feed-in pays a few cents vs retail several times higher'. Przelozyc na tarif de rachat du surplus vs prix du kWh en facture. NAJWAZNIEJSZA ROZNICA VS EN: heures pleines / heures creuses (8 h/dobe) plus trwajaca reforma przesuwajaca czesc plag HC na popoludnie — nowe HC potrafia pokrywac sie ze szczytem produkcji, co odwraca klasyczna rade. Dodac francuski cumulus (ballon d'eau chaude electrique) na contacteur jour/nuit — to najczestszy sterowalny odbiornik w francuskim domu i temat sam w sobie."
+    },
+    {
+      "translationKey": "ev-charging",
+      "enSlug": "ev-charging-from-solar",
+      "slug": "recharger-voiture-electrique-avec-le-solaire",
+      "title": "Recharger sa voiture électrique avec ses panneaux solaires",
+      "marketNotes": "LEKKA ADAPTACJA — linia 29 podaje kwote jako '2-3 €/£/$'; zostawic sam euro. Dodac realia francuskie: puissance souscrite w kVA (typowo 6 lub 9 kVA, czesto 3 kVA w starszych mieszkaniach) twardo ogranicza moc ladowania z nadwyzki, a przekroczenie wybija disjoncteur. Wymienic prise renforcee Green'Up jako tanie wejscie oraz bornes obecne we Francji: Wallbox, Zaptec, Easee, Schneider EVlink, Hager witty, Legrand."
+    },
+    {
+      "translationKey": "heat-pump",
+      "enSlug": "heat-pump-solar-timing",
+      "slug": "pompe-a-chaleur-et-photovoltaique",
+      "title": "Pompe à chaleur et photovoltaïque : synchroniser les deux",
+      "marketNotes": "ADAPTACJA — WYSOKI PRIORYTET DLA FR. Francja to najwiekszy rynek pomp ciepla w Europie, a ogrzewanie elektryczne dominuje w istotnej czesci zasobu mieszkaniowego, wiec ten post ma tu duzo wieksza wage niz w EN. Dodac watek PAC air/eau z ballon tampon oraz PAC air/air uzywanej latem do klimatyzacji (Sud, vallee du Rhone). Powiazac z HP/HC i z Tempo — w dni rouge sterowanie PAC pod produkcje ma najwieksza wartosc."
+    },
+    {
+      "translationKey": "winter",
+      "enSlug": "solar-panels-winter-output",
+      "slug": "production-photovoltaique-en-hiver",
+      "title": "Le photovoltaïque en hiver : combien produit-il vraiment ?",
+      "marketNotes": "ADAPTACJA LICZBOWA — liczby EN sa dla Europy srodkowo-polnocnej i zanizaja poludnie Francji. Rozbic na Nord/Hauts-de-France/Bretagne (najgorszy przypadek, grises et couvertes) vs PACA/Occitanie/Corse. Zachowac realne dane pomiarowe z instalacji 5,2 kWc (listopad ~79 kWh, grudzien ~32 kWh, luty ~100 kWh) — to twarde liczby z pomiaru, ale JAWNIE zaznaczyc szerokosc geograficzna, do ktorej sie odnosza, i podac obok orientacyjny mnoznik dla Midi. Watki sniegowe zredukowac do Alp, Jury, Massif central i Pirenejow."
+    },
+    {
+      "translationKey": "dynamic-tariff",
+      "enSlug": "dynamic-tariff-with-solar",
+      "slug": "tarif-dynamique-et-photovoltaique",
+      "title": "Tarif dynamique et photovoltaïque : est-ce rentable ?",
+      "marketNotes": "MOCNA ADAPTACJA — najbardziej brytyjsko-australijski post w zestawie. Linia 13: 'Tibber and Octopus in Europe, Amber in Australia'; linia 29: caly akapit o australijskim ekosystemie Amber; linia 38: 'fixed feed-in or wholesale'. Dla FR: oferty indeksowane na spot EPEX SPOT (Elmy, Octopus Energy France, OhmEnergie) obok trzech opcji regulowanych — Base, HP/HC i Tempo z dniami bleu/blanc/rouge. Tempo jest francuskim odpowiednikiem 'ceny sygnalowej' i warto go potraktowac jako glowny przypadek, bo ma najwiekszy realny spread. Odwolania do Amber/Australii wyciac calkowicie. Revente rozliczana jest osobno w ramach obligation d'achat i tarif dynamique jej nie dotyka — to zdanie z linii 38 trzeba napisac od nowa, a nie przetlumaczyc."
+    },
+    {
+      "translationKey": "negative-prices",
+      "enSlug": "negative-electricity-prices-solar",
+      "slug": "prix-negatifs-electricite-et-solaire",
+      "title": "Prix négatifs de l'électricité : ce que ça change en PV",
+      "marketNotes": "MOCNA ADAPTACJA — linia 33 odwoluje sie do Australii, linia 17 do 'feed-in schemes may shield small systems'. Dla FR: epizody cen ujemnych na EPEX SPOT (Francja bila rekordy liczby godzin ujemnych w latach 2024-2025 przy wysokiej produkcji PV i sztywnej bazie jadrowej), rola RTE jako operatora przesylu i CRE jako regulatora. Kluczowa roznica do wyjasnienia: mala instalacja rezydencjalna na kontrakcie obligation d'achat jest wystawiona inaczej niz instalacja rozliczana rynkowo — mechanizm zawieszania wynagrodzenia w godzinach ujemnych dotyczy progow mocy, ktore trzeba zweryfikowac na aktualnym arrete, a NIE przepisac z pamieci."
+    },
+    {
+      "translationKey": "battery",
+      "enSlug": "home-battery-charge-grid-or-solar",
+      "slug": "batterie-charger-sur-le-reseau-ou-au-soleil",
+      "title": "Batterie domestique : charger sur le réseau ou au soleil ?",
+      "marketNotes": "ADAPTACJA — cala logika EN opiera sie na tariff spread rynku brytyjskiego. Dla FR przeliczyc na spread HC vs HP, a przede wszystkim na spread Tempo (dzien rouge vs bleu), ktory jest najszerszy dostepny legalnie w kraju. Zaznaczyc dwie rzeczy nieobecne w EN: (1) niski tarif de rachat du surplus przesuwa oplacalnosc mocno w strone ladowania ze slonca, (2) rynek baterii domowych jest we Francji istotnie mniej dojrzaly niz w DE/IT wlasnie dlatego, wiec ton ma byc bardziej ostrozny niz w wersji angielskiej."
+    },
+    {
+      "translationKey": "how-solar-panels-convert-sunlight",
+      "enSlug": "how-solar-panels-convert-sunlight",
+      "slug": "comment-fonctionne-un-panneau-solaire",
+      "title": "Comment un panneau solaire transforme la lumière",
+      "marketNotes": "ZADNA — czysta fizyka. Post bez translationKey we frontmatterze: laczy sie wierszem w TRANSLATION_CLUSTERS, klucz = slug EN."
+    },
+    {
+      "translationKey": "why-panels-produce-more-in-spring",
+      "enSlug": "why-panels-produce-more-in-spring",
+      "slug": "pourquoi-plus-de-production-au-printemps",
+      "title": "Pourquoi les panneaux produisent plus au printemps",
+      "marketNotes": "LEKKA ADAPTACJA — efekt jest silniejszy na poludniu Francji niz przy szerokosciach z wersji EN (wyzsze temperatury letnie tna sprawnosc mocniej). Podmienic przyklad temperaturowy na francuski: kwiecien w Provence vs sierpien w Provence. Poza tym generyczny. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "three-numbers-pv-setup",
+      "enSlug": "three-numbers-pv-setup",
+      "slug": "trois-chiffres-installation-photovoltaique",
+      "title": "Les trois chiffres qui définissent votre installation PV",
+      "marketNotes": "ZADNA. Zadbac tylko o to, zeby jednostka mocy byla konsekwentnie zapisywana po francusku jako kWc (kilowatt-crete), nie kWp — to najczestszy blad w tlumaczonych tekstach PV na francuski i psuje wiarygodnosc od pierwszego akapitu. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "direct-vs-diffuse-sunlight",
+      "enSlug": "direct-vs-diffuse-sunlight",
+      "slug": "lumiere-directe-et-lumiere-diffuse",
+      "title": "Lumière directe et diffuse : produire même sous les nuages",
+      "marketNotes": "ZADNA — czysta fizyka. Terminologia: rayonnement direct / rayonnement diffus / rayonnement global, GHI = ensoleillement global horizontal. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "tilt-and-azimuth-explained",
+      "enSlug": "tilt-and-azimuth-explained",
+      "slug": "inclinaison-et-azimut-des-panneaux",
+      "title": "Inclinaison et azimut : leur poids réel sur la production",
+      "marketNotes": "ADAPTACJA LICZBOWA — post jest zbudowany wokol Warszawy: linia 24 'Warsaw at 52 N would suggest 52 tilt', linia 50 'At 52 N latitude (Warsaw), a panel at 35 tilt'. Przebudowac na Francje: rozpietosc od ok. 51 N (Lille) do ok. 43 N (Marseille), optimum praktyczne ok. 30-35 na polnocy i ok. 30 na poludniu. Dodac fakt czysto francuski: typowa pente de toit w budownictwie mieszkaniowym miesci sie w okolicach 30-35 stopni, wiec wiekszosc dachow jest juz blisko optimum i akapit o 'szerokim plateau' jest tu jeszcze mocniejszym argumentem niz w EN. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "physics-vs-ml-solar-forecasting",
+      "enSlug": "physics-vs-ml-solar-forecasting",
+      "slug": "prevision-solaire-physique-ou-machine-learning",
+      "title": "Prévision solaire : modèle physique ou machine learning ?",
+      "marketNotes": "ZADNA. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "where-weather-forecasts-come-from",
+      "enSlug": "where-weather-forecasts-come-from",
+      "slug": "origine-des-previsions-meteo",
+      "title": "D'où viennent les prévisions météo : les modèles NWP",
+      "marketNotes": "LEKKA ADAPTACJA — ale o duzej wartosci. Lista modeli globalnych (IFS/ECMWF, GFS, ICON) zostaje bez zmian; DOLOZYC ARPEGE, czyli francuski model globalny Meteo-France, oraz AROME jako model wysokorozdzielczy. To jedyny locale, w ktorym kraj ma zarowno wlasny model globalny, jak i wlasny mezoskalowy — mocny argument lokalny, ktorego nie ma zadna inna wersja jezykowa. Wspomniec, ze ECMWF ma siedzibe operacyjna w Bologne po przeprowadzce z Reading, ale historycznie wyrosl w Europie Zachodniej. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "why-cloud-cover-hardest-variable",
+      "enSlug": "why-cloud-cover-hardest-variable",
+      "slug": "nebulosite-variable-la-plus-difficile",
+      "title": "Pourquoi la nébulosité est la variable la plus difficile",
+      "marketNotes": "ZADNA. Terminologia: nebulosite / couverture nuageuse; unikac kalki 'couverture de nuages'. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "irradiance-journey-space-to-panel",
+      "enSlug": "irradiance-journey-space-to-panel",
+      "slug": "irradiance-du-soleil-au-panneau",
+      "title": "Le voyage du rayonnement : du Soleil à votre panneau",
+      "marketNotes": "LEKKA ADAPTACJA — linia 80 uzywa Warszawy jako przykladu obliczeniowego; podmienic na miasto francuskie (Lyon jako srodek kraju albo Toulouse). Poza tym czysta fizyka. Slug celowo nie zawiera 'jusqu-au' — elizja rozwiazana przez przeformulowanie, zgodnie z punktem 3 konwencji. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "transposition-models",
+      "enSlug": "transposition-models",
+      "slug": "modeles-de-transposition",
+      "title": "Modèles de transposition : l'irradiance sur plan incliné",
+      "marketNotes": "LEKKA ADAPTACJA — linia 74 uzywa Warszawy w przykladzie; podmienic na miasto francuskie. Terminologia: 'plan incline' (POA), modele Perez, Hay-Davies, Klucher, Reindl zostaja z nazwami wlasnymi. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "nowcasting-vs-day-ahead",
+      "enSlug": "nowcasting-vs-day-ahead",
+      "slug": "nowcasting-day-ahead-et-semaine",
+      "title": "Nowcasting, day-ahead, semaine : la précision par horizon",
+      "marketNotes": "ZADNA. 'Nowcasting' i 'day-ahead' zostaja jako terminy branzowe (uzywane po francusku bez tlumaczenia), ale przy pierwszym wystapieniu dac glose: prevision immediate / prevision a J+1. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "why-no-training-data-needed",
+      "enSlug": "why-no-training-data-needed",
+      "slug": "prevision-sans-historique-de-production",
+      "title": "Une installation neuve n'a pas besoin d'historique",
+      "marketNotes": "ZADNA. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "why-solar-panels-produce-less-in-heat",
+      "enSlug": "why-solar-panels-produce-less-in-heat",
+      "slug": "panneaux-produisent-moins-avec-la-chaleur",
+      "title": "Pourquoi les panneaux produisent moins quand il fait chaud",
+      "marketNotes": "LEKKA ADAPTACJA, WYSOKI PRIORYTET DLA FR — fizyka generyczna, ale przyklady przeliczyc na 35-40 C typowe dla Occitanie, PACA i doliny Rodanu podczas fal upalow (canicules), ktore we Francji sa tematem medialnym co lato. Dodac watek toitures sombres i braku wentylacji pod modulami w integracji dachowej (IAB), bardzo czestej we Francji ze wzgledu na wymogi urbanistyczne — to podnosi temperature ogniw bardziej niz montaz nadachowy i w wersji EN nie istnieje. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "summer-solar-surplus-and-curtailment",
+      "enSlug": "summer-solar-surplus-and-curtailment",
+      "slug": "surplus-estival-et-ecretement",
+      "title": "Trop de soleil ? Surplus d'été, prix négatifs, écrêtement",
+      "marketNotes": "ADAPTACJA — mechanizm cen ujemnych i ograniczania produkcji opisac przez EPEX SPOT i RTE zamiast rynkow anglosaskich. Terminologia: 'ecretement' to wlasciwe francuskie slowo na curtailment po stronie instalacji, 'effacement' oznacza co innego (redukcja poboru) i pomylka jest tu latwa. Wartosc nadwyzki liczyc po tarif de rachat, nie po export tariff. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "same-system-different-cities-europe",
+      "enSlug": "same-system-different-cities-europe",
+      "slug": "meme-installation-villes-differentes",
+      "title": "Même installation, villes différentes : Lille, Lyon, Nice",
+      "marketNotes": "MOCNA ADAPTACJA GEOGRAFICZNA — to nie tlumaczenie, tylko przepisanie z nowymi danymi. Post jest zbudowany wokol Warszawy, Madrytu, Berlina i Amsterdamu, ktore wystepuja w liniach 3, 12, 15, 19, 23, 27 i 31, w tym w tabeli i w podpisach wykresu. Dla FR przebudowac na os krajowa Lille - Lyon - Nice (opcjonalnie Brest jako przypadek oceaniczny i Ajaccio jako maksimum), z rozpietoscia rocznego uzysku orientacyjnie od ok. 950-1050 kWh/kWc na polnocy do ok. 1350-1500 kWh/kWc na wybrzezu srodziemnomorskim. Podmienic takze zrodlowe wykresy/obrazki, jesli zawieraja nazwy miast. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "why-regional-weather-models-matter",
+      "enSlug": "why-regional-weather-models-matter",
+      "slug": "pourquoi-les-modeles-meteo-regionaux",
+      "title": "Pourquoi un modèle météo global ne suffit pas en solaire",
+      "marketNotes": "ADAPTACJA GEOGRAFICZNA — linia 23 wymienia UKV Met Office oraz ACCESS australijskiego Bureau; oba wyciac. AROME 1,3 km JUZ jest w tekscie wymienione jako francuskie — wyeksponowac je jako watek glowny zamiast wzmianki na marginesie, dolozyc AROME-PI do nowcastingu i ARPEGE. Przyklady terenowe przepisac na francuskie: mistral i tramontane rozwiewajace zachmurzenie w dolinie Rodanu i w Langwedocji, brise de mer na Atlantyku, brouillards de vallee w Alpach i Jurze, kontrast Bretagne vs Provence. To jeden z najlepiej lokalizowalnych postow w calym zestawie. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "coastal-vs-inland-solar-microclimate",
+      "enSlug": "coastal-vs-inland-solar-microclimate",
+      "slug": "littoral-ou-interieur-le-microclimat",
+      "title": "Littoral ou intérieur : le microclimat change tout",
+      "marketNotes": "ADAPTACJA GEOGRAFICZNA — post nie ma twardych nazw miast, wiec jest latwy do adaptacji, ale ogromnie zyskuje na przykladach francuskich: kontrast wybrzeza atlantyckiego (Bretagne, Vendee) ze srodziemnomorskim (Cote d'Azur, Corse), brise thermique, brouillards cotiers, wplyw mistralu na przejrzystosc powietrza, doliny alpejskie z inwersja. Francja jest podrecznikowym przypadkiem tego tematu, bo ma trzy fasady morskie i gory. Bez klucza we frontmatterze."
+    },
+    {
+      "translationKey": "saharan-dust-southern-europe-solar",
+      "enSlug": "saharan-dust-southern-europe-solar",
+      "slug": "sable-du-sahara-et-production-solaire",
+      "title": "Quand le sable du Sahara voile vos panneaux solaires",
+      "marketNotes": "ADAPTACJA — WYSOKI PRIORYTET DLA FR. W EN to temat 'Poludniowa Europa' z porownaniem do UK i Skandynawii; dla Francji zjawisko jest regularne i szeroko relacjonowane w mediach (epizody 'sable du Sahara' nad Pirenejami, Alpami i cala polowa poludniowa, z pomaranczowym sniegiem i osadem na samochodach). Przeramowac na Francje, wyjasnic roznice miedzy epizodem w atmosferze (spadek DNI, wzrost udzialu rozproszonego) a osadem na modulach, i dodac akapit o czyszczeniu (nettoyage) po epizodzie, ktorego wersja EN nie ma. Bez klucza we frontmatterze."
+    }
+  ],
+  "qa": [
+    {
+      "enSlug": "why-is-solar-output-flat-at-midday",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "production-solaire-plafonnee-a-midi",
+      "title": "Pourquoi ma production plafonne-t-elle à midi ?"
+    },
+    {
+      "enSlug": "why-does-my-inverter-shut-down-on-sunny-days",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "onduleur-qui-se-coupe-en-plein-soleil",
+      "title": "Pourquoi mon onduleur se coupe-t-il en plein soleil ?"
+    },
+    {
+      "enSlug": "inverter-smaller-than-panels-is-that-wrong",
+      "category": "k1",
+      "action": "translate",
+      "slug": "onduleur-plus-petit-que-les-panneaux",
+      "title": "Mon onduleur est plus petit que mes panneaux : erreur ?"
+    },
+    {
+      "enSlug": "volt-watt-response-what-is-it-should-i-enable-it",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "reglage-volt-watt-faut-il-activer",
+      "title": "Le réglage volt-watt (P/U) : faut-il l'activer ?"
+    },
+    {
+      "enSlug": "grid-voltage-over-253v-how-to-report",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "tension-au-dessus-de-253-v-que-faire",
+      "title": "Tension au-dessus de 253 V : comment la signaler ?"
+    },
+    {
+      "enSlug": "how-many-kwh-per-day-should-my-solar-produce",
+      "category": "k2",
+      "action": "adapt",
+      "slug": "combien-de-kwh-par-jour-produire",
+      "title": "Combien de kWh par jour doit produire mon installation ?"
+    },
+    {
+      "enSlug": "how-to-check-solar-system-is-working-properly",
+      "category": "k2",
+      "action": "translate",
+      "slug": "verifier-que-son-installation-fonctionne",
+      "title": "Comment vérifier que mon installation fonctionne bien ?"
+    },
+    {
+      "enSlug": "why-do-panels-never-reach-rated-power",
+      "category": "k2",
+      "action": "translate",
+      "slug": "puissance-nominale-jamais-atteinte",
+      "title": "Pourquoi mes panneaux n'atteignent jamais leur puissance ?"
+    },
+    {
+      "enSlug": "east-west-or-flat-roof-panels-worth-it",
+      "category": "k2",
+      "action": "adapt",
+      "slug": "panneaux-est-ouest-ou-toit-plat",
+      "title": "Est-ouest ou toit plat : est-ce que ça vaut le coup ?"
+    },
+    {
+      "enSlug": "add-more-panels-or-buy-a-battery",
+      "category": "k3",
+      "action": "adapt",
+      "slug": "ajouter-des-panneaux-ou-une-batterie",
+      "title": "Ajouter des panneaux ou acheter une batterie ?"
+    },
+    {
+      "enSlug": "charge-battery-overnight-or-leave-room-for-solar",
+      "category": "k3",
+      "action": "adapt",
+      "slug": "charger-la-batterie-en-heures-creuses",
+      "title": "Batterie : heures creuses la nuit ou soleil du jour ?"
+    },
+    {
+      "enSlug": "what-battery-size-do-i-need",
+      "category": "k3",
+      "action": "adapt",
+      "slug": "quelle-capacite-de-batterie-choisir",
+      "title": "Quelle capacité de batterie pour mon installation ?"
+    },
+    {
+      "enSlug": "why-is-my-battery-always-full",
+      "category": "k3",
+      "action": "translate",
+      "slug": "batterie-toujours-pleine-pourquoi",
+      "title": "Pourquoi ma batterie reste-t-elle toujours pleine ?"
+    },
+    {
+      "enSlug": "best-electricity-tariff-with-solar-and-battery",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "quel-contrat-avec-solaire-et-batterie",
+      "title": "Quel contrat d'électricité avec solaire et batterie ?"
+    },
+    {
+      "enSlug": "buy-cheap-overnight-sell-in-the-day-worth-it",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "acheter-la-nuit-et-revendre-le-jour",
+      "title": "Acheter la nuit et revendre le jour, ça vaut le coup ?"
+    },
+    {
+      "enSlug": "is-a-dynamic-tariff-worth-it-without-a-battery",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "tarif-dynamique-sans-batterie",
+      "title": "Un tarif indexé sans batterie, est-ce intéressant ?"
+    },
+    {
+      "enSlug": "why-is-my-bill-high-despite-solar",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "facture-elevee-malgre-les-panneaux",
+      "title": "Pourquoi ma facture reste élevée malgré le solaire ?"
+    },
+    {
+      "enSlug": "add-solar-forecast-to-home-assistant-energy-dashboard",
+      "category": "k5",
+      "action": "translate",
+      "slug": "prevision-solaire-dans-energy-dashboard",
+      "title": "Ajouter la prévision solaire à l'Energy Dashboard HA"
+    },
+    {
+      "enSlug": "solar-self-consumption-automations-home-assistant",
+      "category": "k5",
+      "action": "translate",
+      "slug": "automatisations-autoconsommation-home-assistant",
+      "title": "Automatiser l'autoconsommation dans Home Assistant"
+    },
+    {
+      "enSlug": "heat-water-automatically-with-solar-surplus",
+      "category": "k5",
+      "action": "adapt",
+      "slug": "chauffer-le-ballon-avec-le-surplus",
+      "title": "Chauffer le ballon d'eau chaude avec le surplus solaire"
+    },
+    {
+      "enSlug": "which-ev-charger-works-with-home-assistant",
+      "category": "k5",
+      "action": "adapt",
+      "slug": "quelle-borne-de-recharge-avec-home-assistant",
+      "title": "Quelle borne de recharge s'intègre à Home Assistant ?"
+    },
+    {
+      "enSlug": "which-export-tariff-should-i-choose",
+      "category": "k6",
+      "action": "replace",
+      "slug": "vendre-son-surplus-ou-tout-autoconsommer",
+      "title": "Vendre son surplus à EDF OA ou tout autoconsommer ?"
+    },
+    {
+      "enSlug": "is-octopus-agile-worth-it-with-solar-and-battery",
+      "category": "k6",
+      "action": "replace",
+      "slug": "combien-vaut-un-kwh-injecte",
+      "title": "Combien vaut vraiment 1 kWh injecté sur le réseau ?"
+    },
+    {
+      "enSlug": "do-i-need-a-battery-or-are-panels-enough",
+      "category": "k6",
+      "action": "replace",
+      "slug": "prime-autoconsommation-qui-y-a-droit",
+      "title": "La prime à l'autoconsommation : qui y a droit et combien ?"
+    }
+  ]
+}

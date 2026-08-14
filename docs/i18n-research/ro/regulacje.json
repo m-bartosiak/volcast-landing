@@ -1,0 +1,539 @@
+{
+  "claims": [
+    {
+      "id": "RO-01",
+      "claim": "Ustawa nr 160/2026 nowelizujaca Legea energiei electrice si a gazelor naturale nr. 123/2012 zostala opublikowana w Monitorul Oficial, Partea I, nr. 603 z 23.07.2026 i weszla w zycie 26.07.2026. To jest obecnie obowiazujacy akt ramowy dla prosumentow w Rumunii.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+        "https://www.avocatnet.ro/articol_70536/Legea-energiei-modificat%C4%83-oficial-Ce-schimb%C4%83ri-au-fost-aduse-pentru-prosumatori.html",
+        "https://bpv-grigorescu.com/ro/noutati-si-publicatii/publicatii/modificari-ale-cadrului-legal-privind-prosumatorii"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "high",
+      "usedIn": "1. Status prosumatora / 2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-02",
+      "claim": "Prog mocy dla statusu prosumenta (prawo sprzedazy energii do dostawcy) wynosi maksymalnie 400 kW mocy zainstalowanej na loc de consum (punkt poboru). Ten prog obowiazuje niezmiennie i jest potwierdzony zarowno w art. 73^1 Legii 123/2012, jak i w Ordinul ANRE nr. 19/2022 (procedura przylaczenia) oraz na oficjalnej stronie ANRE 'Cum devin prosumator'.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/",
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Status prosumatora"
+    },
+    {
+      "id": "RO-03",
+      "claim": "NAJWAZNIEJSZE: compensare cantitativa (net metering ilosciowy 1:1) NADAL OBOWIAZUJE w 2026 dla instalacji prosumenckich do 200 kW na punkt poboru, i zgodnie z Legea 160/2026 ma obowiazywac do 31 grudnia 2030 r. Po tej dacie prosumenci <=200 kW przejda na zasady jak dla 200-400 kW (rozliczenie wartosciowe po cenie PZU).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+        "https://agerpres.ro/ots/compensarea-energiei-pentru-prosumatori-se-modifica-ce-urmeaza-pana-in-2030--660492",
+        "https://bpv-grigorescu.com/ro/noutati-si-publicatii/publicatii/modificari-ale-cadrului-legal-privind-prosumatorii"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "high",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-04",
+      "claim": "Dla instalacji prosumenckich w przedziale 200-400 kW compensare cantitativa NIE ma juz zastosowania. Legea 160/2026 nakazuje dostawcy (a) kupic energie wyprodukowana i wprowadzona po cenie rownej sredniej wazonej cenie na PZU (Piata pentru Ziua Urmatoare, rynek dnia nastepnego) za miesiac, w ktorym energia zostala wyprodukowana, oraz (b) dokonac rozliczenia FINANSOWEGO (regularizare financiara) miedzy energia oddana a pobrana. To jest rozliczenie wartosciowe, nie ilosciowe.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+        "https://instalatori-fotovoltaice.ro/ghid/legea-prosumatorilor-2026-firma-plata-lunara-dezechilibre",
+        "https://www.profit.ro/perspective/schimbari-legislative-pentru-firme/vin-schimbari-pentru-prosumatori-noua-lege-intra-curand-in-vigoare-care-sunt-principalele-modificari-22524771"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "high",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-05",
+      "claim": "Legea 160/2026 wprowadza trojstopniowa strukture progow mocy dla prosumentow: do 27 kW (osoby fizyczne, rozszerzone prawa - m.in. mozliwosc przenoszenia nadwyzki na inne punkty poboru i zaliczania jej na poczet rachunkow za GAZ ZIEMNY), 27-200 kW (compensare cantitativa), 200-400 kW (rozliczenie finansowe po cenie PZU).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+        "https://www.profit.ro/perspective/schimbari-legislative-pentru-firme/vin-schimbari-pentru-prosumatori-noua-lege-a-fost-promulgata-de-presedintele-nicusor-dan-care-sunt-principalele-modificari-22530781"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "1. Status prosumatora / 2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-06",
+      "claim": "Legea 160/2026 wprowadza rozliczenie MIESIECZNE (facturare/decontare lunara) zamiast dotychczasowego dluzszego cyklu, oraz nakazuje dostawcom wyodrebnianie na fakturze osobnych pozycji dla komponentu dostawy i dla podatkow/taryf.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+        "https://www.puterea.ro/legea-160-2026-prosumatori-compensare-energie/"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-07",
+      "claim": "Art. III Legii 160/2026 stanowi, ze zmiany stosuja sie do umow sprzedazy/dostawy energii JUZ TRWAJACYCH w dniu 26.07.2026, bez potrzeby zawierania aneksu ani nowej umowy. Istniejacy prosumenci przechodza na nowy rezim automatycznie.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+        "https://www.fiscalitatea.ro/prosumatori-de-la-26-iulie-2026-un-nou-cadru-legal-24948/"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "1. Status prosumatora / 2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-08",
+      "claim": "KRYTYCZNA LUKA WDROZENIOWA: Legea 160/2026 zobowiazuje prezesa ANRE do zmiany Metodologii zatwierdzonej Ordinul ANRE nr. 15/2022 w ciagu 60 dni od wejscia ustawy w zycie, tj. ok. 24 wrzesnia 2026. Na dzien 14.08.2026 strona ANRE z dokumentami do konsultacji dla prosumentow NIE zawiera zadnego projektu z 2026 r. (ostatnie projekty dot. Ordinul 15/2022 pochodza z 19.09.2023 i 20.04.2023). Do czasu publikacji zmienionej metodologii rozliczenia praktyczne odbywaja sie wg starych zasad.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/category/documente-de-discutie/energie-electrica/prosumatori/",
+        "https://instalatori-fotovoltaice.ro/ghid/legea-160-2026-prosumatori-compensare-lunara-gaz-surplus"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-09",
+      "claim": "Obowiazujaca (przed-160/2026) metodologia to Ordinul ANRE nr. 15/2022 z 23.02.2022, zmieniony Ordinul 94/2022 i Ordinul 95/2022 - 'Metodologia de stabilire a regulilor de comercializare a energiei electrice produse in centrale electrice din surse regenerabile cu putere electrica instalata de cel mult 400 kW pe loc de consum apartinand prosumatorilor'. Jest ona wciaz aktem wykonawczym wskazywanym przez ANRE.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-10",
+      "claim": "Mechanizm zakupu nadwyzki wg Ordinul ANRE 15/2022 art. 11 ust. (3) i (4), stosowany w praktyce przez dostawcow: dostawca kupuje energie prosumenta po cenie IDENTYCZNEJ z cena energii czynnej (bez TG) pobieranej z sieci, POMNIEJSZONEJ o szacowana cene niezbilansowania i o marze (komponent) dostawy. Potwierdzone wprost w oficjalnej ofercie Electrica Furnizare dla prosumentow-gospodarstw domowych.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-11",
+      "claim": "W ofercie Electrica Furnizare (Serviciu Universal, klienci domowi - prosumenci) obowiazujacej 01.04.2026-30.06.2026: cena energii czynnej bez TG = 0,75570 lei/kWh bez VAT; marza dostawy = 0,27903 lei/kWh; szacowany koszt niezbilansowania = 0,02200 lei/kWh; TG (komponent wprowadzania do sieci) = 0,00363 lei/kWh. Oznacza to, ze prosument otrzymuje za nadwyzke ok. 0,7557 - 0,022 - 0,27903 = ok. 0,4547 lei/kWh netto - istotnie mniej niz placi za pobor.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "2. Rozliczenie energii oddanej / 4. Ceny energii"
+    },
+    {
+      "id": "RO-12",
+      "claim": "Wedlug oficjalnych danych ANRE (Directia Promovare Surse Regenerabile si Cogenerare) na dzien 30.06.2026 w Rumunii bylo 359.378 prosumentow przylaczonych do sieci OSD, o lacznej mocy zainstalowanej 4.019,17 MW. Podzial: osoby fizyczne 324.535 prosumentow / 2.067,47 MW; osoby prawne 34.843 / 1.951,69 MW.",
+      "asOfDate": "2026-06-30",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2026/08/Situatie-prosumatori_iunie_2026.pdf",
+        "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Status prosumatora"
+    },
+    {
+      "id": "RO-13",
+      "claim": "Wedlug tych samych danych ANRE na 30.06.2026, 127.084 prosumentow posiada zainstalowane baterie magazynujace (123.231 osob fizycznych + 3.853 osob prawnych) - czyli ok. 35% wszystkich prosumentow w Rumunii ma juz magazyn energii.",
+      "asOfDate": "2026-06-30",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2026/08/Situatie-prosumatori_iunie_2026.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Status prosumatora / 3. Casa Verde"
+    },
+    {
+      "id": "RO-14",
+      "claim": "Obowiazek monitoringu: art. 73^1 ust. (10) Legii 123/2012 (wprowadzony przez OUG nr 143/2021) zobowiazuje ANRE do monitorowania rozwoju i funkcjonowania prosumentow oraz do publikowania corocznie, do 1 czerwca, raportu o prosumentach na wlasnej stronie. Raporty za lata 2021-2025 sa dostepne.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2026/08/Situatie-prosumatori_iunie_2026.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Status prosumatora"
+    },
+    {
+      "id": "RO-15",
+      "claim": "Casa Verde Fotovoltaice: w budzecie AFM na 2026 r. NIE przewidziano srodkow na nowe wnioski o dofinansowanie nowych instalacji fotowoltaicznych. Ok. 400 mln lei przekierowano na dedykowany program magazynow energii ('Casa Verde Baterii'). Decyzja rzadu o budzecie AFM na 2026 zapadla 21.05.2026 (powiazana z HG 398/2026).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://newsweek.ro/economie/cand-ar-putea-demara-proiectul-casa-verde-fotovoltaice-in-2026-afm-bugetul-e-in-elaborare",
+        "https://casa-verde-fotovoltaice.ro/blog/cand-incepe-casa-verde-2026/",
+        "https://www.ppcenergy.ro/prosumatori/clienti-rezidentiali/program-afm/"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "3. Casa Verde Fotovoltaice"
+    },
+    {
+      "id": "RO-16",
+      "claim": "Na dzien 14.08.2026 nabor wnioskow w Casa Verde (ani fotowoltaika, ani baterie) NIE JEST OTWARTY. Ghid de finantare na 2026 nie zostal opublikowany przez AFM; bez opublikowanego przewodnika sesja nie moze ruszyc. Projekt przewodnika trafil do konsultacji publicznych 09.05.2026, konsultacje zakonczyly sie 08.06.2026. Szacowane otwarcie: wrzesien-pazdziernik 2026 (data nieoficjalna).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://casa-verde-fotovoltaice.ro/blog/cand-incepe-casa-verde-2026/",
+        "https://baterie-casa-verde.ro/blog/calendar-casa-verde-baterii-2026/",
+        "https://newsweek.ro/economie/cand-ar-putea-demara-proiectul-casa-verde-fotovoltaice-in-2026-afm-bugetul-e-in-elaborare"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "3. Casa Verde Fotovoltaice"
+    },
+    {
+      "id": "RO-17",
+      "claim": "Kwota dofinansowania w ostatniej zrealizowanej sesji Casa Verde Fotovoltaice wynosila 20.000 lei na beneficjenta (voucher). Dla planowanego programu bateryjnego szacuje sie 8.000-15.000 lei w zaleznosci od pojemnosci, ale kwota NIE jest potwierdzona urzedowo do czasu publikacji ghidului.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://novasol.ro/afm-panouri-fotovoltaice/",
+        "https://instalatori-fotovoltaice.ro/ghid/casa-verde-fotovoltaice-2026"
+      ],
+      "sourceTier": "tertiary",
+      "confidence": "low",
+      "usedIn": "3. Casa Verde Fotovoltaice"
+    },
+    {
+      "id": "RO-18",
+      "claim": "Plafonowanie cen energii ELEKTRYCZNEJ dla gospodarstw domowych WYGASLO 30.06.2025 i NIE zostalo przywrocone. Podstawa: OUG nr. 6/2025 z 27.02.2025, ktora objela klientow koncowych rynku energii elektrycznej wylacznie w okresie 1 kwietnia 2025 - 30 czerwca 2025. Od 1 lipca 2025 rynek dostaw energii elektrycznej dla odbiorcow domowych jest w pelni zliberalizowany.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://legislatie.just.ro/public/DetaliiDocument/295106",
+        "https://www.electricafurnizare.ro/cms/comunicate-de-presa/2025/totul-despre-eliminarea-preturilor-plafonate-la-energie/",
+        "https://www.eon.ro/plafonare-pret"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Ceny energii dla gospodarstw domowych"
+    },
+    {
+      "id": "RO-19",
+      "claim": "W ostatnim okresie plafonowania (1.04-30.06.2025) cena koncowa dla gospodarstw domowych o zuzyciu 0-100 kWh/miesiac wynosila maksymalnie 0,68 lei/kWh z VAT; dla srednich zuzyc (100-255 kWh/mies.) prog wynosil ok. 0,80 lei/kWh. Po liberalizacji ceny rynkowe wzrosly do ok. 1,20-1,50 lei/kWh z VAT.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.eon.ro/plafonare-pret",
+        "https://www.ppcenergy.ro/energie-electrica/plafonare/",
+        "https://romania.europalibera.org/a/vara-liberalizarii-noastre-cu-cat-cresc-facturile-dupa-1-iulie-/33432924.html"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "4. Ceny energii dla gospodarstw domowych"
+    },
+    {
+      "id": "RO-20",
+      "claim": "Twarda dana cenowa z pierwotnego zrodla: w ofercie Serviciu Universal Electrica Furnizare dla klientow domowych na 01.04-30.06.2026 koncowa cena kontraktowa z VAT wynosi 1,48021-1,56554 lei/kWh w zaleznosci od operatora sieci (najtaniej Retele Electrice Romania 1,48021, najdrozej Delgaz Grid 1,56554). Koszt informacyjny faktury za 100 kWh/mies. = 148,02-156,55 lei z VAT. Stawka VAT = 21%.",
+      "asOfDate": "2026-06-30",
+      "sources": [
+        "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "4. Ceny energii dla gospodarstw domowych"
+    },
+    {
+      "id": "RO-21",
+      "claim": "Struktura ceny koncowej dla gospodarstwa domowego (Electrica SU, Q2 2026, lei/kWh bez VAT): komponent zakupu energii z TG 0,48030 + komponent dostawy 0,27903 = cena energii czynnej 0,75933; taryfa przesylowa TL (pobor) 0,03645; taryfa uslug systemowych 0,01470; taryfa dystrybucyjna niskiego napiecia 0,31739-0,38791 (roznica per OSD); kogeneracja wysokosprawna 0,000144; CfD 0,07402; certyfikaty zielone 0,01360; akcyza 0,00768.",
+      "asOfDate": "2026-06-30",
+      "sources": [
+        "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "4. Ceny energii dla gospodarstw domowych"
+    },
+    {
+      "id": "RO-22",
+      "claim": "Wsparcie dla gospodarstw domowych po wygasnieciu plafonowania energii elektrycznej ma charakter adresowany, nie powszechny: dla odbiorcow wrazliwych utrzymano pomoc na ogrzewanie i wsparcie miesieczne (rzedu 50 lei/mies. dla osob o niskich dochodach), a nie plafonowanie ceny.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.eon.ro/plafonare-pret",
+        "https://romania.europalibera.org/a/vara-liberalizarii-noastre-cu-cat-cresc-facturile-dupa-1-iulie-/33432924.html"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "4. Ceny energii dla gospodarstw domowych"
+    },
+    {
+      "id": "RO-23",
+      "claim": "Plafonowanie GAZU ZIEMNEGO to osobny, wciaz zywy watek: schemat z OUG 6/2025 dla gazu obowiazywal do 31.03.2026, a od 1.04.2026 weszla OUG nr. 12/2026 obejmujaca zuzycie gazu w okresie 1.04.2026 - 31.03.2027. Nie dotyczy energii elektrycznej.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://legislatie.just.ro/public/DetaliiDocument/295106",
+        "https://www.engie.ro/plafonare/",
+        "https://www.avocatnet.ro/articol_69025/Schema-de-plafonare-pentru-persoanele-fizice-Facturi-mai-mici-pan%C4%83-in-martie-doar-pentru-gaze-naturale.html"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "4. Ceny energii dla gospodarstw domowych"
+    },
+    {
+      "id": "RO-24",
+      "claim": "Taryfy strefowe dla gospodarstw domowych ISTNIEJA w Rumunii, ale jako produkt komercyjny dostawcy na rynku konkurencyjnym, a NIE jako powszechnie obowiazujaca taryfa regulowana typu francuskiego heures creuses. Komparator ofert ANRE jawnie rozroznia dwa warianty ceny: 'nediferentiat' (ta sama cena w kazdej godzinie) oraz 'diferentiat pe zone orare' (cena zalezna od godziny).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2025/01/Ghid-de-utilizare-al-comparatorului-de-preturi-pentru-ENERGIE-ELECTRICA.pdf",
+        "https://arhiva.anre.ro/ro/info-consumatori/comparator-de-tarife"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "5. Taryfy strefowe"
+    },
+    {
+      "id": "RO-25",
+      "claim": "Standardowy podzial dobowy w ofertach dwustrefowych zi/noapte to dzien 07:00-22:00 (drozej) i noc 22:00-07:00 (taniej), z roznica cen rzedu 30-50%. Warunkiem skorzystania jest posiadanie licznika inteligentnego. Prog oplacalnosci: taryfa strefowa oplaca sie dopiero gdy ponad ok. 40% miesiecznego zuzycia przypada na 22:00-07:00.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://economisi.ro/energie/pretul-energiei/tarife-energie-electrica",
+        "https://economisi.ro/energie/pretul-energiei/pret-energie-electrica"
+      ],
+      "sourceTier": "tertiary",
+      "confidence": "low",
+      "usedIn": "5. Taryfy strefowe"
+    },
+    {
+      "id": "RO-26",
+      "claim": "Istnieje takze taryfa DYNAMICZNA dla gospodarstw domowych: 'Electrica Dinamic' - produkt dla klientow domowych na rynku konkurencyjnym posiadajacych licznik inteligentny zintegrowany z systemem SMI w danym punkcie poboru. To odpowiednik cen godzinowych powiazanych z rynkiem, nie tylko dwustrefowosci.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.electricafurnizare.ro/preturi-si-tarife/",
+        "https://economisi.ro/energie/furnizori/electrica/pret"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "5. Taryfy strefowe"
+    },
+    {
+      "id": "RO-27",
+      "claim": "Procedura przylaczenia instalacji prosumenckiej reguluje Ordinul ANRE nr. 19/2022 (opublikowany w MO 222/07.03.2022), z pozniejszymi zmianami m.in. Ordinul 104/2022, 133/2022 i 4/2023. Obejmuje osoby fizyczne i prawne przylaczone do sieci niskiego napiecia posiadajace instalacje OZE do 400 kW na punkt poboru, a takze beneficjentow programow finansowania (np. Casa Verde), dla ktorych OSD wydaje ATR PRZED wykonaniem instalacji.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-28",
+      "claim": "Terminy ustawowe w procedurze przylaczenia prosumenta (Ordinul ANRE 19/2022): OSD weryfikuje wniosek i dokumenty w 5 dni roboczych od zlozenia; ustala rozwiazanie przylaczeniowe i wydaje ATR (aviz tehnic de racordare) w max. 15 dni roboczych od zlozenia kompletnej dokumentacji; przesyla projekt umowy przylaczeniowej w max. 3 dni robocze od rejestracji wniosku o jej zawarcie.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-29",
+      "claim": "Certificat de racordare (w ktorym odnotowany jest status prosumenta) wydawany jest przez OSD w max. 3 dni robocze od otrzymania protokolu odbioru (proces-verbal de receptie) uruchomienia instalacji uzytkowej. Nastepnie: montaz licznika w punkcie rozgraniczenia w max. 5 dni roboczych od zawarcia umowy sprzedazy, oraz ostateczne zalaczenie napiecia w max. 2 dni robocze od wydania certyfikatu, warunkowane zawarciem umowy dostawy i zamontowaniem licznika.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-30",
+      "claim": "Odbior i uruchomienie instalacji przylaczeniowej: max. 18 dni kalendarzowych od zgloszenia zakonczenia robot, w ramach terminu max. 90 dni kalendarzowych od uzyskania zgody/pozwolenia na przylacze (dla niskiego napiecia). Zalaczenie napiecia dla prob instalacji uzytkowej: max. 5 dni roboczych od uruchomienia instalacji przylaczeniowej.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-31",
+      "claim": "Koszty: prosumentowi bedacemu klientem domowym (i podmiotom zrownanym) przylaczonemu do sieci niskiego napiecia przysluguje ZWROT kosztow projektowania i wykonania przylacza (bransament) do wysokosci sredniej wartosci przylacza, zgodnie z Ordinul ANRE nr. 18/2022, a takze zwrot kosztu ukladu pomiarowego / bloku pomiarowo-zabezpieczeniowego wraz z licznikiem, jesli musial go nabyc samodzielnie.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-32",
+      "claim": "Sciezka uproszczona: jesli instalacja OZE nie wymaga modyfikacji infrastruktury sieciowej, uzytkownik moze POWIADOMIC operatora dystrybucyjnego po wykonaniu instalacji, a operator aktualizuje istniejacy certificat de racordare bez wydawania nowego ATR.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-33",
+      "claim": "Pelna sciezka wg ANRE: 1) wniosek o przylaczenie do OSD, 2) otrzymanie ATR, 3) podpisanie umowy przylaczeniowej, 4) montaz instalacji przez uprawniony personel, 5) zlozenie dosar instalatie de utilizare + wniosek o proby, 6) protokol odbioru, 7) uzyskanie certificat de racordare i potwierdzenia statusu prosumenta, 8) podpisanie umowy sprzedazy energii z dostawca.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-34",
+      "claim": "ANRE zmienila 21.05.2026 (nadzwyczajne posiedzenie Comitetului de Reglementare) Regulamentul de racordare i regulamin licencyjny: gwarancje finansowe dla ATR podniesiono z 5% do 20% wartosci taryfy przylaczeniowej dla mocy ewakuacji powyzej 1 MW; terminy na uzyskanie autoryzacji: 12 miesiecy od umowy lub 18 miesiecy od wydania ATR, z jednorazowym przedluzeniem do 12 miesiecy. UWAGA: te zmiany dotycza duzych projektow, NIE instalacji domowych - komunikat ANRE nie odnosi sie do prosumentow ani malych instalacji.",
+      "asOfDate": "2026-05-21",
+      "sources": [
+        "https://anre.ro/24931-2/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. Procedura przylaczenia"
+    },
+    {
+      "id": "RO-35",
+      "claim": "Dostep do danych pomiarowych: zgodnie z Regulamentul de furnizare a energiei electrice la clientii finali (Ordinul ANRE nr. 5/2023 z 03.02.2023, MO 100/06.02.2023) dostawca ma obowiazek udostepnic klientowi na jego zadanie dane o wartosci wystawionych faktur i/lub historie zuzycia dla wlasnych punktow poboru za okres do 12 miesiecy wstecz (lub od zawarcia umowy, jesli krotszy). Klient ma prawo otrzymac te dane w sposob niedyskryminacyjny pod wzgledem kosztow, wysilku i czasu.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.premierenergy.info/wp-content/uploads/2023/02/Ordin-ANRE-5_2023.pdf",
+        "https://legislatie.just.ro/Public/DetaliiDocument/264610"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-36",
+      "claim": "Ordinul ANRE 5/2023 rozszerzyl te uprawnienia po stronie OSD: dodano obowiazek udostepniania 'istoricul de consum pe o perioada de 3 ani', obejmujacej wskazania ukladu pomiarowego wraz ze sposobem ich ustalenia (samoodczyt / estymacja / odczyt przez operatora dystrybucyjnego). Regulamin definiuje tez SMI jako 'sistem de masurare inteligenta a energiei electrice'.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.premierenergy.info/wp-content/uploads/2023/02/Ordin-ANRE-5_2023.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-37",
+      "claim": "Praktyczny dostep on-line: Distributie Energie Electrica Romania (DEER) prowadzi portal datemasura.distributie-energie.ro dla stref Transilvania Nord, Transilvania Sud i Muntenia Nord. Dostep dla odbiorcow domowych, niedomowych, producentow i PROSUMENTOW do wlasnych danych pomiarowych. DEER stwierdza wprost: 'Accesul la informatiile din baza de date este nerestrictionat, gratuit si garantat de prevederile legale'. Dostep maja tez dostawcy z wazna umowa oraz agregatorzy i inni dostawcy za zgoda klienta.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.distributie-energie.ro/date-de-masurare/",
+        "https://www.distributie-energie.ro/informatii-generale-acces-la-portal/",
+        "https://datemasura.distributie-energie.ro/date_ee/do?action=loginForm"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-38",
+      "claim": "Granularnosc danych: licznik inteligentny umozliwia dobowy zdalny odczyt krzywej obciazenia (curba de sarcina) i publikacje tych danych na portalu OSD. Dostep do krzywych obciazenia wymaga kodu POD punktu poboru ORAZ licznika inteligentnego zintegrowanego z systemem teletransmisji - sam licznik cyfrowy nie wystarczy. Retele Electrice publikuje osobna instrukcje 'Acces date de masura - contoare inteligente'.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.reteleelectrice.ro/wp-content/uploads/manual-utilizare-smart-meter.pdf",
+        "https://cooperativadeenergie.ro/procedura-accesare-curbe-de-sarcina-retele-electrice/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-39",
+      "claim": "Stopien wdrozenia licznikow inteligentnych jest wciaz czesciowy. Retele Electrice Romania planuje w 2026 zainstalowac ok. 178.000 nowych licznikow i osiagnac 67% pokrycia na koniec 2026 (lacznie 2,164 mln licznikow w Muntenia Sud, Banat i Dobrogea). Rozklad bardzo nierowny: Bukareszt ok. 53,67%, Ilfov i Giurgiu ok. 99%, Dobrogea ponad 70% we wszystkich czterech powiatach.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.focus-energetic.ro/retele-electrice-romania-accelereaza-instalarea-contoarelor-inteligente-178-000-de-dispozitive-noi-in-2026-si-un-grad-de-acoperire-de-67-la-finalul-anului-100091.html",
+        "https://focuspress.ro/retele-electrice-romania-accelereaza-instalarea-contoarelor-inteligente-178-000-de-dispozitive-noi-in-2026-si-un-grad-de-acoperire-de-67-la-finalul-anului-7c3644a3c/"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-40",
+      "claim": "Cel wdrozeniowy: zgodnie z Dyrektywa UE 2019/944 i rumunskim PNRR wszyscy odbiorcy w Rumunii maja miec licznik inteligentny do 2028 r., z celem posrednim 80% do konca 2026. ANRE zatwierdzila kalendarz wdrozenia SMI na poziomie krajowym na okres 2019-2028, w podziale na strefy koncesyjne, na podstawie art. 66 Legii 123/2012. Instalacja licznika jest bezplatna dla konsumenta (odpowiedzialnosc OSD).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.anre.ro/ro/energie-electrica/legislatie/documente-de-discutie-ee/smart-metering1395831128/propunere-de-decizie-privind-aprobarea-calendarului-de-implementare-a-sistemelor-de-masurare-inteligenta-a-energiei-electrice-la-nivel-national-perioada-2019-2028",
+        "https://arhiva.anre.ro/ro/energie-electrica/informatii-de-interes-public/info-sisteme-de-masurare-inteligenta"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-41",
+      "claim": "Dane nieuwierzytelnione (date nevalidate) z licznika inteligentnego moga byc udostepniane na zadanie odbiorcy koncowego lub innych zainteresowanych stron (wylacznie za zgoda odbiorcy) poprzez interfejs standaryzowany lub zdalny dostep - to jest podstawa prawna dla integracji zewnetrznych (np. HA, aplikacje trzecie).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://arhiva.anre.ro/ro/energie-electrica/informatii-de-interes-public/info-sisteme-de-masurare-inteligenta"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Smart meter / dostep do danych"
+    },
+    {
+      "id": "RO-42",
+      "claim": "Podstawa prawna statusu prosumenta: art. 73^1 Legii 123/2012, wprowadzony przez OUG nr. 143/2021. Prosument moze sprzedawac wyprodukowana LUB ZMAGAZYNOWANA energie elektryczna zarowno dostawcom, z ktorymi ma umowe dostawy, jak i odbiorcom przylaczonym do szyn elektrowni, zgodnie z regulacjami ANRE. Uprawnione podmioty obejmuja osoby fizyczne, prawne, instytucje publiczne, PFA, przedsiebiorstwa indywidualne i rodzinne oraz lokalne wladze publiczne.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf",
+        "https://anre.ro/wp-content/uploads/2026/08/Situatie-prosumatori_iunie_2026.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Status prosumatora"
+    },
+    {
+      "id": "RO-43",
+      "claim": "Ustawa o prosumentach byla przedmiotem kontroli Trybunalu Konstytucyjnego (CCR) - istnieje Decizia nr. 391 z 29 kwietnia 2026 opublikowana na ccr.ro w lipcu 2026, a ustawa zostala nastepnie promulgowana przez prezydenta Nicusora Dana i opublikowana jako Legea 160/2026. Doniesienia wskazuja, ze CCR uznala ustawe za zgodna z Konstytucja. Tresc decyzji nie zostala przeze mnie zweryfikowana bezposrednio (serwer zwrocil HTTP 503).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.ccr.ro/wp-content/uploads/2026/07/Decizie_391_2026.pdf",
+        "https://www.greenlead.ro/blog/legea-prosumatorilor-2026-constitutionala-ccr-tot-ce-se-schimba",
+        "https://www.profit.ro/perspective/schimbari-legislative-pentru-firme/vin-schimbari-pentru-prosumatori-noua-lege-a-fost-promulgata-de-presedintele-nicusor-dan-care-sunt-principalele-modificari-22530781"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "low",
+      "usedIn": "1. Status prosumatora / 2. Rozliczenie energii oddanej"
+    },
+    {
+      "id": "RO-44",
+      "claim": "Wazna implikacja praktyczna dla modelowania PV/rozliczen: do 31.12.2030 dla instalacji domowych (praktycznie zawsze <200 kW) opłacalnosc autokonsumpcji vs eksportu jest zblizona 1:1 w ujeciu kWh, ALE tylko do wysokosci wolumenu pobranego. NADWYZKA ponad zuzycie (excedent) jest kupowana po cenie pomniejszonej o marze i niezbilansowanie (RO-10/RO-11), czyli ok. 60% ceny energii czynnej. Autokonsumpcja pozostaje wyraznie korzystniejsza dla nadwyzek.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf",
+        "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "2. Rozliczenie energii oddanej"
+    }
+  ],
+  "unresolved": [
+    "Nie udalo sie pobrac oryginalnego tekstu Legii 160/2026 z portalu pierwotnego legislatie.just.ro (powtarzajacy sie blad 'socket hang up') ani ze skanu Monitorul Oficial nr 603/23.07.2026. Wszystkie twierdzenia o tresci ustawy (RO-01, RO-03..RO-07) opieraja sie na bazie prawnej lege5.ro (odtwarza tekst urzedowy) skorelowanej z >=3 niezaleznymi zrodlami wtornymi. Zalecenie: przed uzyciem operacyjnym zweryfikowac dokladne brzmienie art. 73^1 Legii 123/2012 w wersji skonsolidowanej.",
+    "Dokladne progi i brzmienie kategorii 27 kW / 200 kW / 400 kW w Legii 160/2026 (RO-05) - relacje miedzy progiem 27 kW a prawem do zaliczania nadwyzki na rachunki za gaz oraz przenoszenia miedzy punktami poboru wymagaja potwierdzenia w tekscie urzedowym. Zrodla wtorne roznia sie w szczegolach.",
+    "Historia progu compensare cantitativa (pytanie o zmiane 100 kW -> 200 kW): nie znalazlem zrodla pierwotnego dokumentujacego akt prawny i date podniesienia progu ze 100 kW na 200 kW. Potwierdzone jest jedynie, ze art. 73^1 zostal wprowadzony przez OUG 143/2021 oraz ze prog 200 kW obowiazuje obecnie.",
+    "Casa Verde Fotovoltaice - nie udalo sie pobrac zadnej strony afm.ro (blad TLS: 'unable to verify the first certificate') dla stron sisteme_fotovoltaice.php, sisteme_fotovoltaice_comunicate.php i sisteme_fotovoltaice_ghid_finantare.php. Twierdzenia RO-15..RO-17 opieraja sie wylacznie na zrodlach wtornych/tercjarnych. Status naboru, budzet i kwota vouchera wymagaja bezposredniego potwierdzenia na afm.ro.",
+    "HG 398/2026 (hotarare de guvern o budzecie AFM na 2026) - nie zweryfikowana w zrodle pierwotnym; wzmiankowana tylko wtornie. Nie potwierdzilem samodzielnie, ze fotowoltaika zostala usunieta z budzetu AFM na 2026 na rzecz programu bateryjnego.",
+    "Decizia CCR nr. 391/29.04.2026 (RO-43) - plik na ccr.ro zwrocil HTTP 503; nie zweryfikowalem ani sentencji, ani ktore przepisy byly kwestionowane.",
+    "Nie ustalilem, czy ANRE opublikowala juz zmieniony Ordinul 15/2022. Na 14.08.2026 strona ANRE z projektami dla prosumentow nie zawiera projektu z 2026 r., ale nie sprawdzilem calego rejestru ordinelor w portal.anre.ro/PublicLists/Ordin. Termin ustawowy to ok. 24.09.2026.",
+    "Oferta Electrica Furnizare, ktora udalo mi sie pobrac (RO-11, RO-20, RO-21), obowiazywala 01.04.2026-30.06.2026, czyli wygasla. Nie pobralem oferty na Q3 2026 (lipiec-wrzesien), ktora jest juz po wejsciu w zycie Legii 160/2026 i moze zawierac zmieniony mechanizm zakupu nadwyzki (ustawa wyklucza potracanie kosztow niezbilansowania i oplat systemowych).",
+    "Mapowanie kolumn cenowych na operatorow w RO-20/RO-21 wynika z rekonstrukcji ukladu tabeli PDF przez pdftotext -layout; kolejnosc wartosci wzgledem operatorow moze byc przestawiona. Sam zakres wartosci jest pewny, przypisanie do konkretnego OSD - nie.",
+    "Taryfy strefowe (RO-25): dokladne okna godzinowe 07:00-22:00 / 22:00-07:00 i roznica 30-50% pochodza wylacznie ze zrodel tercjarnych. Nie znalazlem ani ordinu ANRE, ani cennika dostawcy w zrodle pierwotnym, ktory definiowalby te okna. Wymaga potwierdzenia w konkretnej ofercie typu dostawcy.",
+    "Nie ustalilem, czy istnieje ustawowo gwarantowana taryfa strefowa w ramach Serviciu Universal (FUI) dla gospodarstw domowych, czy tylko na rynku konkurencyjnym. Pobrana oferta SU Electrica zawiera wylacznie cene jednostrefowa, co sugeruje brak wariantu strefowego w SU, ale nie jest to dowod.",
+    "Nie zweryfikowalem, czy Legea 160/2026 zmienia cokolwiek w progu 400 kW dla samego przylaczenia (Ordinul ANRE 19/2022) - zrodla wtorne wspominaja o 'zwiekszeniu limitow mocy dla instalacji przyznanych prosumentom', co moze oznaczac zmiane progu przylaczeniowego."
+  ]
+}

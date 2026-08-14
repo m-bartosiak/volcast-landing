@@ -60,3 +60,39 @@ zapamiętania:
 Nie ustalono m.in.: żadne włoskie źródło pierwotne nie podaje **zmierzonej** rocznej
 produkcji zestawów balkonowych (wszystkie liczby w sieci są modelowane), i nie wiadomo,
 czy `fasce` ARERA liczą się wg czasu letniego czy stałego CET. Pełna lista w `raw-luki-2.json`.
+
+---
+
+## Francuski i rumuński (2026-08-14, drugi zestaw)
+
+`fr/` i `ro/` — terminologia, mapa treści i regulacje, zebrane tym samym
+sposobem co włoski. Tytuły w obu mapach są **od razu w limicie 60 znaków**
+(zero przekroczeń na 55 stron w każdym języku).
+
+**Francja: prawo zmieniło się 5 czerwca 2026 i większość sieci o tym nie wie.**
+`arrêté` z 1 czerwca 2026 (JORF 4.06.2026) zniósł `prime à l'autoconsommation`
+i wprowadził jednolitą taryfę 1,1 c€/kWh HT, indeksowaną 2% rocznie przez 20 lat,
+bez degresji kwartalnej. Instalacje ≤ 9 kWc straciły opcję `vente en totalité`.
+
+Sceptycy obalili **7 z 10** sprawdzonych twierdzeń francuskich. To nie jest
+słabość researchu, tylko stan rynku: francuskie serwisy komercyjne (Effy,
+Hellowatt, Selectra, Hellio) przepisują od siebie nawzajem nieaktualne stawki
+i żaden nie cytuje `arrêté`. Powtarzające się błędy do unikania:
+
+- mieszanie stanu **nowych i istniejących** instalacji — umowy sprzed 5.06.2026
+  zachowują `prime` i starą, znacznie wyższą taryfę do końca 20-letniego
+  kontraktu; bez tego rozróżnienia czytelnik z istniejącą instalacją wyciągnie
+  wniosek, że stracił wsparcie,
+- „brak dotacji krajowych" — nieprawda dla hybryd PV-T, które `MaPrimeRénov'`
+  obejmuje w części termicznej,
+- `net metering` **nie istnieje we Francji** (zakazany pakietem zimowym UE);
+  tłumaczenie treści anglosaskiej bez tej uwagi wprowadza w błąd.
+
+**Rumunia:** ustawa nr 160/2026 (Monitorul Oficial nr 603 z 23.07.2026, w mocy
+od 26.07.2026) to nowy akt ramowy dla prosumentów — trzy tygodnie przed tym
+researchem. Wszystko starsze niż lipiec 2026 wymaga sprawdzenia.
+
+Zweryfikowano 10 ze 112 twierdzeń. Reszta jest oznaczona jako niezweryfikowana
+i **nie wolno jej publikować** bez sprawdzenia w źródle pierwotnym
+(Legifrance, CRE, Enedis, photovoltaique.info dla FR; ANRE, Monitorul Oficial,
+AFM dla RO).

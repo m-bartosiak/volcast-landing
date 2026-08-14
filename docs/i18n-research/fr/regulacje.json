@@ -1,0 +1,792 @@
+{
+  "claims": [
+    {
+      "id": "FR-PRIME-01",
+      "claim": "Prime à l'autoconsommation została ZNIESIONA. Arrêté du 1er juin 2026 (NOR ECOR2609281A), modyfikujący arrêté S21 z 6 października 2021, usuwa mechanizm premii inwestycyjnej; opublikowany w JORF n°0129 z 4 czerwca 2026.",
+      "asOfDate": "2026-06-04",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Prime à l'autoconsommation"
+    },
+    {
+      "id": "FR-PRIME-02",
+      "claim": "Zniesienie premii dotyczy kompletnych wniosków o przyłączenie (demande complète de raccordement, DCR) złożonych od 5 czerwca 2026. Wnioski złożone wcześniej zachowują premię wg siatki obowiązującej w kwartale ich DCR.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Prime à l'autoconsommation"
+    },
+    {
+      "id": "FR-PRIME-03",
+      "claim": "Ostatnia obowiązująca stawka premii dla instalacji ≤9 kWc wynosiła 0,08 €/Wc (= 80 €/kWc), ustalona arrêté du 26 mars 2025 (JORFTEXT000051380903) jako prime Pa.",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Prime à l'autoconsommation"
+    },
+    {
+      "id": "FR-PRIME-04",
+      "claim": "Premie dla wyższych progów mocy ustalone arrêté du 26 mars 2025: 0,19 €/Wc (190 €/kWc) dla >9 do 36 kWc oraz 0,10 €/Wc (100 €/kWc) dla >36 do 100 kWc. Te progi podlegały kwartalnej degresji, więc wartości spadały w kolejnych kwartałach.",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Prime à l'autoconsommation"
+    },
+    {
+      "id": "FR-PRIME-05",
+      "claim": "Arrêté du 26 mars 2025 zniósł kwartalną degresję dla segmentu P+Q ≤9 kWc — stawki dla tego progu przestały zmieniać się z kwartału na kwartał, czyli 80 €/kWc obowiązywało niezmiennie od kwietnia 2025 aż do 4 czerwca 2026.",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903",
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-details-des-modifications-de-larrete-s21-et-publication-des-nouvelles-grilles-tarifaires/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "1. Prime à l'autoconsommation"
+    },
+    {
+      "id": "FR-PRIME-06",
+      "claim": "Arrêté du 26 mars 2025 połączył wcześniejsze przedziały 0-3 kWc i 3-9 kWc w jeden przedział 0-9 kWc oraz obniżył poziom premii i taryfy nadwyżkowej dla tego segmentu.",
+      "asOfDate": "2025-03-27",
+      "sources": [
+        "https://www.cre.fr/actualites/toute-lactualite/la-cre-publie-les-nouveaux-tarifs-et-primes-relatifs-aux-installations-photovoltaiques-implantees-sur-batiment-hangar-ou-ombriere-dune-puissance-crete-installee-inferieure-ou-egale-a-500-kw.html"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "1. Prime à l'autoconsommation"
+    },
+    {
+      "id": "FR-TARIF-01",
+      "claim": "Od 5 czerwca 2026 obowiązuje JEDNA taryfa zakupu 1,1 c€/kWh HT dla wszystkich instalacji ≤100 kWc, niezależnie od mocy i trybu (vente en surplus i vente totale mają tę samą stawkę).",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669",
+        "https://www.senat.fr/questions/base/2026/qSEQ260609023.html"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-02",
+      "claim": "Rząd potwierdził w odpowiedzi na pytanie senackie (2 lipca 2026), że taryfa unikalna wynosi 11 €/MWh, jest waloryzowana o 2% rocznie i osiąga ok. 16 €/MWh w 20. roku kontraktu.",
+      "asOfDate": "2026-07-02",
+      "sources": [
+        "https://www.senat.fr/questions/base/2026/qSEQ260609023.html"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-03",
+      "claim": "Indeksacja: +2% rocznie w rocznicę kontraktu, przez cały okres umowy; zastępuje wcześniejszą indeksację współczynnikiem L. Ścieżka: 1,12 c€/kWh w roku 2, 1,31 c€/kWh w roku 10, 1,60 c€/kWh w roku 20.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669",
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-04",
+      "claim": "Czas trwania kontraktu obligation d'achat: 20 lat od daty mise en service.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-05",
+      "claim": "Obowiązuje limit produkcji objętej taryfą: 1600 godzin rocznie na kWc mocy zainstalowanej; energia wstrzyknięta ponad ten wolumen nie jest wynagradzana.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669",
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-06",
+      "claim": "Instalacje ≤9 kWc mogą korzystać z obligation d'achat WYŁĄCZNIE w trybie autoconsommation avec vente du surplus — vente totale (injection en totalité) nie jest dla nich dostępna.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669",
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/tarifs-dachat/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-07",
+      "claim": "Utrata prawa do vente totale dla ≤9 kWc weszła w życie 28 marca 2025 (arrêté du 26 mars 2025), nie w czerwcu 2026 — arrêté z 2026 tylko to utrzymał.",
+      "asOfDate": "2025-03-28",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903",
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/tarifs-dachat/arrete-tarifaire-en-vigueur/tarifs-de-vente-et-primes-autoconsommation-100kwc/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-08",
+      "claim": "Poprzednia (przed 5 czerwca 2026) taryfa vente en surplus dla ≤9 kWc wynosiła 4,0 c€/kWh HT (TPa), ustalona arrêté du 26 mars 2025 i zamrożona (brak degresji kwartalnej) do 4 czerwca 2026. Spadek do 1,1 c€/kWh to obniżka o ~72%.",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-09",
+      "claim": "Poprzednia taryfa vente en surplus dla przedziału >9 do 100 kWc (TPb) wynosiła 7,61 c€/kWh HT wg arrêté du 26 mars 2025, z kwartalną degresją.",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-10",
+      "claim": "Poprzednie taryfy vente totale (Tb) wg arrêté du 26 mars 2025: 12,95 c€/kWh HT dla ≤36 kWc i 11,26 c€/kWh HT dla >36 do 100 kWc; Tc = 9,5 c€/kWh HT dla 100-500 kWc.",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-11",
+      "claim": "Mechanizm aktualizacji do 4 czerwca 2026: taryfy i premie były publikowane KWARTALNIE przez CRE (na podstawie wolumenu DCR z poprzedniego kwartału referencyjnego, z współczynnikami degresji). Segment ≤9 kWc był wyłączony z degresji od marca 2025.",
+      "asOfDate": "2026-06-04",
+      "sources": [
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/tarifs-dachat/arrete-tarifaire-en-vigueur/tarifs-de-vente-et-primes-autoconsommation-100kwc/",
+        "https://www.cre.fr/actualites/toute-lactualite/la-cre-publie-les-nouveaux-tarifs-et-primes-relatifs-aux-installations-photovoltaiques-implantees-sur-batiment-hangar-ou-ombriere-dune-puissance-crete-installee-inferieure-ou-egale-a-500-kw.html"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-12",
+      "claim": "Po reformie z czerwca 2026 kwartalne siatki taryfowe dla ≤100 kWc PRZESTAŁY istnieć — jest jedna stawka indeksowana rocznie o 2%, bez publikacji kwartalnych aktualizacji dla tego segmentu.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/tarifs-dachat/arrete-tarifaire-en-vigueur/tarifs-de-vente-et-primes-autoconsommation-100kwc/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-13",
+      "claim": "Instalacje >100 kWc (do 500 kWc) nie korzystają już z automatycznego guichet ouvert — od arrêté du 26 mars 2025 przechodzą przez procedurę przetargową (appel d'offres CRE).",
+      "asOfDate": "2025-03-26",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051380903"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-14",
+      "claim": "Nowa zasada licznikowa: jedna instalacja produkcyjna musi być powiązana z jednym, dedykowanym punktem pomiarowym ('une installation de production doit désormais être seule associée à un comptage'); wiele instalacji za jednym punktem przyłączenia nie jest już dozwolone w trybie surplus.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-15",
+      "claim": "Zakres podmiotowy S21: instalacje na budynku, hangarze lub zadaszeniu (ombrière), w metropolii kontynentalnej. Od 22 września 2025 kwalifikują się instalacje o sumie P+Q ≤100 kWc.",
+      "asOfDate": "2025-09-22",
+      "sources": [
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/tarifs-dachat/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TARIF-16",
+      "claim": "Uproszczenia administracyjne wprowadzone arrêté z 1 czerwca 2026: mise en service redefiniowana jako data zezwolenia na wtłaczanie i start kontraktu; atestacje architekta nie są już wymagane systemowo; attestation CONSUEL składana na żądanie; złagodzone wymogi dokumentacji kwalifikacji instalatora.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "2. Tarif d'achat / EDF OA"
+    },
+    {
+      "id": "FR-TVA-01",
+      "claim": "Od 1 października 2025 obowiązuje obniżona stawka TVA 5,5% na dostawę i instalację urządzeń fotowoltaicznych w lokalach mieszkalnych o mocy ≤9 kWc w trybie autoconsommation, niezależnie od wieku budynku.",
+      "asOfDate": "2025-10-01",
+      "sources": [
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-TVA-02",
+      "claim": "Podstawa prawna TVA 5,5%: art. 42 loi de finances 2025, art. 94 loi de finances 2026 (loi n°2026-103 du 19 février 2026), décret du 8 septembre 2025 (publikowany w JO 9 września 2025), art. 278-0 bis CGI oraz art. 30-0 E annexe IV CGI.",
+      "asOfDate": "2026-02-19",
+      "sources": [
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-TVA-03",
+      "claim": "Pośrednia stawka TVA 10% (dla instalacji ≤3 kWc w lokalach starszych niż 2 lata) wygasła definitywnie 31 grudnia 2025 i nie obowiązuje w 2026.",
+      "asOfDate": "2025-12-31",
+      "sources": [
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-TVA-04",
+      "claim": "W 2026 obowiązują tylko dwie stawki dla PV: 5,5% (instalacje mieszkaniowe ≤9 kWc spełniające warunki) oraz 20% (wszystkie pozostałe przypadki, w tym >9 kWc i instalacje niespełniające kryteriów).",
+      "asOfDate": "2026-01-01",
+      "sources": [
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-TVA-05",
+      "claim": "Warunki kumulatywne dla 5,5%: (a) ślad węglowy modułu ≤530 kgCO2eq/kWc plus limity zawartości srebra, ołowiu i kadmu; (b) system zarządzania energią sterujący w czasie rzeczywistym co najmniej dwoma odbiorami elektrycznymi (np. CWU, ogrzewanie) w celu synchronizacji zużycia z produkcją; (c) instalator posiadający ważną certyfikację/kwalifikację zawodową.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-TVA-06",
+      "claim": "Falowniki i systemy zarządzania energią kwalifikują się do 5,5% jako akcesoria; BATERIE pozostają opodatkowane stawką standardową 20%.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-TVA-07",
+      "claim": "Doktryna podatkowa (BOFiP BOI-TVA-LIQ-30-20-97 z 10 czerwca 2026) precyzuje, że próg 9 kWc ocenia się dla KAŻDEJ operacji dostawy/instalacji osobno, niezależnie od instalacji już istniejących — rozbudowa o 6 kWc w domu już wyposażonym korzysta z 5,5% nawet gdy łączna moc przekroczy 9 kWc.",
+      "asOfDate": "2026-06-10",
+      "sources": [
+        "https://bofip.impots.gouv.fr/bofip/14817-PGP.html/identifiant=BOI-TVA-LIQ-30-20-97-20260610"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "3. TVA"
+    },
+    {
+      "id": "FR-HPHC-01",
+      "claim": "Reforma heures creuses została zdecydowana przez CRE w ramach taryfy TURPE 7 (deliberacja z lutego/marca 2025); Enedis ją wdraża.",
+      "asOfDate": "2025-02-06",
+      "sources": [
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies",
+        "https://www.cre.fr/fileadmin/Documents/Communiques_de_presse/2025/250206_Annexe_CP_TURPE_7_HPHC.pdf"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-02",
+      "claim": "Zasada 8 godzin heures creuses na dobę jest utrzymana; zmienia się tylko ich rozmieszczenie w ciągu doby.",
+      "asOfDate": "2025-11-01",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025",
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-03",
+      "claim": "Każdy klient zachowuje co najmniej 5 KOLEJNYCH godzin creuses w nocy, w oknie 23:00-7:00.",
+      "asOfDate": "2025-11-01",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025",
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-04",
+      "claim": "Pozostałe do 3 godzin creuses są przenoszone na popołudnie, w oknie 11:00-17:00; dokładne godziny ustala lokalnie Enedis w zależności od charakterystyki sieci w danej strefie.",
+      "asOfDate": "2025-11-01",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025",
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-05",
+      "claim": "Reforma wprowadza SEZONOWOŚĆ heures creuses (lato vs zima): godziny popołudniowe koncentrują się w miesiącach najbardziej nasłonecznionych, zimą heures creuses mogą być w całości zgrupowane w nocy.",
+      "asOfDate": "2025-02-06",
+      "sources": [
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-06",
+      "claim": "Faza 1 wdrożenia: od 1 listopada 2025 do czerwca 2026, obejmuje 1,7 mln klientów posiadających ofertę HP/HC z heures creuses popołudniowymi i nocnymi. Klienci fazy 1 mają ten sam rozkład przez cały rok (bez sezonowości).",
+      "asOfDate": "2025-11-01",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025",
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-07",
+      "claim": "Faza 2 wdrożenia: od grudnia 2026 do października 2027, obejmuje 9,3 mln klientów HP/HC; ci klienci otrzymają RÓŻNE heures creuses latem i zimą. Klienci profesjonalni objęci w drugiej połowie 2027.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025",
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-08",
+      "claim": "Stan na sierpień 2026: faza 1 zakończona (czerwiec 2026), faza 2 jeszcze się nie rozpoczęła (start grudzień 2026) — czyli obecnie ok. 1,7 mln gospodarstw ma nowe plage horaires, a 9,3 mln nadal stare.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-09",
+      "claim": "Klienci NIE wybierają swoich godzin — Enedis przydziela je indywidualnie w zależności od lokalnej sieci; dostawca energii informuje klienta ok. miesiąc przed zmianą.",
+      "asOfDate": "2025-11-01",
+      "sources": [
+        "https://www.enedis.fr/magazine/modification-des-heures-creuses-comprendre-ce-qui-change-partir-du-1er-novembre-2025"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-HPHC-10",
+      "claim": "Cel reformy: przesunięcie ok. 5 GW zużycia na godziny popołudniowe w najbardziej nasłonecznionych miesiącach, aby dopasować popyt do szczytu produkcji fotowoltaicznej.",
+      "asOfDate": "2025-02-06",
+      "sources": [
+        "https://www.enedis.fr/presse/enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "4. Heures pleines / heures creuses"
+    },
+    {
+      "id": "FR-ACC-01",
+      "claim": "Autoconsommation collective jest mechanizmem wyceny ekonomicznej (podziału produkcji między producentów i konsumentów w bliskości geograficznej), a nie fizyczną redystrybucją energii. Ramy określa art. L315-2 code de l'énergie.",
+      "asOfDate": "2026-03-16",
+      "sources": [
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/autoconsommation/autoconsommation-collective/definition-et-perimetre-de-lautoconsommation-collective/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-ACC-02",
+      "claim": "Kryteria bliskości geograficznej i limity mocy: w obrębie jednego budynku — bez limitu mocy; ACC étendue domyślnie 2 km i <5 MW; 10 km jeśli wszyscy uczestnicy w gminach wiejskich lub podmiejskich; 20 km jeśli wszyscy w gminach wiejskich; 20 km jeśli jednym z uczestników jest służba ratowniczo-gaśnicza; obszar całego EPCI i do 10 MW dla projektów gmin/EPCI z uczestnikami publicznymi.",
+      "asOfDate": "2026-03-16",
+      "sources": [
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/autoconsommation/autoconsommation-collective/definition-et-perimetre-de-lautoconsommation-collective/",
+        "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039417566"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-ACC-03",
+      "claim": "Próg mocy skumulowanej dla ACC étendue został podniesiony z 3 MW do 5 MW przez arrêté du 21 février 2025, modyfikujący arrêté du 21 novembre 2019 o kryterium bliskości geograficznej.",
+      "asOfDate": "2025-02-21",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051292744",
+        "https://www.photovoltaique.info/fr/actualites/detail/autoconsommation-collective-extension-du-perimetre-et-rehausse-des-seuil-de-puissances/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-ACC-04",
+      "claim": "Energia dzielona w ramach ACC podlega VAT, akcyzie oraz opłatom za dostęp do sieci (TURPE); produkcja niesprzedana w ramach operacji może korzystać ze wsparcia państwa.",
+      "asOfDate": "2026-03-16",
+      "sources": [
+        "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/autoconsommation/autoconsommation-collective/definition-et-perimetre-de-lautoconsommation-collective/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-ACC-05",
+      "claim": "Nowy S21 (od 5 czerwca 2026) zezwala instalacjom w trybie injection en totalité na udział w autoconsommation collective; energia rozdzielona w ramach ACC jest wyłączona z produkcji objętej taryfą zakupu.",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669",
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-ACC-06",
+      "claim": "Rząd w odpowiedzi senackiej (2 lipca 2026) potwierdził przywrócenie dostępu do taryfy vente totale dla instalacji >9 kWc, aby wspierać projekty autoconsommation collective pozbawione komponentu autokonsumpcji indywidualnej.",
+      "asOfDate": "2026-07-02",
+      "sources": [
+        "https://www.senat.fr/questions/base/2026/qSEQ260609023.html"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-ACC-07",
+      "claim": "Décret n°2026-561 z 26 czerwca 2026 (JO 30 czerwca 2026, sprostowanie 5 lipca 2026) zmienia zasady podziału (clés de répartition) energii w ACC: wprowadza od lipca 2026 'part fixe' pozwalającą producentowi zarezerwować część produkcji na sprzedaż agregatorowi (zmiana możliwa nie częściej niż co 2 lata), z drugim etapem w lipcu 2027.",
+      "asOfDate": "2026-06-30",
+      "sources": [
+        "https://www.actu-environnement.com/ae/news/decret-autoconsommation-collective-repartition-energie-48232.php4",
+        "https://tecsol-quotidien.fr/autoconsommation-collective-publication-dun-decret-qui-precise-les-regles-de-partage-de-lelectricite/"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "5. Autoconsommation collective"
+    },
+    {
+      "id": "FR-MPR-01",
+      "claim": "MaPrimeRénov' NIE finansuje paneli fotowoltaicznych. Panele PV nie figurują na oficjalnych listach prac kwalifikowanych ani w ścieżce 'Rénovation d'ampleur', ani w 'Parcours par geste'.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F35083"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. MaPrimeRénov et inne dotacje"
+    },
+    {
+      "id": "FR-MPR-02",
+      "claim": "MaPrimeRénov' obejmuje solar termiczny (équipement de production de chauffage / eau chaude sanitaire fonctionnant à l'énergie solaire thermique) oraz panele hybrydowe termiczno-elektryczne Z CYRKULACJĄ CIECZY (capteurs solaires hybrides thermiques et électriques à circulation de liquide).",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F35083"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. MaPrimeRénov et inne dotacje"
+    },
+    {
+      "id": "FR-MPR-03",
+      "claim": "Systemy aerowoltaiczne (hybrydowe powietrzne) są w 2026 wykluczone z MaPrimeRénov'; kwalifikują się wyłącznie modele hydrauliczne (wodne).",
+      "asOfDate": "2026-01-01",
+      "sources": [
+        "https://www.effy.fr/travaux-energetique/chauffage/panneaux-solaires-voltaiques-thermiques",
+        "https://www.hellowatt.fr/prime-energie/ma-prime-renov/panneau-solaire"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "6. MaPrimeRénov et inne dotacje"
+    },
+    {
+      "id": "FR-MPR-04",
+      "claim": "Od stycznia 2027 domy jednorodzinne z klasą DPE F lub G tracą dostęp do ścieżki 'Parcours par geste' MaPrimeRénov'; pozostaje im tylko 'Rénovation d'ampleur'.",
+      "asOfDate": "2027-01-01",
+      "sources": [
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F35083"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "6. MaPrimeRénov et inne dotacje"
+    },
+    {
+      "id": "FR-MPR-05",
+      "claim": "Po zniesieniu prime à l'autoconsommation (5 czerwca 2026) jedynym pozostałym ogólnokrajowym wsparciem finansowym dla PV mieszkaniowego jest obniżona TVA 5,5% (dla ≤9 kWc spełniających warunki) plus taryfa zakupu 1,1 c€/kWh; brak dotacji inwestycyjnej na poziomie krajowym.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669",
+        "https://www.photovoltaique.info/fr/preparer-un-projet/qui-suis-je/proprietaire-particulier/taux-de-tva-taxe-sur-la-valeur-ajoutee/",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F35083"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "6. MaPrimeRénov et inne dotacje"
+    },
+    {
+      "id": "FR-ENEDIS-01",
+      "claim": "Enedis oferuje trzy ramy umowne dla instalacji produkcyjnych: CAE (Contrat d'Accès et d'Exploitation) — wtłaczanie ze sprzedażą, wymaga ARPE; CU-I (Contrat Unique en Injection) — podpisywany bezpośrednio z nabywcą energii, obejmuje dostęp do sieci i zakup; CACSI (Convention d'AutoConsommation Sans Injection) — pełna autokonsumpcja bez sprzedaży.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/raccordement-installation-production-electrique"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis"
+    },
+    {
+      "id": "FR-ENEDIS-02",
+      "claim": "Zgłoszenie do Enedis instalacji w trybie autokonsumpcji bez wtłaczania jest OBOWIĄZKOWE niezależnie od poziomu mocy ('quel que soit son niveau de puissance') — nie ma progu zwalniającego małe instalacje z deklaracji.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/autoconsommer-la-totalite-de-lenergie-produite-par-vos-panneaux"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis"
+    },
+    {
+      "id": "FR-ENEDIS-03",
+      "claim": "CACSI dotyczy instalacji produkcyjnych o mocy ≤36 kVA przyłączonych do miejsca konsumpcji, gdzie produkcja nie jest wtłaczana do publicznej sieci dystrybucyjnej; musi być zawarta PRZED uruchomieniem instalacji.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/media/1955/download",
+        "https://www.enedis.fr/raccordement-installation-production-electrique"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis"
+    },
+    {
+      "id": "FR-ENEDIS-04",
+      "claim": "Procedura CACSI: deklaracja online przez portal Enedis-Connect, dostarczenie attestation CONSUEL LUB attestation sur l'honneur, akceptacja warunków CACSI, następnie uruchomienie przez Enedis. Formalności są uproszczone, bez opłat przyłączeniowych i bez prac na sieci.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/autoconsommer-la-totalite-de-lenergie-produite-par-vos-panneaux"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis"
+    },
+    {
+      "id": "FR-ENEDIS-05",
+      "claim": "Liczniki niekomunikujące muszą zostać wymienione na licznik Linky w ramach procedury autokonsumpcji.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/autoconsommer-la-totalite-de-lenergie-produite-par-vos-panneaux"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis"
+    },
+    {
+      "id": "FR-ENEDIS-06",
+      "claim": "Enedis przewiduje możliwe zwolnienie z attestation CONSUEL dla sprzętu 'plug & play' dostarczonego już zmontowanego i zgodnego z normą NF EN 50549-1-4 — sama deklaracja do Enedis pozostaje jednak wymagana.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/autoconsommer-la-totalite-de-lenergie-produite-par-vos-panneaux",
+        "https://www.enedis.fr/raccordement-installation-production-electrique"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis / kit plug-and-play"
+    },
+    {
+      "id": "FR-ENEDIS-07",
+      "claim": "Niezależnie od procedury Enedis, konieczny jest kontakt z wydziałem urbanistyki gminy — déclaration préalable de travaux lub pozwolenie na budowę może być wymagane w zależności od gminy i konfiguracji dachu.",
+      "asOfDate": "2026-08-14",
+      "sources": [
+        "https://www.enedis.fr/raccordement-installation-production-electrique"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Obowiązki zgłoszeniowe do Enedis"
+    },
+    {
+      "id": "FR-PNP-01",
+      "claim": "Zaktualizowana norma NF C 15-100, opublikowana przez AFNOR w sierpniu 2024, w art. 10.1.3.5 stanowi, że generator energii elektrycznej NIE MOŻE być podłączony do obwodu końcowego za pomocą gniazda lub wtyczki. Rząd potwierdził tę interpretację w odpowiedzi na pytanie poselskie.",
+      "asOfDate": "2026-05-26",
+      "sources": [
+        "https://questions.assemblee-nationale.fr/q17/17-6574QE.htm"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-PNP-02",
+      "claim": "Uzasadnienie zakazu podane przez rząd: ryzyko porażenia/elektryzacji oraz nienormalne nagrzewanie przewodów obwodów domowych, a także ryzyko pożaru z niewykrytych przeciążeń; szczególna troska o użytkowników nieprofesjonalnych słabo poinformowanych o ryzyku elektrycznym.",
+      "asOfDate": "2026-05-26",
+      "sources": [
+        "https://questions.assemblee-nationale.fr/q17/17-6574QE.htm"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-PNP-03",
+      "claim": "Kluczowa niuansa prawna z odpowiedzi rządowej: zestawy jedynie WPINANE do gniazdka, bez modyfikacji instalacji, nie wchodzą w zakres 'instalacji elektrycznej stałej'; norma NF C 15-100 stosuje się do instalacji realizowanych od września 2025. Oznacza to, że zestawy balkonowe używane jako generatory mobilne nie są objęte zakazem wprost, ale ich trwałe podłączenie do instalacji stałej jest niezgodne z normą.",
+      "asOfDate": "2026-05-26",
+      "sources": [
+        "https://questions.assemblee-nationale.fr/q17/17-6574QE.htm"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-PNP-04",
+      "claim": "Norma NF C 15-100 została opublikowana 23 sierpnia 2024, z zalecanym stosowaniem od września 2024 i obowiązkowym od września 2025.",
+      "asOfDate": "2024-08-23",
+      "sources": [
+        "https://questions.assemblee-nationale.fr/q17/17-6574QE.htm"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-PNP-05",
+      "claim": "ADEME opublikowała w kwietniu 2023 'Guide kit photovoltaïque autoconsommation plug & play' określający dobre praktyki instalacyjne, progi mocy do nieprzekraczania i warunki instalacji; rząd odsyła do niego w odpowiedzi poselskiej.",
+      "asOfDate": "2023-04-01",
+      "sources": [
+        "https://librairie.ademe.fr/energies-renouvelables-reseaux-et-stockage/6258-guide-kit-photovoltaique-autoconsommation-plug-play.html",
+        "https://questions.assemblee-nationale.fr/q17/17-6574QE.htm"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-PNP-06",
+      "claim": "Definicja zestawu plug&play wg photovoltaique.info: gotowy produkt PV wpinany bezpośrednio do standardowego gniazda, przeznaczony WYŁĄCZNIE do autokonsumpcji, bez wtłaczania i bez sprzedaży energii; składa się z modułu/modułów, mikroinwertera, kabla AC i opcjonalnie licznika. Typowe parametry (dane z 2023): 300-400 Wc, 600-800 € TTC.",
+      "asOfDate": "2023-01-01",
+      "sources": [
+        "https://www.photovoltaique.info/fr/realiser-une-installation/choix-du-materiel/batteries-stockage-virtuel-et-autres-accesoires/les-kits-solaires-plug-and-play/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-PNP-07",
+      "claim": "Ostrzeżenie photovoltaique.info: główne ryzyko to przeciążenie gniazda ściennego, które mogło nie być zaprojektowane dla takiego poziomu mocy; przy zestawach dwupanelowych trzeba upewnić się o wystarczającej konsumpcji bazowej, a powyżej dwóch paneli rzadko występuje wystarczająca konsumpcja rezydualna.",
+      "asOfDate": "2023-01-01",
+      "sources": [
+        "https://www.photovoltaique.info/fr/realiser-une-installation/choix-du-materiel/batteries-stockage-virtuel-et-autres-accesoires/les-kits-solaires-plug-and-play/"
+      ],
+      "sourceTier": "primary",
+      "confidence": "medium",
+      "usedIn": "7. Kit plug-and-play"
+    },
+    {
+      "id": "FR-CTX-01",
+      "claim": "Kontekst rynkowy: taryfy dla segmentu 9-100 kWc spadły o ok. 13% od 1 stycznia 2026 (T1 2026), a w T2 2026 (1 kwietnia - 30 czerwca) o kolejne ok. 12% dla taryf i ok. 14% dla premii, zanim reforma z czerwca 2026 zlikwidowała cały mechanizm.",
+      "asOfDate": "2026-04-01",
+      "sources": [
+        "https://tecsol-quotidien.fr/photovoltaique-les-tarifs-dachat-pour-les-installations-de-9-a-100-kwc-baissent-de-13-au-1er-trimestre-2026/",
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-tarifaire-s21-publication-des-tarifs-du-1er-avril-au-30-juin-2026/"
+      ],
+      "sourceTier": "secondary",
+      "confidence": "medium",
+      "usedIn": "2. Tarif d'achat / EDF OA — kontekst"
+    },
+    {
+      "id": "FR-CTX-02",
+      "claim": "Cele reformy deklarowane przez rząd (odpowiedź senacka 2 lipca 2026): skoncentrowanie wsparcia na instalacjach <100 kWc, promowanie autokonsumpcji zamiast sprzedaży do sieci oraz optymalizacja wydatków państwa. Taryfa jest wypłacana zarówno w godzinach dodatnich, jak i ujemnych cen spot.",
+      "asOfDate": "2026-07-02",
+      "sources": [
+        "https://www.senat.fr/questions/base/2026/qSEQ260609023.html"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "2. Tarif d'achat / EDF OA — kontekst"
+    },
+    {
+      "id": "FR-CTX-03",
+      "claim": "Skutek ekonomiczny reformy: przy 1,1 c€/kWh HT sprzedaż nadwyżki przestaje być istotną dźwignią ekonomiczną — rentowność projektu opiera się teraz niemal wyłącznie na energii autokonsumowanej i oszczędnościach na rachunku. To silnie zwiększa wartość narzędzi do przesuwania zużycia w czasie (sterowanie odbiorami, prognoza produkcji).",
+      "asOfDate": "2026-06-05",
+      "sources": [
+        "https://www.photovoltaique.info/fr/actualites/detail/arrete-s21-detail-des-modifications-et-nouveau-tarif-unique/",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054190669"
+      ],
+      "sourceTier": "primary",
+      "confidence": "high",
+      "usedIn": "Wnioski przekrojowe"
+    }
+  ],
+  "unresolved": [
+    "Dokładne wartości liczbowe premii i taryf dla przedziałów >9 kWc w kwartałach T1 2026 (1 sty - 31 mar) i T2 2026 (1 kwi - 30 cze) — znam tylko procentowe spadki (~13%, ~12%/~14%). Strona photovoltaique.info z siatkami (/tarifs-de-vente-et-primes-autoconsommation-100kwc/) nie zwróciła tabel przy fetchu, a qualit-enr.org zwróciło HTTP 403. Do domknięcia: deliberacje CRE per kwartał lub Open Data CRE.",
+    "Sposób WYPŁATY prime à l'autoconsommation (jednorazowo vs w ratach, w którym roku kontraktu) — nie znalazłem potwierdzenia w źródle pierwotnym. Historycznie zmieniało się to między arrêté (raty roczne przez 5 lat, później wypłata jednorazowa). Nie zgaduję.",
+    "Konkretne progi mocy dla kitów plug-and-play (powszechnie cytowane 800 W na gniazdo standardowe / 900 W na obwód dedykowany) — NIE mają potwierdzenia w źródle pierwotnym. Pojawiają się wyłącznie w źródłach komercyjnych, które wzajemnie sobie przeczą. Odpowiedź rządowa odsyła do przewodnika ADEME z kwietnia 2023, ale sam PDF przewodnika nie został pobrany i zweryfikowany. Do domknięcia: pobrać guide ADEME ref. 6258.",
+    "Décret n°2026-561 z 26 czerwca 2026 o kluczach podziału w autoconsommation collective — potwierdzony tylko przez źródła wtórne (actu-environnement, Tecsol, L'Echo du Solaire). Nie zweryfikowany bezpośrednio na Legifrance; numer dekretu, data sprostowania (5 lipca 2026) i szczegóły 'part fixe' wymagają potwierdzenia w JORF.",
+    "Doktryna BOFiP BOI-TVA-LIQ-30-20-97 z 10 czerwca 2026 (ocena progu 9 kWc per operacja, a nie per budynek) — znaleziona w wynikach wyszukiwania, ale strona nie została bezpośrednio pobrana i zacytowana. Wymaga weryfikacji na bofip.impots.gouv.fr przed użyciem w komunikacji do użytkowników.",
+    "Dokładne daty sezonów dla heures creuses (powszechnie podawane: lato 1 kwietnia - 31 października, zima 1 listopada - 31 marca) — Enedis potwierdza SAM FAKT sezonowości, ale nie znalazłem tych dat w źródle pierwotnym. Aneks CRE do komunikatu TURPE 7 (250206_Annexe_CP_TURPE_7_HPHC.pdf) okazał się nieparsowalny przez WebFetch. Do domknięcia: otworzyć PDF lokalnie (zapisany w tool-results) lub znaleźć pełną deliberację TURPE 7.",
+    "Zasady grandfatheringu dla istniejących kontraktów EDF OA — silnie implikowane (taryfa zamrożona na dacie DCR, kontrakt 20-letni), ale nie znalazłem wprost zapisu potwierdzającego, że kontrakty podpisane przed 5 czerwca 2026 pozostają nienaruszone przez arrêté z 1 czerwca 2026. Wymaga lektury pełnego tekstu arrêté (przepisy przejściowe).",
+    "Status prawny arrêté z 1 czerwca 2026 — nie znalazłem dowodów na skargę do Conseil d'État ani zawieszenie, mimo krytyki ze strony branży i Conseil supérieur de l'énergie. Brak dowodu to nie dowód braku; warto monitorować (skargi o nadużycie władzy mają 2-miesięczny termin od publikacji w JO, czyli do ok. 4 sierpnia 2026).",
+    "Czy dla instalacji >100 kWc do 500 kWc nadal publikowane są kwartalne taryfy przejściowe, czy cały segment przeszedł już na appel d'offres CRE — arrêté z marca 2025 wprowadził przetargi, ale nie zweryfikowałem stanu na sierpień 2026.",
+    "Regionalne i lokalne dotacje do PV (aides des collectivités, régions, EPCI) — nie badane w tym przebiegu; mogą częściowo kompensować zniesienie prime à l'autoconsommation, ale są rozproszone i wymagają osobnego researchu per region."
+  ]
+}
