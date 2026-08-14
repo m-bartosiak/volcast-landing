@@ -26,6 +26,43 @@ Design zakładał commit 1 = kod bloga, commit 2 = landing. **Kolejność jest o
 
 Dodatkowo dochodzi **Task 2** (zabezpieczenie tras przed językiem bez treści), którego design nie przewidywał. Wzorzec do skopiowania już istnieje w [tag/[tag].astro](../../src/pages/blog/[lang]/tag/[tag].astro) — reszta tras go po prostu nie ma.
 
+## AKTUALIZACJA 2026-08-14 — co zmieniło się po napisaniu planu
+
+`main` przyjął dziś dwa PR-y (#11 konsolidacja zapytania brandowego, #13 seo-guard),
+które zmieniają trzy założenia tego planu.
+
+**1. Tytuły postów IT mają budżet 45 znaków, nie dowolny.**
+[`tests/seo-guard.test.js`](../../tests/seo-guard.test.js) mierzy wyrenderowany `<title>`
+z limitem 60, a `BlogPost` dokłada `" — Volcast Blog"` (15 znaków). Reguła obowiązuje
+tylko to, co gałąź *przepisała* — a każdy nowy plik liczy się jako przepisany, więc obejmie
+wszystkie 55 włoskich stron. **30 z 31 tytułów postów i 22 z 24 Q&A z mapy treści
+wywaliłyby CI.** Slugi zostają (są wynikiem researchu fraz), tytuły do przepisania.
+Opisy: **140–155 znaków** — inny przedział niż 120–155 dla landingu, bo to inny gate.
+
+**2. Guard broni stron, które zarabiają kliknięcia.**
+`seo/pages-with-clicks.json` jest regenerowany co tydzień z Search Console, a wyjątki
+żyją w `seo/noindex-exceptions.json` z adnotacją „a machine may never add a row here".
+Włoskie strony są nowe i mają zero kliknięć, więc nic nie blokują — ale **nie wolno
+dopisywać tam wierszy automatem** ani edytować danych o kliknięciach.
+
+**3. Zadania 3 i 4 zwężają się.** PR #11 dołożył `noindex` na listingi i wyłączył
+emisję hreflang ze stron nieindeksowalnych, więc ryzyko „hreflang na pustkę" znika samo.
+Guard na `getStaticPaths` zostaje sensowny dla RSS i dla niegenerowania martwych tras,
+ale przestaje być pilny.
+
+**Nowy defekt do naprawienia w fazie bloga:** [`astro.config.mjs`](../../astro.config.mjs)
+ma w `NOT_A_DESTINATION` zaszytą listę `(en|pl|de)`. Włoski jej nie dopasuje, więc
+`/blog/it/` i `/blog/it/q/` wrócą do sitemapy **będąc jednocześnie `noindex`** — dokładnie
+ta sprzeczność, którą PR #11 właśnie usunął. Poprawka: `[a-z-]+` zamiast wyliczanki,
+żeby czternasty język też jej nie odtworzył. Nie robimy tego w fazie landingu, bo
+`/blog/it/` jeszcze nie istnieje i zmiana byłaby rozszerzaniem zakresu PR-a.
+
+**4. `main` nie przyjmuje pushy.** `f1af3c7` przestawił publikację na pull requesty.
+Cała ta praca wchodzi przez PR, a `seo-guard` leci na **każdy push do gałęzi** i robi
+pełny `npm run build` + `npm test`.
+
+---
+
 ## LANDMINA — przeczytaj przed dotknięciem treści
 
 **Parowanie hreflang ma dwa niezależne mechanizmy i zmieszanie ich urywa alternaty po cichu.**
