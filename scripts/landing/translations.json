@@ -2,9 +2,9 @@
   "en": {
     "meta": {
       "title": "Volcast — Hourly Solar Production Forecast, 7 Days Ahead",
-      "description": "Volcast forecasts your solar production hour by hour, seven days ahead — from your panel setup and satellite data. No inverter login. iOS and Android.",
+      "description": "Volcast forecasts your solar production hour by hour, seven days ahead — from your panel setup and multi-model weather forecasts. No inverter login.",
       "ogTitle": "Volcast — Solar Forecasting App",
-      "ogDescription": "Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data."
+      "ogDescription": "Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and multi-model weather forecasts."
     },
     "nav": {
       "features": "Features",
@@ -16,7 +16,7 @@
     },
     "hero": {
       "title": "Predict solar production<br>with <em>physics</em>",
-      "desc": "Advanced Physical Engine. Enter your panel parameters — azimuth, tilt, peak power — and get precision forecasts powered by satellite data and physics. Works with any installation, any brand.",
+      "desc": "Advanced Physical Engine. Enter your panel parameters — azimuth, tilt, peak power — and get precision forecasts powered by weather models and physics. Works with any installation, any brand.",
       "cta": "Download Now",
       "note": "Available on Android and iOS. Free.",
       "googlePlay": {
@@ -33,7 +33,7 @@
       "desc": "Works with any installation, any brand. Just enter your system parameters and let physics do the work.",
       "engine": {
         "title": "Physics-Based Forecasting",
-        "desc": "Hourly and daily PV production forecasts using a full irradiance model, spectral corrections, and real satellite weather data. No hardware connection needed."
+        "desc": "Hourly and daily PV production forecasts using a full irradiance model, spectral corrections, and real weather data from multiple numerical forecast models. No hardware connection needed."
       },
       "calibration": {
         "title": "Auto-Calibration",
@@ -41,7 +41,7 @@
       },
       "notifications": {
         "title": "Smart Notifications",
-        "desc": "Get alerted when tomorrow's forecast changes significantly or when it's the best time to run heavy appliances. Never miss a sunny window."
+        "desc": "An evening forecast for tomorrow, a snow warning when your panels may be covered, and a heads-up when it is the best time to run heavy appliances. Never miss a sunny window."
       },
       "widgets": {
         "title": "Home Screen Widgets",
@@ -58,7 +58,7 @@
       },
       "step2": {
         "title": "Get your forecast",
-        "desc": "Volcast combines satellite weather data with the physical model of your system to predict hourly and daily production."
+        "desc": "Volcast combines weather data from multiple forecast models with the physical model of your system to predict hourly and daily production."
       },
       "step3": {
         "title": "Calibrate & optimize",
@@ -74,7 +74,7 @@
       "notificationsLabel": "Notifications",
       "widgetsAlt": "Volcast home screen widgets showing today and tomorrow forecast with multi-day chart",
       "forecastAlt": "Volcast 7-day solar forecast with hourly power breakdown and peak production data",
-      "notificationsAlt": "Volcast forecast change notification and panel configuration"
+      "notificationsAlt": "Volcast notification settings: evening forecast, snow alert and production window"
     },
     "ha": {
       "badge": "Home Assistant Integration",
@@ -113,7 +113,7 @@
       "noAds": "No Ads",
       "noAdsDesc": "No banners, no interstitials, no sponsored content. Ever.",
       "noCloud": "No Cloud Hardware Access",
-      "noCloudDesc": "Volcast never connects to your inverter or any hardware. All forecasts are computed from satellite weather data and your panel parameters."
+      "noCloudDesc": "Volcast never connects to your inverter or any hardware. All forecasts are computed from weather model data and your panel parameters."
     },
     "download": {
       "label": "Get Volcast",
@@ -124,7 +124,7 @@
       "label": "FAQ",
       "title": "Common questions",
       "q1": "How accurate are the solar forecasts?",
-      "a1": "Volcast uses a full physical irradiance model combined with satellite weather data and your specific system parameters. After calibration with real production data, accuracy typically reaches 85–95% on clear and partly cloudy days. Heavy cloud cover is harder to predict for any system, but Volcast still outperforms generic weather apps.",
+      "a1": "Volcast uses a full physical irradiance model combined with weather data from multiple numerical forecast models and your specific system parameters. After calibration with real production data, accuracy typically reaches around 85% on clear and partly cloudy days. Heavy cloud cover is harder to predict for any system, but Volcast still outperforms generic weather apps.",
       "q2": "Do I need a smart inverter or specific hardware?",
       "a2": "No. Volcast works with any solar installation without connecting to your inverter — you just enter your panel parameters: azimuth, tilt, peak power, and optionally multi-string setup, bifacial factor, and horizon shading profile.",
       "q3": "Is Volcast free?",
@@ -176,7 +176,7 @@
       "desc": "Działa z każdą instalacją, niezależnie od marki falownika.",
       "engine": {
         "title": "Prognozowanie Oparte na Fizyce",
-        "desc": "Cogodzinne i codzienne prognozy produkcji PV przy użyciu pełnego modelu irradiancji, korekt spektralnych i danych satelitarnych."
+        "desc": "Cogodzinne i codzienne prognozy produkcji PV przy użyciu pełnego modelu irradiancji, korekt spektralnych i rzeczywistych danych pogodowych z wielu numerycznych modeli prognozy. Bez podłączania sprzętu."
       },
       "calibration": {
         "title": "Autokalibracja",
@@ -184,7 +184,7 @@
       },
       "notifications": {
         "title": "Inteligentne Powiadomienia",
-        "desc": "Otrzymuj alerty, gdy prognoza na jutro ulegnie znaczącej zmianie lub gdy warto uruchomić energochłonne urządzenia."
+        "desc": "Wieczorna prognoza na jutro, ostrzeżenie, gdy śnieg może pokryć panele, i podpowiedź, kiedy najlepiej uruchomić energochłonne urządzenia. Nie przegapisz słonecznego okna."
       },
       "widgets": {
         "title": "Widgety na Ekran Blokady",
@@ -201,7 +201,7 @@
       },
       "step2": {
         "title": "Odbierz prognozę",
-        "desc": "Volcast łączy dane satelitarne z modelem fizycznym Twojego systemu, aby przewidzieć produkcję godzinową i dzienną."
+        "desc": "Volcast łączy dane pogodowe z wielu modeli prognozy z modelem fizycznym Twojego systemu, aby przewidzieć produkcję godzinową i dzienną."
       },
       "step3": {
         "title": "Kalibruj i optymalizuj",
@@ -217,7 +217,7 @@
       "notificationsLabel": "Powiadomienia",
       "widgetsAlt": "Widgety Volcast pokazujące prognozę na dziś i jutro z wykresem wielodniowym",
       "forecastAlt": "7-dniowa prognoza Volcast z godzinowym rozbiciem mocy i danymi o szczytach produkcji",
-      "notificationsAlt": "Powiadomienie o zmianie prognozy Volcast oraz konfiguracja paneli"
+      "notificationsAlt": "Ustawienia powiadomień Volcast: prognoza wieczorna, alert śnieżny i okno produkcji"
     },
     "ha": {
       "badge": "Integracja Home Assistant",
@@ -267,7 +267,7 @@
       "label": "FAQ",
       "title": "Często zadawane pytania",
       "q1": "Jak dokładne są prognozy?",
-      "a1": "Volcast korzysta z pełnego modelu fizycznego irradiancji i danych satelitarnych. Po kalibracji dokładność zazwyczaj osiąga 85–95% w słoneczne dni.",
+      "a1": "Volcast korzysta z pełnego modelu fizycznego irradiancji w połączeniu z danymi pogodowymi z wielu numerycznych modeli prognozy oraz parametrami Twojej instalacji. Po kalibracji na podstawie rzeczywistej produkcji dokładność zazwyczaj sięga około 85% w dni słoneczne i częściowo pochmurne. Gęste zachmurzenie jest trudne do przewidzenia dla każdego systemu, ale Volcast i tak wypada lepiej niż zwykłe aplikacje pogodowe.",
       "q2": "Czy potrzebuję inteligentnego falownika?",
       "a2": "Nie. Volcast działa z każdą instalacją bez podłączania falownika — wystarczy podać parametry paneli.",
       "q3": "Czy Volcast jest darmowy?",
@@ -319,7 +319,7 @@
       "desc": "Funktioniert mit jeder Anlage, unabhängig vom Wechselrichter-Hersteller.",
       "engine": {
         "title": "Physikbasierte Prognose",
-        "desc": "Stündliche und tägliche PV-Ertragsprognosen unter Verwendung eines vollständigen Einstrahlungsmodells und Satellitenwetterdaten."
+        "desc": "Stündliche und tägliche PV-Ertragsprognosen auf Basis eines vollständigen Einstrahlungsmodells, spektraler Korrekturen und echter Wetterdaten aus mehreren numerischen Wettermodellen. Ohne Hardware-Anbindung."
       },
       "calibration": {
         "title": "Auto-Kalibrierung",
@@ -327,7 +327,7 @@
       },
       "notifications": {
         "title": "Smarte Benachrichtigungen",
-        "desc": "Erhalten Sie Warnungen, wenn sich die Prognose für morgen deutlich ändert oder wann die beste Zeit für Großgeräte ist."
+        "desc": "Abends die Prognose für morgen, eine Schneewarnung, wenn Ihre Module bedeckt sein könnten, und ein Hinweis auf den besten Zeitpunkt für Großgeräte. So verpassen Sie kein Sonnenfenster."
       },
       "widgets": {
         "title": "Home-Screen Widgets",
@@ -344,7 +344,7 @@
       },
       "step2": {
         "title": "Prognose erhalten",
-        "desc": "Volcast kombiniert Satellitenwetterdaten mit dem physikalischen Modell Ihrer Anlage für präzise Prognosen."
+        "desc": "Volcast kombiniert Wetterdaten aus mehreren Prognosemodellen mit dem physikalischen Modell Ihrer Anlage und sagt so den stündlichen und täglichen Ertrag voraus."
       },
       "step3": {
         "title": "Kalibrieren & Optimieren",
@@ -360,7 +360,7 @@
       "notificationsLabel": "Benachrichtigungen",
       "widgetsAlt": "Volcast Home-Screen Widgets mit Prognose für heute und morgen",
       "forecastAlt": "Volcast 7-Tage Solarprognose mit stündlicher Aufschlüsselung",
-      "notificationsAlt": "Volcast Benachrichtigung über Prognoseänderung"
+      "notificationsAlt": "Volcast Benachrichtigungseinstellungen: Abendprognose, Schneewarnung und Produktionsfenster"
     },
     "ha": {
       "badge": "Home Assistant Integration",
@@ -410,7 +410,7 @@
       "label": "FAQ",
       "title": "Häufige Fragen",
       "q1": "Wie genau sind die Solarprognosen?",
-      "a1": "Volcast nutzt ein physikalisches Modell und Satellitendaten. Nach der Kalibrierung liegt die Genauigkeit meist bei 85–95%.",
+      "a1": "Volcast nutzt ein vollständiges physikalisches Einstrahlungsmodell, Wetterdaten aus mehreren numerischen Prognosemodellen und die Parameter Ihrer Anlage. Nach der Kalibrierung mit realen Produktionsdaten liegt die Genauigkeit an klaren und teils bewölkten Tagen meist bei rund 85%. Starke Bewölkung ist für jedes System schwerer vorherzusagen — Volcast bleibt dabei aber besser als allgemeine Wetter-Apps.",
       "q2": "Brauche ich einen Smart-Wechselrichter?",
       "a2": "Nein. Volcast funktioniert mit jeder Anlage, ohne den Wechselrichter anzubinden — Sie geben nur die Parameter Ihrer Module an.",
       "q3": "Ist Volcast kostenlos?",
@@ -462,7 +462,7 @@
       "desc": "Werkt met elke installatie, ongeacht het merk omvormer.",
       "engine": {
         "title": "Voorspelling op basis van Fysica",
-        "desc": "Uurlijkse en dagelijkse PV-opbrengstvoorspellingen met een volledig instralingsmodel en satellietweergegevens."
+        "desc": "Uurlijkse en dagelijkse PV-opbrengstvoorspellingen met een volledig instralingsmodel, spectrale correcties en actuele weergegevens uit meerdere numerieke weermodellen. Geen hardwarekoppeling nodig."
       },
       "calibration": {
         "title": "Auto-Kalibratie",
@@ -470,7 +470,7 @@
       },
       "notifications": {
         "title": "Slimme Meldingen",
-        "desc": "Ontvang meldingen wanneer de voorspelling voor morgen aanzienlijk verandert of wanneer het de beste tijd is voor zware apparaten."
+        "desc": "Een avondvoorspelling voor morgen, een sneeuwwaarschuwing wanneer uw panelen bedekt kunnen raken en een seintje wanneer het de beste tijd is voor zware apparaten. Mis nooit meer een zonnig moment."
       },
       "widgets": {
         "title": "Startscherm Widgets",
@@ -487,7 +487,7 @@
       },
       "step2": {
         "title": "Ontvang uw voorspelling",
-        "desc": "Volcast combineert satellietweergegevens met het fysische model van uw systeem voor nauwkeurige voorspellingen."
+        "desc": "Volcast combineert weergegevens uit meerdere weermodellen met het fysische model van uw systeem om de opbrengst per uur en per dag te voorspellen."
       },
       "step3": {
         "title": "Kalibreren & Optimaliseren",
@@ -503,7 +503,7 @@
       "notificationsLabel": "Meldingen",
       "widgetsAlt": "Volcast startscherm widgets met voorspelling voor vandaag en morgen",
       "forecastAlt": "Volcast 7-daagse zonnevoorspelling met uurlijkse uitsplitsing",
-      "notificationsAlt": "Volcast melding van gewijzigde voorspelling"
+      "notificationsAlt": "Volcast meldingsinstellingen: avondvoorspelling, sneeuwwaarschuwing en productievenster"
     },
     "ha": {
       "badge": "Home Assistant Integratie",
@@ -553,7 +553,7 @@
       "label": "FAQ",
       "title": "Veelgestelde vragen",
       "q1": "Hoe nauwkeurig zijn de voorspellingen?",
-      "a1": "Volcast gebruikt een fysisch model en satellietgegevens. Na kalibratie is de nauwkeurigheid meestal 85–95% op zonnige dagen.",
+      "a1": "Volcast gebruikt een volledig fysisch instralingsmodel in combinatie met weergegevens uit meerdere numerieke weermodellen en de parameters van uw eigen installatie. Na kalibratie met werkelijke productiegegevens is de nauwkeurigheid meestal ongeveer 85% op zonnige en halfbewolkte dagen. Zware bewolking is voor elk systeem lastiger te voorspellen, maar Volcast presteert dan nog altijd beter dan algemene weer-apps.",
       "q2": "Heb ik een slimme omvormer nodig?",
       "a2": "Nee. Volcast werkt met elke installatie zonder uw omvormer te koppelen — u voert alleen de parameters van uw panelen in.",
       "q3": "Is Volcast gratis?",
@@ -574,7 +574,7 @@
   "es": {
     "meta": {
       "title": "Volcast — App de predicción solar",
-      "description": "Predice tu producción solar con un motor físico avanzado. Siete días por adelantado, hora a hora, con datos satelitales — para cualquier instalación.",
+      "description": "Volcast predice tu producción solar hora a hora, a siete días vista, a partir de tus paneles y de varios modelos meteorológicos. Sin acceso al inversor.",
       "ogTitle": "Volcast — App de predicción solar",
       "ogDescription": "Predice tu producción solar con física. Siete días por adelantado, hora a hora — para cualquier instalación."
     },
@@ -605,7 +605,7 @@
       "desc": "Funciona con cualquier instalación, sea cual sea la marca del inversor.",
       "engine": {
         "title": "Predicción basada en física",
-        "desc": "Pronósticos de producción fotovoltaica horarios y diarios utilizando un modelo de irradiancia completo y datos satelitales."
+        "desc": "Pronósticos de producción fotovoltaica horarios y diarios con un modelo de irradiancia completo, correcciones espectrales y datos meteorológicos reales de varios modelos numéricos de predicción. Sin conectar el hardware."
       },
       "calibration": {
         "title": "Autocalibración",
@@ -613,7 +613,7 @@
       },
       "notifications": {
         "title": "Notificaciones Inteligentes",
-        "desc": "Recibe alertas cuando el pronóstico cambie significativamente o cuando sea el mejor momento para usar electrodomésticos pesados."
+        "desc": "El pronóstico vespertino para mañana, un aviso de nieve cuando tus paneles puedan quedar cubiertos y un recordatorio del mejor momento para usar electrodomésticos pesados. No te pierdas ninguna ventana de sol."
       },
       "widgets": {
         "title": "Widgets para la pantalla de inicio",
@@ -630,7 +630,7 @@
       },
       "step2": {
         "title": "Obtén tu pronóstico",
-        "desc": "Volcast combina datos meteorológicos satelitales con el modelo físico de tu sistema para predecir la producción."
+        "desc": "Volcast combina datos meteorológicos de varios modelos de predicción con el modelo físico de tu sistema para predecir la producción horaria y diaria."
       },
       "step3": {
         "title": "Calibrar y optimizar",
@@ -646,7 +646,7 @@
       "notificationsLabel": "Notificaciones",
       "widgetsAlt": "Widgets de Volcast mostrando el pronóstico para hoy y mañana",
       "forecastAlt": "Pronóstico solar de 7 días con desglose horario",
-      "notificationsAlt": "Notificación de cambio de pronóstico en Volcast"
+      "notificationsAlt": "Ajustes de notificaciones de Volcast: pronóstico vespertino, aviso de nieve y ventana de producción"
     },
     "ha": {
       "badge": "Integración con Home Assistant",
@@ -696,7 +696,7 @@
       "label": "FAQ",
       "title": "Preguntas frecuentes",
       "q1": "¿Qué tan precisos son los pronósticos?",
-      "a1": "Volcast usa un modelo físico y datos satelitales. Tras la calibración, la precisión suele alcanzar el 85–95% en días despejados.",
+      "a1": "Volcast usa un modelo físico completo de irradiancia junto con datos meteorológicos de varios modelos numéricos de predicción y los parámetros concretos de tu instalación. Tras calibrar con producción real, la precisión suele rondar el 85% en días despejados y parcialmente nublados. La nubosidad densa es difícil de predecir para cualquier sistema, pero Volcast sigue superando a las apps del tiempo genéricas.",
       "q2": "¿Necesito un inversor inteligente?",
       "a2": "No. Volcast funciona con cualquier instalación sin conectar el inversor — solo introduces los parámetros de tus paneles.",
       "q3": "¿Es gratis Volcast?",
@@ -717,7 +717,7 @@
   "fr": {
     "meta": {
       "title": "Volcast — App de prévision solaire",
-      "description": "Prédisez votre production solaire avec un moteur physique avancé. Sept jours à l'avance, heure par heure, à partir de données satellite.",
+      "description": "Volcast prévoit votre production solaire heure par heure, sept jours à l'avance, à partir de vos panneaux et de modèles météo. Sans connexion à l'onduleur.",
       "ogTitle": "Volcast — App de prévision solaire",
       "ogDescription": "Prédisez votre production solaire par la physique. Sept jours à l'avance, heure par heure — pour toute installation."
     },
@@ -748,7 +748,7 @@
       "desc": "Fonctionne avec toute installation, quelle que soit la marque de l'onduleur.",
       "engine": {
         "title": "Prévisions basées sur la physique",
-        "desc": "Prévisions de production PV horaires et quotidiennes utilisant un modèle d'irradiance complet et des données satellites."
+        "desc": "Prévisions de production PV horaires et quotidiennes utilisant un modèle d'irradiance complet, des corrections spectrales et des données météo réelles issues de plusieurs modèles numériques de prévision. Aucune connexion au matériel n'est nécessaire."
       },
       "calibration": {
         "title": "Auto-Calibration",
@@ -756,7 +756,7 @@
       },
       "notifications": {
         "title": "Notifications Intelligentes",
-        "desc": "Soyez alerté lorsque les prévisions changent ou quand c'est le moment idéal pour lancer vos gros appareils."
+        "desc": "Une prévision le soir pour le lendemain, une alerte neige quand vos panneaux risquent d'être couverts, et un signal au meilleur moment pour lancer vos gros appareils. Ne manquez plus une éclaircie."
       },
       "widgets": {
         "title": "Widgets d'écran d'accueil",
@@ -773,7 +773,7 @@
       },
       "step2": {
         "title": "Obtenez votre prévision",
-        "desc": "Volcast combine les données météo satellites avec le modèle physique de votre système pour prédire la production."
+        "desc": "Volcast combine les données météo de plusieurs modèles de prévision avec le modèle physique de votre système pour prédire la production horaire et quotidienne."
       },
       "step3": {
         "title": "Calibrer et optimiser",
@@ -789,7 +789,7 @@
       "notificationsLabel": "Notifications",
       "widgetsAlt": "Widgets Volcast montrant les prévisions pour aujourd'hui et demain",
       "forecastAlt": "Prévisions solaires sur 7 jours avec détail horaire",
-      "notificationsAlt": "Notification Volcast de changement de prévision"
+      "notificationsAlt": "Réglages des notifications Volcast : prévision du soir, alerte neige et fenêtre de production"
     },
     "ha": {
       "badge": "Intégration Home Assistant",
@@ -839,7 +839,7 @@
       "label": "FAQ",
       "title": "Questions fréquentes",
       "q1": "Quelle est la précision des prévisions ?",
-      "a1": "Volcast utilise un modèle physique et des données satellites. Après calibration, la précision atteint 85–95% par temps clair.",
+      "a1": "Volcast utilise un modèle physique d'irradiance complet, combiné aux données de plusieurs modèles numériques de prévision météo et aux paramètres propres à votre installation. Après calibration avec votre production réelle, la précision atteint généralement environ 85 % par temps clair ou partiellement nuageux. Une forte couverture nuageuse reste difficile à prévoir pour n'importe quel système, mais Volcast fait toujours mieux que les applications météo génériques.",
       "q2": "Ai-je besoin d'un onduleur intelligent ?",
       "a2": "Non. Volcast fonctionne avec toute installation sans connecter l'onduleur — vous saisissez seulement les paramètres de vos panneaux.",
       "q3": "Est-ce que Volcast est gratuit ?",
@@ -891,7 +891,7 @@
       "desc": "Працює з будь-якою системою, незалежно від марки інвертора.",
       "engine": {
         "title": "Прогнозування на основі фізики",
-        "desc": "Погодинні та щоденні прогнози генерації фотоелектричних систем з використанням повної моделі випромінювання та супутникових даних."
+        "desc": "Погодинні та щоденні прогнози генерації фотоелектричних систем на основі повної моделі випромінювання, спектральних поправок і реальних погодних даних з кількох чисельних моделей прогнозу погоди. Підключення до обладнання не потрібне."
       },
       "calibration": {
         "title": "Автокалібрування",
@@ -899,7 +899,7 @@
       },
       "notifications": {
         "title": "Розумні сповіщення",
-        "desc": "Отримуйте сповіщення, коли прогноз на завтра суттєво змінюється або коли найкращий час для ввімкнення потужних приладів."
+        "desc": "Вечірній прогноз на завтра, попередження про сніг, коли панелі може засипати, і підказка, коли найкращий час увімкнути потужні прилади. Не пропустіть сонячне вікно."
       },
       "widgets": {
         "title": "Віджети для головного екрана",
@@ -916,7 +916,7 @@
       },
       "step2": {
         "title": "Отримайте прогноз",
-        "desc": "Volcast поєднує супутникові дані з фізичною моделлю вашої системи для прогнозування генерації."
+        "desc": "Volcast поєднує погодні дані з кількох моделей прогнозу погоди з фізичною моделлю вашої системи, щоб передбачити погодинну та денну генерацію."
       },
       "step3": {
         "title": "Калібруйте та оптимізуйте",
@@ -932,7 +932,7 @@
       "notificationsLabel": "Сповіщення",
       "widgetsAlt": "Віджети Volcast з прогнозом на сьогодні та завтра",
       "forecastAlt": "7-денний прогноз Volcast з погодинним розбиттям",
-      "notificationsAlt": "Сповіщення про зміну прогнозу Volcast"
+      "notificationsAlt": "Налаштування сповіщень Volcast: вечірній прогноз, сніговий алерт і вікно виробництва"
     },
     "ha": {
       "badge": "Інтеграція з Home Assistant",
@@ -982,7 +982,7 @@
       "label": "FAQ",
       "title": "Часті запитання",
       "q1": "Наскільки точні прогнози?",
-      "a1": "Volcast використовує фізичну модель та супутникові дані. Після калібрування точність зазвичай становить 85–95% у ясні дні.",
+      "a1": "Volcast використовує повну фізичну модель випромінювання разом із погодними даними з кількох чисельних моделей прогнозу та параметрами саме вашої системи. Після калібрування фактичною генерацією точність зазвичай сягає близько 85% у ясні та мінливо хмарні дні. Щільну хмарність важко передбачити будь-якій системі, але Volcast усе одно точніший за звичайні погодні застосунки.",
       "q2": "Чи потрібен мені розумний інвертор?",
       "a2": "Ні. Volcast працює з будь-якою системою без підключення інвертора — ви лише вводите параметри панелей.",
       "q3": "Чи Volcast безкоштовний?",
@@ -1003,7 +1003,7 @@
   "pt": {
     "meta": {
       "title": "Volcast — App de Previsão de Produção Solar",
-      "description": "Preveja a sua produção solar com um motor físico avançado. Sete dias de antecedência, hora a hora, com dados de satélite — para qualquer instalação.",
+      "description": "O Volcast prevê a sua produção solar hora a hora, sete dias à frente, a partir dos seus painéis e de vários modelos meteorológicos. Sem aceder ao inversor.",
       "ogTitle": "Volcast — App de Previsão de Produção Solar",
       "ogDescription": "Preveja a sua produção solar com física. Sete dias de antecedência, hora a hora — para qualquer instalação."
     },
@@ -1034,7 +1034,7 @@
       "desc": "Funciona com qualquer instalação, seja qual for a marca do inversor.",
       "engine": {
         "title": "Previsão Baseada em Física",
-        "desc": "Previsões de produção fotovoltaica horárias e diárias usando um modelo de irradiância completo e dados satélite."
+        "desc": "Previsões de produção fotovoltaica horárias e diárias com um modelo de irradiância completo, correções espectrais e dados meteorológicos reais de vários modelos numéricos de previsão. Sem ligação ao hardware."
       },
       "calibration": {
         "title": "Auto-Calibração",
@@ -1042,7 +1042,7 @@
       },
       "notifications": {
         "title": "Notificações Inteligentes",
-        "desc": "Receba alertas quando a previsão mudar significativamente ou quando for a melhor altura para ligar aparelhos pesados."
+        "desc": "Uma previsão à noite para amanhã, um aviso de neve quando os painéis podem ficar cobertos e um alerta quando for a melhor altura para ligar aparelhos pesados. Nunca perca uma janela de sol."
       },
       "widgets": {
         "title": "Widgets de Ecrã Principal",
@@ -1059,7 +1059,7 @@
       },
       "step2": {
         "title": "Obtenha a previsão",
-        "desc": "Volcast combina dados satélite com o modelo físico do seu sistema para prever a produção."
+        "desc": "O Volcast combina dados meteorológicos de vários modelos de previsão com o modelo físico do seu sistema para prever a produção horária e diária."
       },
       "step3": {
         "title": "Calibrar e otimizar",
@@ -1075,7 +1075,7 @@
       "notificationsLabel": "Notificações",
       "widgetsAlt": "Widgets Volcast mostrando a previsão para hoje e amanhã",
       "forecastAlt": "Previsão solar de 7 dias com detalhe horário",
-      "notificationsAlt": "Notificação de alteração de previsão no Volcast"
+      "notificationsAlt": "Definições de notificações do Volcast: previsão da noite, aviso de neve e janela de produção"
     },
     "ha": {
       "badge": "Integração Home Assistant",
@@ -1125,7 +1125,7 @@
       "label": "FAQ",
       "title": "Perguntas frequentes",
       "q1": "Qual a precisão das previsões?",
-      "a1": "Volcast usa um modelo físico e dados satélite. Após calibração, a precisão atinge 85–95% em dias limpos.",
+      "a1": "O Volcast usa um modelo físico completo de irradiância, combinado com dados meteorológicos de vários modelos numéricos de previsão e com os parâmetros específicos do seu sistema. Após a calibração com produção real, a precisão atinge tipicamente cerca de 85% em dias limpos e parcialmente nublados. Nebulosidade densa é difícil de prever para qualquer sistema, mas o Volcast continua a superar as apps de meteorologia genéricas.",
       "q2": "Preciso de um inversor inteligente?",
       "a2": "Não. Volcast funciona com qualquer instalação sem ligar o inversor — basta introduzir os parâmetros dos seus painéis.",
       "q3": "O Volcast é gratuito?",
@@ -1146,7 +1146,7 @@
   "pt-br": {
     "meta": {
       "title": "Volcast — App de Previsão de Geração Solar",
-      "description": "Preveja sua geração solar com um motor físico avançado. Sete dias de antecedência, hora a hora, com dados de satélite — para qualquer instalação.",
+      "description": "O Volcast prevê sua geração solar hora a hora, sete dias à frente, a partir dos seus painéis e de vários modelos meteorológicos. Sem login no inversor.",
       "ogTitle": "Volcast — App de Previsão de Geração Solar",
       "ogDescription": "Preveja sua geração solar com física. Sete dias de antecedência, hora a hora — para qualquer instalação."
     },
@@ -1177,7 +1177,7 @@
       "desc": "Funciona com qualquer instalação, seja qual for a marca do inversor.",
       "engine": {
         "title": "Previsão Baseada em Física",
-        "desc": "Previsões de produção fotovoltaica horárias e diárias usando um modelo de irradiância completo e dados satelitais reais."
+        "desc": "Previsões de produção fotovoltaica horárias e diárias usando um modelo de irradiância completo, correções espectrais e dados meteorológicos reais de vários modelos numéricos de previsão. Sem precisar conectar hardware."
       },
       "calibration": {
         "title": "Auto-calibração",
@@ -1185,7 +1185,7 @@
       },
       "notifications": {
         "title": "Notificações Inteligentes",
-        "desc": "Receba alertas quando a previsão mudar ou quando for o melhor momento para ligar aparelhos pesados."
+        "desc": "Uma previsão à noite para o dia seguinte, um aviso de neve quando seus painéis podem estar cobertos e um alerta do melhor momento para ligar aparelhos pesados. Nunca perca uma janela de sol."
       },
       "widgets": {
         "title": "Widgets de Tela Inicial",
@@ -1202,7 +1202,7 @@
       },
       "step2": {
         "title": "Obtenha sua previsão",
-        "desc": "Volcast combina dados satelitais com o modelo físico do seu sistema para prever a produção."
+        "desc": "O Volcast combina dados meteorológicos de vários modelos de previsão com o modelo físico do seu sistema para prever a produção horária e diária."
       },
       "step3": {
         "title": "Calibrar e otimizar",
@@ -1218,7 +1218,7 @@
       "notificationsLabel": "Notificações",
       "widgetsAlt": "Widgets Volcast mostrando a previsão para hoje e amanhã",
       "forecastAlt": "Previsão solar de 7 dias com detalhamento horário",
-      "notificationsAlt": "Notificação de mudança de previsão no Volcast"
+      "notificationsAlt": "Configurações de notificações do Volcast: previsão da noite, aviso de neve e janela de produção"
     },
     "ha": {
       "badge": "Integração Home Assistant",
@@ -1268,7 +1268,7 @@
       "label": "FAQ",
       "title": "Perguntas frequentes",
       "q1": "Qual a precisão das previsões?",
-      "a1": "O Volcast usa um modelo físico e dados satelitais. Após calibração, a precisão costuma atingir 85–95% em dias ensolarados.",
+      "a1": "O Volcast usa um modelo físico completo de irradiância combinado com dados meteorológicos de vários modelos numéricos de previsão e com os parâmetros do seu sistema. Após a calibração com a produção real, a precisão costuma chegar a cerca de 85% em dias ensolarados e parcialmente nublados. Nebulosidade intensa é difícil de prever para qualquer sistema, mas mesmo assim o Volcast supera os aplicativos de previsão do tempo genéricos.",
       "q2": "Preciso de um inversor inteligente?",
       "a2": "Não. O Volcast funciona com qualquer instalação sem conectar o inversor — basta informar os parâmetros dos seus painéis.",
       "q3": "O Volcast é gratuito?",
@@ -1289,7 +1289,7 @@
   "ro": {
     "meta": {
       "title": "Volcast — Aplicație de prognoză solară",
-      "description": "Preziceți producția solară cu un motor fizic avansat. Șapte zile în avans, oră cu oră, din date satelitare — pentru orice instalație.",
+      "description": "Volcast prezice producția panourilor dumneavoastră oră cu oră, șapte zile în avans, din mai multe modele meteo. Fără conectare la invertor.",
       "ogTitle": "Volcast — Aplicație de prognoză solară",
       "ogDescription": "Preziceți producția solară prin fizică. Șapte zile în avans, oră cu oră — pentru orice instalație."
     },
@@ -1320,7 +1320,7 @@
       "desc": "Funcționează cu orice instalație, indiferent de marca invertorului.",
       "engine": {
         "title": "Prognoză bazată pe fizică",
-        "desc": "Prognoze PV orare și zilnice folosind un model de iradiere complet și date meteo prin satelit."
+        "desc": "Prognoze PV orare și zilnice folosind un model de iradiere complet, corecții spectrale și date meteo reale din mai multe modele numerice de prognoză. Fără conectare la hardware."
       },
       "calibration": {
         "title": "Auto-Calibrare",
@@ -1328,7 +1328,7 @@
       },
       "notifications": {
         "title": "Notificări Inteligente",
-        "desc": "Primiți alerte când prognoza se schimbă semnificativ sau când este momentul optim pentru aparate electrocasnice mari."
+        "desc": "Prognoza de seară pentru ziua următoare, avertizare când panourile pot fi acoperite de zăpadă și un semnal când este momentul optim pentru aparatele electrocasnice mari. Nu ratați nicio fereastră însorită."
       },
       "widgets": {
         "title": "Widget-uri ecran de pornire",
@@ -1345,7 +1345,7 @@
       },
       "step2": {
         "title": "Obțineți prognoza",
-        "desc": "Volcast combină datele satelit cu modelul fizic al sistemului pentru a prezice producția."
+        "desc": "Volcast combină datele meteo din mai multe modele de prognoză cu modelul fizic al sistemului dumneavoastră pentru a prezice producția orară și zilnică."
       },
       "step3": {
         "title": "Calibrați și optimizați",
@@ -1361,7 +1361,7 @@
       "notificationsLabel": "Notificări",
       "widgetsAlt": "Widget-uri Volcast cu prognoza pentru azi și mâine",
       "forecastAlt": "Prognoză solară pe 7 zile cu defalcare orară",
-      "notificationsAlt": "Notificare schimbare prognoză Volcast"
+      "notificationsAlt": "Setările notificărilor Volcast: prognoza de seară, alertă de zăpadă și fereastra de producție"
     },
     "ha": {
       "badge": "Integrare Home Assistant",
@@ -1411,7 +1411,7 @@
       "label": "FAQ",
       "title": "Întrebări frecvente",
       "q1": "Cât de precise sunt prognozele?",
-      "a1": "Volcast folosește un model fizic și date satelit. După calibrare, precizia ajunge la 85–95% în zilele senine.",
+      "a1": "Volcast folosește un model fizic complet de iradiere, combinat cu date meteo din mai multe modele numerice de prognoză și cu parametrii instalației dumneavoastră. După calibrarea cu producția reală, precizia ajunge de obicei în jur de 85% în zilele senine și parțial înnorate. Nebulozitatea densă este greu de prezis pentru orice sistem, dar Volcast rămâne mai bun decât aplicațiile meteo obișnuite.",
       "q2": "Am nevoie de un invertor inteligent?",
       "a2": "Nu. Volcast funcționează cu orice instalație fără a conecta invertorul — introduceți doar parametrii panourilor.",
       "q3": "Volcast este gratuit?",
@@ -1463,7 +1463,7 @@
       "desc": "Funguje s jakoukoli instalací, bez ohledu na značku střídače.",
       "engine": {
         "title": "Předpověď založená na fyzice",
-        "desc": "Hodinové a denní předpovědi výroby FVE s využitím modelu ozáření a satelitních meteorologických dat."
+        "desc": "Hodinové a denní předpovědi výroby FVE s využitím kompletního modelu ozáření, spektrálních korekcí a reálných meteorologických dat z několika numerických předpovědních modelů. Bez připojení k hardwaru."
       },
       "calibration": {
         "title": "Autokalibrace",
@@ -1471,7 +1471,7 @@
       },
       "notifications": {
         "title": "Chytrá upozornění",
-        "desc": "Dostávejte upozornění, když se předpověď výrazně změní nebo když je nejlepší čas pro zapnutí náročných spotřebičů."
+        "desc": "Večerní předpověď na zítřek, varování, když mohou být panely pokryté sněhem, a upozornění, kdy je nejlepší čas zapnout náročné spotřebiče. Slunečné okno vám už neunikne."
       },
       "widgets": {
         "title": "Widgety na domovskou obrazovku",
@@ -1488,7 +1488,7 @@
       },
       "step2": {
         "title": "Získejte předpověď",
-        "desc": "Volcast kombinuje satelitní data s fyzikálním modelem vašeho systému pro předpověď výroby."
+        "desc": "Volcast kombinuje meteorologická data z několika předpovědních modelů s fyzikálním modelem vašeho systému a předpovídá hodinovou i denní výrobu."
       },
       "step3": {
         "title": "Kalibrace a optimalizace",
@@ -1504,7 +1504,7 @@
       "notificationsLabel": "Upozornění",
       "widgetsAlt": "Widgety Volcast s předpovědí na dnes a zítra",
       "forecastAlt": "7denní předpověď Volcast s hodinovým rozpisem",
-      "notificationsAlt": "Upozornění na změnu předpovědi Volcast"
+      "notificationsAlt": "Nastavení upozornění Volcast: večerní předpověď, sněhová výstraha a produkční okno"
     },
     "ha": {
       "badge": "Integrace Home Assistant",
@@ -1554,7 +1554,7 @@
       "label": "FAQ",
       "title": "Časté dotazy",
       "q1": "Jak přesné jsou předpovědi?",
-      "a1": "Volcast využívá fyzikální model a satelitní data. Po kalibraci dosahuje přesnost obvykle 85–95 % v jasných dnech.",
+      "a1": "Volcast využívá kompletní fyzikální model ozáření, meteorologická data z několika numerických předpovědních modelů a konkrétní parametry vašeho systému. Po kalibraci reálnou výrobou dosahuje přesnost obvykle kolem 85 % v jasných a polojasných dnech. Hustou oblačnost předpovídá obtížně každý systém, ale Volcast si i tak vede lépe než běžné meteorologické aplikace.",
       "q2": "Potřebuji chytrý střídač?",
       "a2": "Ne. Volcast funguje s jakoukoli instalací bez připojení střídače — stačí zadat parametry panelů.",
       "q3": "Je Volcast zdarma?",
@@ -1606,7 +1606,7 @@
       "desc": "Funguje s akoukoľvek inštaláciou, bez ohľadu na značku meniča.",
       "engine": {
         "title": "Predpoveď založená na fyzike",
-        "desc": "Hodinové a denné predpovede výroby FVE s využitím modelu ožiarenia a satelitných meteorologických dát."
+        "desc": "Hodinové a denné predpovede výroby FVE s využitím kompletného modelu ožiarenia, spektrálnych korekcií a reálnych meteorologických dát z viacerých numerických predpovedných modelov. Bez pripojenia k hardvéru."
       },
       "calibration": {
         "title": "Autokalibrácia",
@@ -1614,7 +1614,7 @@
       },
       "notifications": {
         "title": "Inteligentné upozornenia",
-        "desc": "Dostávajte upozornenia, keď sa predpoveď výrazne zmení alebo keď je najlepší čas na zapnutie náročných spotrebičov."
+        "desc": "Večerná predpoveď na zajtra, upozornenie na sneh, keď môžu byť panely zasypané, a tip, kedy je najlepší čas zapnúť náročné spotrebiče. Nezmeškajte slnečné okno."
       },
       "widgets": {
         "title": "Widgety na domovskú obrazovku",
@@ -1631,7 +1631,7 @@
       },
       "step2": {
         "title": "Získajte predpoveď",
-        "desc": "Volcast kombinuje satelitné dáta s fyzikálnym modelom vášho systému na predpoveď výroby."
+        "desc": "Volcast kombinuje meteorologické dáta z viacerých predpovedných modelov s fyzikálnym modelom vášho systému a predpovedá hodinovú aj dennú výrobu."
       },
       "step3": {
         "title": "Kalibrácia a optimalizácia",
@@ -1647,7 +1647,7 @@
       "notificationsLabel": "Upozornenia",
       "widgetsAlt": "Widgety Volcast s predpoveďou na dnes a zajtra",
       "forecastAlt": "7-dňová predpoveď Volcast s hodinovým rozpisom",
-      "notificationsAlt": "Upozornenie na zmenu predpovede Volcast"
+      "notificationsAlt": "Nastavenia upozornení Volcast: večerná predpoveď, snehová výstraha a produkčné okno"
     },
     "ha": {
       "badge": "Integrácia Home Assistant",
@@ -1697,7 +1697,7 @@
       "label": "FAQ",
       "title": "Časté otázky",
       "q1": "Ako presné sú predpovede?",
-      "a1": "Volcast využíva fyzikálny model a satelitné dáta. Po kalibrácii dosahuje presnosť zvyčajne 85–95 % v jasných dňoch.",
+      "a1": "Volcast využíva kompletný fyzikálny model ožiarenia v kombinácii s meteorologickými dátami z viacerých numerických predpovedných modelov a s parametrami vášho systému. Po kalibrácii na reálnej výrobe dosahuje presnosť zvyčajne okolo 85 % v jasných a polojasných dňoch. Hustú oblačnosť predpovedá ťažko každý systém, no Volcast je aj tak presnejší než bežné aplikácie o počasí.",
       "q2": "Potrebujem inteligentný menič?",
       "a2": "Nie. Volcast funguje s akoukoľvek inštaláciou bez pripojenia meniča — stačí zadať parametre panelov.",
       "q3": "Je Volcast zadarmo?",

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Hourly Solar Production Forecast, 7 Days Ahead</title>
-  <meta name="description" content="Volcast forecasts your solar production hour by hour, seven days ahead — from your panel setup and satellite data. No inverter login. iOS and Android.">
+  <meta name="description" content="Volcast forecasts your solar production hour by hour, seven days ahead — from your panel setup and multi-model weather forecasts. No inverter login.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — Solar Forecasting App">
-  <meta property="og:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data.">
+  <meta property="og:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and multi-model weather forecasts.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://volcast.app/en/">
   <meta property="og:site_name" content="Volcast">
@@ -21,7 +21,7 @@
   <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Volcast — Solar Forecasting App">
-  <meta name="twitter:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data.">
+  <meta name="twitter:description" content="Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and multi-model weather forecasts.">
   <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
   <link rel="canonical" href="https://volcast.app/en/">
   <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
@@ -1245,7 +1245,7 @@
       <div class="hero-content">
         <p class="hero-label">Solar forecasting app</p>
         <h1><em>Rocket science</em><br>on your roof.</h1>
-        <p class="hero-desc">Advanced Physical Engine. Enter your panel parameters — azimuth, tilt, peak power — and get precision forecasts powered by satellite data and physics. Works with any installation, any brand.</p>
+        <p class="hero-desc">Advanced Physical Engine. Enter your panel parameters — azimuth, tilt, peak power — and get precision forecasts powered by weather models and physics. Works with any installation, any brand.</p>
         <div class="hero-actions">
         <a href="#download" class="btn-primary">
           Download Now
@@ -1296,7 +1296,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </div>
           <h3>Physics-Based Forecasting</h3>
-          <p>Hourly and daily PV production forecasts using a full irradiance model, spectral corrections, and real satellite weather data. No hardware connection needed.</p>
+          <p>Hourly and daily PV production forecasts using a full irradiance model, spectral corrections, and real weather data from multiple numerical forecast models. No hardware connection needed.</p>
         </div>
         <div class="glass-card feature-card reveal">
           <div class="feature-icon feature-icon--indigo">
@@ -1311,7 +1311,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
             </div>
             <h3>Smart Notifications</h3>
-            <p>Get alerted when tomorrow's forecast changes significantly or when it's the best time to run heavy appliances. Never miss a sunny window.</p>
+            <p>An evening forecast for tomorrow, a snow warning when your panels may be covered, and a heads-up when it is the best time to run heavy appliances. Never miss a sunny window.</p>
           </div>
           <div class="feature-card-img">
             <img src="/img/en/notifications.png" alt="Volcast notifications" loading="lazy">
@@ -1352,7 +1352,7 @@
         <div class="step reveal">
           <div class="step-number">2</div>
           <h3>Get your forecast</h3>
-          <p>Volcast combines satellite weather data with the physical model of your system to predict hourly and daily production.</p>
+          <p>Volcast combines weather data from multiple forecast models with the physical model of your system to predict hourly and daily production.</p>
         </div>
         <div class="step reveal">
           <div class="step-number">3</div>
@@ -1505,7 +1505,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             <svg viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 22 22"/><path d="M10 5a7.002 7.002 0 0 1 8.838 8.834"/><path d="M17.5 21H9a7 7 0 0 1-6.58-9.29"/><path d="M22 18a4.984 4.984 0 0 0-.516-2.228"/></svg>
           </div>
           <h3>No Cloud Hardware Access</h3>
-          <p>Volcast never connects to your inverter or any hardware. All forecasts are computed from satellite weather data and your panel parameters.</p>
+          <p>Volcast never connects to your inverter or any hardware. All forecasts are computed from weather model data and your panel parameters.</p>
         </div>
       </div>
     </div>
@@ -1556,7 +1556,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             How accurate are the solar forecasts?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Volcast uses a full physical irradiance model combined with satellite weather data and your specific system parameters. After calibration with real production data, accuracy typically reaches 85–95% on clear and partly cloudy days. Heavy cloud cover is harder to predict for any system, but Volcast still outperforms generic weather apps.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast uses a full physical irradiance model combined with weather data from multiple numerical forecast models and your specific system parameters. After calibration with real production data, accuracy typically reaches around 85% on clear and partly cloudy days. Heavy cloud cover is harder to predict for any system, but Volcast still outperforms generic weather apps.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
