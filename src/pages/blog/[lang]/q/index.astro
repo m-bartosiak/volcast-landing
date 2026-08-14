@@ -6,17 +6,23 @@ import { getCollection } from 'astro:content';
 import { LANGS, t, type BlogLang } from '../../../../data/i18n';
 import { categoryName } from '../../../../data/qa-categories';
 
-export function getStaticPaths() {
-  return LANGS.map((lang) => ({ params: { lang } }));
+// Jak w listingu wpisów: tylko języki z realną treścią. Patrz komentarz tam.
+export async function getStaticPaths() {
+  const all = await getCollection('qa', ({ data }) => !data.draft);
+  return LANGS
+    .filter((lang) => all.some((q) => q.data.lang === lang))
+    .map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params as { lang: BlogLang };
-const alternates = LANGS.filter((l) => l !== lang).map((l) => ({
-  lang: l,
-  url: `/blog/${l}/q/`,
-}));
 
-const entries = (await getCollection('qa', ({ data }) => !data.draft && data.lang === lang))
+const allQa = await getCollection('qa', ({ data }) => !data.draft);
+const alternates = LANGS
+  .filter((l) => l !== lang && allQa.some((q) => q.data.lang === l))
+  .map((l) => ({ lang: l, url: `/blog/${l}/q/` }));
+
+const entries = allQa
+  .filter(({ data }) => data.lang === lang)
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 // Grupowanie po kategorii (k1–k6) — wyświetlamy czytelną nazwę, nie kod.

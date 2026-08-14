@@ -16,6 +16,9 @@ export interface TranslationCluster {
   en?: string;
   pl?: string;
   de?: string;
+  it?: string;
+  fr?: string;
+  ro?: string;
 }
 
 export const TRANSLATION_CLUSTERS: TranslationCluster[] = [

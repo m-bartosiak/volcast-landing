@@ -7,19 +7,26 @@ import SearchWidget from '../../../components/SearchWidget.astro';
 import { getCollection } from 'astro:content';
 import { LANGS, t, dateLocale, type BlogLang } from '../../../data/i18n';
 
-export function getStaticPaths() {
-  return LANGS.map((lang) => ({ params: { lang } }));
+// Tylko języki, które mają choć jeden opublikowany wpis. Wcześniej trasa
+// powstawała bezwarunkowo z LANGS, więc dodanie języka przed treścią tworzyło
+// pustą, zalinkowaną i zasitemapowaną stronę — a przełącznik języka wystawiał
+// do niej link z każdej strony pozostałych języków. Wzorzec skopiowany
+// z tag/[tag].astro, które robiło to poprawnie od początku.
+export async function getStaticPaths() {
+  const all = await getCollection('blog', ({ data }) => !data.draft);
+  return LANGS
+    .filter((lang) => all.some((p) => p.data.lang === lang))
+    .map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params as { lang: BlogLang };
-const alternates = LANGS.filter((l) => l !== lang).map((l) => ({
-  lang: l,
-  url: `/blog/${l}/`,
-}));
 
-const posts = await getCollection('blog', ({ data }) =>
-  !data.draft && data.lang === lang
-);
+const allNonDraft = await getCollection('blog', ({ data }) => !data.draft);
+const alternates = LANGS
+  .filter((l) => l !== lang && allNonDraft.some((p) => p.data.lang === l))
+  .map((l) => ({ lang: l, url: `/blog/${l}/` }));
+
+const posts = allNonDraft.filter(({ data }) => data.lang === lang);
 posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 // Collect unique tags
