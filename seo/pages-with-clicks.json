@@ -1,0 +1,110 @@
+{
+    "pages": [
+        {
+            "path": "/en/",
+            "clicks": 47,
+            "impressions": 152
+        },
+        {
+            "path": "/fr/",
+            "clicks": 17,
+            "impressions": 32
+        },
+        {
+            "path": "/blog/en/home-assistant-solar-forecast-comparison/",
+            "clicks": 7,
+            "impressions": 378
+        },
+        {
+            "path": "/pl/",
+            "clicks": 6,
+            "impressions": 25
+        },
+        {
+            "path": "/de/",
+            "clicks": 5,
+            "impressions": 52
+        },
+        {
+            "path": "/blog/de/pv-prognose-home-assistant-vergleich/",
+            "clicks": 5,
+            "impressions": 31
+        },
+        {
+            "path": "/blog/en/volcast-vs-forecast-solar-vs-solcast/",
+            "clicks": 4,
+            "impressions": 415
+        },
+        {
+            "path": "/ro/",
+            "clicks": 3,
+            "impressions": 16
+        },
+        {
+            "path": "/blog/en/solar-production-forecast/",
+            "clicks": 2,
+            "impressions": 274
+        },
+        {
+            "path": "/nl/",
+            "clicks": 2,
+            "impressions": 11
+        },
+        {
+            "path": "/cs/",
+            "clicks": 1,
+            "impressions": 79
+        },
+        {
+            "path": "/es/",
+            "clicks": 1,
+            "impressions": 43
+        },
+        {
+            "path": "/blog/en/best-solar-forecast-app/",
+            "clicks": 1,
+            "impressions": 37
+        },
+        {
+            "path": "/blog/de/q/wie-viel-kwh-pro-tag-ist-normal/",
+            "clicks": 1,
+            "impressions": 25
+        },
+        {
+            "path": "/blog/en/q/how-to-check-solar-system-is-working-properly/",
+            "clicks": 1,
+            "impressions": 12
+        },
+        {
+            "path": "/blog/de/solarprognose-app-vergleich/",
+            "clicks": 1,
+            "impressions": 12
+        },
+        {
+            "path": "/blog/de/",
+            "clicks": 1,
+            "impressions": 7
+        },
+        {
+            "path": "/uk/",
+            "clicks": 1,
+            "impressions": 4
+        },
+        {
+            "path": "/",
+            "clicks": 1,
+            "impressions": 4
+        }
+    ],
+    "totals": {
+        "pages": 19,
+        "clicks": 107
+    },
+    "window": {
+        "end": "2026-08-11",
+        "days": 28,
+        "start": "2026-07-15",
+        "anchor": "2026-08-11",
+        "source": "google-search-console"
+    }
+}

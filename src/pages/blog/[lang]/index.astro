@@ -30,6 +30,12 @@ const hasHero = posts.length >= 7;
 const heroPost = hasHero ? posts[0] : null;
 const gridPosts = hasHero ? posts.slice(1) : posts;
 
+// `noindex`: to jest strona nawigacyjna, nie docelowa. W 28 dniach do 2026-08-11
+// zebrała 138 impresji i ZERO kliknięć, z czego 132 impresje na samym „volcast" —
+// przechwytywała zapytanie o markę i przepuszczała je bez kliknięcia, podczas gdy
+// /en/ konwertuje tę samą frazę na 34%. `follow` zostaje: linki stąd do wpisów
+// mają płynąć dalej, a to wpisy zarabiają.
+
 // JSON-LD CollectionPage
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -46,6 +52,7 @@ const jsonLd = {
   description={t(lang).blogDescription}
   lang={lang}
   alternates={alternates}
+  noindex={true}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 

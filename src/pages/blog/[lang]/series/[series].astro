@@ -32,6 +32,10 @@ const posts = allNonDraft
 const alternates = LANGS
   .filter(l => l !== lang && allNonDraft.some(p => p.data.lang === l && p.data.series === series))
   .map(l => ({ lang: l, url: `/blog/${l}/series/${series}/` }));
+
+// `noindex`: strona archiwum. Dwanaście stron serii zebrało razem 1 impresję
+// i 0 kliknięć w 28 dniach do 2026-08-11. Nawigację po serii pełni SeriesNav
+// wewnątrz wpisów i działa niezależnie od tego, czy ta strona jest w indeksie.
 ---
 
 <BaseLayout
@@ -39,6 +43,7 @@ const alternates = LANGS
   description={seriesMeta?.description || `${series} series`}
   lang={lang}
   alternates={alternates}
+  noindex={true}
 >
   <Header lang={lang} alternates={alternates} />
 
