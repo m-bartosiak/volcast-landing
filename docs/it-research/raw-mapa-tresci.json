@@ -1,0 +1,398 @@
+{
+  "posts": [
+    {
+      "translationKey": "forecast-hub",
+      "enSlug": "solar-production-forecast",
+      "proposedItSlug": "previsione-produzione-fotovoltaica",
+      "itTitle": "Previsione della produzione fotovoltaica — come stimare i kWh di domani",
+      "marketSensitive": "ZADNA — hub klastra, czysta metodyka prognozy. Tlumaczyc 1:1 (to najwazniejszy post, wszystkie Q&A linkuja do niego przez pole guide)."
+    },
+    {
+      "translationKey": "ha-comparison",
+      "enSlug": "home-assistant-solar-forecast-comparison",
+      "proposedItSlug": "previsione-fotovoltaica-in-home-assistant-confronto",
+      "itTitle": "Previsioni fotovoltaiche in Home Assistant — Volcast vs Forecast.Solar vs Solcast",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "brand-comparison",
+      "enSlug": "volcast-vs-forecast-solar-vs-solcast",
+      "proposedItSlug": "volcast-vs-forecast-solar-vs-solcast",
+      "itTitle": "Volcast vs Forecast.Solar vs Solcast — un confronto onesto",
+      "marketSensitive": "ZADNA — slug zostaje w formie markowej (nazwy wlasne), tak jak w EN/PL. DE zrobil wyjatek (forecast-solar-alternative) pod niemiecka intencje wyszukiwania; dla IT rekomendacja: zostawic marki, bo brak lokalnego odpowiednika zapytania."
+    },
+    {
+      "translationKey": "best-app",
+      "enSlug": "best-solar-forecast-app",
+      "proposedItSlug": "migliore-app-previsione-fotovoltaica",
+      "itTitle": "La migliore app per la previsione del fotovoltaico — quale prevede davvero la produzione",
+      "marketSensitive": "LEKKA ADAPTACJA — lista marek falownikow (SMA, Fronius, GoodWe, Sungrow, Enphase) do uzupelnienia o marki popularne we Wloszech: FIMER/Aurora, Zucchetti/Sofar, Huawei, SolarEdge."
+    },
+    {
+      "translationKey": "weather-vs-output",
+      "enSlug": "weather-forecast-vs-solar-output",
+      "proposedItSlug": "previsioni-meteo-e-produzione-fotovoltaica",
+      "itTitle": "Perche le app meteo non sanno dirti quanto produrra il fotovoltaico",
+      "marketSensitive": "ZADNA — ale UWAGA: DE ten post WYCIAL. Dla IT rekomendacja to zachowac: 'meteo' to jedno z najsilniejszych head-terms we wloskim wyszukiwaniu, a post jest w pelni generyczny."
+    },
+    {
+      "translationKey": "self-consumption",
+      "enSlug": "increase-solar-self-consumption",
+      "proposedItSlug": "aumentare-autoconsumo-fotovoltaico",
+      "itTitle": "Aumentare l'autoconsumo del fotovoltaico — 7 modi concreti",
+      "marketSensitive": "ADAPTACJA + UWAGA STRUKTURALNA: DE ten post wycial i wtopil w 'appliances'. Dla IT rekomendacja odwrotna — ZACHOWAC jako osobny post, bo po zamknieciu Scambio sul Posto dla nowych impianti autoconsumo jest centralnym pojeciem rynku wloskiego (najwyzszy potencjal SEO w calym klastrze). Ekonomike przeliczyc na RID/prezzi minimi garantiti zamiast export rate."
+    },
+    {
+      "translationKey": "appliances",
+      "enSlug": "when-to-run-appliances-solar",
+      "proposedItSlug": "quando-usare-gli-elettrodomestici-con-il-fotovoltaico",
+      "itTitle": "Quando far partire boiler, lavatrice e lavastoviglie con il fotovoltaico",
+      "marketSensitive": "ADAPTACJA — dwa razy pada argument 'feed-in pays a few cents vs retail several times higher'; dla IT przelozyc na RID / prezzi minimi garantiti vs prezzo in bolletta. Dolozyc fasce orarie F1/F2/F3 (obowiazkowe pasma czasowe ARERA), ktore zmieniaja odpowiedz dla godzin bez slonca — to najwazniejsza roznica vs EN."
+    },
+    {
+      "translationKey": "ev-charging",
+      "enSlug": "ev-charging-from-solar",
+      "proposedItSlug": "ricarica-auto-elettrica-con-il-fotovoltaico",
+      "itTitle": "Ricaricare l'auto elettrica con il fotovoltaico — quando attaccare la spina",
+      "marketSensitive": "LEKKA ADAPTACJA — jedna kwota w funtach (£) do przeliczenia na euro. Dodac realia wloskie: typowa potenza disponibile 3 kW (rzadziej 6 kW) mocno ogranicza szybkosc ladowania z nadwyzki."
+    },
+    {
+      "translationKey": "heat-pump",
+      "enSlug": "heat-pump-solar-timing",
+      "proposedItSlug": "pompa-di-calore-e-fotovoltaico",
+      "itTitle": "Pompa di calore e fotovoltaico — sincronizzare il riscaldamento con la produzione",
+      "marketSensitive": "LEKKA ADAPTACJA — w Wloszech (zwlaszcza Centro/Sud) sezon grzewczy jest krotki, a dominujacym przypadkiem uzycia jest chlodzenie latem. Dodac watek climatizzatore/raffrescamento, ktory w EN nie istnieje."
+    },
+    {
+      "translationKey": "winter",
+      "enSlug": "solar-panels-winter-output",
+      "proposedItSlug": "fotovoltaico-in-inverno-quanto-produce",
+      "itTitle": "Il fotovoltaico d'inverno — quanto produce davvero",
+      "marketSensitive": "ADAPTACJA LICZBOWA — liczby EN sa dla szerokosci UK i zanizaja Wlochy. Rozbic na Nord (nebbia Pianura Padana, najgorszy przypadek) vs Centro/Sud. Watki sniegowe zredukowac do Alp/Appennini."
+    },
+    {
+      "translationKey": "dynamic-tariff",
+      "enSlug": "dynamic-tariff-with-solar",
+      "proposedItSlug": "tariffe-luce-indicizzate-e-fotovoltaico",
+      "itTitle": "Tariffe luce indicizzate con il fotovoltaico — conviene davvero?",
+      "marketSensitive": "MOCNA ADAPTACJA — post wymienia Octopus i dwa razy Australie oraz 'feed-in or wholesale'. Dla IT: oferty indeksowane do PUN (nie half-hourly — we Wloszech detal nie ma cen polgodzinnych), monoraria vs bioraria/multioraria, fasce F1/F2/F3, ARERA, mercato libero po zniesieniu maggior tutela."
+    },
+    {
+      "translationKey": "negative-prices",
+      "enSlug": "negative-electricity-prices-solar",
+      "proposedItSlug": "prezzi-negativi-energia-e-fotovoltaico",
+      "itTitle": "Prezzi negativi dell'energia — cosa deve sapere chi ha il fotovoltaico",
+      "marketSensitive": "MOCNA ADAPTACJA — odwolanie do Australii i 'feed-in schemes may shield small systems'. Dla IT: epizody ujemnych/zerowych cen na MGP i PUN, ekspozycja przez Ritiro Dedicato, rola Terna. Wyjasnic, ze klient z RID jest wystawiony inaczej niz klient na starym Scambio sul Posto."
+    },
+    {
+      "translationKey": "battery",
+      "enSlug": "home-battery-charge-grid-or-solar",
+      "proposedItSlug": "batteria-di-accumulo-caricare-da-rete-o-dal-sole",
+      "itTitle": "Batteria di accumulo — quando caricare dalla rete e quando dal sole",
+      "marketSensitive": "ADAPTACJA — cala logika opiera sie na tariff spread. Dla IT przeliczyc na spread F3 vs F1 (bioraria) albo spread w ofercie indeksowanej PUN; zaznaczyc, ze bez SSP kazda nadwyzka jest warta tylko cene RID, co przesuwa oplacalnosc w strone ladowania ze slonca."
+    },
+    {
+      "translationKey": "how-solar-panels-convert-sunlight",
+      "enSlug": "how-solar-panels-convert-sunlight",
+      "proposedItSlug": "come-funzionano-i-pannelli-fotovoltaici",
+      "itTitle": "Come i pannelli fotovoltaici trasformano la luce in elettricita",
+      "marketSensitive": "ZADNA — czysta fizyka. (Post bez translationKey we frontmatterze: laczy sie przez wiersz w TRANSLATION_CLUSTERS, klucz = slug EN.)"
+    },
+    {
+      "translationKey": "why-panels-produce-more-in-spring",
+      "enSlug": "why-panels-produce-more-in-spring",
+      "proposedItSlug": "perche-i-pannelli-producono-di-piu-in-primavera",
+      "itTitle": "Perche i pannelli producono piu in primavera che d'estate",
+      "marketSensitive": "LEKKA ADAPTACJA — efekt jest we Wloszech silniejszy niz w EN (wyzsze temperatury letnie); warto podmienic przyklad temperaturowy na wloski. Poza tym generyczny."
+    },
+    {
+      "translationKey": "three-numbers-pv-setup",
+      "enSlug": "three-numbers-pv-setup",
+      "proposedItSlug": "i-tre-numeri-del-tuo-impianto-fotovoltaico",
+      "itTitle": "I tre numeri che definiscono il tuo impianto fotovoltaico",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "direct-vs-diffuse-sunlight",
+      "enSlug": "direct-vs-diffuse-sunlight",
+      "proposedItSlug": "luce-diretta-e-luce-diffusa",
+      "itTitle": "Luce diretta e diffusa — perche anche con il cielo coperto si produce",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "tilt-and-azimuth-explained",
+      "enSlug": "tilt-and-azimuth-explained",
+      "proposedItSlug": "inclinazione-e-azimut-dei-pannelli",
+      "itTitle": "Inclinazione e azimut: quanto pesano davvero sulla resa annua",
+      "marketSensitive": "LEKKA ADAPTACJA — optymalne pochylenie zalezy od szerokosci geograficznej; dla Wloch podac 30-35 stopni (Nord) i 28-30 (Sud) zamiast wartosci z przykladu EN."
+    },
+    {
+      "translationKey": "physics-vs-ml-solar-forecasting",
+      "enSlug": "physics-vs-ml-solar-forecasting",
+      "proposedItSlug": "previsioni-fotovoltaico-fisica-o-machine-learning",
+      "itTitle": "Previsioni fotovoltaiche: modello fisico o machine learning?",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "where-weather-forecasts-come-from",
+      "enSlug": "where-weather-forecasts-come-from",
+      "proposedItSlug": "da-dove-arrivano-le-previsioni-meteo",
+      "itTitle": "Da dove arrivano le previsioni meteo: i modelli NWP spiegati a chi ha il fotovoltaico",
+      "marketSensitive": "LEKKA ADAPTACJA — post wymienia UKV i Met Office (czysto brytyjskie). Podmienic/uzupelnic o modele obslugujace Wlochy: COSMO-IT / ICON-2I, MOLOCH, BOLAM (Aeronautica Militare, ARPAE); ICON, AROME, IFS/ECMWF, GFS zostaja bez zmian."
+    },
+    {
+      "translationKey": "why-cloud-cover-hardest-variable",
+      "enSlug": "why-cloud-cover-hardest-variable",
+      "proposedItSlug": "perche-le-nuvole-sono-la-variabile-piu-difficile",
+      "itTitle": "Perche la nuvolosita e la variabile piu difficile da prevedere",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "irradiance-journey-space-to-panel",
+      "enSlug": "irradiance-journey-space-to-panel",
+      "proposedItSlug": "viaggio-della-luce-dallo-spazio-al-pannello",
+      "itTitle": "Il viaggio dell'irraggiamento: dallo spazio al tuo pannello in 8 passaggi",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "transposition-models",
+      "enSlug": "transposition-models",
+      "proposedItSlug": "modelli-di-trasposizione",
+      "itTitle": "Modelli di trasposizione: come si calcola l'irraggiamento sul piano inclinato",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "nowcasting-vs-day-ahead",
+      "enSlug": "nowcasting-vs-day-ahead",
+      "proposedItSlug": "nowcasting-day-ahead-e-previsioni-settimanali",
+      "itTitle": "Nowcasting, day-ahead e settimana — l'accuratezza a ogni orizzonte",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "why-no-training-data-needed",
+      "enSlug": "why-no-training-data-needed",
+      "proposedItSlug": "previsioni-senza-dati-storici",
+      "itTitle": "Perche un impianto nuovo non ha bisogno di dati storici",
+      "marketSensitive": "ZADNA"
+    },
+    {
+      "translationKey": "why-solar-panels-produce-less-in-heat",
+      "enSlug": "why-solar-panels-produce-less-in-heat",
+      "proposedItSlug": "perche-i-pannelli-producono-meno-con-il-caldo",
+      "itTitle": "Perche i pannelli producono meno nei giorni piu caldi",
+      "marketSensitive": "LEKKA ADAPTACJA, WYSOKI PRIORYTET DLA IT — fizyka generyczna, ale przyklady przeliczyc na 35-40 stopni C typowe dla Centro/Sud. To najbardziej 'wloski' z generycznych postow, warto go wypchnac wczesnie."
+    },
+    {
+      "translationKey": "summer-solar-surplus-and-curtailment",
+      "enSlug": "summer-solar-surplus-and-curtailment",
+      "proposedItSlug": "eccedenze-estive-e-curtailment",
+      "itTitle": "Troppo sole? Eccedenze estive, prezzi negativi e curtailment",
+      "marketSensitive": "ADAPTACJA — mechanizm curtailmentu i ujemnych cen opisac przez MGP/PUN i Terna; wspomniec o realnych ograniczeniach sieci na Sud/Sicilia. Wartosc nadwyzki liczyc po RID, nie po export tariff."
+    },
+    {
+      "translationKey": "same-system-different-cities-europe",
+      "enSlug": "same-system-different-cities-europe",
+      "proposedItSlug": "stesso-impianto-citta-diverse",
+      "itTitle": "Perche lo stesso impianto rende in modo diverso da citta a citta",
+      "marketSensitive": "MOCNA ADAPTACJA GEOGRAFICZNA — post jest zbudowany wokol Warszawy, Madrytu, Berlina i Amsterdamu (7/7/4/4 wystapien). Dla IT przebudowac na Milano / Roma / Palermo z Bolzano lub Berlino jako kontrast polnocny; przeliczyc kWh/kWp (orientacyjnie ok. 1150 Nord do ok. 1450 Sud). To nie jest tlumaczenie, to przepisanie z nowymi danymi."
+    },
+    {
+      "translationKey": "why-regional-weather-models-matter",
+      "enSlug": "why-regional-weather-models-matter",
+      "proposedItSlug": "perche-i-modelli-meteo-regionali-contano",
+      "itTitle": "Perche una previsione globale non basta per il fotovoltaico",
+      "marketSensitive": "ADAPTACJA GEOGRAFICZNA — UKV/Met Office i odwolanie do Australii wyciac. Podstawic COSMO-IT / ICON-2I / MOLOCH / BOLAM i przyklady terenowe: Alpy, Appennini, nebbia Pianura Padana, brezza marina."
+    },
+    {
+      "translationKey": "coastal-vs-inland-solar-microclimate",
+      "enSlug": "coastal-vs-inland-solar-microclimate",
+      "proposedItSlug": "costa-o-entroterra-il-microclima-conta",
+      "itTitle": "Costa o entroterra? Come il microclima locale cambia la resa",
+      "marketSensitive": "ADAPTACJA GEOGRAFICZNA — post nie ma twardych nazw miast (latwy do adaptacji), ale zyskuje ogromnie na wloskich przykladach: brezza tirrenica vs adriatica, nebbia Pianura Padana, versanti appenninici, wyspy. Wlochy to podrecznikowy przypadek tego tematu."
+    },
+    {
+      "translationKey": "saharan-dust-southern-europe-solar",
+      "enSlug": "saharan-dust-southern-europe-solar",
+      "proposedItSlug": "sabbia-del-sahara-e-resa-fotovoltaica",
+      "itTitle": "Quando la sabbia del Sahara oscura i pannelli",
+      "marketSensitive": "ADAPTACJA — NAJWYZSZY PRIORYTET DLA IT. W EN to temat 'Poludniowa Europa' z porownaniem do UK/Skandynawii; dla Wloch to zjawisko lokalne i regularne. Przeramowac na Italia (episodi su Sicilia, Sud e Centro), dodac osadzanie pylu na modulach i pulizia — czego wersja EN nie ma."
+    }
+  ],
+  "qa": [
+    {
+      "enSlug": "why-is-solar-output-flat-at-midday",
+      "category": "k1",
+      "action": "adapt",
+      "proposedItSlug": "perche-la-produzione-si-appiattisce-a-mezzogiorno",
+      "itTitle": "Perche la produzione si appiattisce a mezzogiorno?"
+    },
+    {
+      "enSlug": "why-does-my-inverter-shut-down-on-sunny-days",
+      "category": "k1",
+      "action": "adapt",
+      "proposedItSlug": "inverter-si-spegne-nelle-giornate-di-sole",
+      "itTitle": "Perche l'inverter si stacca nelle giornate di sole?"
+    },
+    {
+      "enSlug": "inverter-smaller-than-panels-is-that-wrong",
+      "category": "k1",
+      "action": "translate",
+      "proposedItSlug": "inverter-sottodimensionato-rispetto-ai-pannelli",
+      "itTitle": "L'inverter e piu piccolo dei pannelli — e un errore?"
+    },
+    {
+      "enSlug": "volt-watt-response-what-is-it-should-i-enable-it",
+      "category": "k1",
+      "action": "adapt",
+      "proposedItSlug": "curva-volt-watt-conviene-attivarla",
+      "itTitle": "Che cos'e la regolazione volt-watt (P/V) e conviene attivarla?"
+    },
+    {
+      "enSlug": "grid-voltage-over-253v-how-to-report",
+      "category": "k1",
+      "action": "adapt",
+      "proposedItSlug": "tensione-oltre-253v-come-segnalarla-al-distributore",
+      "itTitle": "Tensione oltre 253 V — come segnalarla in modo efficace?"
+    },
+    {
+      "enSlug": "how-many-kwh-per-day-should-my-solar-produce",
+      "category": "k2",
+      "action": "adapt",
+      "proposedItSlug": "quanti-kwh-al-giorno-deve-produrre-il-fotovoltaico",
+      "itTitle": "Quanti kWh al giorno dovrebbe produrre il mio impianto?"
+    },
+    {
+      "enSlug": "how-to-check-solar-system-is-working-properly",
+      "category": "k2",
+      "action": "translate",
+      "proposedItSlug": "come-verificare-se-il-fotovoltaico-funziona-bene",
+      "itTitle": "Come verifico che il mio impianto fotovoltaico funzioni bene?"
+    },
+    {
+      "enSlug": "why-do-panels-never-reach-rated-power",
+      "category": "k2",
+      "action": "translate",
+      "proposedItSlug": "perche-i-pannelli-non-raggiungono-la-potenza-nominale",
+      "itTitle": "Perche i pannelli non raggiungono mai la potenza nominale?"
+    },
+    {
+      "enSlug": "east-west-or-flat-roof-panels-worth-it",
+      "category": "k2",
+      "action": "translate",
+      "proposedItSlug": "pannelli-est-ovest-o-tetto-piano-conviene",
+      "itTitle": "Conviene un impianto est-ovest o su tetto piano?"
+    },
+    {
+      "enSlug": "add-more-panels-or-buy-a-battery",
+      "category": "k3",
+      "action": "adapt",
+      "proposedItSlug": "aggiungere-pannelli-o-comprare-una-batteria",
+      "itTitle": "Meglio aggiungere pannelli o comprare una batteria?"
+    },
+    {
+      "enSlug": "charge-battery-overnight-or-leave-room-for-solar",
+      "category": "k3",
+      "action": "adapt",
+      "proposedItSlug": "caricare-la-batteria-di-notte-o-aspettare-il-sole",
+      "itTitle": "Caricare la batteria di notte in F3 o lasciare spazio al sole?"
+    },
+    {
+      "enSlug": "what-battery-size-do-i-need",
+      "category": "k3",
+      "action": "translate",
+      "proposedItSlug": "quale-capacita-di-batteria-serve",
+      "itTitle": "Che capacita di batteria mi serve per impianto e consumi?"
+    },
+    {
+      "enSlug": "why-is-my-battery-always-full",
+      "category": "k3",
+      "action": "translate",
+      "proposedItSlug": "perche-la-batteria-resta-sempre-carica",
+      "itTitle": "Perche la batteria e sempre piena e non fa nulla?"
+    },
+    {
+      "enSlug": "best-electricity-tariff-with-solar-and-battery",
+      "category": "k4",
+      "action": "adapt",
+      "proposedItSlug": "quale-tariffa-luce-con-fotovoltaico-e-batteria",
+      "itTitle": "Quale tariffa luce scegliere con fotovoltaico e batteria?"
+    },
+    {
+      "enSlug": "buy-cheap-overnight-sell-in-the-day-worth-it",
+      "category": "k4",
+      "action": "adapt",
+      "proposedItSlug": "comprare-di-notte-e-vendere-di-giorno-conviene",
+      "itTitle": "Conviene comprare energia di notte e rivenderla di giorno?"
+    },
+    {
+      "enSlug": "is-a-dynamic-tariff-worth-it-without-a-battery",
+      "category": "k4",
+      "action": "adapt",
+      "proposedItSlug": "tariffa-indicizzata-senza-batteria-conviene",
+      "itTitle": "Conviene una tariffa indicizzata senza batteria?"
+    },
+    {
+      "enSlug": "why-is-my-bill-high-despite-solar",
+      "category": "k4",
+      "action": "adapt",
+      "proposedItSlug": "perche-la-bolletta-resta-alta-con-il-fotovoltaico",
+      "itTitle": "Perche la bolletta resta alta nonostante il fotovoltaico?"
+    },
+    {
+      "enSlug": "add-solar-forecast-to-home-assistant-energy-dashboard",
+      "category": "k5",
+      "action": "translate",
+      "proposedItSlug": "previsione-fotovoltaica-in-energy-dashboard",
+      "itTitle": "Come aggiungo la previsione di produzione all'Energy Dashboard di Home Assistant?"
+    },
+    {
+      "enSlug": "solar-self-consumption-automations-home-assistant",
+      "category": "k5",
+      "action": "translate",
+      "proposedItSlug": "automazioni-autoconsumo-in-home-assistant",
+      "itTitle": "Come imposto le automazioni di autoconsumo in Home Assistant?"
+    },
+    {
+      "enSlug": "heat-water-automatically-with-solar-surplus",
+      "category": "k5",
+      "action": "translate",
+      "proposedItSlug": "riscaldare-acqua-con-il-surplus-fotovoltaico",
+      "itTitle": "Come riscaldo l'acqua automaticamente con il surplus del fotovoltaico?"
+    },
+    {
+      "enSlug": "which-ev-charger-works-with-home-assistant",
+      "category": "k5",
+      "action": "translate",
+      "proposedItSlug": "quale-wallbox-si-integra-con-home-assistant",
+      "itTitle": "Quale wallbox si integra con Home Assistant?"
+    },
+    {
+      "enSlug": "which-export-tariff-should-i-choose",
+      "category": "k6",
+      "action": "drop",
+      "proposedItSlug": "scambio-sul-posto-o-ritiro-dedicato",
+      "itTitle": "Scambio sul posto o Ritiro Dedicato: cosa cambia per chi ha il fotovoltaico?"
+    },
+    {
+      "enSlug": "is-octopus-agile-worth-it-with-solar-and-battery",
+      "category": "k6",
+      "action": "drop",
+      "proposedItSlug": "quanto-vale-1-kwh-immesso-in-rete",
+      "itTitle": "Quanto vale davvero 1 kWh immesso in rete?"
+    },
+    {
+      "enSlug": "do-i-need-a-battery-or-are-panels-enough",
+      "category": "k6",
+      "action": "drop",
+      "proposedItSlug": "conviene-entrare-in-una-comunita-energetica",
+      "itTitle": "Conviene entrare in una Comunita Energetica Rinnovabile?"
+    }
+  ],
+  "dropped": [
+    "timing-appliances-to-your-solar-peak",
+    "which-export-tariff-should-i-choose",
+    "is-octopus-agile-worth-it-with-solar-and-battery",
+    "do-i-need-a-battery-or-are-panels-enough"
+  ],
+  "slugConvention": "KONWENCJA SLUGOW IT\n\n1) 'fotovoltaico', nie 'solare'. We wloskim to termin domyslny i handlowy (impianto fotovoltaico, produzione fotovoltaica, previsione fotovoltaica). 'Solare' zostawiamy tylko tam, gdzie jest naturalne w kolokacji fizycznej ('irraggiamento solare', 'picco solare'), nigdy jako glowny rdzen slugu. 'Pannelli' (albo 'moduli') uzywamy w postach o fizyce panelu — 'perche-i-pannelli-producono-meno-con-il-caldo' brzmi naturalniej niz '...il-fotovoltaico-produce-meno'. Analogia: PL uzywa 'fotowoltaika', DE 'pv-' i pelne slowa; IT idzie sciezka PL.\n\n2) Dlugosc. Blog: 3-6 slow, docelowo <= 45-50 znakow. Q&A: dopuszczamy dluzsze, bo slug ma ksztalt pytania, ale max 7-8 slow. DE trzyma sie tej samej dyscypliny ('welche-speichergroesse-passt' vs dluzsze pytaniowe).\n\n3) Bez znakow diakrytycznych i bez apostrofow. 'perche' (nie perche z akcentem), 'elettricita', 'citta', 'capacita', 'nuvolosita'. Nie zapisujemy 'è' jako 'e' tam, gdzie powstaje dwuznacznosc z 'e' = 'i' — zamiast tego przeformulowujemy ('perche-la-batteria-resta-sempre-carica', nie '...-e-sempre-carica'). Elizje z apostrofem (l', dell', all') zastepujemy przeformulowaniem, a nie myslnikiem — dlatego 'viaggio-della-luce-dallo-spazio-al-pannello' zamiast 'il-viaggio-dell-irraggiamento'.\n\n4) Marka. Nie powtarzamy 'volcast' w slugach — jedyny wyjatek to post porownawczy 'volcast-vs-forecast-solar-vs-solcast', gdzie nazwy wlasne SA zapytaniem. Zadne inne EN/PL/DE slugi tez nie zawieraja marki; utrzymujemy to.\n\n5) Rodzajniki i przyimki. Dopuszczamy krotkie ('i-tre-numeri-del-tuo-impianto-fotovoltaico'), bo bez nich wloski slug brzmi telegraficznie — ale tniemy je, gdy slug przekracza ~50 znakow. Unikamy potocznego 'col' na rzecz 'con-il'.\n\n6) Q&A zaczynamy od slowa pytajnego tylko wtedy, gdy tak brzmi realne zapytanie ('perche-...', 'quanti-...', 'quale-...'). Gdy zapytanie jest rzeczownikowe, slug tez ('curva-volt-watt-conviene-attivarla', 'inverter-sottodimensionato-rispetto-ai-pannelli').\n\nMECHANIKA WPIECIA DO REPO\n\n- 19 postow 'gotowcowych' (bez translationKey we frontmatterze) laczy sie przez src/data/translations.ts — dla nich w polu translationKey podalem slug EN, bo to faktyczny klucz laczacy wiersza TRANSLATION_CLUSTERS. Wpiecie IT = dodanie 'it:' do 19 istniejacych wierszy (minus wiersz timing-appliances, ktory zostaje bez 'it').\n- 12 pozostalych postow ma translationKey we frontmatterze i nie wymaga zmian w translations.ts.\n- Wymagane zmiany kodu poza trescia: src/data/i18n.ts (LANGS + 'it', DATE_LOCALE 'it-IT', OG_LOCALE 'it_IT', READING_WPM 180, LANG_LABEL 'IT', pelny blok UI po wlosku), src/data/translations.ts (pole it? w interfejsie TranslationCluster + 19 wierszy), src/data/qa-categories.ts (kolumna it dla k1-k6).\n- k6 jest kategoria celowo rynkowa (EN = eksport/taryfy UK/IE/AU, PL = net-billing, DE = Balkonkraftwerk). Dla IT proponuje k6 = 'Incentivi e ritiro dell'energia' — i wlasnie dlatego trzy pytania 'qa-en-*' (Octopus Agile, export tariff, battery-or-panels) sa DROP, dokladnie tak jak zrobil to niemiecki. W wierszach 'drop' pola proposedItSlug/itTitle NIE opisuja tlumaczenia, tylko wloskie pytanie, ktore zajmuje zwolniony slot k6, zeby IT mialo rowne 24 Q&A jak DE i PL. Nowe klucze: qa-it-ssp-vs-rid, qa-it-rid-value, qa-it-cer (prefiks 'qa-it-' analogicznie do 'qa-de-' i 'qa-pl-').\n- Pole 'guide' w Q&A musi wskazywac slug IT bloga, nie EN (np. guide: 'previsione-produzione-fotovoltaica').\n- clusters.ts nie wymaga zmian: CLUSTER_LINKS operuje na translationKey i sam pomija tematy nieobecne w danym jezyku.\n\nDROP: 'timing-appliances-to-your-solar-peak' POTWIERDZONY jako przestarzaly. vercel.json ma dla niego 301 na 'when-to-run-appliances-solar' (i lustrzany 301 dla PL). Nie tworzyc wersji IT ani wpisu w translations.ts — inaczej powielimy tresc, ktora EN i PL juz skonsolidowaly.\n\nREKOMENDACJE IT-ONLY (nie mieszcza sie w tabelach, bo nie maja odpowiednika EN)\n\n- Port postu DE 'verschattung-pv-ertrag' (translationKey 'shading') jako 'ombreggiamento-e-resa-fotovoltaica'. Post nie istnieje w EN, ale jest gotowy po niemiecku i w pelni generyczny, a dla Wloch trafia idealnie (zabudowa historyczna, dachy w dolinach, Appennini).\n- Rozwazyc odpowiednik DE 'balkonkraftwerk' — 'fotovoltaico da balcone / plug and play'. UWAGA: wloskie progi regulacyjne dla plug-and-play sa inne niz niemieckie 800 W i zmieniaja sie; przed napisaniem zweryfikowac aktualny limit i tryb zgloszenia u ARERA/GSE. Nie kopiowac liczb z DE.\n- NIE powtarzac za DE wyciecia 'self-consumption' i 'weather-vs-output' — oba maja dla rynku wloskiego wieksza wartosc niz dla niemieckiego (autoconsumo po zamknieciu SSP; 'meteo' jako head-term).\n- Tematy wysokiego priorytetu na start (jesli publikacja etapowa): saharan-dust, why-solar-panels-produce-less-in-heat, same-system-different-cities, self-consumption, forecast-hub."
+}
