@@ -1,8 +1,8 @@
 {
   "en": {
     "meta": {
-      "title": "Volcast — Solar Forecasting App",
-      "description": "Predict your solar production with an advanced physical engine. Seven days ahead, hour by hour, from satellite data — for any installation, any brand.",
+      "title": "Volcast — Hourly Solar Production Forecast, 7 Days Ahead",
+      "description": "Volcast forecasts your solar production hour by hour, seven days ahead — from your panel setup and satellite data. No inverter login. iOS and Android.",
       "ogTitle": "Volcast — Solar Forecasting App",
       "ogDescription": "Predict your solar production with physics. Seven days ahead, hour by hour — from your panel parameters and satellite weather data."
     },
