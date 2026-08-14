@@ -16,21 +16,23 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = path.join(__dirname, '..', '..', 'public');
 
-const LOCALES = ['en','cs','de','es','fr','nl','pl','pt','pt-br','ro','sk','uk'];
+const LOCALES = ['en','cs','de','es','fr','it','nl','pl','pt','pt-br','ro','sk','uk'];
 const BASE_URL = 'https://volcast.app';
 
 // BCP 47 hreflang mapping
 const HREFLANG = {
   'en': 'en', 'pl': 'pl', 'de': 'de', 'nl': 'nl',
   'es': 'es', 'fr': 'fr', 'uk': 'uk', 'pt': 'pt',
-  'pt-br': 'pt-BR', 'ro': 'ro', 'cs': 'cs', 'sk': 'sk'
+  'pt-br': 'pt-BR', 'ro': 'ro', 'cs': 'cs', 'sk': 'sk',
+  'it': 'it'
 };
 
 // Native language names (for language switcher)
 const NATIVE_NAMES = {
   'en': 'English', 'pl': 'Polski', 'de': 'Deutsch', 'nl': 'Nederlands',
   'es': 'Español', 'fr': 'Français', 'uk': 'Українська', 'pt': 'Português',
-  'pt-br': 'Português (BR)', 'ro': 'Română', 'cs': 'Čeština', 'sk': 'Slovenčina'
+  'pt-br': 'Português (BR)', 'ro': 'Română', 'cs': 'Čeština', 'sk': 'Slovenčina',
+  'it': 'Italiano'
 };
 
 // Blog istnieje tylko w en/pl/de — pozostałe locale kierujemy na blog EN.
@@ -128,8 +130,30 @@ for (const locale of LOCALES) {
   console.log(`  ✓ ${locale}/index.html`);
 }
 
+// Zrzuty ekranu są jedynym zasobem, do którego szablon sięga per locale
+// (template.html: /img/{{LOCALE}}/…). Generator ich nie tworzy i nigdy nie
+// sprawdzał, czy istnieją — nowe locale wchodziło z trzema obrazami 404 i
+// niczym, co by to zgłosiło. Sprawdzenie jest po pętli, więc brak zrzutów dla
+// jednego locale nie blokuje regeneracji pozostałych.
+const SCREENSHOTS = ['forecast.png', 'notifications.png', 'widgets.png'];
+const missingAssets = [];
+for (const locale of LOCALES) {
+  for (const shot of SCREENSHOTS) {
+    const p = path.join(PUBLIC_DIR, 'img', locale, shot);
+    if (!fs.existsSync(p)) missingAssets.push(`public/img/${locale}/${shot}`);
+  }
+}
+
 if (missingKeys.length) {
   console.error(`\nBŁĄD — ${missingKeys.length} brakujących kluczy tłumaczeń:\n  ` + missingKeys.join('\n  '));
+  process.exit(1);
+}
+
+if (missingAssets.length) {
+  console.error(`\nBŁĄD — brakuje ${missingAssets.length} zrzutów ekranu (strony wygenerowane, ale mają obrazy 404):\n  ` + missingAssets.join('\n  '));
+  console.error('\n  Źródło: Play Console (lokalizacja danego języka) albo re-eksport');
+  console.error('  z store-assets/screenshots.html w repo Volcast. Format 1080×1920.');
+  console.error('  Mapowanie: zrzut _01 → forecast, _04 → notifications, _03 → widgets.');
   process.exit(1);
 }
 

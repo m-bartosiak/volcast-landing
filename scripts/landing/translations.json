@@ -857,6 +857,149 @@
       "terms": "Conditions d'Utilisation"
     }
   },
+  "it": {
+    "meta": {
+      "title": "Volcast — previsione di produzione fotovoltaica ora per ora",
+      "description": "Volcast prevede la produzione del tuo impianto fotovoltaico ora per ora, fino a sette giorni, dai dati dei tuoi pannelli. Senza accesso all'inverter.",
+      "ogTitle": "Volcast — previsione di produzione fotovoltaica",
+      "ogDescription": "Prevedi la produzione del tuo fotovoltaico con la fisica. Sette giorni, ora per ora, dai parametri dei tuoi pannelli e da più modelli meteo."
+    },
+    "nav": {
+      "features": "Funzioni",
+      "howItWorks": "Come funziona",
+      "homeAssistant": "Home Assistant",
+      "faq": "FAQ",
+      "getApp": "Scarica l'app",
+      "changeLanguage": "Cambia lingua"
+    },
+    "hero": {
+      "label": "App di previsione fotovoltaica",
+      "title": "Prevedi la produzione fotovoltaica<br>con la <em>fisica</em>",
+      "desc": "Motore fisico avanzato. Inserisci i parametri dei tuoi pannelli (orientamento, inclinazione, potenza di picco) e ottieni previsioni precise, calcolate con i modelli meteo e la fisica. Funziona con qualsiasi impianto, di qualsiasi marca.",
+      "cta": "Scarica ora",
+      "note": "Disponibile su Android e iOS. Gratis.",
+      "googlePlay": {
+        "small": "Disponibile su"
+      },
+      "appStore": {
+        "small": "Scarica su"
+      }
+    },
+    "features": {
+      "label": "Funzioni",
+      "title": "Motore fisico avanzato",
+      "desc": "Funziona con qualsiasi impianto, di qualsiasi marca. Inserisci i parametri del tuo sistema e lascia lavorare la fisica.",
+      "engine": {
+        "title": "Previsioni basate sulla fisica",
+        "desc": "Previsioni di produzione orarie e giornaliere, con un modello completo dell'irraggiamento, correzioni spettrali e dati meteo reali da più modelli numerici di previsione. Nessun collegamento all'impianto."
+      },
+      "calibration": {
+        "title": "Calibrazione automatica",
+        "desc": "Registra la produzione reale e il filtro di Kalman impara il tuo impianto nel tempo. Più dati inserisci, più le previsioni diventano precise."
+      },
+      "notifications": {
+        "title": "Notifiche intelligenti",
+        "desc": "La previsione serale per domani, un'allerta neve quando i pannelli rischiano di restare coperti e un avviso quando è il momento migliore per far partire gli elettrodomestici più energivori. Non perdere più una finestra di sole."
+      },
+      "widgets": {
+        "title": "Widget per la schermata Home",
+        "desc": "Widget a colpo d'occhio per Android e iOS con la previsione di oggi, quella di domani e una panoramica su più giorni, senza aprire l'app."
+      }
+    },
+    "howItWorks": {
+      "label": "Come funziona",
+      "title": "Pronto in pochi minuti",
+      "desc": "Descrivi i tuoi pannelli (orientamento, inclinazione, potenza di picco) e inizia a prevedere.",
+      "step1": {
+        "title": "Inserisci i parametri dei pannelli",
+        "desc": "Orientamento, inclinazione, potenza di picco, configurazione multi-stringa, fattore bifacciale e profilo dell'orizzonte. Non serve altro."
+      },
+      "step2": {
+        "title": "Ricevi la tua previsione",
+        "desc": "Volcast unisce i dati meteo di più modelli di previsione al modello fisico del tuo impianto per prevedere la produzione oraria e giornaliera."
+      },
+      "step3": {
+        "title": "Calibra e ottimizza",
+        "desc": "Registra la produzione reale e il modello si calibra da solo. Imposta notifiche e widget per restare un passo avanti."
+      }
+    },
+    "screenshots": {
+      "label": "Anteprima",
+      "title": "Progettata per essere chiara",
+      "desc": "Un'interfaccia scura ed essenziale, che mette i tuoi dati di energia al centro.",
+      "widgetsLabel": "Widget",
+      "forecastLabel": "Previsione",
+      "notificationsLabel": "Notifiche",
+      "widgetsAlt": "Widget Volcast sulla schermata Home con la previsione di oggi e domani e il grafico su più giorni",
+      "forecastAlt": "Previsione fotovoltaica a 7 giorni in Volcast, con dettaglio orario della potenza e picco di produzione",
+      "notificationsAlt": "Impostazioni delle notifiche di Volcast: previsione serale, allerta neve e finestra di produzione"
+    },
+    "ha": {
+      "badge": "Integrazione Home Assistant",
+      "title": "Porta la tua previsione in Home Assistant",
+      "desc": "Installa l'integrazione ufficiale via HACS per l'esperienza migliore: Energy Dashboard, sensore di potenza in tempo reale, avvisi sul picco di produzione e aggiornamenti automatici. Oppure usa direttamente la REST API per configurazioni personalizzate.",
+      "note": "Genera la tua chiave API nell'app Volcast (Premium). Nessun accesso all'impianto, nessun polling cloud: i dati arrivano direttamente dal motore Volcast.",
+      "tabHacs": "Integrazione HACS",
+      "tabApi": "REST API",
+      "step1Title": "Apri HACS",
+      "step1Desc": "Apri HACS nel tuo Home Assistant.",
+      "step2Title": "Repository personalizzati",
+      "step2Desc": "Clicca sul menu ⋮ (3 puntini) → Repository personalizzati.",
+      "step3Title": "Aggiungi il repository",
+      "step3Desc": "https://github.com/volter-labs/volcast-ha-integration",
+      "step3Extra": "Aggiungi l'URL qui sopra come Integration.",
+      "step4Title": "Installa e riavvia",
+      "step4Desc": "Clicca Install, poi riavvia Home Assistant.",
+      "step5Title": "Configura",
+      "step5Desc": "Impostazioni → Dispositivi e servizi → Aggiungi integrazione → cerca \"Volcast\" → inserisci la tua chiave API vk_...",
+      "githubLink": "Vedi su GitHub",
+      "sensorsTitle": "Sensori inclusi",
+      "sensorToday": "Energia oggi (kWh)",
+      "sensorTomorrow": "Energia domani (kWh)",
+      "sensorPower": "Potenza attuale (W)",
+      "sensorPeak": "Picco di produzione",
+      "sensorDashboard": "Energy Dashboard",
+      "curlTitle": "Scarica la tua previsione",
+      "curlComment": "Una sola chiamata API restituisce dati giornalieri, orari e a 5 minuti",
+      "jsonTitle": "Risposta dell'API",
+      "hourlyComment": "24 valori orari al giorno",
+      "detailedComment": "288 valori da 5 minuti al giorno"
+    },
+    "trust": {
+      "noTracking": "Zero tracciamento",
+      "noTrackingDesc": "Nessuna analitica, nessuna telemetria, nessuna profilazione. I dati sul tuo utilizzo restano sul tuo dispositivo.",
+      "noAds": "Nessuna pubblicità",
+      "noAdsDesc": "Niente banner, niente interstiziali, niente contenuti sponsorizzati. Mai.",
+      "noCloud": "Nessun accesso all'impianto",
+      "noCloudDesc": "Volcast non si collega mai al tuo inverter né ad altri dispositivi. Tutte le previsioni sono calcolate dai dati dei modelli meteo e dai parametri dei tuoi pannelli."
+    },
+    "download": {
+      "label": "Scarica Volcast",
+      "title": "Inizia a prevedere oggi",
+      "desc": "Disponibile su Android e iOS. Scarica gratis e inizia a prevedere."
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Domande frequenti",
+      "q1": "Quanto sono precise le previsioni di produzione?",
+      "a1": "Volcast usa un modello fisico completo dell'irraggiamento, unito ai dati meteo di più modelli numerici di previsione e ai parametri specifici del tuo impianto. Dopo la calibrazione con la produzione reale l'accuratezza si aggira tipicamente intorno all'85% nelle giornate serene e poco nuvolose. Con nuvolosità intensa la previsione è più difficile per qualsiasi sistema, ma Volcast resta più preciso delle app meteo generiche.",
+      "q2": "Serve un inverter smart o un hardware particolare?",
+      "a2": "No. Volcast funziona con qualsiasi impianto fotovoltaico senza collegarsi all'inverter: ti bastano i parametri dei pannelli, cioè orientamento, inclinazione e potenza di picco, e volendo anche configurazione multi-stringa, fattore bifacciale e profilo dell'orizzonte.",
+      "q3": "Volcast è gratis?",
+      "a3": "Volcast ha un piano gratuito con previsioni a 2 giorni. Premium sblocca la previsione completa a 7 giorni, la calibrazione automatica, la REST API per Home Assistant, lo storico di produzione e altro ancora.",
+      "q4": "Su quali piattaforme è disponibile?",
+      "a4": "Volcast è disponibile su Android (Google Play) e iOS (App Store). I widget per la schermata Home funzionano sia su Android (Glance) sia su iOS (WidgetKit).",
+      "q5": "Come funziona la calibrazione automatica?",
+      "a5": "Registri la produzione giornaliera reale, un solo numero. Dopo 5 o più rilevazioni il filtro di Kalman confronta la produzione reale con il modello fisico e affina i parametri specifici del tuo impianto, tenendo conto di ombreggiamento, degrado dei moduli e fattori locali.",
+      "q6": "Come funziona l'integrazione con Home Assistant?",
+      "a6": "Installa l'integrazione ufficiale Volcast via HACS, bastano 3 clic. Ottieni il supporto per l'Energy Dashboard, i sensori di energia di oggi e domani, la potenza istantanea e gli avvisi sul picco di produzione. Inserisci la chiave API (generata nell'app, funzione Premium) e tutti i sensori compaiono automaticamente. Per integrazioni personalizzate è disponibile anche una REST API."
+    },
+    "footer": {
+      "tagline": "App di previsione fotovoltaica",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio"
+    }
+  },
   "uk": {
     "meta": {
       "title": "Volcast — додаток для прогнозування сонячної генерації",
