@@ -1,6 +1,6 @@
 ---
 title: "Perché la bolletta resta alta nonostante il fotovoltaico?"
-description: "I pannelli producono a mezzogiorno, la casa consuma la sera: perché un autoconsumo basso tiene alta la bolletta e quali leve spostano davvero il conto."
+description: "I pannelli producono a mezzogiorno, la casa consuma la sera: perché un autoconsumo basso tiene alta la bolletta e quali azioni la riducono davvero."
 lang: it
 draft: false
 updated: 2026-08-14

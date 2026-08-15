@@ -1,6 +1,6 @@
 ---
 title: "Conviene una tariffa indicizzata senza batteria?"
-description: "Senza accumulo puoi spostare i consumi, non l'energia: chi ci guadagna, chi ci rimette e come verificare la granularità dell'offerta prima di firmare."
+description: "Senza accumulo puoi spostare i consumi, non l'energia: chi ci guadagna, chi ci rimette e come verificare se l'offerta è davvero oraria prima di firmare."
 lang: it
 draft: false
 updated: 2026-08-14

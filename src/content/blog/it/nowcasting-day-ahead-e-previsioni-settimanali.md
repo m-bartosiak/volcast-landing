@@ -1,6 +1,6 @@
 ---
-title: "Nowcasting, day-ahead e settimana: quanto sono accurati"
-description: "Una previsione a 15 minuti e una a 7 giorni sono problemi diversi. Ecco cosa può dare davvero ogni orizzonte e dove l'accuratezza smette di reggere."
+title: "Nowcasting, day-ahead e a 7 giorni: quanto sono accurati"
+description: "Una previsione a 15 minuti e una a 7 giorni sono problemi diversi. Ecco cosa può dare davvero ogni orizzonte e dove l'accuratezza inizia a decadere."
 date: 2026-05-19
 tags: ["nowcasting", "forecast-horizon", "accuracy", "time-series", "forecasting"]
 series: "deep-dives"

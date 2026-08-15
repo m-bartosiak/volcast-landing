@@ -1,6 +1,6 @@
 ---
 title: "L'inverter è più piccolo dei pannelli: è un errore?"
-description: "Moduli sovradimensionati rispetto all'inverter (rapporto DC/AC 1,1-1,3) sono prassi progettuale, non un errore. Quando conviene e quando si esagera."
+description: "I moduli sovradimensionati rispetto all'inverter (rapporto DC/AC 1,1-1,3) sono una prassi progettuale, non un errore. Quando conviene e quando si esagera."
 lang: it
 draft: false
 category: "k1"

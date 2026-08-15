@@ -1,6 +1,6 @@
 ---
 title: "Quanti kWh al giorno dovrebbe produrre il mio impianto?"
-description: "Una regola pratica per kWp e perché la risposta onesta oscilla di cinque volte tra giugno e dicembre. Come confrontarti con il tuo vero potenziale."
+description: "Una regola pratica per kWp e perché la risposta onesta varia fino a cinque volte tra giugno e dicembre. Come confrontarti con il tuo vero potenziale."
 lang: it
 draft: false
 category: "k2"

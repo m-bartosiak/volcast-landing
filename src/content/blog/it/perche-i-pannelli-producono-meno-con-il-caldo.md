@@ -1,6 +1,6 @@
 ---
 title: "Perché i pannelli producono meno con il caldo"
-description: "Il caldo è nemico della resa fotovoltaica: la fisica della perdita di potenza per temperatura e perché una fresca giornata di aprile batte il luglio afoso."
+description: "Il caldo è nemico della resa fotovoltaica: la fisica della perdita di potenza per temperatura e perché una fresca giornata di aprile batte un luglio afoso."
 date: 2026-06-09
 author: "Michal"
 tags: ["pv-physics", "temperature", "summer", "forecast-accuracy"]

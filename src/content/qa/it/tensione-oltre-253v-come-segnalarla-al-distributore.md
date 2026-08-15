@@ -1,6 +1,6 @@
 ---
 title: "Tensione oltre 253 V: come segnalarla in modo efficace?"
-description: "La sovratensione va segnalata al distributore, non al fornitore: per iscritto, con log, orari e valori misurati. I passaggi che fanno muovere qualcosa."
+description: "La sovratensione va segnalata al distributore, non al fornitore: per iscritto, con log, orari e valori misurati. I passaggi per ottenere un intervento."
 lang: it
 draft: false
 updated: 2026-08-14

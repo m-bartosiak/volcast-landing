@@ -1,6 +1,6 @@
 ---
 title: "Automazioni di autoconsumo in Home Assistant: come farle"
-description: "Lo schema che regge: previsione di produzione, misura in tempo reale e lista di priorità dei carichi, per automazioni che non si contendono i watt."
+description: "La logica corretta: previsione di produzione, misura in tempo reale e lista di priorità dei carichi, per automazioni che non si contendono i watt."
 lang: it
 draft: false
 category: "k5"

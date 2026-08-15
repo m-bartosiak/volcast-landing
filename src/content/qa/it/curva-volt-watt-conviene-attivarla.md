@@ -1,6 +1,6 @@
 ---
 title: "Regolazione volt-watt, o curva P(U): conviene attivarla?"
-description: "La volt-watt riduce gradualmente la potenza dell'inverter quando la tensione sale, invece di farlo staccare: quando recupera energia e cosa comporta."
+description: "La funzione volt-watt riduce la potenza dell'inverter quando la tensione sale, evitando lo sgancio: quando recupera energia e cosa comporta."
 lang: it
 draft: false
 updated: 2026-08-14

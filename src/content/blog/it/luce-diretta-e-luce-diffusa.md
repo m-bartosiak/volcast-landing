@@ -1,6 +1,6 @@
 ---
 title: "Luce diretta e diffusa: perché produci col cielo coperto"
-description: "Non tutta la radiazione solare è uguale. Capire le tre componenti della luce spiega perché i pannelli producono anche nelle giornate coperte."
+description: "Non tutta la radiazione solare è uguale. Capire le tre componenti della radiazione spiega perché i pannelli producono anche nelle giornate coperte."
 date: 2026-03-31
 tags: ["irradiance", "diffuse-radiation", "direct-beam", "pv-physics", "beginner"]
 series: "fundamentals"

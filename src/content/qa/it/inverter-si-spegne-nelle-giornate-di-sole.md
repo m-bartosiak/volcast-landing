@@ -1,6 +1,6 @@
 ---
 title: "Perché l'inverter si stacca nelle giornate di sole?"
-description: "I distacchi di mezzogiorno sono quasi sempre sovratensione di rete, non un guasto: come riconoscere il pattern nei log e a chi va segnalato davvero."
+description: "I distacchi di mezzogiorno derivano quasi sempre da sovratensioni di rete, non un guasto: come riconoscere il pattern nei log e a chi va segnalato davvero."
 lang: it
 draft: false
 updated: 2026-08-14

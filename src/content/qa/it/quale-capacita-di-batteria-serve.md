@@ -1,6 +1,6 @@
 ---
 title: "Che capacità di batteria mi serve per impianto e consumi?"
-description: "Parti dal consumo tra tramonto e alba, non dalla potenza dei pannelli: 1-1,5 kWh utili ogni 1.000 kWh annui è un ancoraggio sano, e quando alzarlo."
+description: "Parti dal consumo tra tramonto e alba, non dalla potenza dei pannelli: 1-1,5 kWh utili ogni 1.000 kWh annui è un buon riferimento, e quando alzarlo."
 lang: it
 draft: false
 updated: 2026-08-14

@@ -1,6 +1,6 @@
 ---
 title: "Il viaggio della luce: dallo spazio al tuo pannello"
-description: "Segui un raggio di sole dal bordo dell'atmosfera fra diffusione, assorbimento, nuvole e riflessi, fino al tuo modulo inclinato dove diventa elettricità."
+description: "Segui un raggio di sole dal limite dell'atmosfera fra diffusione, assorbimento, nuvole e riflessi, fino al tuo modulo inclinato dove diventa elettricità."
 date: 2026-05-05
 tags: ["irradiance", "atmospheric-physics", "solar-spectrum", "pv-physics", "forecasting"]
 series: "deep-dives"

@@ -1,6 +1,6 @@
 ---
 title: "Conviene comprare energia di notte e rivenderla di giorno?"
-description: "In Italia la gamba della rivendita non esiste: l'immissione è valorizzata a parte dal GSE. L'arbitraggio che funziona è un altro, ed è più stretto."
+description: "In Italia non puoi rivendere sul mercato: l'immissione è valorizzata a parte dal GSE. L'arbitraggio che funziona è un altro, ed è più stretto."
 lang: it
 draft: false
 updated: 2026-08-14

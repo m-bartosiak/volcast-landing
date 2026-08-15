@@ -1,6 +1,6 @@
 ---
 title: "Perché le app meteo non bastano per il fotovoltaico"
-description: "«Sereno» non vuol dire «tanta produzione»: irradianza, nuvolosità, geometria del tetto e temperatura, perché al fotovoltaico serve una previsione sua."
+description: "«Sereno» non vuol dire «tanta produzione»: irradianza, nuvolosità, geometria del tetto e temperatura, perché al fotovoltaico serve una previsione dedicata."
 date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []

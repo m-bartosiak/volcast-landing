@@ -1,6 +1,6 @@
 ---
 title: "Pompa di calore e fotovoltaico: scaldare quando produci"
-description: "Come spostare i cicli di acqua calda della pompa di calore nelle ore di produzione: programmi orari, contatto SG Ready e automazioni su previsione."
+description: "Come spostare i cicli ACS della pompa di calore nelle ore di massima produzione: programmi orari, contatto SG Ready e automazioni su previsione."
 date: 2026-07-23
 updated: 2026-08-14
 author: "Michał Bartosiak"

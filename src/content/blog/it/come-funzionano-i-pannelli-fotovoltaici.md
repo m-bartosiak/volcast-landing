@@ -1,6 +1,6 @@
 ---
 title: "Come i pannelli fotovoltaici trasformano la luce in energia"
-description: "Spiegazione chiara dell'effetto fotovoltaico: dai fotoni che colpiscono il silicio alla corrente alternata che alimenta casa tua, senza gergo inutile."
+description: "Spiegazione chiara dell'effetto fotovoltaico: dai fotoni che colpiscono il silicio alla corrente alternata che alimenta casa tua, senza tecnicismi inutili."
 date: 2026-03-24
 tags: ["solar-basics", "photovoltaic-effect", "pv-physics", "beginner"]
 series: "fundamentals"

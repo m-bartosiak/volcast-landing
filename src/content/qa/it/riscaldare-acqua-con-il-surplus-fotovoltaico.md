@@ -1,6 +1,6 @@
 ---
 title: "Riscaldare l'acqua con il surplus del fotovoltaico"
-description: "Il bollitore è l'accumulo più economico che hai già in casa. Timer, deviatore di surplus o automazione guidata dalla previsione, confrontati onestamente."
+description: "Il bollitore è l'accumulo più economico che hai già in casa. Timer, deviatore di surplus o automazione guidata dalla previsione, a confronto."
 lang: it
 draft: false
 updated: 2026-08-14
