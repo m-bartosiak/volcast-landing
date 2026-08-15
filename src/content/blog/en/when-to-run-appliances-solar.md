@@ -1,5 +1,5 @@
 ---
-title: "When to run your water heater, washing machine and dishwasher on solar — a practical guide"
+title: "Best time to run washing machine and water heater on solar"
 description: "What time should the water heater and appliances run to use your own solar power? A simple rule, hourly examples, and how to automate it."
 date: 2026-07-23
 author: "Michał Bartosiak"

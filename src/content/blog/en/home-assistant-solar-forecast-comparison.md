@@ -1,5 +1,5 @@
 ---
-title: "Solar forecasting in Home Assistant — Volcast vs Forecast.Solar vs Solcast"
+title: "Home Assistant solar forecast: 3 sources compared"
 description: "Forecast.Solar, Solcast or Volcast? Accuracy, API limits and setup of PV forecasting in Home Assistant, honestly compared — with a step-by-step guide."
 date: 2026-07-23
 author: "Michał Bartosiak"
@@ -35,7 +35,7 @@ The limits show over time: the model is simplified and never learns your system.
 
 ## Solcast — excellent data, a narrow free door
 
-On satellite data quality, Solcast is in a league of its own — it serves utility-scale plants and energy traders. The hobbyist's problem is different: the free account has a tight daily API call cap, which turns update scheduling into a puzzle, and registration plus setup are noticeably more technical. A very strong source if you fit within the limits and don't need per-roof calibration.
+On satellite data quality, Solcast is in a league of its own — it serves utility-scale plants and energy traders. The hobbyist's problem is different, and it is worth being specific about because it decides whether Solcast fits your setup at all. A free account created recently gets **10 API calls a day**; accounts opened before the change kept the older allowance of 50, so advice you find in forums may not match what your own account does. Free accounts also cap you at two rooftop sites. Ten calls a day is enough for a forecast refreshed a few times daily, not for anything close to hourly, which turns update scheduling into a puzzle — and registration plus setup are noticeably more technical. A very strong source if you fit within the limits and don't need per-roof calibration.
 
 ## Volcast — physics plus a model that learns your roof
 
