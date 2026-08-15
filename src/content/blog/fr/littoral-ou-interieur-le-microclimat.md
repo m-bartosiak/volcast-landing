@@ -1,6 +1,6 @@
 ---
 title: "Littoral ou intérieur : le microclimat change tout"
-description: "Deux installations identiques à 50 km d'écart ne produisent pas pareil. Brume côtière, brise de mer et brouillards d'intérieur : ce qui change la donne."
+description: "Deux installations identiques à 50 km d'écart ne produisent pas pareil. Brume côtière, brise de mer et brouillard dans les terres : ce qui change la donne."
 date: 2026-08-04
 author: "Michal"
 tags: ["geography", "microclimate", "coastal", "self-consumption"]

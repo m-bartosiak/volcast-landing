@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi mon onduleur se coupe-t-il en plein soleil ?"
-description: "Les coupures de milieu de journée viennent presque toujours d'une tension réseau trop haute, pas d'une panne. Comment reconnaître le motif et quoi faire."
+description: "Les coupures de milieu de journée viennent presque toujours d'une tension réseau trop haute, pas d'une panne. Comment la reconnaître et quoi faire."
 lang: fr
 draft: false
 updated: 2026-08-14

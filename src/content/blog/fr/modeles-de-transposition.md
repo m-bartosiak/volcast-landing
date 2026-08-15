@@ -1,6 +1,6 @@
 ---
 title: "Modèles de transposition : l'irradiance sur plan incliné"
-description: "Les données météo décrivent une surface horizontale, vos modules sont inclinés. Le pont mathématique s'appelle transposition, et le choix du modèle pèse."
+description: "Les données météo décrivent une surface horizontale, vos modules sont inclinés. Le pont mathématique s'appelle la transposition : le modèle choisi compte."
 date: 2026-05-12
 tags: ["transposition", "perez-model", "irradiance", "panel-orientation", "forecasting"]
 series: "deep-dives"

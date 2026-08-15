@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi ma facture reste élevée malgré le solaire ?"
-description: "Les panneaux produisent à midi, la maison consomme le soir : pourquoi une autoconsommation faible garde la facture haute, et les leviers qui comptent."
+description: "Les panneaux produisent à midi, la maison consomme le soir : pourquoi une autoconsommation faible laisse une facture élevée, et les leviers qui comptent."
 lang: fr
 draft: false
 updated: 2026-08-14

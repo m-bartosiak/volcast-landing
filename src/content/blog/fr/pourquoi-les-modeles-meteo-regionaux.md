@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi un modèle météo global ne suffit pas en solaire"
-description: "Les modèles globaux lissent les nuages qui décident de votre production. Pourquoi AROME et les modèles régionaux rendent la prévision solaire plus juste."
+description: "Les modèles globaux lissent les nuages qui déterminent votre production. Pourquoi AROME et les modèles régionaux rendent la prévision solaire plus juste."
 date: 2026-07-28
 author: "Michal"
 tags: ["forecasting", "nwp", "weather-models", "accuracy"]

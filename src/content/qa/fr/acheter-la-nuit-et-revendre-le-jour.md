@@ -1,6 +1,6 @@
 ---
 title: "Acheter la nuit et revendre le jour, ça vaut le coup ?"
-description: "L'arbitrage ne paie que si l'écart bat les pertes et l'usure : pourquoi la revente en journée ne rapporte rien en France, et où le gain se trouve vraiment."
+description: "L'arbitrage n'est rentable que si l'écart couvre pertes et usure : pourquoi la revente en journée ne rapporte rien en France, et où est le vrai gain."
 lang: fr
 draft: false
 updated: 2026-08-14

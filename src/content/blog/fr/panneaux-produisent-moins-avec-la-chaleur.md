@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi les panneaux produisent moins quand il fait chaud"
-description: "La chaleur fait chuter le rendement des cellules. La physique du déclassement thermique, et pourquoi une journée d'avril bat souvent une canicule d'août."
+description: "La chaleur fait chuter le rendement des cellules. La physique du déclassement thermique, et pourquoi une journée d'avril dépasse une canicule d'août."
 date: 2026-06-09
 updated: 2026-08-14
 author: "Michal"

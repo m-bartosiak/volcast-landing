@@ -1,6 +1,6 @@
 ---
 title: "Batterie : heures creuses la nuit ou soleil du jour ?"
-description: "La bonne réponse change chaque jour avec la prévision du lendemain. La règle pour ne pas payer au réseau l'énergie que le soleil livrera gratuitement."
+description: "La bonne réponse change chaque jour avec la prévision du lendemain. La règle pour ne pas payer au réseau l'énergie que le soleil fournira gratuitement."
 lang: fr
 draft: false
 updated: 2026-08-14

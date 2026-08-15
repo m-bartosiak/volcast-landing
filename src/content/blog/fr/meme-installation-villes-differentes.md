@@ -1,6 +1,6 @@
 ---
 title: "Même installation, villes différentes : Lille, Lyon, Nice"
-description: "La même installation de 5 kWc produit près de 40 % de plus à Nice qu'à Lille. Ce que la latitude et le climat font réellement à votre productible annuel."
+description: "La même installation de 5 kWc produit près de 40 % de plus à Nice qu'à Lille. L'impact réel de la latitude et du climat sur votre productible annuel."
 date: 2026-07-21
 author: "Michal"
 tags: ["geography", "specific-yield", "irradiance", "europe"]

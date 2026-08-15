@@ -1,6 +1,6 @@
 ---
 title: "Ajouter la prévision solaire à l'Energy Dashboard HA"
-description: "L'Energy Dashboard sait superposer une prévision à votre courbe de production : comment la brancher via HACS et ce que dit vraiment la ligne pointillée."
+description: "L'Energy Dashboard sait superposer une prévision à votre courbe de production : comment l'intégrer via HACS et ce que dit vraiment la ligne pointillée."
 lang: fr
 draft: false
 category: "k5"

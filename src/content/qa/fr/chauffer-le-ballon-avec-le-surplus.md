@@ -1,6 +1,6 @@
 ---
 title: "Chauffer le ballon d'eau chaude avec le surplus solaire"
-description: "Le ballon est le stockage le moins cher que vous possédez déjà : minuterie, routeur solaire ou automatisation pilotée par la prévision, comparés."
+description: "Le ballon est le stockage le moins cher que vous possédez déjà : minuterie, routeur solaire ou automatisation selon la prévision : le comparatif."
 lang: fr
 draft: false
 updated: 2026-08-14

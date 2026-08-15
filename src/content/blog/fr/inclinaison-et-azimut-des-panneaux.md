@@ -1,6 +1,6 @@
 ---
 title: "Inclinaison et azimut : leur poids réel sur la production"
-description: "Deux angles décident de l'énergie que captent vos panneaux. Pourquoi ils comptent, et pourquoi la réalité est bien plus indulgente qu'on ne le croit."
+description: "Deux angles déterminent l'énergie que captent vos panneaux. Pourquoi ils comptent, et pourquoi la réalité est bien plus indulgente qu'on ne le croit."
 date: 2026-04-07
 tags: ["tilt", "azimuth", "panel-orientation", "pv-physics", "beginner"]
 series: "fundamentals"

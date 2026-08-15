@@ -1,6 +1,6 @@
 ---
 title: "Est-ouest ou toit plat : est-ce que ça vaut le coup ?"
-description: "Un champ est-ouest produit environ 10 à 15 % de moins par an qu'un plein sud, mais étale la production : bien plus utile pour votre autoconsommation."
+description: "Une toiture est-ouest produit environ 10 à 15 % de moins par an qu'un plein sud, mais étale la production : bien plus utile pour votre autoconsommation."
 lang: fr
 draft: false
 updated: 2026-08-14

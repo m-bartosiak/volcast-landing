@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi ma production plafonne-t-elle à midi ?"
-description: "Un plateau plat au milieu de la journée, c'est l'écrêtage de l'onduleur ou une limite d'injection : un choix de conception, presque jamais une panne."
+description: "Un plateau au milieu de la journée, c'est l'écrêtage de l'onduleur ou une limite d'injection : un choix de conception, presque jamais une panne."
 lang: fr
 draft: false
 updated: 2026-08-14

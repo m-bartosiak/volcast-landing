@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi la nébulosité est la variable la plus difficile"
-description: "La température se prévoit, la position du soleil se calcule. Les nuages, eux, relèvent de la théorie du chaos : c'est là que loge l'erreur de prévision."
+description: "La température se prévoit, la position du soleil se calcule. Les nuages, eux, relèvent de la théorie du chaos : c'est là que réside l'erreur de prévision."
 date: 2026-04-28
 tags: ["clouds", "forecast-uncertainty", "irradiance", "weather", "forecasting"]
 series: "deep-dives"

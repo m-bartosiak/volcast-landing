@@ -1,6 +1,6 @@
 ---
 title: "Quelle borne de recharge s'intègre à Home Assistant ?"
-description: "Pilotage local, courant de charge réglable, pas de dépendance au cloud : la checklist qui compte plus que la marque, et la limite de puissance souscrite."
+description: "Pilotage local, courant de charge réglable, pas de dépendance au cloud : les critères clés au-delà de la marque, et la limite de puissance souscrite."
 lang: fr
 draft: false
 category: "k5"

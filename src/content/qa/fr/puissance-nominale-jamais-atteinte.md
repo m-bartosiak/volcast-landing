@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi mes panneaux n'atteignent jamais leur puissance ?"
-description: "La puissance de la plaque suppose des conditions de laboratoire que votre toit ne voit presque jamais. Ce qu'il faut attendre en kW, et quand s'inquiéter."
+description: "La puissance nominale suppose des conditions de laboratoire que votre toit ne voit presque jamais. Ce qu'on peut espérer en kW, et quand s'inquiéter."
 lang: fr
 draft: false
 category: "k2"

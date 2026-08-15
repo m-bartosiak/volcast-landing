@@ -1,6 +1,6 @@
 ---
 title: "Combien de kWh par jour doit produire mon installation ?"
-description: "Une règle approximative par kWc, et pourquoi la réponse honnête varie d'un facteur cinq entre juin et décembre. Comment situer votre propre installation."
+description: "Un ordre de grandeur par kWc, et pourquoi la réponse honnête varie d'un facteur cinq entre juin et décembre. Comment situer votre propre installation."
 lang: fr
 draft: false
 category: "k2"

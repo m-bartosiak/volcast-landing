@@ -1,6 +1,6 @@
 ---
 title: "D'où viennent les prévisions météo : les modèles NWP"
-description: "Votre prévision de production ne vaut que ce que vaut son entrée météo. Comment fonctionnent les modèles numériques et où ils pèchent pour le solaire."
+description: "Votre prévision de production ne vaut que ce que vaut son entrée météo. Comment fonctionnent les modèles numériques et leurs limites pour le solaire."
 date: 2026-04-21
 tags: ["nwp", "weather-models", "gfs", "ecmwf", "icon", "forecasting"]
 series: "deep-dives"

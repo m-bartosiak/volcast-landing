@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi les panneaux produisent plus au printemps"
-description: "Le coefficient de température expliqué : pourquoi une belle journée d'avril en Provence bat souvent un après-midi d'août écrasé de chaleur à 35 °C."
+description: "Le coefficient de température expliqué : pourquoi une belle journée d'avril en Provence dépasse un après-midi d'août écrasé de chaleur à 35 °C."
 date: 2026-03-24
 tags: ["temperature-coefficient", "seasonal-production", "pv-physics", "beginner"]
 series: "fundamentals"

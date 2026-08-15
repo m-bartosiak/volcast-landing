@@ -1,6 +1,6 @@
 ---
 title: "Le réglage volt-watt (P/U) : faut-il l'activer ?"
-description: "Le réglage P(U) fait baisser doucement la puissance de l'onduleur quand la tension monte, au lieu de le faire déclencher. Quand il fait gagner des kWh."
+description: "Le réglage P(U) réduit progressivement la puissance de l'onduleur si la tension monte, au lieu de provoquer son découplage. Quand il fait gagner des kWh."
 lang: fr
 draft: false
 updated: 2026-08-14

@@ -1,6 +1,6 @@
 ---
 title: "Mon onduleur est plus petit que mes panneaux : erreur ?"
-description: "Des modules surdimensionnés face à l'onduleur (ratio DC/AC de 1,1 à 1,3) relèvent de l'ingénierie standard. Quand cela paie et quand cela va trop loin."
+description: "Des modules surdimensionnés face à l'onduleur (ratio DC/AC de 1,1 à 1,3) relèvent de l'ingénierie standard. Quand c'est utile et quand cela va trop loin."
 lang: fr
 draft: false
 category: "k1"

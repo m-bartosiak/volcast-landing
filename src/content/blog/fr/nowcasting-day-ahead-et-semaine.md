@@ -1,6 +1,6 @@
 ---
 title: "Nowcasting, day-ahead, semaine : la précision par horizon"
-description: "Une prévision à 15 minutes et une prévision à 7 jours sont deux problèmes distincts. Ce que chaque horizon peut livrer, et où la précision décroche."
+description: "Une prévision à 15 minutes et une prévision à 7 jours sont deux problèmes distincts. Ce que chaque horizon peut fournir, et où la précision décroche."
 date: 2026-05-19
 tags: ["nowcasting", "forecast-horizon", "accuracy", "time-series", "forecasting"]
 series: "deep-dives"

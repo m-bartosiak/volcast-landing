@@ -1,6 +1,6 @@
 ---
 title: "Automatiser l'autoconsommation dans Home Assistant"
-description: "Le schéma qui tient : prévision de production, mesure en temps réel et liste de priorités des charges, pour des automatisations qui ne se battent pas."
+description: "Le schéma qui tient : prévision de production, mesure en temps réel et liste de priorités des charges, pour éviter les conflits d'automatisation."
 lang: fr
 draft: false
 category: "k5"

@@ -1,6 +1,6 @@
 ---
 title: "Comment vérifier que mon installation fonctionne bien ?"
-description: "Comparez la production réelle à une prévision calculée pour votre installation, l'équilibre entre les strings et la forme de la courbe journalière."
+description: "Comparez la production réelle à une prévision calculée pour votre installation, l'équilibre des strings et l'allure de la courbe journalière."
 lang: fr
 draft: false
 category: "k2"

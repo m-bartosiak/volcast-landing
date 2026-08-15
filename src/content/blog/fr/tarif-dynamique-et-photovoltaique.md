@@ -1,6 +1,6 @@
 ---
 title: "Tarif dynamique et photovoltaïque : est-ce rentable ?"
-description: "Prix indexé sur le spot, option heures creuses et Tempo : à qui profite vraiment un tarif dynamique quand on a des panneaux photovoltaïques chez soi."
+description: "Prix indexé sur le spot, option heures creuses et Tempo : à qui profite vraiment un tarif dynamique quand on a des panneaux photovoltaïques chez soi ?"
 date: 2026-07-23
 updated: 2026-08-14
 author: "Michał Bartosiak"
