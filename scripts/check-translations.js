@@ -52,7 +52,7 @@ function frontmatter(text) {
   const m = /^---\r?\n([\s\S]*?)\r?\n---/.exec(text);
   if (!m) return { _raw: '' };
   const out = { _raw: m[1] };
-  for (const key of ['title', 'description', 'lang', 'translationKey', 'category', 'guide', 'draft', 'updated']) {
+  for (const key of ['title', 'description', 'lang', 'translationKey', 'category', 'guide', 'draft', 'updated', 'marketOnly', 'review']) {
     const hit = new RegExp(`^${key}:\\s*(.*)$`, 'm').exec(m[1]);
     if (hit) out[key] = hit[1].trim().replace(/^["']|["']$/g, '');
   }
@@ -160,8 +160,29 @@ function check(kind, lang) {
       if (ea.join(',') !== ec.join(',')) {
         report(rel, `identyfikatory techniczne rozjechały się względem ${src.slug}.md: [${ec.filter((v) => !ea.includes(v)).slice(0, 5)}]`);
       }
+    } else if (kind === 'blog' && fm.marketOnly === 'true') {
+      // Treść rynkowa: napisana dla jednego kraju i celowo nietłumaczona, bo
+      // opisuje prawo, które nigdzie indziej nie obowiązuje. Puste parowanie
+      // hreflang jest tu ZAMIERZONE — wpis dostaje sam siebie i x-default.
+      //
+      // Bez tego wyjątku walidator zgłaszałby błąd przy każdym takim poście,
+      // a narzędzie, które regularnie krzyczy na rzecz zamierzoną, przestaje
+      // być czytane i przegapia prawdziwy błąd.
     } else if (kind === 'blog') {
-      report(rel, 'nie udało się znaleźć angielskiego źródła — parowanie hreflang będzie puste');
+      report(rel, 'nie udało się znaleźć angielskiego źródła — parowanie hreflang będzie puste (jeśli to celowa treść rynkowa, dodaj marketOnly: true)');
+    }
+
+    // --- data przeglądu ------------------------------------------------------
+    // Treść regulacyjna starzeje się po cichu: przepis się zmienia, a plik
+    // wygląda tak samo. `review` był dotąd komentarzem, którego nic nie
+    // sprawdzało — dziewięć plików miało datę, a żaden mechanizm jej nie czytał.
+    if (fm.review) {
+      const when = new Date(fm.review);
+      if (Number.isNaN(when.valueOf())) {
+        report(rel, `review: "${fm.review}" nie jest datą w formacie RRRR-MM-DD`);
+      } else if (when < new Date()) {
+        review(rel, `data przeglądu minęła (${fm.review}) — sprawdź, czy stan prawny się nie zmienił`);
+      }
     }
 
     // --- obrazki ----------------------------------------------------------

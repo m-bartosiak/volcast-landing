@@ -14,6 +14,15 @@ const blog = defineCollection({
     seriesOrder: z.number().optional(),
     lang: z.enum(['en', 'pl', 'de', 'it', 'fr', 'ro']),
     draft: z.boolean().default(false),
+    // Data, po ktorej tresc trzeba przejrzec — dla wpisow opisujacych prawo,
+    // ktore sie zmienia. Do 2026-08 bylo to pole-widmo: wystepowalo w dziewieciu
+    // plikach, ale poza schematem, wiec zod je po cichu usuwal i nic go nie
+    // sprawdzalo. Teraz `npm run check:i18n` ostrzega, gdy data minie.
+    review: z.coerce.date().optional(),
+    // Tresc pisana dla jednego rynku i celowo NIETLUMACZONA (prawo krajowe).
+    // Wylacza kontrole parowania hreflang: pusty zestaw alternatyw jest tu
+    // zamierzony, nie zepsuty.
+    marketOnly: z.boolean().default(false),
     ogImage: z.string().optional(),
     // Klucz tematu do parowania hreflang między językami (spójny z topic_id paczki).
     // Opcjonalny — istniejące wpisy parują się przez src/data/translations.ts.
@@ -42,6 +51,8 @@ const qa = defineCollection({
     guide: z.string().optional(),      // slug artykułu-huba (interlinking)
     date: z.coerce.date().optional(),
     updated: z.coerce.date().optional(),
+    review: z.coerce.date().optional(),
+    marketOnly: z.boolean().default(false),
     draft: z.boolean().default(false),
     translationKey: z.string().optional(),
     seo: z.object({
