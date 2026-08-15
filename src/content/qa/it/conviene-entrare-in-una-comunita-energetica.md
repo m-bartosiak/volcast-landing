@@ -4,6 +4,7 @@ description: "Conviene se hai surplus che non riesci ad autoconsumare e nella tu
 lang: it
 draft: false
 updated: 2026-08-14
+review: 2027-02-28
 category: "k6"
 guide: "aumentare-autoconsumo-fotovoltaico"
 translationKey: "qa-it-cer"

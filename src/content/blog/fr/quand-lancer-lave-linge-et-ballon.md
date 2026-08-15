@@ -59,7 +59,7 @@ Chaque soir, un coup d'œil à la prévision du lendemain. Trois scénarios :
 
 L'intérêt, c'est que la décision prend 30 secondes le soir, au lieu de rester le matin à la fenêtre à interpréter les nuages. J'utilise [Volcast](https://volcast.app/fr/) pour cela : l'application affiche une prévision horaire pour mon installation précise (orientation, inclinaison, masques), et la notification du soir avec la prévision du lendemain me sauve quand le temps bascule.
 
-![Courbe horaire de production photovoltaïque par ciel dégagé, avec la fenêtre de surplus de la mi-journée mise en évidence](/img/blog/hourly-surplus-en.webp)
+![Courbe horaire de production photovoltaïque par ciel dégagé, avec la fenêtre de surplus de la mi-journée mise en évidence](/img/blog/hourly-surplus-fr.webp)
 
 ## Le cumulus, le contacteur jour/nuit et le surplus
 

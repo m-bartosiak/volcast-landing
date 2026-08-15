@@ -4,6 +4,7 @@ description: "Molto meno dello stesso kWh consumato in casa. Perché i due valor
 lang: it
 draft: false
 updated: 2026-08-14
+review: 2027-01-31
 category: "k6"
 guide: "eccedenze-estive-e-curtailment"
 translationKey: "qa-it-rid-value"

@@ -46,7 +46,7 @@ Sfatul popular „pornește tot între 11 și 14” funcționează doar așa și
 
 Ideea e că decizia durează 30 de secunde seara, în loc să stai dimineața la fereastră interpretând norii. Eu folosesc [Volcast](https://volcast.app/ro/) pentru asta: aplicația arată prognoza orară pentru sistemul meu concret (orientare, înclinare, umbrire), iar notificarea de seară cu prognoza de mâine mă salvează când se schimbă vremea.
 
-![Curba orară de producție fotovoltaică într-o zi senină, cu fereastra de surplus de la prânz evidențiată](/img/blog/hourly-surplus-en.webp)
+![Curba orară de producție fotovoltaică într-o zi senină, cu fereastra de surplus de la prânz evidențiată](/img/blog/hourly-surplus-ro.webp)
 
 ## Și tarifele pe zone orare?
 

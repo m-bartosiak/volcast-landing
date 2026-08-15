@@ -38,7 +38,7 @@ Ce urmează sunt date reale de la un sistem de 5,2 kWp instalat în Europa Centr
 
 Lună de lună: **aproximativ 79 kWh în noiembrie, aproximativ 32 kWh în decembrie** (abia peste 1 kWh pe zi, minimul anului) și **aproximativ 100 kWh în februarie**, după ce zăpada s-a topit în jurul zilei de 13. Cea mai bună zi a perioadei: 12 kWh la sfârșitul lui februarie; cele mai slabe, aproape de zero sub zăpadă.
 
-![Producția zilnică reală de iarnă a unui sistem de 5,2 kWp: noiembrie, decembrie și februarie](/img/blog/winter-production-en.webp)
+![Producția zilnică reală de iarnă a unui sistem de 5,2 kWp: noiembrie, decembrie și februarie](/img/blog/winter-production-ro.webp)
 
 ## De ce iarna se produce atât de puțin
 

@@ -32,7 +32,7 @@ Ces chiffres proviennent d'une installation réelle de 5,2 kWc située en Europ
 
 Mois par mois : **environ 79 kWh en novembre, environ 32 kWh en décembre** (à peine plus de 1 kWh par jour, le plancher de l'année) et **environ 100 kWh en février**, une fois la neige fondue autour du 13. Meilleure journée de la période : 12 kWh fin février ; les pires, proches de zéro sous la neige.
 
-![Production quotidienne réelle d'une installation de 5,2 kWc en hiver : novembre, décembre et février](/img/blog/winter-production-en.webp)
+![Production quotidienne réelle d'une installation de 5,2 kWc en hiver : novembre, décembre et février](/img/blog/winter-production-fr.webp)
 
 ## Pourquoi l'hiver est si maigre
 

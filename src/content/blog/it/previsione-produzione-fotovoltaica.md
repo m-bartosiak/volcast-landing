@@ -44,7 +44,7 @@ L'approccio più efficace è confrontare la previsione con la produzione reale e
 
 In pratica: registri la produzione giornaliera reale e dopo due o tre settimane il modello "sa" cose sul tuo impianto che nessuna scheda tecnica contiene, cioè l'effetto reale dell'ombreggiamento autunnale, le perdite effettive dell'inverter, il degrado dei moduli. Sul mio impianto da 5,2 kWp la previsione per il giorno successivo, dopo la calibrazione, sbaglia meno del 10% nelle giornate serene.
 
-![Previsione e produzione reale a confronto su 14 giorni, impianto da 5,2 kWp: con la calibrazione di Kalman l'errore scende sotto il 10%](/img/blog/forecast-vs-actual-14d-en.webp)
+![Previsione e produzione reale a confronto su 14 giorni, impianto da 5,2 kWp: con la calibrazione di Kalman l'errore scende sotto il 10%](/img/blog/forecast-vs-actual-14d-it.webp)
 
 ## A cosa ti serve davvero una previsione di produzione
 

@@ -4,6 +4,7 @@ description: "1,1 c€/kWh HT sous le nouveau régime tarifaire, bien davantage 
 lang: fr
 draft: false
 updated: 2026-08-14
+review: 2027-02-15
 category: "k6"
 guide: "tarif-dynamique-et-photovoltaique"
 translationKey: "qa-fr-valeur-kwh-injecte"
@@ -20,11 +21,11 @@ Entre le 28 mars 2025 et le 4 juin 2026, le surplus des installations jusqu'à 9
 
 ## Pourquoi les deux valeurs ne sont pas comparables
 
-Le prix que vous payez au kilowattheure n'est pas fait que d'énergie : s'y ajoutent l'acheminement (TURPE), les taxes, puis la TVA sur le total. En évitant un soutirage, vous évitez toutes ces lignes d'un coup. En injectant, vous n'en récupérez aucune : vous vendez simplement de l'énergie, à un tarif fixé par arrêté. S'y ajoute un effet d'heure qui aggrave la comparaison : vous injectez au milieu d'une journée ensoleillée, quand tout le monde injecte, et vous soutirez en soirée, le plus souvent en heures pleines. La réforme des heures creuses accentue encore l'écart : une partie des heures creuses est déplacée vers l'après-midi, précisément au moment où vous produisez.
+Le prix que vous payez au kilowattheure n'est pas fait que d'énergie : s'y ajoutent l'acheminement (TURPE), les taxes, puis la TVA sur le total. En évitant un soutirage, vous évitez la partie qui varie avec la consommation ; en revanche l'abonnement, lui, reste dû quoi qu'il arrive. En injectant, vous n'en récupérez aucune : vous vendez simplement de l'énergie, à un tarif fixé par arrêté. S'y ajoute un effet d'heure qui aggrave la comparaison : vous injectez au milieu d'une journée ensoleillée, quand tout le monde injecte, et vous soutirez en soirée, le plus souvent en heures pleines. La réforme des heures creuses accentue encore l'écart : une partie des heures creuses est déplacée vers l'après-midi, précisément au moment où vous produisez.
 
 ## Ce qu'il faut faire
 
-1. **Faites le calcul ce soir** — montant total de votre dernière facture divisé par les kWh soutirés sur la même période : voilà votre prix réel du kWh.
+1. **Faites le calcul ce soir** — reprenez votre dernière facture, mettez de côté l'abonnement et les lignes fixes, puis divisez ce qui reste par les kWh soutirés sur la même période : voilà le prix réel de votre kWh.
 2. **Divisez-le par votre tarif d'injection** — 0,011 € si votre contrat relève du nouveau régime, sinon le tarif inscrit sur votre propre contrat d'achat. Vous obtenez votre multiplicateur personnel : le gain de chaque kilowattheure déplacé de l'injection vers l'autoconsommation.
 3. **Déplacez les grosses charges vers les heures de production** : ballon d'eau chaude, lave-linge et lave-vaisselle, recharge du véhicule électrique.
 4. **Décidez la veille au soir** à partir de la prévision horaire du lendemain, plutôt que de réagir aux nuages en direct.

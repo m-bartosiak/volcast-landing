@@ -32,7 +32,7 @@ Questi sono dati reali di un impianto da 5,2 kWp installato nell'Europa centrale
 
 Mese per mese: **circa 79 kWh a novembre, circa 32 kWh a dicembre** (poco più di 1 kWh al giorno, il minimo dell'anno) e **circa 100 kWh a febbraio**, una volta sciolta la neve intorno al giorno 13. Giornata migliore del periodo: 12 kWh a fine febbraio; le peggiori vicine a zero sotto la neve.
 
-![Produzione giornaliera invernale reale di un impianto da 5,2 kWp: novembre, dicembre e febbraio](/img/blog/winter-production-en.webp)
+![Produzione giornaliera invernale reale di un impianto da 5,2 kWp: novembre, dicembre e febbraio](/img/blog/winter-production-it.webp)
 
 ## Perché d'inverno si produce così poco
 

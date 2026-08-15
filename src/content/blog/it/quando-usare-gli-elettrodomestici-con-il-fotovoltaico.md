@@ -46,7 +46,7 @@ Ogni sera, un'occhiata alla previsione per il giorno dopo. Tre scenari:
 
 Il punto è che la decisione richiede 30 secondi la sera, invece di stare la mattina alla finestra a interpretare le nuvole. Per questo uso [Volcast](https://volcast.app/it/): l'app mostra la previsione oraria per il mio impianto specifico (orientamento, inclinazione, ombreggiamento), e la notifica serale con la previsione per domani mi salva quando il tempo cambia.
 
-![Curva oraria di produzione fotovoltaica in una giornata serena, con evidenziata la finestra di surplus di mezzogiorno](/img/blog/hourly-surplus-en.webp)
+![Curva oraria di produzione fotovoltaica in una giornata serena, con evidenziata la finestra di surplus di mezzogiorno](/img/blog/hourly-surplus-it.webp)
 
 ## E le fasce orarie F1, F2 e F3?
 

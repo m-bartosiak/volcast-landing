@@ -4,6 +4,7 @@ description: "Supprimée pour les demandes de raccordement déposées depuis le 
 lang: fr
 draft: false
 updated: 2026-08-14
+review: 2026-09-01
 category: "k6"
 guide: "augmenter-son-autoconsommation-solaire"
 translationKey: "qa-fr-prime-autoconsommation"

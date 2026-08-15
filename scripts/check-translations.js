@@ -20,24 +20,17 @@ const SOURCE = 'en';
 const COMMA_DECIMAL = new Set(['pl', 'de', 'it', 'fr', 'ro']);
 
 /**
- * Obrazki, które świadomie zostają po angielsku. Każdy wpis kosztuje spójność,
- * więc lista jest jawna, krótka i uzasadniona.
+ * Obrazki, które świadomie zostają po angielsku. Lista jest jawna i krótka,
+ * bo każdy wpis kosztuje spójność.
  *
- * `ha-energy-dashboard` to zrzut cudzego interfejsu, nie nasz wykres.
+ * Został jeden: `ha-energy-dashboard` to zrzut cudzego interfejsu, a nie nasz
+ * wykres — zlokalizowanie go wymagałoby przełączenia Home Assistanta na każdy
+ * język i ponownego zrzutu.
  *
- * Trzy pozostałe to wykresy z prawdziwych danych produkcyjnych jednej
- * instalacji 5,2 kWp. Commit 461b48e wrzucił dziewięć plików WebP bez skryptu,
- * który je wyprodukował, i bez danych wejściowych — a odczytanie dziewięćdziesięciu
- * słupków z obrazka „na oko" dałoby w każdym języku nieco inne liczby dla tej
- * samej instalacji. To byłaby zmyślona liczba udająca pomiar, więc do czasu
- * odzyskania danych źródłowych nowe języki używają wersji angielskiej.
+ * Trzy wykresy z danych są już generowane per język przez
+ * `scripts/blog-charts/render.py`.
  */
-const FOREIGN_IMAGE_ALLOWLIST = new Set([
-  'ha-energy-dashboard-en.webp',
-  'forecast-vs-actual-14d-en.webp',
-  'winter-production-en.webp',
-  'hourly-surplus-en.webp',
-]);
+const FOREIGN_IMAGE_ALLOWLIST = new Set(['ha-energy-dashboard-en.webp']);
 
 /**
  * Dwie wagi, bo dwie różne klasy problemu.

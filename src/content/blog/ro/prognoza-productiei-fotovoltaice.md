@@ -44,7 +44,7 @@ Abordarea cea mai eficientă e să compari prognoza cu producția reală și să
 
 În practică: îți notezi producția zilnică reală, iar după două-trei săptămâni modelul „știe" despre sistemul tău lucruri pe care nu le conține nicio fișă tehnică — efectul real al umbririi de toamnă, pierderile efective ale invertorului, degradarea panourilor. Pe sistemul meu de 5,2 kWp, prognoza calibrată pentru ziua următoare greșește cu mai puțin de 10% în zilele senine.
 
-![Prognoză și producție reală comparate pe 14 zile, sistem de 5,2 kWp: calibrarea Kalman coboară eroarea sub 10%](/img/blog/forecast-vs-actual-14d-en.webp)
+![Prognoză și producție reală comparate pe 14 zile, sistem de 5,2 kWp: calibrarea Kalman coboară eroarea sub 10%](/img/blog/forecast-vs-actual-14d-ro.webp)
 
 ## La ce îți folosește de fapt o prognoză de producție
 

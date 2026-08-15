@@ -44,7 +44,7 @@ L'approche la plus efficace consiste à comparer la prévision à la production 
 
 En pratique : vous saisissez votre production quotidienne réelle et, au bout de deux à trois semaines, le modèle « sait » sur votre installation des choses qu'aucune fiche technique ne contient — l'effet réel de l'ombrage d'automne, les pertes effectives de l'onduleur, la dégradation des modules. Sur ma propre installation de 5,2 kWc, la prévision pour le lendemain, une fois calibrée, se trompe de moins de 10 % les jours ensoleillés.
 
-![Prévision et production réelle comparées sur 14 jours, installation de 5,2 kWc : la calibration de Kalman ramène l'erreur sous les 10 %](/img/blog/forecast-vs-actual-14d-en.webp)
+![Prévision et production réelle comparées sur 14 jours, installation de 5,2 kWc : la calibration de Kalman ramène l'erreur sous les 10 %](/img/blog/forecast-vs-actual-14d-fr.webp)
 
 ## À quoi sert vraiment une prévision de production
 

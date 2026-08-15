@@ -4,6 +4,7 @@ description: "Pour les demandes de raccordement déposées depuis juin 2026, le 
 lang: fr
 draft: false
 updated: 2026-08-14
+review: 2027-02-15
 category: "k6"
 guide: "augmenter-son-autoconsommation-solaire"
 translationKey: "qa-fr-surplus-ou-autoconsommation"
@@ -20,7 +21,7 @@ Le critère n'est pas la date de raccordement mais celle du dépôt de votre dem
 
 ## Ce que vaut le même kWh consommé chez vous
 
-Un kilowattheure que vous ne prélevez pas sur le réseau vous évite tout ce que vous auriez payé pour l'acheter : la part énergie, mais aussi l'acheminement, les taxes, et la TVA par-dessus le total. Un kilowattheure vendu ne récupère aucune de ces composantes. Prenez votre dernière facture, divisez le montant total par les kWh soutirés sur la même période : c'est votre prix réel. Divisez-le ensuite par votre tarif de rachat réel — 0,011 € pour un contrat relevant de l'arrêté de juin 2026, sinon la valeur inscrite à votre propre contrat — et vous obtenez le multiplicateur de votre installation. C'est le seul chiffre qui doit guider vos arbitrages, et il rend la question du titre presque rhétorique.
+Un kilowattheure que vous ne prélevez pas sur le réseau vous évite tout ce que vous auriez payé pour l'acheter : la part énergie, mais aussi l'acheminement, les taxes, et la TVA par-dessus le total. Un kilowattheure vendu ne récupère aucune de ces composantes. Prenez votre dernière facture, mettez de côté l'abonnement et les lignes fixes, puis divisez ce qui reste par les kWh soutirés sur la même période : c'est le prix réel de votre kWh. Divisez-le ensuite par votre tarif de rachat réel — 0,011 € pour un contrat relevant de l'arrêté de juin 2026, sinon la valeur inscrite à votre propre contrat — et vous obtenez le multiplicateur de votre installation. C'est le seul chiffre qui doit guider vos arbitrages, et il rend la question du titre presque rhétorique.
 
 ## Ce qu'il faut faire
 

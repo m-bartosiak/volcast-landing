@@ -1105,5 +1105,524 @@
       }
     ],
     "summary": "WERDYKT: wymaga-poprawek. Wszystkie liczby, daty i odwolania prawne w tekscie sa POPRAWNE i potwierdzone w zrodlach pierwotnych — nic nie zostalo przepisane z serwisu komercyjnego. Zweryfikowalem na Legifrance (JORFTEXT000054190669) doslownie: taryfe 1,1 c€/kWh HT (\\\"Le montant de ce tarif d'achat TPa est égal à 1,1c€/kWh hors TVA\\\"), indeksacje 2% w rocznice kontraktu, plafon \\\"produit de la puissance installée par une durée de 1 600 heures\\\", 20 lat od Mise en Service oraz wylaczenie ≤9 kWc z vente en totalité. Sciezka 1,12 / 1,31 / 1,60 zgadza sie zarowno z rachunkiem, jak i z brzmieniem photovoltaique.info (Hespul, ost. modyfikacja 17.06.2026). Data 28 marca 2025 dla utraty vente totale przez ≤9 kWc jest poprawnie przypisana do arrete du 26 mars 2025, a nie do reformy z 2026 — tekst NIE popelnia bledu opisywania stanu sprzed zmiany prawa jako obecnego. Tekst wygral tez spor zrodlowy, w ktorym latwo bylo polec: czesc serwisow komercyjnych (m.in. Hellio) zawezila taryfe 1,1 c€/kWh do ≤9 kWc w trybie surplus, podczas gdy art. 8 arrete nie roznicuje stawki wg mocy ani trybu.\n\nBLAD NOSNY jest jeden, ale wystepuje w piaciu miejscach i jest dokladnie tym powtarzajacym sie w projekcie failure mode: mieszanie stanu dla instalacji NOWYCH i ISTNIEJACYCH. Arrete stosuje sie wylacznie do instalacji, ktorych kompletny wniosek o przylaczenie (demande complète de raccordement) zlozono od 5 czerwca 2026 — a tekst podaje nowa taryfe bezwarunkowo w meta-description, w wytluszczonym leadzie i w naglowku sekcji. Kwalifikator pojawia sie dopiero w drugim akapicie sekcji 2 i jest tam sformulowany z BLEDNYM KRYTERIUM: \\\"si votre installation a été raccordée avant cette réforme\\\". Liczy sie data DCR, nie data raccordement. Wlasciciel, ktory zlozyl wniosek 3 czerwca 2026 i zostal przylaczony we wrzesniu, zachowuje stara siatke — czytajac ten tekst wyciagnie wniosek odwrotny, a miedzy DCR a raccordement mija zwykle kilka miesiecy, wiec ta grupa jest liczna wlasnie teraz, w sierpniu 2026. Konsekwencja jest wymierna: stara taryfa surplus dla ≤9 kWc wynosila 4,0 c€/kWh po marcu 2025 i kilkanascie c€/kWh dla umow wczesniejszych. Instrukcja \\\"divisez par 0,011 €\\\" zastosowana do takiej umowy daje mnoznik zawyzony o rzad wielkosci i moze sklonic czytelnika do rezygnacji z oplacalnego kontraktu odkupu — czyli do decyzji finansowej odwrotnej do zamierzonej przez autora.\n\nDrugorzedne: (1) plafon 1 600 h dotyczy energii WTLOCZONEJ, nie produkcji, i jest praktycznie nieosiagalny w metropolii, a tekst przedstawia go jako realne ograniczenie; (2) CACSI dotyczy instalacji ≤36 kVA i wymaga certyfikowanego urzadzenia zapobiegajacego wtlaczaniu — realny koszt decyzji \\\"tout autoconsommer\\\"; (3) \\\"tout calcul antérieur à juin 2026 est périmé\\\" to twierdzenie kategoryczne falszywe dla umow juz zawartych; (4) \\\"l'appoint reste positif\\\" zaniza wartosc starych kontraktow.\n\nRyzyko dezaktualizacji oceniam jako NISKIE: reforma zniosla kwartalne siatki dla ≤100 kWc, wiec nie ma juz mechanizmu cyklicznej zmiany stawki, i nie znalazlem zadnego pozniejszego arrete ani sladu zawieszenia przez Conseil d'Etat. Zastrzezenie: termin na recours pour exces de pouvoir uplynal ok. 4 sierpnia 2026 — brak dowodu nie jest dowodem braku, warto sprawdzic strone \\\"arrêté tarifaire en vigueur\\\" na photovoltaique.info tuz przed publikacja.\n\nPo naniesieniu dziesieciu zamian z proposedEdits tekst uznaje za publikowalny — rdzen merytoryczny i teza artykulu (autokonsumpcja przed odsprzedaza) sa sluszne i dobrze udokumentowane."
+  },
+  {
+    "file": "C:/Users/yakon/Documents/volcast-landing-it/src/content/qa/ro/cat-valoreaza-un-kwh-injectat.md",
+    "verdict": "wymaga-poprawek",
+    "claims": [
+      {
+        "quote": "Sub plafonul consumului, compensarea cantitativă îl transformă într-un kWh scăzut din factura de energie — dar doar din componenta de energie.",
+        "status": "potwierdzone",
+        "finding": "Rdzen tekstu jest sluszny i potwierdzony w zrodle pierwotnym. Ordinul ANRE 15/2022 art. 11 alin. (3) lit. a) stanowi, ze energia wprowadzona jest kupowana \"la un pret identic cu pretul energiei electrice active utilizat de furnizorul de energie electrica in contractul de furnizare (...) si care nu include niciuna din componentele prevazute la lit. b) pct. (ii)-(viii)\" — czyli bez transportu, dystrybucji, uslug systemowych, kogeneracji, CfD, certyfikatow zielonych, akcyzy i VAT. Art. 11 alin. (5) potwierdza, ze te skladniki sa naliczane od calej energii POBRANEJ, nie od salda. Czytelnik dostaje wiec prawdziwa i wazna informacje.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2024/01/Ord_15_2022.pdf (Ordin ANRE 15/2022, MO 215/4.III.2022, art. 11 alin. (3) lit. a) i alin. (5))"
+        ]
+      },
+      {
+        "quote": "Peste ea stau tariful de distribuție, cel de transport, tariful de servicii de sistem, contribuțiile de tip certificate verzi și cogenerare, acciza, iar TVA se aplică peste tot acest total.",
+        "status": "nieprecyzyjne",
+        "finding": "Lista jest niepelna i pomija najwiekszy z wymienionych narzutow pozasieciowych. W aktualnej ofercie Electrica Furnizare (SU prosumatori, 01.07-31.12.2026) \"Contributie pentru contracte pentru diferenta (CfD)\" wynosi 0,07402 lei/kWh — piec razy wiecej niz certyfikaty zielone (0,01450) i dziesiec razy wiecej niz akcyza (0,00768), ktore ARTYKUL wymienia. Pominiecie CfD przy jednoczesnym wyliczaniu drobniejszych pozycji jest zauwazalne dla kazdego, kto ma fakture przed soba. Brakuje tez stawki VAT (21%).",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2026/06/Oferta-energie-electrica-SU-clienti-casnici-01.07.2026-prosumatori-act.pdf"
+        ]
+      },
+      {
+        "quote": "În metodologia ANRE în vigoare (Ordinul nr. 15/2022, cu modificările ulterioare), furnizorul cumpără energia prosumatorului la prețul energiei active pe care ți-o vinde, din care scade costul estimat de dezechilibru și marja de furnizare.",
+        "status": "nieaktualne",
+        "finding": "To jest najpowazniejszy problem tekstu i dokladnie ten failure mode, przed ktorym ostrzega brief: stan sprzed zmiany prawa opisany jako obecny, w zdaniu otwierajacym sekcje slowami \"Aici mecanismul e explicit\". Legea nr. 160/2026, w mocy od 26.07.2026, dodaje w art. 73^1 alin. (3) lit. c) obowiazek, by furnizor NIE wliczal do ceny energii czynnej uzywanej do rozliczenia z prosumentem \"costul cu dezechilibrele, componenta de furnizare si taxe\" — czyli usuwa obie odjete pozycje, na ktorych opiera sie caly akapit. Ustawa stosuje sie tez wprost do umow juz trwajacych (art. III), wiec nie jest to regula tylko dla nowych instalacji. Dodatkowo sama metodologia jest tu przedstawiona zbyt kategorycznie: art. 11 alin. (4) Ordinului 15/2022 mowi, ze furnizorzy \"pot opta\" za wyodrebnieniem marzy — potracenie marzy jest wiec skutkiem opcji wybranej przez dostawce, nie bezwarunkowa norma. Uczciwie: opisany mechanizm nadal figuruje w zywej ofercie Electrica Furnizare (spisanej 30.06.2026, obowiazujacej do 31.12.2026), bo metodologia wykonawcza ANRE jeszcze nie wyszla — ale to trzeba nazwac tranzycja, a nie \"metodologia w vigoare\".",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012 (art. 73^1 alin. (3) lit. c), art. II, art. III)",
+          "https://www.electricafurnizare.ro/app/uploads/2024/01/Ord_15_2022.pdf (art. 11 alin. (4): \"furnizorii de energie electrica pot opta pentru evidentierea distincta (...) a marjei de furnizare\")",
+          "https://www.greenlead.ro/blog/legea-prosumatorilor-2026-constitutionala-ccr-tot-ce-se-schimba",
+          "https://instalatori-fotovoltaice.ro/ghid/legea-prosumatorilor-2026-firma-plata-lunara-dezechilibre"
+        ]
+      },
+      {
+        "quote": "prețul energiei active fără TVA era 0,75570 lei/kWh, marja de furnizare 0,27903 lei/kWh, iar costul estimat de dezechilibru 0,02200 lei/kWh — adică în jur de 0,45 lei/kWh pentru surplus",
+        "status": "nieaktualne",
+        "finding": "Liczby sa poprawnie przepisane ze zrodla pierwotnego, ale z okresu, ktory wygasl 30.06.2026, podczas gdy ten sam dostawca ma opublikowana i zywa oferte nastepcza. Sprawdzilem oba PDF-y Electrica. Q2 2026: 0,75570 / 0,27903 / 0,02200 → 0,45467 (arytmetyka artykulu sie zgadza). Aktualna oferta 01.07-31.12.2026: pret energie activa fara TG 0,79545, marja de furnizare 0,18572, cost estimat al dezechilibrelor 0,01700 → 0,59273 lei/kWh. Roznica to 31% w gore — a wraz z nia zmienia sie mnoznik, ktory jest calym sensem artykulu (bylo ok. 3,3x, jest ok. 2,6x). Publikowanie starszej liczby, gdy nowsza lezy dwa klikniecia dalej na tej samej stronie dostawcy, jest latwo wychwytywalne przez rumunskiego czytelnika z faktura w rece.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf (01.04-30.06.2026)",
+          "https://www.electricafurnizare.ro/app/uploads/2026/06/Oferta-energie-electrica-SU-clienti-casnici-01.07.2026-prosumatori-act.pdf (01.07-31.12.2026)",
+          "https://www.electricafurnizare.ro/preturi-si-tarife/preturi-oferte-su-fui/"
+        ]
+      },
+      {
+        "quote": "față de un preț contractual final de circa 1,48–1,57 lei/kWh cu TVA, în funcție de operatorul de distribuție",
+        "status": "nieaktualne",
+        "finding": "Przedzial 1,48021-1,56554 jest doslownie poprawny dla oferty Q2 2026 (najtaniej Retele Electrice Romania, najdrozej Delgaz Grid). W obowiazujacej ofercie 01.07-31.12.2026 przedzial to 1,52940 (Retele Electrice Romania) - 1,61472 (Delgaz Grid), z posrednimi 1,54859 (Oltenia) i 1,57531 (DEER). Poprawnie: 1,53-1,61 lei/kWh z VAT.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2026/06/Oferta-energie-electrica-SU-clienti-casnici-01.07.2026-prosumatori-act.pdf"
+        ]
+      },
+      {
+        "quote": "Legea nr. 160/2026 a schimbat cadrul din 26 iulie 2026",
+        "status": "potwierdzone",
+        "finding": "Data i akt sie zgadzaja: Legea nr. 160/2026 pentru modificarea si completarea Legii energiei electrice si a gazelor naturale nr. 123/2012, opublikowana w Monitorul Oficial, Partea I, nr. 603 z 23.07.2026, w mocy od 26.07.2026. Artykul jednak tylko wspomina o zmianie, nie mowiac, CO sie zmienilo — a zmienila sie dokladnie ta pozycja, ktora artykul wlasnie policzyl.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://www.ccjtm.ro/monitorul-603-din-data-23-07-2026/"
+        ]
+      },
+      {
+        "quote": "iar metodologia ANRE de aplicare nu era încă publicată la 14 august 2026",
+        "status": "potwierdzone",
+        "finding": "Zweryfikowane bezposrednio na anre.ro: strona z dokumentami do konsultacji dla prosumentow nie zawiera zadnego projektu z 2026 r. — najnowszy wpis pochodzi z 19.09.2023. Twierdzenie jest prawdziwe i poprawnie opatrzone data. Ale to jest wlasnie ten typ zdania, ktory sam sie przeterminuje: art. II Legii 160/2026 daje ANRE 60 dni od wejscia w zycie, czyli termin przypada okolo 24 wrzesnia 2026 — za nieco ponad miesiac. Bez podania tego terminu czytelnik nie wie, kiedy ma sprawdzic ponownie, a tekst po cichu staje sie nieaktualny.",
+        "sources": [
+          "https://anre.ro/category/documente-de-discutie/energie-electrica/prosumatori/",
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012 (art. II — termin 60 dni)"
+        ]
+      },
+      {
+        "quote": "cât timp injecția anuală rămâne sub consum, joci pe compensare; peste el, joci pe prețul de achiziție",
+        "status": "falszywe",
+        "finding": "Rumunska compensare cantitativa nigdy nie byla rozliczana rocznie. Ordinul 15/2022 art. 12 rozlicza kompensacje w PERIOADA DE FACTURARE, z reportowaniem nadwyzki na kolejne okresy i terminem granicznym 24 miesiecy (art. 12 alin. (5): \"in termenul de maxim 24 de luni de la data livrarii\"). Legea 160/2026 idzie jeszcze dalej i nakazuje rozliczenie MIESIECZNE — \"furnizorul de energie electrica factureaza lunar\". Slowo \"anuala\" jest wiec bledne w obu rezimach naraz i mysli czytelnika w zla strone: kaze mu myslec w kategoriach rocznego bilansu, podczas gdy realna jednostka to okres rozliczeniowy z reportowaniem.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2024/01/Ord_15_2022.pdf (art. 12 alin. (1), (2), (5))",
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012 (definicja compensare cantitativa: \"factureaza lunar\")"
+        ]
+      },
+      {
+        "quote": "Ordinul nr. 15/2022, cu modificările ulterioare",
+        "status": "potwierdzone",
+        "finding": "Poprawne oznaczenie aktu: Metodologia de stabilire a regulilor de comercializare a energiei electrice produse in centrale electrice din surse regenerabile cu putere electrica instalata de cel mult 400 kW pe loc de consum apartinand prosumatorilor, MO 215/4.III.2022. Formula \"cu modificarile ulterioare\" tez sluszna (m.in. Ordinele 94/2022 i 95/2022).",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2024/01/Ord_15_2022.pdf",
+          "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+        ]
+      },
+      {
+        "quote": "Verifică unde te afli față de plafonul compensării",
+        "status": "nieprecyzyjne",
+        "finding": "Artykul nigdzie nie podaje dwoch granic, ktore ten \"plafon\" faktycznie definiuja i ktore sa dostepne w zrodle pierwotnym: compensare cantitativa dotyczy instalacji o mocy do 200 kW na loc de consum (Ordin 15/2022 art. 11 alin. (1); aktualna oferta Electrica adresowana jest wprost do prosumentow \"cu putere electrica instalata de cel mult 200kW pe loc de consum\"), a Legea 160/2026 art. 73^1 alin. (9) gwarantuje ja tylko do 31 grudnia 2030 r. Dla instalacji domowej prog 200 kW jest teoretyczny, ale data 2030 jest realna informacja planistyczna dla czytelnika, ktory wlasnie liczy oplacalnosc — jej brak przy jednoczesnym zdaniu \"2026 este un an de tranzitie\" jest luka, nie oszczednoscia.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2024/01/Ord_15_2022.pdf (art. 11 alin. (1))",
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012 (art. 73^1 alin. (9))",
+          "https://www.electricafurnizare.ro/app/uploads/2026/06/Oferta-energie-electrica-SU-clienti-casnici-01.07.2026-prosumatori-act.pdf"
+        ]
+      },
+      {
+        "quote": "Un kWh consumat direct în casă valorează, în ambele cazuri, mai mult decât unul injectat.",
+        "status": "potwierdzone",
+        "finding": "Teza nosna artykulu wytrzymuje probe obalenia w KAZDYM z trzech mozliwych rezimow: przy starej formule Electrica (0,59 lei/kWh za nadwyzke vs 1,53-1,61 lei/kWh za pobor), przy nowym brzmieniu Legii 160/2026 (nadwyzka po czystej cenie energii czynnej, ok. 0,80 lei/kWh netto, wciaz bez taryf sieciowych i VAT), oraz w samej kompensacji ilosciowej (taryfy sieciowe naliczane od energii pobranej z sieci, a nie od salda). Zaden z rozwazanych scenariuszy prawnych nie odwraca wniosku — to jest mocna strona tekstu i nie wymaga zmian.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2024/01/Ord_15_2022.pdf (art. 11 alin. (3) lit. a) i alin. (5))",
+          "https://www.electricafurnizare.ro/app/uploads/2026/06/Oferta-energie-electrica-SU-clienti-casnici-01.07.2026-prosumatori-act.pdf"
+        ]
+      },
+      {
+        "quote": "Aceste cifre sunt dintr-o ofertă expirată și de la un singur furnizor, deci nu le trata ca pe o normă națională.",
+        "status": "potwierdzone",
+        "finding": "Zastrzezenie jest szczere i redakcyjnie poprawne — autor sam oznaczyl slabosc danych. Problem w tym, ze jest zbedne: nastepczyni tej oferty jest opublikowana na stronie Electrica i pobiera sie ja w minute. Publikowanie przeterminowanych liczb z adnotacja \"sa przeterminowane\" jest gorsze niz podanie aktualnych, bo obniza zaufanie do calej reszty tekstu bez zadnego zysku.",
+        "sources": [
+          "https://www.electricafurnizare.ro/preturi-si-tarife/preturi-oferte-su-fui/"
+        ]
+      }
+    ],
+    "proposedEdits": [
+      {
+        "from": "Aici mecanismul e explicit. În metodologia ANRE în vigoare (Ordinul nr. 15/2022, cu modificările ulterioare), furnizorul cumpără energia prosumatorului la prețul energiei active pe care ți-o vinde, din care scade costul estimat de dezechilibru și marja de furnizare. În oferta de serviciu universal pentru clienți casnici prosumatori a Electrica Furnizare, valabilă în trimestrul al doilea din 2026, prețul energiei active fără TVA era 0,75570 lei/kWh, marja de furnizare 0,27903 lei/kWh, iar costul estimat de dezechilibru 0,02200 lei/kWh — adică în jur de 0,45 lei/kWh pentru surplus, față de un preț contractual final de circa 1,48–1,57 lei/kWh cu TVA, în funcție de operatorul de distribuție.",
+        "to": "Aici mecanismul e în tranziție, iar asta contează pentru cifre. Metodologia ANRE (Ordinul nr. 15/2022, cu modificările ulterioare) permitea furnizorului să cumpere energia prosumatorului la prețul energiei active pe care ți-o vinde, diminuat cu costul estimat al dezechilibrelor și cu marja de furnizare, iar ofertele aflate în derulare încă aplică această formulă. În oferta de serviciu universal pentru clienți casnici prosumatori a Electrica Furnizare, valabilă 1 iulie – 31 decembrie 2026, prețul energiei active fără TG este 0,79545 lei/kWh fără TVA, marja de furnizare 0,18572 lei/kWh, iar costul estimat al dezechilibrelor 0,01700 lei/kWh — adică în jur de 0,59 lei/kWh pentru surplus, față de un preț contractual final de 1,53–1,61 lei/kWh cu TVA, în funcție de operatorul de distribuție.",
+        "why": "Dwa niezalezne bledy w jednym akapicie. (1) Liczby pochodza z oferty, ktora wygasla 30.06.2026, podczas gdy nastepczyni tego samego dostawcy jest opublikowana i obowiazuje do 31.12.2026 — poprawne wartosci to 0,79545 / 0,18572 / 0,01700, czyli ok. 0,59 lei/kWh, a nie 0,45, oraz 1,53-1,61 lei/kWh zamiast 1,48-1,57. (2) Sformulowanie \"metodologia ANRE in vigoare (...) furnizorul cumpara (...) din care scade\" opisuje stan sprzed Legii 160/2026 jako obecny i jest zarazem zbyt kategoryczne wobec samego Ordinului 15/2022, ktorego art. 11 alin. (4) mowi, ze furnizorzy \"pot opta\" za wyodrebnieniem marzy. Czas przeszly \"permitea\" plus \"ofertele aflate in derulare inca aplica aceasta formula\" oddaje realny stan: formula zyje w umowach, ale nie jest juz stanem prawnym docelowym."
+      },
+      {
+        "from": "Aceste cifre sunt dintr-o ofertă expirată și de la un singur furnizor, deci nu le trata ca pe o normă națională. În plus, Legea nr. 160/2026 a schimbat cadrul din 26 iulie 2026, iar metodologia ANRE de aplicare nu era încă publicată la 14 august 2026 — mecanismul concret de achiziție a surplusului poate arăta altfel în oferta ta curentă.",
+        "to": "Cifrele sunt de la un singur furnizor, deci nu le trata ca pe o normă națională. Și, mai important, sunt cifre de tranziție: Legea nr. 160/2026, în vigoare din 26 iulie 2026, prevede că prețul energiei active folosit la decontarea cu prosumatorul nu include costul cu dezechilibrele și componenta de furnizare — adică exact cele două scăderi din calculul de mai sus. Legea se aplică și contractelor aflate deja în derulare, fără act adițional, dar metodologia ANRE de aplicare are termen de 60 de zile de la intrarea în vigoare, adică în jurul datei de 24 septembrie 2026, și nu era publicată la mijlocul lunii august 2026. Până atunci ofertele în derulare folosesc formula veche, iar suma pe care o primești efectiv se citește din propria factură.",
+        "why": "Obecne zastrzezenie jest zbyt slabe wobec skali zmiany: mowi \"poate arata altfel\", podczas gdy Legea 160/2026 art. 73^1 alin. (3) lit. c) wprost usuwa obie potracone pozycje, na ktorych opiera sie caly poprzedni akapit, i to ze skutkiem dla umow juz trwajacych (art. III). Czytelnik z istniejaca instalacja musi wiedziec, ze zmiana dotyczy takze jego, a nie tylko nowych przylaczen. Dodanie terminu ~24 wrzesnia 2026 daje mu date, kiedy ma sprawdzic ponownie — bez tego zdanie \"nie byla jeszcze opublikowana\" przeterminuje sie po cichu za nieco ponad miesiac. Usuniete tez \"dintr-o oferta expirata\", bo po poprawce nr 1 cyfry pochodza z oferty obowiazujacej."
+      },
+      {
+        "from": "Peste ea stau tariful de distribuție, cel de transport, tariful de servicii de sistem, contribuțiile de tip certificate verzi și cogenerare, acciza, iar TVA se aplică peste tot acest total.",
+        "to": "Peste ea stau tariful de distribuție, cel de transport, tariful de servicii de sistem, contribuția pentru contracte pentru diferență (CfD), contribuțiile de tip certificate verzi și cogenerare, acciza, iar TVA de 21% se aplică peste tot acest total.",
+        "why": "Lista pomija CfD, ktore w aktualnej ofercie Electrica wynosi 0,07402 lei/kWh — piec razy wiecej niz wymienione certyfikaty zielone (0,01450) i dziesiec razy wiecej niz akcyza (0,00768). Pominiecie najwiekszej pozycji przy jednoczesnym wyliczeniu najmniejszych rzuca sie w oczy kazdemu, kto ma fakture przed soba. Dopisana tez stawka VAT, bo artykul zacheca do liczenia z faktury, a 21% jest liczba, ktorej czytelnik potrzebuje."
+      },
+      {
+        "from": "2. **Verifică unde te afli față de plafonul compensării** — cât timp injecția anuală rămâne sub consum, joci pe compensare; peste el, joci pe prețul de achiziție.",
+        "to": "2. **Verifică unde te afli față de plafonul compensării** — compensarea se face pe perioadă de facturare, cu reportarea surplusului neutilizat, iar Legea nr. 160/2026 o trece pe ritm lunar; cât timp energia livrată rămâne sub cea consumată, joci pe compensare, peste ea joci pe prețul de achiziție al surplusului. Compensarea cantitativă rămâne garantată pentru instalațiile de cel mult 200 kW până la 31 decembrie 2030.",
+        "why": "\"Injectia anuala\" jest bledne w obu rezimach naraz. Ordinul 15/2022 art. 12 rozlicza kompensacje w okresie rozliczeniowym, z reportowaniem i granica 24 miesiecy — nigdy rocznie. Legea 160/2026 nakazuje rozliczenie miesieczne (\"factureaza lunar\"). Zostawienie slowa \"anuala\" kaze czytelnikowi myslec w kategoriach rocznego bilansu i zle ustawia mu cala decyzje o przesuwaniu zuzycia. Dodana data 31.12.2030 (art. 73^1 alin. (9)) i prog 200 kW domykaja \"plafon\", ktory w oryginale nie jest nigdzie zdefiniowany, a artykul kaze go sprawdzac."
+      }
+    ],
+    "summary": "Rdzen artykulu jest sluszny i dobrze udokumentowany — teza, ze kWh autokonsumowany jest wart wiecej niz wprowadzony do sieci, wytrzymuje probe obalenia w kazdym z trzech mozliwych rezimow prawnych, a mechanizm (kompensacja odzyskuje sama energie, taryfy sieciowe i VAT naliczane sa od energii pobranej) potwierdzilem doslownie w Ordinie ANRE 15/2022 art. 11 alin. (3) lit. a) i alin. (5). Rada praktyczna — policz wlasny mnoznik z wlasnej faktury — jest sensowna i odporna na zmiany prawa. Do publikacji brakuje jednak czterech poprawek, z ktorych dwie sa powazne.\n\nBlad pierwszy, najciezszy: sekcja o nadwyzce otwiera sie slowami \"Aici mecanismul e explicit. In metodologia ANRE in vigoare...\" i opisuje potracanie kosztu niezbilansowania oraz marzy dostawy jako stan obecny. Legea nr. 160/2026, w mocy od 26.07.2026 (MO 603/23.07.2026), w art. 73^1 alin. (3) lit. c) nakazuje, by cena energii czynnej uzywana do rozliczenia z prosumentem NIE zawierala \"costul cu dezechilibrele, componenta de furnizare si taxe\" — czyli usuwa dokladnie te dwie odjete pozycje, na ktorych stoi caly akapit. Art. III stosuje ustawe takze do umow juz trwajacych, wiec nie jest to regula wylacznie dla nowych instalacji. Artykul wspomina o ustawie dopiero w nastepnym akapicie i zbywa ja slowami \"poate arata altfel\", co jest znaczaco za slabe. Uczciwosc wymaga dodania, ze opisana formula nadal figuruje w zywej ofercie Electrica Furnizare (spisanej 30.06.2026, obowiazujacej do 31.12.2026), bo metodologia wykonawcza ANRE jeszcze nie wyszla — to tranzycja, a nie stan ustalony.\n\nBlad drugi: wszystkie liczby pochodza z oferty Electrica, ktora wygasla 30.06.2026, podczas gdy nastepczyni tego samego dostawcy jest opublikowana i obowiazuje do konca roku. Pobralem oba PDF-y i zweryfikowalem: Q2 2026 dawalo 0,75570 / 0,27903 / 0,02200 → 0,45467 lei/kWh (arytmetyka artykulu sie zgadza) przy cenie koncowej 1,48021-1,56554; aktualna oferta daje 0,79545 / 0,18572 / 0,01700 → 0,59273 lei/kWh przy cenie koncowej 1,52940-1,61472. To zmienia mnoznik, ktory jest calym sensem tekstu, z ok. 3,3x na ok. 2,6x. Autor sam oznaczyl te cyfry jako przeterminowane — ale skoro nowsze sa dwa klikniecia dalej na tej samej stronie dostawcy, adnotacja nie ratuje sytuacji, tylko obniza zaufanie do reszty.\n\nBlad trzeci: \"cat timp injectia ANUALA ramane sub consum\". Rumunska compensare cantitativa nigdy nie byla roczna — Ordinul 15/2022 art. 12 rozlicza ja w okresie rozliczeniowym, z reportowaniem nadwyzki i granica 24 miesiecy, a Legea 160/2026 nakazuje rytm miesieczny. Slowo \"anuala\" jest bledne w obu rezimach naraz i zle ustawia czytelnikowi cala decyzje o przesuwaniu zuzycia.\n\nBlad czwarty, drobny: lista skladnikow ceny pomija CfD (0,07402 lei/kWh), czyli pozycje piec razy wieksza od wymienionych certyfikatow zielonych i dziesiec razy wieksza od wymienionej akcyzy.\n\nCo jeszcze warto dodac, choc nie jest bledem: prog 200 kW i data 31 grudnia 2030 (art. 73^1 alin. (9)), do ktorej kompensacja ilosciowa jest gwarantowana — artykul kaze sprawdzac \"plafonul compensarii\", nigdzie go nie definiujac. Ujalem to w poprawce nr 4.\n\nPotwierdzone bez zastrzezen: data i publikacja Legii 160/2026, oznaczenie Ordinului 15/2022, brak opublikowanej metodologii ANRE (sprawdzone bezposrednio na anre.ro — najnowszy projekt dla prosumentow pochodzi z 19.09.2023), stawka VAT 21%, oraz to, ze taryfy sieciowe naliczane sa od poboru brutto, nie od salda.\n\nUwaga o trwalosci tekstu: zdanie o nieopublikowanej metodologii ANRE ma termin waznosci — art. II daje regulatorowi 60 dni od wejscia ustawy w zycie, czyli okolo 24 wrzesnia 2026. Dopisalem te date w poprawce nr 2, zeby czytelnik wiedzial, kiedy sprawdzic ponownie, i zeby tekst przeterminowywal sie jawnie, a nie po cichu. Niezaleznie od tego artykul warto przejrzec ponownie na przelomie wrzesnia i pazdziernika 2026 — i wtedy tez sprawdzic, czy Electrica wydala oferte na 2027 r.\n\nPo naniesieniu czterech poprawek tekst uwazam za publikowalny. Warto tez zaktualizowac pole `updated` we frontmatterze na date faktycznej korekty."
+  },
+  {
+    "file": "C:/Users/yakon/Documents/volcast-landing-it/src/content/qa/ro/cum-devin-prosumator-racordare-casa-verde.md",
+    "verdict": "wymaga-poprawek",
+    "summary": "Rdzen artykulu — traseu racordarii przez OSD i terminy z Ordinul ANRE 19/2022 — jest solidny. Pobralem pierwotny dokument ANRE (schemat 18 etapow, akt. luty 2023) i potwierdzil KAZDY termin co do dnia: 5 zl. weryfikacja, 15 zl. ATR, 3 zl. projekt umowy, 3 zl. certyfikat, 5 zl. licznik, 2 zl. zalaczenie, oraz zwrot bransamentu wg Ordinului 18/2022. Statystyki ANRE tez zgadzaja sie co do cyfry: 359.378 prosumentow, 4.019,17 MW, 324.535 osob fizycznych na 30.06.2026 (pobrany PDF DPSRC). Sciezka uproszczona przez notificare istnieje i dziala tak, jak opisano.\n\nDwa problemy wymagaja poprawki przed publikacja.\n\n(1) BLAD RZECZOWY — mylenie dwoch umow o podobnych nazwach. Artykul pisze, ze licznik montuje sie w 5 dni roboczych \"de la încheierea contractului de vânzare\". Zrodlo pierwotne (etap 16) mowi wyraznie \"de la data încheierii contractului de FURNIZARE\". To nie jest synonim: contract de furnizare to umowa na dostawe (pobor), contract de vânzare-cumpărare to umowa sprzedazy nadwyzki, ktora artykul sam wymienia jako ostatni, osmy krok. W obecnym brzmieniu czytelnik czeka na licznik po umowie, ktorej jeszcze nie moze podpisac — kolejnosc sie zapetla. Ten sam etap 17 warunkuje zalaczenie napiecia umowa de furnizare i zamontowanym licznikiem, czego artykul nie podaje.\n\n(2) SEKCJA CASA VERDE — prawdziwa w literze, mylaca w skutku. Zdania \"nie ma otwartej sesji\" i \"ghid na 2026 nie zostal opublikowany\" sa oba prawdziwe, ale pomijaja rzecz najwazniejsza dla adresata tego tekstu: Casa Verde Fotovoltaice, czyli komponent dla NOWYCH instalacji u osob fizycznych, zostal w ogole wykreslony z budzetu AFM na 2026 (HG z 21.05.2026; budzet 3,15 mld lei na piec kierunkow, bez fotowoltaiki). Jedynym programem dla gospodarstw jest Casa Verde Baterii (400 mln lei) — adresowany WYLACZNIE do prosumentow, ktorzy juz maja dzialajacy system PV. Artykul uzywa golej nazwy \"Casa Verde\", ktora rumunski czytelnik odczyta jako program fotowoltaiczny, i sugeruje, ze sesja jedynie czeka na ghid. Caly artykul jest adresowany do osoby, ktora prosumentem jeszcze NIE jest — czyli do kogos, kto do programu bateryjnego sie nie kwalifikuje, a na fotowoltaiczny w 2026 nie ma co czekac. Punkt 5 listy \"Ce ai de făcut\" pogleria to, radzac wstrzymac decyzje o dimensionare do czasu sprawdzenia Casa Verde. To dokladnie ten failure mode, ktory byl w zadaniu: opisanie stanu sprzed zmiany jako obecnego, plus zlepienie dwoch instytucji o podobnych nazwach w jedna.\n\nTrzy drobniejsze nieprecyzyjnosci: warunek sciezki uproszczonej to \"modificarea soluției de racordare\", nie \"modificări ale rețelei\" (wezsze i szersze to nie to samo — wzrost mocy zatwierdzonej dyskwalifikuje, choc siec sama nie wymaga przebudowy); termin 3 dni na projekt umowy biegnie od rejestracji WNIOSKU O ZAWARCIE UMOWY, nie od wniosku o przylaczenie; prog 400 kW dotyczy w Ordinul 19/2022 podmiotow przylaczonych do niskiego napiecia.\n\nSprawdzilem tez zarzut o Legea 160/2026 (MO 603, w mocy od 26.07.2026): nie dotyka strony technicznej racordarii — ATR, certyfikat i PIF pozostaja bez zmian, ustawa zmienia strone handlowa (decontare). Brak wzmianki o niej nie jest wiec bledem, ale przy dacie 14.08.2026 warto dodac jedno zdanie rozgraniczajace, zeby czytelnik nie przenosil starych zasad rozliczenia na swoja przyszla umowe. Uwaga metodyczna: pierwsze streszczenie PDF-u ANRE przez WebFetch podalo bledne liczby (30 dni kalendarzowych na ATR, prog 6 kW) — odczyt bezposredni dokumentu je obalil, wiec zadnego terminu nie opieram na streszczeniu.",
+    "claims": [
+      {
+        "quote": "Devii prosumator **prin operatorul de distribuție, nu prin instalator**",
+        "status": "potwierdzone",
+        "finding": "ANRE opisuje wlasnie taki traseu — wszystkie osiem krokow zaczyna sie od wniosku do operatora dystrybucyjnego, instalator pojawia sie dopiero na etapie montazu. Teza nosna artykulu jest sluszna.",
+        "sources": [
+          "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/",
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "Procedura este reglementată de Ordinul ANRE nr. 19/2022, cu modificările ulterioare",
+        "status": "potwierdzone",
+        "finding": "Ordinul ANRE 19/2022 (MO 222/07.03.2022) reguluje racordarea locurilor de consum si de producere prosumentow; zmieniony m.in. Ordinami 133/2022, 4/2023 i 70/2023. Formula 'cu modificările ulterioare' jest bezpieczna i poprawna.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf",
+          "https://electricieni-formare-calificare.ro/wp-content/uploads/2022/05/Ordin-ANRE-19-2022-Procedura-privind-racordarea-la-retelele-electrice-de-interes-public-a-locurilor-de-consum-si-de-producere-apartinand-prosumatorilor-1.pdf"
+        ]
+      },
+      {
+        "quote": "acoperă instalațiile din surse regenerabile de până la 400 kW pe loc de consum",
+        "status": "nieprecyzyjne",
+        "finding": "Prog 400 kW jest prawdziwy, ale w Ordinul 19/2022 dotyczy kategorii wnioskodawcow 'racordate la reţeaua de joasă tensiune'. Procedura obejmuje tez lokalne wladze publiczne wg art. 73^1 ust. (2) Legii 123/2012 oraz beneficjentow programow finansowania, a etap 12 przewiduje wariant sredniego napiecia. Zdanie w obecnym brzmieniu sugeruje jeden prosty prog dla wszystkich.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf",
+          "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+        ]
+      },
+      {
+        "quote": "Traseul complet indicat de ANRE are opt etape",
+        "status": "potwierdzone",
+        "finding": "Strona ANRE 'Cum devin prosumator' wymienia dokladnie osiem krokow, w kolejnosci podanej w artykule, konczac na 'contract de vânzare-cumpărare a energiei electrice produse și livrate în rețea'. Kolejnosc sie zgadza.",
+        "sources": [
+          "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+        ]
+      },
+      {
+        "quote": "dacă instalația nu impune modificări ale rețelei, poți notifica operatorul după realizarea ei, iar acesta actualizează certificatul de racordare existent, fără emiterea unui ATR nou",
+        "status": "nieprecyzyjne",
+        "finding": "Sciezka uproszczona istnieje i skutek jest opisany poprawnie, ale warunek zostal przeformulowany. ANRE pisze doslownie: 'Dacă pentru instalarea sistemului de panouri fotovoltaice la locul tău de consum nu este necesară modificarea soluției de racordare'. 'Modificarea soluției de racordare' to nie to samo co 'modificări ale rețelei' — czytelnik, ktoremu siec nie wymaga wzmocnienia, ale ktory przekracza moc zatwierdzona, uzna sie bledne za kwalifikujacego sie.",
+        "sources": [
+          "https://anre.ro/consumatori/energie-electrica/cum-devin-prosumator/"
+        ]
+      },
+      {
+        "quote": "Operatorul verifică cererea și documentele în 5 zile lucrătoare de la depunere.",
+        "status": "potwierdzone",
+        "finding": "Etap 2 schematu ANRE: 'Verificare cerere și documente în 5 zile lucrătoare de la depunere'. Zgodne co do dnia.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "Emite ATR în cel mult 15 zile lucrătoare de la depunerea documentației complete.",
+        "status": "potwierdzone",
+        "finding": "Etap 3: 'Stabilire soluție de racordare prin fișă de soluție, emitere și transmitere ATR în max. 15 zile lucrătoare de la data depunerii documentaţiei complete'. Zastrzezenie 'documentacji kompletnej' zostalo w artykule zachowane — to wazne, bo od niego biegnie termin.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "Transmite proiectul contractului de racordare în cel mult 3 zile lucrătoare de la înregistrarea cererii.",
+        "status": "nieprecyzyjne",
+        "finding": "Etap 5 mowi: 'în max. 3 zile lucrătoare de la data înregistrării cererii de încheiere contract' — chodzi o wniosek o ZAWARCIE UMOWY przylaczeniowej (etap 4), a nie o pierwotny wniosek o przylaczenie. W tekscie, ktory dwa zdania wczesniej mowi o 'cererea de racordare', golo uzyte 'cererii' odsyla czytelnika do zlego dokumentu i zlej daty poczatkowej.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "După recepția instalației de utilizare, certificatul de racordare se emite în cel mult 3 zile lucrătoare",
+        "status": "potwierdzone",
+        "finding": "Etap 15: 'Emitere certificat de racordare (în care este consemnată calitatea de prosumator) în max. 3 zile lucrătoare de la data primirii procesului-verbal de recepție a punerii în funcțiune'. Zgadza sie takze to, ze wlasnie w tym dokumencie odnotowuje sie status prosumenta.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "contorul se montează în cel mult 5 zile lucrătoare de la încheierea contractului de vânzare",
+        "status": "falszywe",
+        "finding": "Zrodlo pierwotne, etap 16: 'Montare contor în punctul de delimitare în termen de max. 5 zile lucrătoare de la data încheierii contractului de FURNIZARE'. Artykul podstawil umowe sprzedazy (contract de vânzare) w miejsce umowy dostawy (contract de furnizare) — dwie rozne instytucje o podobnych nazwach. Skutek jest praktyczny, nie kosmetyczny: artykul sam stawia umowe sprzedazy jako osmy, ostatni krok, wiec czytelnik wyprowadza z tego, ze licznik montuje sie po niej, podczas gdy jest odwrotnie — licznik i umowa dostawy warunkuja zalaczenie napiecia (etap 17), a dopiero potem podpisuje sie umowe sprzedazy nadwyzki. Prosument powolujacy sie na ten termin przed operatorem powola sie na nieistniejacy obowiazek.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "punerea finală sub tensiune se face în cel mult 2 zile lucrătoare de la emiterea certificatului",
+        "status": "nieprecyzyjne",
+        "finding": "Termin 2 dni roboczych sie zgadza (etap 17), ale zrodlo dodaje warunek: 'condiționat de încheierea de către prosumator a contractului de furnizare și montarea contorului în punctul de delimitare'. Bez tego zastrzezenia czytelnik uzna, ze zegar rusza sama emisja certyfikatu, i bedzie egzekwowal termin, ktory jeszcze nie biegnie.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "prosumatorului client casnic racordat la joasă tensiune i se restituie cheltuielile de proiectare și execuție a branșamentului, în limita valorii medii a branșamentului stabilite conform Ordinului ANRE nr. 18/2022, precum și costul blocului de măsură și protecție cu contor, dacă a fost nevoit să îl achiziționeze singur",
+        "status": "potwierdzone",
+        "finding": "Etap 18 potwierdza wszystkie trzy elementy: zwrot za projekt i wykonanie bransamentu do sredniej wartosci, odwolanie do Ordinului ANRE 18/2022, ograniczenie do klienta domowego i podmiotow zrownanych przylaczonych do niskiego napiecia. Zwrot za grup de măsurare / bloc de măsură și protecție wraz z licznikiem jest w przypisach 3 i 4 uzalezniony od tego, ze OSD nie mial mozliwosci zakupu sprzetu — artykul oddaje ten warunek slowami 'dacă a fost nevoit să îl achiziționeze singur'. Poprawnie.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "La data acestui articol, programul Casa Verde nu avea o sesiune deschisă, iar ghidul de finanțare pentru 2026 nu era publicat de Administrația Fondului pentru Mediu — fără ghid publicat, sesiunea nu poate începe.",
+        "status": "nieaktualne",
+        "finding": "Oba fakty sa prawdziwe, ale razem tworza falszywy obraz. Casa Verde Fotovoltaice — komponent dla nowych instalacji u osob fizycznych — zostal wykreslony z budzetu AFM na 2026 (hotarare de guvern z 21.05.2026; budzet 3,15 mld lei rozdzielony na piec kierunkow, srodki przeniesione m.in. na apa-canal). Jedynym programem dla gospodarstw domowych pozostal Casa Verde Baterii z 400 mln lei, adresowany WYLACZNIE do prosumentow z juz dzialajacym systemem PV; jego ghid faktycznie nie jest opublikowany, a AFM nie podal kalendarza. Artykul mowi o 'programul Casa Verde' bez rozroznienia, wiec czytelnik — z zalozenia osoba, ktora prosumentem jeszcze nie jest — odczyta, ze jego dotacja na panele czeka tylko na ghid. Nie czeka: w 2026 nie ma programu AFM na nowe instalacje fotowoltaiczne dla osob fizycznych.",
+        "sources": [
+          "https://cursdeguvernare.ro/finantarea-pentru-casa-verde-fotovoltaice-a-fost-eliminata-din-bugetul-afm-pe-2026-in-favoarea-proiectelor-de-canalizare-ale-localitatilor-rurale.html",
+          "https://newsweek.ro/economie/adio-panouri-fotovoltaice-cu-bani-de-la-stat-in-2026-prin-casa-verde-se-aloca-fonduri-doar-pentru-baterii",
+          "https://www.antena3.ro/mediu/programul-casa-verde-fotovoltaice-2026-a-fost-eliminat-din-bugetul-afm-sustine-apce-unde-au-fost-redirectionate-fondurile-787807.html",
+          "https://economedia.ro/casa-verde-baterii-2026-afm-nu-are-inca-un-calendar-pentru-programul-de-400-milioane-de-lei-ghidul-de-finantare-este-in-lucru.html"
+        ]
+      },
+      {
+        "quote": "pentru beneficiarii schemelor de finanțare operatorul emite ATR *înainte* de realizarea instalației, deci ordinea pașilor se schimbă",
+        "status": "potwierdzone",
+        "finding": "Przypis 1 lit. c) schematu ANRE wymienia jako wnioskodawcow 'prosumatori care accesează programe de finanţare (...) și pentru care operatorul de distribuție emite avizul tehnic de racordare înainte de realizarea instalației de producere'. Doslowne potwierdzenie, ze kolejnosc krokow jest dla nich inna.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2023/03/23-02-10-11-45-40EE_Etape_proces_de_racordare_LC__LP_prosumator_2.pdf"
+        ]
+      },
+      {
+        "quote": "la 30 iunie 2026 erau racordați 359.378 de prosumatori, cu o putere instalată totală de 4.019,17 MW, dintre care 324.535 persoane fizice",
+        "status": "potwierdzone",
+        "finding": "Pobralem raport DPSRC ANRE na 30.06.2026 i odczytalem tabele bezposrednio. Tabela 3: 359.378 lacznie, 324.535 osob fizycznych, 34.843 osob prawnych. Tabela 4: 4.019,17 MW lacznie (2.067,47 PF + 1.951,69 PJ). Wszystkie trzy liczby zgadzaja sie co do cyfry, lacznie z formatem dziesietnym. Zrodlo pierwotne, nie serwis komercyjny.",
+        "sources": [
+          "https://anre.ro/wp-content/uploads/2026/08/Situatie-prosumatori_iunie_2026.pdf"
+        ]
+      },
+      {
+        "quote": "**Verifică statutul Casa Verde pe afm.ro**, nu pe site-urile de instalatori, și abia apoi decide dimensionarea",
+        "status": "nieaktualne",
+        "finding": "Rada o sprawdzaniu na afm.ro zamiast u instalatorow jest sluszna, ale konsekwencja 'i abia apoi decide dimensionarea' oznacza dla czytelnika wstrzymanie decyzji do czasu sesji, ktora dla nowych instalacji PV w 2026 nie nadejdzie. Rada aktywnie opoznia dzialanie w oparciu o nieistniejaca perspektywe.",
+        "sources": [
+          "https://cursdeguvernare.ro/finantarea-pentru-casa-verde-fotovoltaice-a-fost-eliminata-din-bugetul-afm-pe-2026-in-favoarea-proiectelor-de-canalizare-ale-localitatilor-rurale.html",
+          "https://economedia.ro/casa-verde-baterii-2026-afm-nu-are-inca-un-calendar-pentru-programul-de-400-milioane-de-lei-ghidul-de-finantare-este-in-lucru.html"
+        ]
+      },
+      {
+        "quote": "updated: 2026-08-14",
+        "status": "nieprecyzyjne",
+        "finding": "Artykul nie wspomina o Legii nr. 160/2026 (MO 603/23.07.2026, w mocy od 26.07.2026). Sprawdzilem, czy to bledne pominiecie: nie jest. Ustawa zmienia strone handlowa (compensare lunara, rozliczenie wartosciowe 200-400 kW, termin 60 dni dla ANRE na zmiane Ordinului 15/2022), natomiast traseu techniczny — ATR, certificat de racordare, PIF, prog 400 kW — pozostaje bez zmian i dalej regulowany Ordinul 19/2022. Zadne twierdzenie artykulu nie jest wiec przez nia obalone. Przy dacie 14.08.2026 brak jednego zdania rozgraniczajacego jest jednak luka redakcyjna: czytelnik konczy tekst na 'contractul de vânzare a energiei' i przenosi na niego zasady rozliczenia sprzed 26 lipca.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://bpv-grigorescu.com/ro/noutati-si-publicatii/publicatii/modificari-ale-cadrului-legal-privind-prosumatorii",
+          "https://www.avocatnet.ro/articol_70536/Legea-energiei-modificat%C4%83-oficial-Ce-schimb%C4%83ri-au-fost-aduse-pentru-prosumatori.html"
+        ]
+      }
+    ],
+    "proposedEdits": [
+      {
+        "from": "contorul se montează în cel mult 5 zile lucrătoare de la încheierea contractului de vânzare, iar punerea finală sub tensiune se face în cel mult 2 zile lucrătoare de la emiterea certificatului.",
+        "to": "contorul se montează în cel mult 5 zile lucrătoare de la încheierea contractului de furnizare, iar punerea finală sub tensiune se face în cel mult 2 zile lucrătoare de la emiterea certificatului de racordare, condiționat de încheierea contractului de furnizare și de montarea contorului în punctul de delimitare.",
+        "why": "Blad rzeczowy: zrodlo pierwotne (Ordinul 19/2022, etap 16) wiaze termin z contractul de FURNIZARE, nie de vânzare. Artykul stawia umowe sprzedazy jako ostatni, osmy krok, wiec w obecnym brzmieniu kolejnosc sie zapetla — czytelnik czeka na licznik po umowie, ktorej jeszcze nie moze podpisac. Dodany warunek z etapu 17 zapobiega egzekwowaniu terminu 2 dni, ktory jeszcze nie biegnie."
+      },
+      {
+        "from": "Transmite proiectul contractului de racordare în cel mult 3 zile lucrătoare de la înregistrarea cererii.",
+        "to": "Transmite proiectul contractului de racordare în cel mult 3 zile lucrătoare de la înregistrarea cererii de încheiere a contractului de racordare.",
+        "why": "Etap 5 liczy termin od rejestracji wniosku o zawarcie umowy przylaczeniowej, a nie od pierwotnego wniosku o przylaczenie, o ktorym artykul mowi zdanie wczesniej. Bez doprecyzowania czytelnik liczy termin od zlej daty."
+      },
+      {
+        "from": "Există și o cale scurtă: dacă instalația nu impune modificări ale rețelei, poți notifica operatorul după realizarea ei, iar acesta actualizează certificatul de racordare existent, fără emiterea unui ATR nou.",
+        "to": "Există și o cale scurtă: dacă pentru montarea sistemului fotovoltaic nu este necesară modificarea soluției de racordare, poți transmite operatorului o notificare după montarea acestuia, iar operatorul actualizează certificatul de racordare existent, fără să mai fie necesară emiterea avizului tehnic de racordare.",
+        "why": "ANRE formuluje warunek jako 'nu este necesară modificarea soluției de racordare'. 'Modificări ale rețelei' to inny, wezszy zakres — prosument, ktory zwieksza moc zatwierdzona, nie kwalifikuje sie na te sciezke, choc siec sama nie wymaga przebudowy."
+      },
+      {
+        "from": "Procedura este reglementată de Ordinul ANRE nr. 19/2022, cu modificările ulterioare, și acoperă instalațiile din surse regenerabile de până la 400 kW pe loc de consum.",
+        "to": "Procedura este reglementată de Ordinul ANRE nr. 19/2022, cu modificările ulterioare, și acoperă, printre alții, prosumatorii racordați la rețeaua de joasă tensiune care dețin instalații de producere din surse regenerabile cu puterea instalată de cel mult 400 kW pe loc de consum. Legea nr. 160/2026, în vigoare din 26 iulie 2026, a schimbat regulile comerciale de decontare a energiei livrate în rețea, dar nu a modificat acest traseu tehnic de racordare; pentru condițiile de decontare aplicabile contractului tău, verifică regulile ANRE în vigoare la momentul semnării.",
+        "why": "Prog 400 kW w Ordinul 19/2022 dotyczy podmiotow przylaczonych do niskiego napiecia, a procedura obejmuje tez inne kategorie wnioskodawcow. Drugie zdanie rozgranicza to, co Legea 160/2026 zmienila (strona handlowa), od tego, czego nie ruszyla (traseu techniczny) — bez podawania liczb, ktorych nie udalo sie potwierdzic w Monitorul Oficial."
+      },
+      {
+        "from": "La data acestui articol, programul Casa Verde nu avea o sesiune deschisă, iar ghidul de finanțare pentru 2026 nu era publicat de Administrația Fondului pentru Mediu — fără ghid publicat, sesiunea nu poate începe. Nu construi calculul investiției pe o subvenție a cărei valoare și al cărei calendar nu sunt încă oficiale; verifică direct pe afm.ro înainte de orice decizie. Dacă totuși mergi pe program, reține că pentru beneficiarii schemelor de finanțare operatorul emite ATR *înainte* de realizarea instalației, deci ordinea pașilor se schimbă.",
+        "to": "Aici trebuie făcută o distincție pe care numele programului o ascunde. Casa Verde Fotovoltaice — componenta pentru instalații noi la persoane fizice — nu figurează printre programele finanțate din bugetul Administrației Fondului pentru Mediu pe 2026, aprobat prin hotărâre de guvern în mai 2026. Singurul program pentru gospodării prevăzut acolo este cel dedicat bateriilor de stocare, adresat exclusiv prosumatorilor care au deja un sistem fotovoltaic funcțional; la data acestui articol ghidul lui de finanțare nu era publicat, iar fără ghid publicat sesiunea nu poate începe.\n\nConcret: dacă nu ești încă prosumator, nu îți construi calculul investiției pe o subvenție Casa Verde — în 2026 nu există un program AFM pentru instalații fotovoltaice noi la persoane fizice. Verifică starea programelor direct pe afm.ro, iar pentru schemele finanțate din fonduri europene, pe paginile ministerelor care le administrează. Dacă totuși intri într-o schemă de finanțare, reține că pentru beneficiarii acestor programe operatorul emite ATR *înainte* de realizarea instalației, deci ordinea pașilor se schimbă.",
+        "why": "Najpowazniejsza poprawka. Oryginal jest prawdziwy w literze, ale mylacy w skutku: sugeruje, ze Casa Verde czeka tylko na ghid, podczas gdy komponent fotowoltaiczny zostal wykreslony z budzetu AFM na 2026, a pozostal wylacznie program bateryjny dla JUZ istniejacych prosumentow — czyli nie dla adresata tego artykulu. Nowa wersja rozdziela dwa programy o tej samej nazwie, nie podaje kwot ani dat sesji (niepotwierdzonych u zrodla pierwotnego) i mowi czytelnikowi wprost, na co nie ma co czekac."
+      },
+      {
+        "from": "5. **Verifică statutul Casa Verde pe afm.ro**, nu pe site-urile de instalatori, și abia apoi decide dimensionarea; între timp, o prognoză de producție pentru locația ta îți arată la ce te poți aștepta de la sistemul pe care îl planifici.",
+        "to": "5. **Verifică starea programelor de finanțare pe afm.ro**, nu pe site-urile de instalatori — dar nu amâna decizia așteptând o sesiune Casa Verde Fotovoltaice, pentru că în 2026 nu există un program AFM pentru instalații noi la persoane fizice. Dimensionează sistemul după consumul tău real; o prognoză de producție pentru locația ta îți arată la ce te poți aștepta de la sistemul pe care îl planifici.",
+        "why": "Bez tej zmiany lista dzialan radzi czytelnikowi wstrzymac decyzje o wielkosci instalacji do czasu sesji, ktora dla nowych instalacji PV w 2026 nie nadejdzie. Zachowuje sluszna rade 'nie ufaj stronom instalatorow' i przenosi kryterium dimensionarii na realne zuzycie."
+      },
+      {
+        "from": "## Casa Verde: ce se știe la 14 august 2026",
+        "to": "## Casa Verde: ce se știe în august 2026",
+        "why": "Sekcja jest najbardziej ulotna w calym tekscie. Data dzienna w naglowku starzeje sie natychmiast i sugeruje precyzje, ktorej treść nie ma; miesiac wystarczy, a doslowna data pozostaje w polu 'updated' oraz w zwrocie 'la data acestui articol'."
+      }
+    ]
+  },
+  {
+    "file": "C:/Users/yakon/Documents/volcast-landing-it/src/content/qa/ro/cum-functioneaza-compensarea-cantitativa.md",
+    "verdict": "wymaga-poprawek",
+    "claims": [
+      {
+        "quote": "Legea nr. 160/2026, publicată în Monitorul Oficial nr. 603 din 23 iulie 2026 și intrată în vigoare pe 26 iulie 2026",
+        "status": "potwierdzone",
+        "finding": "Numer aktu, numer i data Monitorului Oficial oraz data wejscia w zycie zgadzaja sie z tekstem ustawy odtworzonym w bazie lege5 i sa powtorzone niezaleznie przez kancelarie i serwisy prawnicze. Czytelnik dostaje poprawny punkt odniesienia — to jest mocna strona tekstu, bo wiekszosc rumunskich serwisow komercyjnych podaje ta ustawe bez numeru MO.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://contabilul.manager.ro/a/30170/5-noutati-importante-pentru-prosumatori-introduse-prin-legea-nr-1602026.html",
+          "https://www.puterea.ro/legea-160-2026-prosumatori-compensare-energie/"
+        ]
+      },
+      {
+        "quote": "menține mecanismul pentru instalațiile de până la 200 kW pe loc de consum, până la 31 decembrie 2030",
+        "status": "potwierdzone",
+        "finding": "Tekst ustawy brzmi doslownie: „Compensarea cantitativă a prosumatorilor cu instalaţii cu o putere de până în 200 kW pe loc de consum va fi acordată până la data de 31 decembrie 2030”. Czasownik „menține” jest trafny — data 2030 pochodzi juz z O.U.G. nr. 143/2021, ustawa z 2026 jej nie wprowadza, tylko utrzymuje. Tekst poprawnie odrzuca powtarzany w kilku serwisach blad, jakoby Legea 160/2026 podniosla prog kompensacji do 400 kW.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://energie.gov.ro/prosumatorii-vor-avea-parte-de-compensare-cantitativa/",
+          "https://www.economica.net/oug-referitoare-la-compensarea-cantitativa-a-prosumatorilor-a-aparut-in-monitorul-oficial-ce-spune-noua-lege-si-de-cand-s-ar-putea-aplica-mecanismul_551548.html"
+        ]
+      },
+      {
+        "quote": "un kWh injectat în rețea se scade dintr-un kWh consumat ulterior — în cantitate, nu în bani. Se aplică până la nivelul consumului tău și acoperă componenta de energie, nu întreaga factură",
+        "status": "potwierdzone",
+        "finding": "Zgodne z mechanizmem z art. 73¹ Legii 123/2012 i z Metodologia z Ordinul ANRE 15/2022: dostawca fakturuje wylacznie roznice ilosci, a kompensacja dotyczy komponentu energii czynnej. Definicja jest poprawna i lepiej postawiona niz w wiekszosci rumunskich tresci komercyjnych, ktore pisza o „kompensacji 1:1” bez zaznaczenia, ze dotyczy wylacznie energii czynnej.",
+        "sources": [
+          "https://lege5.ro/gratuit/geydinrsgazda/art-731-ordonanta-de-urgenta-143-2021?dp=gq2denjtgu4tmmy",
+          "https://lege5.ro/gratuit/geydqnrrha4ts/compensarea-cantitativa-dintre-energia-electrica-produsa-din-surse-regenerabile-si-livrata-in-reteaua-electrica-de-prosumatorii-persoane-fizice-si-juridice-care-detin-centrale-electrice-din-surse-rege",
+          "https://www.electricafurnizare.ro/asistenta/prosumatorul/"
+        ]
+      },
+      {
+        "quote": "Tarifele de rețea (distribuție și transport), tariful de servicii de sistem, acciza și TVA rămân legate de energia pe care o extragi efectiv din rețea.",
+        "status": "potwierdzone",
+        "finding": "To najwazniejsze praktyczne twierdzenie tekstu i broni sie. Baza wiedzy Electrica Furnizare wylicza wprost, ze na fakturze prosumenta ≤200 kW z kompensacja znajduja sie wartosci uslug transportu, dystrybucji, uslug systemowych, akcyzy, kogeneracji, certyfikatow zielonych i TVA, liczone od energii pobranej. Odnotowuje kontrsygnal: blog greenlead.ro twierdzi odwrotnie („Plătești taxele DOAR pe diferența netă”) — to zrodlo komercyjne SEO i jest bledne. Tekst stoi po wlasciwej stronie tego sporu.",
+        "sources": [
+          "https://www.electricafurnizare.ro/asistenta/prosumatorul/",
+          "https://lege5.ro/gratuit/geydqnrrha4ts/compensarea-cantitativa-dintre-energia-electrica-produsa-din-surse-regenerabile-si-livrata-in-reteaua-electrica-de-prosumatorii-persoane-fizice-si-juridice-care-detin-centrale-electrice-din-surse-rege",
+          "https://www.ppcenergy.ro/prosumatori/legislatie/"
+        ]
+      },
+      {
+        "quote": "se aplică instalațiilor de până la 400 kW putere instalată pe loc de consum — prag confirmat atât de art. 73¹ din Legea nr. 123/2012, cât și de procedura de racordare din Ordinul ANRE nr. 19/2022",
+        "status": "potwierdzone",
+        "finding": "Prog 400 kW jest wlasciwy dla ram komercjalizacji energii prosumenta (art. 73¹ alin. (1); tytul Metodologii z Ordinul 15/2022 mowi o instalacjach „de cel mult 400 kW pe loc de consum”). Legea 160/2026 nie zmienila tego progu — zmienila zasady rozliczenia wewnatrz niego.",
+        "sources": [
+          "https://lege5.ro/gratuit/geydinrsgazda/art-731-ordonanta-de-urgenta-143-2021?dp=gq2denjtgu4tmmy",
+          "https://www.ppcenergy.ro/prosumatori/legislatie/",
+          "https://www.anre.ro/ro/presa/comunicate/comunicat-de-presa-24-02-2022-anre-incurajeaza-cresterea-numarului-de-prosumatori-prin-noile-reguli-aprobate-pentru-comercializarea-energiei-electrice-produse-in-centrale-electrice-din-surse-regenerabile-cu-putere-electrica-instalata-de-cel-mult-400-kw"
+        ]
+      },
+      {
+        "quote": "Pentru o gospodărie, pragul relevant în practică este cel de 200 kW al compensării, pe care nicio instalație casnică nu îl atinge.",
+        "status": "nieaktualne",
+        "finding": "To najwiekszy blad tekstu wobec grupy docelowej. Legea 160/2026 wprowadzila do art. 73¹ osobna kategorie osob fizycznych z moca do 27 kW na loc de consum (alin. (3¹)–(3²)) i przypisala jej dodatkowe prawa: sumy z kompensacji mozna przeznaczyc na faktury we wszystkich wlasnych punktach poboru u tego samego dostawcy, a takze na faktury za gaz ziemny, jesli dostarcza go ta sama firma. Typowa instalacja domowa (5–10 kW) miesci sie wlasnie w tym progu. Zdanie mowi czytelnikowi, ze prog istotny dla niego to 200 kW, czyli dokladnie odwrotnie — i przemilcza jedyne nowe uprawnienie, ktore go realnie dotyczy.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://www.puterea.ro/legea-160-2026-prosumatori-compensare-energie/",
+          "https://instalatori-fotovoltaice.ro/ghid/legea-160-2026-prosumatori-compensare-lunara-gaz-surplus"
+        ]
+      },
+      {
+        "quote": "Energia injectată care depășește consumul tău nu se compensează — este cumpărată de furnizor.",
+        "status": "nieprecyzyjne",
+        "finding": "Po Legii 160/2026 zdanie jest kierunkowo prawdziwe (decontare lunara), ale opisuje stan, ktorego czytelnik z istniejaca instalacja jeszcze nie widzi na fakturze. Do 26 lipca 2026 nadwyzka nie byla kupowana, tylko reportowana w ilosci i uzywalna przez maksymalnie 24 miesiace (art. 73¹: „maximum 24 de luni de la data facturării”; art. 12 alin. (5) Metodologii). Tekst nigdzie nie mowi, ze wlasnie ten 24-miesieczny report zostal zniesiony — a to najbardziej namacalna zmiana dla gospodarstwa domowego.",
+        "sources": [
+          "https://lege5.ro/gratuit/geydinrsgazda/art-731-ordonanta-de-urgenta-143-2021?dp=gq2denjtgu4tmmy",
+          "https://lege5.ro/gratuit/geydqnrrha4ts/compensarea-cantitativa-dintre-energia-electrica-produsa-din-surse-regenerabile-si-livrata-in-reteaua-electrica-de-prosumatorii-persoane-fizice-si-juridice-care-detin-centrale-electrice-din-surse-rege",
+          "https://justexpert.ro/compensare-cantitativa-prosumator-factura-reala/"
+        ]
+      },
+      {
+        "quote": "În metodologia ANRE aflată în vigoare (Ordinul nr. 15/2022, cu modificările ulterioare), prețul de achiziție este cel al energiei active, din care se scad marja de furnizare și costul estimat de dezechilibru.",
+        "status": "nieaktualne",
+        "finding": "To opis stanu sprzed zmiany prawa podany jako obowiazujacy — dokladnie ten blad, ktorego szukam. Art. 73¹ alin. (3) lit. c) w brzmieniu nadanym Legea 160/2026 naklada na dostawce obowiazek „să nu includă în preţul energiei electrice active utilizat la decontare (…) costul cu dezechilibrele, componenta de furnizare şi taxe precum TVA, servicii de transport şi distribuţie, servicii de sistem, contribuţia de cogenerare, certificate verzi, acciză”. Przepis obowiazuje od 26 lipca 2026 i stosuje sie do umow w toku. Niezaleznie APCE potwierdza, ze zwolnienie z platnosci za niezbilansowanie obejmuje od 2026 r. prosumentow ponizej 200 kW. Opis odjecia marzy i dezechilibru byl prawdziwy dla oferty Electrica na Q2 2026, ale nie jest regula obowiazujaca w dniu publikacji.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://agerpres.ro/economic/2026/02/17/apce-scutirea-de-la-plata-dezechilibrelor-este-limitata-la-prosumatorii-cu-sub-200-kw-putere-instala--1528796",
+          "https://asociatiaprosumatorilor.ro/legea-prosumatorului-2025-noutati-si-explicatii-in-7-puncte/"
+        ]
+      },
+      {
+        "quote": "Până la publicarea metodologiei revizuite, decontarea practică se face după regulile vechi — inclusiv scăderea marjei și a dezechilibrului din prețul surplusului.",
+        "status": "falszywe",
+        "finding": "Zdanie jest podane kategorycznie i jest nie do obrony. Ustawa obowiazuje od 26 lipca 2026 i — na mocy art. III — stosuje sie do umow juz trwajacych; brak zaktualizowanej metodologii ANRE dotyczy operacyjnego wdrozenia formul na fakturze, a nie mocy obowiazujacej zakazu z art. 73¹ alin. (3) lit. c). Tekst sam nazywa to „partea importantă și rar spusă”, wiec czytelnik potraktuje to jako sedno. Skutek: prosument dowiaduje sie, ze dostawca moze mu nadal zgodnie z prawem potracac dezechilibru, choc ustawa tego wprost zabrania.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://instalatori-fotovoltaice.ro/ghid/legea-prosumatorilor-2026-firma-plata-lunara-dezechilibre",
+          "https://asociatiaprosumatorilor.ro/legea-prosumatorului-2025-noutati-si-explicatii-in-7-puncte/"
+        ]
+      },
+      {
+        "quote": "Legea nr. 160/2026 impune furnizorului să cumpere energia la prețul mediu ponderat de pe Piața pentru Ziua Următoare din luna în care a fost produsă și să facă o regularizare financiară, nu cantitativă.",
+        "status": "nieprecyzyjne",
+        "finding": "Tresc reguly jest poprawna, ale atrybucja bledna. Zasada zakupu po sredniej wazonej cenie PZU z miesiaca produkcji plus regularizare financiara dla przedzialu 200–400 kW figuruje w art. 73¹ Legii 123/2012 od O.U.G. nr. 143/2021 i w rozdziale III Metodologii z Ordinul 15/2022 — nie jest nowoscia z 2026 r. Czytelnik znajacy rynek rozpozna to jako przypisanie starego przepisu nowej ustawie.",
+        "sources": [
+          "https://lege5.ro/gratuit/geydinrsgazda/art-731-ordonanta-de-urgenta-143-2021?dp=gq2denjtgu4tmmy",
+          "https://www.economica.net/oug-referitoare-la-compensarea-cantitativa-a-prosumatorilor-a-aparut-in-monitorul-oficial-ce-spune-noua-lege-si-de-cand-s-ar-putea-aplica-mecanismul_551548.html",
+          "https://www.ppcenergy.ro/prosumatori/legislatie/"
+        ]
+      },
+      {
+        "quote": "După 31 decembrie 2030, aceleași reguli urmează să se aplice și instalațiilor de sub 200 kW.",
+        "status": "potwierdzone",
+        "finding": "Zgodne z art. 73¹ alin. (9): po tej dacie prosumenci ≤200 kW przechodza na rezim opisany w alin. (4), czyli sprzedaz po cenie PZU z regularizacja finansowa. Waznа informacja dla czytelnika planujacego zwrot z inwestycji — i podana bez przesady.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://agerpres.ro/ots/compensarea-energiei-pentru-prosumatori-se-modifica-ce-urmeaza-pana-in-2030--660492"
+        ]
+      },
+      {
+        "quote": "se aplică, potrivit dispozițiilor ei tranzitorii, și contractelor aflate deja în derulare la 26 iulie 2026, fără act adițional — deci prosumatorii existenți trec automat pe noul cadru",
+        "status": "potwierdzone",
+        "finding": "Potwierdzone w tekscie ustawy (art. III): „se aplică şi contractelor (…) aflate în derulare la data intrării în vigoare a prezentei legi”. To jest ten fragment, ktory chroni czytelnika z istniejaca instalacja przed bledna konkluzja, ze nowe zasady go omijaja — dobrze, ze jest.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://www.fiscalitatea.ro/prosumatori-de-la-26-iulie-2026-un-nou-cadru-legal-24948/"
+        ]
+      },
+      {
+        "quote": "Legea prevede și decontare lunară, precum și separarea pe factură a componentei de furnizare de taxe și tarife.",
+        "status": "potwierdzone",
+        "finding": "Potwierdzone: ustawa wprowadza facturare/decontare lunara oraz obowiazek wyodrebnienia na fakturze komponentu dostawy i podatkow/taryf. Brakuje jednak informacji, co ta miesieczna decontare zastapila (24-miesieczny report) — patrz osobne twierdzenie.",
+        "sources": [
+          "https://contabilul.manager.ro/a/30170/5-noutati-importante-pentru-prosumatori-introduse-prin-legea-nr-1602026.html",
+          "https://www.puterea.ro/legea-160-2026-prosumatori-compensare-energie/",
+          "https://instalatori-fotovoltaice.ro/ghid/legea-160-2026-prosumatori-compensare-lunara-gaz-surplus"
+        ]
+      },
+      {
+        "quote": "legea obligă ANRE să modifice metodologia aprobată prin Ordinul nr. 15/2022 în 60 de zile de la intrarea în vigoare, adică până în jurul datei de 24 septembrie 2026",
+        "status": "potwierdzone",
+        "finding": "Potwierdzone w art. II ustawy („În termen de 60 de zile de la data intrării în vigoare (…) preşedintele Autorităţii Naţionale de Reglementare (…) modifică şi completează Metodologia”). Arytmetyka 26.07 + 60 dni ≈ 24.09.2026 sie zgadza. Uwaga redakcyjna: to jest data, ktora zdezaktualizuje sekcje 3 tekstu w ciagu okolo szesciu tygodni od publikacji — nalezy to w tekscie zapowiedziec, a nie tylko odnotowac.",
+        "sources": [
+          "https://lege5.ro/Gratuit/ge4dsnrtgq2di/legea-nr-160-2026-pentru-modificarea-si-completarea-legii-energiei-electrice-si-a-gazelor-naturale-nr-123-2012",
+          "https://instalatori-fotovoltaice.ro/ghid/legea-prosumatorilor-2026-firma-plata-lunara-dezechilibre"
+        ]
+      },
+      {
+        "quote": "La 14 august 2026, pagina ANRE cu documente de discuție pentru prosumatori nu conținea niciun proiect din 2026.",
+        "status": "potwierdzone",
+        "finding": "Zweryfikowane samodzielnie na stronie ANRE ponownie 15 sierpnia 2026 — najnowszy dokument dotyczacy Ordinul 15/2022 pochodzi z 19 wrzesnia 2023, kolejny z 20 kwietnia 2023, brak czegokolwiek z 2026 r. Twierdzenie jest uczciwie zadatowane, co jest wlasciwa praktyka przy stwierdzeniu negatywnym.",
+        "sources": [
+          "https://anre.ro/category/documente-de-discutie/energie-electrica/prosumatori/"
+        ]
+      },
+      {
+        "quote": "iar ofertele se actualizează trimestrial",
+        "status": "nieweryfikowalne",
+        "finding": "Nie znalazlem podstawy prawnej ani zrodla pierwotnego dla kwartalnej aktualizacji ofert dla prosumentow jako reguly rynkowej. Oferty Serviciu Universal Electrica faktycznie sa wydawane w cyklach kwartalnych, ale plafonowanie cen energii elektrycznej wygaslo 30.06.2025 i rynek dla gospodarstw domowych jest zliberalizowany — kazdy dostawca ustala wlasny rytm. Zdanie uogolnia praktyke jednego dostawcy na caly rynek.",
+        "sources": [
+          "https://www.electricafurnizare.ro/app/uploads/2026/03/Oferta-energie-electrica-SU-clienti-casnici-prosumatori.pdf",
+          "https://www.electricafurnizare.ro/cms/comunicate-de-presa/2025/totul-despre-eliminarea-preturilor-plafonate-la-energie/"
+        ]
+      }
+    ],
+    "proposedEdits": [
+      {
+        "from": "Pentru o gospodărie, pragul relevant în practică este cel de 200 kW al compensării, pe care nicio instalație casnică nu îl atinge.",
+        "to": "Pentru o gospodărie, pragul de 200 kW al compensării nu ridică nicio problemă — nicio instalație casnică nu îl atinge. Pragul care contează pentru tine este altul: Legea nr. 160/2026 a introdus o categorie separată pentru persoanele fizice cu cel mult 27 kW pe loc de consum, cu drepturi în plus. Sumele rezultate din compensare pot fi folosite pentru facturile de la toate locurile de consum pe care le ai la același furnizor și, dacă acel furnizor îți vinde și gaz, pentru facturile de gaze naturale.",
+        "why": "Zdanie w obecnej formie mowi czytelnikowi-gospodarstwu domowemu, ze istotny dla niego prog to 200 kW. Po Legii 160/2026 to nieprawda: typowa instalacja domowa (5-10 kW) miesci sie w nowej kategorii do 27 kW dla osob fizycznych, ktora jako jedyna dostala nowe uprawnienia (kompensacja miedzy wlasnymi punktami poboru, zaliczanie na faktury za gaz). Bez tej poprawki tekst pomija jedyna zmiane, ktora czytelnik moze realnie wykorzystac."
+      },
+      {
+        "from": "În metodologia ANRE aflată în vigoare (Ordinul nr. 15/2022, cu modificările ulterioare), prețul de achiziție este cel al energiei active, din care se scad marja de furnizare și costul estimat de dezechilibru. Rezultatul este semnificativ sub prețul pe care îl plătești tu la consum, ceea ce face ca autoconsumul să rămână net mai avantajos decât injecția, chiar sub compensare.",
+        "to": "Aici a intervenit o schimbare pe care merită să o reții. Până la Legea nr. 160/2026, metodologia ANRE (Ordinul nr. 15/2022) permitea ca din prețul energiei active să se scadă marja de furnizare și costul estimat de dezechilibru. Legea nouă interzice explicit acest lucru: prețul energiei active folosit la decontare nu mai poate include costul cu dezechilibrele, componenta de furnizare și taxele. Formula exactă care ajunge pe factură depinde însă de metodologia ANRE revizuită, nepublicată la data actualizării acestui text. Oricum ar arăta ea, prețul primit pe surplus rămâne sub prețul pe care îl plătești la consum, deci autoconsumul rămâne mai avantajos decât injecția.",
+        "why": "Obecna wersja opisuje stan sprzed zmiany prawa jako obowiazujacy. Art. 73¹ alin. (3) lit. c) Legii 123/2012 w brzmieniu nadanym Legea 160/2026, obowiazujacy od 26.07.2026 i stosowany do umow w toku, wprost zakazuje wliczania kosztu dezechilibru, komponentu dostawy i podatkow do ceny uzywanej przy rozliczeniu. Wniosek koncowy o przewadze autokonsumpcji pozostaje sluszny i zostaje zachowany."
+      },
+      {
+        "from": "Pentru instalațiile din intervalul 200–400 kW compensarea cantitativă nu se mai aplică deloc: Legea nr. 160/2026 impune furnizorului să cumpere energia la prețul mediu ponderat de pe Piața pentru Ziua Următoare din luna în care a fost produsă și să facă o regularizare financiară, nu cantitativă.",
+        "to": "Pentru instalațiile din intervalul 200–400 kW compensarea cantitativă nu se aplică: furnizorul cumpără energia la prețul mediu ponderat de pe Piața pentru Ziua Următoare din luna în care a fost produsă și face o regularizare financiară, nu cantitativă. Regula nu este o noutate din 2026 — vine din art. 73¹ al Legii nr. 123/2012, introdus prin O.U.G. nr. 143/2021.",
+        "why": "Blad atrybucji. Zasada zakupu po sredniej wazonej cenie PZU dla przedzialu 200-400 kW obowiazuje od O.U.G. nr. 143/2021 i figuruje w rozdziale III Metodologii z Ordinul 15/2022; Legea 160/2026 jej nie wprowadzila. Czytelnik znajacy rynek rozpozna przypisanie starego przepisu nowej ustawie."
+      },
+      {
+        "from": "La 14 august 2026, pagina ANRE cu documente de discuție pentru prosumatori nu conținea niciun proiect din 2026. Până la publicarea metodologiei revizuite, decontarea practică se face după regulile vechi — inclusiv scăderea marjei și a dezechilibrului din prețul surplusului.",
+        "to": "La 14 august 2026, pagina ANRE cu documente de discuție pentru prosumatori nu conținea niciun proiect din 2026. Atenție la ce înseamnă asta: legea se aplică de la 26 iulie 2026, inclusiv contractelor în derulare, dar formulele concrete de facturare vin din metodologia ANRE, care încă nu era aliniată. Dacă pe factură îți apar în continuare scăderi de tipul „cost estimat cu dezechilibrele\" sau „componentă de furnizare\" din prețul surplusului, cere furnizorului o explicație scrisă și verifică pe anre.ro dacă metodologia revizuită a fost publicată între timp.",
+        "why": "Zdanie w obecnej formie jest falszywe i nosne dla calej sekcji. Ustawa obowiazuje i stosuje sie do umow w toku na mocy art. III; brak metodologii ANRE dotyczy wdrozenia operacyjnego, a nie mocy obowiazujacej zakazu. Obecne brzmienie mowi prosumentowi, ze potracanie dezechilibru jest nadal zgodne z prawem — czyli odwrotnie niz stanowi ustawa."
+      },
+      {
+        "from": "Legea prevede și decontare lunară, precum și separarea pe factură a componentei de furnizare de taxe și tarife.",
+        "to": "Legea prevede și decontare lunară, precum și separarea pe factură a componentei de furnizare de taxe și tarife. Decontarea lunară înlocuiește mecanismul anterior, în care kWh injectați peste consum se reportau pe facturile următoare și puteau fi folosiți timp de maximum 24 de luni. Dacă ai o instalație mai veche și vezi pe factură cantități reportate, ele provin din regimul vechi.",
+        "why": "Tekst nigdzie nie mowi, ze miesieczne rozliczenie zastapilo 24-miesieczny report nadwyzki (art. 73¹ Legii 123/2012, art. 12 alin. (5) Metodologii). To najbardziej namacalna zmiana dla gospodarstwa domowego, a czytelnik z istniejaca instalacja widzi na fakturze wlasnie reportowane kWh i bez tego zdania nie polaczy opisu ze swoja sytuacja."
+      },
+      {
+        "from": "4. **Verifică oferta furnizorului tău pentru trimestrul curent** — mecanismul de achiziție a surplusului se poate modifica odată cu noua metodologie ANRE, iar ofertele se actualizează trimestrial.",
+        "to": "4. **Verifică periodic oferta furnizorului tău** — mecanismul de achiziție a surplusului se poate modifica odată cu noua metodologie ANRE, pe care ANRE trebuie să o publice până în jurul datei de 24 septembrie 2026. Unii furnizori își revizuiesc ofertele pentru prosumatori din trimestru în trimestru, dar nu există o regulă generală în acest sens.",
+        "why": "„Ofertele se actualizează trimestrial” to uogolnienie praktyki jednego dostawcy (oferty Serviciu Universal Electrica) na caly rynek. Plafonowanie cen energii elektrycznej wygaslo 30.06.2025 i rynek dla gospodarstw domowych jest zliberalizowany — kazdy dostawca ma wlasny rytm. Dodanie terminu 24.09.2026 daje czytelnikowi konkretny moment do ponownego sprawdzenia."
+      }
+    ],
+    "summary": "Rdzen tekstu jest solidny i lepiej udokumentowany niz wiekszosc rumunskich tresci komercyjnych na ten temat: definicja kompensacji ilosciowej, prog 200 kW, data 31.12.2030, prog 400 kW dla statusu prosumenta, stosowanie ustawy do umow w toku, 60-dniowy termin dla ANRE i zweryfikowany brak projektu metodologii — wszystko potwierdzone w tekscie Legii 160/2026 i w art. 73¹ Legii 123/2012. Szczegolnie mocny jest akapit o tym, co zostaje na fakturze: taryfy sieciowe, akcyza i TVA rzeczywiscie licza sie od energii pobranej, a nie od roznicy netto (potwierdza to baza wiedzy Electrica Furnizare oraz Metodologia z Ordinul 15/2022); tekst stoi tu po wlasciwej stronie sporu, bo czesc serwisow SEO twierdzi odwrotnie. Tekst poprawnie odrzuca tez rozpowszechniony w kilku serwisach blad, jakoby Legea 160/2026 podniosla prog kompensacji do 400 kW.\n\nPublikacja bez poprawek jest jednak wykluczona z powodu dwoch wad. Pierwsza: tekst opisuje stan sprzed zmiany prawa jako obowiazujacy. Twierdzi, ze cena za nadwyzke to cena energii czynnej pomniejszona o marze i koszt dezechilibru, a w podsumowaniu stwierdza kategorycznie, ze „decontarea practică se face după regulile vechi” do czasu publikacji nowej metodologii ANRE. Tymczasem art. 73¹ alin. (3) lit. c) w brzmieniu nadanym Legea 160/2026, obowiazujacy od 26 lipca 2026 i stosowany do umow juz trwajacych, wprost zakazuje wliczania do ceny rozliczeniowej kosztu dezechilibru, komponentu dostawy i podatkow. Autor sam oznacza to zdanie jako „partea importantă și rar spusă”, wiec czytelnik potraktuje je jako sedno — i wyniesie z tekstu przekonanie, ze dostawca moze mu nadal legalnie potracac dezechilibru.\n\nDruga: tekst mowi gospodarstwu domowemu, ze istotnym dla niego progiem jest 200 kW. Po Legii 160/2026 to nieprawda — ustawa stworzyla osobna kategorie osob fizycznych do 27 kW na loc de consum, w ktorej miesci sie kazda typowa instalacja domowa, i to wlasnie tej kategorii przyznala nowe uprawnienia (kompensacja miedzy wlasnymi punktami poboru u tego samego dostawcy, zaliczanie sum z kompensacji na faktury za gaz ziemny). Tekst przemilcza jedyna zmiane, ktora czytelnik moze realnie wykorzystac.\n\nWady drugorzedne: przypisanie Legii 160/2026 zasady zakupu po cenie PZU dla przedzialu 200-400 kW, ktora obowiazuje od O.U.G. nr. 143/2021; brak informacji, ze miesieczne rozliczenie zastapilo 24-miesieczny report nadwyzki, przez co czytelnik z istniejaca instalacja nie polaczy opisu z tym, co widzi na fakturze; oraz niepotwierdzone uogolnienie, ze oferty aktualizuja sie kwartalnie (to rytm ofert Serviciu Universal jednego dostawcy, nie regula rynkowa — plafonowanie energii elektrycznej wygaslo 30.06.2025).\n\nRyzyko dezaktualizacji: ANRE ma opublikowac zmieniona metodologie do okolo 24 wrzesnia 2026, czyli okolo szesciu tygodni po dacie tekstu. Cala sekcja o nadwyzce wymaga wtedy ponownego przegladu; proponowane zamiany wpisuja te date do tekstu, zeby czytelnik wiedzial, kiedy sprawdzic ponownie. Szesc podanych zamian usuwa wszystkie powyzsze wady bez naruszania konstrukcji tekstu."
   }
 ]

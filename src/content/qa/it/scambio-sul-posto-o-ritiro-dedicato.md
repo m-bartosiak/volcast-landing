@@ -4,6 +4,7 @@ description: "Per chi allaccia oggi la scelta non esiste più: lo scambio sul po
 lang: it
 draft: false
 updated: 2026-08-14
+review: 2027-01-31
 category: "k6"
 guide: "aumentare-autoconsumo-fotovoltaico"
 translationKey: "qa-it-ssp-vs-rid"
@@ -28,7 +29,7 @@ Cambia il peso dell'autoconsumo. Con il ritiro dedicato il kWh che immetti vale 
 
 1. **Verifica quale convenzione hai davvero**: entra nell'area clienti GSE e guarda il contratto attivo sull'impianto, invece di fidarti di quello che ti hanno detto in fase di vendita.
 2. **Se l'impianto è nuovo, attiva il ritiro dedicato**: non parte da solo. Per il fotovoltaico fino a 200 kW che passa dal Modello Unico la richiesta viaggia con la pratica presentata al gestore di rete e il GSE attiva il contratto quando ne riceve i dati; negli altri casi la richiesta va presentata nell'area clienti GSE entro 60 giorni dall'entrata in esercizio.
-2. **Calcola il tuo prezzo reale in bolletta**: spesa totale annua diviso kWh prelevati, non solo la voce energia. È il numero che il kWh autoconsumato ti fa risparmiare.
+2. **Calcola il tuo prezzo reale in bolletta**: spesa annua diviso kWh prelevati, mettendo però da parte le quote fisse, la quota potenza e il canone televisivo. Quello che resta varia con i consumi, ed è il numero che il kWh autoconsumato ti fa davvero risparmiare.
 3. **Mettilo accanto a quanto ti riconoscono sull'immissione**, leggendolo dai rendiconti GSE: il rapporto tra i due numeri è il tuo moltiplicatore dell'autoconsumo.
 4. **Non costruire il ritorno dell'investimento sulla vendita**: dimensiona e programma l'impianto sull'energia che riesci a usare in casa.
 5. **Verifica le condizioni aggiornate sul sito del GSE** prima di firmare qualsiasi cosa: è l'unica fonte che resta valida nel tempo.
