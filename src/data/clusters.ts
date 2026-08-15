@@ -8,7 +8,11 @@
 
 export const CLUSTER_LINKS: Record<string, string[]> = {
   // Klaster: prognoza produkcji
-  'forecast-hub': ['ha-comparison', 'appliances', 'best-app', 'weather-vs-output'],
+  'forecast-hub': ['ha-comparison', 'appliances', 'best-app', 'weather-vs-output', 'forecast-troubleshooting'],
+  // Hub diagnostyczny: wchodzi sie w niego z problemem, wychodzi do Q&A przez
+  // linki w tresci. Relacja jest dwukierunkowa, bo czytelnik trafia tu rownie
+  // czesto z ogolnego posta o prognozie, co z wyszukiwarki.
+  'forecast-troubleshooting': ['forecast-hub', 'best-app', 'weather-vs-output'],
   'ha-comparison': ['forecast-hub', 'appliances', 'best-app'],
   'best-app': ['forecast-hub', 'ha-comparison'],
   'brand-comparison': ['forecast-hub', 'ha-comparison'],

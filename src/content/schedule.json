@@ -21,5 +21,16 @@
     "files": [
       "fr/surplus-a-1-centime-autoconsommer.md"
     ]
+  },
+  {
+    "date": "2026-09-15",
+    "files": [
+      "en/forecast-is-off-five-checks.md",
+      "pl/prognoza-sie-nie-zgadza-piec-sprawdzen.md",
+      "de/prognose-weicht-ab-fuenf-pruefungen.md",
+      "it/la-previsione-non-torna-cinque-verifiche.md",
+      "fr/la-prevision-ne-colle-pas-cinq-verifications.md",
+      "ro/prognoza-nu-se-potriveste-cinci-verificari.md"
+    ]
   }
 ]
