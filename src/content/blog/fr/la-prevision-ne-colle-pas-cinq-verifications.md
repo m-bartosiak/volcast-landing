@@ -44,7 +44,7 @@ Le test est simple. Notez votre meilleure journée de ciel clair chaque mois. Ce
 
 Si les quatre points précédents sont écartés, vous pouvez enfin poser la question correctement — et la réponse honnête est que les prévisions sont bel et bien moins bonnes sous les nuages.
 
-Mesuré sur les relevés de production de nos propres utilisateurs : les jours de ciel clair, l'erreur médiane tourne autour de **12 %**, tandis que les jours de ciel entièrement couvert elle s'approche de **20 %**. Par forte nébulosité, environ **31 %** des journées manquent la cible de plus de 30 % dans un sens ou dans l'autre, contre **16 %** des journées claires. Point important : le biais médian reste proche de zéro dans chaque classe de temps — sous les nuages, la prévision ne surestime ni ne sous-estime systématiquement, elle devient simplement plus bruitée.
+Mesuré sur les relevés de production de nos propres utilisateurs : les jours de ciel clair, l'erreur médiane tourne autour de **10 %**, tandis que les jours de ciel entièrement couvert elle s'approche de **18 %**. Par forte nébulosité, environ **28 %** des journées manquent la cible de plus de 30 % dans un sens ou dans l'autre, contre **8 %** des journées claires. Point important : le biais médian reste proche de zéro dans chaque classe de temps — sous les nuages, la prévision ne surestime ni ne sous-estime systématiquement, elle devient simplement plus bruitée.
 
 Cette distinction est tout l'intérêt de l'étape. **La dispersion, c'est la météo. Un décalage constant, c'est la configuration.** Si vos erreurs sont grandes mais tombent des deux côtés sur un grand nombre de journées, vous tenez la réponse et il n'y a rien à corriger. Si elles penchent toujours du même côté, retournez à l'étape 1.
 

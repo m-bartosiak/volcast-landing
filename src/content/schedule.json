@@ -32,5 +32,16 @@
       "fr/la-prevision-ne-colle-pas-cinq-verifications.md",
       "ro/prognoza-nu-se-potriveste-cinci-verificari.md"
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "files": [
+      "de/wie-genau-ist-eine-pv-prognose.md",
+      "en/how-accurate-is-a-solar-forecast.md",
+      "fr/quelle-est-la-precision-d-une-prevision-solaire.md",
+      "it/quanto-e-accurata-una-previsione-fotovoltaica.md",
+      "pl/jak-dokladna-jest-prognoza-fotowoltaiczna.md",
+      "ro/cat-de-precisa-este-o-prognoza-fotovoltaica.md"
+    ]
   }
 ]
