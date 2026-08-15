@@ -20,11 +20,24 @@ const SOURCE = 'en';
 const COMMA_DECIMAL = new Set(['pl', 'de', 'it', 'fr', 'ro']);
 
 /**
- * Obrazki, które świadomie zostają w wersji angielskiej, bo są zrzutem obcego
- * interfejsu, a nie wykresem z etykietami. Każdy wpis kosztuje spójność, więc
- * lista jest jawna i krótka.
+ * Obrazki, które świadomie zostają po angielsku. Każdy wpis kosztuje spójność,
+ * więc lista jest jawna, krótka i uzasadniona.
+ *
+ * `ha-energy-dashboard` to zrzut cudzego interfejsu, nie nasz wykres.
+ *
+ * Trzy pozostałe to wykresy z prawdziwych danych produkcyjnych jednej
+ * instalacji 5,2 kWp. Commit 461b48e wrzucił dziewięć plików WebP bez skryptu,
+ * który je wyprodukował, i bez danych wejściowych — a odczytanie dziewięćdziesięciu
+ * słupków z obrazka „na oko" dałoby w każdym języku nieco inne liczby dla tej
+ * samej instalacji. To byłaby zmyślona liczba udająca pomiar, więc do czasu
+ * odzyskania danych źródłowych nowe języki używają wersji angielskiej.
  */
-const FOREIGN_IMAGE_ALLOWLIST = new Set(['ha-energy-dashboard-en.webp']);
+const FOREIGN_IMAGE_ALLOWLIST = new Set([
+  'ha-energy-dashboard-en.webp',
+  'forecast-vs-actual-14d-en.webp',
+  'winter-production-en.webp',
+  'hourly-surplus-en.webp',
+]);
 
 /**
  * Dwie wagi, bo dwie różne klasy problemu.
@@ -55,17 +68,28 @@ function frontmatter(text) {
 
 const body = (text) => text.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
 
-/** Liczby istotne merytorycznie. Pomijamy te w URL-ach, kodzie i datach. */
-function numbers(text) {
-  const stripped = text
+/**
+ * Liczby istotne merytorycznie, sprowadzone do wspólnej postaci.
+ *
+ * Separatory trzeba znieść PRZED porównaniem, inaczej narzędzie zgłasza jako
+ * rozjazd to, że angielskie `1000` zapisano po włosku jako `1.000` — czyli
+ * poprawnie. Godziny i daty wypadają, bo `10:00` dawało fantomowe `00`.
+ */
+function numbers(text, lang) {
+  let s = text
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`[^`]*`/g, ' ')
     .replace(/\((?:https?:)?\/\/[^)]*\)/g, ' ')
     .replace(/\/img\/[^\s)]*/g, ' ')
-    .replace(/\d{4}-\d{2}-\d{2}/g, ' ');
-  return (stripped.match(/\d+(?:[.,]\d+)?/g) || [])
-    .map((n) => n.replace(',', '.'))
-    .sort();
+    .replace(/\d{4}-\d{2}-\d{2}/g, ' ')
+    .replace(/\b\d{1,2}:\d{2}\b/g, ' ');
+
+  if (COMMA_DECIMAL.has(lang)) {
+    s = s.replace(/(\d)\.(\d{3})\b/g, '$1$2').replace(/(\d),(\d)/g, '$1.$2');
+  } else {
+    s = s.replace(/(\d),(\d{3})\b/g, '$1$2');
+  }
+  return (s.match(/\d+(?:\.\d+)?/g) || []).sort();
 }
 
 const images = (text) => (text.match(/\/img\/[^\s)"']+/g) || []).sort();
@@ -128,7 +152,7 @@ function check(kind, lang) {
     }
 
     if (src) {
-      const a = numbers(src.body), c = numbers(b);
+      const a = numbers(src.body, SOURCE), c = numbers(b, lang);
       if (a.join(',') !== c.join(',')) {
         const only = (x, y) => x.filter((v) => !y.includes(v));
         review(rel, `liczby inne niż w ${src.slug}.md — brak: [${only(a, c).slice(0, 8)}] nadmiar: [${only(c, a).slice(0, 8)}]`);
