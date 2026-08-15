@@ -16,6 +16,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          # Push wykonany poświadczeniami GITHUB_TOKEN nie startuje workflowów,
+          # więc seo-guard — wymagany check na main — nigdy nie zaraportuje na
+          # gałęzi otwartej przez ten job, a auto-merge będzie czekał bez końca.
+          # PAT sprawia, że push jest przypisany człowiekowi i triggery działają.
+          #
+          # Fallback jest celowy: bez sekretu workflow zachowuje się dokładnie
+          # jak dotąd (PR wstaje, tylko trzeba go zmergować ręcznie) zamiast
+          # wywalić się na pustym tokenie.
+          token: ${{ secrets.PUBLISH_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Check schedule and publish posts
         run: |
@@ -70,7 +80,7 @@ jobs:
       - name: Open a pull request and let it merge itself
         if: steps.publish.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PUBLISH_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           DATE=$(date -u +%Y-%m-%d)
           BRANCH="content/publish-$DATE"
