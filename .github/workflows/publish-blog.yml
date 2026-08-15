@@ -47,22 +47,47 @@ jobs:
           fi
 
           CHANGED=false
+          MISSING=""
 
           for FILE in $FILES; do
-            FILEPATH="src/content/blog/$FILE"
+            # Dwie kolekcje, dwa katalogi: posty w src/content/blog/, Q&A w
+            # src/content/qa/ (serwowane pod /blog/{lang}/q/). Doklejanie na sztywno
+            # "blog/" sprawialo, ze zaplanowane Q&A NIGDY sie nie publikowalo —
+            # skrypt wypisywal "File not found" i konczyl sukcesem.
+            #
+            # Sciezka z jawnym prefiksem kolekcji jest brana wprost; sama
+            # "{lang}/{slug}.md" nadal znaczy post, zeby nie zlamac wpisow
+            # w dotychczasowym formacie.
+            case "$FILE" in
+              blog/*|qa/*) FILEPATH="src/content/$FILE" ;;
+              *)           FILEPATH="src/content/blog/$FILE" ;;
+            esac
+
             if [ -f "$FILEPATH" ]; then
               # Replace draft: true with draft: false
               if grep -q "^draft: true" "$FILEPATH"; then
                 sed -i 's/^draft: true/draft: false/' "$FILEPATH"
-                echo "Published: $FILE"
+                echo "Published: $FILEPATH"
                 CHANGED=true
               else
-                echo "Already published: $FILE"
+                echo "Already published: $FILEPATH"
               fi
             else
-              echo "File not found: $FILE"
+              echo "BRAK PLIKU: $FILE (szukane w $FILEPATH)"
+              MISSING="$MISSING $FILE"
             fi
           done
+
+          # Literowka w schedule.json znaczyla dotad, ze wpis po cichu przepada:
+          # komunikat leci do logu, krok konczy sie sukcesem, a wpis i tak zostaje
+          # usuniety z harmonogramu ponizej. Teraz publikacja pada, ZANIM
+          # harmonogram zostanie nadpisany — czyli nic nie ginie i wystarczy
+          # poprawic sciezke i uruchomic ponownie (logika nadrabiania obsluguje
+          # daty wsteczne).
+          if [ -n "$MISSING" ]; then
+            echo "Zatrzymuje publikacje — w harmonogramie sa sciezki bez plikow:$MISSING"
+            exit 1
+          fi
 
           # Remove processed entries (today and earlier); keep only future ones
           if [ "$CHANGED" = true ]; then
