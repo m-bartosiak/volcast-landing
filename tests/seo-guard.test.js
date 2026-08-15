@@ -165,11 +165,16 @@ test('pages with recent clicks stay indexable', () => {
 /**
  * Length limits apply to what CHANGED, not to the corpus.
  *
- * 152 of 165 pages exceed 60 characters today, because BaseLayout appends
- * " — Volcast Blog" to every title. Enforcing the limit across the corpus would
- * block every pull request from now until someone rewrites all of them;
- * enforcing it on a field this branch actually touched keeps the rule real and
- * the gate usable.
+ * Measured 2026-08-15, after the layout suffix was removed: 81 of 330 published
+ * pages exceed 60 characters — all of them in en/pl/de, none in it/fr/ro, which
+ * were written under the validator. The note that stood here blamed the
+ * " — Volcast Blog" suffix and put the figure at 152 of 165; the suffix is gone
+ * and the real number is a quarter of the corpus, not almost all of it.
+ *
+ * Enforcing the limit corpus-wide would still block every pull request until
+ * someone rewrites those 81, so the gate stays on fields this branch actually
+ * touched. `npm run check:i18n` now prints the corpus-wide count, so the
+ * backlog does not go quiet.
  */
 test('titles this branch rewrote fit in 60 characters', () => {
   const problems = [];

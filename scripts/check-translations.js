@@ -252,6 +252,32 @@ for (const lang of langs) {
 
 const counted = langs.reduce((n, l) => n + listMd(BLOG, l).length + listMd(QA, l).length, 0);
 
+// --- przeglad korpusowy: limity SEO poza zakresem jezykowym -----------------
+// Bramka CI sprawdza wylacznie tytuly ZMIENIONE w danej galezi, bo egzekwowanie
+// limitu na calym korpusie blokowaloby kazdy PR. Skutek uboczny jest taki, ze
+// stary korpus en/pl/de nikomu nie miga w oczy — a to on siedzi za obcieciami
+// tytulow w wynikach Google. Ten raport nie blokuje, tylko trzyma liczbe na widoku.
+const oversize = [];
+for (const lang of fs.readdirSync(BLOG).filter((d) => fs.statSync(path.join(BLOG, d)).isDirectory())) {
+  for (const [dir, kind] of [[BLOG, 'blog'], [QA, 'qa']]) {
+    if (!fs.existsSync(path.join(dir, lang))) continue;
+    for (const file of listMd(dir, lang)) {
+      const fm = frontmatter(fs.readFileSync(path.join(dir, lang, file), 'utf8'));
+      if (fm.draft === 'true') continue;
+      const t = (fm.title || '').length, d = (fm.description || '').length;
+      if (t > 60 || d < 140 || d > 155) oversize.push(`${kind}/${lang}/${file} — tytul ${t}, opis ${d}`);
+    }
+  }
+}
+if (oversize.length) {
+  const byLang = {};
+  for (const o of oversize) { const l = o.split('/')[1]; byLang[l] = (byLang[l] || 0) + 1; }
+  console.log(`\nLIMITY SEO W CALYM KORPUSIE — ${oversize.length} plikow poza limitem (nie blokuja; bramka CI pilnuje tylko zmian):`);
+  console.log('  ' + Object.entries(byLang).sort().map(([l, n]) => `${l}: ${n}`).join(', '));
+  if (process.argv.includes('--oversize')) for (const o of oversize) console.log(`    · ${o}`);
+  else console.log('  Pelna lista: npm run check:i18n -- --oversize');
+}
+
 if (reviews.length) {
   console.log(`\nDO PRZEJRZENIA — ${reviews.length} rozjazdów względem angielskiego (nie blokują):\n`);
   for (const r of reviews) console.log(`  · ${r}`);

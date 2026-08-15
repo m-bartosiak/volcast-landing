@@ -38,7 +38,7 @@ Full disclosure first: we build one of the three tools compared here. So expect 
 
 **Stick with Forecast.Solar if:** your system is simple and unshaded, ballpark accuracy is enough, and you just want a free sensor in the Energy Dashboard. Lowest barrier, zero cost.
 
-**Pick Solcast if:** you're building your own solution on an API and want industrial-grade irradiance data — and don't mind the absence of an app.
+**Pick Solcast if:** you're building your own solution on an API and want industrial-grade irradiance data — and don't mind the absence of an app. Check the call allowance before you commit: a free account opened recently gets 10 API calls a day rather than the 50 that older accounts kept, with a maximum of two rooftop sites. That is workable for a few refreshes a day and tight for anything more frequent.
 
 **Pick Volcast if:** your system has quirks (shading, east–west layout, degradation), you want the forecast on your phone with notifications — or one tool that works in both the app and Home Assistant. Calibration is the differentiator: after 2–3 weeks the forecast reflects *your* system, not a model one.
 
