@@ -1,6 +1,6 @@
 ---
-title: "Lumină directă și difuză — de ce produci și pe nori"
-description: "Nu toată radiația solară e la fel. Cele trei componente ale luminii explică de ce panourile produc curent și în zilele complet acoperite de nori."
+title: "Lumină directă și difuză — de ce produci și când e înnorat"
+description: "Nu toată radiația solară e la fel. Cele trei componente ale radiației explică de ce panourile produc curent și în zilele complet acoperite de nori."
 date: 2026-03-31
 tags: ["irradiance", "diffuse-radiation", "direct-beam", "pv-physics", "beginner"]
 series: "fundamentals"

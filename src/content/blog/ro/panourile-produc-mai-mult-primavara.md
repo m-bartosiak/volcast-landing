@@ -1,6 +1,6 @@
 ---
 title: "De ce panourile produc mai mult primăvara decât vara"
-description: "Coeficientul de temperatură explicat: de ce o zi senină de aprilie randează mai bine decât o după-amiază de august cu 38 °C în Câmpia Română."
+description: "Coeficientul de temperatură explicat: de ce o zi senină de aprilie au un randament mai bun decât o după-amiază de august cu 38 °C în Câmpia Română."
 date: 2026-03-24
 tags: ["temperature-coefficient", "seasonal-production", "pv-physics", "beginner"]
 series: "fundamentals"

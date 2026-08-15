@@ -1,6 +1,6 @@
 ---
 title: "Mai bine adaug panouri sau cumpăr o baterie?"
-description: "Panourile adaugă kWh ieftini, bateria adaugă valoare fiecărui kWh produs. Care câștigă depinde de cât injectezi peste consum și de când iei din rețea."
+description: "Panourile adaugă kWh ieftini, bateria adaugă valoare fiecărui kWh produs. Alegerea optimă depinde de cât injectezi peste consum și de când iei din rețea."
 lang: ro
 draft: false
 updated: 2026-08-14

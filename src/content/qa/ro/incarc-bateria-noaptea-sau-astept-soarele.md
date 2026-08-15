@@ -1,6 +1,6 @@
 ---
 title: "Încarc bateria noaptea sau las loc producției solare?"
-description: "Răspunsul corect se schimbă zilnic, odată cu prognoza de mâine. Regula care te ferește să plătești din rețea energia pe care soarele ți-o dă gratis."
+description: "Răspunsul corect se schimbă zilnic, odată cu prognoza de mâine. Regula prin care eviți să plătești din rețea energia pe care soarele ți-o dă gratuit."
 lang: ro
 draft: false
 updated: 2026-08-14

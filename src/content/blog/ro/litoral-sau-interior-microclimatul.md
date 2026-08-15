@@ -1,6 +1,6 @@
 ---
 title: "Litoral sau interior? Cum schimbă microclimatul producția"
-description: "Două sisteme identice la 50 km distanță produc diferit. Cum schimbă ceața de litoral, briza mării și umezeala din aer producția panourilor tale."
+description: "Două sisteme identice la 50 km distanță produc diferit. Cum schimbă ceața de litoral, briza mării și umiditatea din aer producția panourilor tale."
 date: 2026-08-04
 author: "Michal"
 tags: ["geography", "microclimate", "coastal", "self-consumption"]

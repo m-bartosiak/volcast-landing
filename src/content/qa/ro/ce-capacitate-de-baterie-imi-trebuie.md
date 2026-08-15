@@ -1,6 +1,6 @@
 ---
 title: "Ce capacitate de baterie îmi trebuie?"
-description: "Pornește de la consumul dintre apus și răsărit, nu de la puterea panourilor. De ce 1–1,5 kWh la 1.000 kWh de consum anual e un reper sănătos."
+description: "Pornește de la consumul dintre apus și răsărit, nu de la puterea panourilor. De ce 1–1,5 kWh la 1.000 kWh de consum anual este un reper realist."
 lang: ro
 draft: false
 updated: 2026-08-14

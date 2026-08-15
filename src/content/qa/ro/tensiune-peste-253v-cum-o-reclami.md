@@ -1,6 +1,6 @@
 ---
 title: "Tensiune peste 253 V — cum o reclami la distribuitor?"
-description: "Supratensiunea se reclamă la operatorul de distribuție, nu la furnizor: în scris, cu jurnale, ore și valori măsurate. Pașii care chiar dau rezultate."
+description: "Supratensiunea se reclamă la operatorul de distribuție, nu la furnizor: în scris, cu jurnale, ore și valori măsurate. Pașii concreți care aduc rezultate."
 lang: ro
 draft: false
 updated: 2026-08-14

@@ -1,6 +1,6 @@
 ---
 title: "Cele trei numere care îți definesc sistemul fotovoltaic"
-description: "Înclinare, azimut și putere instalată: unui model fizic îi ajung trei numere ca să prevadă producția sistemului tău fotovoltaic, fără istoric."
+description: "Înclinare, azimut și putere instalată: unui model fizic îi ajung trei numere pentru a prognoza producția sistemului tău fotovoltaic, fără istoric."
 date: 2026-03-24
 tags: ["setup", "parameters", "getting-started", "pv-basics", "beginner"]
 series: "fundamentals"

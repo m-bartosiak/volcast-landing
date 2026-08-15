@@ -1,6 +1,6 @@
 ---
 title: "Ce tarif de energie aleg cu fotovoltaic și baterie?"
-description: "Cu o baterie contează diferența dintre orele ieftine și cele scumpe, nu prețul afișat. Ce oferte există în România și cum le compari pe datele tale."
+description: "Cu o baterie contează diferența dintre orele ieftine și cele scumpe, nu prețul afișat. Ce oferte există în România și cum le compari pe baza datelor tale."
 lang: ro
 draft: false
 updated: 2026-08-14

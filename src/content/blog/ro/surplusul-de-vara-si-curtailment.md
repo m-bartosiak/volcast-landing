@@ -1,5 +1,5 @@
 ---
-title: "Prea mult soare? Surplusul de vară și curtailmentul"
+title: "Prea mult soare? Surplusul de vară și curtailment-ul"
 description: "Clipping, limitarea injecției, prețuri aproape zero la prânz: ce se întâmplă cu surplusul tău de vară și cum îl transformi în economii reale."
 date: 2026-06-16
 updated: 2026-08-14

@@ -1,6 +1,6 @@
 ---
 title: "Ce e reglajul volt-watt și merită activat?"
-description: "Volt-watt reduce lin puterea invertorului când crește tensiunea, în loc de deconectare bruscă. Când îți salvează energie și la ce trebuie să fii atent."
+description: "Modul Volt-Watt reduce treptat puterea invertorului la supratensiune, evitând deconectarea bruscă. Când îți salvează energie și la ce trebuie să fii atent."
 lang: ro
 draft: false
 updated: 2026-08-14

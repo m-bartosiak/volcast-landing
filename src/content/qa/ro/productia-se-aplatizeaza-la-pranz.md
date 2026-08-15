@@ -1,6 +1,6 @@
 ---
 title: "De ce producția se aplatizează la prânz?"
-description: "Un platou plat la prânz înseamnă clipping la invertor sau limitarea injecției — de obicei prin proiectare, nu un defect. Cum îți dai seama care e."
+description: "O curbă plafonată la prânz indică fenomenul de clipping sau limitarea injecției — o setare din proiectare, nu un defect. Cum îți dai seama care e."
 lang: ro
 draft: false
 updated: 2026-08-14

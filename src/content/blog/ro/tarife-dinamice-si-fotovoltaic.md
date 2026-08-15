@@ -1,6 +1,6 @@
 ---
 title: "Tarife dinamice la energie cu fotovoltaic — merită?"
-description: "Preț orar, zone orare și fotovoltaic: cui i se potrivește un tarif dinamic în România, ce se găsește de fapt pe piață și cum arată o zi planificată."
+description: "Preț orar, zone orare și fotovoltaic: cui i se potrivește un tarif dinamic în România, ce oferte există pe piață și cum arată o zi planificată."
 date: 2026-07-23
 updated: 2026-08-14
 author: "Michał Bartosiak"

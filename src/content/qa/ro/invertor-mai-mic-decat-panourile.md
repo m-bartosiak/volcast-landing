@@ -1,6 +1,6 @@
 ---
 title: "Invertorul e mai mic decât panourile — e o greșeală?"
-description: "Panouri peste puterea invertorului, cu raport DC/AC de 1,1–1,3, e inginerie normală, nu o eroare. Când merită supradimensionarea și când e prea mult."
+description: "Un raport DC/AC de 1,1–1,3 între panouri și invertor este o practică uzuală, nu o eroare. Când merită supradimensionarea și când e prea mult."
 lang: ro
 draft: false
 category: "k1"

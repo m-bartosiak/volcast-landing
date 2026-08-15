@@ -1,6 +1,6 @@
 ---
 title: "De ce se oprește invertorul în zilele însorite?"
-description: "Opririle de la prânz sunt aproape mereu supratensiune în rețea, peste 253 V, nu un defect. Cum recunoști tiparul în jurnal și ce chiar rezolvă problema."
+description: "Opririle de la prânz sunt aproape mereu supratensiune în rețea, peste 253 V, nu un defect. Cum recunoști tiparul în jurnal și cum rezolvi concret problema."
 lang: ro
 draft: false
 updated: 2026-08-14

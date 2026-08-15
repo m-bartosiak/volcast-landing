@@ -1,6 +1,6 @@
 ---
 title: "Pompă de căldură și fotovoltaic — când o pornești"
-description: "Cum muți ciclurile de apă caldă ale pompei de căldură în orele de producție: programe orare, contact SG Ready și automatizări pe bază de prognoză."
+description: "Cum muți ciclurile de încălzire a apei ale pompei în orele de producție: programe orare, contact SG Ready și automatizări pe bază de prognoză."
 date: 2026-07-23
 updated: 2026-08-14
 author: "Michał Bartosiak"

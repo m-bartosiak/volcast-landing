@@ -1,6 +1,6 @@
 ---
 title: "Nowcasting, day-ahead și o săptămână — ce precizie ai"
-description: "O prognoză la 15 minute și una la 7 zile sunt probleme diferite. Iată ce poate da realist fiecare orizont de timp și unde se rupe acuratețea."
+description: "O prognoză la 15 minute și una la 7 zile sunt probleme diferite. Iată ce oferă realist fiecare orizont de timp și unde începe să scadă acuratețea."
 date: 2026-05-19
 tags: ["nowcasting", "forecast-horizon", "accuracy", "time-series", "forecasting"]
 series: "deep-dives"

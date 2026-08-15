@@ -1,6 +1,6 @@
 ---
 title: "De unde vin prognozele meteo — modelele NWP pe scurt"
-description: "Prognoza ta de producție valorează cât intrarea ei meteo. Cum funcționează modelele numerice, ce prind bine și unde cedează pentru fotovoltaic."
+description: "Prognoza ta de producție depinde direct de datele meteo de intrare. Cum funcționează modelele numerice, ce prind bine și unde dau greș pentru fotovoltaic."
 date: 2026-04-21
 tags: ["nwp", "weather-models", "gfs", "ecmwf", "icon", "forecasting"]
 series: "deep-dives"

@@ -1,6 +1,6 @@
 ---
 title: "Cât valorează de fapt un kWh injectat în rețea?"
-description: "Sub compensare valorează un kWh de energie, nu o factură întreagă. Iar surplusul peste consum se plătește mult mai puțin. Calculul din propria factură."
+description: "În regim de compensare valorează un kWh de energie, nu o factură întreagă. Surplusul peste consum se plătește mult mai puțin. Calculul din factura ta."
 lang: ro
 draft: false
 updated: 2026-08-14

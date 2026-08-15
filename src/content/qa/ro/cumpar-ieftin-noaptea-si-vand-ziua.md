@@ -1,6 +1,6 @@
 ---
 title: "Merită să cumpăr ieftin noaptea și să vând ziua?"
-description: "În România nu îți vinzi energia la prețul orei: injecția intră în compensare. Ce mai rămâne din arbitraj după pierderile de ciclu și uzura bateriei."
+description: "În România nu îți vinzi energia la preț orar: injecția intră în compensare. Ce mai rămâne din arbitraj după pierderile de ciclu și uzura bateriei."
 lang: ro
 draft: false
 updated: 2026-08-14

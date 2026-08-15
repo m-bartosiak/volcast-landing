@@ -1,6 +1,6 @@
 ---
 title: "Când praful saharian îți întunecă panourile"
-description: "Praful saharian taie producția chiar și pe cer senin și lasă pe sticlă un strat care ține săptămâni. Ce faci în timpul episodului și după el."
+description: "Praful saharian reduce producția chiar și pe cer senin și lasă pe sticlă un strat persistent. Ce faci în timpul episodului de praf și după ce trece."
 date: 2026-08-11
 author: "Michal"
 tags: ["geography", "aerosols", "soiling", "southern-europe"]

@@ -1,6 +1,6 @@
 ---
 title: "Cum verific dacă sistemul fotovoltaic funcționează bine?"
-description: "Compară producția reală cu o prognoză calculată pentru sistemul tău exact, verifică echilibrul dintre stringuri și forma curbei zilnice de producție."
+description: "Compară producția reală cu o prognoză calculată pentru configurația sistemului tău, verifică echilibrul dintre stringuri și forma curbei zilnice."
 lang: ro
 draft: false
 category: "k2"

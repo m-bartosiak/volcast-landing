@@ -1,6 +1,6 @@
 ---
 title: "De ce un sistem nou nu are nevoie de date istorice"
-description: "Majoritatea aplicațiilor de prognoză cer luni întregi de istoric. Un model fizic funcționează din prima zi: de ce se poate și ce înseamnă pentru tine."
+description: "Majoritatea aplicațiilor de prognoză cer luni întregi de istoric. Un model fizic funcționează din prima zi: cum este posibil și ce înseamnă pentru tine."
 date: 2026-05-26
 updated: 2026-08-14
 tags: ["cold-start", "new-installation", "physics-model", "onboarding", "forecasting"]

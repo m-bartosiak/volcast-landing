@@ -1,6 +1,6 @@
 ---
 title: "Ce wallbox se integrează cu Home Assistant?"
-description: "Caută API local sau OCPP, curent de încărcare reglabil și zero dependență de cloud. Lista de verificare contează mai mult decât orice listă de mărci."
+description: "Caută API local sau OCPP, curent de încărcare reglabil și fără dependență de cloud. Lista de verificare contează mai mult decât orice listă de mărci."
 lang: ro
 draft: false
 category: "k5"

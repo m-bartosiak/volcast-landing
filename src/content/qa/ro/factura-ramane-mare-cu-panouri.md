@@ -1,6 +1,6 @@
 ---
 title: "De ce factura rămâne mare deși am panouri fotovoltaice?"
-description: "Panourile produc la prânz, iar casa consumă seara. De ce compensarea nu îți șterge toată factura și ce pârghii mișcă într-adevăr suma de plată."
+description: "Panourile produc la prânz, iar casa consumă seara. De ce compensarea nu îți șterge toată factura și ce măsuri reduc cu adevărat suma de plată."
 lang: ro
 draft: false
 updated: 2026-08-14

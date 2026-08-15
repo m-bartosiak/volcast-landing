@@ -1,6 +1,6 @@
 ---
 title: "Cum fac automatizări de autoconsum în Home Assistant?"
-description: "Schema care ține: prognoză de producție, măsurare în timp real și o listă de priorități a consumatorilor, ca automatizările să nu se bată pe aceiași wați."
+description: "Structura recomandată: prognoză de producție, măsurare în timp real și o listă de priorități a consumatorilor, ca automatizările să nu se suprapună."
 lang: ro
 draft: false
 category: "k5"

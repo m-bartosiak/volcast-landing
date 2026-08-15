@@ -1,6 +1,6 @@
 ---
 title: "Merită montajul est-vest sau pe acoperiș plat?"
-description: "Un montaj est-vest produce cu circa 10–15% mai puțin pe an decât sudul, dar întinde producția peste zi, ceea ce valorează mai mult pentru autoconsum."
+description: "Un montaj est-vest produce cu circa 10–15% mai puțin pe an față de sud, dar uniformizează producția zilnică, ceea ce valorează mai mult pentru autoconsum."
 lang: ro
 draft: false
 updated: 2026-08-14

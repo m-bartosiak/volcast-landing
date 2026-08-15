@@ -1,6 +1,6 @@
 ---
 title: "De ce același sistem produce diferit de la oraș la oraș"
-description: "Același sistem de 5 kWp produce cu peste 11% mai mult la Constanța decât la Suceava. Iată ce fac latitudinea, altitudinea și clima cu producția ta."
+description: "Același sistem de 5 kWp produce cu peste 11% mai mult la Constanța decât la Suceava. Iată cum influențează latitudinea, altitudinea și clima producția ta."
 date: 2026-07-21
 author: "Michal"
 tags: ["geography", "specific-yield", "irradiance", "europe"]

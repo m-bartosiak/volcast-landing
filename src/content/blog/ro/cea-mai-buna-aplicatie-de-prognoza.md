@@ -1,6 +1,6 @@
 ---
 title: "Cea mai bună aplicație de prognoză fotovoltaică"
-description: "Aplicația invertorului, una meteo sau una dedicată? Care prezic cu adevărat producția de mâine: o privire onestă și o recomandare clară la final."
+description: "Aplicația invertorului, una meteo sau una dedicată? Care prezice cu adevărat producția de mâine: o privire onestă și o recomandare clară la final."
 date: 2026-07-23
 author: "Michał Bartosiak"
 tags: []

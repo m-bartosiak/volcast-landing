@@ -1,5 +1,5 @@
 ---
-title: "Când pornești boilerul și mașina de spălat pe soare"
+title: "Când pornești boilerul și mașina de spălat pe fotovoltaic"
 description: "La ce oră pornești boilerul și electrocasnicele ca să folosești energia ta fotovoltaică: o regulă simplă, exemple pe ore și cum automatizezi tot."
 date: 2026-07-23
 updated: 2026-08-14

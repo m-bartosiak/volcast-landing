@@ -1,5 +1,5 @@
 ---
-title: "De ce norii sunt cea mai grea variabilă din prognoză"
+title: "De ce norii sunt cea mai dificilă variabilă din prognoză"
 description: "Temperatura e previzibilă, poziția soarelui se calculează exact. Norii însă sunt teoria haosului în acțiune și cea mai mare sursă de eroare din prognoză."
 date: 2026-04-28
 tags: ["clouds", "forecast-uncertainty", "irradiance", "weather", "forecasting"]
