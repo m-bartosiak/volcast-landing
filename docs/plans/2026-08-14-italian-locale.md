@@ -1,10 +1,34 @@
 ---
 id: PLAN-066
 created: 2026-08-14
-status: draft
+completed: 2026-08-15
+status: complete
 repo: volcast-landing
 related_design: 2026-08-14-italian-locale-design.md
 ---
+
+> ## Stan końcowy
+>
+> Zakres urósł w trakcie z jednego języka do trzech: **włoski, francuski i rumuński**,
+> na wyraźne polecenie użytkownika. Wszystkie trzy mają pełny parytet z angielskim
+> i polskim — 31 postów i 24 Q&A każdy.
+>
+> | | landing | posty | Q&A | k6 rynkowe |
+> |---|---|---|---|---|
+> | it | ✅ 101 kluczy + 3 zrzuty | 31 | 24 | Incentivi e ritiro dell'energia |
+> | fr | ✅ istniał | 31 | 24 | Revente et autoconsommation |
+> | ro | ✅ istniał | 31 | 24 | Prosumator și reglementări |
+>
+> Zweryfikowane na buildzie: hreflang wzajemny między sześcioma językami, 165 nowych
+> stron w sitemapie, zero listingów w sitemapie, osobne indeksy Pagefind dla
+> `de/en/fr/it/pl/ro`. `npm run build` zielony, `seo-guard` 4/4, `check:i18n` bez
+> naruszeń blokujących.
+>
+> **Czego plan nie przewidywał, a wyszło w trakcie** — szczegóły w commitach:
+> nieistniejący alert obiecywany w copy 12 locale, „dane satelitarne" wbrew kodowi,
+> dopisek `" — Volcast Blog"` zjadający ćwierć budżetu tytułu na 165 stronach,
+> błąd pomiaru w `seo-guard` liczący `&#39;` jako pięć znaków, oraz zepsuty eksport
+> włoskiego zrzutu widgetów z zagnieżdżonym rumuńskim nagłówkiem.
 
 # Włoski jako 13. język volcast.app — plan implementacji
 
