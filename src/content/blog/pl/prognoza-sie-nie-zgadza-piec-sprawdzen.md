@@ -44,7 +44,7 @@ Test jest prosty. Zapisuj swój najlepszy bezchmurny dzień w każdym miesiącu.
 
 Jeśli cztery powyższe punkty są wykluczone, można wreszcie zadać pytanie poprawnie — a uczciwa odpowiedź brzmi: prognozy naprawdę są gorsze w chmurach.
 
-Mierzone na produkcji naszych użytkowników: w dni z czystym niebem mediana błędu wynosi około **12%**, przy pełnym zachmurzeniu jest bliżej **20%**. Przy mocnym zachmurzeniu mniej więcej **31%** dni mija się z prognozą o więcej niż **30%** w jedną albo drugą stronę, wobec **16%** dni pogodnych. Co istotne, mediana obciążenia pozostaje blisko zera w każdym koszyku pogodowym — prognoza nie zawyża ani nie zaniża systematycznie w chmurach, po prostu robi się bardziej rozstrzelona.
+Mierzone na produkcji naszych użytkowników: w dni z czystym niebem mediana błędu wynosi około **10%**, przy pełnym zachmurzeniu jest bliżej **18%**. Przy mocnym zachmurzeniu mniej więcej **28%** dni mija się z prognozą o więcej niż **30%** w jedną albo drugą stronę, wobec **8%** dni pogodnych. Co istotne, mediana obciążenia pozostaje blisko zera w każdym koszyku pogodowym — prognoza nie zawyża ani nie zaniża systematycznie w chmurach, po prostu robi się bardziej rozstrzelona.
 
 To rozróżnienie jest sednem tego kroku. **Rozrzut w obie strony to pogoda. Stałe przesunięcie to konfiguracja.** Jeśli Twoje błędy są duże, ale przez wiele dni lądują raz po jednej, raz po drugiej stronie — masz odpowiedź i nie ma czego naprawiać. Jeśli konsekwentnie przechylają się w jedną stronę, wróć do punktu 1.
 

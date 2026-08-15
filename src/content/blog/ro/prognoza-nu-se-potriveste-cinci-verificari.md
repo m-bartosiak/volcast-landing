@@ -44,7 +44,7 @@ Testul e simplu. Notează-ți cea mai bună zi senină din fiecare lună. Curba 
 
 Dacă cele patru de mai sus au fost eliminate, poți în sfârșit să pui întrebarea corect — iar răspunsul onest e că prognozele chiar sunt mai slabe pe nori.
 
-Măsurat pe producția reală a utilizatorilor noștri: în zilele cu cer senin eroarea mediană e în jur de **12%**, iar în zilele complet acoperite se apropie de **20%**. În zilele cu nebulozitate mare, aproximativ **31%** dintre zile ratează cu peste **30%** într-o direcție sau alta, față de **16%** dintre zilele senine. Important e că mediana abaterii rămâne aproape de zero în orice categorie de vreme — pe nori prognoza nu supraestimează și nu subestimează sistematic, doar devine mai zgomotoasă.
+Măsurat pe producția reală a utilizatorilor noștri: în zilele cu cer senin eroarea mediană e în jur de **10%**, iar în zilele complet acoperite se apropie de **18%**. În zilele cu nebulozitate mare, aproximativ **28%** dintre zile ratează cu peste **30%** într-o direcție sau alta, față de **8%** dintre zilele senine. Important e că mediana abaterii rămâne aproape de zero în orice categorie de vreme — pe nori prognoza nu supraestimează și nu subestimează sistematic, doar devine mai zgomotoasă.
 
 Distincția asta e tot rostul pasului de față. **Împrăștierea înseamnă vreme. O abatere constantă înseamnă configurare.** Dacă erorile tale sunt mari, dar cad de ambele părți de-a lungul multor zile, ai găsit răspunsul și nu ai ce repara. Dacă înclină constant într-o singură parte, întoarce-te la pasul 1.
 

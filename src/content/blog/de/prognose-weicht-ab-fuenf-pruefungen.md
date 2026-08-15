@@ -44,7 +44,7 @@ Der Test ist simpel. Notier dir jeden Monat deinen besten klaren Tag. Diese pers
 
 Wenn die vier Punkte oben ausgeschlossen sind, kannst du die Frage endlich sauber stellen — und die ehrliche Antwort lautet: In Wolken sind Prognosen tatsächlich schlechter.
 
-Gemessen an den Ertragsdaten unserer eigenen Nutzer: An Tagen mit klarem Himmel liegt der mittlere Fehler bei rund **12 %**, an Tagen mit geschlossener Bewölkung eher bei **20 %**. An stark bewölkten Tagen weichen etwa **31 %** der Tage um mehr als **30 %** in die eine oder andere Richtung ab, gegenüber **16 %** der klaren Tage. Wichtig dabei: Der mittlere Bias bleibt in jeder Wetterklasse nahe null — die Prognose über- oder unterschätzt in Wolken nicht systematisch, sie wird nur unruhiger.
+Gemessen an den Ertragsdaten unserer eigenen Nutzer: An Tagen mit klarem Himmel liegt der mittlere Fehler bei rund **10 %**, an Tagen mit geschlossener Bewölkung eher bei **18 %**. An stark bewölkten Tagen weichen etwa **28 %** der Tage um mehr als **30 %** in die eine oder andere Richtung ab, gegenüber **8 %** der klaren Tage. Wichtig dabei: Der mittlere Bias bleibt in jeder Wetterklasse nahe null — die Prognose über- oder unterschätzt in Wolken nicht systematisch, sie wird nur unruhiger.
 
 Genau diese Unterscheidung ist der Sinn dieses Schritts. **Streuung ist Wetter. Ein konstanter Versatz ist Konfiguration.** Wenn deine Abweichungen groß sind, über viele Tage aber auf beiden Seiten landen, hast du die Antwort gefunden und es gibt nichts zu reparieren. Kippen sie dauerhaft in eine Richtung, geh zurück zu Schritt 1.
 

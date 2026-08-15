@@ -105,6 +105,76 @@ def chartH(L,lang):
     for e in("webp",): fig.savefig(f"{OUT}/hourly-surplus-{lang}.{e}",bbox_inches="tight")
     plt.close(fig)
 
+
+# --- Wykres 4: blad wzgledem zachmurzenia -----------------------------------
+# Zmierzone na prodzie 2026-08-15: pv_actual_production, okno 180 dni.
+# Mediana APE liczona PER DZIEN, nie na sumach pulowych — suma pulowa dawala
+# bias -41,6% przez kilka instalacji rzedu setek kWp.
+#
+# KOHORTA: 137 z 320 instalacji, 10 331 dni. Odrzucone: 123 z mniej niz 20 dniami
+# danych, 45 z mniej niz 5 dniami bezchmurnymi (nie da sie ustalic linii bazowej)
+# oraz 15 z widocznie bledna konfiguracja — mediana stosunku prognoza/rzeczywistosc
+# w dni czyste poza pasmem 0,75-1,33. Te ostatnie to staly mnoznik, czyli zle
+# wpisana moc instalacji, a nie blad prognozy; ich obecnosc zawyzala odsetek dni
+# chybionych o >30% przy czystym niebie z 8,4% na 14,4%.
+CLOUD_X   = ["0-20", "20-40", "40-60", "60-80", "80-100"]
+CLOUD_CAL = [9.7, 10.5, 12.7, 15.1, 18.2]
+CLOUD_RAW = [12.4, 13.1, 15.5, 16.7, 19.0]
+CLOUD_N   = [2116, 1879, 1980, 2043, 2313]
+
+def chartC(L, lang):
+    fig, ax = plt.subplots(figsize=(10, 5.6), dpi=150)
+    x = list(range(len(CLOUD_X))); w = 0.38
+    ax.bar([i - w/2 for i in x], CLOUD_RAW, w, color=INDIGO, alpha=0.85, label=L['raw'], zorder=3)
+    ax.bar([i + w/2 for i in x], CLOUD_CAL, w, color=EMERALD, label=L['cal'], zorder=3)
+    for i in x:
+        ax.text(i - w/2, CLOUD_RAW[i] + 0.4, num(CLOUD_RAW[i], lang), ha="center",
+                color=INDIGO, fontsize=9, zorder=4)
+        ax.text(i + w/2, CLOUD_CAL[i] + 0.4, num(CLOUD_CAL[i], lang), ha="center",
+                color=EMERALD, fontsize=9, fontweight="bold", zorder=4)
+
+    ax.set_title(L['title'], color=TXT, fontsize=15, fontweight="bold", pad=14, loc="left")
+    ax.text(0, 1.005, L['sub'], transform=ax.transAxes, color=MUTED, fontsize=10.5, va="bottom")
+    ax.set_ylabel(L['yl']); ax.set_xlabel(L['xl'])
+    # Liczebnosc kubelka wchodzi w SAMA etykiete osi — osobny ax.text() w
+    # wspolrzednych danych ladowal dokladnie na opisach osi i je zaslanial.
+    ax.set_xticks(x)
+    ax.set_xticklabels([b + "\n" + f"n={n}" for b, n in zip(CLOUD_X, CLOUD_N)])
+    ax.set_ylim(0, 24); base(ax)
+    leg = ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2, frameon=False, fontsize=9.5)
+    for t in leg.get_texts(): t.set_color(TXT)
+    wm(ax); fig.tight_layout()
+    for e in ("webp",):
+        fig.savefig(f"{OUT}/forecast-error-by-cloud-{lang}.{e}", bbox_inches="tight")
+    plt.close(fig)
+
+LAB_C = {
+ "pl": {"title": "Błąd prognozy rośnie z zachmurzeniem",
+        "sub": "Mediana błędu dziennego: 137 instalacji, 10 331 dni. Kalibracja pomaga przy każdej pogodzie.",
+        "raw": "Przed kalibracją", "cal": "Po kalibracji",
+        "yl": "Mediana błędu (%)", "xl": "Zachmurzenie (%)"},
+ "en": {"title": "Forecast error grows with cloud cover",
+        "sub": "Median daily error: 137 systems, 10,331 days. Calibration helps in every kind of weather.",
+        "raw": "Before calibration", "cal": "After calibration",
+        "yl": "Median error (%)", "xl": "Cloud cover (%)"},
+ "de": {"title": "Der Prognosefehler wächst mit der Bewölkung",
+        "sub": "Medianer Tagesfehler: 137 Anlagen, 10.331 Tage. Die Kalibrierung hilft bei jedem Wetter.",
+        "raw": "Vor der Kalibrierung", "cal": "Nach der Kalibrierung",
+        "yl": "Medianer Fehler (%)", "xl": "Bewölkung (%)"},
+ "it": {"title": "L'errore di previsione cresce con la nuvolosità",
+        "sub": "Errore mediano giornaliero: 137 impianti, 10.331 giorni. La calibrazione aiuta con ogni meteo.",
+        "raw": "Prima della calibrazione", "cal": "Dopo la calibrazione",
+        "yl": "Errore mediano (%)", "xl": "Nuvolosità (%)"},
+ "fr": {"title": "L'erreur de prévision augmente avec la nébulosité",
+        "sub": "Erreur médiane journalière : 137 installations, 10 331 jours. Le calibrage aide par tous les temps.",
+        "raw": "Avant calibrage", "cal": "Après calibrage",
+        "yl": "Erreur médiane (%)", "xl": "Nébulosité (%)"},
+ "ro": {"title": "Eroarea prognozei crește cu nebulozitatea",
+        "sub": "Eroare mediană zilnică: 137 de sisteme, 10.331 de zile. Calibrarea ajută pe orice vreme.",
+        "raw": "Înainte de calibrare", "cal": "După calibrare",
+        "yl": "Eroare mediană (%)", "xl": "Nebulozitate (%)"},
+}
+
 LAB={
 "pl":{"14":{"title":"Prognoza vs rzeczywistość — 14 dni, instalacja 5,2 kWp",
  "sub":"Kalibracja filtrem Kalmana redukuje błąd prawie o połowę — w słoneczne dni poniżej 10%",
@@ -186,5 +256,5 @@ LAB={
  "leg":"producție prognozată","yl":"Putere / producție (kWh pe oră)","xl":"Ora"}},
 }
 for lang,L in LAB.items():
-    chart14(L["14"],lang); chartW(L["W"],lang); chartH(L["H"],lang)
-print("done — 9 charts (PNG+WebP) in",OUT)
+    chart14(L["14"],lang); chartW(L["W"],lang); chartH(L["H"],lang); chartC(LAB_C[lang],lang)
+print("done — 24 charts (WebP) in",OUT)

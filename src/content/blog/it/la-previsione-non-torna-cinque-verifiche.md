@@ -44,7 +44,7 @@ La verifica è semplice. Annota ogni mese la tua migliore giornata di cielo sere
 
 Se i quattro punti precedenti sono esclusi, puoi finalmente porre la domanda nel modo giusto. La risposta onesta è che con le nuvole le previsioni peggiorano davvero.
 
-Misurato sui dati di produzione dei nostri utenti: nelle giornate di cielo sereno l'errore mediano è intorno al **12%**, in quelle completamente coperte si avvicina al **20%**. Nelle giornate molto nuvolose circa il **31%** dei giorni sbaglia di più del **30%** in un verso o nell'altro, contro il **16%** delle giornate serene. Il dato che conta davvero, però, è un altro: lo scostamento mediano resta vicino a zero in tutte le classi di nuvolosità. Con le nuvole la previsione non sovrastima né sottostima in modo sistematico, diventa solo più rumorosa.
+Misurato sui dati di produzione dei nostri utenti: nelle giornate di cielo sereno l'errore mediano è intorno al **10%**, in quelle completamente coperte si avvicina al **18%**. Nelle giornate molto nuvolose circa il **28%** dei giorni sbaglia di più del **30%** in un verso o nell'altro, contro il **8%** delle giornate serene. Il dato che conta davvero, però, è un altro: lo scostamento mediano resta vicino a zero in tutte le classi di nuvolosità. Con le nuvole la previsione non sovrastima né sottostima in modo sistematico, diventa solo più rumorosa.
 
 È questa distinzione il senso dell'intero passaggio. **La dispersione è meteo. Uno scarto costante è configurazione.** Se i tuoi errori sono grandi ma cadono da entrambe le parti su molti giorni, hai trovato la risposta e non c'è nulla da sistemare. Se pendono sempre dallo stesso lato, torna al punto 1.
 

@@ -44,7 +44,7 @@ The test is easy. Note your best clear-sky day each month. That personal referen
 
 If the four above are ruled out, you can finally ask the question properly — and the honest answer is that forecasts really are worse in clouds.
 
-Measured across our own users' production records: on days with clear skies the median error is around **12%**, while on fully overcast days it is closer to **20%**. On heavily clouded days, roughly **31%** of days miss by more than 30% in one direction or the other, against **16%** of clear days. Importantly, the median bias stays near zero in every weather bucket — the forecast does not systematically over- or under-predict in clouds, it just becomes noisier.
+Measured across our own users' production records: on days with clear skies the median error is around **10%**, while on fully overcast days it is closer to **18%**. On heavily clouded days, roughly **28%** of days miss by more than 30% in one direction or the other, against **8%** of clear days. Importantly, the median bias stays near zero in every weather bucket — the forecast does not systematically over- or under-predict in clouds, it just becomes noisier.
 
 That distinction is the whole point of this step. **Scatter is weather. A constant offset is configuration.** If your errors are large but land on both sides across many days, you have found the answer and there is nothing to fix. If they lean consistently one way, go back to step 1.
 
