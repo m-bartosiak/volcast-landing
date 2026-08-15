@@ -36,7 +36,7 @@ const NATIVE_NAMES = {
 };
 
 // Blog istnieje tylko w en/pl/de — pozostałe locale kierujemy na blog EN.
-const BLOG_LANG = { 'en': 'en', 'pl': 'pl', 'de': 'de' };
+const BLOG_LANG = { 'en': 'en', 'pl': 'pl', 'de': 'de', 'it': 'it', 'fr': 'fr', 'ro': 'ro' };
 
 const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
 const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'translations.json'), 'utf8'));

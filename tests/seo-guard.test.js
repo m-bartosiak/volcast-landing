@@ -57,6 +57,27 @@ function hasRedirect(urlPath) {
 const isNoindex = (html) =>
   /<meta[^>]+name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html);
 
+/**
+ * Encje z powrotem na znaki, zanim cokolwiek mierzymy.
+ *
+ * Astro escapuje apostrof do `&#39;`, więc surowy `<title>` liczy go jako pięć
+ * znaków zamiast jednego. Dopóki tytuły były angielskie, prawie nie miało to
+ * znaczenia; przy francuskim i włoskim apostrof stoi w co drugim tytule
+ * (`l'autoconsumo`, `d'été`) i 56-znakowy tytuł raportował się jako 61.
+ *
+ * Google czyta tekst po zdekodowaniu, nie encję — więc liczenie encji mierzyło
+ * coś, czego nikt nigdy nie zobaczy.
+ */
+const decodeEntities = (s) => s
+  .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(Number(d)))
+  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
+  .replace(/&quot;/g, '"')
+  .replace(/&apos;/g, "'")
+  .replace(/&lt;/g, '<')
+  .replace(/&gt;/g, '>')
+  .replace(/&nbsp;/g, ' ')
+  .replace(/&amp;/g, '&');
+
 function frontmatter(text) {
   const m = /^---\r?\n([\s\S]*?)\r?\n---/.exec(text);
   if (!m) return {};
@@ -166,7 +187,7 @@ test('titles this branch rewrote fit in 60 characters', () => {
     // cannot drift from the template.
     const built = builtFile(url);
     if (!built) continue;                          // draft, not published yet
-    const tag = /<title>([^<]*)<\/title>/.exec(fs.readFileSync(built, 'utf8'))?.[1] ?? '';
+    const tag = decodeEntities(/<title>([^<]*)<\/title>/.exec(fs.readFileSync(built, 'utf8'))?.[1] ?? '');
     if (tag.length > 60) {
       problems.push(`${url} — ${tag.length} chars: ${tag}`);
     }

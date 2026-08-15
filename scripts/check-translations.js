@@ -188,6 +188,10 @@ function check(kind, lang) {
         .replace(/`[^`]*`/g, ' ')
         .replace(/(?:https?:)?\/\/[^\s)]+/g, ' ')
         .replace(/\/img\/[^\s)]*/g, ' ')
+        // Data w formacie europejskim (23.07.2026) — te języki tak je zapisują
+        // i kropka jest w nich poprawna. Bez tego walidator zgłaszał datę
+        // publikacji ustawy jako błąd typograficzny.
+        .replace(/\b\d{1,2}\.\d{1,2}\.\d{4}\b/g, ' ')
         // Jedna do dwóch cyfr po kropce = ułamek. Dokładnie trzy = separator
         // tysięcy, poprawny w tych językach (300.000 to trzysta tysięcy, nie
         // trzysta całych). Bez tego rozróżnienia walidator zgłaszał niemieckie
