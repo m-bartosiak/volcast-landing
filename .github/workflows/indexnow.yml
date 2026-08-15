@@ -1,8 +1,18 @@
 name: IndexNow ping
 
-# Pingt IndexNow (Bing/Yandex/Seznam) mit den geänderten, live geschalteten
-# Blog-/Q&A-URLs bei jedem Push auf main — inklusive der Draft->Live-Flips
-# durch den wöchentlichen publish-blog-Cron.
+# Pinguje IndexNow (Bing/Yandex/Seznam/Naver) zmienionymi, żywymi URL-ami.
+#
+# Sam `push: main` NIE wystarcza i mamy na to dowód w historii tego repo:
+# workflow istnieje od 2026-07-24 i do 2026-08-15 miał JEDEN przebieg, mimo że
+# publish-blog wypchnął treść na main 28.07, 04.08 i 11.08. Pushe wykonane
+# poświadczeniami GITHUB_TOKEN nie startują workflowów — dziewięć postów nigdy
+# nie trafiło do IndexNow.
+#
+# Stąd trzy triggery zamiast jednego:
+#   push               — merge zrobiony ręką człowieka (działa, sprawdzone),
+#   deployment_status  — tworzy go vercel[bot], nie GITHUB_TOKEN, więc łapie też
+#                        publikacje zrobione przez automat,
+#   schedule           — siatka bezpieczeństwa, gdyby oba powyższe wypadły.
 
 on:
   push:
@@ -10,41 +20,132 @@ on:
     paths:
       - 'src/content/blog/**'
       - 'src/content/qa/**'
+      - 'public/*/index.html'
+  deployment_status:
+  schedule:
+    - cron: '30 10 * * *'
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'Okno czasowe dla przebiegu ręcznego (składnia git --before)'
+        default: '25 hours ago'
+
+# Grupa szereguje przebiegi dla tego samego commita, ale ŚWIADOMIE nie anuluje.
+# `cancel-in-progress: true` byłoby tu regresem pokrycia: grupa jest zajmowana,
+# zanim policzy się `if:` na poziomie joba, więc przebieg z pominiętym jobem
+# (deploy Preview) anulowałby trwający ping z pusha i skończyłoby się BEZ
+# żadnego zgłoszenia. Powtórzony ping do IndexNow jest idempotentny i tani;
+# utracony nie jest.
+concurrency:
+  group: indexnow-${{ github.sha }}
+  cancel-in-progress: false
 
 jobs:
   ping:
+    # deployment_status leci również dla każdego Preview — interesuje nas
+    # wyłącznie udany deploy produkcyjny.
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 2
+          # Przebieg z harmonogramu liczy okno czasowe, więc potrzebuje historii.
+          fetch-depth: 0
 
       - name: Submit changed live URLs to IndexNow
+        env:
+          # Wejście z workflow_dispatch przekazujemy ZMIENNĄ, nie interpolacją do
+          # ciała skryptu — inaczej treść kontrolowana przez wywołującego trafia
+          # do powłoki przed jej uruchomieniem (hardening wg dokumentacji GitHuba).
+          SINCE_INPUT: ${{ inputs.since }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           KEY="bb77d52c734d4c7082e5f63ec699f9cc"
           HOST="volcast.app"
           BASE="https://${HOST}"
 
-          if git rev-parse HEAD^ >/dev/null 2>&1; then
-            RANGE="HEAD^ HEAD"
-          else
-            RANGE="HEAD"
-          fi
-          FILES=$(git diff --name-only --diff-filter=AM $RANGE -- src/content/blog src/content/qa | grep -E '\.md$' || true)
+          case "$EVENT_NAME" in
+            schedule|workflow_dispatch)
+              # Okno grubo szersze niż okres crona. Ponowne zgłoszenie tego samego
+              # URL-a jest idempotentne i nic nie kosztuje, a wąskie okno zamienia
+              # siatkę bezpieczeństwa w jedno podejście: gdyby cron się opóźnił
+              # albo GitHub go pominął (a pomija), publikacja przepadałaby.
+              SINCE="${SINCE_INPUT:-3 days ago}"
+              FROM=$(git rev-list -1 --before="$SINCE" HEAD)
+              # Puste okno (repo mlodsze niz SINCE, albo dziwna skladnia daty)
+              # dalo by `git diff "" HEAD` — blad polkniety przez `|| true`, czyli
+              # cichy brak pingu. Lepiej cofnac sie o jeden commit niz udawac,
+              # ze nic sie nie zmienilo.
+              [ -n "$FROM" ] || FROM=$(git rev-parse HEAD^ 2>/dev/null || git hash-object -t tree /dev/null)
+              ;;
+            *)
+              if git rev-parse HEAD^ >/dev/null 2>&1; then
+                FROM="HEAD^"
+              else
+                FROM=$(git hash-object -t tree /dev/null)   # pusty stan = wszystko nowe
+              fi
+              ;;
+          esac
+          echo "Zakres: ${FROM}..HEAD ($EVENT_NAME)"
+
+          # Filtr AMR, nie AM: git domyślnie wykrywa zmiany nazw, więc zmiana sluga
+          # ma status R i przy samym AM wypadałaby — nowy adres nie zostałby
+          # zgłoszony przez żaden z trzech triggerów. Przy `--name-only` rename
+          # wypisuje wyłącznie ścieżkę docelową, czyli dokładnie ten nowy plik.
+          FILES=$(git diff --name-only --diff-filter=AMR "$FROM" HEAD \
+                    -- src/content/blog src/content/qa public | sort -u || true)
 
           URLS=()
           for f in $FILES; do
             [ -f "$f" ] || continue
-            grep -q '^draft: true' "$f" && continue   # nur live (draft:false)
-            rel="${f#src/content/}"                    # blog/en/foo.md | qa/en/foo.md
-            coll="${rel%%/*}"; rest="${rel#*/}"
-            lang="${rest%%/*}"; slug="$(basename "${rest#*/}" .md)"
-            if [ "$coll" = "blog" ]; then URLS+=("${BASE}/blog/${lang}/${slug}/");
-            elif [ "$coll" = "qa" ]; then URLS+=("${BASE}/blog/${lang}/q/${slug}/"); fi
+            case "$f" in
+              src/content/blog/*/*.md|src/content/qa/*/*.md)
+                grep -q '^draft: true' "$f" && continue     # tylko live
+                rel="${f#src/content/}"                     # blog/en/foo.md
+                coll="${rel%%/*}"; rest="${rel#*/}"
+                lang="${rest%%/*}"; slug="$(basename "${rest#*/}" .md)"
+                [ "$coll" = "blog" ] && URLS+=("${BASE}/blog/${lang}/${slug}/")
+                [ "$coll" = "qa" ]   && URLS+=("${BASE}/blog/${lang}/q/${slug}/")
+                ;;
+              public/*/index.html)                          # landing per locale
+                loc="${f#public/}"; loc="${loc%/index.html}"
+                # Gwiazdka w globie `case` PRZECHODZI przez ukośnik (inaczej niż
+                # w filtrze `paths:` GitHuba), więc ten wzorzec łapie też
+                # public/auth/callback/index.html — czyli zgłosilibyśmy do
+                # IndexNow callback OAuth. Locale to zawsze jeden segment.
+                case "$loc" in */*) continue ;; esac
+                URLS+=("${BASE}/${loc}/")
+                ;;
+            esac
           done
 
           if [ ${#URLS[@]} -eq 0 ]; then
-            echo "No live changed URLs to submit."; exit 0
+            echo "Brak zmienionych żywych URL-i do zgłoszenia."; exit 0
+          fi
+
+          # Przy PR #15 ping wyprzedził deploy o dziesięć minut (ping 11:44:14
+          # UTC, treść serwowana od 11:55:31) — Bing mógł dostać 404 na świeżo
+          # zgłoszony adres. Nawet deployment_status nie jest tu wiarygodny:
+          # vercel[bot] zaraportował sukces o 11:44:56, jedenaście minut przed
+          # tym, aż strona faktycznie odpowiadała. Dlatego czekamy na treść.
+          PROBE="${URLS[0]}"
+          CODE=""
+          for i in $(seq 1 40); do
+            # `|| CODE="000"` nie jest ozdobą: przy błędzie sieci albo DNS curl
+            # kończy się niezerowo, a GitHub uruchamia `run:` przez `bash -e`,
+            # więc goła podstawa polecenia ubiłaby krok z kodem 6 — dokładnie w
+            # tym trybie awarii, dla którego ten poll istnieje. Sprawdzone.
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$PROBE") || CODE="000"
+            [ "$CODE" = "200" ] && break
+            echo "  czekam na deploy ($i/40, $PROBE -> $CODE)"
+            sleep 15
+          done
+          if [ "$CODE" != "200" ]; then
+            echo "Deploy nie wstał w dziesięć minut — nie zgłaszam (ping w 404 to zmarnowany sygnał)."
+            exit 1
           fi
 
           LIST=$(printf '"%s",' "${URLS[@]}"); LIST="[${LIST%,}]"

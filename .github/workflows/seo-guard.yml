@@ -9,8 +9,16 @@ name: seo-guard
 # requests it exists to gate, and auto-merge would sit waiting on a check that
 # was never going to arrive.
 #
-# On push it runs regardless of who opened what, and the result attaches to the
-# head commit, which is where branch protection looks for it.
+# On push the result attaches to the head commit, which is where branch
+# protection looks for it.
+#
+# Ale `push` NIE omija tego ograniczenia — omija tylko jego połowę. Push wykonany
+# poświadczeniami GITHUB_TOKEN też nie startuje workflowów, więc gałąź otwarta
+# przez automat nie dostanie tego checka i auto-merge zawiśnie. Dowód jest w tym
+# repo: indexnow.yml stoi na `push: main` i między 24.07 a 15.08 nie odpalił ani
+# razu, mimo trzech pushy treści zrobionych przez publish-blog.
+# Dlatego joby, których gałęzie mają przechodzić przez ten check, pushują PAT-em
+# (PUBLISH_TOKEN) — patrz publish-blog.yml.
 on:
   push:
     branches-ignore: [main]
