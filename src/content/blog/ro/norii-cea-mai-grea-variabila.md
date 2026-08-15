@@ -51,7 +51,7 @@ Pentru gestionarea bateriei, pentru încărcarea mașinii electrice sau pentru o
 
 ## De ce se chinuie modelele
 
-Modelele NWP reprezintă norii prin **scheme de parametrizare** — rețete matematice simplificate care estimează proprietățile norilor pornind de la variabile de scară mai mare, pe care modelul le poate rezolva. Modelul cunoaște temperatura, umezeala și mișcarea verticală în fiecare punct de grilă. Parametrizarea le transformă în fracție de nori, conținut de apă lichidă și grosime optică.
+Modelele NWP reprezintă norii prin **scheme de parametrizare** — rețete matematice simplificate care estimează proprietățile norilor pornind de la variabile de scară mai mare, pe care modelul le poate rezolva. Modelul cunoaște temperatura, umiditatea și mișcarea verticală în fiecare punct de grilă. Parametrizarea le transformă în fracție de nori, conținut de apă lichidă și grosime optică.
 
 Aceste parametrizări sunt aproximări. Funcționează statistic: mediate pe multe celule de grilă și pe multe zile, proprietățile norilor ies aproximativ corect. Dar pentru o celulă anume, într-o oră anume, norul parametrizat poate fi semnificativ greșit.
 

@@ -10,7 +10,7 @@ translationKey: "qa-arbitrage"
 seo:
   ogTitle: "Arbitraj cu bateria: cumperi noaptea, vinzi ziua. Iese calculul?"
 ---
-Rareori — și aproape niciodată în forma din articolele traduse. La noi jumătatea de „vând ziua” practic nu există: energia injectată nu se vinde la prețul orei, ci intră în **compensarea cantitativă**, iar ce depășește consumul tău e cumpărat de furnizor la un preț mai mic decât cel la care cumperi. Rămâne un singur arbitraj real: încarci ieftin și **eviți vârful scump de seară** consumând din baterie.
+Rareori — și aproape niciodată în forma din articolele traduse. La noi jumătatea de „vând ziua” practic nu există: energia injectată nu se vinde la prețul orar, ci intră în **compensarea cantitativă**, iar ce depășește consumul tău e cumpărat de furnizor la un preț mai mic decât cel la care cumperi. Rămâne un singur arbitraj real: încarci ieftin și **eviți vârful scump de seară** consumând din baterie.
 
 ## De ce partea de „vânzare” nu se joacă pe ore
 

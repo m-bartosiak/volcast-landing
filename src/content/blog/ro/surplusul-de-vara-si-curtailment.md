@@ -27,7 +27,7 @@ Al doilea e limitarea injecției în rețea, cea pe care engleza o numește curt
 
 Clippingul se vede ca o linie plată și curată exact la puterea nominală a invertorului, în zilele limpezi, de obicei în orele din jurul prânzului. Limitarea injecției arată altfel: producția stă sub ce ar justifica vremea, adesea în jurul prânzului în zile însorite și cu consum mic, uneori însoțită de o valoare anormal de mare a tensiunii de rețea citite de invertor.
 
-Diferența contează, pentru că o limitare venită din afară e ușor confundată cu un sistem care nu randează, când de fapt sistemul e perfect sănătos și doar e frânat din exterior. Exact asta e menită să semnaleze funcția de detecție a limitărilor din Volcast, ca să nu umbli după o defecțiune care nu există.
+Diferența contează, pentru că o limitare venită din afară e ușor confundată cu un sistem care nu are un randament, când de fapt sistemul e perfect sănătos și doar e frânat din exterior. Exact asta e menită să semnaleze funcția de detecție a limitărilor din Volcast, ca să nu umbli după o defecțiune care nu există.
 
 ## Problema tensiunii în rețelele rurale
 

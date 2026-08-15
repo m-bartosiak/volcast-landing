@@ -24,5 +24,5 @@ O baterie e flexibilitate materializată: arbitrează singură, în fiecare zi. 
 
 1. **Verifică contorul și ofertele** — comparatorul ANRE îți arată dacă în zona ta există ceva cu preț orar; fără contor inteligent citit la distanță, discuția se oprește aici.
 2. **Inventariază consumul mutabil** — mașină electrică plus apă caldă electrică mută jumătate din consum în ferestrele ieftine: caz solid. Niciuna: caz slab, rămâi pe ce ai.
-3. **Testează pe datele tale înainte să semnezi** — ai dreptul la istoricul propriu de consum de la furnizor și de la operatorul de distribuție; zece minute de verificare înlocuiesc presupunerile.
+3. **Testează pe baza datelor tale înainte să semnezi** — ai dreptul la istoricul propriu de consum de la furnizor și de la operatorul de distribuție; zece minute de verificare înlocuiesc presupunerile.
 4. **Automatizează și suprapune prognoza** — zi senină, consumi la prânz de pe acoperiș indiferent de preț; zi acoperită, urmezi curba de preț. Cele două reguli prind cea mai mare parte din ce ar aduce o baterie.

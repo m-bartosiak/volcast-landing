@@ -13,7 +13,7 @@ seo:
   keywords: ["température panneau solaire", "coefficient de température", "pourquoi les panneaux produisent moins avec la chaleur", "rendement panneau solaire canicule"]
 ---
 
-Cela paraît absurde, mais les journées les plus chaudes et les plus ensoleillées de l'année sont rarement vos meilleures journées de production. Une matinée lumineuse et fraîche d'avril ou de mai bat souvent un après-midi étouffant de fin juillet. La raison tient à un point de physique que la plupart des applications météo passent sous silence : une cellule photovoltaïque perd du rendement quand elle chauffe.
+Cela paraît absurde, mais les journées les plus chaudes et les plus ensoleillées de l'année sont rarement vos meilleures journées de production. Une matinée lumineuse et fraîche d'avril ou de mai dépasse souvent un après-midi étouffant de fin juillet. La raison tient à un point de physique que la plupart des applications météo passent sous silence : une cellule photovoltaïque perd du rendement quand elle chauffe.
 
 ## Vos panneaux sont notés à 25 °C, pas sur une toiture
 

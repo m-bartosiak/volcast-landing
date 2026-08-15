@@ -10,7 +10,7 @@ translationKey: "qa-clipping"
 seo:
   ogTitle: "Production plafonnée à midi : l'écrêtage expliqué"
 ---
-Un plateau plat au sommet de votre courbe de production signifie que la puissance est **plafonnée : soit par la puissance nominale de l'onduleur (écrêtage), soit par une limite d'injection** fixée sur votre installation. Dans les deux cas le haut de la cloche est coupé et, dans la plupart des installations, il s'agit d'un choix de conception et non d'un défaut.
+Un plateau au sommet de votre courbe de production signifie que la puissance est **plafonnée : soit par la puissance nominale de l'onduleur (écrêtage), soit par une limite d'injection** fixée sur votre installation. Dans les deux cas le haut de la cloche est coupé et, dans la plupart des installations, il s'agit d'un choix de conception et non d'un défaut.
 
 ## Pourquoi cela arrive
 

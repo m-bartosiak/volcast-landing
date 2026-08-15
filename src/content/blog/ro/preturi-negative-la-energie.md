@@ -39,7 +39,7 @@ Rezumatul practic e același pentru toată lumea: **în orele cu preț negativ, 
 
 **2. Încarcă bateria, la nevoie și din rețea.** Dacă ai o ofertă cu preț orar, a consuma în orele foarte ieftine e practic răsplătit. O baterie umplută atunci se descarcă în rampa scumpă de seară — arbitraj în stare pură. Dacă ești pe tarif nediferențiat, partea asta nu ți se aplică: încarcă din surplusul propriu, nu din rețea.
 
-**3. Limitează injecția, dacă invertorul permite.** Unele configurații permit reducerea sau anularea injecției (setarea apare literal ca „zero export” în meniul invertorului), redirecționând energia către consumatorii din casă sau către baterie. E o setare de discutat cu instalatorul, nu de improvizat: prost configurată, îți taie producția și în orele în care nu era nevoie.
+**3. Limitează injecția, dacă invertorul permite.** Unele configurații permit reducerea sau anularea injecției (setarea apare literal ca „zero export” în meniul invertorului), redirecționând energia către consumatorii din casă sau către baterie. E o setare de discutat cu instalatorul, nu de improvizat: prost configurată, îți reduce producția și în orele în care nu era nevoie.
 
 ## Cum știi dinainte că vin
 

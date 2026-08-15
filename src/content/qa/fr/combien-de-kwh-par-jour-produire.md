@@ -9,7 +9,7 @@ translationKey: "qa-daily-yield"
 seo:
   ogTitle: "Combien de kWh par jour est normal pour une installation PV ?"
 ---
-En règle approximative, une installation française produit **de l'ordre de 2,6 à 3,8 kWh par kWc et par jour en moyenne sur l'année** — mais la réponse honnête est une fourchette : une installation de 5 kWc peut faire 30 kWh un jour clair de juin et 3 kWh un jour gris de décembre. Sur l'année, cela correspond à un productible de l'ordre de 950 à 1 050 kWh/kWc dans les Hauts-de-France ou en Bretagne, et de 1 350 à 1 500 kWh/kWc sur le pourtour méditerranéen. Un chiffre journalier isolé, sans le contexte météo, ne vous apprend presque rien.
+En ordre de grandeur, une installation française produit **de l'ordre de 2,6 à 3,8 kWh par kWc et par jour en moyenne sur l'année** — mais la réponse honnête est une fourchette : une installation de 5 kWc peut faire 30 kWh un jour clair de juin et 3 kWh un jour gris de décembre. Sur l'année, cela correspond à un productible de l'ordre de 950 à 1 050 kWh/kWc dans les Hauts-de-France ou en Bretagne, et de 1 350 à 1 500 kWh/kWc sur le pourtour méditerranéen. Un chiffre journalier isolé, sans le contexte météo, ne vous apprend presque rien.
 
 ## Pourquoi la fourchette est si large
 

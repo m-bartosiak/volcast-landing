@@ -10,7 +10,7 @@ translationKey: "qa-clipping"
 seo:
   ogTitle: "Producție plată la prânz — clipping și limitarea injecției"
 ---
-Un platou plat în vârful curbei de producție înseamnă că puterea e **plafonată — fie de puterea nominală a invertorului (clipping), fie de o limitare a injecției în rețea** setată la racordare sau direct în invertor. Ambele taie vârful unei curbe care altfel ar avea formă de clopot, iar în majoritatea sistemelor sunt decizii de proiectare, nu defecte.
+Un platou în vârful curbei de producție înseamnă că puterea e **plafonată — fie de puterea nominală a invertorului (clipping), fie de o limitare a injecției în rețea** setată la racordare sau direct în invertor. Ambele taie vârful unei curbe care altfel ar avea formă de clopot, iar în majoritatea sistemelor sunt decizii de proiectare, nu defecte.
 
 ## De ce se întâmplă
 

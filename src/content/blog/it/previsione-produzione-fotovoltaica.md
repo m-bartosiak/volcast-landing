@@ -50,7 +50,7 @@ In pratica: registri la produzione giornaliera reale e dopo due o tre settimane 
 
 **Pianificare i consumi.** Un kilowattora consumato in casa vale quanto lo paghi in bolletta; lo stesso kilowattora immesso in rete, con il ritiro dedicato, viene valorizzato a prezzi di mercato molto più bassi. Se sai che domani il surplus arriva tra le 11 e le 14, è in quella finestra che devono partire lo scaldabagno, la lavatrice, la lavastoviglie e la ricarica dell'auto elettrica. Qui i dettagli: [Quando far partire gli elettrodomestici con il fotovoltaico →](/blog/it/quando-usare-gli-elettrodomestici-con-il-fotovoltaico).
 
-**Automatizzare la casa.** La previsione può entrare in Home Assistant e comandare i dispositivi in automatico: la resistenza del boiler parte solo se è previsto surplus, la pompa di calore sposta i cicli di acqua calda dentro il picco di produzione.
+**Automatizzare la casa.** La previsione può entrare in Home Assistant e comandare i dispositivi in automatico: la resistenza del boiler parte solo se è previsto surplus, la pompa di calore sposta i cicli ACS dentro il picco di produzione.
 
 **Tenere d'occhio la salute dell'impianto.** Se la produzione reale si scosta in modo sistematico dalla previsione calibrata, qualcosa non va: moduli sporchi, un albero cresciuto, una stringa che sta cedendo. La previsione è il riferimento che l'app dell'inverter, che mostra solo il passato, non ti dà mai.
 

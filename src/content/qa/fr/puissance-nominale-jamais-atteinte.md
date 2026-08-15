@@ -9,7 +9,7 @@ translationKey: "qa-below-rated"
 seo:
   ogTitle: "Pourquoi 6 kWc ne donnent presque jamais 6 kW, et quand s'alarmer"
 ---
-Parce que la puissance de la plaque signalétique est mesurée dans **des conditions de laboratoire que votre toit ne reproduit presque jamais** : 25 °C de température de cellule et 1 000 W/m² frappant le module perpendiculairement (conditions STC, spectre AM1.5). Dans la vraie vie, la température de cellule, l'angle du soleil, la transparence de l'air et la conversion de l'onduleur retirent chacun quelques pour cent, si bien qu'une installation de 6 kWc qui plafonne à 5,0-5,4 kW par beau temps se comporte exactement comme elle a été conçue.
+Parce que la puissance nominale signalétique est mesurée dans **des conditions de laboratoire que votre toit ne reproduit presque jamais** : 25 °C de température de cellule et 1 000 W/m² frappant le module perpendiculairement (conditions STC, spectre AM1.5). Dans la vraie vie, la température de cellule, l'angle du soleil, la transparence de l'air et la conversion de l'onduleur retirent chacun quelques pour cent, si bien qu'une installation de 6 kWc qui plafonne à 5,0-5,4 kW par beau temps se comporte exactement comme elle a été conçue.
 
 ## Pourquoi cet écart est normal
 

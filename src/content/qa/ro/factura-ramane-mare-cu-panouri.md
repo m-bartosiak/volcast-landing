@@ -22,7 +22,7 @@ Ce injectezi peste consumul tău anual nu are ce anula, așa că se cumpără �
 
 ## Ce ai de făcut
 
-1. **Află-ți rata de autoconsum** — aplicația invertorului sau datele de contor o arată; sub circa 30%, pârghiile de mai jos înseamnă bani reali.
+1. **Află-ți rata de autoconsum** — aplicația invertorului sau datele de contor o arată; sub circa 30%, măsurile de mai jos înseamnă bani reali.
 2. **Mută consumurile mari în fereastra solară** — apă caldă, mașină de spălat vase, rufe, mașină electrică. Temporizatoarele ajută, automatizarea pe o prognoză de producție ajută mai mult.
 3. **Citește structura facturii, nu doar totalul** — separă componenta de furnizare de tarifele de rețea și de taxe, ca să știi ce parte poate fi redusă și ce parte nu.
 4. **Verifică tariful abia după aceea** — o ofertă diferențiată pe zone orare are sens doar dacă chiar poți muta consum; altfel schimbi doar prețul unitar.

@@ -9,7 +9,7 @@ translationKey: "qa-system-check"
 seo:
   ogTitle: "Sistemul produce prea puțin? Un autocontrol în patru pași"
 ---
-Testul de încredere este **compararea producției reale cu o prognoză calculată pentru sistemul tău exact** — locație, orientare, înclinare și vremea reală a zilei. Dacă producția urmărește prognoza la câteva procente diferență, sistemul e sănătos; o diferență constantă de 15% sau mai mare, pe tipuri diferite de vreme, e semnalul care merită investigat.
+Testul de încredere este **compararea producției reale cu o prognoză calculată pentru configurația sistemului tău** — locație, orientare, înclinare și vremea reală a zilei. Dacă producția urmărește prognoza la câteva procente diferență, sistemul e sănătos; o diferență constantă de 15% sau mai mare, pe tipuri diferite de vreme, e semnalul care merită investigat.
 
 ## De ce cifrele brute te induc în eroare
 

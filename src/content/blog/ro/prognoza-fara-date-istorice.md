@@ -44,7 +44,7 @@ Dacă îi dai azimutul (orientarea), știe când panourile tale privesc soarele 
 
 Dacă îi dai puterea instalată, știe factorul de scalare dintre iradianță și puterea electrică livrată. Un singur număr care încapsulează eficiența modulelor și suprafața lor.
 
-Dacă îi dai locația, calculează traiectoria soarelui (astronomie), alege punctul de grilă potrivit din modelul meteo și aplică modele atmosferice calibrate pe decenii de măsurători — nu pe datele tale, ci pe fizica atmosferei, aceeași peste tot pe Pământ.
+Dacă îi dai locația, calculează traiectoria soarelui (astronomie), alege punctul de grilă potrivit din modelul meteo și aplică modele atmosferice calibrate pe decenii de măsurători — nu pe baza datelor tale, ci pe fizica atmosferei, aceeași peste tot pe Pământ.
 
 Coeficientul de temperatură? Panourile pe siliciu cristalin se grupează strâns între −0,35 și −0,45 %/°C. Folosirea valorii tipice de −0,4 %/°C introduce cel mult o eroare de 1-2% în zilele cu temperaturi extreme. E sub incertitudinea prognozei meteo.
 

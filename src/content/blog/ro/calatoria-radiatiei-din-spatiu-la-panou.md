@@ -53,7 +53,7 @@ Modelele NWP includ prognoze de aerosoli, dar acestea sunt mai grosiere decât v
 
 Ozonul din stratosferă absoarbe radiația ultravioletă — important pentru biologie, mai puțin pentru fotovoltaic, pentru că majoritatea fotonilor UV au oricum mai multă energie decât banda interzisă a siliciului (surplusul devine căldură prin termalizare).
 
-Vaporii de apă din troposferă absorb anumite lungimi de undă din infraroșu, creând benzi de absorbție care reduc iradianța totală. Efectul depinde de conținutul de apă precipitabilă, care variază cu umezeala și e inclus în ieșirile modelelor NWP.
+Vaporii de apă din troposferă absorb anumite lungimi de undă din infraroșu, creând benzi de absorbție care reduc iradianța totală. Efectul depinde de conținutul de apă precipitabilă, care variază cu umiditatea și e inclus în ieșirile modelelor NWP.
 
 CO₂, metanul și celelalte gaze cu efect de seră au efecte minore de absorbție, la lungimi de undă specifice. Sunt practic constante și sunt deja încorporate în modelele atmosferice standard.
 

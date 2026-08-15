@@ -10,7 +10,7 @@ translationKey: "weather-vs-output"
 seo:
   ogTitle: "Previsioni meteo e produzione fotovoltaica"
 ---
-«Domani sereno, 22 gradi»: e questo cosa ti dice sulla produzione del tuo impianto? Sorprendentemente poco. Una previsione meteo e una previsione di produzione rispondono a due domande diverse, e ricavare la seconda a occhio dalla prima porta a errori sistematici. Ecco i tre motivi per cui il fotovoltaico ha bisogno di una previsione sua.
+«Domani sereno, 22 gradi»: e questo cosa ti dice sulla produzione del tuo impianto? Sorprendentemente poco. Una previsione meteo e una previsione di produzione rispondono a due domande diverse, e ricavare la seconda a occhio dalla prima porta a errori sistematici. Ecco i tre motivi per cui il fotovoltaico ha bisogno di una previsione dedicata.
 
 ## Motivo 1: i pannelli non vedono la nuvolosità, vedono l'irradianza
 

@@ -26,4 +26,4 @@ Tiparul e inconfundabil: opriri în zilele senine, între 11:00 și 15:00, niciu
 2. **Măsoară tensiunea și seara** — dacă e peste normal când panourile nu produc, problema din rețea e și mai ușor de demonstrat.
 3. **Reclamă la operatorul de distribuție** (DEER, Rețele Electrice România, Delgaz Grid, Distribuție Energie Oltenia — în funcție de zona ta), nu la furnizorul care îți trimite factura. Cum faci o sesizare care chiar produce efecte găsești în răspunsul despre tensiunea peste 253 V.
 4. **Întreabă instalatorul de reglajul volt-watt** — invertorul poate reduce lin puterea în loc să se deconecteze brusc; detalii în răspunsul despre curba volt-watt.
-5. **Pune o cifră pe pierderi** — comparând producția reală cu o prognoză pentru sistemul tău exact vezi câți kWh dispar prin opriri, iar o cifră concretă face reclamația mult mai greu de ignorat.
+5. **Pune o cifră pe pierderi** — comparând producția reală cu o prognoză pentru configurația sistemului tău vezi câți kWh dispar prin opriri, iar o cifră concretă face reclamația mult mai greu de ignorat.

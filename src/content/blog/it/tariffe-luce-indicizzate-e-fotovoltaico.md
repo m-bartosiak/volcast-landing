@@ -11,7 +11,7 @@ translationKey: "dynamic-tariff"
 seo:
   ogTitle: "Tariffa indicizzata al PUN e fotovoltaico: conviene?"
 ---
-Con una tariffa a prezzo indicizzato non paghi l'energia a un prezzo fisso deciso in contratto, ma un prezzo agganciato al mercato all'ingrosso, più gli oneri, la spesa per il trasporto e il margine del venditore. Sul mercato il prezzo oscilla di parecchie volte nell'arco della giornata: i mezzogiorni di sole sono bassissimi o addirittura negativi, le sere d'inverno care. Per il consumatore medio è una lotteria; per chi ha il fotovoltaico, carichi spostabili o un accumulo è uno strumento. Lo scrivo da chi convive da anni con un prezzo che cambia di ora in ora.
+Con una tariffa a prezzo indicizzato non paghi l'energia a un prezzo fisso deciso in contratto, ma un prezzo agganciato al mercato all'ingrosso, più gli oneri, la spesa per il trasporto e il margine del venditore. Sul mercato il prezzo varia fino a parecchie volte nell'arco della giornata: i mezzogiorni di sole sono bassissimi o addirittura negativi, le sere d'inverno care. Per il consumatore medio è una lotteria; per chi ha il fotovoltaico, carichi spostabili o un accumulo è uno strumento. Lo scrivo da chi convive da anni con un prezzo che cambia di ora in ora.
 
 ## Come funziona davvero in Italia
 

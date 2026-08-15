@@ -10,7 +10,7 @@ translationKey: "qa-arbitrage"
 seo:
   ogTitle: "Arbitraggio con la batteria: comprare di notte e rivendere di giorno?"
 ---
-Quasi mai nella forma in cui te la immagini, perché in Italia la gamba della "rivendita" non esiste: **l'energia che immetti non la vendi al tuo fornitore al prezzo del momento, ma ti viene valorizzata dal GSE con un meccanismo separato dal contratto di prelievo**, a un valore sensibilmente più basso di quello che paghi in bolletta. L'arbitraggio che funziona davvero è un altro: comprare quando costa poco e non comprare quando costa molto.
+Quasi mai nella forma in cui te la immagini, perché in Italia la "rivendita" diretta non esiste: **l'energia che immetti non la vendi al tuo fornitore al prezzo del momento, ma ti viene valorizzata dal GSE con un meccanismo separato dal contratto di prelievo**, a un valore sensibilmente più basso di quello che paghi in bolletta. L'arbitraggio che funziona davvero è un altro: comprare quando costa poco e non comprare quando costa molto.
 
 ## Perché i conti sono più stretti di quanto sembri
 

@@ -32,7 +32,7 @@ Relieful și poziția țării fac diferența vizibilă. Câteva situații pe car
 
 **Bariera Carpaților.** Lanțul montan blochează, canalizează și ridică masele de aer. Pe versantul de sub vânt apar situații de tip foehn, cu cer care se degajă rapid și o creștere bruscă a producției, în timp ce la câteva zeci de kilometri, pe versantul opus, plouă. O grilă grosieră face media între cele două și nu nimerește niciuna.
 
-**Ceața radiativă din Câmpia Română și Bărăgan.** Iarna, nopțile senine și vântul slab lasă să se formeze un strat jos de ceață care poate ține până la prânz sau toată ziua. Fenomenul e local, subțire pe verticală și legat de umezeala solului. Un model de 25 km fie îl ignoră complet, fie îl întinde pe toată regiunea.
+**Ceața radiativă din Câmpia Română și Bărăgan.** Iarna, nopțile senine și vântul slab lasă să se formeze un strat jos de ceață care poate ține până la prânz sau toată ziua. Fenomenul e local, subțire pe verticală și legat de umiditatea solului. Un model de 25 km fie îl ignoră complet, fie îl întinde pe toată regiunea.
 
 **Briza mării în Dobrogea și pe litoral.** Diferența de temperatură dintre apă și uscat pornește o circulație locală care mută norii spre interior în timpul zilei. Rezultatul: cerul de deasupra plajei rămâne adesea mai curat decât cel de la 30 km în interior, în aceleași ore.
 
