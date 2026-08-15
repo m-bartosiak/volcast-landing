@@ -3,3 +3,8 @@ dist/
 .vercel/
 _pagefind/
 .astro/
+
+# Paczki do korekty zewnętrznej — generowane skryptem, nie wersjonowane.
+# `node scripts/build-review-packages.js` odtwarza je z aktualnej treści,
+# a wersjonowanie duplikowałoby cały korpus w repo.
+docs/review/
