@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "date": "2026-08-25",
+    "files": [
+      "qa/en/how-do-i-find-my-real-kwp.md",
+      "qa/pl/skad-wziac-realna-moc-instalacji.md",
+      "qa/de/wie-viel-kwp-hat-meine-anlage-wirklich.md",
+      "qa/it/qual-e-la-potenza-reale-del-mio-impianto.md",
+      "qa/fr/quelle-est-la-puissance-reelle-de-mon-installation.md",
+      "qa/ro/care-este-puterea-reala-a-sistemului-meu.md"
+    ]
+  }
+]
