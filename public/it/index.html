@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volcast — previsione di produzione fotovoltaica ora per ora</title>
+  <meta name="description" content="Volcast prevede la produzione del tuo impianto fotovoltaico ora per ora, fino a sette giorni, dai dati dei tuoi pannelli. Senza accesso all'inverter.">
+  <meta name="theme-color" content="#05070A">
+  <meta property="og:title" content="Volcast — previsione di produzione fotovoltaica">
+  <meta property="og:description" content="Prevedi la produzione del tuo fotovoltaico con la fisica. Sette giorni, ora per ora, dai parametri dei tuoi pannelli e da più modelli meteo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://volcast.app/it/">
+  <meta property="og:site_name" content="Volcast">
+  <meta property="fb:app_id" content="856840077472517">
+  <!-- Share card. Bez tego Facebook renderował gołą kartę bez obrazka — a to jest
+       ostatni metr ścieżki z odpowiedzi w grupach FB na stronę. Wymiary podane
+       jawnie, żeby FB narysował kartę od razu, bez dociągania obrazka. -->
+  <meta property="og:image" content="https://volcast.app/img/og-landing.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Volcast — prognoza produkcji z fotowoltaiki, zrzut ekranu aplikacji">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volcast — previsione di produzione fotovoltaica">
+  <meta name="twitter:description" content="Prevedi la produzione del tuo fotovoltaico con la fisica. Sette giorni, ora per ora, dai parametri dei tuoi pannelli e da più modelli meteo.">
+  <meta name="twitter:image" content="https://volcast.app/img/og-landing.png">
+  <link rel="canonical" href="https://volcast.app/it/">
+  <link rel="alternate" hreflang="en" href="https://volcast.app/en/">
+  <link rel="alternate" hreflang="cs" href="https://volcast.app/cs/">
+  <link rel="alternate" hreflang="de" href="https://volcast.app/de/">
+  <link rel="alternate" hreflang="es" href="https://volcast.app/es/">
+  <link rel="alternate" hreflang="fr" href="https://volcast.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://volcast.app/it/">
+  <link rel="alternate" hreflang="nl" href="https://volcast.app/nl/">
+  <link rel="alternate" hreflang="pl" href="https://volcast.app/pl/">
+  <link rel="alternate" hreflang="pt" href="https://volcast.app/pt/">
+  <link rel="alternate" hreflang="pt-BR" href="https://volcast.app/pt-br/">
+  <link rel="alternate" hreflang="ro" href="https://volcast.app/ro/">
+  <link rel="alternate" hreflang="sk" href="https://volcast.app/sk/">
+  <link rel="alternate" hreflang="uk" href="https://volcast.app/uk/">
+  <link rel="alternate" hreflang="x-default" href="https://volcast.app/en/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 18 L40 62 L62 18' stroke='%2300FF9D' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='40' cy='12' r='4' fill='%2300FF9D'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <!-- Umami Analytics (cookieless, GDPR-compliant) -->
+  <script defer src="https://analytics.volcast.app/script.js" data-website-id="a65df92a-e317-413f-8f84-7af9a9b1bba8"></script>
+  <style>
+    /* ================================================================
+       DESIGN TOKENS — Midnight Emerald
+       ================================================================ */
+    :root {
+      --canvas: #05070A;
+      --surface: #0F1218;
+      --surface-border: #1a1f2e;
+      --primary: #00FF9D;
+      --primary-dim: rgba(0, 255, 157, 0.6);
+      --primary-glow: rgba(0, 255, 157, 0.08);
+      --primary-glow-strong: rgba(0, 255, 157, 0.15);
+      --secondary: #818CF8;
+      --secondary-glow: rgba(129, 140, 248, 0.08);
+      --text-primary: #FFFFFF;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748b;
+      --divider: #1e293b;
+      --warning: #F59E0B;
+      --error: #EF4444;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    /* ================================================================
+       RESET & BASE
+       ================================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      background: var(--canvas);
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--primary); text-decoration: none; transition: opacity 0.2s; }
+    a:hover { opacity: 0.8; }
+    img { max-width: 100%; height: auto; display: block; }
+    ::selection { background: rgba(0, 255, 157, 0.25); color: #fff; }
+
+    /* ================================================================
+       NOISE OVERLAY
+       ================================================================ */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+    }
+
+    /* ================================================================
+       UTILITY
+       ================================================================ */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section {
+      padding: 120px 0;
+      position: relative;
+    }
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .section-desc {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      max-width: 560px;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .section-header .section-desc {
+      margin: 0 auto;
+    }
+    .glass-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: revealFallback 0s 2s forwards;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+      animation: none;
+    }
+    @keyframes revealFallback {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ================================================================
+       NAV
+       ================================================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 20px 0;
+      transition: background 0.3s, padding 0.3s, backdrop-filter 0.3s;
+    }
+    .nav.scrolled {
+      background: rgba(5, 7, 10, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--surface-border);
+    }
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-brand svg { width: 32px; height: 32px; }
+    .nav-brand span {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 2px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); opacity: 1; }
+    .nav-cta {
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      color: var(--canvas) !important;
+      background: var(--primary);
+      padding: 8px 20px;
+      border-radius: var(--radius-sm);
+      transition: box-shadow 0.3s, transform 0.2s !important;
+    }
+    .nav-cta:hover {
+      box-shadow: 0 0 24px rgba(0, 255, 157, 0.35);
+      transform: translateY(-1px);
+      opacity: 1 !important;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text-secondary);
+      margin: 5px 0;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* ================================================================
+       LANGUAGE SWITCHER
+       ================================================================ */
+    .lang-switcher {
+      position: relative;
+    }
+    .lang-trigger {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .lang-trigger:hover {
+      border-color: var(--text-muted);
+      color: var(--text-primary);
+    }
+    .lang-trigger svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+    .lang-chevron {
+      transition: transform 0.2s;
+    }
+    .lang-switcher.open .lang-chevron {
+      transform: rotate(180deg);
+    }
+    .lang-dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 8px;
+      min-width: 180px;
+      max-height: 360px;
+      overflow-y: auto;
+      display: none;
+      z-index: 200;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+    .lang-switcher.open .lang-dropdown {
+      display: block;
+    }
+    .lang-option {
+      display: block;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .lang-option:hover {
+      background: var(--primary-glow);
+      color: var(--text-primary);
+      opacity: 1;
+    }
+    .lang-option.active {
+      color: var(--primary);
+      background: var(--primary-glow);
+      pointer-events: none;
+    }
+
+    /* ================================================================
+       STORE BADGES
+       ================================================================ */
+    .store-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .store-badges-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      opacity: 0.6;
+    }
+    .store-badges-row {
+      display: flex;
+      gap: 12px;
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(15, 18, 24, 0.6);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 18px;
+      transition: opacity 0.3s, border-color 0.3s, box-shadow 0.3s;
+      user-select: none;
+    }
+    .store-badge svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+    .store-badge-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+    .store-badge-text small {
+      font-size: 9px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.3px;
+    }
+    .store-badge-text span {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .store-badge--active {
+      opacity: 1;
+      cursor: pointer;
+    }
+    .store-badge--active:hover {
+      border-color: rgba(0, 255, 157, 0.3);
+      box-shadow: 0 0 20px rgba(0, 255, 157, 0.1);
+      opacity: 1;
+    }
+    /* ================================================================
+       HERO
+       ================================================================ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      animation: orb-float 8s ease-in-out infinite;
+    }
+    .hero-orb--1 {
+      width: 500px; height: 500px;
+      background: rgba(0, 255, 157, 0.07);
+      top: -10%; left: -10%;
+    }
+    .hero-orb--2 {
+      width: 400px; height: 400px;
+      background: rgba(129, 140, 248, 0.06);
+      bottom: -5%; right: -8%;
+      animation-delay: -3s;
+    }
+    .hero-orb--3 {
+      width: 300px; height: 300px;
+      background: rgba(0, 255, 157, 0.04);
+      top: 50%; right: 20%;
+      animation-delay: -5s;
+    }
+    @keyframes orb-float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -20px) scale(1.05); }
+      66% { transform: translate(-20px, 15px) scale(0.97); }
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      max-width: 1120px;
+      width: 100%;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-label {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.08;
+      margin-bottom: 24px;
+      letter-spacing: -1px;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-desc {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin-bottom: 40px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .hero-mockup {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-mockup::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px; height: 500px;
+      background: radial-gradient(ellipse, rgba(0, 255, 157, 0.12) 0%, rgba(0, 255, 157, 0.03) 50%, transparent 75%);
+      filter: blur(60px);
+      pointer-events: none;
+    }
+    .hero-phone {
+      position: relative;
+      max-width: 320px;
+      width: 100%;
+      border-radius: 40px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 80px rgba(0, 255, 157, 0.08);
+    }
+    .hero-phone img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 40px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: var(--canvas);
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: box-shadow 0.3s, transform 0.2s;
+      box-shadow: 0 0 20px rgba(0, 255, 157, 0.2);
+    }
+    .btn-primary:hover {
+      box-shadow: 0 0 40px rgba(0, 255, 157, 0.4);
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+    .hero-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ================================================================
+       FEATURES
+       ================================================================ */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .feature-card {
+      padding: 36px 32px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .feature-card:hover {
+      border-color: rgba(0, 255, 157, 0.12);
+      box-shadow: 0 0 40px rgba(0, 255, 157, 0.04);
+    }
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    .feature-icon--emerald {
+      background: var(--primary-glow);
+      border: 1px solid rgba(0, 255, 157, 0.12);
+    }
+    .feature-icon--indigo {
+      background: var(--secondary-glow);
+      border: 1px solid rgba(129, 140, 248, 0.12);
+    }
+    .feature-card h3 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-secondary);
+    }
+
+    /* ================================================================
+       HOW IT WORKS
+       ================================================================ */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: calc(16.66% + 24px);
+      right: calc(16.66% + 24px);
+      height: 1px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+      opacity: 0.2;
+    }
+    .step { text-align: center; position: relative; }
+    .step-number {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary);
+      position: relative;
+      z-index: 2;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .step:hover .step-number {
+      border-color: rgba(0, 255, 157, 0.2);
+      box-shadow: 0 0 30px rgba(0, 255, 157, 0.08);
+    }
+    .step h3 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .step p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    /* ================================================================
+       FEATURE SCREENSHOTS
+       ================================================================ */
+    .feature-card-with-img {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+    }
+    .feature-card-img {
+      width: 140px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+    .feature-card-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+
+    /* ================================================================
+       HOME ASSISTANT
+       ================================================================ */
+    .ha-section {
+      background: linear-gradient(180deg, transparent, rgba(129, 140, 248, 0.02) 50%, transparent);
+    }
+    .ha-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .ha-content {
+      min-width: 0;
+    }
+    .ha-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .ha-content p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+    .ha-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--secondary-glow);
+      border: 1px solid rgba(129, 140, 248, 0.15);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--secondary);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .ha-badge svg {
+      width: 16px;
+      height: 16px;
+    }
+    .ha-code-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 0;
+    }
+    .ha-tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 4px;
+    }
+    .ha-tab {
+      flex: 1;
+      padding: 10px 16px;
+      border: none;
+      border-radius: calc(var(--radius-md) - 4px);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .ha-tab:hover {
+      color: var(--text-secondary);
+    }
+    .ha-tab--active {
+      background: rgba(129, 140, 248, 0.1);
+      color: var(--secondary);
+    }
+    .ha-tab-content {
+      display: none;
+    }
+    .ha-tab-content--active {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .ha-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .ha-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+    }
+    .ha-step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(129, 140, 248, 0.15);
+      color: var(--secondary);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .ha-step-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .ha-step-text strong {
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+    .ha-step-text span {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .ha-step-url {
+      font-family: 'SF Mono', 'Fira Code', 'Fira Mono', Menlo, Consolas, monospace;
+      font-size: 11.5px !important;
+      background: rgba(129, 140, 248, 0.08);
+      padding: 4px 8px;
+      border-radius: 6px;
+      word-break: break-all;
+      user-select: all;
+      color: var(--secondary) !important;
+    }
+    .ha-github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+      align-self: flex-start;
+    }
+    .ha-github-link:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+    }
+    .ha-github-link svg {
+      width: 18px;
+      height: 18px;
+    }
+    .ha-sensors {
+      padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+    }
+    .ha-sensors-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .ha-sensor-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ha-sensor-chip {
+      padding: 4px 12px;
+      background: rgba(0, 255, 157, 0.08);
+      border: 1px solid rgba(0, 255, 157, 0.15);
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--primary);
+    }
+    .code-block {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .code-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid var(--surface-border);
+    }
+    .code-block-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .code-block-lang {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .code-block pre {
+      padding: 16px;
+      overflow-x: auto;
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin: 0;
+      max-width: 100%;
+    }
+    .code-block pre .code-key { color: var(--secondary); }
+    .code-block pre .code-str { color: var(--primary); }
+    .code-block pre .code-num { color: var(--warning); }
+    .code-block pre .code-comment { color: var(--text-muted); font-style: italic; }
+
+    /* ================================================================
+       TRUST STRIP
+       ================================================================ */
+    .trust-strip {
+      padding: 80px 0;
+      border-top: 1px solid var(--surface-border);
+      border-bottom: 1px solid var(--surface-border);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .trust-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary-glow);
+      border: 1px solid rgba(0, 255, 157, 0.12);
+    }
+    .trust-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+    .trust-item h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .trust-item p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      max-width: 280px;
+      line-height: 1.6;
+    }
+
+    /* ================================================================
+       APP DOWNLOAD
+       ================================================================ */
+    .download-section {
+      text-align: center;
+    }
+    .download-card {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 56px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .download-card::before {
+      content: '';
+      position: absolute;
+      top: -1px; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+    .download-stores {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    .download-store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(15, 18, 24, 0.8);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 14px 24px;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    }
+    .download-store-badge:hover {
+      border-color: rgba(0, 255, 157, 0.3);
+      box-shadow: 0 0 24px rgba(0, 255, 157, 0.1);
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+    .download-store-badge svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+    .download-store-badge .store-badge-text small {
+      font-size: 10px;
+    }
+    .download-store-badge .store-badge-text span {
+      font-size: 17px;
+    }
+    /* ================================================================
+       FAQ
+       ================================================================ */
+    .faq-list {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--surface-border);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--surface-border); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 24px 0;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--primary); }
+    .faq-chevron {
+      width: 20px; height: 20px;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+      color: var(--text-muted);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); color: var(--primary); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-answer-inner {
+      padding: 0 0 24px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    /* ================================================================
+       FOOTER
+       ================================================================ */
+    .footer {
+      border-top: 1px solid var(--surface-border);
+      padding: 48px 0;
+    }
+    .footer .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-brand svg { width: 24px; height: 24px; }
+    .footer-brand span { font-size: 14px; color: var(--text-muted); }
+    .footer-brand strong { color: var(--primary); font-weight: 600; }
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text-secondary); opacity: 1; }
+
+    /* ================================================================
+       RESPONSIVE
+       ================================================================ */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 32px;
+      }
+      .hero { min-height: auto; padding: 100px 24px 60px; }
+      .hero-content { text-align: center; }
+      .hero-desc { margin-left: auto; margin-right: auto; }
+      .hero-actions { align-items: center; }
+      .hero-phone { max-width: 220px; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 80px 0; }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .lang-trigger span { display: none; }
+      .lang-trigger { padding: 6px 8px; }
+      .lang-chevron { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: rgba(5, 7, 10, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 24px;
+        border-bottom: 1px solid var(--surface-border);
+        gap: 20px;
+      }
+      .features-grid { grid-template-columns: 1fr; }
+      .feature-card-with-img { grid-template-columns: 1fr auto; }
+      .feature-card-img { width: 110px; }
+      .steps {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .steps::before { display: none; }
+      .download-card { padding: 40px 28px; }
+      .download-stores { flex-direction: column; align-items: center; }
+      .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .hero h1 { letter-spacing: -0.5px; font-size: clamp(26px, 6.5vw, 48px); }
+      .store-badge { padding: 8px 14px; }
+      .store-badge svg { width: 18px; height: 18px; }
+      .store-badge-text span { font-size: 13px; }
+      .store-badge-text small { font-size: 8px; }
+      .store-badges-row { gap: 8px; }
+      .ha-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .code-block pre {
+        font-size: 11px;
+        padding: 12px;
+      }
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 100px 20px 60px; }
+      .hero h1 { font-size: clamp(24px, 7vw, 40px); }
+      .section { padding: 64px 0; }
+      .section-header { margin-bottom: 40px; }
+      .feature-card-with-img { grid-template-columns: 1fr; }
+      .feature-card-img { width: 100%; max-width: 200px; margin: 0 auto; }
+      .trust-strip { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="/it/" class="nav-brand">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 18 L40 62 L62 18" stroke="#00FF9D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="29" y1="26" x2="51" y2="26" stroke="#00FF9D" stroke-width="1.5" opacity="0.4"/>
+          <line x1="33" y1="36" x2="47" y2="36" stroke="#00FF9D" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="40" cy="12" r="4" fill="#00FF9D"/>
+          <g stroke="#00FF9D" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+            <line x1="40" y1="4" x2="40" y2="6"/>
+            <line x1="48" y1="12" x2="46" y2="12"/>
+            <line x1="32" y1="12" x2="34" y2="12"/>
+          </g>
+        </svg>
+        <span>Volcast</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Funzioni</a></li>
+        <li><a href="#how-it-works">Come funziona</a></li>
+        <li><a href="#home-assistant">Home Assistant</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="/blog/it/">Blog</a></li>
+        <li><a href="/blog/it/q/">Q&amp;A</a></li>
+        <li><a href="#download" class="nav-cta">Scarica l'app</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-trigger" id="langTrigger" aria-label="Cambia lingua">
+            <!-- Globe icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Italiano</span>
+            <!-- Chevron -->
+            <svg class="lang-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+              <a href="/en/" class="lang-option" data-lang="en">English</a>
+              <a href="/cs/" class="lang-option" data-lang="cs">Čeština</a>
+              <a href="/de/" class="lang-option" data-lang="de">Deutsch</a>
+              <a href="/es/" class="lang-option" data-lang="es">Español</a>
+              <a href="/fr/" class="lang-option" data-lang="fr">Français</a>
+              <a href="/it/" class="lang-option active" aria-current="page" data-lang="it">Italiano</a>
+              <a href="/nl/" class="lang-option" data-lang="nl">Nederlands</a>
+              <a href="/pl/" class="lang-option" data-lang="pl">Polski</a>
+              <a href="/pt/" class="lang-option" data-lang="pt">Português</a>
+              <a href="/pt-br/" class="lang-option" data-lang="pt-br">Português (BR)</a>
+              <a href="/ro/" class="lang-option" data-lang="ro">Română</a>
+              <a href="/sk/" class="lang-option" data-lang="sk">Slovenčina</a>
+              <a href="/uk/" class="lang-option" data-lang="uk">Українська</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-orb hero-orb--3"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-label">App di previsione fotovoltaica</p>
+        <h1><em>Rocket science</em><br>on your roof.</h1>
+        <p class="hero-desc">Motore fisico avanzato. Inserisci i parametri dei tuoi pannelli (orientamento, inclinazione, potenza di picco) e ottieni previsioni precise, calcolate con i modelli meteo e la fisica. Funziona con qualsiasi impianto, di qualsiasi marca.</p>
+        <div class="hero-actions">
+        <a href="#download" class="btn-primary">
+          Scarica ora
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <p class="hero-note">Disponibile su Android e iOS. Gratis.</p>
+        <div class="store-badges">
+          <div class="store-badges-row">
+            <a href="https://play.google.com/store/apps/details?id=com.volcast.app" target="_blank" rel="noopener" class="store-badge store-badge--active" aria-label="Google Play" data-umami-event="app_store_click" data-umami-event-store="google_play" data-umami-event-location="hero">
+              <svg viewBox="0 0 24 24" fill="#94A3B8" xmlns="http://www.w3.org/2000/svg"><path d="M3.61 1.814A1.82 1.82 0 0 0 3 3.266v17.468a1.82 1.82 0 0 0 .61 1.452l.076.06L14.04 12l-.003-.003.003-.003L3.686 1.754l-.076.06z"/><path d="m17.5 15.478-3.462-3.475.003-.003-3.462-3.475 3.462-3.475.078.045 4.105 2.333c1.173.666 1.173 1.757 0 2.424L17.5 15.478z" opacity=".7"/><path d="m17.578 15.523-3.54-3.52L3.686 22.247c.387.408 1.026.458 1.747.06l12.145-6.784z" opacity=".5"/><path d="M17.578 8.477 5.433 1.693C4.712 1.295 4.073 1.345 3.686 1.753L14.038 12l3.54-3.523z" opacity=".85"/></svg>
+              <div class="store-badge-text">
+                <small>Disponibile su</small>
+                <span>Google Play</span>
+              </div>
+            </a>
+            <a href="https://apps.apple.com/app/volcast-solar-forecast/id6758962799" target="_blank" rel="noopener" class="store-badge store-badge--active" aria-label="App Store" data-umami-event="app_store_click" data-umami-event-store="apple" data-umami-event-location="hero">
+              <svg viewBox="0 0 24 24" fill="#94A3B8" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div class="store-badge-text">
+                <small>Scarica su</small>
+                <span>App Store</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="hero-mockup">
+        <div class="hero-phone">
+          <img src="/img/it/forecast.png" alt="Volcast solar forecast app" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES
+       ============================================================ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Funzioni</p>
+        <h2 class="section-title">Motore fisico avanzato</h2>
+        <p class="section-desc">Funziona con qualsiasi impianto, di qualsiasi marca. Inserisci i parametri del tuo sistema e lascia lavorare la fisica.</p>
+      </div>
+      <div class="features-grid">
+        <div class="glass-card feature-card reveal">
+          <div class="feature-icon feature-icon--emerald">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          </div>
+          <h3>Previsioni basate sulla fisica</h3>
+          <p>Previsioni di produzione orarie e giornaliere, con un modello completo dell'irraggiamento, correzioni spettrali e dati meteo reali da più modelli numerici di previsione. Nessun collegamento all'impianto.</p>
+        </div>
+        <div class="glass-card feature-card reveal">
+          <div class="feature-icon feature-icon--indigo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+          </div>
+          <h3>Calibrazione automatica</h3>
+          <p>Registra la produzione reale e il filtro di Kalman impara il tuo impianto nel tempo. Più dati inserisci, più le previsioni diventano precise.</p>
+        </div>
+        <div class="glass-card feature-card feature-card-with-img reveal">
+          <div>
+            <div class="feature-icon feature-icon--emerald">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            </div>
+            <h3>Notifiche intelligenti</h3>
+            <p>La previsione serale per domani, un'allerta neve quando i pannelli rischiano di restare coperti e un avviso quando è il momento migliore per far partire gli elettrodomestici più energivori. Non perdere più una finestra di sole.</p>
+          </div>
+          <div class="feature-card-img">
+            <img src="/img/it/notifications.png" alt="Volcast notifications" loading="lazy">
+          </div>
+        </div>
+        <div class="glass-card feature-card feature-card-with-img reveal">
+          <div>
+            <div class="feature-icon feature-icon--indigo">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3>Widget per la schermata Home</h3>
+            <p>Widget a colpo d'occhio per Android e iOS con la previsione di oggi, quella di domani e una panoramica su più giorni, senza aprire l'app.</p>
+          </div>
+          <div class="feature-card-img">
+            <img src="/img/it/widgets.png" alt="Volcast widgets" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+       ============================================================ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Come funziona</p>
+        <h2 class="section-title">Pronto in pochi minuti</h2>
+        <p class="section-desc">Descrivi i tuoi pannelli (orientamento, inclinazione, potenza di picco) e inizia a prevedere.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>Inserisci i parametri dei pannelli</h3>
+          <p>Orientamento, inclinazione, potenza di picco, configurazione multi-stringa, fattore bifacciale e profilo dell'orizzonte. Non serve altro.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">2</div>
+          <h3>Ricevi la tua previsione</h3>
+          <p>Volcast unisce i dati meteo di più modelli di previsione al modello fisico del tuo impianto per prevedere la produzione oraria e giornaliera.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">3</div>
+          <h3>Calibra e ottimizza</h3>
+          <p>Registra la produzione reale e il modello si calibra da solo. Imposta notifiche e widget per restare un passo avanti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOME ASSISTANT
+       ============================================================ -->
+  <section class="section ha-section" id="home-assistant">
+    <div class="container">
+      <div class="ha-grid reveal">
+        <div class="ha-content">
+          <div class="ha-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            Integrazione Home Assistant
+          </div>
+          <h2>Porta la tua previsione in Home Assistant</h2>
+          <p>Installa l'integrazione ufficiale via HACS per l'esperienza migliore: Energy Dashboard, sensore di potenza in tempo reale, avvisi sul picco di produzione e aggiornamenti automatici. Oppure usa direttamente la REST API per configurazioni personalizzate.</p>
+          <p style="font-size: 14px; color: var(--text-muted);">Genera la tua chiave API nell'app Volcast (Premium). Nessun accesso all'impianto, nessun polling cloud: i dati arrivano direttamente dal motore Volcast.</p>
+        </div>
+        <div class="ha-code-blocks">
+          <!-- Tab switcher -->
+          <div class="ha-tabs">
+            <button class="ha-tab ha-tab--active" data-tab="hacs">Integrazione HACS</button>
+            <button class="ha-tab" data-tab="api">REST API</button>
+          </div>
+
+          <!-- HACS tab content -->
+          <div class="ha-tab-content ha-tab-content--active" data-tab-content="hacs">
+            <div class="ha-steps">
+              <div class="ha-step">
+                <div class="ha-step-num">1</div>
+                <div class="ha-step-text">
+                  <strong>Apri HACS</strong>
+                  <span>Apri HACS nel tuo Home Assistant.</span>
+                </div>
+              </div>
+              <div class="ha-step">
+                <div class="ha-step-num">2</div>
+                <div class="ha-step-text">
+                  <strong>Repository personalizzati</strong>
+                  <span>Clicca sul menu ⋮ (3 puntini) → Repository personalizzati.</span>
+                </div>
+              </div>
+              <div class="ha-step">
+                <div class="ha-step-num">3</div>
+                <div class="ha-step-text">
+                  <strong>Aggiungi il repository</strong>
+                  <span class="ha-step-url">https://github.com/volter-labs/volcast-ha-integration</span>
+                  <span>Aggiungi l'URL qui sopra come Integration.</span>
+                </div>
+              </div>
+              <div class="ha-step">
+                <div class="ha-step-num">4</div>
+                <div class="ha-step-text">
+                  <strong>Installa e riavvia</strong>
+                  <span>Clicca Install, poi riavvia Home Assistant.</span>
+                </div>
+              </div>
+              <div class="ha-step">
+                <div class="ha-step-num">5</div>
+                <div class="ha-step-text">
+                  <strong>Configura</strong>
+                  <span>Impostazioni → Dispositivi e servizi → Aggiungi integrazione → cerca "Volcast" → inserisci la tua chiave API vk_...</span>
+                </div>
+              </div>
+            </div>
+            <a href="https://github.com/volter-labs/volcast-ha-integration" target="_blank" rel="noopener" class="ha-github-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Vedi su GitHub
+            </a>
+            <div class="ha-sensors">
+              <p class="ha-sensors-title">Sensori inclusi</p>
+              <div class="ha-sensor-list">
+                <span class="ha-sensor-chip">Energia oggi (kWh)</span>
+                <span class="ha-sensor-chip">Energia domani (kWh)</span>
+                <span class="ha-sensor-chip">Potenza attuale (W)</span>
+                <span class="ha-sensor-chip">Picco di produzione</span>
+                <span class="ha-sensor-chip">Energy Dashboard</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- REST API tab content -->
+          <div class="ha-tab-content" data-tab-content="api">
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-block-title">Scarica la tua previsione</span>
+                <span class="code-block-lang">bash</span>
+              </div>
+              <pre><span class="code-comment"># Una sola chiamata API restituisce dati giornalieri, orari e a 5 minuti</span>
+curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
+  <span class="code-str">"https://volcast.app/api/forecast"</span></pre>
+            </div>
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-block-title">Risposta dell'API</span>
+                <span class="code-block-lang">json</span>
+              </div>
+              <pre>{
+  <span class="code-key">"state"</span>: <span class="code-num">12.4</span>,
+  <span class="code-key">"unit_of_measurement"</span>: <span class="code-str">"kWh"</span>,
+  <span class="code-key">"attributes"</span>: {
+    <span class="code-key">"forecast"</span>: {
+      <span class="code-key">"2026-03-17"</span>: { <span class="code-key">"energy_kwh"</span>: <span class="code-num">12.4</span>, <span class="code-key">"peak_w"</span>: <span class="code-num">3200</span> },
+      <span class="code-key">"2026-03-18"</span>: { <span class="code-key">"energy_kwh"</span>: <span class="code-num">8.1</span>, <span class="code-key">"peak_w"</span>: <span class="code-num">2800</span> }
+    },
+    <span class="code-key">"hourly"</span>: { <span class="code-comment">/* 24 valori orari al giorno */</span> },
+    <span class="code-key">"detailed"</span>: { <span class="code-comment">/* 288 valori da 5 minuti al giorno */</span> },
+    <span class="code-key">"api_version"</span>: <span class="code-num">2</span>
+  }
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST & PRIVACY
+       ============================================================ -->
+  <section class="trust-strip" id="trust">
+    <div class="container">
+      <div class="trust-grid reveal">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <!-- Shield icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Zero tracciamento</h3>
+          <p>Nessuna analitica, nessuna telemetria, nessuna profilazione. I dati sul tuo utilizzo restano sul tuo dispositivo.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <!-- No-ads / eye-off icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></svg>
+          </div>
+          <h3>Nessuna pubblicità</h3>
+          <p>Niente banner, niente interstiziali, niente contenuti sponsorizzati. Mai.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <!-- Cloud-off icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 22 22"/><path d="M10 5a7.002 7.002 0 0 1 8.838 8.834"/><path d="M17.5 21H9a7 7 0 0 1-6.58-9.29"/><path d="M22 18a4.984 4.984 0 0 0-.516-2.228"/></svg>
+          </div>
+          <h3>Nessun accesso all'impianto</h3>
+          <p>Volcast non si collega mai al tuo inverter né ad altri dispositivi. Tutte le previsioni sono calcolate dai dati dei modelli meteo e dai parametri dei tuoi pannelli.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DOWNLOAD
+       ============================================================ -->
+  <section class="section download-section" id="download">
+    <div class="container">
+      <div class="glass-card download-card reveal">
+        <p class="section-label">Scarica Volcast</p>
+        <h2 class="section-title">Rocket science on your roof</h2>
+        <p class="section-desc" style="margin: 0 auto;">Disponibile su Android e iOS. Scarica gratis e inizia a prevedere.</p>
+
+        <div class="download-stores">
+          <a href="https://play.google.com/store/apps/details?id=com.volcast.app" target="_blank" rel="noopener" class="download-store-badge" data-umami-event="app_store_click" data-umami-event-store="google_play" data-umami-event-location="download_section">
+            <svg viewBox="0 0 24 24" fill="#94A3B8" xmlns="http://www.w3.org/2000/svg"><path d="M3.61 1.814A1.82 1.82 0 0 0 3 3.266v17.468a1.82 1.82 0 0 0 .61 1.452l.076.06L14.04 12l-.003-.003.003-.003L3.686 1.754l-.076.06z"/><path d="m17.5 15.478-3.462-3.475.003-.003-3.462-3.475 3.462-3.475.078.045 4.105 2.333c1.173.666 1.173 1.757 0 2.424L17.5 15.478z" opacity=".7"/><path d="m17.578 15.523-3.54-3.52L3.686 22.247c.387.408 1.026.458 1.747.06l12.145-6.784z" opacity=".5"/><path d="M17.578 8.477 5.433 1.693C4.712 1.295 4.073 1.345 3.686 1.753L14.038 12l3.54-3.523z" opacity=".85"/></svg>
+            <div class="store-badge-text">
+              <small>Disponibile su</small>
+              <span>Google Play</span>
+            </div>
+          </a>
+          <a href="https://apps.apple.com/app/volcast-solar-forecast/id6758962799" target="_blank" rel="noopener" class="download-store-badge" data-umami-event="app_store_click" data-umami-event-store="apple" data-umami-event-location="download_section">
+            <svg viewBox="0 0 24 24" fill="#94A3B8" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="store-badge-text">
+              <small>Scarica su</small>
+              <span>App Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title">Domande frequenti</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            Quanto sono precise le previsioni di produzione?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast usa un modello fisico completo dell'irraggiamento, unito ai dati meteo di più modelli numerici di previsione e ai parametri specifici del tuo impianto. Dopo la calibrazione con la produzione reale l'accuratezza si aggira tipicamente intorno all'85% nelle giornate serene e poco nuvolose. Con nuvolosità intensa la previsione è più difficile per qualsiasi sistema, ma Volcast resta più preciso delle app meteo generiche.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Serve un inverter smart o un hardware particolare?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">No. Volcast funziona con qualsiasi impianto fotovoltaico senza collegarsi all'inverter: ti bastano i parametri dei pannelli, cioè orientamento, inclinazione e potenza di picco, e volendo anche configurazione multi-stringa, fattore bifacciale e profilo dell'orizzonte.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Volcast è gratis?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast ha un piano gratuito con previsioni a 2 giorni. Premium sblocca la previsione completa a 7 giorni, la calibrazione automatica, la REST API per Home Assistant, lo storico di produzione e altro ancora.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Su quali piattaforme è disponibile?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast è disponibile su Android (Google Play) e iOS (App Store). I widget per la schermata Home funzionano sia su Android (Glance) sia su iOS (WidgetKit).</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Come funziona la calibrazione automatica?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Registri la produzione giornaliera reale, un solo numero. Dopo 5 o più rilevazioni il filtro di Kalman confronta la produzione reale con il modello fisico e affina i parametri specifici del tuo impianto, tenendo conto di ombreggiamento, degrado dei moduli e fattori locali.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Come funziona l'integrazione con Home Assistant?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner">Installa l'integrazione ufficiale Volcast via HACS, bastano 3 clic. Ottieni il supporto per l'Energy Dashboard, i sensori di energia di oggi e domani, la potenza istantanea e gli avvisi sul picco di produzione. Inserisci la chiave API (generata nell'app, funzione Premium) e tutti i sensori compaiono automaticamente. Per integrazioni personalizzate è disponibile anche una REST API.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 18 L40 62 L62 18" stroke="#00FF9D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="40" cy="12" r="4" fill="#00FF9D"/>
+        </svg>
+        <span><strong>Volcast</strong> — Rocket science on your roof.</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/blog/it/">Blog</a></li>
+        <li><a href="/blog/it/q/">Q&amp;A</a></li>
+        <li><a href="mailto:hello@volcast.app">hello@volcast.app</a></li>
+        <li><a href="/privacy">Informativa sulla privacy</a></li>
+        <li><a href="/terms">Termini di servizio</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JS
+       ============================================================ -->
+  <script>
+    // Language preference — save on visit
+    localStorage.setItem('volcast-lang', 'it');
+
+    // HA section tab switcher
+    document.querySelectorAll('.ha-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var target = this.getAttribute('data-tab');
+        document.querySelectorAll('.ha-tab').forEach(function(t) { t.classList.remove('ha-tab--active'); });
+        document.querySelectorAll('.ha-tab-content').forEach(function(c) { c.classList.remove('ha-tab-content--active'); });
+        this.classList.add('ha-tab--active');
+        document.querySelector('[data-tab-content="' + target + '"]').classList.add('ha-tab-content--active');
+      });
+    });
+
+    // Nav scroll effect
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Mobile nav toggle
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function() {
+      links.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() { links.classList.remove('open'); });
+    });
+
+    // Language switcher
+    var langSwitcher = document.getElementById('langSwitcher');
+    var langTrigger = document.getElementById('langTrigger');
+    langTrigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langSwitcher.classList.toggle('open');
+    });
+    document.addEventListener('click', function() {
+      langSwitcher.classList.remove('open');
+    });
+    // Save lang preference on click
+    document.querySelectorAll('.lang-option').forEach(function(opt) {
+      opt.addEventListener('click', function() {
+        var lang = this.getAttribute('data-lang');
+        if (lang) localStorage.setItem('volcast-lang', lang);
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.parentElement;
+        var answer = item.querySelector('.faq-answer');
+        var isOpen = item.classList.contains('open');
+
+        document.querySelectorAll('.faq-item.open').forEach(function(other) {
+          if (other !== item) {
+            other.classList.remove('open');
+            other.querySelector('.faq-answer').style.maxHeight = '0';
+          }
+        });
+
+        if (isOpen) {
+          item.classList.remove('open');
+          answer.style.maxHeight = '0';
+        } else {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Scroll reveal
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var siblings = entry.target.parentElement.querySelectorAll('.reveal');
+          var index = Array.from(siblings).indexOf(entry.target);
+          entry.target.style.transitionDelay = (index * 80) + 'ms';
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+  </script>
+</body>
+</html>

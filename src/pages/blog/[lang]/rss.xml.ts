@@ -3,8 +3,13 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { LANGS, t, type BlogLang } from '../../../data/i18n';
 
-export function getStaticPaths() {
-  return LANGS.map((lang) => ({ params: { lang } }));
+// Tylko języki z treścią — pusty kanał RSS jest technicznie poprawny, ale nie
+// ma powodu go publikować ani reklamować autodiscovery z <head>.
+export async function getStaticPaths() {
+  const all = await getCollection('blog', ({ data }) => !data.draft);
+  return LANGS
+    .filter((lang) => all.some((p) => p.data.lang === lang))
+    .map((lang) => ({ params: { lang } }));
 }
 
 export async function GET(context: APIContext) {

@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "astro dev",
     "test": "node --test",
+    "check:i18n": "node scripts/check-translations.js",
     "build": "astro check && astro build && npx pagefind --site .vercel/output/static --glob \"blog/**/*.html\"",
     "preview": "astro preview"
   },

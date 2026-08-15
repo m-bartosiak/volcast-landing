@@ -1,13 +1,24 @@
 ---
 export const prerender = false;
 
+import { LANGS } from '../../data/i18n';
+
+// Negocjacja języka dla gołego /blog/. Wcześniej był to zagnieżdżony ternary
+// pl → de → en, który przy każdym nowym języku trzeba było pamiętać, żeby
+// rozszerzyć — i po dodaniu it/fr/ro wysyłałby te trzy rynki na blog angielski
+// mimo kompletnej treści w ich językach. Pętla po LANGS nie ma tej wady.
+//
+// Kolejność preferencji użytkownika jest respektowana: iterujemy po jego liście
+// z nagłówka, nie po naszej, więc przeglądarka z "fr-FR, en;q=0.9" dostaje
+// francuski, a nie angielski tylko dlatego, że en jest pierwsze w LANGS.
 const acceptLang = Astro.request.headers.get('accept-language') || '';
-const prefs = acceptLang.toLowerCase().split(',').map(l => l.trim());
-const lang = prefs.some(l => l.startsWith('pl'))
-  ? 'pl'
-  : prefs.some(l => l.startsWith('de'))
-    ? 'de'
-    : 'en';
+const prefs = acceptLang
+  .toLowerCase()
+  .split(',')
+  .map((part) => part.split(';')[0].trim())
+  .filter(Boolean);
+
+const lang = prefs.map((p) => LANGS.find((l) => p === l || p.startsWith(`${l}-`))).find(Boolean) ?? 'en';
 
 return Astro.redirect(`/blog/${lang}/`, 302);
 ---

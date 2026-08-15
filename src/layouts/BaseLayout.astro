@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { OG_LOCALE, type BlogLang } from '../data/i18n';
+import { LANGS, OG_LOCALE, type BlogLang } from '../data/i18n';
 
 interface Props {
   title: string;
@@ -32,8 +32,21 @@ const {
   noindex,
 } = Astro.props;
 
-const otherLang = lang === 'en' ? 'pl' : 'en';
-const siteTitle = `${title} — Volcast Blog`;
+// Tytuł idzie do <title> bez dopisku marki, i to jest zmiana świadoma.
+//
+// Dopisek " — Volcast Blog" kosztował 15 znaków na każdej z 165 stron wpisów
+// i Q&A. Zmierzone na buildzie: z dopiskiem 153 z 165 tytułów (93%) przekracza
+// 60 znaków, bez niego 81 (49%). Mediana samego tytułu to równo 60 — autorzy
+// pisali pod ten limit, a dopisek wypychał ponad niego prawie wszystko.
+//
+// Obcięcie tytułu nie obniża pozycji: Google czyta cały tag i nie ma progu,
+// za którym słowa przestają się liczyć. Kosztuje CTR, bo ogon zamienia się
+// w wielokropek — czyli płaciliśmy widocznością fraz tematycznych za powtórzenie
+// marki, którą Google i tak potrafi pokazać sam, jeśli dostanie ją osobno
+// (og:site_name + JSON-LD WebSite niżej). Do tego doszła ta sama patologia,
+// którą PR #11 właśnie leczył na listingach: 165 stron konkurujących o zapytanie
+// brandowe ze stroną produktową, która ma je wygrywać.
+const siteTitle = title;
 const displayOgTitle = ogTitle || title;
 const displayOgDescription = ogDescription || description;
 
@@ -49,6 +62,12 @@ const displayOgDescription = ogDescription || description;
 //
 // `alternates` przekazujemy niezależnie od `noindex`, bo Header buduje z nich
 // przełącznik języka — to nawigacja dla czytelnika, nie sygnał dla wyszukiwarki.
+// Awaryjna ścieżka dla stron podających pojedynczy `translationUrl` zamiast
+// listy. Dawniej wybierała drugi język binarnie (`lang === 'en' ? 'pl' : 'en'`),
+// co przy czterech i więcej językach zwyczajnie kłamało. Dziś żadna strona tędy
+// nie chodzi — wszystkie podają `alternates` — ale zostaje poprawne, a nie
+// przypadkowo działające.
+const otherLang = LANGS.find((l) => l !== lang) ?? 'en';
 const rawAlternates =
   alternates ?? (translationUrl ? [{ lang: otherLang, url: translationUrl }] : []);
 const hreflangLinks = [{ lang, url: canonicalUrl }, ...rawAlternates].map((a) => ({
@@ -72,6 +91,20 @@ const xDefaultUrl =
     <meta name="keywords" content={keywords.join(', ')} />
   )}
 
+  <!-- Nazwa witryny dla wyników wyszukiwania. To jest wsparty przez Google
+       sposób pokazania marki obok wyniku; wcześniej płaciliśmy za to dopiskiem
+       w każdym <title>. Musi siedzieć na stronie głównej serwisu ORAZ na
+       podstronach, żeby zadziałał — stąd w layoucie, nie w jednym miejscu. -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Volcast',
+      url: new URL('/', Astro.site).href,
+    })}
+  />
+
   <!-- Canonical & hreflang -->
   <link rel="canonical" href={canonicalUrl} />
   {!noindex && (
@@ -90,6 +123,11 @@ const xDefaultUrl =
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
   <meta property="og:locale" content={OG_LOCALE[lang] ?? 'en_US'} />
+  <!-- Nazwa witryny podana osobno, zamiast doklejana do każdego <title>.
+       Google od 2022 renderuje ją w wynikach sam, jeśli dostanie ją tą drogą
+       albo z JSON-LD WebSite (oba są niżej i tu) — więc marka pokazuje się
+       w SERP-ie za darmo, nie za 15 znaków tytułu. -->
+  <meta property="og:site_name" content="Volcast" />
   <!-- Ten sam identyfikator aplikacji Meta co na stronach lądowania — wycisza
        ostrzeżenie Sharing Debuggera i przypina udostępnienia do Domain Insights. -->
   <meta property="fb:app_id" content="856840077472517" />

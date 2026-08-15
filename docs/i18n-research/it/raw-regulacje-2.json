@@ -1,0 +1,2070 @@
+[
+  {
+    "id": "IT-DETR-2026-RATE",
+    "claim": "W 2026 r. detrazione fiscale za ristrutturazione edilizia (art. 16-bis TUIR / art. 16 DL 63/2013) wynosi 36% dla nieruchomosci innych niz glowne mieszkanie oraz 50% dla abitazione principale — Agenzia delle Entrate: \"per le spese sostenute negli anni 2025 e 2026, la detrazione spetta nella misura del 36% (ovvero del 50% in caso di abitazione principale)\".",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36",
+      "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: Detrazione fotowoltaika Wlochy 2026 — stawka; Q&A: \"Ile wynosi ulga na fotowoltaike we Wloszech w 2026?\""
+  },
+  {
+    "id": "IT-DETR-2026-LIMIT",
+    "claim": "Limit wydatku kwalifikowanego dla detrazione ristrutturazione edilizia w 2026 r. wynosi 96.000 EUR na jednostke nieruchomosci (per unita immobiliare) — identycznie dla stawki 36% i 50%.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: limit wydatku; Q&A: \"Jaki jest maksymalny koszt objety ulga?\""
+  },
+  {
+    "id": "IT-DETR-2026-RATE-COUNT",
+    "claim": "Detrazione za ristrutturazione edilizia (w tym fotowoltaika) jest rozliczana w 10 rownych ratach rocznych — \"la detrazione deve essere ripartita in dieci quote annuali di pari importo\".",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie",
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: mechanika odliczenia; Q&A: \"Przez ile lat odliczam ulge?\""
+  },
+  {
+    "id": "IT-DETR-2026-PRIMA-CASA-COND",
+    "claim": "Podwyzszona stawka 50% w 2026 r. przysluguje wylacznie gdy spelnione sa lacznie dwa warunki: nieruchomosc jest abitazione principale oraz wydatek ponosi wlasciciel lub posiadacz innego prawa rzeczowego (usufrutto, uso, abitazione, nuda proprieta). Najemca lub comodatario nie ma prawa do 50% — stosuje sie 36%.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36",
+      "https://www.lavoripubblici.it/news/guida-agenzia-entrate-ristrutturazioni-2026-detrazione-50-aliquote-37437"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: kto dostaje 50% a kto 36%; Q&A: \"Czy najemca dostanie 50%?\""
+  },
+  {
+    "id": "IT-DETR-2026-LEGALBASIS",
+    "claim": "Utrzymanie w 2026 r. stawek 50%/36% wynika z Legge di Bilancio 2026 — Legge 30 dicembre 2025, n. 199 (opublikowana w Gazzetta Ufficiale n. 301 z 30.12.2025, w mocy od 01.01.2026), art. 1 comma 22, ktory zmienil art. 16 comma 1 DL 63/2013 rozciagajac na 2026 stawki przewidziane dla 2025.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.edotto.com/articolo/ristrutturazioni-edilizie-2026-guida-aggiornata-e-proroga-detrazione-50",
+      "https://www.confindustria.an.it/legge-di-bilancio-2026-principali-novita-fiscali-l-n-199-2025/",
+      "https://anceverona.it/wp-content/uploads/2026/01/Dossier-Ance-sulla-Legge-di-Bilancio-2026-Gennaio-2026.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: podstawa prawna, przypis; Q&A: \"Na jakiej podstawie prawnej dziala ulga w 2026?\""
+  },
+  {
+    "id": "IT-DETR-2024",
+    "claim": "Dla wydatkow poniesionych do 31 grudnia 2024 r. detrazione wynosila jednolicie 50% z limitem 96.000 EUR na jednostke nieruchomosci — bez rozroznienia na abitazione principale i pozostale nieruchomosci (AdE: \"il beneficio e elevato al 50% e il limite massimo di spesa e innalzato a 96.000 euro per unita immobiliare\", okres 26.06.2012 – 31.12.2024).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: tabela zmian 2024→2025→2026; ostrzezenie przed cytowaniem starej liczby 50% dla wszystkich"
+  },
+  {
+    "id": "IT-DETR-2025",
+    "claim": "Dla wydatkow poniesionych w 2025 r. detrazione wynosi 36% (albo 50% dla abitazione principale) na maks. 96.000 EUR — rozroznienie prima casa / pozostale wprowadzila Legge 30 dicembre 2024, n. 207 (Legge di Bilancio 2025), obowiazujaca od 01.01.2025.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36",
+      "https://portale.assimpredilance.it/articoli/legge-di-bilancio-2025-bonus-in-edilizia"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: tabela zmian 2024→2025→2026"
+  },
+  {
+    "id": "IT-DETR-2027",
+    "claim": "Stan na 2027 jest juz znany i zapisany w przepisach: dla wydatkow poniesionych w 2027 r. detrazione spada do 30% (albo 36% dla abitazione principale), nadal na maks. 96.000 EUR na jednostke nieruchomosci — AdE: \"per le spese sostenute nel 2027, la detrazione e del 30% (ovvero del 36% in caso di abitazione principale)\".",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja \"co bedzie w 2027\"; Q&A: \"Czy oplaca sie czekac do 2027?\" (odpowiedz: nie, stawka spada)"
+  },
+  {
+    "id": "IT-DETR-2028-2033",
+    "claim": "Regula ogolna wpisana w przepisy przewiduje, ze dla wydatkow poniesionych od 1 stycznia 2025 do 31 grudnia 2033 stawka detrazione zostaje obnizona do 30%, z czasowymi wyjatkami obowiazujacymi w latach 2025-2027; oznacza to, ze od 2028 r. dodatkowa stawka dla abitazione principale przestaje obowiazywac.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/detrristredil36/schinfodetrristredil36"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: horyzont dlugoterminowy (przypis, nie naglowek — do 2028 przepisy moga sie zmienic)"
+  },
+  {
+    "id": "IT-FV-ELIGIBLE",
+    "claim": "Instalacja fotowoltaiczna kwalifikuje sie do detrazione na podstawie art. 16-bis, comma 1, lettera h) TUIR (DPR 917/1986) — interwencje ukierunkowane na oszczednosc energetyczna, ze szczegolnym uwzglednieniem instalacji wykorzystujacych zrodla odnawialne. Nie jest wymagany szerszy remont: instalacja musi byc bezposrednio na uslugach budynku mieszkalnego i zaspokajac jego potrzeby energetyczne.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.fiscooggi.it/portale/-/installazione-sistema-di-accumulo-via-libera-alla-detrazione-del-50-",
+      "https://www.agenziaentrate.gov.it/portale/documents/d/guest/ristrutturazioni_edilizie_le_agevolazioni_fiscali-1"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: podstawa kwalifikacji FV; Q&A: \"Czy musze robic remont zeby dostac ulge na PV?\""
+  },
+  {
+    "id": "IT-ACC-ELIGIBLE",
+    "claim": "System magazynowania energii (sistema di accumulo / bateria) jest objety ta sama detrazione co instalacja PV, pod warunkiem ze jest funkcjonalnie polaczony z instalacja fotowoltaiczna — moze byc zainstalowany jednoczesnie z instalacja PV albo pozniej, na instalacji juz istniejacej. Podstawa: art. 16-bis, comma 1, lett. h) TUIR; stanowisko AdE w Risposta a interpello n. 8 del 19 settembre 2018 oraz Circolare n. 7/E del 27 aprile 2018.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.fiscooggi.it/portale/-/installazione-sistema-di-accumulo-via-libera-alla-detrazione-del-50-",
+      "https://www.agenziaentrate.gov.it/portale/documents/20143/307350/Interpello+8+2018_Risposta+n.+8.pdf/bb6dad88-cdaa-e4f8-2974-c9c05728dfeb"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja o baterii; Q&A: \"Czy bateria tez sie odlicza?\""
+  },
+  {
+    "id": "IT-ACC-LIMIT-SHARED",
+    "claim": "Limit 96.000 EUR jest wspolny (unico) dla instalacji fotowoltaicznej i systemu magazynowania — nie sa to dwa odrebne limity. Jesli bateria jest kupiona w pozniejszym roku podatkowym niz instalacja PV, do wyliczenia pozostalego limitu trzeba uwzglednic wydatki poniesione wczesniej na instalacje PV.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.fiscooggi.it/portale/-/installazione-sistema-di-accumulo-via-libera-alla-detrazione-del-50-",
+      "https://www.lavoripubblici.it/news/fotovoltaico-accumulo-detrazione-50-36-regole-enea-37724"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: pulapka limitu; Q&A: \"Czy bateria ma osobny limit 96.000 EUR?\" (odpowiedz: nie)"
+  },
+  {
+    "id": "IT-ENEA-90D",
+    "claim": "Dla instalacji fotowoltaicznej i systemu magazynowania korzystajacych z detrazione obowiazkowe jest przeslanie danych do ENEA w ciagu 90 dni od daty zakonczenia prac lub odbioru (collaudo); obowiazek dotyczy prac zakonczonych od 1 stycznia 2019 r.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.lavoripubblici.it/news/fotovoltaico-accumulo-detrazione-50-36-regole-enea-37724",
+      "https://www.edilportale.com/news/2026/03/normativa/quando-spetta-la-detrazione-per-l-accumulo-fotovoltaico_109722_15.html"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: checklista formalnosci; Q&A: \"Co musze zglosic do ENEA i w jakim terminie?\""
+  },
+  {
+    "id": "IT-BONIFICO",
+    "claim": "Warunkiem skorzystania z detrazione jest platnosc przelewem sledzonym (bonifico parlante / pagamento tracciabile) — platnosc gotowka lub zwyklym przelewem bez wymaganych danych pozbawia prawa do odliczenia.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie",
+      "https://www.myenergy.it/blog/incentivi-e-agevolazioni/detrazione-50-ristrutturazione-fotovoltaico-2026/"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: checklista formalnosci; Q&A: \"Jak muszę zaplacic instalatorowi?\""
+  },
+  {
+    "id": "IT-INCOME-CAP-75K",
+    "claim": "Od 2025 r. dla podatnikow o dochodzie calkowitym powyzej 75.000 EUR obowiazuje laczny pulap odliczalnych wydatkow (oneri e spese detraibili), obejmujacy takze detrazioni edilizie; pulap dotyczy sumy wszystkich odliczen, a nie pojedynczej ulgi — moze wiec ograniczyc realna korzysc z ulgi na fotowoltaike.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.agenziaentrate.gov.it/portale/documents/d/guest/ristrutturazioni_edilizie_le_agevolazioni_fiscali-1",
+      "https://www.lavoripubblici.it/news/guida-agenzia-entrate-ristrutturazioni-2026-detrazione-50-aliquote-37437"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: ostrzezenie dla lepiej zarabiajacych; Q&A: \"Czy kazdy odliczy pelna kwote?\""
+  },
+  {
+    "id": "IT-IVA-10-FV",
+    "claim": "Do instalacji fotowoltaicznych stosuje sie obnizona stawke IVA 10% zamiast 22%, na podstawie Tabella A, parte III, n. 127-quinquies DPR 633/1972 (\"impianti di produzione e reti di distribuzione calore-energia e di energia elettrica da fonte solare-fotovoltaica ed eolica\"), n. 127-septies (uslugi/appalti zwiazane z ich budowa) oraz n. 127-sexies (beni finiti dostarczone do budowy tych instalacji).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.ecnews.it/aliquota-ridotta-per-lacquisto-di-beni-per-impianti-di-produzione-di-energia-elettrica/",
+      "https://www.agenziaentrate.gov.it/portale/documents/20143/2665894/Principio+di+diritto+n.+15+del+14+settembre+2020.pdf/795abecc-57b7-8b41-b45c-6cb5a4598bef",
+      "https://www.ancebrescia.it/2007/impianti-di-produzione-di-calore-e-di-energia-elettrica-da-fonte-solare-fotovoltaica-o-eolica-aliquota-iva-applicabile-risoluzione-n-269e-del-27907/"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: sekcja IVA; Q&A: \"Jaki VAT zaplace za instalacje PV we Wloszech?\""
+  },
+  {
+    "id": "IT-IVA-269E",
+    "claim": "Agenzia delle Entrate w Risoluzione n. 269/E z 27 wrzesnia 2007 r. potwierdzila stosowanie stawki IVA 10% do instalacji produkcji energii elektrycznej ze zrodla solarno-fotowoltaicznego i wiatrowego, ograniczajac przy tym stawke z n. 127-sexies wylacznie do beni finiti (towarow o zakonczonym procesie produkcyjnym, w koncowej fazie komercjalizacji, nabywanych do bezposredniego uzycia przy budowie instalacji) — z wylaczeniem materii prime i semilavorati.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.ancebrescia.it/2007/impianti-di-produzione-di-calore-e-di-energia-elettrica-da-fonte-solare-fotovoltaica-o-eolica-aliquota-iva-applicabile-risoluzione-n-269e-del-27907/",
+      "https://www.ecnews.it/aliquota-ridotta-per-lacquisto-di-beni-per-impianti-di-produzione-di-energia-elettrica/"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: przypis do sekcji IVA (niuans beni finiti vs materialy)"
+  },
+  {
+    "id": "IT-IVA-ACC-CONTEXT",
+    "claim": "Bateria magazynujaca zafakturowana lacznie z instalacja fotowoltaiczna w ramach prac remontowych korzysta z IVA 10% jako integralny element instalacji; brak jest natomiast potwierdzonego zrodlem pierwotnym stanowiska co do stawki IVA dla samodzielnego zakupu baterii bez rownoczesnej budowy instalacji PV.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.fotovoltaicoin.it/fotovoltaico-iva-10-o-20/",
+      "https://intesagreen.com/iva-impianti-fotovoltaici/"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "low",
+    "usedIn": "Post glowny: sekcja IVA — do podania z zastrzezeniem; Q&A: \"Jaki VAT na sama baterie?\" (odpowiedz z zastrzezeniem)"
+  },
+  {
+    "id": "IT-SB-2026-NONE",
+    "claim": "Superbonus nie jest dostepny dla osob prywatnych na wydatki poniesione w 2026 r. w zwyklym trybie — Agenzia delle Entrate stwierdza wprost, ze zaden przepis nie przedluza Superbonusa poza rok 2025 (\"Nessuna disposizione proroga il Superbonus oltre il 2025\").",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www1.agenziaentrate.gov.it/web_app_entrate/guida_superbonus.html",
+      "https://www.agenziaentrate.gov.it/portale/superbonus-110-"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Superbonus — kluczowe zaprzeczenie; Q&A: \"Czy Superbonus 110% jeszcze dziala w 2026?\""
+  },
+  {
+    "id": "IT-SB-RATES-HISTORY",
+    "claim": "Historyczne stawki Superbonusa: 110% dla wydatkow poniesionych do 31 grudnia 2023 r., 70% dla wydatkow w 2024 r., 65% dla wydatkow w 2025 r.; stawka 65% w 2025 przyslugiwala wylacznie gdy do 15 pazdziernika 2024 r. zlozono CILA (interwencje niekondominialne), podjeto uchwale zgromadzenia i zlozono CILA (kondominia) albo zlozono wniosek o pozwolenie na budowe (rozbiorka i odbudowa).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www1.agenziaentrate.gov.it/web_app_entrate/guida_superbonus.html",
+      "https://www.agenziaentrate.gov.it/portale/superbonus-110-"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Superbonus — kontekst historyczny; Q&A: \"Ile wynosil Superbonus w poszczegolnych latach?\""
+  },
+  {
+    "id": "IT-SB-RATE-COUNT",
+    "claim": "Superbonus dla wydatkow poniesionych od 1 stycznia 2022 r. rozliczany jest w 4 rownych ratach rocznych (nie 10 jak detrazione ristrutturazione); dla wydatkow z 2023 r. mozliwy byl wybor podzialu na 10 rat przez deklaracje uzupelniajaca.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www1.agenziaentrate.gov.it/web_app_entrate/guida_superbonus.html",
+      "https://www.agenziaentrate.gov.it/portale/superbonus-110-"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Superbonus — roznica mechaniki wobec bonus casa"
+  },
+  {
+    "id": "IT-SB-SISMA",
+    "claim": "Jedyny wyjatek od wygasniecia Superbonusa dotyczy gmin dotknietych zdarzeniami sejsmicznymi od 1 kwietnia 2009 r., w ktorych oglaszano stan wyjatkowy: stawka 110% ma zastosowanie do budynkow mieszkalnych uszkodzonych i uznanych za niezdatne do zamieszkania (karty AeDES z wynikiem B, C lub E).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www1.agenziaentrate.gov.it/web_app_entrate/guida_superbonus.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: przypis o wyjatku sejsmicznym (nisza — nie eksponowac)"
+  },
+  {
+    "id": "IT-REN-DECREE",
+    "claim": "Reddito Energetico Nazionale opiera sie na Fondo Nazionale Reddito Energetico ustanowionym dekretem MASE z 8 sierpnia 2023 r. (DM REN); podmiotem zarzadzajacym jest GSE, a wklad wyplacany jest bezposrednio Soggetto Realizzatore (wykonawcy), nie beneficjentowi.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/fotovoltaico/reddito-energetico"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Reddito Energetico — jak dziala; Q&A: \"Kto dostaje pieniadze z Reddito Energetico?\""
+  },
+  {
+    "id": "IT-REN-BUDGET",
+    "claim": "Reddito Energetico Nazionale mial dotad dwa nabory: bando 2024 z budzetem 100.000.000 EUR (80.000.000 EUR dla regionow poludniowych — Abruzzo, Basilicata, Calabria, Campania, Molise, Puglia, Sardegna, Sicilia — oraz 20.000.000 EUR dla pozostalych regionow i prowincji autonomicznych) i bando 2025 z budzetem 103.166.077 EUR (82.290.554 EUR Sud/Isole + 20.875.523 EUR Centro-Nord).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/fotovoltaico/reddito-energetico",
+      "https://www.gse.it/servizi-per-te/news/reddito-energetico-nazionale-esaurite-le-risorse-per-il-centro-nord"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Reddito Energetico — skala programu; Q&A: \"Ile pieniedzy jest w programie?\""
+  },
+  {
+    "id": "IT-REN-ELIGIBILITY",
+    "claim": "Kwalifikacja do Reddito Energetico Nazionale wymaga: ISEE ponizej 15.000 EUR (lub ponizej 30.000 EUR dla rodzin z co najmniej czworgiem dzieci na utrzymaniu), instalacji PV o mocy 2-6 kW, nieruchomosci bedacej glownym miejscem zamieszkania rodziny, kategorii katastralnej grupy A z wylaczeniem A1, A8, A9 i A10, waznego prawa rzeczowego do powierzchni montazu oraz obowiazkowego ubezpieczenia multi-risk na co najmniej 10 lat, serwisu i monitoringu wydajnosci.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/fotovoltaico/reddito-energetico"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Reddito Energetico — kto sie kwalifikuje; Q&A: \"Czy sie kwalifikuje do Reddito Energetico?\""
+  },
+  {
+    "id": "IT-REN-STATUS",
+    "claim": "Na dzien 14 sierpnia 2026 r. oba dotychczasowe nabory Reddito Energetico Nazionale (2024 i 2025) sa zamkniete z powodu wyczerpania srodkow; w 2025 r. pula dla Sud/Isole (82.290.554 EUR) wyczerpala sie tego samego dnia, w ktorym otwarto sportello, a pula Centro-Nord (20.875.523 EUR) do 23 maja 2025 r. Nabor na 2026 r. nie zostal opublikowany i GSE nie podal daty otwarcia.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/fotovoltaico/reddito-energetico",
+      "https://www.qualenergia.it/articoli/reddito-energetico-subito-esaurite-risorse-2025/",
+      "https://www.myenergy.it/blog/incentivi-e-agevolazioni/reddito-energetico-nazionale-2026-requisiti-importi-e-stato-del-bando/"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: sekcja Reddito Energetico — status naboru; Q&A: \"Czy moge dzis zlozyc wniosek?\" (odpowiedz: nie, nabor zamkniety)"
+  },
+  {
+    "id": "IT-REN-REOPEN",
+    "claim": "GSE przewiduje mozliwosc ponownego otwarcia sportello Reddito Energetico bez nowego naboru, jesli w wyniku rezygnacji i wykluczen uwolni sie co najmniej 5.000.000 EUR srodkow rezydualnych.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/news/reddito-energetico-nazionale-esaurite-le-risorse-per-il-centro-nord"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Reddito Energetico — co dalej; Q&A: \"Czy warto sledzic program?\""
+  },
+  {
+    "id": "IT-REN-18M",
+    "claim": "Dekret dyrektorski MASE n. 474 z 20 listopada 2025 r. wydluzyl maksymalny termin na podlaczenie i uruchomienie instalacji finansowanych z Reddito Energetico z 12 do 18 miesiecy, liczonych od pierwszej daty przyjecia wniosku o dostep do wkladu; GSE poinformowal o tym 8 stycznia 2026 r. i zapowiedzial brak dalszych przedluzen.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/news/reddito-energetico-nazionale-prorogato-il-termine-per-lentrata-in-esercizio-degli-impianti",
+      "https://www.lavoripubblici.it/news/reddito-energetico-18-mesi-impianti-fotovoltaici-proroga-gse-37866"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny: sekcja Reddito Energetico — terminy dla juz zakwalifikowanych"
+  },
+  {
+    "id": "IT-CT3-DECREE",
+    "claim": "Conto Termico 3.0 zostal wprowadzony dekretem ministerialnym z 7 sierpnia 2025 r., opublikowanym w Gazzetta Ufficiale n. 224 z 26 wrzesnia 2025 r., i wszedl w zycie 25 grudnia 2025 r.; jest to dotacja bezzwrotna wyplacana bezposrednio przez GSE, z rocznym budzetem 900.000.000 EUR.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/media_site/media-gallery_site/Documents/CT%203%20-%203%20febbraio%202026%20webinar%20Quesiti%20Frequenti%20FAQ.pdf",
+      "https://studioaldegheri.it/conto-termico-3-0-regole-2026-per-interventi-di-efficienza-energetica-e-rinnovabili-termiche/"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: sekcja Conto Termico — ramy programu"
+  },
+  {
+    "id": "IT-CT3-NO-FV-PRIVATI",
+    "claim": "Conto Termico 3.0 nie finansuje fotowoltaiki dla osob prywatnych w sektorze mieszkaniowym — dla soggetti privati dostepne sa wylacznie interwencje z Titolo III dotyczace energii cieplnej: pompy ciepla do ogrzewania i/lub CWU, systemy hybrydowe factory made (pompa ciepla zintegrowana z kotlem kondensacyjnym) oraz generatory na biomase. Fotowoltaika nie znajduje sie na tej liscie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/media_site/media-gallery_site/Documents/CT%203%20-%203%20febbraio%202026%20webinar%20Focus%20Titolo%20III%20R%20Visone%20M%20Rosati.pdf",
+      "https://www.gse.it/media_site/media-gallery_site/Documents/CT%203%20-%203%20febbraio%202026%20webinar%20Quesiti%20Frequenti%20FAQ.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: sekcja Conto Termico — kluczowe zaprzeczenie; Q&A: \"Czy dostane Conto Termico na fotowoltaike?\" (odpowiedz: nie, jesli jestes osoba prywatna)"
+  },
+  {
+    "id": "IT-CT3-FV-PA",
+    "claim": "Conto Termico 3.0 rozszerzyl zakres o instalacje fotowoltaiczne, ale wylacznie dla pubbliche amministrazioni i budynkow sektora tertiary, i wylacznie jako interwencja sprzezona z wymiana instalacji ogrzewania na elektryczna pompe ciepla — fotowoltaika nie moze byc incentywowana samodzielnie. Dla interwencji sprzezonych wymagana jest redukcja zapotrzebowania na energie pierwotna o co najmniej 20% wzgledem stanu sprzed interwencji.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://ediliziacrobatica.com/conto-termico-3-0-fotovoltaico-guida/",
+      "https://www.naturalnzeb.it/fotovoltaico-conto-termico-3-0-guida/",
+      "https://equaenergia.it/conto-termico-3-0-per-imprese-e-pubbliche-amministrazioni/"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: sekcja Conto Termico — precyzyjny niuans (do podania z zastrzezeniem); Q&A: \"Kiedy Conto Termico jednak obejmuje PV?\""
+  },
+  {
+    "id": "IT-CT3-HEATPUMP",
+    "claim": "Conto Termico 3.0 jest dla osob prywatnych trafnym narzedziem przy pompach ciepla — glowna dostepna sciezka to wymiana instalacji grzewczej na system zasilany ze zrodel odnawialnych (pompa ciepla), co czyni go komplementarnym, a nie konkurencyjnym, wobec detrazione na fotowoltaike.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/media_site/media-gallery_site/Documents/CT%203%20-%203%20febbraio%202026%20webinar%20Focus%20Titolo%20III%20R%20Visone%20M%20Rosati.pdf",
+      "https://www.enpal.com/it/pompa-di-calore/conto-termico-3-0-incentivi-funzionamento"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny: sekcja Conto Termico — jak to sie laczy z PV; Q&A: \"Czy moge polaczyc PV z pompa ciepla i dwoma programami?\""
+  },
+  {
+    "id": "IT-PNP-01",
+    "claim": "Wloski prog dla uproszczonej procedury przylaczeniowej wynosi ponizej 800 W (scisle mniej niz 800 W), a nie 800 W wlacznie: TICA art. 1, comma 1.1, lett. jjj) definiuje 'impianto di produzione di potenza inferiore a 800 W' jako instalacje o 'potenza attiva nominale inferiore a 800 W'; definicja zostala wprowadzona delibera ARERA 315/2020/R/eel z 4 sierpnia 2020.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/schede-tecniche/dettaglio/it/schedetecniche/20/315-20st"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, sekcja 'Jaki limit mocy' + Q&A 'Ile W moge zamontowac we Wloszech'"
+  },
+  {
+    "id": "IT-PNP-02",
+    "claim": "Wloski 'impianto di produzione Plug & Play' to instalacja o potenza attiva nominale mniejszej lub rownej 350 W, kompletna i gotowa do bezposredniego podlaczenia wtyczka do dedykowanego gniazdka wizualnie odroznialnego od pozostalych gniazd w instalacji odbiorczej (TICA art. 1, comma 1.1, lett. kkk).",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, sekcja 'Dwa progi: 350 W i 800 W' — kluczowa roznica wobec Niemiec"
+  },
+  {
+    "id": "IT-PNP-03",
+    "claim": "We Wloszech istnieja DWA progi, nie jeden: do 350 W wlacznie instalacja jest 'Plug & Play' (bez instalatora, bez regulaminu ruchu sieciowego), a od powyzej 350 W do ponizej 800 W jest zwykla mikroinstalacja objeta uproszczona procedura, ale wymagajaca dokumentacji instalatora (TICA art. 3, comma 3.5, lett. b nakazuje dystrybutorom rozroznianie 'impianti di produzione di potenza inferiore a 800 W ma superiore a 350 W' od 'impianti Plug & Play').",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.e-distribuzione.it/supporto/guide-ai-produttori-di-energia/fotovoltaico-plug-and-play--requisiti-e-normativa-per-la-conness.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — sekcja porownawcza z niemieckim 800 W; to jest 'pulapka' z briefu"
+  },
+  {
+    "id": "IT-PNP-04",
+    "claim": "Wloski limit 800 W liczy sie od mocy czynnej nominalnej INSTALACJI, a dla PV oznacza to sume mocy szczytowych modulow (TISSPC art. 1, comma 1.1, lett. cc: 'somma delle singole potenze di picco di ciascun modulo fotovoltaico, misurata in condizioni nominali'), co ARERA potwierdzila w komunikacie dla operatorow z 12 lipca 2022; niemiecka regula 800 VA odnosi sie do falownika i dopuszcza 2000 Wp modulow — tego przelozenia we Wloszech NIE ma.",
+    "asOfDate": "2022-07-12",
+    "sources": [
+      "https://www.arera.it/comunicati-operatore/dettaglio/it/comunicati/22/220712",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny, ramka ostrzegawcza 'Nie kopiuj niemieckiego kitu 800 W / 2000 Wp'"
+  },
+  {
+    "id": "IT-PNP-05",
+    "claim": "Formularz Comunicazione Unica (Allegato 1 do TICA) wymaga podania OSOBNO 'potenza attiva nominale' instalacji i 'potenza nominale complessiva degli inverter', co potwierdza, ze prog 800 W nie jest progiem falownikowym.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'Czy moge dac 1000 Wp modulow na falownik 800 W jak w Niemczech'"
+  },
+  {
+    "id": "IT-PNP-06",
+    "claim": "Aktualna edycja normy to CEI 0-21:2025-10; definicja 3.35 opisuje 'Impianto di produzione Plug & Play (P&P)' jako instalacje malej wielkosci o mocy nominalnej nie wyzszej niz 350 W, kompletna i gotowa do bezposredniego wpiecia wtyczka w dedykowane gniazdo, dla ktorego wykwalifikowany instalator przewidzial osobny obwod wychodzacy z rozdzielnicy.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, sekcja 'Co mowi norma CEI 0-21'"
+  },
+  {
+    "id": "IT-PNP-07",
+    "claim": "CEI 0-21:2025-10 pkt 3.62 definiuje moc nominalna instalacji Plug & Play jako mniejsza z dwoch wartosci: mocy nominalnej falownika albo sumy mocy STC modulow PV, z uwaga, ze dla celow normy musi ona wynosic <= 350 W.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, przypis techniczny + Q&A o liczeniu mocy"
+  },
+  {
+    "id": "IT-PNP-08",
+    "claim": "CEI 0-21:2025-10 pkt 8.2 wymaga, by instalacja P&P byla podlaczona dedykowanym obwodem PRZED (od strony zasilania) wszystkich urzadzen zabezpieczajacych, zgodnie z CEI 64-8 art. 551.7.2, a Dispositivo di Interfaccia (DDI) musi byc zintegrowany w samej instalacji P&P; schemat pokazuje Figura 17.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, sekcja 'Wymogi techniczne — dlaczego to nie jest zwykle gniazdko'"
+  },
+  {
+    "id": "IT-PNP-09",
+    "claim": "CEI 0-21:2025-10 dopuszcza tylko JEDNA instalacje Plug & Play na jeden punkt poboru (POD) i zakazuje instalowania P&P w POD, w ktorym istnieje juz inna instalacja wytworcza lub instalacja objeta wsparciem ('impianto incentivato'); to samo powtarza TICA art. 6ter.1 pkt ii.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'Mam juz fotowoltaike na dachu — czy moge dolozyc kit balkonowy' (odpowiedz: nie)"
+  },
+  {
+    "id": "IT-PNP-10",
+    "claim": "Zalacznik do CEI 0-21 wlasciwy dla mikroinstalacji to Allegato Gbis (normativo); w edycji 2025-10 zawiera on m.in. 'Regolamento di esercizio in parallelo con rete BT del DSO di impianti di produzione <= 0,8 kW', ktory uzytkownik podpisuje dla instalacji ponizej 800 W (pkt 8.7 normy); pkt Gbis.6 wylicza zalaczniki 'esclusi gli impianti Plug&Play'.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf",
+      "https://www.e-distribuzione.it/supporto/guide-ai-produttori-di-energia/fotovoltaico-plug-and-play--requisiti-e-normativa-per-la-conness.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — bezposrednia odpowiedz na pytanie 'jaki zalacznik CEI 0-21'"
+  },
+  {
+    "id": "IT-PNP-11",
+    "claim": "CEI 0-21:2025-10 pkt 8.7 nakazuje, by dla instalacji ponizej 800 W Z WYLACZENIEM P&P uzytkownik przekazal dystrybutorowi 'Modulo semplificato di notifica' bezposrednio przed przylaczeniem do sieci; ta sama komunikacja sluzy jako wniosek o przeprogramowanie licznika jednokierunkowego.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, sekcja 'Kiedy zglosic — przed czy po montazu'"
+  },
+  {
+    "id": "IT-PNP-12",
+    "claim": "Sam zakup NIE wystarczy: TICA art. 6ter.3 wymaga zlozenia Comunicazione Unica u dystrybutora dla KAZDEJ instalacji ponizej 800 W, wlacznie z Plug & Play do 350 W — formularz to Allegato 1 do TICA, a zlozenie nie wiaze sie z zadna oplata ('Non e previsto il pagamento di alcun corrispettivo').",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/comunicati-stampa/dettaglio/it/com-stampa/20/200807"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny, glowna sekcja proceduralna + Q&A 'Czy musze cos zglaszac'"
+  },
+  {
+    "id": "IT-PNP-13",
+    "claim": "TICA art. 6ter.8: wyslanie kompletnej Comunicazione Unica do wlasciwego dystrybutora stanowi 'titolo abilitante' do przylaczenia i uruchomienia instalacji ponizej 800 W, i zadna inna czynnosc ze strony wnioskodawcy nie jest wymagana ('Nessuna altra attivita deve essere svolta dal richiedente').",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — pointa sekcji proceduralnej; brak czekania na zgode"
+  },
+  {
+    "id": "IT-PNP-14",
+    "claim": "Zalaczniki do Comunicazione Unica (TICA art. 6ter.6 i Allegato 1): dla KAZDEJ instalacji <800 W tylko kopia dokumentu tozsamosci i ewentualne pelnomocnictwo; dodatkowo TYLKO dla instalacji innych niz P&P (czyli 350–800 W) — ostateczny schemat elektryczny jednokreskowy, dichiarazione di conformita instalacji do regoly sztuki, dichiarazione di conformita urzadzen konwersji statycznej i interfejsu oraz regolamento di esercizio podpisany przez wytworce, zgodny z Allegato G bis CEI 0-21.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.e-distribuzione.it/supporto/guide-ai-produttori-di-energia/fotovoltaico-plug-and-play--requisiti-e-normativa-per-la-conness.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — tabela 'Co dolaczyc: 350 W vs 800 W'"
+  },
+  {
+    "id": "IT-PNP-15",
+    "claim": "Dwa warunki wstepne z TICA art. 6ter.1: (i) w punkcie przylaczenia musi byc aktywna umowa na dostawe energii z moca dostepna w poborze nie mniejsza niz moc instalacji wytworczej; (ii) w tym punkcie nie moga byc przylaczone zadne inne instalacje wytworcze.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — checklist 'Czy kwalifikujesz sie'"
+  },
+  {
+    "id": "IT-PNP-16",
+    "claim": "Do GSE nie trzeba skladac nic: TICA art. 13ter.4 zwalnia wnioskodawce z zawierania jakiejkolwiek umowy dyspozytorskiej ('non deve sottoscrivere alcun contratto di dispacciamento'), a rejestracji instalacji w systemie GAUDI dokonuje dystrybutor na podstawie pelnomocnictwa udzielonego w Comunicazione Unica (art. 13ter.3).",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'Czy musze sie zarejestrowac w GSE' — odpowiedz: nie"
+  },
+  {
+    "id": "IT-PNP-17",
+    "claim": "TICA art. 13ter.2: w ciagu 5 dni roboczych od otrzymania Comunicazione Unica dystrybutor (a) przeprogramowuje licznik dwukierunkowy, by rejestrowal energie wprowadzana do sieci — o ile licznik na to pozwala, (b) rejestruje instalacje w GAUDI wg zasad Terny, (c) przekazuje wytworcy i klientowi koncowemu kod CENSIMP instalacji.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — 'Co sie dzieje po zgloszeniu'"
+  },
+  {
+    "id": "IT-PNP-18",
+    "claim": "Nadwyzka przepada: TICA art. 13ter.4 stanowi, ze korzystajac z Comunicazione Unica wnioskodawca moze wprowadzac do sieci energie nadwyzkowa (w granicach mocy zainstalowanej i zawsze ponizej 800 W), ale 'rinuncia a qualsiasi remunerazione in relazione alla predetta energia elettrica immessa in rete' — zrzeka sie jakiegokolwiek wynagrodzenia za nia.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/comunicati-stampa/dettaglio/it/com-stampa/20/200807"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — sekcja 'Czy zarobisz na nadwyzce' + Q&A o ritiro dedicato"
+  },
+  {
+    "id": "IT-PNP-19",
+    "claim": "Zrzeczenie sie wynagrodzenia jest wpisane wprost w tresc oswiadczenia w formularzu Comunicazione Unica (Allegato 1 do TICA, punkt c deklaracji): wnioskodawca oswiadcza, ze jest swiadomy, iz korzystajac z tego trybu 'rinuncia a qualsiasi pretesa in merito alla remunerazione dell'energia elettrica prodotta e immessa in rete'.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'Czy moge sprzedac nadwyzke do GSE' — cytat z formularza"
+  },
+  {
+    "id": "IT-PNP-20",
+    "claim": "Instalacja zgloszona przez Comunicazione Unica nie moze korzystac z ritiro dedicato — jest to bezposrednia konsekwencja zrzeczenia sie wynagrodzenia z TICA art. 13ter.4 i braku umowy dyspozytorskiej; sam RID (GSE) nie ma dolnego progu mocy i formalnie jest dostepny dla instalacji sloneczne dowolnej mocy, ale wymaga zwyklej sciezki przylaczeniowej TICA zamiast uproszczonej.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny — sekcja 'Ritiro dedicato: dlaczego nie' + Q&A"
+  },
+  {
+    "id": "IT-PNP-21",
+    "claim": "TICA art. 6ter.7 pozwala zglosic rowniez rozbudowe (potenziamento) istniejacej instalacji przez Comunicazione Unica, pod warunkiem ze moc nominalna po rozbudowie pozostanie ponizej 800 W.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'Czy moge pozniej dolozyc drugi panel'"
+  },
+  {
+    "id": "IT-PNP-22",
+    "claim": "Uproszczenia techniczne CEI 0-21:2025-10 dla instalacji ponizej 800 W obejmuja m.in.: brak wymogu wymiany mocy biernej, wlasne nastawy SPI wg Tabella 14 (zamiast Tabella 13), staly nieregulowany przedzial czestotliwosci 49,90–50,10 Hz z czasem 300 s, brak obowiazku obslugi protokolu CEI EN 61850 przez SPI, brak wymogu odpornosci na df/dt do 2,5 Hz/s oraz brak prob weryfikacyjnych w terenie.",
+    "asOfDate": "2025-10-01",
+    "sources": [
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — sekcja techniczna 'Co upraszcza CEI 0-21' (dla czytelnika instalatorskiego)"
+  },
+  {
+    "id": "IT-PNP-23",
+    "claim": "Prog 800 W nie jest wymyslem wloskim, tylko granica stosowalnosci rozporzadzenia UE RfG: delibera 315/2020 opisuje instalacje ponizej 800 W jako 'la soglia al di sotto della quale non trova applicazione nemmeno il regolamento RfG'.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — akapit 'Skad sie wzialo 800 W' (wyjasnia, dlaczego DE i IT maja te sama liczbe, ale mierzona inaczej)"
+  },
+  {
+    "id": "IT-PNP-24",
+    "claim": "Stan na 2026-08-14 progi sa niezmienione: skonsolidowany TICA (Allegato A do delibera ARG/elt 99/08, wersja zintegrowana zmianami do delibera 361/2023/R/eel wlacznie) wciaz zawiera definicje jjj) i kkk) oraz artykuly 6ter i 13ter w brzmieniu z 315/2020/R/eel.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.arera.it/atti-e-provvedimenti/dettaglio/08/099-08arg"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — ramka 'Aktualnosc na sierpien 2026'"
+  },
+  {
+    "id": "IT-PNP-25",
+    "claim": "Wyjasnienie ARERA dla operatorow z 10 kwietnia 2025 o przylaczaniu wielu instalacji wytworczych do jednego punktu przylaczenia dotyczy zwyklej sciezki TICA i nie zmienia warunku z art. 6ter.1 pkt ii (brak innych instalacji wytworczych w POD) dla instalacji ponizej 800 W.",
+    "asOfDate": "2025-04-10",
+    "sources": [
+      "https://www.arera.it/en/comunicati-operatore/dettaglio/testo-integrato-connessioni-attive-tica-chiarimenti-materia-connes-rete-pub-tramite-medesimo-punto-impianti-produzione-25"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Q&A 'Czytalem, ze od 2025 mozna miec kilka instalacji na jednym POD' — sprostowanie"
+  },
+  {
+    "id": "IT-PNP-26",
+    "claim": "Art. 1122-bis kodeksu cywilnego: instalacje OZE sluzace pojedynczym lokalom w kondominium moga byc realizowane na lastrico solare, na innych odpowiednich powierzchniach wspolnych oraz na czesciach bedacych wlasnoscia indywidualna zainteresowanego, i nie sa poddane obowiazkowi uzyskania zezwolenia zgromadzenia.",
+    "asOfDate": "2012-12-11",
+    "sources": [
+      "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=1122&art.versione=1&art.codiceRedazionale=042U0262&art.dataPubblicazioneGazzetta=1942-04-04&art.idGruppo=140&art.idSottoArticolo1=10&art.idSottoArticolo=2&art.flagTipoArticolo=2"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — sekcja 'Czy potrzebuje zgody wspolnoty' + Q&A kondominialne"
+  },
+  {
+    "id": "IT-PNP-27",
+    "claim": "Art. 1122-bis c.c. nakazuje uprzednie zawiadomienie amministratore ze wskazaniem tresci i sposobu wykonania prac TYLKO wtedy, gdy konieczne sa modyfikacje czesci wspolnych; zgromadzenie moze wowczas — wiekszoscia z art. 1136 comma 5 c.c. — narzucic alternatywne sposoby wykonania lub zabezpieczenia chroniace stabilnosc, bezpieczenstwo i decoro architettonico budynku oraz zazadac kaucji na poczet ewentualnych szkod.",
+    "asOfDate": "2012-12-11",
+    "sources": [
+      "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=1122&art.versione=1&art.codiceRedazionale=042U0262&art.dataPubblicazioneGazzetta=1942-04-04&art.idGruppo=140&art.idSottoArticolo1=10&art.idSottoArticolo=2&art.flagTipoArticolo=2"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — 'Balkon wlasny vs czesc wspolna: kiedy trzeba isc do administratora'"
+  },
+  {
+    "id": "IT-PNP-28",
+    "claim": "Montaz kitu na wlasnym balkonie (proprieta esclusiva), bez ingerencji w czesci wspolne, nie wymaga uchwaly zgromadzenia w swietle art. 1122-bis c.c.; realnymi ograniczeniami pozostaja decoro architettonico i bezpieczenstwo (art. 1102 i 1122 c.c.) oraz ewentualny regulamin kondominium o charakterze umownym.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=1122&art.versione=1&art.codiceRedazionale=042U0262&art.dataPubblicazioneGazzetta=1942-04-04&art.idGruppo=140&art.idSottoArticolo1=10&art.idSottoArticolo=2&art.flagTipoArticolo=2"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Q&A 'Sasiad mowi, ze musze miec zgode wspolnoty — czy ma racje'"
+  },
+  {
+    "id": "IT-PNP-29",
+    "claim": "Od strony budowlanej instalacja fotowoltaiczna sluzaca budynkowi polozonemu poza strefa A wg art. 2 DM 1444/1968, o mocy ponizej 12 MW i posadowiona na istniejacych strukturach/budynkach lub ich przynaleznosciach, jest 'attivita libera' wg Allegato A, Sezione I, lett. b) do D.Lgs 190/2024 (Testo Unico Rinnovabili) — bez CILA, SCIA ani pozwolenia; w strefie A i w obszarach objetych ochrona ta sciezka nie dziala automatycznie.",
+    "asOfDate": "2024-12-12",
+    "sources": [
+      "https://www.normattiva.it/eli/id/2024/12/12/24G00205/ORIGINAL",
+      "https://www.comune.trieste.it/media/files/md/032006/D.Lgs._190_2024_Allegato_A.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny — sekcja 'A gmina? CILA?' + Q&A o centro storico"
+  },
+  {
+    "id": "IT-PNP-30",
+    "claim": "D.Lgs 190/2024 zostal zmieniony przez D.Lgs 26 listopada 2025 nr 178 (opublikowany w Gazzetta Ufficiale 11 grudnia 2025), wiec przy powolywaniu sie na Allegato A nalezy uzywac tekstu skonsolidowanego, a nie oryginalnego z grudnia 2024.",
+    "asOfDate": "2025-12-11",
+    "sources": [
+      "https://www.gazzettaufficiale.it/eli/id/2025/12/11/25A06482/sg",
+      "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2025-11-26&atto.codiceRedazionale=25G00186"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Przypis redakcyjny / nota o aktualnosci zrodel"
+  },
+  {
+    "id": "IT-PNP-31",
+    "claim": "PVGIS v5.2 (JRC Komisji Europejskiej, baza PVGIS-SARAH2 2005-2020, straty systemowe 14%): kit 0,8 kWp zamontowany pionowo (nachylenie 90 stopni) na poludnie da w Mediolanie (45,464 N; 9,190 E) okolo 741 kWh rocznie przy 1200 kWh/m2 naslonecznienia w plaszczyznie modulu.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=45.4642&lon=9.19&peakpower=0.8&loss=14&angle=90&aspect=0&outputformat=json",
+      "https://re.jrc.ec.europa.eu/pvg_tools/it/"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Post glowny — tabela produkcji Nord vs Sud; liczba do naglowka sekcji"
+  },
+  {
+    "id": "IT-PNP-32",
+    "claim": "Ten sam kit 0,8 kWp pionowo na poludnie w Palermo (38,116 N; 13,362 E) da wg PVGIS v5.2 okolo 752 kWh rocznie — tylko okolo 1,5% wiecej niz w Mediolanie, bo przy pionowym montazu wysokie letnie slonce Poludnia pada na modul pod bardzo niekorzystnym katem.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=38.1157&lon=13.3615&peakpower=0.8&loss=14&angle=90&aspect=0&outputformat=json",
+      "https://re.jrc.ec.europa.eu/pvg_tools/it/"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Post glowny — kluczowy kontrintuicyjny wniosek 'balkon na Poludniu nie daje przewagi'"
+  },
+  {
+    "id": "IT-PNP-33",
+    "claim": "Przy montazu pochylonym pod 35 stopni na poludnie (np. na podlodze tarasu lub na wysiegniku) ten sam kit 0,8 kWp daje wg PVGIS v5.2 okolo 1072 kWh/rok w Mediolanie i okolo 1213 kWh/rok w Palermo, czyli o 45% i 61% wiecej niz przy montazu pionowym w tych samych lokalizacjach.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=45.4642&lon=9.19&peakpower=0.8&loss=14&angle=35&aspect=0&outputformat=json",
+      "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=38.1157&lon=13.3615&peakpower=0.8&loss=14&angle=35&aspect=0&outputformat=json"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Post glowny — porada praktyczna 'pochyl panel zamiast wieszac go na barierce'"
+  },
+  {
+    "id": "IT-PNP-34",
+    "claim": "PVGIS pokazuje, ze przy montazu pionowym rozklad produkcji w roku sie odwraca: w Mediolanie najlepszy miesiac to marzec (77,5 kWh z 0,8 kWp), a czerwiec jest najslabszym miesiacem letnim (51,3 kWh) — profil ten dobrze pasuje do zimowego szczytu zuzycia energii w mieszkaniu.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://re.jrc.ec.europa.eu/api/v5_2/PVcalc?lat=45.4642&lon=9.19&peakpower=0.8&loss=14&angle=90&aspect=0&outputformat=json"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Post glowny — wykres miesieczny + argument o autokonsumpcji"
+  },
+  {
+    "id": "IT-PNP-35",
+    "claim": "GSE Rapporto Statistico 2024 'Solare Fotovoltaico' podaje, ze srednia liczba godzin uzytkowania rownowaznego wszystkich wloskich instalacji PV w 2024 roku wyniosla 1.066 godzin (czyli 1.066 kWh na kazdy kW mocy zainstalowanej), przy 1.875.870 instalacjach i 37.002 MW mocy na 31 grudnia 2024.",
+    "asOfDate": "2024-12-31",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Rapporti%20statistici/Solare%20Fotovoltaico%20-%20Rapporto%20Statistico%202024.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — benchmark 'ile daje typowa wloska instalacja' do porownania z kitem balkonowym"
+  },
+  {
+    "id": "IT-PNP-36",
+    "claim": "GSE sam ostrzega, ze roznice w godzinach uzytkowania miedzy prowincjami wynikaja nie tylko z naslonecznienia, ale takze z wieku parku instalacji i udzialu instalacji gruntowych (zwykle wydajniejszych niz dachowe), wiec regionalnych wskaznikow GSE nie nalezy przenosic 1:1 na kit balkonowy.",
+    "asOfDate": "2024-12-31",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Rapporti%20statistici/Solare%20Fotovoltaico%20-%20Rapporto%20Statistico%202024.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Przypis metodologiczny przy tabeli produkcji — chroni przed zarzutem naciagania liczb"
+  },
+  {
+    "id": "IT-PNP-37",
+    "claim": "Fraza, ktorej realnie uzywaja wloscy uzytkownicy w wyszukiwarce w kontekscie informacyjnym, to 'fotovoltaico da balcone' — dominuje w tytulach wloskich przewodnikow z 2026 roku (Enpal, EcoCalcolo, Edilportale, StudioMadera, PMI.it) i ma nawet dedykowana domene exact-match fotovoltaicobalcone.it.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.enpal.com/it/fotovoltaico/fotovoltaico-balcone-vantaggi-funzionamento",
+      "https://www.ecocalcolo.it/blog/fotovoltaico-balcone-permessi-costi-risparmio.html",
+      "https://fotovoltaicobalcone.it/",
+      "https://www.edilportale.com/news/2025/12/focus/fotovoltaico-plug-and-play-pannelli-da-balcone_108428_67.html"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Decyzja o slugu i tytule: slug /it/fotovoltaico-da-balcone, H1 z ta fraza"
+  },
+  {
+    "id": "IT-PNP-38",
+    "claim": "'Fotovoltaico plug and play' to fraza proceduralno-regulacyjna, a nie potoczna: uzywaja jej e-distribuzione w tytule wlasnej strony pomocy, ARERA w tekstach delibery i CEI 0-21 w definicji 3.35 — nadaje sie na H2 i na sekcje o przepisach, ale nie na glowny tytul artykulu.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/supporto/guide-ai-produttori-di-energia/fotovoltaico-plug-and-play--requisiti-e-normativa-per-la-conness.html",
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Struktura naglowkow: H1 = fotovoltaico da balcone, H2 = fotovoltaico plug and play / normativa"
+  },
+  {
+    "id": "IT-PNP-39",
+    "claim": "'Kit fotovoltaico da balcone' i 'pannelli solari da balcone' to warianty transakcyjne (dominuja w tytulach sklepow i stron produktowych: Duowatt, EcoFlow, MrWatt, PMI.it), wiec powinny trafic do sekcji zakupowej i do FAQ, a nie do slug artykulu poradnikowego.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.duowatt.it/fotovoltaico-da-balcone",
+      "https://it.ecoflow.com/pages/kit-pannelli-solari-balcone",
+      "https://www.pmi.it/economia/green-economy/388947/pannelli-solari-da-balcone-guida-e-costi.html"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Mapowanie fraz na sekcje / FAQ; osobne Q&A 'kit da balcone'"
+  },
+  {
+    "id": "IT-PNP-40",
+    "claim": "Wloski termin 'Balkonkraftwerk' nie funkcjonuje w wyszukiwarce po wlosku — wloskie zrodla przywoluja go wylacznie jako objasnienie niemieckiej nazwy zjawiska, wiec nie nadaje sie ani na slug, ani na tytul.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://fotovoltaicobalcone.it/guida/",
+      "https://www.enpal.com/it/fotovoltaico/fotovoltaico-balcone-vantaggi-funzionamento"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Nota SEO: czego NIE uzywac w tytule wloskiej wersji"
+  },
+  {
+    "id": "IT-PNP-41",
+    "claim": "Raccomandazione (UE) 2026/1007, przyjeta 30 kwietnia 2026 i opublikowana w Dzienniku Urzedowym UE 8 maja 2026, zaleca panstwom czlonkowskim zniesienie procedur zezwoleniowych dla malych instalacji PV i magazynow oraz usuniecie barier administracyjnych dla baterii plug-in i paneli balkonowych do 800 W; jest to akt niewiazacy i na 14 sierpnia 2026 wloskie przepisy nie zostaly z tego powodu zmienione.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.community-cer.it/comunita-energetiche-rinnovabili-cosa-cambia-con-la-nuova-raccomandazione-ue-2026-1007/",
+      "https://www.infobuildenergia.it/comunita-energetiche-rinnovabili-raccomandazione-ue-accelerare-cer/",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post glowny — sekcja 'Co sie moze zmienic' / outlook; oznaczyc jako niewiazace"
+  },
+  {
+    "id": "IT-PNP-42",
+    "claim": "Powtarzana w wielu wloskich poradnikach informacja, ze Comunicazione Unica sklada sie 'entro 30 giorni dall'installazione', nie ma oparcia w tekscie pierwotnym: ani delibera 315/2020/R/eel, ani art. 6ter i 13ter TICA nie ustanawiaja takiego terminu, a formularz Allegato 1 jest sformulowany w czasie przyszlym ('sara installato e connesso'), CEI 0-21 pkt 8.7 zas nakazuje notyfikacje 'immediatamente prima della connessione'.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://static.ceinorme.it/strumenti-online/doc/0-21consolidata.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post glowny — ramka 'Mit, ktory krazy po internecie' + Q&A o terminie zgloszenia"
+  },
+  {
+    "id": "IT-PNP-43",
+    "claim": "TICA art. 6ter.5 wymaga, by wnioskodawca nie bedacy klientem koncowym wlascicielem punktu przylaczenia dolaczyl do Comunicazione Unica pelnomocnictwo od klienta koncowego — istotne dla najemcow mieszkan.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'Wynajmuje mieszkanie — czy moge zamontowac kit'"
+  },
+  {
+    "id": "IT-PNP-44",
+    "claim": "Formularz Comunicazione Unica dopuszcza wprost, by skladajacym byl 'amministratore del condominio sulla base di mandato dell'assemblea condominiale', obok wlasciciela i posiadacza innego prawa rzeczowego — potwierdza to droge kondominialna dla instalacji na czesciach wspolnych.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/20/315-20.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A kondominialne — kto podpisuje zgloszenie"
+  },
+  {
+    "id": "IT-PNP-45",
+    "claim": "Dystrybutorzy maja obowiazek prowadzic w swoich MCC osobna, latwa do odczytania sekcje poswiecona instalacjom ponizej 800 W, z rozbiciem na przedzial 350–800 W i Plug & Play, opisem uproszczen ORAZ ograniczen (TICA art. 3, comma 3.5) — to najlepsze zrodlo do sprawdzenia procedury u konkretnego operatora, nie tylko e-distribuzione.",
+    "asOfDate": "2020-08-04",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/08/099-08argallnew.pdf",
+      "https://www.e-distribuzione.it/supporto/guide-ai-produttori-di-energia/fotovoltaico-plug-and-play--requisiti-e-normativa-per-la-conness.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny — sekcja 'Gdzie zlozyc zgloszenie u swojego dystrybutora'"
+  },
+  {
+    "id": "FASCE-01",
+    "claim": "Fascia F1 (ore di punta / peak) obejmuje godziny 8.00–19.00 w dni od poniedzialku do piatku, z wylaczeniem swiat nakazanych — definicja z Tabelli 1 delibery ARERA 181/06, obowiazujaca od 1 stycznia 2007.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf",
+      "https://www.arera.it/bolletta/glossario-dei-termini/dettaglio/fasce-orarie",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny o fasce orarie + tabela referencyjna F1/F2/F3; Q&A 'o ktorej wlaczyc pralke'"
+  },
+  {
+    "id": "FASCE-02",
+    "claim": "Fascia F2 (ore intermedie / mid-level) obejmuje 7.00–8.00 oraz 19.00–23.00 w dni od poniedzialku do piatku, plus 7.00–23.00 w soboty, z wylaczeniem swiat nakazanych.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf",
+      "https://www.arera.it/bolletta/glossario-dei-termini/dettaglio/fasce-orarie"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny o fasce orarie + tabela referencyjna F1/F2/F3"
+  },
+  {
+    "id": "FASCE-03",
+    "claim": "Fascia F3 (ore fuori punta / off-peak) obejmuje 23.00–7.00 w dni od poniedzialku do soboty (tj. 00.00–7.00 i 23.00–24.00) oraz WSZYSTKIE godziny w niedziele i swieta nakazane.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf",
+      "https://www.arera.it/bolletta/glossario-dei-termini/dettaglio/fasce-orarie",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post glowny o fasce orarie; Q&A 'najtansze godziny'"
+  },
+  {
+    "id": "FASCE-04",
+    "claim": "Lista swiat nakazanych traktowanych jak niedziela (cala doba w F3) liczy 11 dat: 1 stycznia, 6 stycznia, poniedzialek wielkanocny (lunedi di Pasqua), 25 kwietnia, 1 maja, 2 czerwca, 15 sierpnia, 1 listopada, 8 grudnia, 25 grudnia, 26 grudnia.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o fasce — sekcja 'swieta'; logika kalendarza w automatyzacji HA"
+  },
+  {
+    "id": "FASCE-05",
+    "claim": "Uwaga operacyjna: sam Wielki Piatek NIE jest na liscie swiat ARERA, a Wielkanoc (niedziela) i tak jest niedziela; jedynym ruchomym swietem na liscie jest poniedzialek wielkanocny.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A o swietach; implementacja kalendarza fasce"
+  },
+  {
+    "id": "FASCE-06",
+    "claim": "Swieta patronow lokalnych (np. 7 grudnia Sant'Ambrogio w Mediolanie, 24 czerwca w Turynie/Florencji/Genui, 29 czerwca w Rzymie) NIE wystepuja na liscie ARERA — sa zwyklymi dniami roboczymi dla celow fasce orarie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'czy w moje lokalne swieto jest tanszy prad' — czesty blad"
+  },
+  {
+    "id": "FASCE-07",
+    "claim": "Sobota nigdy nie zawiera fascia F1: caly dzien sobota dzieli sie na F2 (7.00–23.00) i F3 (00.00–7.00 oraz 23.00–24.00).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf",
+      "https://www.arera.it/bolletta/glossario-dei-termini/dettaglio/fasce-orarie"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o fasce — sekcja 'weekend'; porada 'pralka w sobote rano'"
+  },
+  {
+    "id": "FASCE-08",
+    "claim": "Podstawa prawna fasce F1/F2/F3: deliberazione ARERA (wowczas AEEG) nr 181/06 z 2 sierpnia 2006, tytul 'Aggiornamento delle fasce orarie con decorrenza 1 gennaio 2007', Tabella 1.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/atti-e-provvedimenti/dettaglio/06/181-06",
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Przypis prawny we wszystkich postach o fasce"
+  },
+  {
+    "id": "FASCE-09",
+    "claim": "Aktualnie obowiazujacym aktem, ktory zawiera fasce w regulacji sprzedazy, jest TIV — Allegato A do deliberazione ARERA 362/2023/R/eel, artykuly 1, 10, 48 oraz tabella 6.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Przypis prawny — aktualne umocowanie fasce (nie tylko 181/06)"
+  },
+  {
+    "id": "FASCE-10",
+    "claim": "Fascia F23 to zgrupowanie F2+F3 stosowane w Servizio di Maggior Tutela; ARERA definiuje ja jako godziny 19.00–8.00 w dni od poniedzialku do piatku oraz wszystkie godziny sobot, niedziel i swiat nakazanych.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce",
+      "https://www.arera.it/bolletta/glossario-dei-termini/dettaglio/fasce-orarie"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o taryfie biorariej; wyjasnienie roznicy F23 vs F2+F3"
+  },
+  {
+    "id": "FASCE-11",
+    "claim": "UWAGA na pulapke: w taryfie biorariej F23 (maggior tutela) sobota w calosci nalezy do F23, podczas gdy w trojfasciowej F1/F2/F3 sobota 7.00–23.00 to F2, a nie F3 — to nie jest ta sama cena.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx",
+      "https://www.arera.it/fileadmin/allegati/docs/06/181-06tab.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'czy sobota jest tania' — rozroznienie bioraria vs trioraria"
+  },
+  {
+    "id": "TARIFF-01",
+    "claim": "Fasce NIE obowiazuja cenowo wszystkich: w Maggior Tutela klienci domowi maja obowiazkowo 2 fasce (F1 i F23), male firmy 3 fasce; w Servizio a Tutele Graduali stosuje sie pelne 3 fasce F1/F2/F3.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'czy fasce dotycza mnie' — glowna tabela decyzyjna"
+  },
+  {
+    "id": "TARIFF-02",
+    "claim": "Na mercato libero dostawa moze byc fakturowana: (a) po cenie monorariej bez zroznicowania czasowego, (b) wedlug 3 fasce zdefiniowanych przez ARERA, albo (c) — przy liczniku 2G — wedlug maksymalnie 6 fasce dowolnie zdefiniowanych przez sprzedawce.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'czy fasce dotycza mnie'; ostrzezenie ze fasce sprzedawcy moga NIE byc standardowe ARERA"
+  },
+  {
+    "id": "TARIFF-03",
+    "claim": "Klient z taryfa monoraria placi te sama cene za kWh o kazdej godzinie i w kazdy dzien — przesuwanie zuzycia w czasie nie zmniejsza jego rachunku za energie (poza autokonsumpcja z PV).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf",
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'mam monoraria, czy oplaca sie prac w nocy' — odpowiedz: nie dla rachunku"
+  },
+  {
+    "id": "TARIFF-04",
+    "claim": "Licznik elektroniczny rejestruje zuzycie w rozbiciu na fasce NIEZALEZNIE od typu taryfy — display pokazuje 'Fascia Oraria' w atto i zuzycie z podzialem na fasce, obslugujac do 6 fasce cenowych w dobie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o liczniku 2G; wyjasnienie ze dane per fascia sa dostepne nawet przy monoraria"
+  },
+  {
+    "id": "TARIFF-05",
+    "claim": "Tylko komponent energii (materia energia) rozni sie miedzy fasciami; komponenty 'trasporto e gestione del contatore' (0,01473 EUR/kWh) i 'oneri di sistema' (0,033153 EUR/kWh) sa w III kw. 2026 IDENTYCZNE dla monorario, F1 i F23.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'ile realnie oszczedzasz przesuwajac zuzycie' — wyjasnia dlaczego oszczednosc jest mala"
+  },
+  {
+    "id": "TARIFF-06",
+    "claim": "KLUCZOWE ODKRYCIE: w III kwartale 2026 (1 lipca – 30 wrzesnia 2026) w Maggior Tutela komponent PE dla F1 wynosi 0,14448 EUR/kWh i jest TANSZY niz dla F23 (0,15881 EUR/kWh) — czyli o 9,9% drozej w nocy i w weekend niz w dzien.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx",
+      "https://www.arera.it/consumatori/valori-della-materia-energia-per-il-servizio-di-maggior-tutela"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "GLOWNY punkt postu 'kiedy wlaczyc pralke' — obala klasyczna porade 'pierz w nocy'"
+  },
+  {
+    "id": "TARIFF-07",
+    "claim": "Calkowita cena netto podatkow w Maggior Tutela III kw. 2026 (abitazione di residenza): monorario 0,217013 EUR/kWh, F1 0,207653 EUR/kWh, F23 0,221983 EUR/kWh — F1 jest najtansza opcja w tym kwartale.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Tabela porownawcza w poscie o fasce"
+  },
+  {
+    "id": "TARIFF-08",
+    "claim": "Znak roznicy F1 vs F23 w Maggior Tutela NIE jest stabilny miedzy kwartalami: PE F1 vs F23 wynosilo 0,14352 vs 0,13002 (III kw. 2025, F1 drozsza), 0,12431 vs 0,12480 (I kw. 2026, F1 tansza), 0,15112 vs 0,15074 (II kw. 2026, F1 drozsza o 0,25%), 0,14448 vs 0,15881 (III kw. 2026, F1 tansza o 9,9%).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'dlaczego nie mozna dac stalej porady godzinowej' — trzeba sprawdzac kwartalnie"
+  },
+  {
+    "id": "TARIFF-09",
+    "claim": "W II kwartale 2026 roznica F1 vs F23 w Maggior Tutela byla praktycznie zerowa: PE 0,15112 vs 0,15074 EUR/kWh (0,25%), a cena monoraria 0,15086 EUR/kWh lezala miedzy nimi — przesuwanie zuzycia dawalo pomijalna oszczednosc.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx",
+      "https://www.arera.it/consumatori/valori-della-materia-energia-per-il-servizio-di-maggior-tutela"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o realnej skali oszczednosci"
+  },
+  {
+    "id": "TARIFF-10",
+    "claim": "W Maggior Tutela istnieje nadal opcja monoraria obok biorariej — ARERA publikuje osobne wartosci dla 'monorario / fascia unica' i 'biorario / fascia F1 / fascia F23'.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx",
+      "https://www.arera.it/consumatori/valori-della-materia-energia-per-il-servizio-di-maggior-tutela"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'czy musze miec bioraria'"
+  },
+  {
+    "id": "TUTELA-01",
+    "claim": "Maggior tutela dla domowych klientow NIEwrazliwych zakonczyla sie 1 lipca 2024 — data byla przesunieta z 1 kwietnia 2024 na 1 lipca 2024 przez DL Energia.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/fine-tutela-ele",
+      "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-dal-1-luglio-37-milioni-di-clienti-non-vulnerabili-in-maggior-tutela-passano-automaticamente-al-servizio-a-tutele-graduali-primo-aggiornamento-della-tutela-per-le-bollette-dei-soli-clienti-vulnerabili-12-nel-terzo-trimestre-2024"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o koncu maggior tutela — sekcja 'data'"
+  },
+  {
+    "id": "TUTELA-02",
+    "claim": "1 lipca 2024 okolo 3,7 miliona klientow domowych niewrazliwych pozostajacych w Maggior Tutela przeszlo automatycznie do Servizio a Tutele Graduali (STG), do sprzedawcy wylonionego w aukcji dla ich obszaru terytorialnego.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-dal-1-luglio-37-milioni-di-clienti-non-vulnerabili-in-maggior-tutela-passano-automaticamente-al-servizio-a-tutele-graduali-primo-aggiornamento-della-tutela-per-le-bollette-dei-soli-clienti-vulnerabili-12-nel-terzo-trimestre-2024"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o koncu maggior tutela — skala zjawiska"
+  },
+  {
+    "id": "TUTELA-03",
+    "claim": "Od 1 lipca 2024 Servizio di Maggior Tutela jest dostepny wylacznie dla klientow wrazliwych (clienti vulnerabili); klienci wrazliwi bedacy na mercato libero maja prawo w kazdej chwili wrocic do Maggior Tutela.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/fine-tutela-ele",
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o klientach wrazliwych — prawo powrotu"
+  },
+  {
+    "id": "TUTELA-04",
+    "claim": "Klient domowy jest 'vulnerabile' jesli spelnia co najmniej jeden warunek: ukonczone 75 lat; pobiera bonus sociale elettrico; jest osoba z niepelnosprawnoscia w rozumieniu art. 3 ustawy 104/92; mieszka w modulo abitativo di emergenza po klesce zywiolowej; mieszka na malej wyspie niepolaczonej z siecia; uzywa aparatury podtrzymujacej zycie (apparecchiature salva-vita).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/clienti-vulnerabili/chi-sono-i-clienti-vulnerabili"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o klientach wrazliwych — checklist kwalifikacji"
+  },
+  {
+    "id": "TUTELA-05",
+    "claim": "Podstawa prawna definicji klienta wrazliwego: art. 11 Decreto Legislativo z 8 listopada 2021 nr 210, wdrozony w TIV — Allegato A do deliberazione ARERA 362/2023/R/eel, art. 8, oraz deliberazione 10/2025/R/eel.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/clienti-vulnerabili/chi-sono-i-clienti-vulnerabili"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Przypis prawny w poscie o vulnerabili"
+  },
+  {
+    "id": "TUTELA-06",
+    "claim": "Servizio a Tutele Graduali dla klientow domowych niewrazliwych trwa od 1 lipca 2024 do 31 marca 2027; po tej dacie, w braku wyraznego wyboru, klient bedzie nadal obslugiwany przez tego samego sprzedawce na jego najkorzystniejszej ofercie rynku wolnego.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/il-servizio-a-tutele-graduali",
+      "https://www.arera.it/consumatori/fine-tutela-ele"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o STG — timeline i co dalej"
+  },
+  {
+    "id": "TUTELA-07",
+    "claim": "Warunki ekonomiczne STG opieraja sie na wartosciach konsuntywnych PUN (cena hurtowa ex post) plus koszty approvvigionamento, dispacciamento i sbilanciamento oraz narzut (parametr delta) wylaniany w aukcjach konkurencyjnych per obszar terytorialny.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/il-servizio-a-tutele-graduali",
+      "https://www.arera.it/atti-e-provvedimenti/dettaglio/26/96-26"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o STG — jak liczona jest cena"
+  },
+  {
+    "id": "TUTELA-08",
+    "claim": "STG dla klientow domowych niewrazliwych stosuje trzy pelne fasce F1/F2/F3, a nie bioraria F1/F23 jak Maggior Tutela — to praktyczna roznica dla porad o godzinach.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'kiedy wlaczyc pralke' — rozgalezienie wedlug typu umowy"
+  },
+  {
+    "id": "TUTELA-09",
+    "claim": "Klienci wrazliwi mogli dodatkowo wnioskowac o dostep do Servizio a Tutele Graduali jedynie do 30 czerwca 2025 — ta sciezka jest juz zamknieta w 2026.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/clienti-vulnerabili/chi-sono-i-clienti-vulnerabili"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Q&A o opcjach klienta wrazliwego — ostrzezenie o wygaslym terminie"
+  },
+  {
+    "id": "TUTELA-10",
+    "claim": "Na III kwartal 2026 w Maggior Tutela pozostaje okolo 3 milionow klientow wrazliwych — to jedyna grupa objeta kwartalnymi aktualizacjami ARERA.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach — zastrzezenie kogo dotycza liczby ARERA"
+  },
+  {
+    "id": "TUTELA-11",
+    "claim": "23 kwietnia 2026 ARERA otworzyla konsultacje (dokument 130/2026/R/eel, uwagi do 22 maja 2026) nad regulacja STG obowiazujaca od 1 kwietnia 2027, w tym trybem, w jakim obecni sprzedawcy musza przedstawic klientom najlepsza oferte rynku wolnego przed 31 marca 2027.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-arera-avvia-la-consultazione-sul-riassetto-del-servizio-a-tutele-graduali"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o STG — sekcja 'co sie zmieni w 2027'"
+  },
+  {
+    "id": "POTENZA-01",
+    "claim": "ARERA stwierdza wprost, ze 'wielka wiekszosc wloskich domow' ma przylacze o potenza impegnata rownej 3 kW — to tez referencyjny 'cliente tipo' w kwartalnych komunikatach ARERA.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf",
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o mocy przylacza — punkt wyjscia"
+  },
+  {
+    "id": "POTENZA-02",
+    "claim": "Potenza disponibile = potenza impegnata + 10%, dostepna bez ograniczenia czasowego; dla umowy 3 kW oznacza to 3,3 kW pobierane bez limitu czasu.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf",
+      "https://www.arera.it/consumatori/potenza-del-contatore"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o przekroczeniu mocy — próg 1"
+  },
+  {
+    "id": "POTENZA-03",
+    "claim": "Przy umowie 3 kW, po przekroczeniu 3,3 kW licznik pozwala pobierac do 4 kW przez co najmniej trzy godziny; powyzej 4 kW urzadzenie kontroli dostawy zadziala w ciagu dwoch minut.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o ladowaniu auta — najwazniejszy prog bezpieczenstwa"
+  },
+  {
+    "id": "POTENZA-04",
+    "claim": "Komunikaty na wyswietlaczu przy potenza istantanea miedzy 3,3 a 4 kW (umowa 3 kW): po 2 minutach 'RIDURRE CARICO SUPERO POTENZA', po 92 minutach 'RISCHIO DISTACCO SUPERO POTENZA', a po odlaczeniu 'DISTACCO IMPOSTO SUPERO POTENZA'.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'co znaczy komunikat na liczniku' — diagnostyka"
+  },
+  {
+    "id": "POTENZA-05",
+    "claim": "Powyzej 4 kW (umowa 3 kW) komunikaty pojawiaja sie szybciej: 'RIDURRE CARICO' po okolo 1 sekundzie, 'RISCHIO DISTACCO' po 1 minucie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o przekroczeniu mocy — skala czasowa"
+  },
+  {
+    "id": "POTENZA-06",
+    "claim": "Licznik dokonuje weryfikacji przekroczenia mocy w 2., 92. i 182. minucie i USREDNIA pobor; odlaczenie w pasmie miedzy potenza disponibile a potenza limite nastepuje dopiero gdy srednia utrzyma sie ponad 182 minuty.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.asmb.it/export/sites/asmb2/.downloads/it/energia-elettrica/informazione/Il-contatore-elettronico.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Post o przekroczeniu mocy — mechanizm usredniania"
+  },
+  {
+    "id": "POTENZA-07",
+    "claim": "Konsekwencja usredniania: po zadzialaniu limitatora wartosc 'Potenza Istantanea' na wyswietlaczu moze byc NIZSZA od potenza contrattuale, bo dotyczy tylko ostatnich 2 minut, a nie sredniej ktora spowodowala odlaczenie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.asmb.it/export/sites/asmb2/.downloads/it/energia-elettrica/informazione/Il-contatore-elettronico.pdf",
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Q&A 'licznik wybil chociaz nic nie bylo wlaczone' — czesta skarga"
+  },
+  {
+    "id": "POTENZA-08",
+    "claim": "Potenza limite definiuje sie jako potenza disponibile + 27% (dla 3 kW: 3,3 kW disponibile -> ok. 4,2 kW limite); przekroczenie 14 kW powoduje odlaczenie w 1–2 sekundy.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.asmb.it/export/sites/asmb2/.downloads/it/energia-elettrica/informazione/Il-contatore-elettronico.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "medium",
+    "usedIn": "Post o przekroczeniu mocy — pelna drabinka progow; UWAGA: e-distribuzione podaje zaokraglone 4 kW zamiast 4,2 kW"
+  },
+  {
+    "id": "POTENZA-09",
+    "claim": "Od 2017 poziomy potenza impegnata sa wybieralne w krokach: 0,5 kW od 0,5 do 6 kW; 1 kW od 6 do 10 kW; 5 kW powyzej 10 kW — czyli 3 kW, 4,5 kW i 6 kW to trzy z wielu dostepnych progow, nie sztywne opcje.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/potenza-del-contatore"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o wyborze mocy — obala mit 'tylko 3/4,5/6 kW'"
+  },
+  {
+    "id": "POTENZA-10",
+    "claim": "Kazdy kW potenza impegnata kosztuje w rachunku okolo 26 EUR rocznie z VAT; obnizka z 3 kW do 2 kW daje oszczednosc 25,87 EUR/rok, a podwyzszenie z 3 na 4 kW kosztuje jednorazowo okolo 100,68 EUR z VAT (w tym 23 EUR contributo fisso).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/potenza-del-contatore"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post 'czy warto zwiekszyc moc do ladowania auta' — kalkulacja"
+  },
+  {
+    "id": "POTENZA-11",
+    "claim": "W III kwartale 2026 skladnik mocowy w Maggior Tutela wynosi 23,7188 EUR/kW/rok (netto podatkow), co dla 3 kW daje okolo 71 EUR rocznie samych oplat za moc.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o kosztach mocy — aktualna liczba"
+  },
+  {
+    "id": "EV-01",
+    "claim": "Sperimentazione ARERA/GSE (delibera 541/2020/R/eel) daje dostep do okolo 6 kW potenza disponibile BEZ zmiany potenza impegnata, ale wylacznie w fascia F3 — czyli w nocy, w niedziele i pozostale swieta nakazane.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf",
+      "https://www.gse.it/servizi-per-te/rinnovabili-per-i-trasporti/agevolazioni-per-la-ricarica-dei-veicoli-elettrici"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "GLOWNY post o ladowaniu auta w domu — kiedy mozna ladowac 6 kW"
+  },
+  {
+    "id": "EV-02",
+    "claim": "Wymogi wejscia do sperimentazione: przylacze BT, potenza contrattualmente impegnata nie mniejsza niz 2 kW i nie wieksza niz 4,5 kW, licznik elektroniczny (smart meter), 'smart' wallbox z funkcja V1G, oraz zgoda na kontrole GSE na miejscu.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o ladowaniu auta — checklist kwalifikacji"
+  },
+  {
+    "id": "EV-03",
+    "claim": "Wallbox musi byc trwale podlaczony do instalacji zgodnej z DM 37/08, w trybie modo 3 wg EN 61851-1 (urzadzenia przenosne NIE sa dopuszczone) i musi umiec mierzyc oraz zdalnie regulowac moc ladowania.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o ladowaniu auta — wymogi sprzetowe"
+  },
+  {
+    "id": "EV-04",
+    "claim": "Termin skladania wnioskow o sperimentazione uplynal 30 czerwca 2026, natomiast sam program trwa do 30 czerwca 2027 (przedluzony delibera 22/2025/R/eel) — na dzien 2026-08-14 nabor jest ZAMKNIETY.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/rinnovabili-per-i-trasporti/agevolazioni-per-la-ricarica-dei-veicoli-elettrici",
+      "https://www.arera.it/elettricita/mobilita-elettrica/sperimentazione-finalizzata-a-facilitare-la-ricarica-dei-veicoli-elettrici-nelle-fasce-orarie-notturne-e-festive"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "KRYTYCZNE ostrzezenie w poscie o EV — nie obiecywac czytelnikowi ze moze sie zapisac"
+  },
+  {
+    "id": "EV-05",
+    "claim": "Uzasadnienie progu 6 kW: w niemal calej sieci BT uzytkownicy z potenza impegnata <= 4,5 kW sa przylaczeni wg standardow gwarantujacych bezpieczny ciagly pobor do 6,6 kW, dlatego wiekszosc wnioskow distributore obsluguje zdalnie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o EV — dlaczego akurat 6 kW"
+  },
+  {
+    "id": "EV-06",
+    "claim": "ARERA podaje orientacyjne czasy ladowania w domu: przy 2 kW pelne ladowanie 20–25 h (~100 km po 8 h), przy 3 kW 13–17 h (~150 km po 8 h), przy 6 kW 7–8 h (~300 km po 8 h).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o EV — tabela czasow ladowania"
+  },
+  {
+    "id": "EV-07",
+    "claim": "ARERA szacuje roczne zapotrzebowanie na energie do ladowania auta elektrycznego na 1.300–2.300 kWh (typowo 1.500–2.000 kWh) przy przebiegu 10.000–12.000 km rocznie.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/Mobilita_elettrica/202107_Sperimentazione_541.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o EV — porownanie z rocznym zuzyciem domu (cliente tipo 2.000 kWh)"
+  },
+  {
+    "id": "METER-01",
+    "claim": "Licznik 2G Open Meter udostepnia na wyswietlaczu 'Lettura Curva A+' — zuzycie energii czynnej w predefiniowanych okresach po 15 minut, z historia od dnia 1 do 38, z podaniem godziny zamkniecia okresu i kWh.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o liczniku 2G dla uzytkownikow HA — co widac bez zadnego sprzetu"
+  },
+  {
+    "id": "METER-02",
+    "claim": "Dla instalacji z fotowoltaika licznik 2G udostepnia takze 'Curva A-' (energia czynna wyprodukowana/oddana) w tych samych 15-minutowych probkach, dla dni 1–38.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post dla wlascicieli PV — odczyt oddawania do sieci"
+  },
+  {
+    "id": "METER-03",
+    "claim": "Pozycja 'Lettura Potenza' pokazuje 'Pot. Ass.' — maksymalny SREDNI pobor zarejestrowany w oknie 15 minut w biezacym dniu, oraz 'Pot. Imm.' dla energii wprowadzonej; to nie jest wartosc chwilowa.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/content/dam/e-distribuzione/documenti/open-meter/guida_e_manuali/Guida_Tecnica_contatore_Direttiva_RED.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o liczniku 2G — roznica srednia 15-min vs chwilowa"
+  },
+  {
+    "id": "METER-04",
+    "claim": "Portale Consumi jest realizowany i zarzadzany przez Acquirente Unico na podstawie dyspozycji ARERA w wykonaniu ustawy budzetowej 2018 (legge 205/2017), dziala od 1 lipca 2019, a dostep do strefy prywatnej wymaga uwierzytelnienia SPID.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/il-portale-consumi"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'jak dostac swoje dane' — sciezka nr 1"
+  },
+  {
+    "id": "METER-05",
+    "claim": "Portale Consumi udostepnia dane zuzycia z glebokoscia historyczna do 36 miesiecy, a dla energii elektrycznej az do poziomu danych QUARTORARYCH (15-minutowych), zaleznie od ich dostepnosci w Sistema Informativo Integrato.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/il-portale-consumi"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post dla HA — rozdzielczosc danych, kluczowe dla czytelnika"
+  },
+  {
+    "id": "METER-06",
+    "claim": "Portale Consumi zawiera dane historyczne, odczyty i autoodczyty oraz informacje techniczne i umowne; jest bezplatny, a wsparcie zapewnia Sportello per il consumatore energia e ambiente pod numerem 800.166.654.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/il-portale-consumi"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post 'jak dostac swoje dane' — zakres i wsparcie"
+  },
+  {
+    "id": "METER-07",
+    "claim": "Portale Consumi NIE jest zrodlem czasu rzeczywistego — sluzy do analizy historycznej; do odczytu na biezaco potrzebny jest Chain 2 z Dispositivo Utente.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/consumatori/il-portale-consumi",
+      "https://www.e-distribuzione.it/open-meter/chain-2/faq---esercizio-chain-2.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post dla HA — wybor sciezki: historia vs live"
+  },
+  {
+    "id": "CHAIN2-01",
+    "claim": "Chain 2 zostal wprowadzony przez ARERA delibera 87/2016/R/eel, ktora zlecila CEI zdefiniowanie protokolu standardowego gwarantujacego pelna interoperacyjnosc licznikow 2G BT z Dispositivi Utente.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/area-operatori/smartmetering",
+      "https://www.arera.it/atti-e-provvedimenti/dettaglio/16/267-16"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o Chain 2 — podstawa regulacyjna"
+  },
+  {
+    "id": "CHAIN2-02",
+    "claim": "Specyfikacje techniczne Chain 2 to seria CEI TS 13-82 (przypadki uzycia), 13-83 (model danych i warstwa aplikacyjna), 13-84 (profil PLC w pasmie 125–140 kHz, pasmo C), 13-85 (profil RF 169 MHz) i 13-90 (profil NB-IoT), ostatnia opublikowana wersja 2020-04.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://smg-anie.it/wp-content/uploads/2022/07/03.-WEBINAR-21-luglio_Stefano-Rotini.pdf"
+    ],
+    "sourceTier": "secondary",
+    "confidence": "high",
+    "usedIn": "Post o Chain 2 — normy dla czytelnikow technicznych"
+  },
+  {
+    "id": "CHAIN2-03",
+    "claim": "Do skorzystania z Chain 2 przylacze musi byc podlaczone do sieci BT zarzadzanej przez e-distribuzione i wyposazone w licznik 2G Open Meter; wykluczone sa przylacza MT, BT bez licznika, liczniki elektromechaniczne (GDM) i liczniki pierwszej generacji (CE1G).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/open-meter/chain-2/faq---esercizio-chain-2.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o Chain 2 — kto sie kwalifikuje"
+  },
+  {
+    "id": "CHAIN2-04",
+    "claim": "Klient indywidualny NIE zwraca sie do e-distribuzione: aby uruchomic Chain 2 nalezy skontaktowac sie z jednym z akredytowanych Asset Provider, ktory dostarcza certyfikowany Dispositivo Utente i aktywuje usluge w imieniu klienta.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/open-meter/chain-2/faq---esercizio-chain-2.html",
+      "https://www.e-distribuzione.it/open-meter/chain-2/abilitazione-chain-2.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o Chain 2 — sciezka proceduralna dla czytelnika HA"
+  },
+  {
+    "id": "CHAIN2-05",
+    "claim": "Certyfikacje zgodnosci Dispositivo Utente z licznikiem Open Meter przeprowadzaja dwa akredytowane laboratoria: CESI S.p.A. (Milano) i Intek S.p.A. (Rezzato, Brescia).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.e-distribuzione.it/open-meter/chain-2/abilitazione-chain-2.html"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post o Chain 2 — jak rozpoznac urzadzenie certyfikowane"
+  },
+  {
+    "id": "CHAIN2-06",
+    "claim": "Integracja Chain2Gate dla Home Assistant udostepnia piec sensorow: Instant Power (W), Quarter-hour Average Power (W), Quarter-hour Active Energy (Wh), Total Active Energy (Wh) i Tariff Code.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://github.com/EnricoBilla/chain2gate_ha"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Post dla HA — co realnie dostaniesz w encjach"
+  },
+  {
+    "id": "CHAIN2-07",
+    "claim": "W integracji Chain2Gate sensory odswiezaja sie raz na 15 minut (po odebraniu ramki CF1); sensor Instant Power aktualizuje sie dodatkowo przy ramkach CF21/CF22, w krokach co 300 W lub przy przekroczeniu nominalnej potenza disponibile.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://github.com/EnricoBilla/chain2gate_ha"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Post dla HA — realistyczne oczekiwania co do 'czasu rzeczywistego'"
+  },
+  {
+    "id": "CHAIN2-08",
+    "claim": "Ramka CF22 generuje w Home Assistant zdarzenie chain2gate_power_limit_exceeded z polami instant_power, available_power i switch_off_seconds — mozna na nim zbudowac automatyzacje przerywajaca ladowanie przed odlaczeniem licznika.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://github.com/EnricoBilla/chain2gate_ha"
+    ],
+    "sourceTier": "tertiary",
+    "confidence": "medium",
+    "usedIn": "Post dla HA — konkretna automatyzacja chroniaca przed distacco"
+  },
+  {
+    "id": "METER-08",
+    "claim": "Na dzien 31 grudnia 2023 w dziesieciu najwiekszych spolkach dystrybucyjnych we Wloszech zainstalowano okolo 34,8 miliona licznikow drugiej generacji, z czego okolo 32,7 miliona bylo aktywnych.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/area-operatori/smartmetering"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "Post o 2G — skala wdrozenia, kontekst 'czy mam 2G'"
+  },
+  {
+    "id": "PUN-01",
+    "claim": "PUN Index GME jest zdefiniowany przez GME jako 'media dei prezzi zonali di MGP ponderata con gli acquisti totali riferibili ai portafogli fisici ovvero commerciali di prelievo' — srednia cen strefowych rynku dnia nastepnego wazona zakupami.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/it-it/20260131VademecumBorsaElettrica.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — definicja"
+  },
+  {
+    "id": "PUN-02",
+    "claim": "Podstawa prawna PUN Index GME: art. 13 D.Lgs. 210/21 ze zmianami; metodyka obliczania wg art. 1 ust. 2 D.M. MASE z 18 kwietnia 2024 ze zmianami.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/it-it/Home/Pubblicazioni/Indici-GME/PUNIndexGme",
+      "https://www.arera.it/schede-tecniche/dettaglio/superamento-del-prezzo-unico-nazionale-e-relativa-componente-perequativa-orientamenti-dellautorita"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Przypis prawny w poscie o PUN"
+  },
+  {
+    "id": "PUN-03",
+    "claim": "Od 1 stycznia 2025 nastapilo 'superamento del PUN': nabywcy nie placa juz jednej ceny krajowej, lecz cene strefowa (prezzo zonale), a GME stosuje do ofert zakupu komponent kompensacyjny wg deliberazione ARERA 304/2024/R/eel rowny iloczynowi ilosci i roznicy miedzy cena strefowa a PUN Index GME.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/it-it/20260131VademecumBorsaElettrica.pdf",
+      "https://www.arera.it/schede-tecniche/dettaglio/superamento-del-prezzo-unico-nazionale-e-relativa-componente-perequativa-orientamenti-dellautorita"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — najwazniejsza zmiana, PUN jest dzis indeksem referencyjnym"
+  },
+  {
+    "id": "PUN-04",
+    "claim": "Sesja MGP otwiera sie o 08.00 dziewiatego dnia poprzedzajacego dzien dostawy i zamyka o 12.00 dnia poprzedzajacego dzien dostawy — to jest moment, po ktorym znane sa ceny na jutro.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/it-it/20260131VademecumBorsaElettrica.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — 'o ktorej znam cene na jutro'; istotne dla automatyzacji HA"
+  },
+  {
+    "id": "PUN-05",
+    "claim": "Od 1 pazdziernika 2025 (go-live SDAC 30 wrzesnia 2025) MGP dziala z Market Time Unit rowna 15 minut, co daje 96 przedzialow cenowych na dobe zamiast 24 godzinowych; GME udostepnil tez produkty 30-minutowe obok 60-minutowych.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/it-it/Home/TIDEDocPreview",
+      "https://www.mercatoelettrico.org/portals/0/Documents/it-it/20251001_DT_FormatoXSD_15min.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — rozdzielczosc 15-minutowa, kluczowe dla dokladnych porad godzinowych"
+  },
+  {
+    "id": "PUN-06",
+    "claim": "Kwartorarowa rozdzielczosc PUN jest juz faktem operacyjnym: w raporcie GME za kwiecien 2026 odnotowano minima PUN Index rowne 0 EUR/MWh 'w trzech kwadransach' miedzy 5 a 6 kwietnia 2026.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260514Newsletter.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — dowod ze dane sa 15-minutowe; ciekawostka o cenie zerowej"
+  },
+  {
+    "id": "PUN-07",
+    "claim": "PUN Index GME w kwietniu 2026 wyniosl srednio 119,47 EUR/MWh w baseload (spadek o 23,93 EUR/MWh wzgledem marca), 115,40 EUR/MWh w szczycie i 121,65 EUR/MWh poza szczytem, przy maksimum 233,86 EUR/MWh.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260514Newsletter.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — rzad wielkosci hurtu w 2026"
+  },
+  {
+    "id": "PUN-08",
+    "claim": "UWAGA sygnalowa: w kwietniu 2026 PUN Index w szczycie (115,40 EUR/MWh) byl NIZSZY niz poza szczytem (121,65 EUR/MWh) — stosunek picco/baseload spadl do 0,97, co potwierdza ze klasyczna intuicja 'dzien drogi, noc tania' juz nie obowiazuje.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260514Newsletter.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "GLOWNY argument postu 'kiedy wlaczyc pralke' — spina sie z TARIFF-06"
+  },
+  {
+    "id": "PUN-09",
+    "claim": "PUN publikowany jest przez GME na mercatoelettrico.org w sekcji Esiti/Elettricita/MGP oraz przez API GME (manuale tecnico API z 15 pazdziernika 2025); wartosci wyrazane sa w EUR/MWh.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://gme.mercatoelettrico.org/it-it/Home/Esiti/Elettricita/MGP/Esiti/PUN",
+      "https://www.mercatoelettrico.org/Portals/0/Documents/it-IT/20251015Manuale_tecnico_API.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post dla HA — gdzie pobrac PUN programowo"
+  },
+  {
+    "id": "PUN-10",
+    "claim": "PUN to CENA HURTOWA, a nie cena placona przez klienta: w kwietniu 2026 PUN baseload 119,47 EUR/MWh = 11,95 c EUR/kWh, podczas gdy cena referencyjna ARERA dla klienta typowego od 1 lipca 2026 to 31,63 c EUR/kWh z podatkami — PUN stanowi wiec okolo jednej trzeciej rachunku.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260514Newsletter.pdf",
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o PUN — sekcja 'dlaczego moj rachunek nie spada gdy PUN spada'"
+  },
+  {
+    "id": "PREZZO-01",
+    "claim": "Od 1 lipca 2026 cena referencyjna energii elektrycznej ARERA dla klienta typowego (vulnerabile w Maggior Tutela) wynosi 31,63 centesimi euro za kWh, podatki wliczone.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf",
+      "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-maggior-tutela-46-nel-iii-trimestre-2026-per-i-clienti-vulnerabili"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach 2026 — glowna liczba, aktualna na dzis"
+  },
+  {
+    "id": "PREZZO-02",
+    "claim": "ARERA definiuje 'cliente tipo' jako klienta wrazliwego o zuzyciu 2.000 kWh/rok i potenza impegnata 3 kW; osobno publikuje 'cliente medio' o zuzyciu 2.700 kWh/rok i mocy 3 kW.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf",
+      "https://www.arera.it/fileadmin/allegati/dati/ele/eep35new.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach — zastrzezenie metodologiczne, bez tego liczby sa nieporownywalne"
+  },
+  {
+    "id": "PREZZO-03",
+    "claim": "Rozbicie ceny 31,63 c EUR/kWh od 1 lipca 2026: 16,92 c (53,5%) approvvigionamento energii, 2,11 c (6,7%) commercializzazione, 6,18 c (19,5%) trasporto i zarzadzanie licznikiem, 3,32 c (10,5%) oneri di sistema, 3,10 c (9,8%) podatki (VAT i akcyza).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach — wykres struktury rachunku"
+  },
+  {
+    "id": "PREZZO-04",
+    "claim": "Rachunek klienta typowego wrazliwego w Maggior Tutela wzrosl w III kwartale 2026 o 4,6% wzgledem poprzedniego kwartalu; w II kwartale 2026 wzrost wynosil 8,1%, a w I kwartale 2026 byl spadek o 2,7%.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-maggior-tutela-46-nel-iii-trimestre-2026-per-i-clienti-vulnerabili",
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Comunicato_ARERA_aggiornamento_Maggior_Tutela_II_trimestre_2026.pdf",
+      "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-maggior-tutela-27-i-trimestre-2026-clienti-vulnerabili-calo-principali-voci-bolletta"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach — zmiennosc kwartalna"
+  },
+  {
+    "id": "PREZZO-05",
+    "claim": "Roczny wydatek klienta typowego wrazliwego w Maggior Tutela za okres 1 pazdziernika 2025 – 30 wrzesnia 2026 wynosi 591,86 EUR, o 0,9% mniej niz 597,30 EUR w okresie poprzednim.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach — koszt roczny, latwiejszy do wyobrazenia niz c/kWh"
+  },
+  {
+    "id": "PREZZO-06",
+    "claim": "Dla 'cliente medio' 2.700 kWh/rok przy 3 kW cena calkowita ARERA wyniosla 26,63 c EUR/kWh w I kwartale 2026 i 28,89 c EUR/kWh w II kwartale 2026 (rozbicie: 17,47 energia + 4,96 trasporto + 3,03 oneri + 3,43 podatki).",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/dati/ele/eep35new.xlsx",
+      "https://www.arera.it/dati-e-statistiche/dettaglio/aggiornamenti-delle-condizioni-di-tutela-elettricita"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o cenach — wariant dla wiekszego gospodarstwa; UWAGA: tabela ARERA na 2026-08-14 nie zawierala jeszcze III kw. 2026"
+  },
+  {
+    "id": "PREZZO-07",
+    "claim": "Cena jest nizsza przy wyzszym zuzyciu, bo koszty stale rozkladaja sie na wiecej kWh: w II kwartale 2026 bylo to 30,24 c EUR/kWh przy 2.000 kWh/rok wobec 28,89 c EUR/kWh przy 2.700 kWh/rok.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/dati/ele/eep35new.xlsx",
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Comunicato_ARERA_aggiornamento_Maggior_Tutela_II_trimestre_2026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A 'dlaczego moja cena za kWh rozni sie od podanej przez ARERA'"
+  },
+  {
+    "id": "PREZZO-08",
+    "claim": "KRYTYCZNE zastrzezenie: liczby ARERA (31,63 c EUR/kWh w III kw. 2026) dotycza WYLACZNIE Maggior Tutela dla klientow wrazliwych — nie sa cena rynku wolnego, na ktorym jest dzis wiekszosc gospodarstw domowych.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf",
+      "https://www.arera.it/consumatori/fine-tutela-ele"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Obowiazkowe zastrzezenie w kazdym poscie cytujacym ceny ARERA"
+  },
+  {
+    "id": "PREZZO-09",
+    "claim": "Quota fissa w Maggior Tutela w III kwartale 2026 wynosi 42,287 EUR/rok dla materia energia plus 23,04 EUR/rok trasporto (razem 65,327 EUR/rok) dla abitazione di residenza; dla mieszkan innych niz rezydencjalne dochodzi 95,0916 EUR/rok oneri di sistema.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post o strukturze rachunku — koszty stale niezalezne od godzin zuzycia"
+  },
+  {
+    "id": "PREZZO-10",
+    "claim": "Domy nie bedace glowna rezydencja (abitazioni diverse dalla residenza) placa istotnie wiecej kosztow stalych: w III kw. 2026 laczna quota fissa to 160,4186 EUR/rok wobec 65,327 EUR/rok dla rezydencji.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Q&A o domu wakacyjnym / seconda casa"
+  },
+  {
+    "id": "OPER-01",
+    "claim": "Wniosek operacyjny dla porad godzinowych: w 2026 nie da sie podac jednej trwalej reguly 'wlacz pralke o godzinie X' — trzeba rozgalezic porade wedlug typu umowy (monoraria / bioraria F1-F23 / trioraria F1-F2-F3 / indeksowana do PUN), a przy taryfach fasciowych sprawdzic aktualny kwartal, bo znak roznicy F1 vs F23 sie zmienia.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx",
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260514Newsletter.pdf",
+      "https://www.arera.it/atlante-per-il-consumatore/elettricita/il-mercato-dellenergia/le-offerte-commerciali/cosa-sono-i-prezzi-per-fasce"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Teza przewodnia calego postu 'kiedy wlaczyc pralke'"
+  },
+  {
+    "id": "OPER-02",
+    "claim": "Dla wlascicieli PV bez taryfy dynamicznej najsilniejszym sygnalem pozostaje autokonsumpcja w godzinach produkcji (okolice poludnia), a nie fascia — bo unikniety koszt to pelna cena detaliczna 31,63 c EUR/kWh, znacznie wyzsza niz jakakolwiek roznica miedzy fasciami.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.arera.it/fileadmin/allegati/com_stampa/26/Aggiornamento_Maggior_Tutela_III_trimestre_2026.pdf",
+      "https://www.arera.it/fileadmin/area_operatori/prezzi_e_tariffe/E2026-smt.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "Post dla wlascicieli PV — hierarchia priorytetow"
+  },
+  {
+    "id": "rid-04",
+    "claim": "Prezzo minimo garantito (PMG) dla fonte solare fotovoltaica na 2026 rok wynosi dokladnie 47,5 EUR/MWh (4,75 eurocenta/kWh) i obejmuje JEDEN prog: energie do 1.500.000 kWh wycofana w ujeciu rocznym, dla instalacji OZE o mocy nominalnej do 1 MW; wartosc ustalona przez ARERA 29 stycznia 2026 na podstawie delibera 280/07 (Allegato A, art. 7, zmieniona delibera 618/2013/R/efr), po indeksacji wskaznikiem ISTAT FOI za 2025 wobec 2024 rownym +1,4%.",
+    "asOfDate": "2026-01-29",
+    "sources": [
+      "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07",
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/RITIRO%20DEDICATO/Altri%20contenuti/Prezzi%20minimi%20garantiti%202026.pdf",
+      "https://www.arera.it/fileadmin/allegati/docs/26/PMG_comunicato_2026.xlsx"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "rid-04 — glowna liczba PMG 2026 dla PV we wszystkich tekstach o ritiro dedicato"
+  },
+  {
+    "id": "rid-04b",
+    "claim": "Pelna tabela PMG 2026 (EUR/MWh, wg komunikatu ARERA z 29.01.2026): biogas i biomasy do 2.000.000 kWh — 112,1; gaz wysypiskowy, gaz z oczyszczalni i biopaliwa ciekle do 1.500.000 kWh — 59,5; eolica do 1.500.000 kWh — 59,5; solare fotovoltaica do 1.500.000 kWh — 47,5; geotermica do 1.500.000 kWh — 62,2; idrica progami 180,9 / 122,9 / 75,6 / 64,9; pozostale OZE do 1.500.000 kWh — 47,5.",
+    "asOfDate": "2026-01-29",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/RITIRO%20DEDICATO/Altri%20contenuti/Prezzi%20minimi%20garantiti%202026.pdf",
+      "https://www.arera.it/comunicati-operatore/dettaglio/aggiornamento-prezzi-minimi-garantiti-anno-2026-ai-delib-n-280-07"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "rid-04 — sprostowanie bledu obiegowego: prog 2.000.000 kWh dotyczy biogazu/biomasy, NIE fotowoltaiki; PV ma 1.500.000 kWh"
+  },
+  {
+    "id": "rid-04c",
+    "claim": "PMG nie przysluguje kazdej instalacji PV: wedlug GSE wybor PMG zamiast prezzo zonale orario maja tylko (a) instalacje OZE nieinventywowane o mocy do 1 MW, (b) instalacje fotowoltaiczne inventywowane o mocy do 100 kW, (c) instalacje wodne inventywowane o mocy efektywnej do 500 kW; we wszystkich pozostalych przypadkach GSE placi wylacznie prezzo zonale orario, a powyzej progu 1.500.000 kWh takze stosuje sie PO. Dla PMG obowiazuje roczne conguaglio: GSE dolicza roznice, jesli PO okazal sie korzystniejszy.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato/regolazione-economica-del-servizio"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "rid-04 — warunek kwalifikacji, bez ktorego liczba 4,75 c/kWh jest mylaca dla czytelnika z instalacja inventywowana >100 kW"
+  },
+  {
+    "id": "rid-06",
+    "claim": "GSE podaje na wlasnej stronie, ze w I kwartale 2026 dla instalacji OZE (np. fotowoltaicznej) uznany sredni prezzo zonale orario wyniosl 12,8 eurocenta/kWh za energie wprowadzona do sieci, podczas gdy srednia za caly 2025 rok wyniosla 11,5 eurocenta/kWh; GSE jednoczesnie wprost zastrzega, ze jest to wylacznie srednia, a stawka nie jest liczona wedlug PUN miesiecznego ani rocznego, lecz zmienia sie dla kazdej godziny i zaleznie od strefy rynkowej instalacji.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato/regolazione-economica-del-servizio"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "rid-06 — liczba podpierajaca ekonomike w szesciu artykulach; zrodlem pierwotnym okazal sie sam GSE, nie blogi"
+  },
+  {
+    "id": "rid-06b",
+    "claim": "Porownanie 12,8 (I kw. 2026) do 11,5 (caly 2025) nie jest porownaniem like-for-like: to kwartal wobec pelnego roku. Wedlug danych GME (PUN Index GME, baseload) miesieczne wartosci wynosily w 2026: styczen 132,66 EUR/MWh, luty 114,41, marzec 143,40 — srednia arytmetyczna I kw. 2026 ok. 130,2 EUR/MWh; w tych samych miesiacach 2025: 143,03 / 150,36 / 120,55 — srednia I kw. 2025 ok. 138,0 EUR/MWh. W ujeciu rok-do-roku I kwartal 2026 byl wiec TANSZY niz I kwartal 2025, a nie drozszy.",
+    "asOfDate": "2026-04-15",
+    "sources": [
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260213Newsletter.pdf",
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260313Newsletter.pdf",
+      "https://www.mercatoelettrico.org/Portals/0/Documents/Newsletter/20260415Newsletter.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "rid-06 — obowiazkowe zastrzezenie przy kazdym uzyciu pary 12,8 / 11,5, zeby nie sugerowac trendu wzrostowego"
+  },
+  {
+    "id": "rid-06c",
+    "claim": "GSE publikuje comiesiecznie dokument 'Prezzi medi RID 2026' (art. 13.4 Allegato A delibera AEEG 280/07) z rzeczywistymi srednimi cenami RID w rozbiciu na fascia oraria i strefe rynkowa; w pasmie F1 (dzien roboczy 8-19, najblizsze godzinom produkcji PV) wartosci I kwartalu 2026 mieszcza sie w przedziale ok. 84-150 EUR/MWh zaleznie od strefy i miesiaca, po czym w kwietniu i maju 2026 spadaja do ok. 63-103 EUR/MWh w F1 — czyli srednia kwartalna 12,8 c/kWh jest wartoscia sezonowo wysoka, a nie reprezentatywna dla calego roku.",
+    "asOfDate": "2026-06-30",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/RITIRO%20DEDICATO/Altri%20contenuti/Prezzi%20medi%20RID%202026.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "rid-06 — zastrzezenie sezonowe i strefowe; przedzialy, nie pojedyncze komorki (patrz unresolved)"
+  },
+  {
+    "id": "cer-05",
+    "claim": "Twierdzenie o '8-10 EUR/MWh za unikniete straty sieciowe' w CER jest NIEPRAWDZIWE w tej postaci. Wedlug Regole Operative CACER GSE (Allegato 1 do DM CACER 414/2023 i TIAD, wersja z 16 lipca 2025) wspolczynnik unikniętych strat sieciowych cPR nie jest kwota w EUR/MWh, lecz procentem: 1,2% dla energii z instalacji przylaczonych do sieci dystrybucyjnej sredniego napiecia i 2,6% dla niskiego napiecia, mnozonym przez godzinowa cene strefowa Pz. Przy poziomach cen strefowych obserwowanych w 2026 (ok. 115-157 EUR/MWh) daje to okolo 1,4-1,9 EUR/MWh w MT i okolo 3,0-4,1 EUR/MWh w BT.",
+    "asOfDate": "2025-07-16",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf",
+      "https://www.mase.gov.it/portale/documents/d/guest/allegato-1-regole-operative-cacer-def-pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "cer-05 — zamiast liczby 8-10 EUR/MWh nalezy podac wzor procentowy cPR i wyliczony rzad wielkosci"
+  },
+  {
+    "id": "cer-05b",
+    "claim": "Skladnik unikniętych strat sieciowych (cPR) NIE przysluguje wspolnotom energetycznym. Zgodnie z Regole Operative CACER kontrybut CACV liczony jako suma trzech skladnikow (CUAf,a + CUAf,b + cPR x Pz) dotyczy wylacznie gruppi di autoconsumatori di energia rinnovabile che agiscono collettivamente i gruppi di clienti attivi, czyli konfiguracji w obrebie tego samego budynku lub kondominium. Dla CER, CEC oraz autokonsumentow indywidualnych 'na odleglosc' CACV = EACV x CUAf,a), czyli wylacznie skladnik taryfy przesylowej.",
+    "asOfDate": "2025-07-16",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "cer-05 — krytyczne rozroznienie CER vs autoconsumo collettivo; blogi mieszaja te dwie konfiguracje"
+  },
+  {
+    "id": "cer-05c",
+    "claim": "Liczba rzedu 8-12 EUR/MWh w CER odnosi sie nie do strat sieciowych, lecz do calego contributo di valorizzazione CUAf,a), rownego zmiennej czesci jednostkowej taryfy przesylowej TRASE dla odbiorcow niskiego napiecia. ARERA na 2026 rok ustalila TRASE dla kategorii 'altre utenze in bassa tensione' na 1,190 c/kWh, czyli 11,90 EUR/MWh (aggiornamento tariffario 2026, delibera 573/2025/R/eel; strona ARERA aktualizowana 27 lutego 2026).",
+    "asOfDate": "2026-02-27",
+    "sources": [
+      "https://www.arera.it/area-operatori/prezzi-e-tariffe/tariffa-per-il-servizio-di-trasmissione",
+      "https://www.arera.it/atti-e-provvedimenti/dettaglio/25/573-25"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "cer-05 — poprawna interpretacja liczby, ktora blogi bledne przypisaly stratom sieciowym; confidence medium bo nie zweryfikowano miesiecznej serii CUAf publikowanej przez GSE"
+  },
+  {
+    "id": "cer-08",
+    "claim": "Termin 30 czerwca 2026 w kontributcie PNRR dla CER zmienil znaczenie: art. 27 decreto-legge 19 lutego 2026 nr 19 (GU nr 41 z 19.02.2026, przeksztalcony ustawa 20 kwietnia 2026 nr 50, GU nr 91 z 20.04.2026) stanowi, ze 'Entro il 30 giugno 2026, la societa GSE stipula con ciascun soggetto beneficiario ... accordi di concessione' — jest to wiec data, do ktorej GSE podpisuje umowy koncesyjne z beneficjentami, a NIE termin zakonczenia budowy instalacji. Ten sam artykul przewiduje: 'In caso di comprovate difficolta procedurali o amministrative, il termine di cui al primo periodo e prorogabile di ulteriori sessanta giorni', co przesuwa graniczna date maksymalnie na okolo 29 sierpnia 2026.",
+    "asOfDate": "2026-04-20",
+    "sources": [
+      "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-02-19;19~art27",
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/MC2%20I.1.2%20-%20Regole%20Operative%20Facility%20CACER.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "cer-08 — sprostowanie krytyczne czasowo: to termin GSE na podpisanie umow, nie termin dla inwestora na ukonczenie instalacji"
+  },
+  {
+    "id": "cer-08b",
+    "claim": "Regole Operative Facility CACER GSE z 27 marca 2026 (wydane na podstawie art. 27 D.L. 19/2026) potwierdzaja: do 30 czerwca 2026 GSE zawiera accordi di concessione do wyczerpania puli 795,5 mln EUR, kontrybut do 40% kosztow kwalifikowanych; instalacje musza wejsc do eksploatacji w ciagu 24 miesiecy od daty komunikacji accordo di concessione i najpozniej do 31 grudnia 2027. Dokument jawnie uchyla poprzednie warunki z Regole Operative z 16 lipca 2025, w tym punkt viii nakazujacy ukonczenie instalacji do 30 czerwca 2026.",
+    "asOfDate": "2026-03-27",
+    "sources": [
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/MC2%20I.1.2%20-%20Regole%20Operative%20Facility%20CACER.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "high",
+    "usedIn": "cer-08 — daty operacyjne dla inwestora: 24 miesiace od accordo, twardy limit 31.12.2027"
+  },
+  {
+    "id": "cer-08c",
+    "claim": "Stan naboru na 14 sierpnia 2026: sportello skladania wnioskow jest ZAMKNIETE — termin zostal przedluzony do 30 listopada 2025 i wygasl. GSE publikuje atti di concessione partiami; na stronie dokumentow CACER widnieja publikacje z 12 maja, 29 maja, 12 czerwca, 26 czerwca, 3 lipca i 30 lipca 2026. Publikacja z 30 lipca 2026 jest pozniejsza niz 30 czerwca 2026, co jest spojne z zastosowaniem szescdziesieciodniowej prorogi przewidzianej w art. 27 D.L. 19/2026.",
+    "asOfDate": "2026-08-14",
+    "sources": [
+      "https://www.gse.it/servizi-per-te/autoconsumo/gruppi-di-autoconsumatori-e-comunita-di-energia-rinnovabile/documenti",
+      "https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf"
+    ],
+    "sourceTier": "primary",
+    "confidence": "medium",
+    "usedIn": "cer-08 — status naboru; NIE pisac 'mozna jeszcze zlozyc wniosek', bo sportello zamkniete 30.11.2025"
+  }
+]

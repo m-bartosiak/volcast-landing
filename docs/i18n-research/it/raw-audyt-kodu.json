@@ -1,0 +1,426 @@
+{
+  "touchpoints": [
+    {
+      "file": "src/data/i18n.ts",
+      "lines": "5",
+      "what": "export const LANGS = ['en', 'pl', 'de'] as const; — jedyne zrodlo prawdy dla getStaticPaths, LanguageSwitcher, hreflang na listingach",
+      "changeNeeded": "LANGS = ['en', 'pl', 'de', 'it'] as const; — to pociagnie za soba BlogLang i wymusi bledy TS we WSZYSTKICH Record<BlogLang,...> ponizej (to jest pozadane, dziala jak brama)"
+    },
+    {
+      "file": "src/data/i18n.ts",
+      "lines": "9-13",
+      "what": "DATE_LOCALE: Record<BlogLang,string> = { en:'en-US', pl:'pl-PL', de:'de-DE' }",
+      "changeNeeded": "dopisac  it: 'it-IT',"
+    },
+    {
+      "file": "src/data/i18n.ts",
+      "lines": "16-20",
+      "what": "OG_LOCALE: Record<BlogLang,string> — uzywane w BaseLayout.astro:79 dla og:locale",
+      "changeNeeded": "dopisac  it: 'it_IT',"
+    },
+    {
+      "file": "src/data/i18n.ts",
+      "lines": "23-27",
+      "what": "READING_WPM: Record<BlogLang,number> — en:200, pl:180, de:180",
+      "changeNeeded": "dopisac  it: 180,  (wloski ma dlugosc slowa zblizona do hiszpanskiego/francuskiego; 180 jest spojne z pl/de)"
+    },
+    {
+      "file": "src/data/i18n.ts",
+      "lines": "30-34",
+      "what": "LANG_LABEL: Record<BlogLang,string> — etykiety w LanguageSwitcher",
+      "changeNeeded": "dopisac  it: 'IT',"
+    },
+    {
+      "file": "src/data/i18n.ts",
+      "lines": "64-137",
+      "what": "UI: Record<BlogLang, UIStrings> — pelne bloki en/pl/de po 21 kluczy kazdy (blogTitle, blogMetaTitle, blogName, blogDescription, blogSubtitle, latest, relatedPosts, backToBlog, postsTagged, articlesTagged, updated, readingSuffix, searchPlaceholder, getItOn, downloadOn, prev, next, qaFullGuide, qaRelated, qaIndexTitle, qaIndexSubtitle, commonQuestions)",
+      "changeNeeded": "dopisac caly blok `it: { ... }` z 21 kluczami przetlumaczonymi na wloski, np. blogTitle:'Blog', blogMetaTitle:'Previsioni fotovoltaiche e produzione solare', blogName:'Blog Volcast', latest:'Ultimo', relatedPosts:'Articoli correlati', backToBlog:'← Torna al blog', postsTagged:'Articoli con tag', articlesTagged:'Articoli con tag', updated:'aggiornato', readingSuffix:'min di lettura', searchPlaceholder:'Cerca articoli...', getItOn:'Disponibile su', downloadOn:'Scarica su', prev:'← Precedente', next:'Successivo →', qaFullGuide:'Guida completa', qaRelated:'Domande correlate', qaIndexTitle:'Domande e risposte', qaIndexSubtitle:'Risposte brevi e pratiche alle domande piu comuni sul fotovoltaico', commonQuestions:'Domande frequenti'. UWAGA: blogMetaTitle musi byc unikalny per locale (Bing zglasza duplikaty tytulow)"
+    },
+    {
+      "file": "src/content.config.ts",
+      "lines": "15",
+      "what": "schema kolekcji blog: lang: z.enum(['en', 'pl', 'de'])",
+      "changeNeeded": "z.enum(['en', 'pl', 'de', 'it']) — bez tego KAZDY plik .md z `lang: it` wywali build na walidacji schematu"
+    },
+    {
+      "file": "src/content.config.ts",
+      "lines": "40",
+      "what": "schema kolekcji qa: lang: z.enum(['en', 'pl', 'de']) — osobny enum, latwo przeoczyc",
+      "changeNeeded": "z.enum(['en', 'pl', 'de', 'it']) — te dwa enumy sa niezalezne, trzeba zmienic OBA"
+    },
+    {
+      "file": "src/data/qa-categories.ts",
+      "lines": "5-12",
+      "what": "QA_CATEGORIES: Record<string, Record<BlogLang,string>> — 6 kategorii (k1-k6), kazda z kluczami en/pl/de. k6 jest celowo rynkowo rozne (EN=eksport/taryfy, PL=net-billing, DE=Balkonkraftwerk)",
+      "changeNeeded": "dopisac `it:` do KAZDEJ z 6 kategorii: k1 it:'Rete e inverter', k2 it:'Produzione e resa', k3 it:'Accumulo domestico', k4 it:'Tariffe e bollette', k5 it:'Automazione del surplus', k6 it:'Scambio sul posto e incentivi' (k6 dopasowac do rynku IT — Scambio sul posto / Ritiro dedicato / Superbonus, nie kopiowac EN). Bez tego astro check wywali 6 bledow TS"
+    },
+    {
+      "file": "src/data/series.ts",
+      "lines": "1-19",
+      "what": "SERIES: Record<string, Record<string, {title,description}>> — typ jest LUZNY (klucz string, nie BlogLang), wiec brak 'it' NIE wywola bledu TS. 4 serie: fundamentals (en,pl), deep-dives (en,pl), practical (en,pl), geographic (en,pl,de)",
+      "changeNeeded": "dopisac klucze `it:` do serii, ktore beda mialy wloskie posty, np. fundamentals it:{title:'Fondamenti di fisica solare', description:'La scienza dietro la produzione di energia solare'}, geographic it:{title:'Geografia solare', description:'Come posizione, latitudine e clima locale determinano la resa fotovoltaica in Europa'} itd. RYZYKO: brak wpisu = seriesMeta undefined w [series].astro:25 i PostMeta.astro:20 → tytul strony serii degraduje sie do surowego sluga ('fundamentals') BEZ zadnego bledu"
+    },
+    {
+      "file": "src/data/translations.ts",
+      "lines": "15-19",
+      "what": "interface TranslationCluster { en?: string; pl?: string; de?: string; } — jawnie wyliczone klucze",
+      "changeNeeded": "dopisac  it?: string;  — bez tego getClusterSlugs():70-71 (`cluster[l]` dla l:BlogLang zawierajacego 'it') i getTranslatedSlug():55 wywolaja blad TS przy indeksowaniu"
+    },
+    {
+      "file": "src/data/translations.ts",
+      "lines": "22-41",
+      "what": "TRANSLATION_CLUSTERS — 19 klastrow tlumaczen (slug per jezyk); zrodlo hreflang i przelacznika jezyka dla istniejacych wpisow bez translationKey",
+      "changeNeeded": "do kazdego klastra, ktory dostanie wersje wloska, dopisac `it: '<wloski-slug>'`, np. { en:'how-solar-panels-convert-sunlight', pl:'...', de:'...', it:'come-i-pannelli-solari-convertono-la-luce' }. Alternatywa (preferowana dla nowej paczki): dawac wloskim postom `translationKey` w frontmatterze — BlogPost.astro:30-34 uzyje go PRZED ta mapa"
+    },
+    {
+      "file": "src/data/clusters.ts",
+      "lines": "9-30",
+      "what": "CLUSTER_LINKS — mapa hub-and-spoke po translationKey, jezykowo AGNOSTYCZNA (rozwiazywana do slugow w tym samym jezyku w BlogPost.astro:49-56)",
+      "changeNeeded": "ZERO zmian w pliku. Warunek dzialania: wloskie posty musza nosic te same wartosci `translationKey` co odpowiedniki en/pl/de ('forecast-hub', 'appliances', ...), inaczej sekcja 'Articoli correlati' bedzie pusta bez zadnego ostrzezenia"
+    },
+    {
+      "file": "src/components/CallToAction.astro",
+      "lines": "10-28",
+      "what": "lokalny const text: Record<BlogLang, {heading,body,cta}> z blokami en/pl/de — DRUGI slownik obok i18n.ts, latwo przeoczyc",
+      "changeNeeded": "dopisac blok  it: { heading:'Prova Volcast', body:'Previsioni di produzione solare precise, basate sulla fisica. Nessun accesso all inverter richiesto.', cta:'Scarica gratis' },  — astro check wywali blad TS jesli tego zabraknie"
+    },
+    {
+      "file": "src/layouts/BaseLayout.astro",
+      "lines": "35",
+      "what": "const otherLang = lang === 'en' ? 'pl' : 'en'; — binarny fallback uzywany gdy strona przekaze `translationUrl` zamiast `alternates`",
+      "changeNeeded": "nie ma obecnie wywolan z translationUrl (wszystkie strony podaja alternates), wiec martwy kod — ale zostawiony bedzie klamal dla 'it'. Poprawka: usunac zmienna i zdegradowac fallback do pustej tablicy, albo `const otherLang = lang === 'en' ? 'pl' : 'en'` zamienic na `LANGS.find(l => l !== lang) ?? 'en'`"
+    },
+    {
+      "file": "src/layouts/BaseLayout.astro",
+      "lines": "43-50",
+      "what": "budowa hreflang: self + alternates + x-default; x-default zawsze celuje w wersje 'en' (linia 50)",
+      "changeNeeded": "ZERO zmian — 'en' jako x-default jest poprawne dla 'it'. Weryfikacja: strona /blog/it/... ma emitowac <link hreflang=\"it\"> na siebie + hreflang=\"en|pl|de\" na rodzenstwo + x-default na EN"
+    },
+    {
+      "file": "src/layouts/BaseLayout.astro",
+      "lines": "79",
+      "what": "<meta property=\"og:locale\" content={OG_LOCALE[lang] ?? 'en_US'} />",
+      "changeNeeded": "ZERO zmian w pliku — zadziala automatycznie po dodaniu it:'it_IT' do OG_LOCALE w i18n.ts:16-20"
+    },
+    {
+      "file": "src/pages/blog/index.astro",
+      "lines": "6-10",
+      "what": "SSR (prerender=false) negocjacja jezyka z naglowka accept-language: ternary pl → de → en. 'it' wpada w gałąź domyslna 'en'",
+      "changeNeeded": "zamienic ternary na petle po LANGS, np.: const lang = LANGS.find(l => prefs.some(p => p.startsWith(l))) ?? 'en';  (plus import { LANGS } z ../../data/i18n). Wersja minimalna: dodac trzeci warunek `: prefs.some(l => l.startsWith('it')) ? 'it'`. Bez tego wloskie przegladarki ladujace /blog/ ida na blog EN"
+    },
+    {
+      "file": "src/pages/blog/[lang]/index.astro",
+      "lines": "10-12, 15-18",
+      "what": "getStaticPaths() = LANGS.map(...) — BEZWARUNKOWO generuje listing dla kazdego jezyka z LANGS; alternates tez z LANGS.filter bez sprawdzenia czy docelowy jezyk ma tresc",
+      "changeNeeded": "ZERO zmian w kodzie — dziala po rozszerzeniu LANGS. ALE: jesli nie ma jeszcze wloskich postow, wygeneruje sie pusta strona /blog/it/ (hasHero=false przy <7 postach, pusta siatka, brak tagow) i en/pl/de beda emitowac hreflang=\"it\" na te pustke. Jesli 'it' ma byc dodane PRZED trescia — zabezpieczyc: LANGS.filter(l => postsExistFor(l)) w getStaticPaths i w alternates"
+    },
+    {
+      "file": "src/pages/blog/[lang]/q/index.astro",
+      "lines": "9-11, 14-17",
+      "what": "identyczny wzorzec: getStaticPaths z LANGS.map + alternates z LANGS.filter bez sprawdzenia tresci",
+      "changeNeeded": "ZERO zmian — ale ten sam problem pustej strony /blog/it/q/ i hreflang do pustki. Kategorie renderuja sie przez categoryName(cat, lang), wiec wymagaja QA_CATEGORIES.it (patrz wyzej)"
+    },
+    {
+      "file": "src/pages/blog/[lang]/rss.xml.ts",
+      "lines": "6-8, 18, 21",
+      "what": "getStaticPaths z LANGS.map; tytul `Volcast Blog (${lang.toUpperCase()})` i <language>${lang}</language> generowane automatycznie",
+      "changeNeeded": "ZERO zmian — po dodaniu 'it' do LANGS powstanie /blog/it/rss.xml z <language>it</language>. Przy 0 wloskich postach @astrojs/rss wygeneruje poprawny, ale PUSTY kanal (items: [])"
+    },
+    {
+      "file": "src/pages/blog/[lang]/[slug].astro",
+      "lines": "11-14, 47-50",
+      "what": "sciezki wyprowadzane z kolekcji (post.data.lang), nie z LANGS — plus twarda walidacja rzucajaca blad gdy frontmatter `lang` != katalog",
+      "changeNeeded": "ZERO zmian w pliku. Konsekwencja: KAZDY wloski plik w src/content/blog/it/ MUSI miec `lang: it` we frontmatterze, inaczej build pada z 'lang \"xx\" doesn t match directory \"it\"' (to dobry, glosny gate)"
+    },
+    {
+      "file": "src/pages/blog/[lang]/q/[slug].astro",
+      "lines": "9-14, 16-20",
+      "what": "jak wyzej — sciezki z kolekcji qa + walidacja katalog vs frontmatter",
+      "changeNeeded": "ZERO zmian; ten sam wymog `lang: it` w src/content/qa/it/*.md"
+    },
+    {
+      "file": "src/pages/blog/[lang]/tag/[tag].astro",
+      "lines": "9-24, 33-35",
+      "what": "getStaticPaths z realnych par (lang, tag) z kolekcji — NIE z LANGS; alternates z guardem `allNonDraft.some(p => p.data.lang === l && ...)`",
+      "changeNeeded": "ZERO zmian — ta strona jest poprawnie odporna na jezyk bez tresci (nie wygeneruje sie, nie zalinkuje). Wzorzec do skopiowania do index.astro i q/index.astro"
+    },
+    {
+      "file": "src/pages/blog/[lang]/series/[series].astro",
+      "lines": "10-22, 25, 32-34",
+      "what": "getStaticPaths z realnych par (lang, series); seriesMeta = SERIES[series]?.[lang] — brak wpisu daje undefined i fallback na surowy slug w tytule i description (linie 38-39, 46)",
+      "changeNeeded": "ZERO zmian w pliku, ale patrz src/data/series.ts — bez it: w SERIES strona /blog/it/series/fundamentals/ dostanie <title>fundamentals — Volcast Blog</title> i description 'fundamentals series' po angielsku"
+    },
+    {
+      "file": "src/components/LanguageSwitcher.astro",
+      "lines": "14-19",
+      "what": "items = LANGS.map(...) z LANG_LABEL[l]; href = altByLang.get(l) ?? `/blog/${l}/` — fallback zawsze na listing",
+      "changeNeeded": "ZERO zmian — automatycznie pokaze IT po rozszerzeniu LANGS. Skutek uboczny: na kazdej stronie en/pl/de pojawi sie link IT prowadzacy na (poczatkowo pusty) /blog/it/"
+    },
+    {
+      "file": "src/components/Header.astro",
+      "lines": "16, 32-34",
+      "what": "linki `/${lang}/` (landing), `/blog/${lang}/`, `/blog/${lang}/q/` — parametryzowane; etykiety 'Home'/'Blog'/'Q&A' zahardkodowane po angielsku dla WSZYSTKICH jezykow",
+      "changeNeeded": "ZERO zmian wymaganych dla 'it'. UWAGA na `/${lang}/` w linii 16 i 32: link z bloga IT na landing /it/ zadziala TYLKO gdy build.js wygeneruje public/it/index.html — inaczej 404 z bloga na landing"
+    },
+    {
+      "file": "src/components/Footer.astro",
+      "lines": "15-16, 28, 35",
+      "what": "linki `/${lang}/` i `/blog/${lang}/` + t(lang).getItOn / t(lang).downloadOn",
+      "changeNeeded": "ZERO zmian — dziala po dodaniu bloku it do UI w i18n.ts. Ten sam warunek co Header: /it/ musi istniec"
+    },
+    {
+      "file": "src/components/SearchWidget.astro",
+      "lines": "11, 18, 48-54",
+      "what": "data-lang={lang}, placeholder z t(lang); JS sortuje wyniki pagefind podnoszac te z item.meta.lang === lang",
+      "changeNeeded": "ZERO zmian w kodzie. ALE pagefind dzieli indeks per <html lang> — na stronie z lang=\"it\" pagefind.init() zaladuje indeks 'it'. Przy 0 wloskich stronach wyszukiwarka na /blog/it/ nie zwroci NICZEGO, a sortowanie w liniach 48-54 stanie sie no-opem. Jesli chcesz wyniki cross-jezykowe, trzeba dolozyc pagefind.mergeIndex()"
+    },
+    {
+      "file": "src/components/BlogCard.astro / PostMeta.astro / ReadingTime.astro / TagList.astro / SeriesNav.astro / TableOfContents.astro",
+      "lines": "BlogCard:17, PostMeta:17,20,28, ReadingTime:11, TagList:10, SeriesNav:22, TOC:7",
+      "what": "wszystkie przyjmuja lang: BlogLang i deleguja do dateLocale()/READING_WPM/t()/SERIES — brak wlasnych literalow jezykowych",
+      "changeNeeded": "ZERO zmian — dzialaja automatycznie po uzupelnieniu i18n.ts i series.ts"
+    },
+    {
+      "file": "src/layouts/BlogPost.astro",
+      "lines": "30-44",
+      "what": "trojstopniowe parowanie hreflang: 1) translationKey, 2) getClusterSlugs (mapa translations.ts), 3) identyczny slug. Kazdy kandydat weryfikowany wzgledem realnie istniejacych wpisow (linia 43)",
+      "changeNeeded": "ZERO zmian w kodzie. Warunek: wloskie posty musza miec `translationKey` ALBO wpis w TRANSLATION_CLUSTERS — inaczej wpadaja w sciezke 3 (identyczny slug), ktora dla przetlumaczonych slugow zawsze zawiedzie → post IT bez zadnego hreflang i niewidoczny w przelaczniku jezyka z poziomu en/pl/de"
+    },
+    {
+      "file": "src/layouts/QAPost.astro",
+      "lines": "21-25",
+      "what": "hreflang dla Q&A WYLACZNIE po translationKey (brak fallbacku na mape klastrow)",
+      "changeNeeded": "ZERO zmian w kodzie, ale wloskie Q&A BEZ translationKey nie dostana zadnego alternatu — dla Q&A pole jest de facto obowiazkowe"
+    },
+    {
+      "file": "src/content/blog/it/ (katalog nie istnieje)",
+      "lines": "n/a",
+      "what": "sa tylko src/content/blog/{en,pl,de}/ (32/32/31 plikow)",
+      "changeNeeded": "utworzyc src/content/blog/it/ + .gitkeep (jak w en/pl); kazdy .md z frontmatterem lang: it, tags, date, oraz translationKey spojnym z odpowiednikiem EN"
+    },
+    {
+      "file": "src/content/qa/it/ (katalog nie istnieje)",
+      "lines": "n/a",
+      "what": "sa tylko src/content/qa/{en,pl,de}/ (25/24/24 plikow)",
+      "changeNeeded": "utworzyc src/content/qa/it/ + .gitkeep; kazdy .md z lang: it, category: k1..k6, guide: <slug wloskiego huba>, translationKey"
+    },
+    {
+      "file": "scripts/landing/build.js",
+      "lines": "19",
+      "what": "const LOCALES = ['en','cs','de','es','fr','nl','pl','pt','pt-br','ro','sk','uk']; — 12 locale, brak 'it'",
+      "changeNeeded": "dodac 'it' (alfabetycznie po 'fr'): ['en','cs','de','es','fr','it','nl','pl','pt','pt-br','ro','sk','uk']"
+    },
+    {
+      "file": "scripts/landing/build.js",
+      "lines": "23-27",
+      "what": "HREFLANG — mapa locale → tag BCP 47; uzywana i w <html lang> (linia 78) i w blokach hreflang (linia 50)",
+      "changeNeeded": "dopisac  'it': 'it'  — BRAK wpisu daje <html lang=\"undefined\"> i <link hreflang=\"undefined\">, i to bez zadnego bledu (build.js nie waliduje)"
+    },
+    {
+      "file": "scripts/landing/build.js",
+      "lines": "30-34",
+      "what": "NATIVE_NAMES — nazwy w przelaczniku jezyka, wstrzykiwane do {{NATIVE_NAME}} i do listy opcji",
+      "changeNeeded": "dopisac  'it': 'Italiano'  — brak daje literalne 'undefined' w przelaczniku na WSZYSTKICH 13 stronach"
+    },
+    {
+      "file": "scripts/landing/build.js",
+      "lines": "37",
+      "what": "const BLOG_LANG = { 'en':'en', 'pl':'pl', 'de':'de' }; linia 81 robi `BLOG_LANG[locale] || 'en'`",
+      "changeNeeded": "ETAP 1 (landing bez wloskiego bloga): nie ruszac — /it/ zalinkuje blog EN. ETAP 2 (gdy sa wloskie posty): dopisac  'it':'it'. To jest jedyny przelacznik decydujacy, dokad z wloskiego landingu prowadza linki Blog i Q&A (template.html:1193-1194 i 1590-1591)"
+    },
+    {
+      "file": "scripts/landing/build.js",
+      "lines": "67-69",
+      "what": "petla generujaca; linia 69: const t = translations[locale] || translations['en']; — CICHY fallback na angielski gdy brak bloku locale",
+      "changeNeeded": "ZERO zmian, ale swiadomie: dodanie 'it' do LOCALES bez dodania bloku 'it' do translations.json wygeneruje public/it/index.html z ANGIELSKA trescia pod <html lang=\"it\"> i wloskim canonical. Zaden warning nie poleci (ostrzezenie z linii 96 dziala tylko per-klucz, gdy obiekt locale istnieje). Opcjonalne utwardzenie: dorzucic `if (!translations[locale]) throw new Error(...)` przed linia 71"
+    },
+    {
+      "file": "scripts/landing/translations.json",
+      "lines": "caly plik (12 blokow locale, po 101 kluczy kazdy)",
+      "what": "klucze najwyzszego poziomu: en, pl, de, nl, es, fr, uk, pt, pt-br, ro, cs, sk. Brak 'it'",
+      "changeNeeded": "dodac pelny blok \"it\" z 101 kluczami (namespace'y: meta, nav, hero, features, howItWorks, screenshots, ha, trust, download, faq, footer). Referencja plaska: scripts/landing/translations-en.txt. Krytyczne: meta.title musi byc UNIKALNY wzgledem pozostalych 12 locale, meta.description w przedziale 120-155 znakow (README:37-40)"
+    },
+    {
+      "file": "scripts/landing/template.html",
+      "lines": "1254, 1294, 1306",
+      "what": "zrzuty ekranu per locale: /img/{{LOCALE}}/forecast.png, /notifications.png, /widgets.png",
+      "changeNeeded": "ZERO zmian w szablonie — ale trzeba dodac public/img/it/{forecast,notifications,widgets}.png (zrzuty z aplikacji w jezyku wloskim). Brak katalogu = 3 zepsute obrazy na /it/, bez bledu builda"
+    },
+    {
+      "file": "scripts/landing/template.html",
+      "lines": "1193-1194, 1590-1591",
+      "what": "<a href=\"/blog/{{BLOG_LANG}}/\"> i <a href=\"/blog/{{BLOG_LANG}}/q/\"> w nawigacji i stopce",
+      "changeNeeded": "ZERO zmian — sterowane przez BLOG_LANG w build.js:37"
+    },
+    {
+      "file": "scripts/landing/template.html",
+      "lines": "2, 12, 26, 27, 1171, 1202, 1207, 1604",
+      "what": "<html lang=\"{{LANG}}\">, og:url, canonical, {{HREFLANG}}, /{{LOCALE}}/, {{NATIVE_NAME}}, {{LANG_SWITCHER_OPTIONS}}, localStorage 'volcast-lang'='{{LOCALE}}'",
+      "changeNeeded": "ZERO zmian — wszystko sparametryzowane. Odnotuj luke: szablon NIE emituje og:locale w ogole (jest tylko og:site_name w linii 13), w przeciwienstwie do bloga (BaseLayout:79). Jesli chcesz spojnosci, dolozyc <meta property=\"og:locale\" content=\"{{OG_LOCALE}}\"> + mape w build.js"
+    },
+    {
+      "file": "public/img/it/ (katalog nie istnieje)",
+      "lines": "n/a",
+      "what": "public/img/ ma podkatalogi dla wszystkich 12 locale, kazdy z forecast.png + notifications.png + widgets.png. Brak 'it'",
+      "changeNeeded": "utworzyc public/img/it/ i wrzucic 3 zrzuty (forecast.png, notifications.png, widgets.png) z aplikacji ustawionej na wloski"
+    },
+    {
+      "file": "public/it/index.html (nie istnieje)",
+      "lines": "n/a",
+      "what": "wygenerowane strony landingu sa ARTEFAKTAMI COMMITOWANYMI (README:10-11) — Vercel nie uruchamia build.js",
+      "changeNeeded": "po zmianach w build.js + translations.json uruchomic `node scripts/landing/build.js` i ZACOMMITOWAC public/it/index.html. Uwaga: ten sam run nadpisze pozostale 12 stron (dojda nowe wpisy hreflang it + nowa opcja w przelaczniku) — przejrzec caly diff"
+    },
+    {
+      "file": "public/index.html",
+      "lines": "28-40",
+      "what": "reczny blok 13 <link rel=\"alternate\" hreflang=...> (en,pl,de,nl,es,fr,uk,pt,pt-BR,ro,cs,sk + x-default). Plik NIE jest generowany przez build.js",
+      "changeNeeded": "dopisac  <link rel=\"alternate\" hreflang=\"it\" href=\"https://volcast.app/it/\">  przed x-default"
+    },
+    {
+      "file": "public/index.html",
+      "lines": "47-51",
+      "what": "var LOCALE_MAP = { 'pl','en','de','nl','es','fr','uk','pt','ro','cs','sk' } — mapa detekcji jezyka przegladarki (pt-br obsluzone osobno w liniach 66-70)",
+      "changeNeeded": "dopisac  'it': 'it'  — bez tego przegladarka z navigator.language='it-IT' wpada w default i ladzie na /en/ mimo ze /it/ istnieje"
+    },
+    {
+      "file": "public/index.html",
+      "lines": "104-116",
+      "what": "lista <noscript> z 12 linkami jezykowymi (dla botow i wylaczonego JS)",
+      "changeNeeded": "dopisac  <li><a href=\"/it/\">Italiano</a></li>  (alfabetycznie po Français)"
+    },
+    {
+      "file": "public/redirect.html",
+      "lines": "16-28",
+      "what": "DRUGI reczny blok hreflang, identyczny co do tresci z public/index.html — osobny plik, latwo przeoczyc",
+      "changeNeeded": "dopisac  <link rel=\"alternate\" hreflang=\"it\" href=\"https://volcast.app/it/\">  przed x-default"
+    },
+    {
+      "file": "public/redirect.html",
+      "lines": "31-35",
+      "what": "DRUGI var LOCALE_MAP, ten sam zbior 11 jezykow",
+      "changeNeeded": "dopisac  'it': 'it'"
+    },
+    {
+      "file": "public/redirect.html",
+      "lines": "88-102",
+      "what": "DRUGA lista <noscript> z 12 linkami",
+      "changeNeeded": "dopisac  <li><a href=\"/it/\">Italiano</a></li>"
+    },
+    {
+      "file": "public/sitemap-landing.xml",
+      "lines": "3-14",
+      "what": "reczna sitemapa 12 locale landingu (+ /privacy, /terms). Podpieta w astro.config.mjs:12-14 jako customSitemaps",
+      "changeNeeded": "dopisac  <url><loc>https://volcast.app/it/</loc></url>  — bez tego /it/ nie trafi do sitemap-index i nie bedzie zgloszony do Google/Bing (strony bloga /blog/it/* trafiaja tam automatycznie przez @astrojs/sitemap)"
+    },
+    {
+      "file": "astro.config.mjs",
+      "lines": "9-15",
+      "what": "integracja sitemap: filter wyrzuca /tag/, customSitemaps wskazuje sitemap-landing.xml",
+      "changeNeeded": "ZERO zmian — /blog/it/** wejdzie do sitemapy automatycznie, wloskie strony tagow zostana wyfiltrowane tak samo jak reszta"
+    },
+    {
+      "file": "vercel.json",
+      "lines": "1-15",
+      "what": "framework astro, cleanUrls, 2 przekierowania 301 dla konkretnych slugow en/pl",
+      "changeNeeded": "ZERO zmian dla 'it' — nie ma per-locale routingu. Dopisac tu wpis tylko jesli w przyszlosci zmienisz wloski slug po publikacji"
+    },
+    {
+      "file": "package.json",
+      "lines": "6",
+      "what": "build: astro check && astro build && npx pagefind --site .vercel/output/static --glob \"blog/**/*.html\" — brak jakiejkolwiek konfiguracji jezykowej pagefind",
+      "changeNeeded": "ZERO zmian — pagefind 1.4.0 wykrywa jezyk z <html lang> i buduje OSOBNY indeks per jezyk (wloski stemmer Snowball jest wbudowany). Konsekwencja opisana przy SearchWidget"
+    },
+    {
+      "file": ".github/workflows/indexnow.yml",
+      "lines": "39-43",
+      "what": "wyciaga lang i slug ze SCIEZKI pliku (src/content/{blog|qa}/{lang}/{slug}.md) i buduje URL",
+      "changeNeeded": "ZERO zmian — jest w pelni jezykowo-agnostyczny, wloskie posty zpingują sie same"
+    },
+    {
+      "file": ".github/workflows/publish-blog.yml",
+      "lines": "caly",
+      "what": "flipuje draft:true→false wg src/content/schedule.json (obecnie pusta tablica [])",
+      "changeNeeded": "ZERO zmian w workflow — wloskie wpisy dodaje sie do schedule.json tak samo jak pozostale (sciezka + data)"
+    },
+    {
+      "file": "src/pages/links.astro",
+      "lines": "6",
+      "what": "<html lang=\"en\"> — samodzielna strona /links, brak wersji jezykowych",
+      "changeNeeded": "ZERO zmian wymaganych; poza zakresem i18n (strona jednojezyczna z zalozenia)"
+    },
+    {
+      "file": "public/privacy.html, public/terms.html, public/delete-account.html, public/auth/callback/index.html",
+      "lines": "2 (kazdy)",
+      "what": "<html lang=\"en\"> — statyczne strony prawne tylko po angielsku, linkowane ze stopki wszystkich locale",
+      "changeNeeded": "ZERO zmian wymaganych dla 'it' (juz dzis nie sa tlumaczone na zadny z 12 locale) — odnotowane dla kompletnosci"
+    },
+    {
+      "file": "scripts/landing/og/card.html",
+      "lines": "2, 28",
+      "what": "<html lang=\"en\"> i --shot: url('../../../public/img/en/forecast.png') — jedna wspolna karta OG dla calego landingu",
+      "changeNeeded": "ZERO zmian — og:image jest jeden dla wszystkich locale (public/img/og-landing.png)"
+    },
+    {
+      "file": "src/middleware.ts",
+      "lines": "10-32",
+      "what": "serwuje statyczne HTML z public/ w devie, rozwiazujac /xx/ → public/xx/index.html; brak listy locale",
+      "changeNeeded": "ZERO zmian — /it/ zadziala w devie automatycznie, gdy tylko powstanie public/it/index.html"
+    }
+  ],
+  "risks": [
+    "TWARDA BRAMA (dobra): rozszerzenie LANGS w i18n.ts:5 natychmiast wywali `astro check` na kazdym Record<BlogLang,...> bez klucza 'it' — DATE_LOCALE, OG_LOCALE, READING_WPM, LANG_LABEL, UI (i18n.ts), QA_CATEGORIES x6 (qa-categories.ts), text w CallToAction.astro, oraz indeksowanie TranslationCluster w translations.ts:55 i :70-71. To lacznie ~11 bledow TS. Poniewaz `npm run build` zaczyna sie od `astro check`, nic sie nie zdeployuje do czasu uzupelnienia — na to mozna polegac.",
+    "CICHA DZIURA (zla): SERIES w src/data/series.ts ma typ Record<string, Record<string, ...>> — luzne klucze string, NIE BlogLang. Brak wpisu 'it' NIE wywola bledu. Efekt: /blog/it/series/fundamentals/ dostaje <title>fundamentals — Volcast Blog</title> i description 'fundamentals series' po angielsku, i to trafia do indeksu Google. Nic tego nie zlapie poza recznym sprawdzeniem.",
+    "CICHA DZIURA (zla): build.js:69 robi `translations[locale] || translations['en']`. Dodanie 'it' do LOCALES bez bloku 'it' w translations.json generuje public/it/index.html z PELNA angielska trescia pod <html lang=\"it\">, z canonical https://volcast.app/it/ i hreflang=\"it\". To klasyczny bug duplikatu tresci + zlego hreflang, ktorego zaden krok builda nie wykryje (ostrzezenie z linii 96 dziala tylko per-klucz, gdy obiekt locale juz istnieje).",
+    "CICHA DZIURA (zla): build.js nie waliduje HREFLANG[locale] ani NATIVE_NAMES[locale]. Dodanie 'it' tylko do LOCALES (linia 19) bez mapy hreflang (23-27) i nazwy natywnej (30-34) da <html lang=\"undefined\">, <link hreflang=\"undefined\"> oraz literalny napis 'undefined' w przelaczniku jezyka na WSZYSTKICH 13 stronach — bez bledu, bez warninga.",
+    "PUSTY JEZYK: getStaticPaths w blog/[lang]/index.astro:10-12, q/index.astro:9-11 i rss.xml.ts:6-8 mapuja po LANGS BEZWARUNKOWO. Nie wywala sie na jezyku bez tresci — wygeneruje pusta strone: listing bez hero (hasHero wymaga >=7 postow) z pusta siatka i bez pigulek tagow, pusty indeks Q&A (zero sekcji kategorii), oraz poprawny ale bezpozycyjny RSS. To thin content, ktory @astrojs/sitemap zglosi do Google.",
+    "HREFLANG NA PUSTKE: blog/[lang]/index.astro:15 i q/index.astro:14 buduja alternates z LANGS.filter BEZ sprawdzenia czy docelowy jezyk ma tresc — w odroznieniu od tag/[tag].astro:33-35 i series/[series].astro:32-34, ktore maja guard `allNonDraft.some(...)`. Skutek: listingi en/pl/de zaczna deklarowac hreflang=\"it\" na pusta strone. Jesli 'it' wchodzi PRZED trescia, przeniesc wzorzec z tag/[tag].astro do obu index.astro.",
+    "PRZELACZNIK JEZYKA: LanguageSwitcher.astro:18 ma fallback `altByLang.get(l) ?? /blog/${l}/`. Po dodaniu 'it' do LANGS przycisk IT pojawi sie na KAZDEJ stronie bloga (takze przy artykulach bez wloskiego odpowiednika) i wyrzuci uzytkownika na goly listing /blog/it/ — poczatkowo pusty.",
+    "PAGEFIND JEST PER-JEZYK: pagefind dzieli indeks wg <html lang> (BaseLayout:54). Na stronie z lang=\"it\" pagefind.init() zaladuje wylacznie indeks wloski — wyszukiwarka na /blog/it/ nie zwroci NICZEGO dopoki nie ma wloskich artykulow, a sortowanie po item.meta.lang w SearchWidget.astro:48-54 stanie sie martwym kodem. Jesli oczekujesz wynikow cross-jezykowych, potrzebny jest pagefind.mergeIndex(). Sam stemmer wloski jest w pagefind 1.4.0 obecny — konfiguracji nie trzeba.",
+    "OSIEROCONE TLUMACZENIA: BlogPost.astro:30-40 paruje wersje jezykowe przez translationKey → TRANSLATION_CLUSTERS → identyczny slug. Wloskie slugi beda przetlumaczone, wiec sciezka 3 zawsze zawiedzie. Post IT bez `translationKey` i bez wpisu w translations.ts dostanie ZERO hreflang i nie pojawi sie w przelaczniku jezyka z poziomu en/pl/de — czyli bedzie istnial, ale bedzie SEO-niewidoczny jako wersja jezykowa. Dla Q&A jest gorzej: QAPost.astro:21-25 nie ma ZADNEGO fallbacku poza translationKey.",
+    "BRAK LINKOWANIA WEWNETRZNEGO: CLUSTER_LINKS (clusters.ts) rozwiazuje sie po translationKey w tym samym jezyku (BlogPost.astro:49-56). Wloskie posty bez tych samych translationKey ('forecast-hub', 'appliances', ...) nie dostana bloku 'Articoli correlati' — cicho, bez ostrzezenia. To samo dotyczy pola `guide` w Q&A (BlogPost.astro:63-66) — musi wskazywac na WLOSKI slug huba, nie angielski.",
+    "ROZJAZD LANDING vs BLOG: BLOG_LANG w build.js:37 z fallbackiem `|| 'en'` (linia 81) sprawia, ze wloski landing linkuje do bloga EN dopoki nie dopiszesz 'it':'it'. Jesli o tym zapomnisz po opublikowaniu wloskich artykulow, wloscy uzytkownicy nigdy nie trafia na wloski blog — i nic tego nie zglosi.",
+    "LINK ZWROTNY BLOG→LANDING: Header.astro:16,32 i Footer.astro:15 emituja `/${lang}/`. Dodanie 'it' do LANGS bez wygenerowania public/it/index.html da 404 z kazdej wloskiej strony bloga na landing. Kolejnosc ma znaczenie: landing (build.js) PRZED albo razem z blogiem (LANGS).",
+    "ARTEFAKTY COMMITOWANE: public/{locale}/index.html sa generowane lokalnie i commitowane; Vercel NIE uruchamia build.js (README:10-11). Zapomniany `node scripts/landing/build.js` + commit = /it/ zwraca 404 w produkcji, podczas gdy sitemapa i hreflang juz go reklamuja. Dodatkowo ten sam run nadpisze pozostale 12 plikow (nowy hreflang it + nowa opcja przelacznika) — diff bedzie szeroki, trzeba go przejrzec, a nie odrzucic.",
+    "TRZY RECZNE KOPIE TEJ SAMEJ LISTY: hreflang landingu zyje w build.js:23-27 (generowany), public/index.html:28-40 (recznie), public/redirect.html:16-28 (recznie) i public/sitemap-landing.xml:3-14 (recznie). Detekcja jezyka zyje osobno w public/index.html:47-51 i public/redirect.html:31-35. Aktualizacja czesci z nich daje niewzajemne adnotacje hreflang — Google to raportuje i ignoruje cala grupe. Zaadresuj wszystkie piec miejsc w jednym commicie.",
+    "BRAK og:locale NA LANDINGU: template.html nie ma zadnego og:locale (tylko og:site_name w linii 13) — inaczej niz blog (BaseLayout:79). Wloski landing nie zasygnalizuje Facebookowi jezyka. To istniejacy dlug, nie regres, ale skoro dotykasz i18n — moment na dolozenie {{OG_LOCALE}} + mapy w build.js.",
+    "ICU / NAZWY MIESIECY: PostMeta.astro:17, BlogCard.astro:17 i [lang]/index.astro:77 wolaja toLocaleDateString('it-IT', {month:'long'}). Node 20+ ma full-icu domyslnie, ale jesli build poleci na runtime z small-icu, wloskie miesiace cicho zrenderuja sie po angielsku. Weryfikowalne jednym `node -e`.",
+    "NEGOCJACJA JEZYKA NA /blog/: blog/index.astro jest SSR (prerender=false) i ma ternary pl→de→en (linie 6-10). Wloskie przegladarki ladujace goly /blog/ pojda na EN nawet gdy caly wloski blog bedzie gotowy. To osobny plik od LANGS — nie zaktualizuje sie sam.",
+    "WALIDACJA TRESCI ZADZIALA GLOSNO (dobra wiadomosc): [slug].astro:12-14 i q/[slug].astro:10-13 rzucaja bledem gdy frontmatter `lang` nie zgadza sie z katalogiem, a z.enum w content.config.ts:15 i :40 odrzuci `lang: it` do czasu zmiany OBU enumow. Bledna wloska tresc nie przejdzie po cichu.",
+    "ZRZUTY EKRANU: template.html:1254,1294,1306 wskazuja /img/{{LOCALE}}/*.png. Brak public/img/it/ = trzy obrazy 404 na wloskim landingu, bez bledu builda (build.js nie sprawdza assetow). Dodatkowo zrzuty musza pokazywac aplikacje po wlosku — 'it' jest w 13 locale aplikacji, wiec da sie je zrobic.",
+    "KOLEJNOSC WDROZENIA: 'it' jest w aplikacji 11.6% uzytkownikow (drugi po de wsrod nietkniętych rynkow) — najbezpieczniejsza sciezka to ETAP 1 sam landing (build.js + translations.json + img + 5 recznych list), gdzie LANGS bloga zostaje nietkniete i nie powstaje zadna pusta strona bloga; ETAP 2 blog dopiero z gotowa paczka tresci + BLOG_LANG['it']='it'. Dodanie 'it' do LANGS przed trescia daje pusty listing, pusty Q&A, pusty RSS i martwa wyszukiwarke pod wlasnym hreflangiem."
+  ],
+  "buildCommands": [
+    "cd C:/Users/yakon/Documents/volcast-landing",
+    "# 1) LANDING — regeneracja stron statycznych po zmianach w build.js + translations.json",
+    "node scripts/landing/build.js   # ma wypisac 13 linii ✓, w tym 'it/index.html'; ZERO linii '⚠ Missing key'",
+    "# 2) weryfikacja wygenerowanego wloskiego landingu (przed commitem)",
+    "grep -n 'html lang=\\\"it\\\"\\|hreflang=\\\"it\\\"\\|canonical\\|/img/it/\\|/blog/' public/it/index.html | head -30",
+    "grep -c 'hreflang=' public/it/index.html   # oczekiwane 14 (13 locale + x-default)",
+    "grep -rn 'undefined' public/it/index.html | head   # MUSI byc puste — lapie brak HREFLANG/NATIVE_NAMES",
+    "ls public/img/it/   # musi zawierac forecast.png notifications.png widgets.png",
+    "# 3) weryfikacja, ze pozostale 12 stron dostaly nowy wpis it (regeneracja nadpisuje wszystkie)",
+    "grep -L 'hreflang=\\\"it\\\"' public/*/index.html   # MUSI byc puste",
+    "git diff --stat public/   # przejrzec szerokosc diffu (13 plikow), nie odrzucac",
+    "# 4) reczne listy poza generatorem — sprawdzic wszystkie piec miejsc naraz",
+    "grep -n 'it' public/index.html public/redirect.html public/sitemap-landing.xml | grep -i \"hreflang=.it.\\|'it'\\|/it/\"",
+    "# 5) BLOG — brama typow; wypisze KAZDY Record<BlogLang,...> bez klucza 'it'",
+    "npx astro check",
+    "# 6) pelny build (astro check + astro build + pagefind)",
+    "npm run build",
+    "# 7) weryfikacja indeksu pagefind — czy powstal osobny fragment dla 'it'",
+    "ls .vercel/output/static/_pagefind/ | head -30",
+    "grep -o '\\\"it\\\"' .vercel/output/static/_pagefind/pagefind-entry.json   # potwierdza jezyk w indeksie",
+    "# 8) weryfikacja wygenerowanych tras bloga IT",
+    "ls .vercel/output/static/blog/it/ .vercel/output/static/blog/it/q/ 2>/dev/null",
+    "test -f .vercel/output/static/blog/it/rss.xml && echo 'rss it OK'",
+    "grep -c '<item>' .vercel/output/static/blog/it/rss.xml   # 0 = pusty kanal (spodziewane bez tresci)",
+    "grep -n 'hreflang=\\\"it\\\"\\|og:locale' .vercel/output/static/blog/en/index.html | head",
+    "# 9) sitemapa — czy /it/ i /blog/it/ sa zgloszone",
+    "grep -n 'volcast.app/it/\\|/blog/it/' .vercel/output/static/sitemap-0.xml public/sitemap-landing.xml | head -20",
+    "# 10) sanity ICU dla dat wloskich (nazwy miesiecy)",
+    "node -e \"console.log(new Date('2026-08-14').toLocaleDateString('it-IT',{year:'numeric',month:'long',day:'numeric'}))\"   # oczekiwane '14 agosto 2026', NIE 'August'",
+    "# 11) podglad lokalny (middleware.ts rozwiazuje /it/ z public/ w devie)",
+    "npm run dev   # otworzyc http://localhost:4321/it/ , /blog/it/ , /blog/it/q/ , /blog/it/rss.xml",
+    "npm run preview   # podglad zbudowanego wyjscia"
+  ]
+}

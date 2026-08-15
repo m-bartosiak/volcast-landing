@@ -29,6 +29,7 @@
   <link rel="alternate" hreflang="de" href="https://volcast.app/de/">
   <link rel="alternate" hreflang="es" href="https://volcast.app/es/">
   <link rel="alternate" hreflang="fr" href="https://volcast.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://volcast.app/it/">
   <link rel="alternate" hreflang="nl" href="https://volcast.app/nl/">
   <link rel="alternate" hreflang="pl" href="https://volcast.app/pl/">
   <link rel="alternate" hreflang="pt" href="https://volcast.app/pt/">
@@ -1221,6 +1222,7 @@
               <a href="/de/" class="lang-option" data-lang="de">Deutsch</a>
               <a href="/es/" class="lang-option" data-lang="es">Español</a>
               <a href="/fr/" class="lang-option" data-lang="fr">Français</a>
+              <a href="/it/" class="lang-option" data-lang="it">Italiano</a>
               <a href="/nl/" class="lang-option" data-lang="nl">Nederlands</a>
               <a href="/pl/" class="lang-option" data-lang="pl">Polski</a>
               <a href="/pt/" class="lang-option" data-lang="pt">Português</a>
@@ -1296,7 +1298,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </div>
           <h3>Прогнозування на основі фізики</h3>
-          <p>Погодинні та щоденні прогнози генерації фотоелектричних систем з використанням повної моделі випромінювання та супутникових даних.</p>
+          <p>Погодинні та щоденні прогнози генерації фотоелектричних систем на основі повної моделі випромінювання, спектральних поправок і реальних погодних даних з кількох чисельних моделей прогнозу погоди. Підключення до обладнання не потрібне.</p>
         </div>
         <div class="glass-card feature-card reveal">
           <div class="feature-icon feature-icon--indigo">
@@ -1311,7 +1313,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
             </div>
             <h3>Розумні сповіщення</h3>
-            <p>Отримуйте сповіщення, коли прогноз на завтра суттєво змінюється або коли найкращий час для ввімкнення потужних приладів.</p>
+            <p>Вечірній прогноз на завтра, попередження про сніг, коли панелі може засипати, і підказка, коли найкращий час увімкнути потужні прилади. Не пропустіть сонячне вікно.</p>
           </div>
           <div class="feature-card-img">
             <img src="/img/uk/notifications.png" alt="Volcast notifications" loading="lazy">
@@ -1352,7 +1354,7 @@
         <div class="step reveal">
           <div class="step-number">2</div>
           <h3>Отримайте прогноз</h3>
-          <p>Volcast поєднує супутникові дані з фізичною моделлю вашої системи для прогнозування генерації.</p>
+          <p>Volcast поєднує погодні дані з кількох моделей прогнозу погоди з фізичною моделлю вашої системи, щоб передбачити погодинну та денну генерацію.</p>
         </div>
         <div class="step reveal">
           <div class="step-number">3</div>
@@ -1556,7 +1558,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Наскільки точні прогнози?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Volcast використовує фізичну модель та супутникові дані. Після калібрування точність зазвичай становить 85–95% у ясні дні.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast використовує повну фізичну модель випромінювання разом із погодними даними з кількох чисельних моделей прогнозу та параметрами саме вашої системи. Після калібрування фактичною генерацією точність зазвичай сягає близько 85% у ясні та мінливо хмарні дні. Щільну хмарність важко передбачити будь-якій системі, але Volcast усе одно точніший за звичайні погодні застосунки.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

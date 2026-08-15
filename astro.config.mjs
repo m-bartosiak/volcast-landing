@@ -5,8 +5,12 @@ import sitemap from '@astrojs/sitemap';
 const NOT_A_DESTINATION = [
   /\/tag\//,
   /\/series\//,
-  /\/blog\/(en|pl|de)\/$/,
-  /\/blog\/(en|pl|de)\/q\/$/,
+  // Kod języka nie jest tu wyliczany celowo. Zaszyta lista (en|pl|de) przepuściła
+  // do sitemapy każdy nowy język, mimo że listingi są noindex — czyli dokładnie
+  // ten sprzeczny sygnał, który reszta tego filtra usuwa. Wzorzec ogólny działa
+  // też dla języka, którego jeszcze nie ma.
+  /\/blog\/[a-z]{2}(-[a-z]{2})?\/$/,
+  /\/blog\/[a-z]{2}(-[a-z]{2})?\/q\/$/,
   /\/blog\/$/,
 ];
 

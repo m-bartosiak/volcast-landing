@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — App de predicción solar</title>
-  <meta name="description" content="Predice tu producción solar con un motor físico avanzado. Siete días por adelantado, hora a hora, con datos satelitales — para cualquier instalación.">
+  <meta name="description" content="Volcast predice tu producción solar hora a hora, a siete días vista, a partir de tus paneles y de varios modelos meteorológicos. Sin acceso al inversor.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — App de predicción solar">
   <meta property="og:description" content="Predice tu producción solar con física. Siete días por adelantado, hora a hora — para cualquier instalación.">
@@ -29,6 +29,7 @@
   <link rel="alternate" hreflang="de" href="https://volcast.app/de/">
   <link rel="alternate" hreflang="es" href="https://volcast.app/es/">
   <link rel="alternate" hreflang="fr" href="https://volcast.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://volcast.app/it/">
   <link rel="alternate" hreflang="nl" href="https://volcast.app/nl/">
   <link rel="alternate" hreflang="pl" href="https://volcast.app/pl/">
   <link rel="alternate" hreflang="pt" href="https://volcast.app/pt/">
@@ -1221,6 +1222,7 @@
               <a href="/de/" class="lang-option" data-lang="de">Deutsch</a>
               <a href="/es/" class="lang-option active" aria-current="page" data-lang="es">Español</a>
               <a href="/fr/" class="lang-option" data-lang="fr">Français</a>
+              <a href="/it/" class="lang-option" data-lang="it">Italiano</a>
               <a href="/nl/" class="lang-option" data-lang="nl">Nederlands</a>
               <a href="/pl/" class="lang-option" data-lang="pl">Polski</a>
               <a href="/pt/" class="lang-option" data-lang="pt">Português</a>
@@ -1296,7 +1298,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </div>
           <h3>Predicción basada en física</h3>
-          <p>Pronósticos de producción fotovoltaica horarios y diarios utilizando un modelo de irradiancia completo y datos satelitales.</p>
+          <p>Pronósticos de producción fotovoltaica horarios y diarios con un modelo de irradiancia completo, correcciones espectrales y datos meteorológicos reales de varios modelos numéricos de predicción. Sin conectar el hardware.</p>
         </div>
         <div class="glass-card feature-card reveal">
           <div class="feature-icon feature-icon--indigo">
@@ -1311,7 +1313,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
             </div>
             <h3>Notificaciones Inteligentes</h3>
-            <p>Recibe alertas cuando el pronóstico cambie significativamente o cuando sea el mejor momento para usar electrodomésticos pesados.</p>
+            <p>El pronóstico vespertino para mañana, un aviso de nieve cuando tus paneles puedan quedar cubiertos y un recordatorio del mejor momento para usar electrodomésticos pesados. No te pierdas ninguna ventana de sol.</p>
           </div>
           <div class="feature-card-img">
             <img src="/img/es/notifications.png" alt="Volcast notifications" loading="lazy">
@@ -1352,7 +1354,7 @@
         <div class="step reveal">
           <div class="step-number">2</div>
           <h3>Obtén tu pronóstico</h3>
-          <p>Volcast combina datos meteorológicos satelitales con el modelo físico de tu sistema para predecir la producción.</p>
+          <p>Volcast combina datos meteorológicos de varios modelos de predicción con el modelo físico de tu sistema para predecir la producción horaria y diaria.</p>
         </div>
         <div class="step reveal">
           <div class="step-number">3</div>
@@ -1556,7 +1558,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             ¿Qué tan precisos son los pronósticos?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Volcast usa un modelo físico y datos satelitales. Tras la calibración, la precisión suele alcanzar el 85–95% en días despejados.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast usa un modelo físico completo de irradiancia junto con datos meteorológicos de varios modelos numéricos de predicción y los parámetros concretos de tu instalación. Tras calibrar con producción real, la precisión suele rondar el 85% en días despejados y parcialmente nublados. La nubosidad densa es difícil de predecir para cualquier sistema, pero Volcast sigue superando a las apps del tiempo genéricas.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">

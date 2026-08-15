@@ -1,0 +1,357 @@
+{
+  "glossary": [
+    {
+      "en": "solar forecast / PV production forecast",
+      "target": "prognoza producției fotovoltaice (scurt: prognoză solară)",
+      "note": "Termenul instituțional: Transelectrica publică „Prognoză Producție Prosumatori\". Evită „predicție\" (sună a statistică academică). În titluri folosește „prognoza producției panourilor fotovoltaice\" — așa caută userul."
+    },
+    {
+      "en": "irradiance",
+      "target": "iradianță (W/m²)",
+      "note": "Putere instantanee. NU confunda cu „iradiere\"/„insolație\" = energie cumulată (Wh/m², kWh/m²/zi). Multe bloguri RO scriu greșit „radiație\" pentru ambele; la prima apariție explică: „iradianță (câtă putere solară cade pe un metru pătrat, în W/m²)\"."
+    },
+    {
+      "en": "solar radiation",
+      "target": "radiație solară",
+      "note": "Termenul popular, folosit de meteo.ro și de blogurile de instalatori. OK în textul de intro; în secțiunile tehnice treci pe „iradianță\"."
+    },
+    {
+      "en": "GHI (global horizontal irradiance)",
+      "target": "iradianță globală orizontală (GHI)",
+      "note": "Păstrează acronimul EN în paranteză la prima apariție, apoi folosește doar GHI. Publicul HA îl vede oricum în senzori."
+    },
+    {
+      "en": "DNI (direct normal irradiance)",
+      "target": "iradianță directă normală (DNI)",
+      "note": "„Normală\" = perpendiculară pe razele soarelui, nu „obișnuită\" — merită o notă de o propoziție, e capcană clasică de lectură în RO."
+    },
+    {
+      "en": "DHI (diffuse horizontal irradiance)",
+      "target": "iradianță difuză orizontală (DHI)",
+      "note": "Perechea cu GHI/DNI. Formularea „radiație difuză\" e cea uzuală în blogurile comerciale RO când vorbesc despre zile înnorate."
+    },
+    {
+      "en": "direct / beam radiation",
+      "target": "radiație directă",
+      "note": "Alternativ tehnic: „componenta directă\". Evită calcul „radiație de fascicul\" — nu se folosește."
+    },
+    {
+      "en": "diffuse radiation",
+      "target": "radiație difuză",
+      "note": "Sursele RO subliniază că iarna/pe cer acoperit componenta difuză domină — bun cârlig pentru articolele de sezon rece."
+    },
+    {
+      "en": "reflected radiation / albedo",
+      "target": "radiație reflectată / albedo",
+      "note": "„Albedo\" e împrumut acceptat, invariabil, gen neutru („albedoul\"). Relevant la bifaciale și la zăpadă."
+    },
+    {
+      "en": "plane of array (POA) irradiance",
+      "target": "iradianță în planul panourilor (în plan înclinat)",
+      "note": "Nu există acronim RO consacrat; scrie forma lungă și, dacă apare des, „iradianța POA\" după prima definire."
+    },
+    {
+      "en": "transposition model",
+      "target": "model de transpoziție (a iradianței din plan orizontal în plan înclinat)",
+      "note": "Termen din literatura tehnică RO (Perez, Hay-Davies rămân netraduse). La public larg: „calculul cât din radiația măsurată pe orizontală ajunge efectiv pe panourile tale înclinate\"."
+    },
+    {
+      "en": "tilt (angle)",
+      "target": "unghi de înclinare (înclinație)",
+      "note": "Standard pe toate site-urile RO. Valorile de referință pentru România: 30–40°, regula practică „latitudine − 10°\". Genul: „unghiul de înclinare\"."
+    },
+    {
+      "en": "azimuth",
+      "target": "azimut (orientare)",
+      "note": "„Azimut\" e corect și folosit, dar în textele de consum predomină „orientare\" (sud, sud-est). Formulă bună: „orientarea (azimutul) panourilor\". Sud = 180°."
+    },
+    {
+      "en": "string (of panels)",
+      "target": "șir de panouri (string)",
+      "note": "„Șir\" e traducerea corectă, dar instalatorii și forumurile spun „string\". Recomandare: „șir (string)\" la prima apariție, apoi „string\" — publicul HA îl recunoaște din interfața invertorului. Plural: „stringuri\"."
+    },
+    {
+      "en": "inverter",
+      "target": "invertor",
+      "note": "NU „inversor\" (acela e alt sens tehnic). Variante: „invertor hibrid\", „invertor on-grid/off-grid\", „microinvertor\"."
+    },
+    {
+      "en": "MPPT / maximum power point tracking",
+      "target": "MPPT (urmărirea punctului de putere maximă)",
+      "note": "Acronimul rămâne EN; forma lungă doar la prima apariție. Utilizatorii vorbesc despre „două MPPT-uri\" — articulare cu cratimă."
+    },
+    {
+      "en": "clipping",
+      "target": "limitare la puterea invertorului (clipping) / tăierea vârfului de producție",
+      "note": "Nu există echivalent unic; sursele RO folosesc direct „clipping\" alături de „limitare\". Recomandat: „limitarea (clipping) puterii invertorului\" prima dată, apoi „clipping\". Distinge-l clar de curtailment — sunt confundate constant."
+    },
+    {
+      "en": "DC/AC ratio, oversizing",
+      "target": "raport DC/AC, supradimensionare (a puterii DC față de invertor)",
+      "note": "Termen prezent în articolele RO de dimensionare; valorile uzuale 1,1–1,3. Scrie zecimalele cu virgulă: „raport 1,25\"."
+    },
+    {
+      "en": "curtailment",
+      "target": "limitarea injecției / reducerea producției impusă",
+      "note": "Nu se traduce prin „curtailment\" în RO. Distinge două cazuri: limitare impusă de operator/Transelectrica („reducerea producției\") și limitare setată local în invertor („limitarea injecției\", „zero export\")."
+    },
+    {
+      "en": "zero export",
+      "target": "zero export / funcționare fără injecție în rețea",
+      "note": "Formulare oficială ANRE: „prosumator fără injecție în rețea\" (max 0,1 kWh pe interval orar). În setările invertorului apare literal „zero export\" — păstrează-l."
+    },
+    {
+      "en": "self-consumption",
+      "target": "autoconsum",
+      "note": "Termenul cheie al nișei; ANRE și toate blogurile îl folosesc. Rata: „grad de autoconsum\" sau „procent de autoconsum\" (tipic 30–50% fără baterie)."
+    },
+    {
+      "en": "export / feed-in (to grid)",
+      "target": "injecție în rețea / energie injectată",
+      "note": "Verbul: „a injecta\". Formularea de factură: „energia injectată în rețea\". Evită „export\" singur în textul pentru consumatori — trimite la comerț internațional."
+    },
+    {
+      "en": "import / grid draw",
+      "target": "energie consumată din rețea (energie extrasă din rețea)",
+      "note": "Pe factura de prosumator apare „energie electrică consumată din rețea\"; perechea naturală cu „energie injectată\"."
+    },
+    {
+      "en": "net metering",
+      "target": "compensare cantitativă",
+      "note": "Termen legal ANRE, NU „contorizare netă\". Definiție de folosit: 1 kWh injectat se scade din 1 kWh consumat ulterior; în 2026 se aplică până la 200 kW pe loc de consum. Termen înrudit: „regularizare\" (decontarea periodică)."
+    },
+    {
+      "en": "prosumer",
+      "target": "prosumator",
+      "note": "Cuvânt-cheie absolut al pieței RO (definit în Legea 123/2012 cu modificări). Plural „prosumatori\", articulat „prosumatorul\". Îl folosim în titluri ori de câte ori articolul atinge factura, injecția sau compensarea."
+    },
+    {
+      "en": "battery storage",
+      "target": "stocare în baterii / sistem de stocare (acumulatori)",
+      "note": "„Baterie de stocare\" e forma comercială dominantă. „Acumulator\" e corect dar mai tehnic/auto. Noua lege a prosumatorilor 2026 împinge subiectul — folosește „stocare\" în titluri."
+    },
+    {
+      "en": "state of charge (SoC)",
+      "target": "stare de încărcare (SoC)",
+      "note": "Acronimul EN e cel văzut în aplicații și în Home Assistant; forma RO doar la prima apariție. Se exprimă în procente: „SoC 65%\"."
+    },
+    {
+      "en": "depth of discharge (DoD) / usable capacity",
+      "target": "adâncime de descărcare (DoD) / capacitate utilă",
+      "note": "„Capacitate utilă\" (nu „nominală\") e cifra pe care o simte userul — sursele RO recomandă dimensionarea după ea."
+    },
+    {
+      "en": "yield (energy produced)",
+      "target": "producție (energie produsă)",
+      "note": "NU folosi „randament\" pentru energie — în RO „randament\" = eficiență în %. „Producție anuală\", „producție zilnică\", „producția de ieri\"."
+    },
+    {
+      "en": "specific yield",
+      "target": "producție specifică (kWh/kWp)",
+      "note": "Referință utilă pentru România: ~1.200–1.400 kWh/kWp/an la orientare sud și 30–35°. Excelent pentru comparații între utilizatori."
+    },
+    {
+      "en": "performance ratio (PR)",
+      "target": "raport de performanță (PR)",
+      "note": "Termen din rapoartele de proiectare RO; explică-l ca „cât din energia teoretic disponibilă ajunge efectiv în contor\"."
+    },
+    {
+      "en": "efficiency",
+      "target": "randament (sistem) / eficiență (module)",
+      "note": "Uz consacrat: „eficiența panoului\" (22%), „randamentul sistemului\", „randamentul invertorului\". Nu le amesteca în aceeași frază fără să spui la ce se referă."
+    },
+    {
+      "en": "derating",
+      "target": "reducerea puterii (derating) / declasare",
+      "note": "Fără termen RO unic; blogurile scriu „reducerea puterii la temperaturi ridicate\". Păstrează „derating\" în paranteză pentru publicul tehnic/HA."
+    },
+    {
+      "en": "temperature coefficient",
+      "target": "coeficient de temperatură",
+      "note": "Se exprimă „−0,35 %/°C\" — virgulă zecimală, semnul minus real (−), spațiu insecabil înainte de %/°C. Valori uzuale citate în RO: −0,3…−0,45 %/°C."
+    },
+    {
+      "en": "degradation",
+      "target": "degradare (anuală)",
+      "note": "„Degradare anuală de 0,25–0,4%\" e formularea din sursele RO. Nu „deteriorare\" (sugerează defect)."
+    },
+    {
+      "en": "soiling",
+      "target": "murdărire / depuneri (praf, polen, funingine)",
+      "note": "Nu există substantiv tehnic consacrat; „pierderi prin murdărire\" funcționează. Sursele RO estimează ~2% pierdere."
+    },
+    {
+      "en": "shading",
+      "target": "umbrire",
+      "note": "„Pierderi prin umbrire\" (~7% în estimările RO). Verb: „a umbri\". Pentru umbrirea parțială a unui string: „umbrire parțială\"."
+    },
+    {
+      "en": "horizon (profile)",
+      "target": "linia orizontului / profil de orizont",
+      "note": "Pentru obstacole îndepărtate (deal, bloc). Formulare utilă: „ce înălțime au obstacolele din jur, pe fiecare direcție\"."
+    },
+    {
+      "en": "nowcasting",
+      "target": "prognoză imediată (nowcasting)",
+      "note": "„Prognoză imediată\"/„prognoză de foarte scurtă durată\" e termenul meteo RO. Publicul nu îl cunoaște — explică: „actualizarea prognozei pentru următoarele 1–3 ore, pe baza situației de acum\". Păstrează „nowcasting\" în paranteză o dată."
+    },
+    {
+      "en": "day-ahead",
+      "target": "pentru ziua următoare (day-ahead)",
+      "note": "Există termen consacrat: „Piața pentru Ziua Următoare (PZU)\", OPCOM. Pentru prognoză: „prognoza pentru ziua următoare\" / „prognoza de mâine\". Menționează PZU doar în context de preț."
+    },
+    {
+      "en": "intraday",
+      "target": "intrazilnic",
+      "note": "„Piața Intrazilnică (PI)\" e termenul OPCOM; pentru prognoză: „actualizări intrazilnice ale prognozei\"."
+    },
+    {
+      "en": "Kalman filter",
+      "target": "filtru Kalman",
+      "note": "Termen stabil în literatura tehnică RO (cursuri UTCN etc.), articulat „filtrul Kalman\". Pentru blog explică-l în limbaj simplu: „corectează prognoza în funcție de cât ai produs efectiv în zilele trecute\"."
+    },
+    {
+      "en": "calibration",
+      "target": "calibrare",
+      "note": "„Calibrarea prognozei pe baza producției tale reale\". Verb: „a calibra\". Evită „etalonare\" (metrologie legală)."
+    },
+    {
+      "en": "bias (systematic error)",
+      "target": "abatere sistematică (bias)",
+      "note": "„Bias\" e folosit ca atare de publicul tehnic; în text de consum: „prognoza îți dă constant mai mult/mai puțin decât produci\"."
+    },
+    {
+      "en": "accuracy / MAPE",
+      "target": "acuratețe / eroare medie absolută procentuală (MAPE)",
+      "note": "Volcast afișează acuratețea ca 100 − MAPE. Formulare: „acuratețe de 85%\". Nu traduce MAPE în titluri; e jargon."
+    },
+    {
+      "en": "kWp (kilowatt-peak)",
+      "target": "kWp (kilowatt-vârf) — putere instalată",
+      "note": "Scrie „kWp\" ca simbol; forma lungă doar la prima explicație. Sinonim de context: „putere instalată\" (termen ANRE, folosit în pragurile legale: 200 kW, 400 kW)."
+    },
+    {
+      "en": "installed capacity",
+      "target": "putere instalată",
+      "note": "Termen din reglementările ANRE și din contractul de prosumator. Nu „capacitate instalată\" în context rezidențial (se folosește la parcuri mari)."
+    },
+    {
+      "en": "smart meter (bidirectional)",
+      "target": "contor inteligent bidirecțional",
+      "note": "Terminologie de operator de distribuție: măsoară separat energia consumată și energia injectată. Formularea populară „contorul merge înapoi\" e utilă ca explicație, dar marcheaz-o ca metaforă."
+    },
+    {
+      "en": "distribution system operator (DSO)",
+      "target": "operator de distribuție (OD / OSD)",
+      "note": "Ex.: Distribuție Energie Oltenia, DEER. Necesar în articolele despre racordare. Documentul-cheie: „aviz tehnic de racordare (ATR)\"."
+    },
+    {
+      "en": "heat pump",
+      "target": "pompă de căldură",
+      "note": "Plural „pompe de căldură\". Cuplajul cu PV e temă căutată intens în RO — bun candidat pentru articol dedicat despre consumul mutat pe orele de producție."
+    },
+    {
+      "en": "EV charger / wallbox",
+      "target": "stație de încărcare pentru mașina electrică (wallbox)",
+      "note": "„Stație de încărcare\" e forma comercială dominantă; „wallbox\" apare la unitățile de perete. Verb: „a încărca mașina din surplus\"."
+    },
+    {
+      "en": "load shifting",
+      "target": "mutarea consumului pe orele de producție (programarea consumatorilor)",
+      "note": "Nu există termen unic; sursele RO descriu acțiunea: „programează mașina de spălat în intervalul de producție maximă\". În titluri: „mută consumul pe orele cu soare\"."
+    },
+    {
+      "en": "surplus",
+      "target": "surplus (excedent) de energie",
+      "note": "„Surplus\" e forma dominantă în textele ANRE și comerciale („surplusul este injectat în rețea\"). „Excedent\" e sinonim mai formal."
+    },
+    {
+      "en": "peak production",
+      "target": "vârf de producție",
+      "note": "„Vârful de producție de la prânz\". Atenție: „putere de vârf\" = kWp (altceva). Dezambiguizează dacă apar în același paragraf."
+    },
+    {
+      "en": "cloud cover",
+      "target": "nebulozitate / grad de acoperire cu nori",
+      "note": "„Nebulozitate\" e termenul meteo RO oficial; în text de consum „cât de acoperit e cerul\". Exprimat în procente sau optimi."
+    },
+    {
+      "en": "bifacial",
+      "target": "panouri bifaciale",
+      "note": "Adjectiv invariabil ca formă de gen la plural fem.: „module bifaciale\". Câștigul se explică prin albedo (zăpadă, pietriș deschis)."
+    },
+    {
+      "en": "snow cover (on panels)",
+      "target": "strat de zăpadă (pe panouri)",
+      "note": "„Acoperire cu zăpadă\" pentru fenomenul de blocare a producției; „strat de zăpadă\" pentru grosime. Relevant pentru alerta de dimineață din aplicație."
+    },
+    {
+      "en": "sensor / entity (Home Assistant)",
+      "target": "senzor / entitate",
+      "note": "Publicul RO de HA folosește interfața în engleză aproape întotdeauna: păstrează numele de entități, servicii și atribute NETRADUSE (`sensor.volcast_...`), traduce doar textul explicativ din jur."
+    },
+    {
+      "en": "API key",
+      "target": "cheie API",
+      "note": "„Cheie API\" (nu „cheie de API\"). Verbul: „generezi o cheie API din setările aplicației\"."
+    }
+  ],
+  "styleNotes": "FORMA DE ADRESARE — „tu\\\", fără excepții pe blog.\n\nBlogurile românești de consum pe fotovoltaice folosesc uniform persoana a II-a singular. Verificat pe Electric UP („cum folosești mai mult din energia produsă de panourile tale\\\"), NovaSol („sistemul tău fotovoltaic\\\", „Cum devii și cât câștigi\\\"), BizEnergy, Genway, Romstal. „Dumneavoastră\\\" apare doar în documente contractuale, comunicări de la operatorul de distribuție și pagini ANRE — dacă citezi un text oficial, păstrează-l ca citat, dar nu-l lăsa să contamineze vocea articolului.\n\nConsecințe practice: imperativ la singular („verifică\\\", „setează\\\", „mută consumul\\\"), posesive „al tău / a ta / panourile tale\\\", niciun „Dvs.\\\"/„d-voastră\\\". Evită imperativul negativ greșit „nu verifică\\\" — corect e „nu verifica\\\". Tonul: prietenos-tehnic, fără familiarism forțat, fără exclamații. Nu folosi persoana I plural de tip corporativ („vă oferim soluții\\\") — publicul RO e saturat de limbaj de agenție de instalatori.\n\nDIACRITICE — obligatorii, cu semnele corecte.\n\nFolosim ă, â, î, ș (s cu virgulă, U+0219), ț (t cu virgulă, U+021B). NU formele cu sedilă ş/ţ (U+015F / U+0163) — sunt moștenire Windows-1250, arată prost în fonturi moderne și strică căutarea pe site. Verifică fișierele de traducere pentru aceste două code-pointuri înainte de publicare; e greșeala nr. 1 la conținut RO importat.\n\nReguli ortografice de reținut: „â\\\" în interiorul cuvântului („vânt\\\", „câmp\\\", „înclinând\\\"), „î\\\" la început și sfârșit („înclinare\\\", „împământare\\\", „a coborî\\\"), cu excepția compuselor („neîntrerupt\\\", „reîncărcare\\\"). „Sunt\\\", nu „sînt\\\".\n\nSLUGURI ȘI URL-uri — ASCII pliat, fără diacritice.\n\nMapare: ă→a, â→a, î→i, ș→s, ț→t. Exemple: „Prognoza producției fotovoltaice\\\" → `prognoza-productiei-fotovoltaice`; „Înclinare și orientare\\\" → `inclinare-si-orientare`; „Stocare în baterii\\\" → `stocare-in-baterii`. Nimic altceva nu se schimbă (nu tăia „și\\\" → „si\\\" în TITLU, doar în slug). Aceeași regulă pentru numele de fișiere, id-urile de ancoră și cheile i18n. Atributele `alt` și meta description rămân CU diacritice.\n\nSEPARATOR ZECIMAL ȘI MII.\n\nZecimal = VIRGULĂ: „5,4 kWh\\\", „raport DC/AC 1,25\\\", „−0,35 %/°C\\\", „12,5%\\\". Niciodată punct zecimal — e cea mai vizibilă marcă de traducere automată.\nMii = PUNCT: „1.250 kWh\\\", „14.500 lei\\\". Spațiul insecabil ca separator de mii e acceptat tipografic, dar punctul e ce recunoaște instant cititorul român; alege punctul și fii consecvent. Sub 10.000 poți scrie și fără separator („1250 kWh\\\") — decide o dată și ține linia.\nInterval: „30–40°\\\", „1.200–1.400 kWh/kWp\\\" — cu en-dash, fără spații.\n\nUNITĂȚI.\n\nSpațiu insecabil între număr și unitate: „5,4 kWh\\\", „6 kWp\\\", „850 W/m²\\\", „25 °C\\\". Excepții unde uzul RO lipește: procentul („12,5%\\\") și gradul de unghi („35°\\\"). Simbolurile rămân în forma internațională, neflexionate și fără punct: kWh, kWp, kW, Wh, W/m², °C, m². Articulare corectă în text: „cei 6 kWp instalați\\\", „kilowatt-oră\\\" dacă scrii cuvântul întreg (plural „kilowat-oră\\\", dar practic folosește simbolul).\n\nNu traduce simbolurile și nu inventa „kWv\\\" pentru kWp. Moneda: „lei\\\" sau „RON\\\", postpus, cu virgulă zecimală: „0,55 lei/kWh\\\", „1.250 lei\\\". Simbolul € se scrie postpus cu spațiu: „2.400 €\\\" sau, mai natural în text RO, „2.400 de euro\\\".\n\nDATE.\n\nFormat numeric: zz.ll.aaaa cu punct — „14.08.2026\\\". Nu folosi bare, nu folosi ISO în textul curent (ISO doar în date, log-uri, atribute `datetime`).\nFormat lung, preferat în articole: „14 august 2026\\\" — LUNA CU LITERĂ MICĂ. La fel zilele săptămânii: „luni\\\", „marți\\\", „duminică\\\". Majuscula la lună e anglicism și e greșeală de tipar în RO.\nPrepoziții: „pe 14 august\\\", „în august\\\", „din 14 august 2026\\\". Săptămâna începe LUNI în calendare și grafice.\n\nORE.\n\nFormat 24 h cu DOUĂ PUNCTE: „14:30\\\", „06:15\\\". Forma cu virgulă („14,30\\\") e învechită — nu o folosi. Fără AM/PM niciodată. Intervale: „între 11:00 și 15:00\\\" sau „11:00–15:00\\\" (en-dash, fără spații). Ora exactă se poate scrie fără minute în text: „la ora 14\\\", „în jurul prânzului\\\".\nFus orar: România e pe EET/EEST (UTC+2 iarna, UTC+3 vara) — dacă vorbești despre momentul actualizării prognozei, spune explicit „ora locală\\\", pentru că publicul de Home Assistant lucrează des cu UTC în senzori.\n\nALTE CONVENȚII.\n\nGhilimele românești: „…\\\" (jos-sus) pentru nivelul 1, «…» pentru citat în citat. Nu folosi \\\"...\\\" drept.\nLinia de dialog/pauză: em-dash sau en-dash cu spații — dar în textele de suport și mesajele către utilizator scrie prozaic, fără săgeți și fără liniuțe decorative.\nAnglicisme: acceptate acolo unde piața le folosește (string, clipping, wallbox, nowcasting, SoC, MPPT, API) — la prima apariție dă echivalentul RO în paranteză sau invers. Nu traduce forțat termeni pe care instalatorul român îi rostește în engleză; sună a text tradus de robot.\nNumele de produs „Volcast\\\" și „Home Assistant\\\" rămân neflexionate și nedeclinate: „în Volcast\\\", „din Home Assistant\\\", nu „Volcastul\\\".\nAcronime instituționale de menționat corect: ANRE (autoritatea de reglementare), Transelectrica (operatorul de transport), OPCOM (bursa), OD/OSD (operatorul de distribuție), ATR (aviz tehnic de racordare), PZU (Piața pentru Ziua Următoare).",
+  "keywordFindings": [
+    {
+      "topic": "Prognoza producției PV (termen central)",
+      "query": "prognoza productie panouri fotovoltaice",
+      "rationale": "Fraza-umbrelă pentru toată nișa, formată exact așa cum o tastează userul român: fără diacritice, „productie\" nearticulat. Se aliniază cu terminologia instituțională (Transelectrica publică „Prognoză Producție Prosumatori\"), deci există deja intenție de căutare educată pe ea. Candidat pentru pagina-pilon."
+    },
+    {
+      "topic": "Producție zilnică așteptată",
+      "query": "cat produc panourile fotovoltaice pe zi",
+      "rationale": "Forma interogativă naturală în RO („cât produc…\"), intenție informațională pură, exact promisiunea aplicației. Atrage și traficul de dinainte de instalare, care se convertește ulterior. Răspunsul se ancorează în cifra de referință pentru România: ~1.200–1.400 kWh/kWp/an."
+    },
+    {
+      "topic": "Producție pe timp de iarnă",
+      "query": "productie panouri fotovoltaice iarna",
+      "rationale": "Cel mai mare punct de anxietate al prosumatorului român (latitudine 43–48°N, decembrie foarte slab) și zona în care modelul de prognoză are cea mai vizibilă valoare. Sezonier, dar cu volum mare noiembrie–februarie; leagă natural de radiația difuză și de stratul de zăpadă."
+    },
+    {
+      "topic": "Zile înnorate / radiație difuză",
+      "query": "randament panouri fotovoltaice pe timp innorat",
+      "rationale": "Sursele RO subliniază insistent că iarna și pe cer acoperit componenta difuză domină — există deci corpus și interes. „Randament\" e cuvântul pe care îl folosește publicul (chiar dacă tehnic vorbim de producție), deci îl păstrăm în query și corectăm terminologia în corpul articolului."
+    },
+    {
+      "topic": "Înclinare și orientare (tilt/azimut)",
+      "query": "orientare si unghi inclinare panouri fotovoltaice",
+      "rationale": "Temă cu concurență editorială densă în RO (Genway, NovaSol, Electricon), semn clar de volum. Ne diferențiem prin date reale: cât pierzi efectiv la est/vest față de sud, măsurat pe utilizatori, nu regula generică „latitudine − 10°\"."
+    },
+    {
+      "topic": "Statut de prosumator și decontare",
+      "query": "prosumator 2026 compensare cantitativa",
+      "rationale": "Cuvântul-cheie obligatoriu cerut explicit. „Compensare cantitativă\" e termenul legal ANRE (nu „net metering\"), iar 2026 e an de schimbare legislativă (noua lege a prosumatorilor, promulgare după decizia CCR din aprilie) — vârf de căutare. Leagă prognoza de bani: știi ce injectezi, știi ce se compensează."
+    },
+    {
+      "topic": "Creșterea autoconsumului",
+      "query": "autoconsum fotovoltaic cum cresc",
+      "rationale": "„Autoconsum\" e termenul central al nișei la ANRE și în comerț; benchmark-ul citat în RO e 30–50% fără baterie. Intenția e acțională, exact unde prognoza schimbă comportamentul (mută consumul pe orele cu soare). Cluster natural cu pompa de căldură și încărcarea mașinii."
+    },
+    {
+      "topic": "Stocare în baterii / SoC",
+      "query": "baterie stocare panouri fotovoltaice merita",
+      "rationale": "Query tranzacțional-evaluativ („merită\") cu volum în creștere după noua lege care împinge stocarea. Unghiul nostru: dimensionarea bateriei se face pe surplusul real și pe consumul de seară — ambele sunt cifre pe care prognoza le anticipează cu o zi înainte."
+    },
+    {
+      "topic": "Integrare Home Assistant",
+      "query": "home assistant prognoza solara integrare",
+      "rationale": "Segmentul-țintă declarat. Publicul RO de HA lucrează cu interfața în engleză, deci acest query mixt RO/EN reflectă comportamentul real de căutare; alternative de urmărit: „home assistant panouri fotovoltaice senzor\". Volum mic, dar intenție extrem de calificată și conversie ridicată."
+    },
+    {
+      "topic": "Clipping / supradimensionare invertor",
+      "query": "supradimensionare invertor fotovoltaic raport dc ac",
+      "rationale": "Nișă tehnică unde există deja conținut RO (Lumio, Electric UP, Solar-Service) cu valorile 1,1–1,3, dar prost explicată vizual. Ocazie de a clarifica confuzia clipping (limitare la invertor) vs. curtailment (limitarea injecției impusă), care sunt amestecate constant în textele existente."
+    },
+    {
+      "topic": "Limitarea injecției / zero export",
+      "query": "invertor zero export limitare injectie prosumator",
+      "rationale": "Categorie recunoscută în reglementare („prosumator fără injecție în rețea\", max 0,1 kWh/interval orar) și setare literală în meniul invertorului, deci queryul apare în ambele registre. Relevant pentru diagnostic: producția „lipsă\" e adesea curtailment local, nu prognoză greșită — exact tipul de articol care reduce tichetele de suport."
+    }
+  ]
+}

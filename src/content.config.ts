@@ -12,7 +12,7 @@ const blog = defineCollection({
     tags: z.array(z.string()),
     series: z.string().optional(),
     seriesOrder: z.number().optional(),
-    lang: z.enum(['en', 'pl', 'de']),
+    lang: z.enum(['en', 'pl', 'de', 'it', 'fr', 'ro']),
     draft: z.boolean().default(false),
     ogImage: z.string().optional(),
     // Klucz tematu do parowania hreflang między językami (spójny z topic_id paczki).
@@ -37,7 +37,7 @@ const qa = defineCollection({
   schema: z.object({
     title: z.string(),          // pytanie = H1
     description: z.string(),    // meta description / krótka odpowiedź
-    lang: z.enum(['en', 'pl', 'de']),
+    lang: z.enum(['en', 'pl', 'de', 'it', 'fr', 'ro']),
     category: z.string().optional(),   // k1–k6
     guide: z.string().optional(),      // slug artykułu-huba (interlinking)
     date: z.coerce.date().optional(),

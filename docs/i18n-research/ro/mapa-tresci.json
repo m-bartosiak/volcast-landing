@@ -1,0 +1,393 @@
+{
+  "k6Name": "Prosumatori și compensare",
+  "slugConvention": "KONWENCJA SLUGOW RO\n\n1) Rdzen: \"fotovoltaic\", nie \"solar\". Konsumencki head-term to \"panouri solare\", ale jest dwuznaczny (obejmuje kolektory termiczne), a terminem precyzyjnym i handlowym jest \"fotovoltaic/fotovoltaice\" (sistem fotovoltaic, productie fotovoltaica, prognoza fotovoltaica). Zasada: rdzen \"fotovoltaic\" w slugach systemowych i prognozowych, \"panouri\" w postach o fizyce panelu (panourile-produc-mai-putin-pe-canicula brzmi naturalniej niz fotovoltaicul-produce-mai-putin). \"Solar\" tylko w kolokacji fizycznej (radiatie solara), nigdy jako rdzen slugu. Sciezka jak PL/IT.\n\n2) Fold do ASCII: a-breve i a-circumflex -> a, i-circumflex -> i, s-comma -> s, t-comma -> t. Bez diakrytykow i bez apostrofow. Fold kasuje roznice \"si\" (i) vs \"si\" — to bezpieczne. Nie uzywamy w slugach form skroconych typu \"s-a\", \"n-are\", bo myslnik w slugu jest separatorem slow, nie lacznikiem.\n\n3) Dlugosc: blog i Q&A po 3-6 slow, docelowo <= 45 znakow (max w tej paczce: 44). Rumunski ma duzo krotkich slow funkcyjnych (de, ce, la, cu, sau), wiec pytajne \"de-ce-\" zjada 2 z 6 slotow.\n\n4) Forma pytajna w Q&A: zostawiamy \"de-ce-\" / \"cati-\" / \"ce-\" tylko wtedy, gdy bez nich slug traci sens. Czesciej przechodzimy na forme oznajmujaca (panourile-nu-ating-puterea-nominala zamiast de-ce-panourile-nu-ating-puterea-nominala; productia-se-aplatizeaza-la-pranz zamiast de-ce-...). Tytul zachowuje pelna forme pytania — slug jest krotszy niz tytul i to jest zamierzone.\n\n5) Marka: nie powtarzamy \"volcast\" w slugach. Jedyny wyjatek to post porownawczy volcast-vs-forecast-solar-vs-solcast, gdzie nazwy wlasne SA zapytaniem — tak jak w EN/PL/DE/IT.\n\n6) Terminy rynkowe zostawiamy w brzmieniu urzedowym, bo tak ludzie szukaja: prosumator, compensare cantitativa (fold: compensarea-cantitativa), contorizare neta, racordare, Casa Verde, ANRE. Nie tlumaczyc ich opisowo ani nie zastepowac kalka z EN (nie \"export\", nie \"net metering\").\n\n7) Zapozyczenia techniczne bez tlumaczenia, gdy tak brzmi realne zapytanie: nowcasting, day-ahead, curtailment, wallbox, Home Assistant, Energy Dashboard.\n\nMECHANIKA WPIECIA DO REPO\n\n- 19 postow \"gotowcowych\" (bez translationKey we frontmatterze) laczy sie przez src/data/translations.ts — dla nich translationKey w tej tabeli = slug EN, bo to faktyczny klucz wiersza TRANSLATION_CLUSTERS. Wpiecie RO = dodanie pola ro: do 19 istniejacych wierszy, minus wiersz timing-appliances, ktory zostaje bez ro.\n- 13 pozostalych postow ma translationKey we frontmatterze i nie wymaga zmian w translations.ts.\n- Zmiany kodu poza trescia: src/data/i18n.ts (LANGS + 'ro', DATE_LOCALE 'ro-RO', OG_LOCALE 'ro_RO', READING_WPM ok. 180, LANG_LABEL 'RO', pelny blok UI po rumunsku), src/data/translations.ts (pole ro? w interfejsie TranslationCluster + 19 wierszy), src/data/qa-categories.ts (kolumna ro dla k1-k6).\n- Proponowane nazwy kategorii RO: k1 \"Retea si invertor\", k2 \"Productie si randament\", k3 \"Baterie de acasa\", k4 \"Tarife si facturi\", k5 \"Automatizarea surplusului\", k6 \"Prosumatori si compensare\" (w pliku z diakrytykami).\n- Pole guide w kazdym Q&A musi wskazywac slug RO bloga, nie EN (hub: prognoza-productiei-fotovoltaice).\n- clusters.ts bez zmian: CLUSTER_LINKS operuje na translationKey i sam pomija tematy nieobecne w danym jezyku.\n\nDROP: timing-appliances-to-your-solar-peak — potwierdzony jako przestarzaly, vercel.json ma dla niego 301 na when-to-run-appliances-solar (i lustrzany dla PL). Nie tworzyc wersji RO ani wiersza w translations.ts. Stad 31 postow, nie 32.\n\nWERYFIKACJA DLUGOSCI: BaseLayout.astro nie doklada juz \" — Volcast Blog\" do <title> (const siteTitle = title, linia 49) — komentarz w tests/seo-guard.test.js o 15 znakach dopisku jest nieaktualny. Renderowany <title> = tytul z frontmattera, wiec caly budzet 60 znakow jest do dyspozycji. Wszystkie 55 tytulow w tej paczce zmierzone programowo: max 57 znakow (litoral-sau-interior-microclimatul), zaden nie przekracza 60.\n\nPRIORYTET PUBLIKACJI (jesli etapowo): praful-saharian, panourile-produc-mai-putin-pe-canicula, acelasi-sistem-orase-diferite, litoral-sau-interior-microclimatul, prognoza-productiei-fotovoltaice, plus caly k6 (compensare cantitativa to najsilniejsza intencja rynkowa w RO).",
+  "posts": [
+    {
+      "translationKey": "forecast-hub",
+      "enSlug": "solar-production-forecast",
+      "slug": "prognoza-productiei-fotovoltaice",
+      "title": "Prognoza producției fotovoltaice — cât produci mâine",
+      "marketNotes": "ZADNA ADAPTACJA — hub klastra, czysta metodyka prognozy. Tlumaczyc 1:1, to najwazniejszy post: wszystkie 24 Q&A linkuja tu przez pole guide, wiec ten slug musi trafic do frontmattera kazdego Q&A RO."
+    },
+    {
+      "translationKey": "ha-comparison",
+      "enSlug": "home-assistant-solar-forecast-comparison",
+      "slug": "prognoza-fotovoltaica-in-home-assistant",
+      "title": "Prognoză fotovoltaică în Home Assistant — comparație",
+      "marketNotes": "ZADNA ADAPTACJA. Terminy HA (integrare, senzor, Energy Dashboard) zostawiamy po angielsku tam, gdzie tak brzmia w UI — rumunska spolecznosc HA nie tlumaczy nazw encji."
+    },
+    {
+      "translationKey": "brand-comparison",
+      "enSlug": "volcast-vs-forecast-solar-vs-solcast",
+      "slug": "volcast-vs-forecast-solar-vs-solcast",
+      "title": "Volcast vs Forecast.Solar vs Solcast — comparație onestă",
+      "marketNotes": "ZADNA ADAPTACJA — slug zostaje markowy, bo nazwy wlasne sa zapytaniem (jak EN/PL/IT). DE zrobil wyjatek pod niemiecka intencje; dla RO brak lokalnego odpowiednika zapytania, wiec nie kombinujemy."
+    },
+    {
+      "translationKey": "best-app",
+      "enSlug": "best-solar-forecast-app",
+      "slug": "cea-mai-buna-aplicatie-de-prognoza",
+      "title": "Cea mai bună aplicație de prognoză fotovoltaică",
+      "marketNotes": "LEKKA ADAPTACJA — liste marek falownikow przestawic na realia RO: Huawei SUN2000 (dominuje), Growatt, Solis/Ginlong, Sofar, Deye, Fronius, SolarEdge. SMA i Enphase sa w RO marginalne, nie warto ich stawiac na czele jak w EN."
+    },
+    {
+      "translationKey": "weather-vs-output",
+      "enSlug": "weather-forecast-vs-solar-output",
+      "slug": "prognoza-meteo-si-productia-fotovoltaica",
+      "title": "De ce aplicațiile meteo nu îți spun cât vei produce",
+      "marketNotes": "ZADNA ADAPTACJA merytoryczna, ale UWAGA STRUKTURALNA: DE ten post WYCIAL. Dla RO ZACHOWUJEMY — vremea/meteo to jeden z najsilniejszych head-termow w rumunskim wyszukiwaniu, a post jest w pelni generyczny."
+    },
+    {
+      "translationKey": "self-consumption",
+      "enSlug": "increase-solar-self-consumption",
+      "slug": "cum-cresti-autoconsumul-fotovoltaic",
+      "title": "Cum crești autoconsumul fotovoltaic — 7 metode reale",
+      "marketNotes": "MOCNA ADAPTACJA EKONOMIKI. Argument EN (eksport placi grosze, autokonsumpcja oszczedza pelna cene detaliczna) w RO NIE dziala wprost: compensare cantitativa rozlicza kWh 1:1 do poziomu zuzycia, wiec siec dziala jak darmowy magazyn. Poprawny argument RO: kompensacja obejmuje tylko komponent energii — tarif de distributie/transport, acciza i TVA i tak placisz od kWh pobranych, a nadwyzka ponad zuzycie idzie po sredniej PZU. Autokonsumpcja nadal oplacalna, ale z innego powodu — przepisac cala sekcje liczbowa. NIE powtarzac za DE wyciecia tego postu."
+    },
+    {
+      "translationKey": "appliances",
+      "enSlug": "when-to-run-appliances-solar",
+      "slug": "cand-pornesti-electrocasnicele-pe-soare",
+      "title": "Când pornești boilerul și mașina de spălat pe soare",
+      "marketNotes": "ADAPTACJA — dwa razy pada argument feed-in vs retail; przelozyc na compensare cantitativa + oszczednosc na skladnikach niekompensowanych (dystrybucja, acciza, TVA). NIE kopiowac wloskiego wzorca pasm F1/F2/F3: w RO gospodarstwa maja najczesciej tarif monom, tarif CZ/CN (zi/noapte) jest rzadszy, a po liberalizacji z 1 lipca 2025 oferty roznia sie mocno per furnizor."
+    },
+    {
+      "translationKey": "ev-charging",
+      "enSlug": "ev-charging-from-solar",
+      "slug": "incarcarea-masinii-electrice-din-fotovoltaic",
+      "title": "Încărcarea mașinii electrice din surplus fotovoltaic",
+      "marketNotes": "LEKKA ADAPTACJA — kwota w funtach do przeliczenia na lei. Realia RO: typowe przylacze domowe 230 V / 3x16 A ogranicza wallbox do 3,7-7,4 kW, co realnie limituje ladowanie z nadwyzki. Kontekst popularnosci EV: program Rabla Plus, koncentracja w Bukareszcie i Cluj."
+    },
+    {
+      "translationKey": "heat-pump",
+      "enSlug": "heat-pump-solar-timing",
+      "slug": "pompa-de-caldura-si-fotovoltaicul",
+      "title": "Pompă de căldură și fotovoltaic — când o pornești",
+      "marketNotes": "ADAPTACJA KLIMATYCZNA. Sezon grzewczy RO to listopad-marzec, ale w Campia Romana, Oltenii i Dobrogei dominujacym letnim obciazeniem jest KLIMATYZACJA — dodac watek racire/aer conditionat, ktorego w EN nie ma i ktory idealnie laczy sie ze szczytem produkcji. Transilvania odwrotnie: dluzszy sezon grzewczy, mniejsza potrzeba chlodzenia. Ten podzial powtarza sie w postach zimowych i geograficznych — trzymac spojnie."
+    },
+    {
+      "translationKey": "winter",
+      "enSlug": "solar-panels-winter-output",
+      "slug": "fotovoltaicul-iarna-cat-produce",
+      "title": "Fotovoltaicul iarna — cât produce cu adevărat",
+      "marketNotes": "ADAPTACJA LICZBOWA I KLIMATYCZNA — liczby EN sa dla szerokosci UK. Rozbic na trzy przypadki: Campia Romana/Baragan (ceata radiacyjna i inwersje termiczne w grudniu-styczniu — mimo poludniowej szerokosci to najgorszy przypadek), Transilvania (wiecej dni pochmurnych, mgly w depresjach srodgorskich), Dobrogea/litoral (najlepsza zima w kraju). Watki sniegowe zredukowac do Karpat i podgorza, nie generalizowac na caly kraj."
+    },
+    {
+      "translationKey": "dynamic-tariff",
+      "enSlug": "dynamic-tariff-with-solar",
+      "slug": "tarife-dinamice-si-fotovoltaic",
+      "title": "Tarife dinamice la energie cu fotovoltaic — merită?",
+      "marketNotes": "MOCNA ADAPTACJA — post wymienia Octopus i dwa razy Australie oraz ceny polgodzinne. Dla RO: rynek detaliczny zliberalizowany od 1 lipca 2025 (koniec plafonarii), ANRE jako regulator, brak cen polgodzinnych w detalu, oferty indeksowane do PZU/OPCOM dopiero sie pojawiaja i sa rzadkie dla gospodarstw. Post musi powiedziec WPROST, ze dla wiekszosci czytelnikow w RO taryfa dynamiczna nadal nie jest dostepna — inaczej obiecuje produkt, ktorego nie da sie kupic."
+    },
+    {
+      "translationKey": "negative-prices",
+      "enSlug": "negative-electricity-prices-solar",
+      "slug": "preturi-negative-la-energie",
+      "title": "Prețuri negative la energie: ghid pentru prosumatori",
+      "marketNotes": "MOCNA ADAPTACJA — odwolanie do Australii i do feed-in schemes wyciac. Dla RO: epizody zerowych i ujemnych cen na PZU (OPCOM) w wiosenne i letnie poludnia, rola Transelectrica w bilansowaniu. Kluczowa roznica mechaniki: prosument w RO nie ,,placi za eksport'' — nadwyzka ponad kompensacje jest rozliczana po sredniej cenie PZU z miesiaca, wiec ujemne godziny obnizaja ta srednia, a nie generuja ujemnej faktury. Wyjasnic to wprost, bo kalka z EN wywola panike."
+    },
+    {
+      "translationKey": "battery",
+      "enSlug": "home-battery-charge-grid-or-solar",
+      "slug": "baterie-incarcare-din-retea-sau-soare",
+      "title": "Bateria de acasă — o încarci din rețea sau din soare?",
+      "marketNotes": "MOCNA ADAPTACJA — cala logika EN opiera sie na tariff spread, ktorego w RO w praktyce nie ma dla wiekszosci gospodarstw (tarif monom, waski spread CZ/CN). Przebudowac wokol: compensare cantitativa czyni z sieci darmowy magazyn sezonowy do poziomu rocznego zuzycia, wiec bateria uzasadnia sie glownie odpornoscia na przerwy w zasilaniu (pene de curent na wsi) i pokryciem zuzycia ponad kompensacje, a nie arbitrazem cenowym. Wspomniec dofinansowanie na acumulator w Casa Verde Fotovoltaice."
+    },
+    {
+      "translationKey": "how-solar-panels-convert-sunlight",
+      "enSlug": "how-solar-panels-convert-sunlight",
+      "slug": "cum-transforma-panourile-lumina-in-curent",
+      "title": "Cum transformă panourile lumina în electricitate",
+      "marketNotes": "ZADNA ADAPTACJA — czysta fizyka. Post bez translationKey we frontmatterze: laczy sie przez wiersz w TRANSLATION_CLUSTERS, klucz = slug EN."
+    },
+    {
+      "translationKey": "why-panels-produce-more-in-spring",
+      "enSlug": "why-panels-produce-more-in-spring",
+      "slug": "panourile-produc-mai-mult-primavara",
+      "title": "De ce panourile produc mai mult primăvara decât vara",
+      "marketNotes": "LEKKA ADAPTACJA — efekt jest w RO silniejszy niz w EN. Podmienic przyklad temperaturowy: chlodny i sloneczny kwiecien-maj vs lipiec-sierpien z 35-40 stopni C w Campia Romana. Poza tym generyczny. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "three-numbers-pv-setup",
+      "enSlug": "three-numbers-pv-setup",
+      "slug": "cele-trei-numere-ale-sistemului-tau",
+      "title": "Cele trei numere care îți definesc sistemul fotovoltaic",
+      "marketNotes": "ZADNA ADAPTACJA. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "direct-vs-diffuse-sunlight",
+      "enSlug": "direct-vs-diffuse-sunlight",
+      "slug": "lumina-directa-si-lumina-difuza",
+      "title": "Lumină directă și difuză — de ce produci și pe nori",
+      "marketNotes": "ZADNA ADAPTACJA. Opcjonalnie jedno zdanie kotwiczace: zimowa mgla w Campia Romana to podrecznikowy przypadek produkcji wylacznie z promieniowania rozproszonego. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "tilt-and-azimuth-explained",
+      "enSlug": "tilt-and-azimuth-explained",
+      "slug": "inclinarea-si-azimutul-panourilor",
+      "title": "Înclinarea și azimutul — cât contează pentru producție",
+      "marketNotes": "LEKKA ADAPTACJA — optimum zalezy od szerokosci geograficznej. RO lezy miedzy 43,6 a 48,3 stopnia N: podac ok. 33-35 stopni dla Transilwanii i Moldawii oraz ok. 30-32 stopni dla poludnia i litoralu, zamiast wartosci z przykladu EN. Azymut poludniowy jako baza. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "physics-vs-ml-solar-forecasting",
+      "enSlug": "physics-vs-ml-solar-forecasting",
+      "slug": "prognoza-model-fizic-sau-machine-learning",
+      "title": "Prognoză fotovoltaică: model fizic sau machine learning?",
+      "marketNotes": "ZADNA ADAPTACJA. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "where-weather-forecasts-come-from",
+      "enSlug": "where-weather-forecasts-come-from",
+      "slug": "de-unde-vin-prognozele-meteo",
+      "title": "De unde vin prognozele meteo — modelele NWP pe scurt",
+      "marketNotes": "LEKKA ADAPTACJA — post wymienia UKV i Met Office (czysto brytyjskie), wyciac. Podstawic modele pokrywajace RO: IFS/ECMWF, ICON-EU, AROME, GFS, plus krajowy kontekst ANM (Administratia Nationala de Meteorologie) i model regionalny uruchamiany w RO. UWAGA: nie podawac rozdzielczosci ani nazw wersji z pamieci — zweryfikowac u ANM przed publikacja, to jedyny fragment tej paczki z realnym ryzykiem faktograficznym. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "why-cloud-cover-hardest-variable",
+      "enSlug": "why-cloud-cover-hardest-variable",
+      "slug": "norii-cea-mai-grea-variabila",
+      "title": "De ce norii sunt cea mai grea variabilă din prognoză",
+      "marketNotes": "ZADNA ADAPTACJA. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "irradiance-journey-space-to-panel",
+      "enSlug": "irradiance-journey-space-to-panel",
+      "slug": "calatoria-radiatiei-din-spatiu-la-panou",
+      "title": "Călătoria radiației: din spațiu până la panoul tău",
+      "marketNotes": "ZADNA ADAPTACJA. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "transposition-models",
+      "enSlug": "transposition-models",
+      "slug": "modele-de-transpozitie",
+      "title": "Modele de transpoziție — radiația pe planul înclinat",
+      "marketNotes": "ZADNA ADAPTACJA. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "nowcasting-vs-day-ahead",
+      "enSlug": "nowcasting-vs-day-ahead",
+      "slug": "nowcasting-day-ahead-si-saptamana",
+      "title": "Nowcasting, day-ahead și o săptămână — ce precizie ai",
+      "marketNotes": "ZADNA ADAPTACJA. Zapozyczenia nowcasting i day-ahead zostawiamy — tak funkcjonuja w rumunskim zargonie energetycznym. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "why-no-training-data-needed",
+      "enSlug": "why-no-training-data-needed",
+      "slug": "prognoza-fara-date-istorice",
+      "title": "De ce un sistem nou nu are nevoie de date istorice",
+      "marketNotes": "ZADNA ADAPTACJA merytoryczna, ale warto dodac jedno zdanie kontekstu rynkowego: fala nowych instalacji z Casa Verde Fotovoltaice oznacza w RO duza populacje systemow bez zadnej historii produkcji — to dokladnie odbiorca tego postu. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "why-solar-panels-produce-less-in-heat",
+      "enSlug": "why-solar-panels-produce-less-in-heat",
+      "slug": "panourile-produc-mai-putin-pe-canicula",
+      "title": "De ce panourile produc mai puțin pe caniculă",
+      "marketNotes": "LEKKA ADAPTACJA, WYSOKI PRIORYTET DLA RO — fizyka generyczna, ale liczby przeliczyc na realia: 35-40 stopni C typowe latem dla Campia Romana, Oltenii i Dobrogei, temperatura modulu 65-70 stopni C. To najbardziej ,,rumunski'' z postow generycznych (slowo caniculă ma wlasny sezonowy szczyt wyszukiwan) — publikowac wczesnie. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "summer-solar-surplus-and-curtailment",
+      "enSlug": "summer-solar-surplus-and-curtailment",
+      "slug": "surplusul-de-vara-si-curtailment",
+      "title": "Prea mult soare? Surplusul de vară și curtailmentul",
+      "marketNotes": "ADAPTACJA — mechanizm ujemnych cen i curtailmentu opisac przez PZU/OPCOM i Transelectrica zamiast rynkow EN. Dolozyc realny rumunski problem, ktorego wersja EN nie ma: podwyzszone napiecie w sieci wiejskiej przy duzym nasyceniu prosumentow i wynikajace z tego ograniczenia lub odmowy ATR w niektorych rejonach. Wartosc nadwyzki liczyc po compensare cantitativa plus srednia PZU, nie po export tariff. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "same-system-different-cities-europe",
+      "enSlug": "same-system-different-cities-europe",
+      "slug": "acelasi-sistem-orase-diferite",
+      "title": "De ce același sistem produce diferit de la oraș la oraș",
+      "marketNotes": "MOCNA ADAPTACJA GEOGRAFICZNA — to przepisanie, nie tlumaczenie. Post EN jest zbudowany wokol Warszawy, Madrytu, Berlina i Amsterdamu. Dla RO przebudowac na os krajowa: Constanta i Craiova/Bukareszt (najwyzsze uzyski) vs Cluj-Napoca i Sibiu (srodek) vs Suceava i Baia Mare (najnizej), z jednym punktem spoza RO dla skali europejskiej. Sednem ma byc kontrast Transilvania vs Campia Romana — ta sama instalacja, inna wysokosc, inne zachmurzenie, inna letnia temperatura. WSZYSTKIE liczby kWh/kWp wyliczyc w PVGIS przed publikacja, nie szacowac."
+    },
+    {
+      "translationKey": "why-regional-weather-models-matter",
+      "enSlug": "why-regional-weather-models-matter",
+      "slug": "de-ce-conteaza-modelele-meteo-regionale",
+      "title": "De ce o prognoză globală nu ajunge pentru fotovoltaic",
+      "marketNotes": "ADAPTACJA GEOGRAFICZNA — UKV, Met Office i odwolanie do Australii wyciac. Przyklady terenowe RO, ktore globalna siatka rozmywa: bariera Karpat i efekt fenowy, mgly radiacyjne w Campia Romana i Baragan, bryza morska nad Dobrogea i litoralem, depresje srodgorskie Transilwanii (Ciuc, Fagaras) z inwersjami. Modele regionalne wymieniac ostroznie i spojnie z postem o NWP. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "coastal-vs-inland-solar-microclimate",
+      "enSlug": "coastal-vs-inland-solar-microclimate",
+      "slug": "litoral-sau-interior-microclimatul",
+      "title": "Litoral sau interior? Cum schimbă microclimatul producția",
+      "marketNotes": "ADAPTACJA GEOGRAFICZNA — post nie ma twardych nazw miast, wiec technicznie latwy, ale ogromnie zyskuje na przykladach RO: litoral Morza Czarnego i Dobrogea (najwyzsze naslonecznienie w kraju, bryza schladza moduly latem) vs Campia Romana (upal latem, mgla zima) vs kotliny Transilwanii (inwersje, dluzsze zaleganie chmur niskich). Jeden z najlepiej dopasowanych postow do rumunskiej geografii. Post bez translationKey we frontmatterze."
+    },
+    {
+      "translationKey": "saharan-dust-southern-europe-solar",
+      "enSlug": "saharan-dust-southern-europe-solar",
+      "slug": "praful-saharian-si-productia-fotovoltaica",
+      "title": "Când praful saharian îți întunecă panourile",
+      "marketNotes": "ADAPTACJA, WYSOKI PRIORYTET DLA RO — w EN to temat ,,Poludniowa Europa'' z porownaniem do UK i Skandynawii. Dla RO to zjawisko lokalne, regularne i rozpoznawalne pod potoczna nazwa ploaie cu noroi / ploaie cu namol, z sezonem marzec-maj i najsilniejszym oddzialywaniem na poludniu i w Dobrogei. Przeramowac na Romanie i dodac sekcje o osadzaniu pylu na modulach oraz o myciu — czego wersja EN nie ma. Post bez translationKey we frontmatterze."
+    }
+  ],
+  "qa": [
+    {
+      "enSlug": "why-is-solar-output-flat-at-midday",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "productia-se-aplatizeaza-la-pranz",
+      "title": "De ce producția se aplatizează la prânz?"
+    },
+    {
+      "enSlug": "why-does-my-inverter-shut-down-on-sunny-days",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "invertorul-se-opreste-in-zilele-insorite",
+      "title": "De ce se oprește invertorul în zilele însorite?"
+    },
+    {
+      "enSlug": "inverter-smaller-than-panels-is-that-wrong",
+      "category": "k1",
+      "action": "translate",
+      "slug": "invertor-mai-mic-decat-panourile",
+      "title": "Invertorul e mai mic decât panourile — e o greșeală?"
+    },
+    {
+      "enSlug": "volt-watt-response-what-is-it-should-i-enable-it",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "reglajul-volt-watt-merita-activat",
+      "title": "Ce e reglajul volt-watt și merită activat?"
+    },
+    {
+      "enSlug": "grid-voltage-over-253v-how-to-report",
+      "category": "k1",
+      "action": "adapt",
+      "slug": "tensiune-peste-253v-cum-o-reclami",
+      "title": "Tensiune peste 253 V — cum o reclami la distribuitor?"
+    },
+    {
+      "enSlug": "how-many-kwh-per-day-should-my-solar-produce",
+      "category": "k2",
+      "action": "adapt",
+      "slug": "cati-kwh-pe-zi-produce-sistemul",
+      "title": "Câți kWh pe zi ar trebui să producă sistemul meu?"
+    },
+    {
+      "enSlug": "how-to-check-solar-system-is-working-properly",
+      "category": "k2",
+      "action": "translate",
+      "slug": "cum-verific-daca-sistemul-functioneaza-bine",
+      "title": "Cum verific dacă sistemul fotovoltaic funcționează bine?"
+    },
+    {
+      "enSlug": "why-do-panels-never-reach-rated-power",
+      "category": "k2",
+      "action": "translate",
+      "slug": "panourile-nu-ating-puterea-nominala",
+      "title": "De ce panourile nu ating niciodată puterea nominală?"
+    },
+    {
+      "enSlug": "east-west-or-flat-roof-panels-worth-it",
+      "category": "k2",
+      "action": "translate",
+      "slug": "panouri-est-vest-sau-acoperis-plat",
+      "title": "Merită montajul est-vest sau pe acoperiș plat?"
+    },
+    {
+      "enSlug": "add-more-panels-or-buy-a-battery",
+      "category": "k3",
+      "action": "adapt",
+      "slug": "mai-multe-panouri-sau-o-baterie",
+      "title": "Mai bine adaug panouri sau cumpăr o baterie?"
+    },
+    {
+      "enSlug": "charge-battery-overnight-or-leave-room-for-solar",
+      "category": "k3",
+      "action": "adapt",
+      "slug": "incarc-bateria-noaptea-sau-astept-soarele",
+      "title": "Încarc bateria noaptea sau las loc producției solare?"
+    },
+    {
+      "enSlug": "what-battery-size-do-i-need",
+      "category": "k3",
+      "action": "translate",
+      "slug": "ce-capacitate-de-baterie-imi-trebuie",
+      "title": "Ce capacitate de baterie îmi trebuie?"
+    },
+    {
+      "enSlug": "why-is-my-battery-always-full",
+      "category": "k3",
+      "action": "translate",
+      "slug": "de-ce-bateria-e-mereu-plina",
+      "title": "De ce bateria stă mereu plină și nu face nimic?"
+    },
+    {
+      "enSlug": "best-electricity-tariff-with-solar-and-battery",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "tarif-de-energie-cu-fotovoltaic",
+      "title": "Ce tarif de energie aleg cu fotovoltaic și baterie?"
+    },
+    {
+      "enSlug": "buy-cheap-overnight-sell-in-the-day-worth-it",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "cumpar-ieftin-noaptea-si-vand-ziua",
+      "title": "Merită să cumpăr ieftin noaptea și să vând ziua?"
+    },
+    {
+      "enSlug": "is-a-dynamic-tariff-worth-it-without-a-battery",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "tarif-dinamic-fara-baterie",
+      "title": "Merită un tarif dinamic dacă nu am baterie?"
+    },
+    {
+      "enSlug": "why-is-my-bill-high-despite-solar",
+      "category": "k4",
+      "action": "adapt",
+      "slug": "factura-ramane-mare-cu-panouri",
+      "title": "De ce factura rămâne mare deși am panouri fotovoltaice?"
+    },
+    {
+      "enSlug": "add-solar-forecast-to-home-assistant-energy-dashboard",
+      "category": "k5",
+      "action": "translate",
+      "slug": "prognoza-de-productie-in-energy-dashboard",
+      "title": "Cum adaug prognoza de producție în Energy Dashboard?"
+    },
+    {
+      "enSlug": "solar-self-consumption-automations-home-assistant",
+      "category": "k5",
+      "action": "translate",
+      "slug": "automatizari-de-autoconsum-in-home-assistant",
+      "title": "Cum fac automatizări de autoconsum în Home Assistant?"
+    },
+    {
+      "enSlug": "heat-water-automatically-with-solar-surplus",
+      "category": "k5",
+      "action": "translate",
+      "slug": "incalzirea-apei-cu-surplus-fotovoltaic",
+      "title": "Cum încălzesc apa automat cu surplusul fotovoltaic?"
+    },
+    {
+      "enSlug": "which-ev-charger-works-with-home-assistant",
+      "category": "k5",
+      "action": "translate",
+      "slug": "ce-wallbox-merge-cu-home-assistant",
+      "title": "Ce wallbox se integrează cu Home Assistant?"
+    },
+    {
+      "enSlug": "which-export-tariff-should-i-choose",
+      "category": "k6",
+      "action": "replace",
+      "slug": "cum-functioneaza-compensarea-cantitativa",
+      "title": "Cum funcționează compensarea cantitativă la prosumatori?"
+    },
+    {
+      "enSlug": "is-octopus-agile-worth-it-with-solar-and-battery",
+      "category": "k6",
+      "action": "replace",
+      "slug": "cat-valoreaza-un-kwh-injectat",
+      "title": "Cât valorează de fapt un kWh injectat în rețea?"
+    },
+    {
+      "enSlug": "do-i-need-a-battery-or-are-panels-enough",
+      "category": "k6",
+      "action": "replace",
+      "slug": "cum-devin-prosumator-racordare-casa-verde",
+      "title": "Cum devin prosumator: ATR, racordare și Casa Verde"
+    }
+  ]
+}

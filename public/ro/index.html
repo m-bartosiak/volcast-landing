@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volcast — Aplicație de prognoză solară</title>
-  <meta name="description" content="Preziceți producția solară cu un motor fizic avansat. Șapte zile în avans, oră cu oră, din date satelitare — pentru orice instalație.">
+  <meta name="description" content="Volcast prezice producția panourilor dumneavoastră oră cu oră, șapte zile în avans, din mai multe modele meteo. Fără conectare la invertor.">
   <meta name="theme-color" content="#05070A">
   <meta property="og:title" content="Volcast — Aplicație de prognoză solară">
   <meta property="og:description" content="Preziceți producția solară prin fizică. Șapte zile în avans, oră cu oră — pentru orice instalație.">
@@ -29,6 +29,7 @@
   <link rel="alternate" hreflang="de" href="https://volcast.app/de/">
   <link rel="alternate" hreflang="es" href="https://volcast.app/es/">
   <link rel="alternate" hreflang="fr" href="https://volcast.app/fr/">
+  <link rel="alternate" hreflang="it" href="https://volcast.app/it/">
   <link rel="alternate" hreflang="nl" href="https://volcast.app/nl/">
   <link rel="alternate" hreflang="pl" href="https://volcast.app/pl/">
   <link rel="alternate" hreflang="pt" href="https://volcast.app/pt/">
@@ -1202,8 +1203,8 @@
         <li><a href="#how-it-works">Cum funcționează</a></li>
         <li><a href="#home-assistant">Home Assistant</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="/blog/en/">Blog</a></li>
-        <li><a href="/blog/en/q/">Q&amp;A</a></li>
+        <li><a href="/blog/ro/">Blog</a></li>
+        <li><a href="/blog/ro/q/">Q&amp;A</a></li>
         <li><a href="#download" class="nav-cta">Descarcă App</a></li>
       </ul>
       <div class="nav-right">
@@ -1221,6 +1222,7 @@
               <a href="/de/" class="lang-option" data-lang="de">Deutsch</a>
               <a href="/es/" class="lang-option" data-lang="es">Español</a>
               <a href="/fr/" class="lang-option" data-lang="fr">Français</a>
+              <a href="/it/" class="lang-option" data-lang="it">Italiano</a>
               <a href="/nl/" class="lang-option" data-lang="nl">Nederlands</a>
               <a href="/pl/" class="lang-option" data-lang="pl">Polski</a>
               <a href="/pt/" class="lang-option" data-lang="pt">Português</a>
@@ -1296,7 +1298,7 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </div>
           <h3>Prognoză bazată pe fizică</h3>
-          <p>Prognoze PV orare și zilnice folosind un model de iradiere complet și date meteo prin satelit.</p>
+          <p>Prognoze PV orare și zilnice folosind un model de iradiere complet, corecții spectrale și date meteo reale din mai multe modele numerice de prognoză. Fără conectare la hardware.</p>
         </div>
         <div class="glass-card feature-card reveal">
           <div class="feature-icon feature-icon--indigo">
@@ -1311,7 +1313,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00FF9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
             </div>
             <h3>Notificări Inteligente</h3>
-            <p>Primiți alerte când prognoza se schimbă semnificativ sau când este momentul optim pentru aparate electrocasnice mari.</p>
+            <p>Prognoza de seară pentru ziua următoare, avertizare când panourile pot fi acoperite de zăpadă și un semnal când este momentul optim pentru aparatele electrocasnice mari. Nu ratați nicio fereastră însorită.</p>
           </div>
           <div class="feature-card-img">
             <img src="/img/ro/notifications.png" alt="Volcast notifications" loading="lazy">
@@ -1352,7 +1354,7 @@
         <div class="step reveal">
           <div class="step-number">2</div>
           <h3>Obțineți prognoza</h3>
-          <p>Volcast combină datele satelit cu modelul fizic al sistemului pentru a prezice producția.</p>
+          <p>Volcast combină datele meteo din mai multe modele de prognoză cu modelul fizic al sistemului dumneavoastră pentru a prezice producția orară și zilnică.</p>
         </div>
         <div class="step reveal">
           <div class="step-number">3</div>
@@ -1556,7 +1558,7 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
             Cât de precise sunt prognozele?
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer"><div class="faq-answer-inner">Volcast folosește un model fizic și date satelit. După calibrare, precizia ajunge la 85–95% în zilele senine.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Volcast folosește un model fizic complet de iradiere, combinat cu date meteo din mai multe modele numerice de prognoză și cu parametrii instalației dumneavoastră. După calibrarea cu producția reală, precizia ajunge de obicei în jur de 85% în zilele senine și parțial înnorate. Nebulozitatea densă este greu de prezis pentru orice sistem, dar Volcast rămâne mai bun decât aplicațiile meteo obișnuite.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
@@ -1610,8 +1612,8 @@ curl -H <span class="code-str">"X-API-Key: vk_your_api_key"</span> \
         <span><strong>Volcast</strong> — Rocket science on your roof.</span>
       </div>
       <ul class="footer-links">
-        <li><a href="/blog/en/">Blog</a></li>
-        <li><a href="/blog/en/q/">Q&amp;A</a></li>
+        <li><a href="/blog/ro/">Blog</a></li>
+        <li><a href="/blog/ro/q/">Q&amp;A</a></li>
         <li><a href="mailto:hello@volcast.app">hello@volcast.app</a></li>
         <li><a href="/privacy">Politica de Confidențialitate</a></li>
         <li><a href="/terms">Termeni de Utilizare</a></li>
